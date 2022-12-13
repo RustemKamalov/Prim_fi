@@ -1,0 +1,94 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+
+# Last modified by Administrator
+# on 24th june 2005
+# Version 1.0.3.
+
+# Subnet mask 255.255.255.128
+
+
+#LOCAL HOST
+
+127.0.0.1       localhost
+
+#TECHNOLOGICAL ETHERNET SYSTEM
+
+#10.48.3.1                                      #07.A1 Primary (Hot-Standby) Controller
+#10.48.3.2                                      #07.A2 Standby (Hot-Standby) Controller
+#10.48.3.3                                      #07.C1 Controller
+#10.48.3.5                                      #01.P1 Controller
+#10.48.3.11                                     #18.A1 Primary (Hot-Standby) Controller
+#10.48.3.12                                     #18.A2 Standby (Hot-Standby) Controller
+#10.48.3.13                                     #18.D1 Primary (Hot-Standby) Controller
+#10.48.3.14                                     #18.D2 Standby (Hot-Standby) Controller
+#10.48.3.31                                     #07.D1 Primary (Hot-Standby) Controller
+#10.48.3.32                                     #07.D2 Standby (Hot-Standby) Controller
+#10.48.3.33                                     #Autronica firesystem
+#10.48.3.35                                     #20.P1 Controller
+
+#10.48.3.61     PC01-ST-MASTER			#Station master
+#10.48.3.62     PC02-ST-RESERVE			#Station reserved
+#10.48.3.63     PC03-ENGINEER			#Engineer's PC
+#10.48.3.64     PC04-TF-MASTER			#TankFarm master
+#10.48.3.65     PC05-TF-RESERVED		#TankFarm reserved
+#10.48.3.66     PC06-OPC-SERVER			#OPC server
+#10.48.3.67     PC21-OIL-PORT                   #Oil port
+#10.48.3.68     PC31-FS-MASTER			#FireSystem master
+#10.48.3.69     PC32-FS-RESERVE                 #FireSystem reserved
+#10.48.3.70     PC33-FS-DEPO			#FireSystem depo
+
+#10.48.3.71     SWITCH01			#18.D Schneider-Electric 499NOS17100 Fast Ethernet Switch (RING MASTER)
+#10.48.3.72     SWITCH02			#07.C Schneider-Electric 499NOS17100 Fast Ethernet Switch
+#10.48.3.73     SWITCH03			#07.C Schneider-Electric 499NOS17100 Fast Ethernet Switch
+#10.48.3.74     SWITCH04			#07.D Schneider-Electric 499NOS17100 Fast Ethernet Switch
+#10.48.3.75     SWITCH05			#01.P Schneider-Electric 499NOS17100 Fast Ethernet Switch
+
+#10.48.3.80     CEV01-MB                        #
+#10.48.3.81     CEV02-MB                        #
+#10.48.3.91     CEV01-MBP                       #
+#10.48.3.92     CEV02-MBP                       #
+#10.48.3.93     CEV03-MBP                       #
+
+#10.48.3.120    NB01-NOTEBOOK                   #Enginieer's notebook
+
+#GIGABIT ETHERNET SYSTEM
+
+10.48.3.189     PC01-ST-MASTER			#Station master
+10.48.3.190     PC02-ST-RESERVE			#Station reserved
+10.48.3.191     PC03-ENGINEER			#Engineer's PC
+10.48.3.192     PC04-TF-MASTER			#TankFarm master
+10.48.3.193     PC05-TF-RESERVED		#TankFarm reserved
+10.48.3.194     PC06-OPC-SERVER			#OPC server
+10.48.3.195     PC21-OIL-PORT                   #Oil port
+10.48.3.196     PC31-FS-MASTER			#FireSystem master
+10.48.3.197     PC32-FS-RESERVE                 #FireSystem reserved
+10.48.3.198     PC33-FS-DEPO			#FireSystem depo
+10.48.3.185     PC35-FS-BUNK            #FireSystem Bunkerovka
+
+10.48.3.210     APC-SYMMETRA-LX			#E01 APC Symmetra LX
+10.48.3.220     NB01-NOTEBOOK			#Enginieer's notebook
+10.48.3.221     GUEST01				#Guests
+
+
+10.48.3.230     SWITCH11			#01.SZE1 3COM Gigabit Ethernet Switch 3824
+10.48.3.231     SWITCH12			#01.SZE2 3COM Gigabit Ethernet Switch 3824
+10.48.3.240     PRN01-HP-LJ2200			#HP LaserJet 2200dtn printer
+10.48.3.241     PRN02-HP-LJ2420                 #HP LaserJet 2420n printer
+10.48.3.251     FIREWALL                        #FireWall in Server CDKU

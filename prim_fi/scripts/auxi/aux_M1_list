@@ -1,0 +1,64 @@
+####################### PRIMORSK-1 auxilary systems ########################
+
+/Plunger_pump_of_Station_system N1     #1
+PlS   Plunger_pump_of_Stat._system_N1  #1    Погружный насос ННС
+Pl1   Plunger_pump_of_Station_1              Погружный насос ННС
+
+/Canal.pumps_of_Station_system N1,2    #2
+CaS   Canal.pumps_of_Station_system    #2    Насосы бытовых стоков
+Ca1   Canal.pump_of_Station1                 Насос бытовых стоков N1
+Ca2   Canal.pump_of_Station2                 Насос бытовых стоков N2
+
+/Canal.pumps_of_Tankfarm_system N1,2   #3
+CS1   Canal.pumps_of_Tankfarm_system   #3    Насосы КНС1
+Ct1   Canal.pump_of_Tankfarm_1               КНС1.насос N1
+Ct2   Canal.pump_of_Tankfarm_2               КНС1.насос N2
+
+/Fire_ext_pump_system N1,2,            #4
+FS1   Fire_ext_pump_system             #4    Система пожаротушения 
+Fe1   Fire_ext_pump_1                        Насос пожаротушения N1
+Fe2   Fire_ext_pump_2                        Насос пожаротушения N2
+
+/Fire_ext_pump_system N,3,4,           #5
+FS2   Fire_ext_pump_system             #5    Система пожаротушения 
+Fe3   Fire_ext_pump_3                        Насос пожаротушения N3
+Fe4   Fire_ext_pump_4                        Насос пожаротушения N4
+
+/Fire_ext_pump_system N,5              #6
+FS3   Fire_ext_pump_system             #6    Система пожаротушения 
+Fe5   Fire_ext_pump_5                        Насос пожаротушения N5
+
+/Reserve_system_1                      #7
+RS1   Reserve_system_1                 #7    Reserve system 1
+R11   Reserve_11                             Reserve 11
+R12   Reserve_12                             Reserve 12
+
+/Reserve_system_2                      #8
+RS2   Reserve_system_2                 #8    Reserve system 2
+R21   Reserve_21                             Reserve 21
+R22   Reserve_22                             Reserve 22
+
+/Electric_heater_of_agr.system N1,2,   #9
+ES1   Electric_heater_of_agr.system    #9    Система электронагривателей
+Eh1   Electric_heater_of_agr.1               Электронагриватель ПА-1
+Eh2   Electric_heater_of_agr.2               Электронагриватель ПА-2
+
+/Electric_heater_of_agr.system N,3,4,  #10
+ES2   Electric_heater_of_agr.system    #10   Система электронагривателей
+Eh3   Electric_heater_of_agr.3               Электронагриватель ПА-3
+Eh4   Electric_heater_of_agr.4               Электронагриватель ПА-4   
+
+/Electric_heater_of_agr.system N,5     #11
+ES3   Electric_heater_of_agr.system    #11   Система электронагривателей
+Eh5   Electric_heater_of_agr.5               Электронагриватель ПА-5
+
+/Diesel_system____
+/DES
+
+/Power_Inlet_system N1,2
+/Sw1
+/Sw2
+
+/Power_Inlet_Switch
+/SwS
+

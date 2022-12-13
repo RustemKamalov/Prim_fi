@@ -1,0 +1,7 @@
+#!/bin/sh
+
+SUBDIR=$1
+
+mv /prim_fi/recipe/$SUBDIR/data_init.txt /prim_fi/recipe/$SUBDIR/data_init.txt.ori
+
+/Dmon/bin/dmrecipedecomp data_init /prim_fi/recipe/$SUBDIR /prim_fi/recipe/$SUBDIR

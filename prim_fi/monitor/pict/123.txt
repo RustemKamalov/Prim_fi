@@ -1,0 +1,4 @@
+
+WOPT: p=Cc r=10 c=0 o=k-rY;kmsab t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=3 h=0 w=0

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#ﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂ
+# recipe
+#‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹
+echo "\n<ﬂﬂﬂﬂﬂﬂﬂﬂ\n  RECIPE from pipe\n‹‹‹‹‹‹‹‹\n >"
+
+
+/prim_fi/bin/rcpdatagen /prim_fi/data/txt/pipe.txt /prim_fi/recipe/data_init.txt | tee recipe_gen.err
+grep -e "error" recipe_gen.err
+set +v
+grep -e "error" recipe_gen.err
+echo "\a"
+read resp?"Continue ?      <Y/N>":
+case $resp in
+  y|Y) echo ... ;;
+  n|N) exit -1  ;;
+esac
+
+
+#regi dinamika torlese
+rm -f /prim_fi/recipe/rcp_dyn
+#   recipe dinamika (rcp_dyn) letrehozasa
+/Dmon/bin/dmrecipecomp  /prim_fi/config/recipex.ini

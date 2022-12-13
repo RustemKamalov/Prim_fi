@@ -1,0 +1,336 @@
+# 1. make prim_fi -> SS may fail
+# 2. make prim_fi_OPC -> SS should be OK on OPC side
+# 3. make prim_fi again -> SS should be OK
+
+#--- Directories
+  SYSTEM           = prim_fi
+  SYSTEM_DIR       = /$(SYSTEM)
+  SYSTEM_DATA_DIR  = /$(SYSTEM)_data
+  INIT_DBF_DIR     = $(SYSTEM_DIR)/config
+  BIN_DIR          = $(SYSTEM_DIR)/bin
+  ERROR_DIR	       = $(SYSTEM_DIR)/errors
+
+#--- Init files
+  MON_INIT_DBF    = $(INIT_DBF_DIR)/monx.ini
+  MATH_INIT_DBF	  = $(INIT_DBF_DIR)/mathx.ini
+  MBPLUS_INIT_DBF = $(INIT_DBF_DIR)/mbplusx.ini
+  MBTCP_INIT_DBF  = $(INIT_DBF_DIR)/mbtcpx.ini
+  RECIPE_INIT_DBF = $(INIT_DBF_DIR)/recipex.ini
+  EVENT_INIT_DBF  = $(INIT_DBF_DIR)/eventx.ini
+  ARCH_INIT_DBF   = $(INIT_DBF_DIR)/archivex.ini
+  TIMER_INIT_DBF  = $(INIT_DBF_DIR)/timerx.ini
+  LOGGER_INIT_DBF = $(INIT_DBF_DIR)/loggerx.ini
+  SOUND_INIT_DBF  = $(INIT_DBF_DIR)/soundx.ini
+  SS_INIT_DBF     = $(INIT_DBF_DIR)/ssx.ini
+
+#--- Dmon compilers
+  DMON_DIR        = /Dmon
+  DMON_BIN_DIR    = $(DMON_DIR)/bin
+  DMON_LOG_DIR    = $(DMON_DIR)/log
+  TIMER_COMP      = $(DMON_BIN_DIR)/dmtimercomp
+  MBPLUS_COMP     = $(DMON_BIN_DIR)/dmmodbuspluscomp
+  MBPLUS_IW2O     = $(BIN_DIR)/mbIw2O
+#  MBPLUS_RENUM    = $(BIN_DIR)/mbrenum
+  MBPLUS_RENUM    = $(BIN_DIR)/make_mbtcp_dyn2.sh
+  MBTCP_COMP      = $(DMON_BIN_DIR)/dmmbtcpcomp
+  MBTCP_IW2O      = $(BIN_DIR)/mbtIw2O
+  MBTCP_IW2O_AWK  = $(BIN_DIR)/mbtIw2O.awk
+#  MBTCP_RENUM     = $(BIN_DIR)/mbrenum
+  MBTCP_RENUM     = $(BIN_DIR)/make_mbtcp_dyn2.sh
+  RECIPE_COMP     = $(DMON_BIN_DIR)/dmrecipecomp
+  RECIPE_DECOMP   = $(DMON_BIN_DIR)/dmrecipedecomp
+  MATH_COMP       = $(DMON_BIN_DIR)/dmmathcomp
+  ARCH_COMP       = $(DMON_BIN_DIR)/dmarchcomp
+  MON_DCF_GEN     = $(DMON_BIN_DIR)/dmmondbcomp
+  MON_EDIT        = $(DMON_BIN_DIR)/dmmonedit
+  MON_PIC_COMP    = $(SYSTEM_DIR)/monitor/bin/comp_all_pics.sh
+  #MDX_GEN         = $(BIN_DIR)/makeindex
+  DBF_GEN         = $(DMON_BIN_DIR)/dmdbfcomp
+  MDX_GEN         = $(BIN_DIR)/qdindex
+  LOGGER_GEN      = $(DMON_BIN_DIR)/dmlogcomp
+  EVENT_COMP      = $(DMON_BIN_DIR)/dmeventcomp
+  SOUND_COMP      = $(DMON_BIN_DIR)/dmsoundcomp
+  SS_COMP         = $(DMON_BIN_DIR)/dmsscomp
+
+#--- Other programs for compilation
+  GENPROGSDIR     = $(SYSTEM_DIR)/bin
+  #DBF_GEN         = $(GENPROGSDIR)/qdb32
+  RECIPE_DATA_GEN = $(GENPROGSDIR)/conv_recipe.sh
+  EVENT_GEN       = $(GENPROGSDIR)/dgevgen
+
+#--- Pipe
+  PIPE_DIR        = $(SYSTEM_DIR)/data
+  PIPE_TXT_DIR    = $(PIPE_DIR)/txt
+  PIPE_TXT_DIR_OPC= /prim_OPC/data/txt
+  PIPE_DBF        = $(PIPE_DIR)/pipe.dbf
+  PIPE_OPC_DBF    = /prim_OPC/data/pipe.dbf
+  PIPE_MDX        = $(PIPE_DIR)/pipe.mdx
+
+  PIPE_ST_DBF     = /prim/data/pipe.dbf
+  PIPE_TXT        = $(PIPE_TXT_DIR)/pipe.txt
+  PIPE_TXT_COM    = $(PIPE_TXT_DIR)/pipe_com.txt \
+                    $(PIPE_TXT_DIR)/sound_tags.txt
+
+ PIPE_TXT_ST2    =  $(PIPE_TXT_DIR)/pipe_fi.txt \
+                    $(PIPE_TXT_DIR)/pipe_Fi2.txt \
+                    $(PIPE_TXT_DIR)/pipe_Fi3.txt \
+                    $(PIPE_TXT_DIR)/pipe_fs.txt
+
+
+  PIPE_TXTS       = $(PIPE_TXT_COM) \
+                    $(PIPE_TXT_ST2)
+  PIPE_GEN_ERR    = $(ERROR_DIR)/pipe.err
+
+#--- Monitor
+  MON_DIR         = $(SYSTEM_DIR)/monitor
+  MON_MAB         = $(PIPE_DIR)/mon_mab.txt
+  MON_DCF         = $(PIPE_DIR)/mon_mab.dcf
+  MON_GEN_ERR     = $(ERROR_DIR)/mon.err
+  MON_LIST        = $(MON_DIR)/list.txt
+
+#--- Recipe
+  RECIPE_DIR            = $(SYSTEM_DIR)/recipe
+  RECIPE_DYN            = $(RECIPE_DIR)/rcp_dyn
+  RECIPE_DYN_TXT        = $(RECIPE_DIR)/rcp_dyn.txt
+  RECIPE_DATA_INIT_TXTS = $(RECIPE_DIR)/data_init.txt
+
+#--- Math
+  MATH_DIR     = $(SYSTEM_DIR)/math
+  MATH_DYN     = $(MATH_DIR)/math_dyn
+  MATH_DYN_TXT = $(MATH_DIR)/math_dyn.txt
+  MATH_TXTS    = $(MATH_DIR)/math_com.txt \
+                $(MATH_DIR)/math_fi.txt \
+                $(MATH_DIR)/math_Fi2.txt \
+                $(MATH_DIR)/math_Fi3.txt
+
+
+#--- ModbusTCP
+  MBTCP_DIR      = $(SYSTEM_DIR)/mbtcp
+  MBTCP1_DYN     = $(MBTCP_DIR)/mbtcp1_dyn
+  MBTCP2_DYN     = $(MBTCP_DIR)/mbtcp2_dyn
+  MBTCP1_TXT     = $(MBTCP_DIR)/mbtcp1.txt.Iw
+  MBTCP1_DYN_TXT = $(MBTCP_DIR)/mbtcp1_dyn.txt
+  MBTCP2_DYN_TXT = $(MBTCP_DIR)/mbtcp2_dyn.txt
+  MBTCP1_TXTS    = $(MBTCP_DIR)/mbtcp_com.txt \
+                    $(MBTCP_DIR)/mbtcp_fi.txt \
+                    $(MBTCP_DIR)/mbtcp_Fi2.txt \
+                    $(MBTCP_DIR)/mbtcp_Fi3.txt \
+                    $(MBTCP_DIR)/mbtcp_fs.txt
+
+  MBTCP1_GEN_ERR = $(ERROR_DIR)/mbtcp1.err
+  MBTCP2_GEN_ERR = $(ERROR_DIR)/mbtcp2.err
+
+#--- Event
+  EVENT_DIR     = $(SYSTEM_DIR)/event
+  EVENT_DYN     = $(EVENT_DIR)/evt_dyn
+  EVENT_DYN_TXT = $(EVENT_DIR)/evt_dyn.txt
+  EVENT_TXT     = $(EVENT_DIR)/big_evt.txt
+  EVENT_TXT_FILT= $(EVENT_DIR)/big_evt_filt.txt
+  EVENT_TXTS    = $(EVENT_DIR)/event_com.txt \
+                  $(EVENT_DIR)/event_fi.txt \
+                  $(EVENT_DIR)/event_Fi2.txt \
+                  $(EVENT_DIR)/event_Fi3.txt
+
+  TEMP_EVENT    = $(EVENT_DIR)/pre_evdyn.txt
+  EVENT_MACRO   = $(EVENT_DIR)/macro.txt
+  EVENT_CONTR   = $(EVENT_DIR)/evt_ctr.txt
+  EVENT_HEAD    = $(EVENT_DIR)/head.txt
+  EVENT_GEN_ERR = $(ERROR_DIR)/event.err
+
+
+#--- Archive
+  ARCH_DIR     = $(SYSTEM_DIR)/archive
+  ARCH_DYN     = $(ARCH_DIR)/arc_dyn
+  ARCH_DYN_TXT = $(ARCH_DIR)/arc_dyn.txt
+
+
+#--- Timer
+  TIMER_DIR     = $(SYSTEM_DIR)/timer
+  TIMER_DYN     = $(TIMER_DIR)/timer_dyn
+  TIMER_DYN_TXT = $(TIMER_DIR)/timer_dyn.txt
+
+
+#--- Logger
+  LOGGER_DIR     = $(SYSTEM_DIR)/logger
+  LOGGER_DYN     = $(LOGGER_DIR)/logger_dyn
+  LOGGER_DYN_TXT = $(LOGGER_DIR)/logger_dyn.txt
+  LOGGER_TABLES  = $(LOGGER_DIR)/tbl/*.rpt
+
+
+#--- Sound
+  SOUND_DIR     = $(SYSTEM_DIR)/sound
+  SOUND_DYN     = $(SOUND_DIR)/sound_dyn
+  SOUND_DYN_TXT = $(SOUND_DIR)/sound_dyn.txt
+
+
+#--- Server-Server
+  SS_DIR        = $(SYSTEM_DIR)/ss
+  SS_DYN        = $(SS_DIR)/ss_toOPC_dyn
+  SS_DYN_TXT    = $(SS_DIR)/ss_toOPC_dyn.txt
+  SS_DYN_HEAD   = $(SS_DIR)/ss_toOPC_head.txt
+  SS_DYN_FS     = $(SS_DIR)/ss_toOPC_FS.txt
+  SS_DYN_FS_OPC = /prim_OPC/ss/ss_FS_scripts.txt
+
+  SS_DYN_ST      = $(SS_DIR)/ss_toSTATION_dyn_1
+  SS_DYN_ST_TXT  = $(SS_DIR)/ss_toSTATION_dyn.txt
+
+  TO_DO      =  $(PIPE_DBF)	\
+                $(RECIPE_DYN)  \
+               $(MBTCP1_DYN)  \
+               $(MBTCP2_DYN)  \
+               $(MATH_DYN)    \
+               $(EVENT_DYN)   \
+               $(TIMER_DYN)   \
+               $(SOUND_DYN)  \
+               $(LOGGER_DYN)  \
+               $(ARCH_DYN) \
+               $(MON_DCF)     \
+               $(SS_DYN_ST)
+
+#                $(RECIPE_DYN)  \
+#               $(MON_DCF)     \
+#               $(MBPLUS1_DYN)  \
+#               $(MBPLUS2_DYN)  \
+#               $(MBTCP1_DYN)  \
+#               $(MBTCP2_DYN)  \
+#               $(MATH_DYN)    \
+#               $(EVENT_DYN)   \
+#               $(TIMER_DYN)   \
+#               $(SOUND_DYN)   \
+#               $(ARCH_DYN) \
+#               $(SS_DYN)
+
+
+all:: 	$(TO_DO)
+
+#-----------------------------------------------------------------------------
+$(PIPE_DBF): $(PIPE_TXTS)
+	@echo -e "\n===============================================\n  Pipe\n=========="
+	@cat $(PIPE_TXTS) > $(PIPE_TXT).oldform
+	@cp $(PIPE_TXT_DIR)/pipe_fi.txt     $(PIPE_TXT_DIR_OPC)/pipe_fi.txt
+	@cp $(PIPE_TXT_DIR)/pipe_Fi2.txt    $(PIPE_TXT_DIR_OPC)/pipe_Fi2.txt
+	@cp $(PIPE_TXT_DIR)/pipe_Fi3.txt    $(PIPE_TXT_DIR_OPC)/pipe_Fi3.txt
+#	@cp $(PIPE_TXT_DIR)/pipe_fs.txt     $(PIPE_TXT_DIR_OPC)/pipe_fs.txt
+	@$(PIPE_TXT_DIR)/conv_oldformat.sh $(PIPE_TXT_DIR)/struct.cdbf $(PIPE_TXT).oldform > $(PIPE_TXT)
+        #@$(DBF_GEN) -n -s -w p $(PIPE_TXT) $(PIPE_DBF) | tee $(PIPE_GEN_ERR)
+	@echo  "Checking tag duplication error"
+	@$(PIPE_TXT_DIR)/chk_cdbf.sh $(PIPE_TXT) > $(PIPE_GEN_ERR)
+	@rm -f $(PIPE_MDX) $(PIPE_DBF) $(PIPE_DBF).cdb
+	$(DBF_GEN) $(PIPE_TXT_DIR)/struct.cdbf $(PIPE_TXT) $(PIPE_DBF) | tee -a $(PIPE_GEN_ERR)
+	#@echo creating index file ...
+	#@$(MDX_GEN) $(PIPE_DBF)
+
+#-----------------------------------------------------------------------------
+$(MON_DCF): $(PIPE_DBF)
+	@echo -e "\n===============================================\n  Monitor\n==========\n"
+	@rm -f $(DMON_LOG_DIR)/monx.log
+#       @$(DBF_GEN) -s -n -w -t m $(PIPE_TXT) $(MON_MAB) | tee $(MON_GEN_ERR)
+#       @$(MON_DCF_GEN) -a -l $(MON_INIT_DBF) | tee -a $(MON_GEN_ERR)
+#	@$(MON_EDIT) -l -f$(MON_LIST) -b $(MON_INIT_DBF) | tee -a $(MON_GEN_ERR)
+	$(MON_PIC_COMP) | tee $(MON_GEN_ERR)
+	(echo "module monitor generated:"; date) > $(MON_DCF)
+
+#-----------------------------------------------------------------------------
+$(MBTCP1_DYN): $(PIPE_DBF) $(MBTCP1_TXTS)
+	@echo -e "\n===========================\n  ModbusTCP_1\n==============\n"
+#	@rm -f $(DMON_LOG_DIR)/mbtcpx.log
+	@cat $(MBTCP1_TXTS) > $(MBTCP1_TXT)
+	@echo "Converting Iw to O"
+	@awk -v pipefile=$(PIPE_TXT) -v outfile=$(MBTCP1_DYN_TXT).preqm -f $(MBTCP_IW2O_AWK) $(MBTCP1_TXT) > $(MBTCP1_GEN_ERR)
+	@echo "Checking and inserting questionmarks"
+	@$(MBTCP_DIR)/insert_qm.sh $(MBTCP1_DYN_TXT).preqm >$(MBTCP1_DYN_TXT) 2>> $(MBTCP1_GEN_ERR)
+	@rm -f $(MBTCP1_DYN) $(MBTCP1_DYN_TXT).preqm
+	@$(MBTCP_COMP) -d $(PIPE_DBF) -i $(MBTCP1_DYN_TXT) -o $(MBTCP1_DYN) | tee -a $(MBTCP1_GEN_ERR)
+
+#-----------------------------------------------------------------------------
+$(MBTCP2_DYN_TXT): $(PIPE_DBF) $(MBTCP1_DYN_TXT)
+	@$(MBTCP_RENUM) $(MBTCP1_DYN_TXT) >$(MBTCP2_DYN_TXT)
+
+#-----------------------------------------------------------------------------
+$(MBTCP2_DYN): $(PIPE_DBF) $(MBTCP2_DYN_TXT)
+	@echo -e "\n==============================\n  ModbusTCP_2\n===============\n"
+ #	@rm -f $(DMON_LOG_DIR)/mbtcpx.log
+	@rm -f $(MBTCP2_DYN)
+#	@$(MBTCP_COMP) -a -l -d $(PIPE_DBF) -i $(MBTCP2_DYN_TXT) -o $(MBTCP2_DYN) | tee $(MBTCP2_GEN_ERR)
+	@$(MBTCP_COMP) -d $(PIPE_DBF) -i $(MBTCP2_DYN_TXT) -o $(MBTCP2_DYN) | tee $(MBTCP2_GEN_ERR)
+#	@cat $(DMON_LOG_DIR)/mbtcp2_dyn.log >> $(MBTCP2_GEN_ERR)
+
+#-----------------------------------------------------------------------------
+$(MATH_DYN): $(PIPE_DBF) $(MATH_TXTS)
+	@echo -e "\n=============================\n  Math\n==================\n"
+	@rm -f $(DMON_LOG_DIR)/mathx.log
+	@cat $(MATH_TXTS) >$(MATH_DYN_TXT)
+	@rm -f $(MATH_DYN)
+	#@$(MATH_COMP) $(MATH_INIT_DBF)
+	@$(MATH_COMP) -d $(PIPE_DBF) -i $(MATH_DYN_TXT) -o $(MATH_DYN)
+
+#-----------------------------------------------------------------------------
+$(RECIPE_DYN): $(PIPE_DBF) $(RECIPE_DYN_TXT)
+	@echo -e "\n=============================\n  Recipe\n==================\n"
+	@rm -f $(DMON_LOG_DIR)/recipex.log
+	@$(RECIPE_DATA_GEN) $(PIPE_TXT).oldform > $(RECIPE_DATA_INIT_TXTS)
+	#@$(RECIPE_DECOMP) data_init $(RECIPE_DIR) $(RECIPE_DIR)
+	@$(RECIPE_COMP) $(RECIPE_INIT_DBF)
+
+#-----------------------------------------------------------------------------
+$(EVENT_DYN): $(PIPE_DBF) $(EVENT_TXTS) $(EVENT_MACRO) $(EVENT_CONTR) $(EVENT_HEAD)
+	@echo -e "\n=================================\n  Event\n====================\n"
+	@rm -f $(DMON_LOG_DIR)/eventx.log
+	@rm -f $(EVENT_DYN)
+	@cat $(EVENT_TXTS) >$(EVENT_TXT)
+	sh $(SYSTEM_DIR)/event/filter/apply_event_selection.sh $(EVENT_TXT)
+#	@$(EVENT_GEN) p=$(PIPE_TXT) m=$(EVENT_MACRO) e=$(EVENT_TXT) d=$(TEMP_EVENT) s=34 a=1 >$(EVENT_GEN_ERR)
+	sh $(SYSTEM_DIR)/event/conv_format.sh $(EVENT_MACRO) 34 $(EVENT_TXT_FILT) > $(TEMP_EVENT)
+	@cat $(EVENT_CONTR) $(EVENT_HEAD) $(TEMP_EVENT) >$(EVENT_DYN_TXT)
+	@rm -f $(TEMP_EVENT)
+	@rm -f $(EVENT_TXT)
+#	@$(EVENT_COMP) -l -a $(EVENT_INIT_DBF)
+	$(EVENT_COMP) $(EVENT_INIT_DBF)
+
+#-----------------------------------------------------------------------------
+$(ARCH_DYN): $(PIPE_DBF) $(ARCH_DYN_TXT)
+	@echo -e "\n================================\n  Archive\n==============\n"
+	@rm -f $(DMON_LOG_DIR)/archivex.log
+	@rm -f $(ARCH_DYN)
+	@$(ARCH_COMP) $(ARCH_INIT_DBF)
+
+#-----------------------------------------------------------------------------
+$(TIMER_DYN): $(PIPE_DBF) $(TIMER_DYN_TXT)
+	@echo -e "\n==========================\n  Timer\n===================\n"
+	@rm -f $(DMON_LOG_DIR)/timerx.log
+	@rm -f $(TIMER_DYN)
+	@$(TIMER_COMP) $(TIMER_INIT_DBF)
+
+#-----------------------------------------------------------------------------
+$(LOGGER_DYN): $(PIPE_DBF) $(LOGGER_CFG) $(LOGGER_DYN_TXT) $(LOGGER_TABLES)
+	@echo -e "\n==========================\n  Logger\n====================\n"
+	@rm -f $(DMON_LOG_DIR)/loggerx.log
+	@rm -f $(LOGGER_DYN)
+	@$(LOGGER_GEN) $(LOGGER_INIT_DBF)
+
+#-----------------------------------------------------------------------------
+$(SOUND_DYN): $(PIPE_DBF) $(SOUND_DYN_TXT)
+	@echo -e "\n=========================\n  Sound\n===============\n"
+	@rm -f $(DMON_LOG_DIR)/soundx.log
+	@rm -f $(SOUND_DYN)
+	@$(SOUND_COMP) $(SOUND_INIT_DBF)
+
+#-----------------------------------------------------------------------------
+#$(SS_DYN_FS): $(SS_DYN_FS_OPC)
+#   @echo -e "\n=========================\n  copy ss_dyn from PRIM_OPC\n==========\n"
+#  @cp $(SS_DYN_FS_OPC) $(SS_DYN_FS)
+#
+#
+#$(SS_DYN): $(PIPE_DBF) $(PIPE_OPC_DBF) $(SS_DYN_HEAD) $(SS_DYN_FS)
+#  @echo -e "\n==========================\n  Server-Server\n==================\n"
+#  @rm -f $(DMON_LOG_DIR)/SSx.log
+#  @rm -f $(SS_DYN)
+#  @cat $(SS_DYN_HEAD) $(SS_DYN_FS) > $(SS_DYN_TXT)
+#  @$(SS_COMP) -d1 $(PIPE_OPC_DBF) -d2 $(PIPE_DBF) -i $(SS_DYN_TXT)
+#
+
+$(SS_DYN_ST): $(PIPE_DBF) $(PIPE_ST_DBF) $(SS_DYN_ST_TXT)
+	@echo -e "\n===============================================\n  Server-Server Station\n=========="
+	@$(SS_COMP) -d1 $(PIPE_ST_DBF) -d2 $(PIPE_DBF) -i $(SS_DYN_ST_TXT)
+
+#/////////////////////////////////////////////////////////////////////////////

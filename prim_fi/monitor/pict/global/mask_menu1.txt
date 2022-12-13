@@ -1,0 +1,12 @@
+
+WOPT: p=Cc r=0 c=0 o=k-r;kmsa t=0 e=0 a=1 b=0 k=0
+
+WPICT: c=179 h=0 w=0
+
+OBJ: 931_902_9_869
+  SELD: a=WO p=1410
+OBEND
+
+OBJ: 1011
+  SELD: a=WO p=2510
+OBEND

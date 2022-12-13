@@ -1,0 +1,237 @@
+########################################################################
+# level meters
+
+# changement of the parameters
+
+Q0=  E0
+Q1=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое замещ.знач.: %Q65
+Q2=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.верхн.дост.предела:: %Q66
+Q3=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.нижн.дост.предела:: %Q67
+Q4=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.авар.макс.предела:: %Q68
+Q5=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.макс.предела:: %Q69
+Q6=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.мин.предела:: %Q70
+Q7=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.гистерезиса:: %Q71
+Q8=  d=1 b=0 l=1 f=1 t=10  w=1 cf=16 cb=2 td=1 s=%Q137:новое знач.скорости заполнения:: %Q72
+OBJ=LevelMeterParam ARG=M2_YT901_Name  TYP=16,10                              \
+    PAR=M2_YT901_ManLevel,M2_YT901_CrHi,M2_YT901_CrLo,M2_YT901_4_L, \
+        M2_YT901_3_L,M2_YT901_2_L,M2_YT901_Hyst,M2_YT901_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT902_Name  TYP=16,10                              \
+    PAR=M2_YT902_ManLevel,M2_YT902_CrHi,M2_YT902_CrLo,M2_YT902_4_L, \
+        M2_YT902_3_L,M2_YT902_2_L,M2_YT902_Hyst,M2_YT902_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT903_Name  TYP=16,10                              \
+    PAR=M2_YT903_ManLevel,M2_YT903_CrHi,M2_YT903_CrLo,M2_YT903_4_L, \
+        M2_YT903_3_L,M2_YT903_2_L,M2_YT903_Hyst,M2_YT903_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT904_Name  TYP=16,10                              \
+    PAR=M2_YT904_ManLevel,M2_YT904_CrHi,M2_YT904_CrLo,M2_YT904_4_L, \
+        M2_YT904_3_L,M2_YT904_2_L,M2_YT904_Hyst,M2_YT904_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT905_Name  TYP=16,10                              \
+    PAR=M2_YT905_ManLevel,M2_YT905_CrHi,M2_YT905_CrLo,M2_YT905_4_L, \
+        M2_YT905_3_L,M2_YT905_2_L,M2_YT905_Hyst,M2_YT905_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT906_Name  TYP=16,10                              \
+    PAR=M2_YT906_ManLevel,M2_YT906_CrHi,M2_YT906_CrLo,M2_YT906_4_L, \
+        M2_YT906_3_L,M2_YT906_2_L,M2_YT906_Hyst,M2_YT906_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT907_Name  TYP=16,10                              \
+    PAR=M2_YT907_ManLevel,M2_YT907_CrHi,M2_YT907_CrLo,M2_YT907_4_L, \
+        M2_YT907_3_L,M2_YT907_2_L,M2_YT907_Hyst,M2_YT907_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT908_Name  TYP=16,10                              \
+    PAR=M2_YT908_ManLevel,M2_YT908_CrHi,M2_YT908_CrLo,M2_YT908_4_L, \
+        M2_YT908_3_L,M2_YT908_2_L,M2_YT908_Hyst,M2_YT908_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT909_Name  TYP=16,10                              \
+    PAR=M2_YT909_ManLevel,M2_YT909_CrHi,M2_YT909_CrLo,M2_YT909_4_L, \
+        M2_YT909_3_L,M2_YT909_2_L,M2_YT909_Hyst,M2_YT909_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT910_Name  TYP=16,10                              \
+    PAR=M2_YT910_ManLevel,M2_YT910_CrHi,M2_YT910_CrLo,M2_YT910_4_L, \
+        M2_YT910_3_L,M2_YT910_2_L,M2_YT910_Hyst,M2_YT910_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT925_Name  TYP=16,10                              \
+    PAR=M2_YT925_ManLevel,M2_YT925_CrHi,M2_YT925_CrLo,M2_YT925_4_L, \
+        M2_YT925_3_L,M2_YT925_2_L,M2_YT925_Hyst,M2_YT925_LR_4_L
+OBJ=LevelMeterParam ARG=M2_YT926_Name  TYP=16,10                              \
+    PAR=M2_YT926_ManLevel,M2_YT926_CrHi,M2_YT926_CrLo,M2_YT926_4_L, \
+        M2_YT926_3_L,M2_YT926_2_L,M2_YT926_Hyst,M2_YT926_LR_4_L
+
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: авар.минимум исчез
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: возник авар.минимум  	   						
+OBJ=Bit01Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit01Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit01Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit01Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit01Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit01Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit01Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit01Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit01Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit01Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit01Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit01Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: минимум исчез
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: возник минимум  							
+OBJ=Bit02Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit02Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit02Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit02Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit02Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit02Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit02Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit02Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit02Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit02Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit02Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit02Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: максимум исчез
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: возник максимум  							
+OBJ=Bit03Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit03Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit03Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit03Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit03Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit03Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit03Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit03Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit03Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit03Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit03Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit03Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: авар.максимум исчез
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: возник авар.максимум  						
+OBJ=Bit04Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit04Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit04Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit04Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit04Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit04Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit04Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit04Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit04Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit04Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit04Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit04Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: авар.максимальная скорость опорожнения исчезла
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: авар.максимальная скорость опорожнения
+OBJ=Bit07Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit07Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit07Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit07Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit07Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit07Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit07Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit07Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit07Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit07Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit07Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit07Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: авар.максимальная скорость заполнения исчезла
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: авар.максимальная скорость заполнения
+OBJ=Bit08Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit08Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit08Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit08Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit08Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit08Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit08Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit08Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit08Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit08Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit08Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit08Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: измер.технол.достоверно
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: измер.технол.недостоверно
+OBJ=Bit13Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit13Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit13Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit13Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit13Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit13Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit13Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit13Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit13Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit13Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit13Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit13Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+Q0= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: измерение достоверно
+Q1= d=1 b=1 l=1 f=0 t=14  w=1 cf=4 cb=2 td=1 s=%Q130: измерение недостоверно
+OBJ=Bit14Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_Status
+OBJ=Bit14Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_Status
+OBJ=Bit14Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_Status
+OBJ=Bit14Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_Status
+OBJ=Bit14Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_Status
+OBJ=Bit14Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_Status
+OBJ=Bit14Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_Status
+OBJ=Bit14Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_Status
+OBJ=Bit14Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_Status
+OBJ=Bit14Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_Status
+OBJ=Bit14Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_Status
+OBJ=Bit14Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_Status
+
+
+# control words
+
+Q0=  E0
+Q1=  d=1 b=0 l=1 f=1 t=12  w=1 cf=16 cb=2 td=1 s=Оператор! %Q130: измерение заместить
+Q2=  d=1 b=0 l=1 f=1 t=12  w=1 cf=16 cb=2 td=1 s=Оператор! %Q130: измерение не замещ.
+Q3=  d=1 b=0 l=1 f=1 t=12  w=1 cf=16 cb=2 td=1 s=Оператор! %Q130: измерение запретить
+Q4=  d=1 b=0 l=1 f=1 t=12  w=1 cf=16 cb=2 td=1 s=Оператор! %Q130: измерение разрешить
+OBJ=LevelOpCtwdSet ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_CtrWrdSet1
+OBJ=LevelOpCtwdSet ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_CtrWrdSet2
+OBJ=LevelOpCtwdSet ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_CtrWrdSet2
+
+
+Q0= d=1 b=1 l=1 f=0 t=13  w=1 cf=4 cb=2 td=1 s=%Q130: измерение разрешено
+Q1= d=1 b=1 l=1 f=0 t=13  w=1 cf=4 cb=2 td=1 s=%Q130: измерение запрещено  							
+OBJ=Bit01Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_CtrWrd
+OBJ=Bit01Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_CtrWrd
+
+Q0= d=1 b=1 l=1 f=0 t=13  w=1 cf=4 cb=2 td=1 s=%Q130: измерение не замещено
+Q1= d=1 b=1 l=1 f=0 t=13  w=1 cf=4 cb=2 td=1 s=%Q130: измерение замещено  							
+OBJ=Bit02Arg+- ARG=M2_YT901_Name TYP=16,10   PAR=M2_YT901_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT902_Name TYP=16,10   PAR=M2_YT902_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT903_Name TYP=16,10   PAR=M2_YT903_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT904_Name TYP=16,10   PAR=M2_YT904_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT905_Name TYP=16,10   PAR=M2_YT905_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT906_Name TYP=16,10   PAR=M2_YT906_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT907_Name TYP=16,10   PAR=M2_YT907_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT908_Name TYP=16,10   PAR=M2_YT908_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT909_Name TYP=16,10   PAR=M2_YT909_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT910_Name TYP=16,10   PAR=M2_YT910_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT925_Name TYP=16,10   PAR=M2_YT925_CtrWrd
+OBJ=Bit02Arg+- ARG=M2_YT926_Name TYP=16,10   PAR=M2_YT926_CtrWrd
+
+

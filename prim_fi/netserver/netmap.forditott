@@ -1,0 +1,4 @@
+#node net IP/PORT       tcon    tnet  	tvc
+2   1   10.0.0.35/3101   10      20      40  "server"
+1   1   10.0.0.45/3101   10      20      40  "operator_1"
+

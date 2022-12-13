@@ -1,0 +1,19 @@
+echo =====================================
+echo = This script saves the application
+echo = as "/home/prim_fi/prim_fi_devel.<Date>.<Time>.tgz"
+echo = Press Y to continue
+echo ========================
+read ans
+if test $ans = Y || test $ans = y; then
+   echo Saving the application...
+else
+   echo Exiting
+   exit
+fi
+
+DateTime=$(date "+%Y%m%d.%H%M%S")
+
+echo /home/prim_fi/prim_fi_devel.$DateTime.tgz
+pax -wv /prim_fi_devel | gzip -cv > /home/prim_fi/prim_fi_devel.$DateTime.tgz
+#pax -wv -b4m /Dmon | gzip -cv > /home/kusch/dmon41A.tgz
+

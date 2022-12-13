@@ -1,0 +1,42 @@
+# Example setup file for printers.
+# This file assumes a PostScript printer on /dev/par
+# The following logical printers are defined:
+#   txt:   prints text files in simple courier font, 2 pages per page.
+#	doc:   prints formatted text files in Times-Roman
+#   ps:    sends files to printer as they are submitted,
+#            ie: assumes file is PostScript
+#[txt]
+#	ta=lpt
+#	co=pr -h"$(fname)" $(spfile) | lps -F0 -M2 > $(device)
+
+[doc]
+	ta=lpt
+	co=lps -F4 $(spfile) > $(device)
+
+[ps]
+	ta=lpt
+	co=cat $(spfile) > $(device)
+
+[txt]
+    ta=null
+	ci=tr "[.\12.]" "[.\15\12.]" < $(fname) > $(spfile)
+   co=cat /prim_fi/bin/hpsetfont.txt $(spfile) | /usr/ucb/lpr -P lp
+    #co=cat /prim_fitf/bin/hpsetfont.txt $(spfile) | tr "[.\12.]" "[.\15\12.]" | /usr/ucb/lpr -P lp
+
+[txtlog]
+    ta=null
+    #qn=txt
+   ci=/prim_fitf/bin/coll_page < $(fname) | tr "[.\12.]" "[.\15\12.]" > $(spfile)
+    co=/prim_fitf/bin/printlogger $(spfile) /prim_fitf/bin/hpsetfont.txt "/usr/ucb/lpr -P lp"
+
+[picture]
+    ta=null
+	 ci=mv `cat $(fname)` $(spfile)
+	 co=lpr -P lp $(spfile)
+
+[-lpt]
+	dv=/dev/par
+
+[-null]
+    dv=/dev/null
+

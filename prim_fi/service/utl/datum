@@ -1,0 +1,9 @@
+echo "datum beallitas"
+echo "usage:  datum MMDDhhmmYY"
+echo   MM: honap  (01-12)
+echo   DD: nap    (01-31)
+echo   hh: ora    (00-23)
+echo   mm: perc   (00-60)
+echo   YY: ev     (1900-hoz adodik hozza)
+date $1
+rtc -sl hw

@@ -1,0 +1,34 @@
+HEADER:	
+	SIZE:	height=6600 width=11110
+	COLORS:	bkgd=20
+END
+
+#==================== QW_NUMBER (DG0_0) ====================
+
+TEXT:	ST1500_1500
+	POS:	row=1909 col=5291
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 
+	STRING:	str="****"
+
+END
+
+DIGIT:	DG0_0
+	POS:	row=1859 col=5291
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=4 precision=1 low=0.000 high=100.000 min=0.000 max=100.000 delta=1.000
+	FMT:	fmt=-CT
+END
+
+
+#number of elements: 1
+
+
+#     ########## 1 warnings ##########

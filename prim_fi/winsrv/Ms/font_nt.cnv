@@ -1,0 +1,658 @@
+#################################################################
+# Font conversion table of Graphics Window Server for WindowsNT #
+#################################################################
+
+
+# English:
+
+#PCterm,height:12       en_PCterm12,height:12
+#PCterm,height:14       en_PCterm14,height:14
+#System,height:11       en_System11,height:11
+#NOFACE                         en_PCterm12,height:12
+#$DEFAULT                       en_PCterm14,height:14
+#$NUMBER_SCALE          en_PCterm12,height:12
+#$TREND_MARK_CHAR       en_PCterm14,height:14
+#$MENU                          en_PCterm14,height:14
+
+
+# Hungarian:
+
+#PCterm,height:12	hu_PCterm12,height:12
+#PCterm,height:14	hu_PCterm14,height:14
+#System,height:11	hu_System11,height:11
+#NOFACE				hu_PCterm12,height:12
+#$DEFAULT			hu_PCterm14,height:14
+#$NUMBER_SCALE		hu_PCterm12,height:12
+#$TREND_MARK_CHAR	hu_PCterm14,height:14
+#$MENU				hu_PCterm14,height:14
+
+
+# Cyrillic - ISO8859-5:
+
+#PCterm,height:12        ru_terminal12,height:12
+#PCterm,height:14        ru_terminal14,height:14
+#PCterm,height:20        ru_terminal19,height:19
+#System                          ru_terminal11b,height:11,weight:10
+#NOFACE                          ru_terminal12,height:12
+#$DEFAULT                        ru_terminal14,height:14
+#$NUMBER_SCALE           ru_terminal12,height:12
+#$TREND_MARK_CHAR        ru_terminal14,height:14
+#$MENU                           ru_terminal14,height:14
+
+
+# Cyrillic - IBM866:
+
+#PCterm,height:12        ru_866terminal12,height:12
+#PCterm,height:14        ru_866terminal14,height:14
+#PCterm,height:20        ru_866terminal19,height:19
+#System                          ru_866terminal11b,height:11,weight:10
+#NOFACE                          ru_866terminal12,height:12
+#$DEFAULT                        ru_866terminal14,height:14
+#$NUMBER_SCALE           ru_866terminal12,height:12
+#$TREND_MARK_CHAR        ru_866terminal14,height:14
+#$MENU                           ru_866terminal14,height:14
+
+
+# Cyrillic - Windows-1251:
+
+PCterm,height:12       "Lucida Console",height:12,width:6,translation:1251
+PCterm,height:14       "Lucida Console",height:14,translation:1251
+PCterm,height:20       "Lucida Console",height:20,translation:1251
+System,height:11       "Lucida Console",height:11,translation:1251,weight:10
+#System,height:11       "Lucida Console",height:11,width:7,translation:1251,weight:10
+NOFACE                 "Lucida Console",height:12,width:6,translation:1251
+$DEFAULT               "Lucida Console",height:14,translation:1251
+$NUMBER_SCALE          "Lucida Console",height:12,width:6,translation:1251
+$TREND_MARK_CHAR       "Lucida Console",height:14,translation:1251
+$MENU                  "Lucida Console",height:14,translation:1251
+
+
+# Orosz PCterm es System fontokkal nem rendelkezunk (nincsen ru_PCterm,
+# sem ru_System). Helyettuk a hasonlo parameterekkel biro orosz terminal
+# fontok hasznalhatok a kovetkezokeppen:
+#
+# There are no such things as cyrillic PCterm or System fonts (neither
+# ru_PCterm, nor ru_System exists). Instead, cyrillic terminal fonts can be
+# used, as follows:
+#
+# ISO 8859-5:
+#
+# PCterm,height:12	 ru_terminal12,height:12
+# PCterm,height:14	 ru_terminal14,height:14
+# System			 ru_terminal11b,height:11,weight:10
+#
+# IBM866:
+#
+# PCterm,height:12	 ru_866terminal12,height:12
+# PCterm,height:14	 ru_866terminal14,height:14
+# System			 ru_866terminal11b,height:11,weight:10
+
+
+###############################################
+# Font conversion for ScadaSys's applications #
+###############################################
+
+# English fonts		- ISO8859-1
+
+char,height:10                                          en_char10
+char,height:10,style:I 				en_char10i
+char,height:10,weight:10,style:I 	en_char10bi
+char,height:11,weight:10 			en_char11b
+char,height:12 						en_char12
+char,height:12,weight:10,style:I 	en_char12bi
+char,height:13,weight:10 			en_char13b
+char,height:13,style:I 				en_char13i
+char,height:15 						en_char15
+char,height:15,weight:10 			en_char15b
+char,height:15,style:I 				en_char15i
+char,height:15,weight:10,style:I 	en_char15bi
+char,height:17 						en_char17
+char,height:17,weight:10 			en_char17b
+char,height:17,weight:10,style:I 	en_char17bi
+char,height:18,style:I 				en_char18i
+char,height:22 						en_char22
+char,height:22,weight:10 			en_char22b
+char,height:22,weight:10,style:I 	en_char22bi
+char,height:23,style:I 				en_char23i
+char,height:30 						en_char30
+char,height:30,weight:10 			en_char30b
+char,height:30,style:I 				en_char30i
+char,height:30,weight:10,style:I 	en_char30bi
+char,height:40 						en_char40
+char,height:40,weight:10 			en_char40b
+char,height:40,style:I 				en_char40i
+char,height:40,weight:10,style:I 	en_char40bi
+char,height:44 						en_char44
+char,height:44,weight:10 			en_char44b
+char,height:44,weight:10,style:I 	en_char44bi
+char,height:46,style:I 				en_char46i
+char,height:60			 			en_char60
+char,height:60,weight:10 			en_char60b
+char,height:60,style:I 				en_char60i
+char,height:60,weight:10,style:I 	en_char60bi
+char,height:80 						en_char80
+char,height:80,weight:10 			en_char80b
+char,height:80,style:I 				en_char80i
+char,height:80,weight:10,style:I 	en_char80bi
+
+cour,height:09 						en_cour09
+cour,height:09,weight:10 			en_cour09b
+cour,height:09,style:I 				en_cour09i
+cour,height:09,weight:10,style:I 	en_cour09bi
+cour,height:11 						en_cour11
+cour,height:11,weight:10 			en_cour11b
+cour,height:11,style:I	 			en_cour11i
+cour,height:11,weight:10,style:I 	en_cour11bi
+cour,height:14 						en_cour14
+cour,height:14,weight:10 			en_cour14b
+cour,height:14,style:I	 			en_cour14i
+cour,height:14,weight:10,style:I 	en_cour14bi
+cour,height:16 						en_cour16
+cour,height:16,weight:10 			en_cour16b
+cour,height:16,style:I 				en_cour16i
+cour,height:16,weight:10,style:I 	en_cour16bi
+cour,height:19 						en_cour19
+cour,height:19,style:I 				en_cour19i
+cour,height:20,weight:10 			en_cour20b
+cour,height:20,weight:10,style:I	en_cour20bi
+cour,height:24 						en_cour24
+cour,height:24,style:I 				en_cour24i
+cour,height:25,weight:10 			en_cour25b
+cour,height:25,weight:10,style:I	en_cour25bi
+cour,height:38 						en_cour38
+cour,height:38,style:I 				en_cour38i
+cour,height:40,weight:10 			en_cour40b
+cour,height:40,weight:10,style:I	en_cour40bi
+cour,height:48 						en_cour48
+cour,height:48,style:I 				en_cour48i
+cour,height:50,weight:10 			en_cour50b
+cour,height:50,weight:10,style:I 	en_cour50bi
+
+helv,height:09 						en_helv09
+helv,height:09,weight:10 			en_helv09b
+helv,height:09,style:I 				en_helv09i
+helv,height:09,weight:10,style:I 	en_helv09bi
+helv,height:13 						en_helv13
+helv,height:13,weight:10 			en_helv13b
+helv,height:13,style:I 				en_helv13i
+helv,height:13,weight:10,style:I 	en_helv13bi
+helv,height:15 						en_helv15
+helv,height:15,weight:10 			en_helv15b
+helv,height:15,style:I 				en_helv15i
+helv,height:15,weight:10,style:I	en_helv15bi
+helv,height:17 						en_helv17
+helv,height:17,weight:10 			en_helv17b
+helv,height:17,style:I 				en_helv17i
+helv,height:17,weight:10,style:I 	en_helv17bi
+helv,height:22 						en_helv22
+helv,height:22,weight:10 			en_helv22b
+helv,height:22,style:I 				en_helv22i
+helv,height:22,weight:10,style:I	en_helv22bi
+helv,height:29 						en_helv29
+helv,height:29,weight:10 			en_helv29b
+helv,height:29,style:I 				en_helv29i
+helv,height:29,weight:10,style:I 	en_helv29bi
+helv,height:44 						en_helv44
+helv,height:44,weight:10 			en_helv44b
+helv,height:44,style:I 				en_helv44i
+helv,height:44,weight:10,style:I 	en_helv44bi
+helv,height:58 						en_helv58
+helv,height:58,weight:10 			en_helv58b
+helv,height:58,style:I 				en_helv58i
+helv,height:58,weight:10,style:I 	en_helv58bi
+
+ncen,height:10 						en_ncen10
+ncen,height:10,weight:10 			en_ncen10b
+ncen,height:10,style:I 				en_ncen10i
+ncen,height:10,weight:10,style:I 	en_ncen10bi
+ncen,height:12 						en_ncen12
+ncen,height:12,weight:10 			en_ncen12b
+ncen,height:12,style:I 				en_ncen12i
+ncen,height:12,weight:10,style:I 	en_ncen12bi
+ncen,height:15 						en_ncen15
+ncen,height:15,weight:10 			en_ncen15b
+ncen,height:15,style:I 				en_ncen15i
+ncen,height:15,weight:10,style:I 	en_ncen15bi
+ncen,height:17 						en_ncen17
+ncen,height:17,style:I 				en_ncen17i
+ncen,height:17,weight:10,style:I 	en_ncen17bi
+ncen,height:18,weight:10 			en_ncen18b
+ncen,height:22 						en_ncen22
+ncen,height:22,weight:10 			en_ncen22b
+ncen,height:22,style:I 				en_ncen22i
+ncen,height:22,weight:10,style:I 	en_ncen22bi
+ncen,height:28 						en_ncen28
+ncen,height:28,style:I 				en_ncen28i
+ncen,height:29,weight:10 			en_ncen29b
+ncen,height:29,weight:10,style:I 	en_ncen29bi
+ncen,height:44 						en_ncen44
+ncen,height:44,weight:10 			en_ncen44b
+ncen,height:44,style:I				en_ncen44i
+ncen,height:44,weight:10,style:I 	en_ncen44bi
+ncen,height:56 						en_ncen56
+ncen,height:56,style:I 				en_ncen56i
+ncen,height:58,weight:10 			en_ncen58b
+ncen,height:58,weight:10,style:I 	en_ncen58bi
+
+oldeng,height:14 					en_oldeng14
+
+terminal,height:07					en_terminal07
+terminal,height:10					en_terminal10
+terminal,height:12					en_terminal12
+terminal,height:13					en_terminal13
+terminal,height:13,weight:10		en_terminal13b
+terminal,height:14					en_terminal14
+terminal,height:15					en_terminal15
+terminal,height:20					en_terminal20
+terminal,height:26					en_terminal26
+terminal,height:30					en_terminal30
+
+times,height:10 					en_times10
+times,height:10,weight:10 			en_times10b
+times,height:10,style:I 			en_times10i
+times,height:10,weight:10,style:I	en_times10bi
+times,height:11 					en_times11
+times,height:12,weight:10 			en_times12b
+times,height:12,style:I 			en_times12i
+times,height:13,weight:10,style:I 	en_times13bi
+times,height:14 					en_times14
+times,height:14,style:I 			en_times14i
+times,height:14,weight:10,style:I 	en_times14bi
+times,height:15,weight:10 			en_times15b
+times,height:16 					en_times16
+times,height:16,weight:10 			en_times16b
+times,height:16,style:I 			en_times16i
+times,height:16,weight:10,style:I 	en_times16bi
+times,height:21 					en_times21
+times,height:21,weight:10 			en_times21b
+times,height:21,weight:10,style:I 	en_times21bi
+times,height:22,style:I 			en_times22i
+times,height:28 					en_times28
+times,height:28,weight:10,style:I	en_times28bi
+times,height:29,weight:10 			en_times29b
+times,height:29,style:I 			en_times29i
+times,height:42 					en_times42
+times,height:42,weight:10 			en_times42b
+times,height:42,weight:10,style:I 	en_times42bi
+times,height:44,style:I 			en_times44i
+times,height:56 					en_times56
+times,height:56,weight:10,style:I	en_times56bi
+times,height:58,weight:10 			en_times58b
+times,height:58,style:I 			en_times58i
+
+vga,height:16 						en_vga16
+vga,height:24 						en_vga24
+
+# Hungarian fonts	- ISO8859-2
+
+H-PCterm,height:12					hu_PCterm12
+H-PCterm,height:14					hu_PCterm14
+H-System,height:11					hu_System11
+H-System,height:15					hu_System15
+
+H-char,height:10					hu_char10
+H-char,height:10,style:I			hu_char10i
+H-char,height:10,weight:10,style:I	hu_char10bi
+H-char,height:11,weight:10			hu_char11b
+H-char,height:12					hu_char12
+H-char,height:12,weight:10,style:I	hu_char12bi
+H-char,height:13,weight:10			hu_char13b
+H-char,height:13,style:I			hu_char13i
+H-char,height:15					hu_char15
+H-char,height:15,weight:10			hu_char15b
+H-char,height:15,style:I			hu_char15i
+H-char,height:15,weight:10,style:I	hu_char15bi
+H-char,height:17					hu_char17
+H-char,height:17,weight:10			hu_char17b
+H-char,height:17,weight:10,style:I	hu_char17bi
+H-char,height:18,style:I			hu_char18i
+H-char,height:22					hu_char22
+H-char,height:22,weight:10			hu_char22b
+H-char,height:22,weight:10,style:I	hu_char22bi
+H-char,height:23,style:I			hu_char23i
+H-char,height:30					hu_char30
+H-char,height:30,weight:10			hu_char30b
+H-char,height:30,style:I			hu_char30i
+H-char,height:30,weight:10,style:I	hu_char30bi
+H-char,height:40					hu_char40
+H-char,height:40,weight:10			hu_char40b
+H-char,height:40,style:I			hu_char40i
+H-char,height:40,weight:10,style:I	hu_char40bi
+H-char,height:44					hu_char44
+H-char,height:44,weight:10			hu_char44b
+H-char,height:44,weight:10,style:I	hu_char44bi
+H-char,height:46,style:I			hu_char46i
+H-char,height:60					hu_char60
+H-char,height:60,weight:10			hu_char60b
+H-char,height:60,style:I			hu_char60i
+H-char,height:60,weight:10,style:I	hu_char60bi
+H-char,height:80					hu_char80
+H-char,height:80,weight:10			hu_char80b
+H-char,height:80,style:I			hu_char80i
+H-char,height:80,weight:10,style:I	hu_char80bi
+
+H-cour,height:09					hu_cour09
+H-cour,height:09,weight:10			hu_cour09b
+H-cour,height:09,style:I			hu_cour09i
+H-cour,height:09,weight:10,style:I	hu_cour09bi
+H-cour,height:11					hu_cour11
+H-cour,height:11,weight:10			hu_cour11b
+H-cour,height:11,style:I			hu_cour11i
+H-cour,height:11,weight:10,style:I	hu_cour11bi
+H-cour,height:14					hu_cour14
+H-cour,height:14,weight:10			hu_cour14b
+H-cour,height:14,style:I			hu_cour14i
+H-cour,height:14,weight:10,style:I	hu_cour14bi
+H-cour,height:16					hu_cour16
+H-cour,height:16,weight:10			hu_cour16b
+H-cour,height:16,style:I			hu_cour16i
+H-cour,height:16,weight:10,style:I	hu_cour16bi
+H-cour,height:19					hu_cour19
+H-cour,height:19,style:I			hu_cour19i
+H-cour,height:20,weight:10			hu_cour20b
+H-cour,height:20,weight:10,style:I	hu_cour20bi
+H-cour,height:24					hu_cour24
+H-cour,height:24,style:I			hu_cour24i
+H-cour,height:25,weight:10			hu_cour25b
+H-cour,height:25,weight:10,style:I	hu_cour25bi
+H-cour,height:38					hu_cour38
+H-cour,height:38,style:I			hu_cour38i
+H-cour,height:40,weight:10			hu_cour40b
+H-cour,height:40,weight:10,style:I	hu_cour40bi
+H-cour,height:48					hu_cour48
+H-cour,height:48,style:I			hu_cour48i
+H-cour,height:50,weight:10			hu_cour50b
+H-cour,height:50,weight:10,style:I	hu_cour50bi
+
+H-helv,height:09					hu_helv09
+H-helv,height:09,weight:10			hu_helv09b
+H-helv,height:09,style:I			hu_helv09i
+H-helv,height:09,weight:10,style:I	hu_helv09bi
+H-helv,height:13					hu_helv13
+H-helv,height:13,weight:10			hu_helv13b
+H-helv,height:13,style:I			hu_helv13i
+H-helv,height:13,weight:10,style:I	hu_helv13bi
+H-helv,height:15					hu_helv15
+H-helv,height:15,weight:10			hu_helv15b
+H-helv,height:15,style:I			hu_helv15i
+H-helv,height:15,weight:10,style:I	hu_helv15bi
+H-helv,height:17					hu_helv17
+H-helv,height:17,weight:10			hu_helv17b
+H-helv,height:17,style:I			hu_helv17i
+H-helv,height:17,weight:10,style:I	hu_helv17bi
+H-helv,height:22					hu_helv22
+H-helv,height:22,weight:10			hu_helv22b
+H-helv,height:22,style:I			hu_helv22i
+H-helv,height:22,weight:10,style:I	hu_helv22bi
+H-helv,height:29					hu_helv29
+H-helv,height:29,weight:10			hu_helv29b
+H-helv,height:29,style:I			hu_helv29i
+H-helv,height:29,weight:10,style:I	hu_helv29bi
+H-helv,height:44					hu_helv44
+H-helv,height:44,weight:10			hu_helv44b
+H-helv,height:44,style:I			hu_helv44i
+H-helv,height:44,weight:10,style:I	hu_helv44bi
+H-helv,height:58					hu_helv58
+H-helv,height:58,weight:10			hu_helv58b
+H-helv,height:58,style:I			hu_helv58i
+H-helv,height:58,weight:10,style:I	hu_helv58bi
+
+H-ncen,height:10 					hu_ncen10
+H-ncen,height:10,weight:10 			hu_ncen10b
+H-ncen,height:10,style:I 			hu_ncen10i
+H-ncen,height:10,weight:10,style:I 	hu_ncen10bi
+H-ncen,height:12 					hu_ncen12
+H-ncen,height:12,weight:10 			hu_ncen12b
+H-ncen,height:12,style:I 			hu_ncen12i
+H-ncen,height:12,weight:10,style:I 	hu_ncen12bi
+H-ncen,height:15 					hu_ncen15
+H-ncen,height:15,weight:10 			hu_ncen15b
+H-ncen,height:15,style:I 			hu_ncen15i
+H-ncen,height:15,weight:10,style:I 	hu_ncen15bi
+H-ncen,height:17 					hu_ncen17
+H-ncen,height:17,style:I 			hu_ncen17i
+H-ncen,height:17,weight:10,style:I 	hu_ncen17bi
+H-ncen,height:18,weight:10 			hu_ncen18b
+H-ncen,height:22 					hu_ncen22
+H-ncen,height:22,weight:10 			hu_ncen22b
+H-ncen,height:22,style:I 			hu_ncen22i
+H-ncen,height:22,weight:10,style:I 	hu_ncen22bi
+H-ncen,height:28 					hu_ncen28
+H-ncen,height:28,style:I 			hu_ncen28i
+H-ncen,height:29,weight:10 			hu_ncen29b
+H-ncen,height:29,weight:10,style:I 	hu_ncen29bi
+H-ncen,height:44 					hu_ncen44
+H-ncen,height:44,weight:10 			hu_ncen44b
+H-ncen,height:44,style:I			hu_ncen44i
+H-ncen,height:44,weight:10,style:I 	hu_ncen44bi
+H-ncen,height:56 					hu_ncen56
+H-ncen,height:56,style:I 			hu_ncen56i
+H-ncen,height:58,weight:10 			hu_ncen58b
+H-ncen,height:58,weight:10,style:I 	hu_ncen58bi
+
+H-times,height:10 					hu_times10
+H-times,height:10,weight:10 		hu_times10b
+H-times,height:10,style:I 			hu_times10i
+H-times,height:10,weight:10,style:I	hu_times10bi
+H-times,height:11 					hu_times11
+H-times,height:12,weight:10 		hu_times12b
+H-times,height:12,style:I 			hu_times12i
+H-times,height:13,weight:10,style:I	hu_times13bi
+H-times,height:14 					hu_times14
+H-times,height:14,style:I 			hu_times14i
+H-times,height:14,weight:10,style:I	hu_times14bi
+H-times,height:15,weight:10 		hu_times15b
+H-times,height:16 					hu_times16
+H-times,height:16,weight:10 		hu_times16b
+H-times,height:16,style:I 			hu_times16i
+H-times,height:16,weight:10,style:I	hu_times16bi
+H-times,height:21 					hu_times21
+H-times,height:21,weight:10 		hu_times21b
+H-times,height:21,weight:10,style:I	hu_times21bi
+H-times,height:22,style:I 			hu_times22i
+H-times,height:28 					hu_times28
+H-times,height:28,weight:10,style:I	hu_times28bi
+H-times,height:29,weight:10 		hu_times29b
+H-times,height:29,style:I 			hu_times29i
+H-times,height:42 					hu_times42
+H-times,height:42,weight:10 		hu_times42b
+H-times,height:42,weight:10,style:I	hu_times42bi
+H-times,height:44,style:I 			hu_times44i
+H-times,height:56 					hu_times56
+H-times,height:56,weight:10,style:I	hu_times56bi
+H-times,height:58,weight:10 		hu_times58b
+H-times,height:58,style:I 			hu_times58i
+
+H-cour_16L,height:11,weight:10		hu_Lcour11b
+
+# Cyrillic fonts	- ISO8859-5
+
+cour_5,height:08					ru_cour10,height:10
+cour_5,height:08,weight:10			ru_cour10b,height:10
+cour_5,height:08,style:I			ru_cour10i,height:10
+cour_5,height:08,weight:10,style:I	ru_cour10bi,height:10
+cour_5,height:10					ru_cour11,height:11
+cour_5,height:10,weight:10 			ru_cour12b,height:12
+cour_5,height:10,style:I	 		ru_cour11i,height:11
+cour_5,height:10,weight:10,style:I	ru_cour11bi,height:11
+cour_5,height:12 					ru_cour14,height:14
+cour_5,height:12,weight:10 			ru_cour13b,height:13
+cour_5,height:12,style:I		 	ru_cour14i,height:14
+cour_5,height:12,weight:10,style:I	ru_cour14bi,height:14
+cour_5,height:14	 				ru_cour15,height:15
+cour_5,height:14,weight:10			ru_cour15b,height:15
+cour_5,height:14,style:I 			ru_cour15i,height:15
+cour_5,height:14,weight:10,style:I 	ru_cour15bi,height:15
+cour_5,height:18 					ru_cour19,height:19
+cour_5,height:18,weight:10	 		ru_cour19b,height:19
+cour_5,height:18,style:I			ru_cour19i,height:19
+cour_5,height:18,weight:10,style:I 	ru_cour19bi,height:19
+cour_5,height:24		 			ru_cour25,height:25
+cour_5,height:24,weight:10 			ru_cour27b,height:27
+cour_5,height:24,style:I 			ru_cour26i,height:26
+cour_5,height:24,weight:10,style:I	ru_cour26bi,height:26
+cour_5,height:36 					ru_cour38,height:38
+cour_5,height:36,weight:10 			ru_cour40b,height:40
+cour_5,height:36,style:I	 		ru_cour38i,height:38
+cour_5,height:36,weight:10,style:I	ru_cour39bi,height:39
+cour_5,height:50 					ru_cour49,height:49
+cour_5,height:50,weight:10	 		ru_cour53b,height:53
+cour_5,height:50,style:I 			ru_cour50i,height:50
+cour_5,height:50,weight:10,style:I	ru_cour52bi,height:52
+
+terminal_5,height:11,weight:10 		ru_terminal11b,height:11
+terminal_5,height:12 				ru_terminal12,height:12
+terminal_5,height:14 				ru_terminal14,height:14
+terminal_5,height:14,weight:10 		ru_terminal14b,height:14
+terminal_5,height:18 				ru_terminal19,height:19
+terminal_5,height:18,weight:10		ru_terminal19b,height:19
+terminal_5,height:28 				ru_terminal30,height:30
+terminal_5,height:28,weight:10		ru_terminal28b,height:28
+terminal_5,height:36 				ru_terminal36,height:36
+terminal_5,height:36,weight:10		ru_terminal38b,height:38
+terminal_5,height:50 				ru_terminal48,height:48
+terminal_5,height:50,weight:10		ru_terminal50b,height:50
+
+terminal_5w,height:14 				ru_terminal_w14,height:14
+terminal_5w,height:14,weight:10		ru_terminal_w15b,height:15
+terminal_5w,height:18 				ru_terminal_w19,height:19
+terminal_5w,height:18,weight:10 	ru_terminal_w19b,height:19
+terminal_5w,height:25 				ru_terminal_w25,height:25
+terminal_5w,height:25,weight:10		ru_terminal_w25b,height:25
+
+times_5,height:10 					ru_times13,height:13
+times_5,height:10,weight:10 		ru_times12b,height:12
+times_5,height:10,style:I 			ru_times13i,height:13
+times_5,height:10,weight:10,style:I ru_times12bi,height:12
+times_5,height:12 					ru_times15,height:15
+times_5,height:12,weight:10 		ru_times15b,height:15
+times_5,height:12,style:I 			ru_times16i,height:16
+times_5,height:12,weight:10,style:I ru_times15bi,height:15
+times_5,height:14 					ru_times17,height:17
+times_5,height:14,weight:10 		ru_times17b,height:17
+times_5,height:14,style:I 			ru_times17i,height:17
+times_5,height:14,weight:10,style:I	ru_times17bi,height:17
+times_5,height:18 					ru_times21,height:21
+times_5,height:18,weight:10 		ru_times21b,height:21
+times_5,height:18,style:I 			ru_times21i,height:21
+times_5,height:18,weight:10,style:I	ru_times21bi,height:21
+times_5,height:24 					ru_times28,height:28
+times_5,height:24,weight:10 		ru_times29b,height:29
+times_5,height:24,style:I 			ru_times28i,height:28
+times_5,height:24,weight:10,style:I	ru_times29bi,height:29
+times_5,height:36 					ru_times43,height:43
+times_5,height:36,weight:10 		ru_times43b,height:43
+times_5,height:36,style:I 			ru_times42i,height:42
+times_5,height:36,weight:10,style:I	ru_times42bi,height:42
+times_5,height:50 					ru_times55,height:55
+times_5,height:50,weight:10 		ru_times55b,height:55
+times_5,height:50,style:I 			ru_times56i,height:56
+times_5,height:50,weight:10,style:I ru_times54bi,height:54
+
+cour_5_12L,height:09,weight:10		ru_Lcour09b
+cour_5_14L,height:09				ru_Lcour09
+
+# Cyrillic fonts	- IBM866
+
+cour_866,height:08						ru_866cour10,height:10
+cour_866,height:08,weight:10			ru_866cour10b,height:10
+cour_866,height:08,style:I				ru_866cour10i,height:10
+cour_866,height:08,weight:10,style:I	ru_866cour10bi,height:10
+cour_866,height:10						ru_866cour11,height:11
+cour_866,height:10,weight:10 			ru_866cour12b,height:12
+cour_866,height:10,style:I	 			ru_866cour11i,height:11
+cour_866,height:10,weight:10,style:I	ru_866cour11bi,height:11
+cour_866,height:12 						ru_866cour14,height:14
+cour_866,height:12,weight:10 			ru_866cour13b,height:13
+cour_866,height:12,style:I		 		ru_866cour14i,height:14
+cour_866,height:12,weight:10,style:I	ru_866cour14bi,height:14
+cour_866,height:14	 					ru_866cour15,height:15
+cour_866,height:14,weight:10			ru_866cour15b,height:15
+cour_866,height:14,style:I 				ru_866cour15i,height:15
+cour_866,height:14,weight:10,style:I 	ru_866cour15bi,height:15
+cour_866,height:18 						ru_866cour19,height:19
+cour_866,height:18,weight:10	 		ru_866cour19b,height:19
+cour_866,height:18,style:I				ru_866cour19i,height:19
+cour_866,height:18,weight:10,style:I 	ru_866cour19bi,height:19
+cour_866,height:24		 				ru_866cour25,height:25
+cour_866,height:24,weight:10 			ru_866cour27b,height:27
+cour_866,height:24,style:I 				ru_866cour26i,height:26
+cour_866,height:24,weight:10,style:I	ru_866cour26bi,height:26
+cour_866,height:36 						ru_866cour38,height:38
+cour_866,height:36,weight:10 			ru_866cour40b,height:40
+cour_866,height:36,style:I	 			ru_866cour38i,height:38
+cour_866,height:36,weight:10,style:I	ru_866cour39bi,height:39
+cour_866,height:50 						ru_866cour49,height:49
+cour_866,height:50,weight:10	 		ru_866cour53b,height:53
+cour_866,height:50,style:I 				ru_866cour50i,height:50
+cour_866,height:50,weight:10,style:I	ru_866cour52bi,height:52
+
+terminal_866,height:11,weight:10 		ru_866terminal11b,height:11
+terminal_866,height:12 					ru_866terminal12,height:12
+terminal_866,height:14 					ru_866terminal14,height:14
+terminal_866,height:14,weight:10 		ru_866terminal14b,height:14
+terminal_866,height:18 					ru_866terminal19,height:19
+terminal_866,height:18,weight:10		ru_866terminal19b,height:19
+terminal_866,height:28 					ru_866terminal30,height:30
+terminal_866,height:28,weight:10		ru_866terminal28b,height:28
+terminal_866,height:36 					ru_866terminal36,height:36
+terminal_866,height:36,weight:10		ru_866terminal38b,height:38
+terminal_866,height:50 					ru_866terminal48,height:48
+terminal_866,height:50,weight:10		ru_866terminal50b,height:50
+
+terminal_866w,height:14 				ru_866terminal_w14,height:14
+terminal_866w,height:14,weight:10		ru_866terminal_w15b,height:15
+terminal_866w,height:18 				ru_866terminal_w19,height:19
+terminal_866w,height:18,weight:10 		ru_866terminal_w19b,height:19
+terminal_866w,height:25 				ru_866terminal_w25,height:25
+terminal_866w,height:25,weight:10		ru_866terminal_w25b,height:25
+
+times_866,height:10 					ru_866times13,height:13
+times_866,height:10,weight:10 			ru_866times12b,height:12
+times_866,height:10,style:I 			ru_866times13i,height:13
+times_866,height:10,weight:10,style:I	ru_866times12bi,height:12
+times_866,height:12 					ru_866times15,height:15
+times_866,height:12,weight:10 			ru_866times15b,height:15
+times_866,height:12,style:I 			ru_866times16i,height:16
+times_866,height:12,weight:10,style:I	ru_866times15bi,height:15
+times_866,height:14 					ru_866times17,height:17
+times_866,height:14,weight:10 			ru_866times17b,height:17
+times_866,height:14,style:I 			ru_866times17i,height:17
+times_866,height:14,weight:10,style:I	ru_866times17bi,height:17
+times_866,height:18 					ru_866times21,height:21
+times_866,height:18,weight:10 			ru_866times21b,height:21
+times_866,height:18,style:I 			ru_866times21i,height:21
+times_866,height:18,weight:10,style:I	ru_866times21bi,height:21
+times_866,height:24 					ru_866times28,height:28
+times_866,height:24,weight:10 			ru_866times29b,height:29
+times_866,height:24,style:I 			ru_866times28i,height:28
+times_866,height:24,weight:10,style:I	ru_866times29bi,height:29
+times_866,height:36 					ru_866times43,height:43
+times_866,height:36,weight:10 			ru_866times43b,height:43
+times_866,height:36,style:I 			ru_866times42i,height:42
+times_866,height:36,weight:10,style:I	ru_866times42bi,height:42
+times_866,height:50 					ru_866times55,height:55
+times_866,height:50,weight:10 			ru_866times55b,height:55
+times_866,height:50,style:I 			ru_866times56i,height:56
+times_866,height:50,weight:10,style:I	ru_866times54bi,height:54
+
+cour_866_12L,height:09,weight:10		ru_866Lcour09b
+cour_866_14L,height:09					ru_866Lcour09
+
+
+# Cyrillic fonts        - Windows-1251
+
+LC1251          "Lucida Console",translation:1251
+SYSTEM_THIN     "Lucida Console",height:11,width:8,translation:1251
+SYSTEM12        "Lucida Console",height:12,width:8,translation:1251,weight:10
+SYSTEM12N        "Lucida Console",height:12,width:8,translation:1251
+SYSTEM14        "Lucida Console",height:14,width:9,translation:1251,weight:10
+SYSTEM14N        "Lucida Console",height:14,width:9,translation:1251
+SYSTEM20        "Lucida Console",height:20,translation:1251,weight:10
+Anda20B          "Andale Mono",height:20,translation:1251,weight:10
+Anda20N          "Andale Mono",height:20,translation:1251
+
+#########################  MODOSITASOK  ########################
+#03.09.04	NL: Modositasok feljegyzesenek kezdete.
+#04.04.16	NL: Harom dontott font felvetele.
+#04.09.01	NL: IBM866-os font-ok felvetele.

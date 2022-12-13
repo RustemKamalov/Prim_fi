@@ -1,0 +1,2 @@
+echo "USA klaviatura betoltes \a"
+kbd /etc/config/kbd/USA

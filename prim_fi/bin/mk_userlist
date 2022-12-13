@@ -1,0 +1,35 @@
+
+user_file=users.cfg
+
+maxl=$(cat $user_file | wc -l)
+#echo maxl:$maxl
+
+i=1
+while [ $i -le $maxl ]
+do
+  #echo i:$i
+  line=$(awk 'NR=='"$i"' {print $0}' $user_file)
+  #echo line:$line
+  user=$(echo $line | awk '{print $1}')
+  code=$(echo $line | awk '{print $2}')
+  prio=$(echo $line | awk '{print $3}')
+
+  if [ $prio -eq 0 ] 
+    then name='programmer'
+  elif [ $prio -eq 20 ] 
+    then name='engineer'
+  elif [ $prio -eq 50 ] 
+    then name='technolog'
+  elif [ $prio -eq 100 ] 
+    then name='operator'
+  elif [ $prio -eq 254 ] 
+    then name='guest'
+  else name='unknown'
+  fi
+
+  #echo $user $code
+  echo $(monpas i $user $code | awk '{print $1 "\t" $3}') "\tprio:$prio ($name)"
+
+  let i=$i+1
+done
+  

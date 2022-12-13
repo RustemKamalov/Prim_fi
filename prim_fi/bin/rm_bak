@@ -1,0 +1,19 @@
+#!/bin/ksh
+
+if test $# -lt 1
+then
+    DIR=/prim_fi/
+else
+    DIR=$1
+fi
+
+echo removing *.bak *.ori *.$ from $DIR
+
+#find $DIR -name '*.res' | xargs rm -fv {}
+#find $DIR -name '*.err' | xargs rm -fv {}
+find $DIR -name '*.bak' | xargs rm -fv {}
+find $DIR -name '*.bad' | xargs rm -fv {}
+find $DIR -name '*.ori' | xargs rm -fv {}
+find $DIR -name '*.conv' | xargs rm -fv {}
+find $DIR -name '*.$' | xargs rm -fv {}
+find $DIR -name '*.dos' | xargs rm -fv {}

@@ -1,0 +1,21 @@
+<Branch Status In>:
+
+  1.  Open                      kepen
+  2.  Close                     kepen
+  3.  No Communication          kepen
+  4.  Opening                   kepen
+  5.  Closing                   kepen
+  6.  Intermediate              kepen
+
+
+
+  7.  Remote
+  8.  Local
+  9.  Gate Valve in simulation  kepen
+  10. Gate valve failure        kepen
+  11. Not used
+  12. Unsuccessful open
+  13. Not used
+  14. Unsuccessful close
+  15. Alarm                     kepen
+  16. No power

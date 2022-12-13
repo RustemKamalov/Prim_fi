@@ -1,0 +1,280 @@
+HEADER:	
+	SIZE:	height=0 width=0
+	COLORS:	bkgd=2
+END
+
+#==================== QW_RECTANGLE (SR2756_2756) ====================
+
+RECTANGLE:	SR2756_2756
+	POS:	row=2239 col=33
+	COLOR:	color=1 fill=11
+	PEN:	thickness=11
+	SIZE:	height=1082 width=7348
+	FMT:	fmt=dt
+END
+
+#==================== QW_RECTANGLE (DR2764_2764) ====================
+
+RECTANGLE:	DR2764_2764
+	POS:	row=2981 col=6193
+	COLOR:	fill=2
+	OPT:	opts=N
+	PEN:	thickness=11
+	SIZE:	height=209 width=1012
+	FMT:	fmt=dt
+END
+
+#==================== QW_TEXT (DT2729_2729) ====================
+
+TEXT:	DT2729_2729
+	POS:	row=1001 col=3828
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="    …ƒ‘’€–    "
+END
+
+#==================== QW_TEXT (DT2730_2730) ====================
+
+TEXT:	DT2730_2730
+	POS:	row=1331 col=3828
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="      €‹       "
+END
+
+#==================== QW_TEXT (DT2731_2731) ====================
+
+TEXT:	DT2731_2731
+	POS:	row=1661 col=3828
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="‚›•„ ‡ ƒ€› "
+END
+
+#==================== QW_TEXT (ST2732_2732) ====================
+
+TEXT:	ST2732_2732
+	POS:	row=352 col=3135
+	COLOR:	color=5 fill=15
+	OPT:	opts=eRm
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str=" ‘…‚‘ "
+END
+
+#==================== QW_TEXT (DT2748_2748) ====================
+
+TEXT:	DT2748_2748
+	POS:	row=1001 col=814
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="“‘’.‚…… ’.  "
+END
+
+#==================== QW_TEXT (DT2749_2749) ====================
+
+TEXT:	DT2749_2749
+	POS:	row=1991 col=814
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str=" ‘‘’… „“‹…‰  "
+END
+
+#==================== QW_TEXT (DT2750_2750) ====================
+
+TEXT:	DT2750_2750
+	POS:	row=1991 col=3839
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="      ™       "
+END
+
+#==================== QW_TEXT (DT2752_2752) ====================
+
+TEXT:	DT2752_2752
+	POS:	row=1331 col=814
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="’€‹–€ ‚…… –‹€"
+END
+
+#==================== QW_TEXT (DT2753_2753) ====================
+
+TEXT:	DT2753_2753
+	POS:	row=1661 col=814
+	COLOR:	color=10 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str=" €€…’› ’€‹–›  "
+END
+
+#==================== QW_TEXT (DT2754_2754) ====================
+
+TEXT:	DT2754_2754
+	POS:	row=2761 col=187
+	COLOR:	color=1 fill=2
+	OPT:	opts=emESN
+	FONT:	face=System size=121
+	STRING:	str=01234567890123456789012345678901234567890123456789012345678901234567890123456789
+END
+
+#==================== QW_NUMBER (DG2760_2760) ====================
+
+DIGIT:	DG2760_2760
+	POS:	row=2992 col=5390
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=4 fill=2
+	OPT:	opts=emESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=2 low=1.000 high=16.000 min=1.000 max=16.000 delta=1.000
+	COLORS:	high=4 low=4
+	FMT:	fmt=bT
+END
+
+#==================== QW_NUMBER (DG2761_2761_2760) ====================
+
+DIGIT:	DG2761_2761_2760
+	POS:	row=3201 col=5390
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=4 fill=2
+	OPT:	opts=emESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=2 low=1.000 high=16.000 min=1.000 max=16.000 delta=1.000
+	COLORS:	high=4 low=4
+	FMT:	fmt=bT
+END
+
+#==================== QW_TEXT (DT2762_2762_2755) ====================
+
+TEXT:	DT2762_2762_2755
+	POS:	row=3124 col=6523
+	COLOR:	color=1 fill=2
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=–Ά¥β
+END
+
+#==================== QW_TEXT (DT2755_2755) ====================
+
+TEXT:	DT2755_2755
+	POS:	row=3146 col=3663
+	COLOR:	color=5 fill=15
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str=‡ ―¨αμ
+END
+
+#==================== QW_TEXT (ST2766_2766_2755) ====================
+
+TEXT:	ST2766_2766_2755
+	POS:	row=2464 col=2464
+	COLOR:	color=5 fill=15
+	OPT:	opts=eRm
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="‡ ¬¥η ­¨ο ®―¥ΰ β®ΰ "
+END
+
+#==================== QW_RECTANGLE (SR2767_2767_2773_2773_27) ====================
+
+RECTANGLE:	SR2767_2767_2773_2773_27
+	POS:	row=3410 col=3564
+	COLOR:	color=1 fill=3
+	PEN:	thickness=11
+	SIZE:	height=616 width=2905
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST2768_2768_2774_2774_27) ====================
+
+TEXT:	ST2768_2768_2774_2774_27
+	POS:	row=3663 col=3740
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=®«μ§®Ά β¥«μ:
+END
+
+#==================== QW_TEXT (DT2769_2769_2775_2775_27) ====================
+
+TEXT:	DT2769_2769_2775_2775_27
+	POS:	row=3652 col=4994
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=123456789012345
+END
+
+#==================== QW_TEXT (ST2770_2770_2776_2778_27) ====================
+
+TEXT:	ST2770_2770_2776_2778_27
+	POS:	row=3872 col=3751
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=ΰ¨®ΰ¨β¥β:
+END
+
+#==================== QW_NUMBER (DG2771_2771_2777_2779_27) ====================
+
+DIGIT:	DG2771_2771_2777_2779_27
+	POS:	row=3839 col=4741
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	FMT:	fmt=-CT
+END
+
+#==================== QW_TEXT (DT2772_2772_2778_2780_27) ====================
+
+TEXT:	DT2772_2772_2778_2780_27
+	POS:	row=3872 col=5159
+	COLOR:	color=1 fill=3
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=(―ΰ®£ΰ ¬¬¨αβ)
+END
+
+#==================== QW_TEXT (DT2773_2773_2731) ====================
+
+TEXT:	DT2773_2773_2731
+	POS:	row=3113 col=550
+	COLOR:	color=1 fill=3
+	OPT:	opts=emN
+	FONT:	face=terminalw_cyr size=154
+	STRING:	str="€‡„…‹’…‹ ‘›’‰"
+END
+
+#==================== QW_TEXT (DT2775_2775) ====================
+
+TEXT:	DT2775_2775
+	POS:	row=3553 col=858
+	COLOR:	color=1 fill=3
+	OPT:	opts=emN
+	FONT:	face=System size=121
+	STRING:	str="€‘…—€’€’ ƒ€”“"
+END
+
+#==================== QW_TEXT (DT2776_2776) ====================
+
+TEXT:	DT2776_2776
+	POS:	row=3905 col=682
+	COLOR:	color=1 fill=3
+	OPT:	opts=emN
+	FONT:	face=System size=121
+	STRING:	str="—‘’’ “””… …—€’"
+END
+
+
+#number of elements: 26
+
+
+#     ########## 3 warnings ##########

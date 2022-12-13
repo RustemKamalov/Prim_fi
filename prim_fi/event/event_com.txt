@@ -1,0 +1,160 @@
+# colors
+# black (1):    system messages
+# d.grey (4):   analog
+# green (8):    event msg
+# l.yellow (9): PID
+# d.yellow(10): mask/imit/test/deblock
+# purple (12):  tprot
+# red (14):     prot/sdis
+# d.blue (15):  gate valves
+# l.blue (16):  events of the operator
+
+
+
+#/////////////////////////////////////////////////////////////////////////////
+
+# Operator definded events
+
+Q0= d=1 b=0 l=1 f=1 t=1 w=1 cf=1 cb=2 td=1 s=------------------------------------------------------------------------------------
+OBJ=ParamChange TYP=4,7 PAR=DummyEvent01
+
+
+Q0= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201]
+Q1= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201]
+OBJ=ManualEvent  TYP=200,100 PAR=ManualEventText,ManualEventTrigger,MON_MIND
+
+
+Q0= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201 (программист) зарегист.]
+Q1= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201 (инженер) зарегист.]
+Q2= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201 (технолог) зарегист.]
+Q3= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201 (оператор) зарегист.]
+Q4= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201 (гость) зарегист.]
+Q5= d=1 b=0 l=1 f=0 t=100 w=1 cf=1 cb=2 td=1 s=[%D2: %Q201 приоритет:%Q34 (неизвестно) зарегист.]
+OBJ=LoginEvent  TYP=4,7 PAR=MON1_USRN,MON1_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON2_USRN,MON2_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON3_USRN,MON3_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON4_USRN,MON4_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON5_USRN,MON5_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON6_USRN,MON6_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON7_USRN,MON7_USRP,MON_MIND
+OBJ=LoginEvent  TYP=4,7 PAR=MON8_USRN,MON8_USRP,MON_MIND
+
+
+##  SysClkSec double write
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=Tag %Q161 writen again: %Q33
+#OBJ=TagDoubleWrite TYP=25,25 PAR=SysClkSec
+
+
+#---------------------- Chain events ---------------------
+# Chain01
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch01: (big) Event buffer full
+#OBJ=Bit16+- TYP=25,25 PAR=Q_Ch01ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch01: (big) Event buffer soon will be full
+#OBJ=Bit15+- TYP=25,25 PAR=Q_Ch01ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch01: Number of event buffer bigger than limit
+#OBJ=Bit14+- TYP=25,25 PAR=Q_Ch01ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch01: Event message lost
+#OBJ=Bit11+- TYP=25,25 PAR=Q_Ch01ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch01: Controller restarted
+#OBJ=Bit10+- TYP=25,25 PAR=Q_Ch01ChainStat
+#
+#
+# Chain02
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch02: (big) Event buffer full
+#OBJ=Bit16+- TYP=25,25 PAR=Q_Ch02ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch02: (big) Event buffer soon will be full
+#OBJ=Bit15+- TYP=25,25 PAR=Q_Ch02ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch02: Number of event buffer bigger than limit
+#OBJ=Bit14+- TYP=25,25 PAR=Q_Ch02ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch02: Event message lost
+#OBJ=Bit11+- TYP=25,25 PAR=Q_Ch02ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC1 Ch02: Controller restarted
+#OBJ=Bit10+- TYP=25,25 PAR=Q_Ch02ChainStat
+#
+#
+# Chain03
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch03: (big) Event buffer full
+#OBJ=Bit16+- TYP=25,25 PAR=Q_Ch03ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch03: (big) Event buffer soon will be full
+#OBJ=Bit15+- TYP=25,25 PAR=Q_Ch03ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch03: Number of event buffer bigger than limit
+#OBJ=Bit14+- TYP=25,25 PAR=Q_Ch03ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch03: Event message lost
+#OBJ=Bit11+- TYP=25,25 PAR=Q_Ch03ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch03: Controller restarted
+#OBJ=Bit10+- TYP=25,25 PAR=Q_Ch03ChainStat
+#
+#
+# Chain04
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch04: (big) Event buffer full
+#OBJ=Bit16+- TYP=25,25 PAR=Q_Ch04ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch04: (big) Event buffer soon will be full
+#OBJ=Bit15+- TYP=25,25 PAR=Q_Ch04ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch04: Number of event buffer bigger than limit
+#OBJ=Bit14+- TYP=25,25 PAR=Q_Ch04ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch04: Event message lost
+#OBJ=Bit11+- TYP=25,25 PAR=Q_Ch04ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=PLC2 Ch04: Controller restarted
+#OBJ=Bit10+- TYP=25,25 PAR=Q_Ch04ChainStat
+#
+#
+# Chain05
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=Notif Ch05: (big) Event buffer full
+#OBJ=Bit16+- TYP=25,25 PAR=Q_Ch05ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=Notif Ch05: (big) Event buffer soon will be full
+#OBJ=Bit15+- TYP=25,25 PAR=Q_Ch05ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=Notif Ch05: Number of event buffer bigger than limit
+#OBJ=Bit14+- TYP=25,25 PAR=Q_Ch05ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=Notif Ch05: Event message lost
+#OBJ=Bit11+- TYP=25,25 PAR=Q_Ch05ChainStat
+#
+#Q0= E0
+#Q1= d=1 b=1 l=1 f=0 t=500 w=1 cf=1 cb=2 s=Notif Ch05: Controller restarted
+#OBJ=Bit10+- TYP=25,25 PAR=Q_Ch05ChainStat
+#
+#

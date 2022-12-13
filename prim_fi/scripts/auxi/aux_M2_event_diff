@@ -1,0 +1,13 @@
+#!!! some auxilary systems events are different !!!
+#These events should be cleared from aux system events
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘Š ˆ‡ Œ„1 …‚‡Œ†.’-€ Š€Œ…… Œ…• “‹ Œ€Š‘
+OBJ=BitArg+- ARG=M2_EhQ_Name TYP=105,5 PAR=M2_EQSEvMs032
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘Š ˆ‡ Œ„2 …‚‡Œ†.’-€ Š€Œ…… Œ…• “‹ Œ€Š‘
+OBJ=BitArg+- ARG=M2_EhQ_Name TYP=105,5 PAR=M2_EQSEvMs034
+
+

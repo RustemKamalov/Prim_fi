@@ -1,0 +1,239 @@
+C1: IF P1 & 0XC : 1/0; ELSE P0;
+C2: ELSE ((P0 & 0X8000) + (P1 & 0X8000) + (P2 & 0X8000) + (P3 & 0X8000) + (P4 & 0X8000))/ 0x8000;
+C3: ELSE P0;
+C4: ELSE (P0 & 0X8000)/ 0x8000;
+C5: ELSE ((P0 & 0X8000) + (P1 & 0X8000) + (P2 & 0X8000) + (P3 & 0X8000) + (P4 & 0X8000) + (P5 & 0X8000))/ 0x8000;
+
+#--- misc ---
+Q1:   *%D %T
+Q2:    $-40P2
+Q3:    @-7P3
+
+#--- 7.1Cxxx ---
+Q10:   #7.1C1
+Q11:   #7.0C2
+Q12:   #7.1C3
+Q13:   #7.0C1
+Q14:   #7.0C4
+Q15:   #7.0C5
+
+
+:STRT
+:BODY
+
+#      ^*%d.%m.%y^   ^*%T      ^
+      ^%Q1                  ^
+
+
+                          C¬Œƒ ¿ œŒ œŒ∆¿–Œ“”ÿ≈Õ»ﬂ
+
+    |------------------------------------------|-----------|---------|
+    |      Õ¿»Ã≈ÕŒ¬¿Õ»≈                        | ≈ƒ»Õ»÷¿   |«Õ¿◊≈Õ»≈ |
+    |                                          | »«Ã≈–≈Õ»ﬂ |œ¿–¿Ã≈“–¿|
+    |------------------------------------------|-----------|---------|
+:PARL: P0=Fi_Fe1_Stat P1=Fi_Fe2_Stat P2=Fi_Fe3_Stat P3=Fi_Fe4_Stat P4=Fi_Fe5_Stat
+    | œŒ∆ ¬ Àﬁ◊≈Õ€ ¿√–.                        |   ŒÀ-¬Œ   | ^%Q11 ^ |
+    |------------------------------------------|-----------|---------|
+:PARL: P0=Fi_TT753____Vl P1=Fi_TT753____S1 P2=Fi_TT753____Name P3=Fi_TT753____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_YT703____Vl P1=Fi_YT703____S1 P2=Fi_YT703____Name P3=Fi_YT703____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_YT704____Vl P1=Fi_YT704____S1 P2=Fi_YT704____Name P3=Fi_YT704____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT705____Vl P1=Fi_TT705____S1 P2=Fi_TT705____Name P3=Fi_TT705____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT754____Vl P1=Fi_TT754____S1 P2=Fi_TT754____Name P3=Fi_TT754____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT755____Vl P1=Fi_TT755____S1 P2=Fi_TT755____Name P3=Fi_TT755____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT756____Vl P1=Fi_TT756____S1 P2=Fi_TT756____Name P3=Fi_TT756____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT757____Vl P1=Fi_TT757____S1 P2=Fi_TT757____Name P3=Fi_TT757____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT751____Vl P1=Fi_TT751____S1 P2=Fi_TT751____Name P3=Fi_TT751____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT752____Vl P1=Fi_TT752____S1 P2=Fi_TT752____Name P3=Fi_TT752____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT711____Vl P1=Fi_TT711____S1 P2=Fi_TT711____Name P3=Fi_TT711____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT712____Vl P1=Fi_TT712____S1 P2=Fi_TT712____Name P3=Fi_TT712____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT713____Vl P1=Fi_TT713____S1 P2=Fi_TT713____Name P3=Fi_TT713____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT714____Vl P1=Fi_TT714____S1 P2=Fi_TT714____Name P3=Fi_TT714____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT721____Vl P1=Fi_TT721____S1 P2=Fi_TT721____Name P3=Fi_TT721____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT722____Vl P1=Fi_TT722____S1 P2=Fi_TT722____Name P3=Fi_TT722____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT723____Vl P1=Fi_TT723____S1 P2=Fi_TT723____Name P3=Fi_TT723____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT724____Vl P1=Fi_TT724____S1 P2=Fi_TT724____Name P3=Fi_TT724____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731____Vl P1=Fi_TT731____S1 P2=Fi_TT731____Name P3=Fi_TT731____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732____Vl P1=Fi_TT732____S1 P2=Fi_TT732____Name P3=Fi_TT732____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733____Vl P1=Fi_TT733____S1 P2=Fi_TT733____Name P3=Fi_TT733____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT734____Vl P1=Fi_TT734____S1 P2=Fi_TT734____Name P3=Fi_TT734____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT741____Vl P1=Fi_TT741____S1 P2=Fi_TT741____Name P3=Fi_TT741____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT742____Vl P1=Fi_TT742____S1 P2=Fi_TT742____Name P3=Fi_TT742____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT743____Vl P1=Fi_TT743____S1 P2=Fi_TT743____Name P3=Fi_TT743____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT744____Vl P1=Fi_TT744____S1 P2=Fi_TT744____Name P3=Fi_TT744____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT703____Vl P1=Fi_TT703____S1 P2=Fi_TT703____Name P3=Fi_TT703____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT704____Vl P1=Fi_TT704____S1 P2=Fi_TT704____Name P3=Fi_TT704____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT758____Vl P1=Fi_TT758____S1 P2=Fi_TT758____Name P3=Fi_TT758____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT759____Vl P1=Fi_TT759____S1 P2=Fi_TT759____Name P3=Fi_TT759____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT760____Vl P1=Fi_TT760____S1 P2=Fi_TT760____Name P3=Fi_TT760____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_YT701____Vl P1=Fi_YT701____S1 P2=Fi_YT701____Name P3=Fi_YT701____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT701____Vl P1=Fi_TT701____S1 P2=Fi_TT701____Name P3=Fi_TT701____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_1__Vl P1=Fi_TT731_1__S1 P2=Fi_TT731_1__Name P3=Fi_TT731_1__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_2__Vl P1=Fi_TT731_2__S1 P2=Fi_TT731_2__Name P3=Fi_TT731_2__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_3__Vl P1=Fi_TT731_3__S1 P2=Fi_TT731_3__Name P3=Fi_TT731_3__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_4__Vl P1=Fi_TT731_4__S1 P2=Fi_TT731_4__Name P3=Fi_TT731_4__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_5__Vl P1=Fi_TT731_5__S1 P2=Fi_TT731_5__Name P3=Fi_TT731_5__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_6__Vl P1=Fi_TT731_6__S1 P2=Fi_TT731_6__Name P3=Fi_TT731_6__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_7__Vl P1=Fi_TT731_7__S1 P2=Fi_TT731_7__Name P3=Fi_TT731_7__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT731_8__Vl P1=Fi_TT731_8__S1 P2=Fi_TT731_8__Name P3=Fi_TT731_8__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_1__Vl P1=Fi_TT732_1__S1 P2=Fi_TT732_1__Name P3=Fi_TT732_1__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_2__Vl P1=Fi_TT732_2__S1 P2=Fi_TT732_2__Name P3=Fi_TT732_2__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_3__Vl P1=Fi_TT732_3__S1 P2=Fi_TT732_3__Name P3=Fi_TT732_3__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_4__Vl P1=Fi_TT732_4__S1 P2=Fi_TT732_4__Name P3=Fi_TT732_4__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_5__Vl P1=Fi_TT732_5__S1 P2=Fi_TT732_5__Name P3=Fi_TT732_5__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_6__Vl P1=Fi_TT732_6__S1 P2=Fi_TT732_6__Name P3=Fi_TT732_6__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_7__Vl P1=Fi_TT732_7__S1 P2=Fi_TT732_7__Name P3=Fi_TT732_7__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT732_8__Vl P1=Fi_TT732_8__S1 P2=Fi_TT732_8__Name P3=Fi_TT732_8__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_1__Vl P1=Fi_TT733_1__S1 P2=Fi_TT733_1__Name P3=Fi_TT733_1__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_2__Vl P1=Fi_TT733_2__S1 P2=Fi_TT733_2__Name P3=Fi_TT733_2__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_3__Vl P1=Fi_TT733_3__S1 P2=Fi_TT733_3__Name P3=Fi_TT733_3__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_4__Vl P1=Fi_TT733_4__S1 P2=Fi_TT733_4__Name P3=Fi_TT733_4__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_5__Vl P1=Fi_TT733_5__S1 P2=Fi_TT733_5__Name P3=Fi_TT733_5__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_6__Vl P1=Fi_TT733_6__S1 P2=Fi_TT733_6__Name P3=Fi_TT733_6__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_7__Vl P1=Fi_TT733_7__S1 P2=Fi_TT733_7__Name P3=Fi_TT733_7__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT733_8__Vl P1=Fi_TT733_8__S1 P2=Fi_TT733_8__Name P3=Fi_TT733_8__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT702____Vl P1=Fi_TT702____S1 P2=Fi_TT702____Name P3=Fi_TT702____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT761____Vl P1=Fi_TT761____S1 P2=Fi_TT761____Name P3=Fi_TT761____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT762____Vl P1=Fi_TT762____S1 P2=Fi_TT762____Name P3=Fi_TT762____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT763____Vl P1=Fi_TT763____S1 P2=Fi_TT763____Name P3=Fi_TT763____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT764____Vl P1=Fi_TT764____S1 P2=Fi_TT764____Name P3=Fi_TT764____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT765____Vl P1=Fi_TT765____S1 P2=Fi_TT765____Name P3=Fi_TT765____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_YT702____Vl P1=Fi_YT702____S1 P2=Fi_YT702____Name P3=Fi_YT702____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT766____Vl P1=Fi_TT766____S1 P2=Fi_TT766____Name P3=Fi_TT766____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT767____Vl P1=Fi_TT767____S1 P2=Fi_TT767____Name P3=Fi_TT767____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_CT711____Vl P1=Fi_CT711____S1 P2=Fi_CT711____Name P3=Fi_CT711____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_CT712____Vl P1=Fi_CT712____S1 P2=Fi_CT712____Name P3=Fi_CT712____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_CT713____Vl P1=Fi_CT713____S1 P2=Fi_CT713____Name P3=Fi_CT713____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_CT714____Vl P1=Fi_CT714____S1 P2=Fi_CT714____Name P3=Fi_CT714____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_eCT751___Vl P1=Fi_eCT751___S1 P2=Fi_eCT751___Name P3=Fi_eCT751___Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_TT768____Vl P1=Fi_TT768____S1 P2=Fi_TT768____Name P3=Fi_TT768____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_eTT751___Vl P1=Fi_eTT751___S1 P2=Fi_eTT751___Name P3=Fi_eTT751___Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_eTT752___Vl P1=Fi_eTT752___S1 P2=Fi_eTT752___Name P3=Fi_eTT752___Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_eTT753___Vl P1=Fi_eTT753___S1 P2=Fi_eTT753___Name P3=Fi_eTT753___Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi_eTT754___Vl P1=Fi_eTT754___S1 P2=Fi_eTT754___Name P3=Fi_eTT754___Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+    |------------------------------------------|-----------|---------|
+
+      ^%Q1                   ^
+
+                          C¬Œƒ ¿ œŒ œŒ∆¿–Œ“”ÿ≈Õ»ﬂ 2
+
+    |------------------------------------------|-----------|---------|
+    |      Õ¿»Ã≈ÕŒ¬¿Õ»≈                        | ≈ƒ»Õ»÷¿   |«Õ¿◊≈Õ»≈ |
+    |                                          | »«Ã≈–≈Õ»ﬂ |œ¿–¿Ã≈“–¿|
+    |------------------------------------------|-----------|---------|
+:PARL: P0=Fi2_TT725____Vl P1=Fi2_TT725____S1 P2=Fi2_TT725____Name P3=Fi2_TT725____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT706__Vl P1=Fi2_4_TT706__S1 P2=Fi2_4_TT706__Name P3=Fi2_4_TT706__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_TT726____Vl P1=Fi2_TT726____S1 P2=Fi2_TT726____Name P3=Fi2_TT726____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_TT729____Vl P1=Fi2_TT729____S1 P2=Fi2_TT729____Name P3=Fi2_TT729____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_TT730____Vl P1=Fi2_TT730____S1 P2=Fi2_TT730____Name P3=Fi2_TT730____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_TT731____Vl P1=Fi2_TT731____S1 P2=Fi2_TT731____Name P3=Fi2_TT731____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_TT732____Vl P1=Fi2_TT732____S1 P2=Fi2_TT732____Name P3=Fi2_TT732____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_TT734____Vl P1=Fi2_TT734____S1 P2=Fi2_TT734____Name P3=Fi2_TT734____Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT709__Vl P1=Fi2_4_TT709__S1 P2=Fi2_4_TT709__Name P3=Fi2_4_TT709__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT708__Vl P1=Fi2_4_TT708__S1 P2=Fi2_4_TT708__Name P3=Fi2_4_TT708__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_YT701__Vl P1=Fi2_4_YT701__S1 P2=Fi2_4_YT701__Name P3=Fi2_4_YT701__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT701__Vl P1=Fi2_4_TT701__S1 P2=Fi2_4_TT701__Name P3=Fi2_4_TT701__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_YT702__Vl P1=Fi2_4_YT702__S1 P2=Fi2_4_YT702__Name P3=Fi2_4_YT702__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT702__Vl P1=Fi2_4_TT702__S1 P2=Fi2_4_TT702__Name P3=Fi2_4_TT702__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT703__Vl P1=Fi2_4_TT703__S1 P2=Fi2_4_TT703__Name P3=Fi2_4_TT703__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT704__Vl P1=Fi2_4_TT704__S1 P2=Fi2_4_TT704__Name P3=Fi2_4_TT704__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT705__Vl P1=Fi2_4_TT705__S1 P2=Fi2_4_TT705__Name P3=Fi2_4_TT705__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT707__Vl P1=Fi2_4_TT707__S1 P2=Fi2_4_TT707__Name P3=Fi2_4_TT707__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+:PARL: P0=Fi2_4_TT710__Vl P1=Fi2_4_TT710__S1 P2=Fi2_4_TT710__Name P3=Fi2_4_TT710__Unit
+    | ^%Q2                                   ^ |  ^%Q3  ^  | ^%Q10 ^ |
+    |------------------------------------------|-----------|---------|
+
+:STOP

@@ -1,0 +1,28 @@
+#! /bin/sh
+
+file_ext=`echo $1 | awk -F "." '{print $NF;}'`
+
+case $file_ext in
+    tar|pax) pax -v <$1 > $1.lst
+        vedit -b $1.lst
+        rm $1.lst;;
+    F)  freeze -c -d $1 | pax -v > $1.lst
+        vedit -b $1.lst
+        rm $1.lst;;
+    gz|tgz|Z) gzip -d -c $1 | pax -v > $1.lst
+        vedit -b $1.lst
+        rm $1.lst;;
+    *) vedit -b $1;;
+esac
+
+#if echo $1 | grep -q -e .F
+#then 
+#    echo freeze archive file
+#    freeze -c -d $1 | pax -v | more
+#elif echo $1 | grep -q .tgz
+#then
+#    echo gzip archive file
+#    gzip -d -c $1 | pax -v | more
+#else
+#    vedit -b $1
+#fi

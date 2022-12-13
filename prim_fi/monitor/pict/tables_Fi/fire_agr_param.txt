@@ -1,0 +1,1210 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=179 h=830 w=1265
+
+OBJ: 1476_1476_1047_10
+  PARL: P0=Fi_StaBitLch192 P1=Fi_StaBitLch193 P2=Fi_StaBitLch194 P3=Fi_StaBitLch195 P4=Fi_StaBitLch196 P5=Fi_StaBitLch197 P6=Fi_StaBitLch208 P7=Fi_StaBitLch209 P8=Fi_StaBitLch210 P9=Fi_StaBitLch211 P10=Fi_StaBitLch212 P11=Fi_StaBitLch213 P12=Fi_StaBitLch224 P13=Fi_StaBitLch225 P14=Fi_StaBitLch226 P15=Fi_StaBitLch227 P16=Fi_StaBitLch228 P17=Fi_StaBitLch229 P18=Fi_StaBitLch240 P19=Fi_StaBitLch241 P20=Fi_StaBitLch242 P21=Fi_StaBitLch243 P22=Fi_StaBitLch244 P23=Fi_StaBitLch245 P24=Fi_AStBitLch064 P25=Fi_AStBitLch065 P26=Fi_AStBitLch066 P27=Fi_AStBitLch067 P28=Fi_AStBitLch068 P29=Fi_AStBitLch069
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9|P10|P11|P12|P13|P14|P15|P16|P17|P18|P19|P20|P21|P22|P23|P24|P25|P26|P27|P28|P29) & 0X0001 : Q1;IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9|P10|P11|P12|P13|P14|P15|P16|P17|P18|P19|P20|P21|P22|P23|P24|P25|P26|P27|P28|P29) & 0X0002 : Q2;ELSE Q0;
+  SELD: a=FV p=P0  f=0  v=ELSE 0;
+  SELD: a=FV p=P1  f=0  v=ELSE 0;
+  SELD: a=FV p=P2  f=0  v=ELSE 0;
+  SELD: a=FV p=P3  f=0  v=ELSE 0;
+  SELD: a=FV p=P4  f=0  v=ELSE 0;
+  SELD: a=FV p=P5  f=0  v=ELSE 0;
+  SELD: a=FV p=P6  f=0  v=ELSE 0;
+  SELD: a=FV p=P7  f=0  v=ELSE 0;
+  SELD: a=FV p=P8  f=0  v=ELSE 0;
+  SELD: a=FV p=P9  f=0  v=ELSE 0;
+  SELD: a=FV p=P10  f=0  v=ELSE 0;
+  SELD: a=FV p=P11  f=0  v=ELSE 0;
+  SELD: a=FV p=P12  f=0  v=ELSE 0;
+  SELD: a=FV p=P13  f=0  v=ELSE 0;
+  SELD: a=FV p=P14  f=0  v=ELSE 0;
+  SELD: a=FV p=P15  f=0  v=ELSE 0;
+  SELD: a=FV p=P16  f=0  v=ELSE 0;
+  SELD: a=FV p=P17  f=0  v=ELSE 0;
+  SELD: a=FV p=P18  f=0  v=ELSE 0;
+  SELD: a=FV p=P19  f=0  v=ELSE 0;
+  SELD: a=FV p=P20  f=0  v=ELSE 0;
+  SELD: a=FV p=P21  f=0  v=ELSE 0;
+  SELD: a=FV p=P22  f=0  v=ELSE 0;
+  SELD: a=FV p=P23  f=0  v=ELSE 0;
+  SELD: a=FV p=P24  f=0  v=ELSE 0;
+  SELD: a=FV p=P25  f=0  v=ELSE 0;
+  SELD: a=FV p=P26  f=0  v=ELSE 0;
+  SELD: a=FV p=P27  f=0  v=ELSE 0;
+  SELD: a=FV p=P28  f=0  v=ELSE 0;
+  SELD: a=FV p=P29  f=1  v=ELSE 0;
+OBEND
+
+OBJ: 2258
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal193 P2=Fi_StaMask193 P3=Fi_StaImit193 P4=Fi_StaTest193 P5=Fi_StaProt193 P6=Fi_StaTPro193 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2259
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal193 P2=Fi_StaMask193 P3=Fi_StaImit193 P4=Fi_StaTest193 P5=Fi_StaProt193 P6=Fi_StaTPro193 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2260
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal193 P2=Fi_StaMask193 P3=Fi_StaImit193 P4=Fi_StaTest193 P5=Fi_StaProt193 P6=Fi_StaTPro193 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2261
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal193 P2=Fi_StaMask193 P3=Fi_StaImit193 P4=Fi_StaTest193 P5=Fi_StaProt193 P6=Fi_StaTPro193 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2262
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal194 P2=Fi_StaMask194 P3=Fi_StaImit194 P4=Fi_StaTest194 P5=Fi_StaProt194 P6=Fi_StaTPro194 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2263
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal194 P2=Fi_StaMask194 P3=Fi_StaImit194 P4=Fi_StaTest194 P5=Fi_StaProt194 P6=Fi_StaTPro194 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2264
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal194 P2=Fi_StaMask194 P3=Fi_StaImit194 P4=Fi_StaTest194 P5=Fi_StaProt194 P6=Fi_StaTPro194 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2265
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal194 P2=Fi_StaMask194 P3=Fi_StaImit194 P4=Fi_StaTest194 P5=Fi_StaProt194 P6=Fi_StaTPro194 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2266
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal195 P2=Fi_StaMask195 P3=Fi_StaImit195 P4=Fi_StaTest195 P5=Fi_StaProt195 P6=Fi_StaTPro195 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2267
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal195 P2=Fi_StaMask195 P3=Fi_StaImit195 P4=Fi_StaTest195 P5=Fi_StaProt195 P6=Fi_StaTPro195 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2268
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal195 P2=Fi_StaMask195 P3=Fi_StaImit195 P4=Fi_StaTest195 P5=Fi_StaProt195 P6=Fi_StaTPro195 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2269
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal195 P2=Fi_StaMask195 P3=Fi_StaImit195 P4=Fi_StaTest195 P5=Fi_StaProt195 P6=Fi_StaTPro195 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2270
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal196 P2=Fi_StaMask196 P3=Fi_StaImit196 P4=Fi_StaTest196 P5=Fi_StaProt196 P6=Fi_StaTPro196 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2271
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal196 P2=Fi_StaMask196 P3=Fi_StaImit196 P4=Fi_StaTest196 P5=Fi_StaProt196 P6=Fi_StaTPro196 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2272
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal196 P2=Fi_StaMask196 P3=Fi_StaImit196 P4=Fi_StaTest196 P5=Fi_StaProt196 P6=Fi_StaTPro196 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2273
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal196 P2=Fi_StaMask196 P3=Fi_StaImit196 P4=Fi_StaTest196 P5=Fi_StaProt196 P6=Fi_StaTPro196 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2274
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal197 P2=Fi_StaMask197 P3=Fi_StaImit197 P4=Fi_StaTest197 P5=Fi_StaProt197 P6=Fi_StaTPro197 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2275
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal197 P2=Fi_StaMask197 P3=Fi_StaImit197 P4=Fi_StaTest197 P5=Fi_StaProt197 P6=Fi_StaTPro197 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2276
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal197 P2=Fi_StaMask197 P3=Fi_StaImit197 P4=Fi_StaTest197 P5=Fi_StaProt197 P6=Fi_StaTPro197 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2277
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal197 P2=Fi_StaMask197 P3=Fi_StaImit197 P4=Fi_StaTest197 P5=Fi_StaProt197 P6=Fi_StaTPro197 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2282
+  PARL: P0=Fi_StaBitLch193
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2283
+  PARL: P0=Fi_StaBitLch194
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2284
+  PARL: P0=Fi_StaBitLch195
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2285
+  PARL: P0=Fi_StaBitLch196
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2286
+  PARL: P0=Fi_StaBitLch197
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2288
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal208 P2=Fi_StaMask208 P3=Fi_StaImit208 P4=Fi_StaTest208 P5=Fi_StaProt208 P6=Fi_StaTPro208 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2289
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal208 P2=Fi_StaMask208 P3=Fi_StaImit208 P4=Fi_StaTest208 P5=Fi_StaProt208 P6=Fi_StaTPro208 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2290
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal208 P2=Fi_StaMask208 P3=Fi_StaImit208 P4=Fi_StaTest208 P5=Fi_StaProt208 P6=Fi_StaTPro208 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2291
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal208 P2=Fi_StaMask208 P3=Fi_StaImit208 P4=Fi_StaTest208 P5=Fi_StaProt208 P6=Fi_StaTPro208 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2292
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal209 P2=Fi_StaMask209 P3=Fi_StaImit209 P4=Fi_StaTest209 P5=Fi_StaProt209 P6=Fi_StaTPro209 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2293
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal209 P2=Fi_StaMask209 P3=Fi_StaImit209 P4=Fi_StaTest209 P5=Fi_StaProt209 P6=Fi_StaTPro209 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2294
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal209 P2=Fi_StaMask209 P3=Fi_StaImit209 P4=Fi_StaTest209 P5=Fi_StaProt209 P6=Fi_StaTPro209 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2295
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal209 P2=Fi_StaMask209 P3=Fi_StaImit209 P4=Fi_StaTest209 P5=Fi_StaProt209 P6=Fi_StaTPro209 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2296
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal210 P2=Fi_StaMask210 P3=Fi_StaImit210 P4=Fi_StaTest210 P5=Fi_StaProt210 P6=Fi_StaTPro210 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2297
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal210 P2=Fi_StaMask210 P3=Fi_StaImit210 P4=Fi_StaTest210 P5=Fi_StaProt210 P6=Fi_StaTPro210 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2298
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal210 P2=Fi_StaMask210 P3=Fi_StaImit210 P4=Fi_StaTest210 P5=Fi_StaProt210 P6=Fi_StaTPro210 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2299
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal210 P2=Fi_StaMask210 P3=Fi_StaImit210 P4=Fi_StaTest210 P5=Fi_StaProt210 P6=Fi_StaTPro210 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2300
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal211 P2=Fi_StaMask211 P3=Fi_StaImit211 P4=Fi_StaTest211 P5=Fi_StaProt211 P6=Fi_StaTPro211 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2301
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal211 P2=Fi_StaMask211 P3=Fi_StaImit211 P4=Fi_StaTest211 P5=Fi_StaProt211 P6=Fi_StaTPro211 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2302
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal211 P2=Fi_StaMask211 P3=Fi_StaImit211 P4=Fi_StaTest211 P5=Fi_StaProt211 P6=Fi_StaTPro211 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2303
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal211 P2=Fi_StaMask211 P3=Fi_StaImit211 P4=Fi_StaTest211 P5=Fi_StaProt211 P6=Fi_StaTPro211 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2304
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal212 P2=Fi_StaMask212 P3=Fi_StaImit212 P4=Fi_StaTest212 P5=Fi_StaProt212 P6=Fi_StaTPro212 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2305
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal212 P2=Fi_StaMask212 P3=Fi_StaImit212 P4=Fi_StaTest212 P5=Fi_StaProt212 P6=Fi_StaTPro212 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2306
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal212 P2=Fi_StaMask212 P3=Fi_StaImit212 P4=Fi_StaTest212 P5=Fi_StaProt212 P6=Fi_StaTPro212 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2307
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal212 P2=Fi_StaMask212 P3=Fi_StaImit212 P4=Fi_StaTest212 P5=Fi_StaProt212 P6=Fi_StaTPro212 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2308
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal213 P2=Fi_StaMask213 P3=Fi_StaImit213 P4=Fi_StaTest213 P5=Fi_StaProt213 P6=Fi_StaTPro213 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2309
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal213 P2=Fi_StaMask213 P3=Fi_StaImit213 P4=Fi_StaTest213 P5=Fi_StaProt213 P6=Fi_StaTPro213 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2310
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal213 P2=Fi_StaMask213 P3=Fi_StaImit213 P4=Fi_StaTest213 P5=Fi_StaProt213 P6=Fi_StaTPro213 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2311
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal213 P2=Fi_StaMask213 P3=Fi_StaImit213 P4=Fi_StaTest213 P5=Fi_StaProt213 P6=Fi_StaTPro213 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2312
+  PARL: P0=Fi_StaBitLch208
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2313
+  PARL: P0=Fi_StaBitLch209
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2314
+  PARL: P0=Fi_StaBitLch210
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2315
+  PARL: P0=Fi_StaBitLch211
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2316
+  PARL: P0=Fi_StaBitLch212
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2317
+  PARL: P0=Fi_StaBitLch213
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2318
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal225 P2=Fi_StaMask225 P3=Fi_StaImit225 P4=Fi_StaTest225 P5=Fi_StaProt225 P6=Fi_StaTPro225 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2319
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal225 P2=Fi_StaMask225 P3=Fi_StaImit225 P4=Fi_StaTest225 P5=Fi_StaProt225 P6=Fi_StaTPro225 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2320
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal225 P2=Fi_StaMask225 P3=Fi_StaImit225 P4=Fi_StaTest225 P5=Fi_StaProt225 P6=Fi_StaTPro225 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2321
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal225 P2=Fi_StaMask225 P3=Fi_StaImit225 P4=Fi_StaTest225 P5=Fi_StaProt225 P6=Fi_StaTPro225 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2322
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal226 P2=Fi_StaMask226 P3=Fi_StaImit226 P4=Fi_StaTest226 P5=Fi_StaProt226 P6=Fi_StaTPro226 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2323
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal226 P2=Fi_StaMask226 P3=Fi_StaImit226 P4=Fi_StaTest226 P5=Fi_StaProt226 P6=Fi_StaTPro226 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2324
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal226 P2=Fi_StaMask226 P3=Fi_StaImit226 P4=Fi_StaTest226 P5=Fi_StaProt226 P6=Fi_StaTPro226 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2325
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal226 P2=Fi_StaMask226 P3=Fi_StaImit226 P4=Fi_StaTest226 P5=Fi_StaProt226 P6=Fi_StaTPro226 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2326
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal227 P2=Fi_StaMask227 P3=Fi_StaImit227 P4=Fi_StaTest227 P5=Fi_StaProt227 P6=Fi_StaTPro227 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2327
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal227 P2=Fi_StaMask227 P3=Fi_StaImit227 P4=Fi_StaTest227 P5=Fi_StaProt227 P6=Fi_StaTPro227 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2328
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal227 P2=Fi_StaMask227 P3=Fi_StaImit227 P4=Fi_StaTest227 P5=Fi_StaProt227 P6=Fi_StaTPro227 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2329
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal227 P2=Fi_StaMask227 P3=Fi_StaImit227 P4=Fi_StaTest227 P5=Fi_StaProt227 P6=Fi_StaTPro227 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2330
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal228 P2=Fi_StaMask228 P3=Fi_StaImit228 P4=Fi_StaTest228 P5=Fi_StaProt228 P6=Fi_StaTPro228 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2331
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal228 P2=Fi_StaMask228 P3=Fi_StaImit228 P4=Fi_StaTest228 P5=Fi_StaProt228 P6=Fi_StaTPro228 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2332
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal228 P2=Fi_StaMask228 P3=Fi_StaImit228 P4=Fi_StaTest228 P5=Fi_StaProt228 P6=Fi_StaTPro228 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2333
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal228 P2=Fi_StaMask228 P3=Fi_StaImit228 P4=Fi_StaTest228 P5=Fi_StaProt228 P6=Fi_StaTPro228 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2334
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal229 P2=Fi_StaMask229 P3=Fi_StaImit229 P4=Fi_StaTest229 P5=Fi_StaProt229 P6=Fi_StaTPro229 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2335
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal229 P2=Fi_StaMask229 P3=Fi_StaImit229 P4=Fi_StaTest229 P5=Fi_StaProt229 P6=Fi_StaTPro229 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2336
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal229 P2=Fi_StaMask229 P3=Fi_StaImit229 P4=Fi_StaTest229 P5=Fi_StaProt229 P6=Fi_StaTPro229 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2337
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal229 P2=Fi_StaMask229 P3=Fi_StaImit229 P4=Fi_StaTest229 P5=Fi_StaProt229 P6=Fi_StaTPro229 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2342
+  PARL: P0=Fi_StaBitLch225
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2343
+  PARL: P0=Fi_StaBitLch226
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2344
+  PARL: P0=Fi_StaBitLch227
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2345
+  PARL: P0=Fi_StaBitLch228
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2346
+  PARL: P0=Fi_StaBitLch229
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2348
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal240 P2=Fi_StaMask240 P3=Fi_StaImit240 P4=Fi_StaTest240 P5=Fi_StaProt240 P6=Fi_StaTPro240 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2349
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal240 P2=Fi_StaMask240 P3=Fi_StaImit240 P4=Fi_StaTest240 P5=Fi_StaProt240 P6=Fi_StaTPro240 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2350
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal240 P2=Fi_StaMask240 P3=Fi_StaImit240 P4=Fi_StaTest240 P5=Fi_StaProt240 P6=Fi_StaTPro240 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2351
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal240 P2=Fi_StaMask240 P3=Fi_StaImit240 P4=Fi_StaTest240 P5=Fi_StaProt240 P6=Fi_StaTPro240 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2352
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal241 P2=Fi_StaMask241 P3=Fi_StaImit241 P4=Fi_StaTest241 P5=Fi_StaProt241 P6=Fi_StaTPro241 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2353
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal241 P2=Fi_StaMask241 P3=Fi_StaImit241 P4=Fi_StaTest241 P5=Fi_StaProt241 P6=Fi_StaTPro241 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2354
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal241 P2=Fi_StaMask241 P3=Fi_StaImit241 P4=Fi_StaTest241 P5=Fi_StaProt241 P6=Fi_StaTPro241 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2355
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal241 P2=Fi_StaMask241 P3=Fi_StaImit241 P4=Fi_StaTest241 P5=Fi_StaProt241 P6=Fi_StaTPro241 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2356
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal242 P2=Fi_StaMask242 P3=Fi_StaImit242 P4=Fi_StaTest242 P5=Fi_StaProt242 P6=Fi_StaTPro242 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2357
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal242 P2=Fi_StaMask242 P3=Fi_StaImit242 P4=Fi_StaTest242 P5=Fi_StaProt242 P6=Fi_StaTPro242 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2358
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal242 P2=Fi_StaMask242 P3=Fi_StaImit242 P4=Fi_StaTest242 P5=Fi_StaProt242 P6=Fi_StaTPro242 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2359
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal242 P2=Fi_StaMask242 P3=Fi_StaImit242 P4=Fi_StaTest242 P5=Fi_StaProt242 P6=Fi_StaTPro242 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2360
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal243 P2=Fi_StaMask243 P3=Fi_StaImit243 P4=Fi_StaTest243 P5=Fi_StaProt243 P6=Fi_StaTPro243 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2361
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal243 P2=Fi_StaMask243 P3=Fi_StaImit243 P4=Fi_StaTest243 P5=Fi_StaProt243 P6=Fi_StaTPro243 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2362
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal243 P2=Fi_StaMask243 P3=Fi_StaImit243 P4=Fi_StaTest243 P5=Fi_StaProt243 P6=Fi_StaTPro243 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2363
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal243 P2=Fi_StaMask243 P3=Fi_StaImit243 P4=Fi_StaTest243 P5=Fi_StaProt243 P6=Fi_StaTPro243 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2364
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal244 P2=Fi_StaMask244 P3=Fi_StaImit244 P4=Fi_StaTest244 P5=Fi_StaProt244 P6=Fi_StaTPro244 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2365
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal244 P2=Fi_StaMask244 P3=Fi_StaImit244 P4=Fi_StaTest244 P5=Fi_StaProt244 P6=Fi_StaTPro244 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2366
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal244 P2=Fi_StaMask244 P3=Fi_StaImit244 P4=Fi_StaTest244 P5=Fi_StaProt244 P6=Fi_StaTPro244 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2367
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal244 P2=Fi_StaMask244 P3=Fi_StaImit244 P4=Fi_StaTest244 P5=Fi_StaProt244 P6=Fi_StaTPro244 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2368
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal245 P2=Fi_StaMask245 P3=Fi_StaImit245 P4=Fi_StaTest245 P5=Fi_StaProt245 P6=Fi_StaTPro245 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2369
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal245 P2=Fi_StaMask245 P3=Fi_StaImit245 P4=Fi_StaTest245 P5=Fi_StaProt245 P6=Fi_StaTPro245 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2370
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal245 P2=Fi_StaMask245 P3=Fi_StaImit245 P4=Fi_StaTest245 P5=Fi_StaProt245 P6=Fi_StaTPro245 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2371
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal245 P2=Fi_StaMask245 P3=Fi_StaImit245 P4=Fi_StaTest245 P5=Fi_StaProt245 P6=Fi_StaTPro245 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2372
+  PARL: P0=Fi_StaBitLch240
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2373
+  PARL: P0=Fi_StaBitLch241
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2374
+  PARL: P0=Fi_StaBitLch242
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2375
+  PARL: P0=Fi_StaBitLch243
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2376
+  PARL: P0=Fi_StaBitLch244
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2377
+  PARL: P0=Fi_StaBitLch245
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2378
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal224 P2=Fi_StaMask224 P3=Fi_StaImit224 P4=Fi_StaTest224 P5=Fi_StaProt224 P6=Fi_StaTPro224 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2379
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal224 P2=Fi_StaMask224 P3=Fi_StaImit224 P4=Fi_StaTest224 P5=Fi_StaProt224 P6=Fi_StaTPro224 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2380
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal224 P2=Fi_StaMask224 P3=Fi_StaImit224 P4=Fi_StaTest224 P5=Fi_StaProt224 P6=Fi_StaTPro224 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2381
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal224 P2=Fi_StaMask224 P3=Fi_StaImit224 P4=Fi_StaTest224 P5=Fi_StaProt224 P6=Fi_StaTPro224 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2382
+  PARL: P0=Fi_StaBitLch224
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2383
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal192 P2=Fi_StaMask192 P3=Fi_StaImit192 P4=Fi_StaTest192 P5=Fi_StaProt192 P6=Fi_StaTPro192 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2384
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal192 P2=Fi_StaMask192 P3=Fi_StaImit192 P4=Fi_StaTest192 P5=Fi_StaProt192 P6=Fi_StaTPro192 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2385
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal192 P2=Fi_StaMask192 P3=Fi_StaImit192 P4=Fi_StaTest192 P5=Fi_StaProt192 P6=Fi_StaTPro192 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2386
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal192 P2=Fi_StaMask192 P3=Fi_StaImit192 P4=Fi_StaTest192 P5=Fi_StaProt192 P6=Fi_StaTPro192 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2387
+  PARL: P0=Fi_StaBitLch192
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2420
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal065 P2=Fi_AStMask065 P3=Fi_AStImit065 P4=Fi_AStTest065 P5=Fi_AStProt065 P6=Fi_AStTPro065 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2421
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal065 P2=Fi_AStMask065 P3=Fi_AStImit065 P4=Fi_AStTest065 P5=Fi_AStProt065 P6=Fi_AStTPro065 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2422
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal065 P2=Fi_AStMask065 P3=Fi_AStImit065 P4=Fi_AStTest065 P5=Fi_AStProt065 P6=Fi_AStTPro065 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2423
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal065 P2=Fi_AStMask065 P3=Fi_AStImit065 P4=Fi_AStTest065 P5=Fi_AStProt065 P6=Fi_AStTPro065 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2424
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal066 P2=Fi_AStMask066 P3=Fi_AStImit066 P4=Fi_AStTest066 P5=Fi_AStProt066 P6=Fi_AStTPro066 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2425
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal066 P2=Fi_AStMask066 P3=Fi_AStImit066 P4=Fi_AStTest066 P5=Fi_AStProt066 P6=Fi_AStTPro066 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2426
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal066 P2=Fi_AStMask066 P3=Fi_AStImit066 P4=Fi_AStTest066 P5=Fi_AStProt066 P6=Fi_AStTPro066 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2427
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal066 P2=Fi_AStMask066 P3=Fi_AStImit066 P4=Fi_AStTest066 P5=Fi_AStProt066 P6=Fi_AStTPro066 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2428
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal067 P2=Fi_AStMask067 P3=Fi_AStImit067 P4=Fi_AStTest067 P5=Fi_AStProt067 P6=Fi_AStTPro067 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2429
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal067 P2=Fi_AStMask067 P3=Fi_AStImit067 P4=Fi_AStTest067 P5=Fi_AStProt067 P6=Fi_AStTPro067 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2430
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal067 P2=Fi_AStMask067 P3=Fi_AStImit067 P4=Fi_AStTest067 P5=Fi_AStProt067 P6=Fi_AStTPro067 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2431
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal067 P2=Fi_AStMask067 P3=Fi_AStImit067 P4=Fi_AStTest067 P5=Fi_AStProt067 P6=Fi_AStTPro067 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2432
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal068 P2=Fi_AStMask068 P3=Fi_AStImit068 P4=Fi_AStTest068 P5=Fi_AStProt068 P6=Fi_AStTPro068 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2433
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal068 P2=Fi_AStMask068 P3=Fi_AStImit068 P4=Fi_AStTest068 P5=Fi_AStProt068 P6=Fi_AStTPro068 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2434
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal068 P2=Fi_AStMask068 P3=Fi_AStImit068 P4=Fi_AStTest068 P5=Fi_AStProt068 P6=Fi_AStTPro068 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2435
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal068 P2=Fi_AStMask068 P3=Fi_AStImit068 P4=Fi_AStTest068 P5=Fi_AStProt068 P6=Fi_AStTPro068 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2436
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal069 P2=Fi_AStMask069 P3=Fi_AStImit069 P4=Fi_AStTest069 P5=Fi_AStProt069 P6=Fi_AStTPro069 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2437
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal069 P2=Fi_AStMask069 P3=Fi_AStImit069 P4=Fi_AStTest069 P5=Fi_AStProt069 P6=Fi_AStTPro069 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2438
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal069 P2=Fi_AStMask069 P3=Fi_AStImit069 P4=Fi_AStTest069 P5=Fi_AStProt069 P6=Fi_AStTPro069 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2439
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal069 P2=Fi_AStMask069 P3=Fi_AStImit069 P4=Fi_AStTest069 P5=Fi_AStProt069 P6=Fi_AStTPro069 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2445
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal064 P2=Fi_AStMask064 P3=Fi_AStImit064 P4=Fi_AStTest064 P5=Fi_AStProt064 P6=Fi_AStTPro064 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  TXTD: Q1=$P5
+  TXTF: ELSE Q1;
+  COLD: Q1=5,15,0 Q2=5,12,0
+  COLF: IF P5 : Q1;IF P6 : Q2;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2446
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal064 P2=Fi_AStMask064 P3=Fi_AStImit064 P4=Fi_AStTest064 P5=Fi_AStProt064 P6=Fi_AStTPro064 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,14,0
+  COLF: IF P2 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2447
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal064 P2=Fi_AStMask064 P3=Fi_AStImit064 P4=Fi_AStTest064 P5=Fi_AStProt064 P6=Fi_AStTPro064 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=5,15,0
+  COLF: IF P3 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2448
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal064 P2=Fi_AStMask064 P3=Fi_AStImit064 P4=Fi_AStTest064 P5=Fi_AStProt064 P6=Fi_AStTPro064 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,10,0
+  COLF: IF P4 : Q1;ELSE Q0;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 2450
+  PARL: P0=Fi_AStBitLch065
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2451
+  PARL: P0=Fi_AStBitLch066
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2452
+  PARL: P0=Fi_AStBitLch067
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2453
+  PARL: P0=Fi_AStBitLch068
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2454
+  PARL: P0=Fi_AStBitLch069
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 2455
+  PARL: P0=Fi_AStBitLch064
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0 & 0X0001 : Q1;IF P0 & 0X0002 : Q2;ELSE Q0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND

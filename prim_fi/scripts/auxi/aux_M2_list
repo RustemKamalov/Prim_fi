@@ -1,0 +1,65 @@
+####################### PRIMORSK-2 auxilary systems ########################
+
+/Plunger_pump_of_pig_area_system N1    #1
+PPS   Plunger_pump_of_pig_area_system  #1    Погружной насос УПС
+PP1   Plunger_pump_of_pig_area               Погружной насос УПС
+
+/Water_supply_of_Station_system N1,2,  #2
+WS1   Water_supply_of_Station_system   #2    Hacocы сырой воды
+Ws1   Water_pump_of_Station_1                Hacoc сырой воды N1
+Ws2   Water_pump_of_Station_2                Hacoc сырой воды N2
+
+/Water_supply_of_Station_system N,3    #3
+WS2   Water_supply_of_Station_system   #3    Hacocы сырой воды  
+Ws3   Water_pump_of_Station_3                Hacoc сырой воды N3
+
+/Canal.pumps_of_Tankfarm_system N3,4,  #4
+CS2   Canal.pumps_of_Tankfarm_system   #4    Насосы КНС2
+Ct3   Canal.pump_of_Tankfarm_3               КНС2.насос N1
+Ct4   Canal.pump_of_Tankfarm_4               КНС2.насос N2
+
+/Canal.pumps_of_Tankfarm_system N,5    #5
+CS3   Canal.pumps_of_Tankfarm_system   #5    Насосы КНС2 
+Ct5   Canal.pump_of_Tankfarm_5               КНС2.насос N3
+
+/Drain.ret.pump_of_Quay_system N1,2,   #6
+DS1   Drain.ret.pump_of_Quay_system    #6    Дренажнасосы нефтепричала 1
+Dr1   Drain.ret.pump_of_Quay_1               Дренажнасос N1 нефтепричала 1
+Dr2   Drain.ret.pump_of_Quay_2               Дренажнасос N2 нефтепричала 1
+
+/Drain.ret.pump_of_Quay_system N,3,4,  #7
+DS2   Drain.ret.pump_of_Quay_system    #7    Дренажнасосы нефтепричала 2 
+Dr3   Drain.ret.pump_of_Quay_3               Дренажнасос N1 нефтепричала 2
+Dr4   Drain.ret.pump_of_Quay_4               Дренажнасос N2 нефтепричала 2
+
+/Plunger_pump_of_Quay_system N1        #8
+PqS   Plunger_pp.syst.                 #8    Система откачки утечек
+Pq1   Plunger_pump_1                         Погружной насос УУН и ТПУ
+
+/Exhausting_vent_of_Quay_system N1     #9
+EvS   Exhausting_vent_of_Quay_system   #9    Вытяжная ветиляция ТПУ
+Ev1   Exhausting_vent_of_Quay                Вытяжной ветилятор ТПУ
+
+/Water_pump_of_Quay_system N1,2,       #10
+WP1   Water_pump_of_Quay_system_1      #10   Водонасосы нефтепричала 1
+Wp1   Water_pump_of_Quay_1                   Водонасос N1 нефтепричала 1
+Wp2   Water_pump_of_Quay_2                   Водонасос N2 нефтепричала 1
+
+/Water_pump_of_Quay_system N3,4        #11
+WP2   Water_pump_of_Quay_system_2      #11   Водонасосы нефтепричала 2 
+Wp3   Water_pump_of_Quay_3                   Водонасос N3 нефтепричала 2
+Wp4   Water_pump_of_Quay_4                   Водонасос N4 нефтепричала 2
+
+/Reserve_system_1                      #12
+RS1   Reserve_system_1                 #12   Reserve system 1
+R11   Reserve_11                             Reserve 11
+R12   Reserve_12                             Reserve 12
+
+/Reserve_system_2                      #13
+RS2   Reserve_system_2                 #13   Reserve system 2
+R21   Reserve_21                             Reserve 21
+R22   Reserve_22                             Reserve 22
+
+/Electric_heater_of_agr.1_system NQ    #14
+EQS   Pre-pur.wat.pump_syst.           #14   Система электронагривателей нефтепричала
+EhQ   Pre-purified_water_pump_1              Электронагриватель ПА нефтепричала

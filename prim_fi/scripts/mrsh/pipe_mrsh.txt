@@ -1,0 +1,1071 @@
+//////////////////////////////////////////////
+// Parameteres ablak bezarasanak figyelesehez
+// + a matematika modulban kiegeszites
+// csak igy lehet megoldani...
+
+MR_PARAMWINDOW_STAT , U, 100, MrshStat  , N, 0, 0,        "ParamWindowStatus (p130)                "
+
+
+///////////////////////////////////////////
+// Gate valves included in pumping routes
+//
+
+MR_GV260_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI260         "
+MR_GV260_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI260         "
+
+MR_GV261_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI261         "
+MR_GV261_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI261         "
+
+MR_GV220_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI220         "
+MR_GV220_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI220         "
+
+MR_GV221_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI221         "
+MR_GV221_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI221         "
+
+MR_GV222_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI222         "
+MR_GV222_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI222         "
+
+MR_GV223_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI223         "
+MR_GV223_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI223         "
+
+MR_GV224_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI224         "
+MR_GV224_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI224         "
+
+MR_GV225_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI225         "
+MR_GV225_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI225         "
+
+MR_GV229_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI229         "
+MR_GV229_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI229         "
+
+MR_GV230_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI230         "
+MR_GV230_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI230         "
+
+MR_GV5_18_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI018         "
+MR_GV5_18_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI018         "
+
+MR_GV5_19_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI019         "
+MR_GV5_19_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI019         "
+
+MR_GV5_21_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI021         "
+MR_GV5_21_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI021         "
+
+MR_GV5_5_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI005         "
+MR_GV5_5_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI005         "
+
+MR_GV5_42A_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI046         "
+MR_GV5_42A_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI046         "
+
+MR_GV5_2_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI002         "
+MR_GV5_2_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI002         "
+
+MR_GV5_4_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI004         "
+MR_GV5_4_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI004         "
+
+
+/////////////////////////////////////////////////
+// mrsh1.pict
+//
+
+MR_GV433_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI433         "
+MR_GV433_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI433         "
+
+MR_GV432_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI432         "
+MR_GV432_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI432         "
+
+
+// Szivattyuk
+
+// Szabalyozo
+MR_GV438_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI438         "
+MR_GV438_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI438         "
+
+MR_GV440_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI440         "
+MR_GV440_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI440         "
+
+MR_GV23_48_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI23.48       "
+MR_GV23_48_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI23.48       "
+
+// Szabalyozo
+MR_GV441_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI441         "
+MR_GV441_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI441         "
+
+MR_GV443_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI443         "
+MR_GV443_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI443         "
+
+MR_GV23_47_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI23.47       "
+MR_GV23_47_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI23.47       "
+
+// Aggregatok
+MR_GV2_20_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.20        "
+MR_GV2_20_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.20        "
+
+MR_GV2_22_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.22       "
+MR_GV2_22_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.22        "
+
+MR_GV2_19_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.19        "
+MR_GV2_19_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.19        "
+
+MR_GV2_21_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.21        "
+MR_GV2_21_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.21        "
+
+MR_GV2_2_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.2         "
+MR_GV2_2_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.2         "
+
+MR_GV2_6_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.6         "
+MR_GV2_6_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.6         "
+
+MR_GV2_5_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.5         "
+MR_GV2_5_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.5         "
+
+MR_GV2_10_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.10        "
+MR_GV2_10_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.10        "
+
+MR_GV2_9_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.9         "
+MR_GV2_9_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.9         "
+
+MR_GV2_13_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.13        "
+MR_GV2_13_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.13        "
+
+MR_GV2_16_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI2.16        "
+MR_GV2_16_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI2.16        "
+
+
+// Szivattyu 2
+
+// Szabalyozo
+MR_GV428_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI428         "
+MR_GV428_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI428         "
+
+MR_GV430_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI430         "
+MR_GV430_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI430         "
+
+MR_GV431_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI431         "
+MR_GV431_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI431         "
+
+// Szabalyozo
+MR_GV423_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI423         "
+MR_GV423_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI423         "
+
+MR_GV425_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI425         "
+MR_GV425_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI425         "
+
+MR_GV426_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI426         "
+MR_GV426_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI426         "
+
+// Aggregatok
+MR_GV391_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI391         "
+MR_GV391_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI391         "
+
+MR_GV392_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI392         "
+MR_GV392_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI392         "
+
+MR_GV401_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI401         "
+MR_GV401_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI401         "
+
+MR_GV403_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI403         "
+MR_GV403_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI403         "
+
+MR_GV406_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI406         "
+MR_GV406_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI406         "
+
+MR_GV407_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI407         "
+MR_GV407_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI407         "
+
+MR_GV409_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI409         "
+MR_GV409_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI409         "
+
+MR_GV411_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI411         "
+MR_GV411_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI411         "
+
+
+////////////////////////////////////////
+// mrsh3.pict
+//
+
+MR_GV301A_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI301a        "
+MR_GV301A_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI301a        "
+
+MR_GV301B_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI301b        "
+MR_GV301B_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI301b        "
+
+
+// Betap 1
+
+MR_GV203_1_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI203.1       "
+MR_GV203_1_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI203.1       "
+
+MR_GV203_2_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI203.2       "
+MR_GV203_2_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI203.2       "
+
+MR_GV203_3_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI203.3       "
+MR_GV203_3_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI203.3       "
+
+MR_GV203_4_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI203.4       "
+MR_GV203_4_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI203.4       "
+
+// not automated
+//MR_GV203_5_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI203.5       "
+//MR_GV203_5_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI203.5       "
+//
+//MR_GV203_6_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI203.6       "
+//MR_GV203_6_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI203.6       "
+
+
+MR_GV21_1_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.1        "
+MR_GV21_1_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.1        "
+
+MR_GV21_2_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.2        "
+MR_GV21_2_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.2        "
+
+MR_GV21_3_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.3        "
+MR_GV21_3_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.3        "
+
+MR_GV21_4_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.4        "
+MR_GV21_4_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.4        "
+
+MR_GV21_5_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.5        "
+MR_GV21_5_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.5        "
+
+MR_GV21_6_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.6        "
+MR_GV21_6_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.6        "
+
+MR_GV21_51_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.51       "
+MR_GV21_51_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.51       "
+
+MR_GV21_52_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.52       "
+MR_GV21_52_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.52       "
+
+MR_GV21_53_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.53       "
+MR_GV21_53_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.53       "
+
+MR_GV21_54_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI21.54       "
+MR_GV21_54_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI21.54       "
+
+MR_GV29_1_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI29.1П       "
+MR_GV29_1_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI29.1П       "
+
+MR_GV29_2_Input   , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI29.2Б       "
+MR_GV29_2_Output  , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI29.2Б       "
+
+
+MR_GV514_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI514         "
+MR_GV514_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI514         "
+
+MR_GV515_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI515         "
+MR_GV515_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI515         "
+
+MR_GV516_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI516         "
+MR_GV516_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI516         "
+
+MR_GV505_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI505         "
+MR_GV505_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI505         "
+
+MR_GV505A_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI505г        "
+MR_GV505A_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI505г        "
+
+
+// Betap 2
+
+MR_GV301_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI301         "
+MR_GV301_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI301         "
+
+MR_GV302_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI302         "
+MR_GV302_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI302         "
+
+MR_GV303_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI303         "
+MR_GV303_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI303         "
+
+
+MR_GV304_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI304         "
+MR_GV304_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI304         "
+
+MR_GV305_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI305         "
+MR_GV305_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI305         "
+
+MR_GV306_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI306         "
+MR_GV306_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI306         "
+
+MR_GV307_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI307         "
+MR_GV307_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI307         "
+
+MR_GV308_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI308         "
+MR_GV308_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI308         "
+
+MR_GV309_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI309         "
+MR_GV309_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI309         "
+
+
+MR_GV312_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI312         "
+MR_GV312_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI312         "
+
+MR_GV313_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI313         "
+MR_GV313_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI313         "
+
+MR_GV314_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI314         "
+MR_GV314_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI314         "
+
+
+MR_GV468_Input     , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI468         "
+MR_GV468_Output    , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI468         "
+
+MR_GV468A_Input    , U, 100, MrshStat  , N, 0, 0,         "Статус задвижки           GI468г        "
+MR_GV468A_Output   , U, 100, MrshStat  , N, 0, 0,         "Выходной Статус задвижки  GI468г        "
+
+
+/////////////////////////////////////////////////
+// mrsh2.pict
+
+
+MR_GV331_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI331         "
+MR_GV331_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI331         "
+
+MR_GV332_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI332         "
+MR_GV332_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI332         "
+
+MR_GV332a_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI332г        "
+MR_GV332a_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI332г        "
+
+MR_GV333_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI333         "
+MR_GV333_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI333         "
+
+MR_GV334_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI334         "
+MR_GV334_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI334         "
+
+MR_GV335_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI335         "
+MR_GV335_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI335         "
+
+MR_GV336_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI336         "
+MR_GV336_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI336         "
+
+MR_GV326_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI326         "
+MR_GV326_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI326         "
+
+MR_GV23_43_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.43       "
+MR_GV23_43_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.43       "
+
+MR_GV23_44_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.44       "
+MR_GV23_44_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.44       "
+
+MR_GV23_45_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.45       "
+MR_GV23_45_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.45       "
+
+MR_GV23_46_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.46       "
+MR_GV23_46_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.46       "
+
+MR_GV23_39_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.39       "
+MR_GV23_39_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.39       "
+
+MR_GV23_40_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.40       "
+MR_GV23_40_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.40       "
+
+MR_GV23_41_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.41       "
+MR_GV23_41_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.41       "
+
+MR_GV23_42_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.42       "
+MR_GV23_42_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.42       "
+
+MR_GV337_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI337         "
+MR_GV337_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI337         "
+
+MR_GV572_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI572         "
+MR_GV572_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI572         "
+
+MR_GV572a_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI572g        "
+MR_GV572a_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI572g        "
+
+MR_GV338_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI338         "
+MR_GV338_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI338         "
+
+MR_GV23_6_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.6        "
+MR_GV23_6_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.6        "
+
+MR_GV23_7_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.7        "
+MR_GV23_7_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.7        "
+
+MR_GV23_8_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.8        "
+MR_GV23_8_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.8        "
+
+MR_GV23_1_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.1        "
+MR_GV23_1_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.1        "
+
+MR_GV23_2_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.2        "
+MR_GV23_2_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.2        "
+
+MR_GV23_3_Input     , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI23.3        "
+MR_GV23_3_Output    , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI23.3        "
+
+MR_GV321_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI321         "
+MR_GV321_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI321         "
+
+MR_GV322_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI322         "
+MR_GV322_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI322         "
+
+MR_GV323_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI323         "
+MR_GV323_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI323         "
+
+MR_GV324_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI324         "
+MR_GV324_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI324         "
+
+MR_GV388_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI388         "
+MR_GV388_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI388         "
+
+MR_GV389_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI389         "
+MR_GV389_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI389         "
+
+MR_GV390_Input      , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI390         "
+MR_GV390_Output     , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI390         "
+
+
+////////////////////////////////////////
+//  1-es 2-es tartaly
+
+MR_GV20_1_Input      , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.1        "
+MR_GV20_1_Output     , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.1        "
+
+MR_GV20_2_Input      , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.2        "
+MR_GV20_2_Output     , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.2        "
+
+MR_GV20_10_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.10       "
+MR_GV20_10_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.10       "
+
+MR_GV20_11_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.11       "
+MR_GV20_11_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.11       "
+
+MR_GV23_9_Input      , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.9        "
+MR_GV23_9_Output     , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.9        "
+
+MR_GV23_10_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.10       "
+MR_GV23_10_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.10       "
+
+MR_GV23_11_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.11       "
+MR_GV23_11_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.11       "
+
+MR_GV23_12_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.12       "
+MR_GV23_12_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.12       "
+
+MR_GV23_13_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.13       "
+MR_GV23_13_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.13       "
+
+MR_GV23_14_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.14       "
+MR_GV23_14_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.14       "
+
+
+////////////////////////////////////////
+//  3-as 4-es tartaly
+
+MR_GV20_19_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.19       "
+MR_GV20_19_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.19       "
+
+MR_GV20_20_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.20       "
+MR_GV20_20_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.20       "
+
+MR_GV20_28_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI20.28       "
+MR_GV20_28_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI20.28       "
+
+MR_GV20_29_Input    , U, 100, MrshStat  , N, 0, 0,        "Статус задвижки           GI20.29       "
+MR_GV20_29_Output   , U, 100, MrshStat  , N, 0, 0,        "Выходной Статус задвижки  GI20.29       "
+
+MR_GV23_15_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.15       "
+MR_GV23_15_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.15       "
+
+MR_GV23_16_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.16       "
+MR_GV23_16_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.16       "
+
+MR_GV23_17_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.17       "
+MR_GV23_17_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.17       "
+
+MR_GV23_18_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.18       "
+MR_GV23_18_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.18       "
+
+MR_GV23_19_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.19       "
+MR_GV23_19_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.19       "
+
+MR_GV23_20_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.20       "
+MR_GV23_20_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.20       "
+
+
+////////////////////////////////////////
+//  5-os 6-os tartaly
+
+MR_GV20_73_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.73       "
+MR_GV20_73_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.73       "
+
+MR_GV20_74_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.74       "
+MR_GV20_74_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.74       "
+
+MR_GV20_82_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.82       "
+MR_GV20_82_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.82       "
+
+MR_GV20_83_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.83       "
+MR_GV20_83_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.83       "
+
+MR_GV23_33_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.33       "
+MR_GV23_33_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.33       "
+
+MR_GV23_34_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.34       "
+MR_GV23_34_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.34       "
+
+MR_GV23_35_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.35       "
+MR_GV23_35_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.35       "
+
+MR_GV23_36_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.36       "
+MR_GV23_36_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.36       "
+
+MR_GV23_37_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.37       "
+MR_GV23_37_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.37       "
+
+MR_GV23_38_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.38       "
+MR_GV23_38_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.38       "
+
+
+////////////////////////////////////////
+//  9-es 10-es tartaly
+
+MR_GV20_46_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.46       "
+MR_GV20_46_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.46       "
+
+MR_GV20_47_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.47       "
+MR_GV20_47_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.47       "
+
+MR_GV20_37_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.37       "
+MR_GV20_37_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.37       "
+
+MR_GV20_38_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.38       "
+MR_GV20_38_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.38       "
+
+MR_GV23_24_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.24       "
+MR_GV23_24_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.24       "
+
+MR_GV23_25_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.25       "
+MR_GV23_25_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.25       "
+
+MR_GV23_26_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.26       "
+MR_GV23_26_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.26       "
+
+MR_GV23_21_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.21       "
+MR_GV23_21_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.21       "
+
+MR_GV23_22_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.22       "
+MR_GV23_22_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.22       "
+
+MR_GV23_23_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.23       "
+MR_GV23_23_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.23       "
+
+
+
+////////////////////////////////////////
+//  7-es 8-as tartaly
+
+MR_GV20_55_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.55       "
+MR_GV20_55_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.55       "
+
+MR_GV20_56_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.56       "
+MR_GV20_56_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.56       "
+
+MR_GV20_64_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.64       "
+MR_GV20_64_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.64       "
+
+MR_GV20_65_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI20.65       "
+MR_GV20_65_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI20.65       "
+
+MR_GV23_27_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.27       "
+MR_GV23_27_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.27       "
+
+MR_GV23_28_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.28       "
+MR_GV23_28_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.28       "
+
+MR_GV23_29_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.29       "
+MR_GV23_29_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.29       "
+
+MR_GV23_30_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.30       "
+MR_GV23_30_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.30       "
+
+MR_GV23_31_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.31       "
+MR_GV23_31_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.31       "
+
+MR_GV23_32_Input     , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI23.32       "
+MR_GV23_32_Output    , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI23.32       "
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Park 2 - mrsh4.pict
+
+MR_GV327_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI327         "
+MR_GV327_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI327         "
+
+MR_GV328_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI328         "
+MR_GV328_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI328         "
+
+MR_GV329_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI329         "
+MR_GV329_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI329         "
+
+MR_GV330_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI330         "
+MR_GV330_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI330         "
+
+
+//for new tanks
+//MR_GV339_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI339         "
+//MR_GV339_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI339         "
+//
+//MR_GV340_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI340         "
+//MR_GV340_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI340         "
+//
+//MR_GV341_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI341         "
+//MR_GV341_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI341         "
+//
+//MR_GV342_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI342         "
+//MR_GV342_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI342         "
+//
+//MR_GV343_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI343         "
+//MR_GV343_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI343         "
+//
+//
+//MR_GV344_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI344         "
+//MR_GV344_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI344         "
+//
+//MR_GV345_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI345         "
+//MR_GV345_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI345         "
+//
+//MR_GV346_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI346         "
+//MR_GV346_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI346         "
+//
+//MR_GV347_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI347         "
+//MR_GV347_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI347         "
+//
+//MR_GV348_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI348         "
+//MR_GV348_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI348         "
+
+
+MR_GV353_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI353         "
+MR_GV353_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI353         "
+
+MR_GV354_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI354         "
+MR_GV354_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI354         "
+
+MR_GV355_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI355         "
+MR_GV355_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI355         "
+
+MR_GV356_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI356         "
+MR_GV356_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI356         "
+
+MR_GV357_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI357         "
+MR_GV357_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI357         "
+
+
+MR_GV358_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI358         "
+MR_GV358_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI358         "
+
+MR_GV359_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI359         "
+MR_GV359_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI359         "
+
+MR_GV360_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI360         "
+MR_GV360_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI360         "
+
+MR_GV361_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI361         "
+MR_GV361_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI361         "
+
+MR_GV362_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI362         "
+MR_GV362_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI362         "
+
+
+//for new tanks
+//MR_GV363_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI363         "
+//MR_GV363_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI363         "
+//
+//MR_GV364_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI364         "
+//MR_GV364_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI364         "
+//
+//MR_GV365_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI365         "
+//MR_GV365_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI365         "
+//
+//MR_GV366_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI366         "
+//MR_GV366_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI366         "
+//
+//MR_GV367_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI367         "
+//MR_GV367_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI367         "
+//
+//
+//MR_GV368_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI368         "
+//MR_GV368_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI368         "
+//
+//MR_GV369_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI369         "
+//MR_GV369_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI369         "
+//
+//MR_GV370_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI370         "
+//MR_GV370_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI370         "
+//
+//MR_GV371_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI371         "
+//MR_GV371_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI371         "
+//
+//MR_GV372_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI372         "
+//MR_GV372_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI372         "
+
+
+MR_GV377_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI377         "
+MR_GV377_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI377         "
+
+MR_GV378_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI378         "
+MR_GV378_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI378         "
+
+MR_GV379_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI379         "
+MR_GV379_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI379         "
+
+MR_GV380_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI380         "
+MR_GV380_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI380         "
+
+MR_GV381_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI381         "
+MR_GV381_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI381         "
+
+
+MR_GV382_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI382         "
+MR_GV382_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI382         "
+
+MR_GV383_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI383         "
+MR_GV383_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI383         "
+
+MR_GV384_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI384         "
+MR_GV384_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI384         "
+
+MR_GV385_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI385         "
+MR_GV385_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI385         "
+
+MR_GV386_Input       , U, 100, MrshStat  , N, 0, 0,       "Статус задвижки           GI386         "
+MR_GV386_Output      , U, 100, MrshStat  , N, 0, 0,       "Выходной Статус задвижки  GI386         "
+
+
+////////////////////////////////////////
+// Tags for configured pumping routes
+//
+
+MR_Route001_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 001         "
+MR_Route001_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 001           "
+MR_Route001_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 001                     "
+
+MR_Route002_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 002                  "
+MR_Route002_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 002           "
+MR_Route002_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 002                     "
+
+MR_Route003_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 003                  "
+MR_Route003_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 003           "
+MR_Route003_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 003                     "
+
+MR_Route004_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 004                "
+MR_Route004_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 004           "
+MR_Route004_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 004                     "
+
+MR_Route005_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 005                  "
+MR_Route005_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 005           "
+MR_Route005_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 005                     "
+
+MR_Route006_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 006                 "
+MR_Route006_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 006           "
+MR_Route006_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 006                     "
+
+MR_Route007_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 007                  "
+MR_Route007_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 007           "
+MR_Route007_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 007                     "
+
+MR_Route008_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 008                "
+MR_Route008_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 008           "
+MR_Route008_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 008                     "
+
+MR_Route009_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 009                  "
+MR_Route009_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 009           "
+MR_Route009_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 009                     "
+
+MR_Route010_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 010                  "
+MR_Route010_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 010           "
+MR_Route010_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 010                     "
+
+MR_Route011_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 011                 "
+MR_Route011_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 011           "
+MR_Route011_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 011                     "
+
+MR_Route012_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 012                  "
+MR_Route012_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 012           "
+MR_Route012_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 012                     "
+
+MR_Route013_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 013                  "
+MR_Route013_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 013           "
+MR_Route013_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 013                     "
+
+MR_Route014_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 014                  "
+MR_Route014_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 014           "
+MR_Route014_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 014                     "
+
+MR_Route015_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 015                  "
+MR_Route015_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 015           "
+MR_Route015_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 015                     "
+
+MR_Route016_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 016                  "
+MR_Route016_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 016           "
+MR_Route016_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 016                     "
+
+MR_Route017_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 017                  "
+MR_Route017_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 017           "
+MR_Route017_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 017                     "
+
+MR_Route018_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 018                  "
+MR_Route018_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 018           "
+MR_Route018_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 018                     "
+
+MR_Route019_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 019                  "
+MR_Route019_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 019           "
+MR_Route019_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 019                     "
+
+MR_Route020_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 020                  "
+MR_Route020_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 020           "
+MR_Route020_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 020                     "
+
+MR_Route021_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 021                  "
+MR_Route021_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 021           "
+MR_Route021_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 021                     "
+
+MR_Route022_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 022                  "
+MR_Route022_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 022           "
+MR_Route022_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 022                     "
+
+MR_Route023_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 023                  "
+MR_Route023_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 023           "
+MR_Route023_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 023                     "
+
+MR_Route024_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 024                  "
+MR_Route024_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 024           "
+MR_Route024_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 024                     "
+
+MR_Route025_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 025                  "
+MR_Route025_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 025           "
+MR_Route025_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 025                     "
+
+MR_Route026_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 026                  "
+MR_Route026_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 026           "
+MR_Route026_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 026                     "
+
+MR_Route027_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 027                  "
+MR_Route027_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 027           "
+MR_Route027_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 027                     "
+
+MR_Route028_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 028                  "
+MR_Route028_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 028           "
+MR_Route028_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 028                     "
+
+MR_Route029_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 029                  "
+MR_Route029_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 029           "
+MR_Route029_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 029                     "
+
+MR_Route030_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 030                  "
+MR_Route030_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 030           "
+MR_Route030_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 030                     "
+
+MR_Route031_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 031                  "
+MR_Route031_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 031           "
+MR_Route031_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 031                     "
+
+MR_Route032_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 032                  "
+MR_Route032_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 032           "
+MR_Route032_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 032                     "
+
+MR_Route033_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 033                  "
+MR_Route033_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 033           "
+MR_Route033_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 033                     "
+
+MR_Route034_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 034                  "
+MR_Route034_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 034           "
+MR_Route034_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 034                     "
+
+MR_Route035_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 035                  "
+MR_Route035_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 035           "
+MR_Route035_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 035                     "
+
+MR_Route036_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 036                  "
+MR_Route036_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 036           "
+MR_Route036_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 036                     "
+
+MR_Route037_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 037                  "
+MR_Route037_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 037           "
+MR_Route037_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 037                     "
+
+MR_Route038_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 038                  "
+MR_Route038_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 038           "
+MR_Route038_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 038                     "
+
+MR_Route039_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 039                  "
+MR_Route039_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 039           "
+MR_Route039_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 039                     "
+
+MR_Route040_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 040                  "
+MR_Route040_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 040           "
+MR_Route040_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 040                     "
+
+MR_Route041_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 041                  "
+MR_Route041_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 041           "
+MR_Route041_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 041                     "
+
+MR_Route042_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 042                  "
+MR_Route042_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 042           "
+MR_Route042_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 042                     "
+
+MR_Route043_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 043                  "
+MR_Route043_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 043           "
+MR_Route043_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 043                     "
+
+MR_Route044_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 044                  "
+MR_Route044_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 044           "
+MR_Route044_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 044                     "
+
+MR_Route045_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 045                  "
+MR_Route045_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 045           "
+MR_Route045_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 045                     "
+
+MR_Route046_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 046                  "
+MR_Route046_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 046           "
+MR_Route046_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 046                     "
+
+MR_Route047_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 047                  "
+MR_Route047_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 047           "
+MR_Route047_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 047                     "
+
+MR_Route048_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 048                  "
+MR_Route048_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 048           "
+MR_Route048_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 048                     "
+
+MR_Route049_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 049                  "
+MR_Route049_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 049           "
+MR_Route049_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 049                     "
+
+MR_Route050_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 050                  "
+MR_Route050_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 050           "
+MR_Route050_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 050                     "
+
+MR_Route051_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 051                  "
+MR_Route051_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 051           "
+MR_Route051_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 051                     "
+
+MR_Route052_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 052                  "
+MR_Route052_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 052           "
+MR_Route052_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 052                     "
+
+MR_Route053_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 053                  "
+MR_Route053_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 053           "
+MR_Route053_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 053                     "
+
+MR_Route054_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 054                  "
+MR_Route054_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 054           "
+MR_Route054_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 054                     "
+
+MR_Route055_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 055                  "
+MR_Route055_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 055           "
+MR_Route055_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 055                     "
+
+MR_Route056_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 056                  "
+MR_Route056_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 056           "
+MR_Route056_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 056                     "
+
+MR_Route057_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 057                  "
+MR_Route057_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 057           "
+MR_Route057_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 057                     "
+
+MR_Route058_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 058                  "
+MR_Route058_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 058           "
+MR_Route058_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 058                     "
+
+MR_Route059_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 059                  "
+MR_Route059_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 059           "
+MR_Route059_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 059                     "
+
+MR_Route060_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 060                  "
+MR_Route060_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 060           "
+MR_Route060_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 060                     "
+
+MR_Route061_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 061                  "
+MR_Route061_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 061           "
+MR_Route061_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 061                     "
+
+MR_Route062_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 062                  "
+MR_Route062_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 062           "
+MR_Route062_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 062                     "
+
+MR_Route063_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 063                  "
+MR_Route063_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 063           "
+MR_Route063_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 063                     "
+
+MR_Route064_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 064                  "
+MR_Route064_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 064           "
+MR_Route064_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 064                     "
+
+MR_Route065_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 065                  "
+MR_Route065_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 065           "
+MR_Route065_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 065                     "
+
+MR_Route066_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 066                  "
+MR_Route066_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 066           "
+MR_Route066_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 066                     "
+
+MR_Route067_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 067                  "
+MR_Route067_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 067           "
+MR_Route067_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 067                     "
+
+MR_Route068_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 068                  "
+MR_Route068_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 068           "
+MR_Route068_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 068                     "
+
+MR_Route069_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 069                  "
+MR_Route069_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 069           "
+MR_Route069_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 069                     "
+
+MR_Route070_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 070                  "
+MR_Route070_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 070           "
+MR_Route070_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 070                     "
+
+MR_Route071_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 071                  "
+MR_Route071_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 071           "
+MR_Route071_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 071                     "
+
+MR_Route072_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 072                  "
+MR_Route072_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 072           "
+MR_Route072_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 072                     "
+
+MR_Route073_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 073                  "
+MR_Route073_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 073           "
+MR_Route073_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 073                     "
+
+MR_Route074_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 074                  "
+MR_Route074_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 074           "
+MR_Route074_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 074                     "
+
+MR_Route075_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 075                  "
+MR_Route075_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 075           "
+MR_Route075_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 075                     "
+
+MR_Route076_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 076                  "
+MR_Route076_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 076           "
+MR_Route076_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 076                     "
+
+MR_Route077_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 077                  "
+MR_Route077_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 077           "
+MR_Route077_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 077                     "
+
+MR_Route078_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 078                  "
+MR_Route078_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 078           "
+MR_Route078_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 078                     "
+
+MR_Route079_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 079                  "
+MR_Route079_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 079           "
+MR_Route079_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 079                     "
+
+MR_Route080_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 080                  "
+MR_Route080_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 080           "
+MR_Route080_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 080                     "
+
+MR_Route081_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 081                  "
+MR_Route081_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 081           "
+MR_Route081_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 081                     "
+
+MR_Route082_Cmd      , U, 100, MrshStat  , N, 0, 0,      "Команда маршрута 082                  "
+MR_Route082_Name     , X, 100, Маршрут001, MrshStat   , N, 0, 0, "Название Маршрута 082           "
+MR_Route082_Stat     , U, 100, MrshStat  , N, 0, 0,      "Статус маршрута 082                     "
+
+
+
+
+

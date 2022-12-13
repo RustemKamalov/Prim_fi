@@ -1,0 +1,268 @@
+262,263c262,263
+< T_Tbl01Control	1
+< T_Tbl01Trigger	1
+---
+> T_Tbl01Control	0
+> T_Tbl01Trigger	0
+274c274
+< T_Tbl01AbsClass01	4
+---
+> T_Tbl01AbsClass01	0
+276,278c276,278
+< T_Tbl01AbsClass03	2
+< T_Tbl01AbsClass04	2
+< T_Tbl01AbsClass05	2
+---
+> T_Tbl01AbsClass03	0
+> T_Tbl01AbsClass04	0
+> T_Tbl01AbsClass05	0
+285c285
+< T_Tbl01StartHour	1
+---
+> T_Tbl01StartHour	0
+287,289c287,289
+< T_Tbl01StartMonth	-1
+< T_Tbl01CycleMinute	0
+< T_Tbl01CycleHour	2
+---
+> T_Tbl01StartMonth	0
+> T_Tbl01CycleMinute	1
+> T_Tbl01CycleHour	0
+293c293
+< T_Tbl02Control	1
+---
+> T_Tbl02Control	0
+300c300
+< T_Tbl02CycClass06	2
+---
+> T_Tbl02CycClass06	0
+305c305
+< T_Tbl02AbsClass01	6
+---
+> T_Tbl02AbsClass01	0
+324c324
+< T_Tbl03Control	1
+---
+> T_Tbl03Control	0
+329c329
+< T_Tbl03CycClass04	2
+---
+> T_Tbl03CycClass04	0
+341c341
+< T_Tbl03AbsClass06	2
+---
+> T_Tbl03AbsClass06	0
+355c355
+< T_Tbl04Control	1
+---
+> T_Tbl04Control	0
+364c364
+< T_Tbl04CycClass08	2
+---
+> T_Tbl04CycClass08	0
+386c386
+< T_Tbl05Control	1
+---
+> T_Tbl05Control	0
+392c392
+< T_Tbl05CycClass05	2
+---
+> T_Tbl05CycClass05	0
+401c401
+< T_Tbl05AbsClass04	2
+---
+> T_Tbl05AbsClass04	0
+417c417
+< T_Tbl06Control	1
+---
+> T_Tbl06Control	0
+421c421
+< T_Tbl06CycClass03	2
+---
+> T_Tbl06CycClass03	0
+435c435
+< T_Tbl06AbsClass07	2
+---
+> T_Tbl06AbsClass07	0
+448c448
+< T_Tbl07Control	1
+---
+> T_Tbl07Control	0
+453c453
+< T_Tbl07CycClass04	2
+---
+> T_Tbl07CycClass04	0
+456c456
+< T_Tbl07CycClass07	2
+---
+> T_Tbl07CycClass07	0
+459c459
+< T_Tbl07CycClass10	2
+---
+> T_Tbl07CycClass10	0
+479c479
+< T_Tbl08Control	1
+---
+> T_Tbl08Control	0
+494c494
+< T_Tbl08AbsClass04	2
+---
+> T_Tbl08AbsClass04	0
+510c510
+< T_Tbl09Control	1
+---
+> T_Tbl09Control	0
+517c517
+< T_Tbl09CycClass06	2
+---
+> T_Tbl09CycClass06	0
+529c529
+< T_Tbl09AbsClass08	2
+---
+> T_Tbl09AbsClass08	0
+544c544
+< T_Tbl10CycClass02	2
+---
+> T_Tbl10CycClass02	0
+549c549
+< T_Tbl10CycClass07	2
+---
+> T_Tbl10CycClass07	0
+557c557
+< T_Tbl10AbsClass05	2
+---
+> T_Tbl10AbsClass05	0
+560c560
+< T_Tbl10AbsClass08	2
+---
+> T_Tbl10AbsClass08	0
+586c586
+< T_Tbl11AbsClass03	2
+---
+> T_Tbl11AbsClass03	0
+608c608
+< T_Tbl12CycClass04	2
+---
+> T_Tbl12CycClass04	0
+619c619
+< T_Tbl12AbsClass05	2
+---
+> T_Tbl12AbsClass05	0
+621c621
+< T_Tbl12AbsClass07	2
+---
+> T_Tbl12AbsClass07	0
+683c683
+< T_Tbl14AbsClass07	2
+---
+> T_Tbl14AbsClass07	0
+713c713
+< T_Tbl15AbsClass06	2
+---
+> T_Tbl15AbsClass06	0
+727c727
+< T_Tbl16Control	1
+---
+> T_Tbl16Control	0
+758c758
+< T_Tbl17Control	1
+---
+> T_Tbl17Control	0
+775c775
+< T_Tbl17AbsClass06	2
+---
+> T_Tbl17AbsClass06	0
+789c789
+< T_Tbl18Control	1
+---
+> T_Tbl18Control	0
+806c806
+< T_Tbl18AbsClass06	2
+---
+> T_Tbl18AbsClass06	0
+1217,1219c1217,1219
+< MB_PATH01_STATE	32768
+< MB_PATH02_STATE	32768
+< MB_PATH03_STATE	32768
+---
+> MB_PATH01_STATE	0
+> MB_PATH02_STATE	0
+> MB_PATH03_STATE	0
+1232,1235c1232,1235
+< MB_PATH16_STATE	32768
+< MB_PATH17_STATE	32768
+< MB_PATH18_STATE	32768
+< MB_PATH19_STATE	32768
+---
+> MB_PATH16_STATE	0
+> MB_PATH17_STATE	0
+> MB_PATH18_STATE	0
+> MB_PATH19_STATE	0
+1253,1255c1253,1255
+< MB_PATH37_STATE	32768
+< MB_PATH38_STATE	32768
+< MB_PATH39_STATE	32768
+---
+> MB_PATH37_STATE	0
+> MB_PATH38_STATE	0
+> MB_PATH39_STATE	0
+1258,1259c1258,1259
+< MB_PATH42_STATE	32768
+< MB_PATH43_STATE	32768
+---
+> MB_PATH42_STATE	0
+> MB_PATH43_STATE	0
+1326,1327c1326,1327
+< ManualEventFgColor	0
+< ManualEventBgColor	0
+---
+> ManualEventFgColor	1
+> ManualEventBgColor	2
+1471,1473c1471,1473
+< M1_TT923_MinEU	-50.000000
+< M1_TT923_MaxEU	150.000000
+< M1_TT923_ScaleWidth	200.000000
+---
+> M1_TT923_MinEU	0.000000
+> M1_TT923_MaxEU	100.000000
+> M1_TT923_ScaleWidth	100.000000
+1476,1478c1476,1478
+< M1_TT924_MinEU	-50.000000
+< M1_TT924_MaxEU	150.000000
+< M1_TT924_ScaleWidth	200.000000
+---
+> M1_TT924_MinEU	0.000000
+> M1_TT924_MaxEU	100.000000
+> M1_TT924_ScaleWidth	100.000000
+1486,1488c1486,1488
+< M1_TT927_MinEU	-50.000000
+< M1_TT927_MaxEU	150.000000
+< M1_TT927_ScaleWidth	200.000000
+---
+> M1_TT927_MinEU	0.000000
+> M1_TT927_MaxEU	100.000000
+> M1_TT927_ScaleWidth	100.000000
+1507,1508c1507,1508
+< M1_YT703_MaxEU	11930.000000
+< M1_YT703_ScaleWidth	11930.000000
+---
+> M1_YT703_MaxEU	12000.000000
+> M1_YT703_ScaleWidth	12000.000000
+1512,1513c1512,1513
+< M1_YT704_MaxEU	12200.000000
+< M1_YT704_ScaleWidth	12200.000000
+---
+> M1_YT704_MaxEU	12000.000000
+> M1_YT704_ScaleWidth	12000.000000
+2243,2244c2243,2244
+< M2_YT702_MaxEU	11900.000000
+< M2_YT702_ScaleWidth	11900.000000
+---
+> M2_YT702_MaxEU	12000.000000
+> M2_YT702_ScaleWidth	12000.000000
+2468,2469c2468,2469
+< M2_YT701_MaxEU	11680.000000
+< M2_YT701_ScaleWidth	11680.000000
+---
+> M2_YT701_MaxEU	12000.000000
+> M2_YT701_ScaleWidth	12000.000000

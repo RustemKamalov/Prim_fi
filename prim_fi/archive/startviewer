@@ -1,0 +1,2 @@
+#!/bin/sh
+/Dmon/bin/dmarchview  /prim_fi/archive/slots/cfg

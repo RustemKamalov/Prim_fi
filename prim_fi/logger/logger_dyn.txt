@@ -1,0 +1,380 @@
+###############################################################################
+#
+# Qdiagem Logger Module configuration file
+#					(lines starting with '#' are considered as comments)
+#					(default values are shown in [])
+#					(lines ending with '\' are continueing in the next line(s))
+###############################################################################
+
+# Configuration parameters;
+#	In this section every data consits of two parameters, where
+#		v=fix value (valid if 's' is not defined or initially while the
+#			signal is not set by a module)
+#		s=signal name (the value of the signal overrides 'v' if the signal
+#			is written; when the module starts the signals' values are set
+#			to the value given with 'v')
+
+# Module's priority (0-29)										[10, -]
+
+PRIO:	v=10	s=LOG_PRIO
+
+# Print messages to logfile (0/1)								[0, -]
+#			v=0 means don't print anything (except upon initialisation)
+#			v=1 means print error messages
+
+LOGF:	v=1		s=LOG_LOGF
+
+# Maximum number of lines in logfile (min 1)					[10000, -]
+#			The logfile will be reopened after the given number of lines
+#			had been written. (Backup will be created.)
+
+FLEN:	v=10000	s=LOG_FLEN
+
+# Print messages to console (0/1)								[0, -]
+#			v=0 means don't print anything (except upon initialisation)
+#			v=1 means print error messages
+
+LOGC:	v=1		s=LOG_LOGC
+
+# Console name													[-, -]
+#			If not defined, the program's current console is assumed
+
+#CNAM:  v=/dev/con1 s=LOG_CNAM
+
+# Print messages to message window (0/1)						[1, -]
+#			v=0 means don't print anything
+#			v=1 means print error messages
+
+LOGM:	v=1		s=LOG_LOGM
+
+# Override configuration data from the server's database (0/1)	[0, -]
+#			If set to 1, the default initial values of all the configuration
+#			signals listed in this file will be overriden with the values read
+#			from the server upon startup.
+#			Note: this value cannot be modified upon running; the signal can
+#			only be used to display the given setting;
+
+OVRD:	v=0		s=LOG_OVRD
+
+###############################################################################
+# Status signal; contains the last action's or non fatal error'	[-]
+#			code where every bit represents a certain action/error state.
+#			The different bits are:
+#				0x01 - File access error;
+#				0x02 - Insufficient memory;
+#				0x04 - Other (internal) error;
+
+STAT:	s=LOG_STAT
+
+# Status parameter; This text type of signal contains 			[-]
+#			additional info to the error code; currently this is the file's
+#			name if any file handling error occurs.
+
+SPAR:	s=LOG_SPAR
+
+###############################################################################
+# Output files' root directory; all log files created by		[-, -]
+#			the objects will be placed in different sub-directories of this
+#			directory.
+#			Note: this value cannot be modified upon running; the signal can
+#			only be used to display the given setting;
+
+RDIR: v=/prim_fi_data/logger s=LOG_RDIR
+
+###############################################################################
+# Printer definitions; printers are described by two parameters:
+#			'PRDn' defines the printer device					[-, -]
+#				(if undefined no printing will occur)
+#			'PRLn'defines the printer's pagelen (min 0);		[60, -]
+#				This value will be used when to print new
+#				header, i.e. when to process the ':HEAD'
+#				section of the format file.
+#				(0 means no limit, i.e only the first header
+#				will be printed upon starting the logging.)
+
+#PRN1:  d=/dev/spool/lexmark D=LOG_PRD1 \
+#       l=60    L=LOG_PRL1
+
+#PRN2:  d=/dev/spool/lexmark D=LOG_PRD2 \
+# l=60  L=LOG_PRL2
+
+###############################################################################
+# Format file definitions; this section lists the possible		[-, -]
+#			format files to be processed by the objects.
+
+
+FMT1:      v=/prim_fi/logger/tbl/stat_mea.rpt
+FMT2:      v=/prim_fi/logger/tbl/agr_meas.rpt
+FMT3:      v=/prim_fi/logger/tbl/tech_st.rpt
+FMT4:      v=/prim_fi/logger/tbl/sinc_day.rpt
+FMT5:      v=/prim_fi/logger/tbl/sinc_d_p.rpt
+FMT6:      v=/prim_fi/logger/tbl/sinc_mth.rpt
+FMT7:      v=/prim_fi/logger/tbl/sinc_m_p.rpt
+FMT8:      v=/prim_fi/logger/tbl/since_op.rpt
+FMT9:      v=/prim_fi/logger/tbl/since_re.rpt
+FMT16:  v=/prim_fi/logger/tbl/anal_par.rpt
+FMT17:  v=/prim_fi/logger/tbl/timer.rpt
+FMT18:  v=/prim_fi/logger/tbl/vl_type.rpt
+
+
+#	s=LOG_FMT1
+#FMT2:	v=/Diagem/apps/test/logger/log2
+#	s=LOG_FMT2
+
+###############################################################################
+# Object Definitions
+
+# Beginning of object definition record:
+# In this line 'obj1' is the object's user-defined name (can be any string)
+
+#OBJ: obj1
+
+# Parameterlist; These signals can be refrenced in the object's function
+#	definition ('FUNC'); This also means that these signals trigger the
+#	function's re-evaluation.
+
+#	PARL: P0=strconst P1=strconst..
+
+# Object's function; this is a usual Qdiagem interpreter function. Q0 is
+#	predefined as 'do not log' and Q1 as 'do logging'. If undefined,
+#	it is assumed to be 'ELSE Q1'.
+
+#	FUNC: IF P0>P1:Q1;ELSE Q0;
+
+# Format file's index; this value defines the format file to	[0, -]
+#	use. 'n' means 'FMTn' (see above); (min 0 which means 'no
+#	file', i.e. disables the object.)
+#		Note: This value can only be modified if the logging is
+#	inactive and will be rejected otherwise.
+
+#	OFMT: v=1	s=strconst
+
+# Trigger signal; If this signal is written to non-zero the		[-]
+#	body of the object's format file (defined by 'FTMF') will
+#	be generated once (i.e the format file's ':BODY' section will
+#	be evaluated and written out).
+
+#	TRIG: s=strconst
+
+# Cycle time; the body of the format file will be written		[0, -]
+#	that many seconds (min 0; if set to 0, only 'TRIG' controls
+#	logging)
+
+#	CYCL: v=0	s=strconst
+
+# Count limit; the body of the format file  will be logged		[1, -]
+#	not more times than this value. This means that even if
+#	'FUNC' is still true, the logging will be stopped if this
+#	limit is reached (including the logging done via both
+#	'TRIG' and 'CYCL'). 0 means no limit, i.e. the logging
+#	will only be stopped if 'FUNC' becomes false. (min 0)
+
+#	CNTL: v=0	s=strconst
+
+# Output directory's name; files created by this object will	[-, -]
+#	be placed in this directory; this name must be unique
+#	among all objects; if the directory not exists, it will be
+#	created. (If undefined no file will be created.)
+#		(Files created by the objects bear their creation date
+#		as their names in the YYMMDD.HHMMSS.dlog format.)
+#		Note: This value can only be modified if the logging is
+#	inactive and will be rejected otherwise.
+
+#	DIRN: v=dir_name s=strconst
+
+# File creation mode; controls how to create new files (0/1/2)	[0, -]
+#	0 means new file (always create new file)
+#	1 means	append (append to existing file)
+#	2 means overwrite mode (always create new file, delete earlier ones)
+
+#	FMOD: v=1	s=strconst
+
+# Print device's index; this value defines the printer to		[0, -]
+#	be used. 'n' refers to 'PRDn' (see above); (min 0 which
+#	means no device). Note: This value can only be modified if
+#	the logging is inactive and will be rejected otherwise.
+
+#	PIND: v=0	s=strcons
+
+# Printer's pagelen; used only if 'PIND' is 0. (min 0)			[60, -]
+#	The notes mentioned at 'PRLn' are also valid here.
+
+#	PLEN:	v=60	s=strcons
+
+# File duration; files created earlier than that many days		[30, -]
+#	 will be deleted when a new file is opened
+#		Note: only the files located in the currently defined
+#	directory (set by 'DIRN') are deleted; formerly used
+#	directories should manually be deleted if necessary.
+
+#	LDUR:	v=30	s=strcons
+
+# File's length; files are written for that many days (min 1)	[1, -]
+
+#	LLEN:	v=1		s=strcons
+
+# File's reopening time; If 'LLEN' days elapsed the currently	[0, -]
+#	written file will be closed and a new one will be created.
+
+#	LRES:	v=0		s=strcons
+
+# The object's end marker:
+
+#OBEND
+
+###############################################################################
+
+
+OBJ: obj1
+    PARL: P0=  LoggerTbl01FOpen
+    FUNC: IF S0&&P0 : Q1; ELSE Q0;
+	OFMT: v=1
+#	OFMT: v=1 s=LOG_OB1_FMTF
+	TRIG: s=LoggerTbl01Write
+#	CYCL: v=0 s=LOG_OB1_CYCL
+	CNTL: v=1
+	DIRN: v=stat_mea
+#	DIRN: v=obj1 s=LOG_OB1_DIRN
+#	FMOD: v=1 s=LOG_OB1_FMOD
+	PIND: v=0 s=T_Tbl01SendToPrn
+#	PIND: v=1 s=LOG_OB1_PIND
+	PLEN: v=0
+#	PLEN: v=60 s=LOG_OB1_PLEN
+#	LDUR: v=30 s=LOG_OB1_LDUR
+#	LLEN: v=1 s=LOG_OB1_LLEN
+#	LRES: v=0 s=LOG_OB1_LRES
+OBEND
+
+
+#---  ---
+OBJ: obj2
+    PARL: P0=  LoggerTbl02FOpen
+    FUNC: IF S0&&P0 : Q1; ELSE Q0;
+	OFMT: v=2
+	TRIG: s=LoggerTbl02Write
+	CNTL: v=1
+	DIRN: v=agr_meas
+	PIND: v=0 s=T_Tbl02SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj3
+    PARL: P0=  LoggerTbl03FOpen
+    FUNC: IF S0&&P0 : Q1; ELSE Q0;
+	OFMT: v=3
+	TRIG: s=LoggerTbl03Write
+	CNTL: v=1
+	DIRN: v=tech_st
+	PIND: v=0 s=T_Tbl03SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj4
+    PARL: P0=  LoggerTbl04FOpen
+    FUNC: IF S0&&P0 : Q1; ELSE Q0;
+	OFMT: v=4
+	TRIG: s=LoggerTbl04Write
+	CNTL: v=1
+	DIRN: v=sinc_day
+	PIND: v=0 s=T_Tbl04SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj5
+    PARL: P0=  LoggerTbl05FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=5
+	TRIG: s=LoggerTbl05Write
+	CNTL: v=1
+	DIRN: v=sinc_d_p
+	PIND: v=0 s=T_Tbl05SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj6
+    PARL: P0=  LoggerTbl06FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=6
+	TRIG: s=LoggerTbl06Write
+	CNTL: v=1
+	DIRN: v=sinc_mth
+	PIND: v=0 s=T_Tbl06SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj7
+    PARL: P0=  LoggerTbl07FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=7
+	TRIG: s=LoggerTbl07Write
+	CNTL: v=1
+	DIRN: v=sinc_m_p
+	PIND: v=0 s=T_Tbl07SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj8
+    PARL: P0=  LoggerTbl08FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=8
+	TRIG: s=LoggerTbl08Write
+	CNTL: v=1
+	DIRN: v=since_op
+	PIND: v=0 s=T_Tbl08SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj9
+    PARL: P0=  LoggerTbl09FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=9
+	TRIG: s=LoggerTbl09Write
+	CNTL: v=1
+	DIRN: v=since_re
+	PIND: v=0 s=T_Tbl09SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj16
+    PARL: P0=LoggerTbl16FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=16
+	TRIG: s=LoggerTbl16Write
+	CNTL: v=1
+	DIRN: v=anal_par
+	PIND: v=0 s=T_Tbl16SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj17
+    PARL: P0=LoggerTbl17FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=17
+	TRIG: s=LoggerTbl17Write
+	CNTL: v=1
+	DIRN: v=timer
+	PIND: v=0 s=T_Tbl17SendToPrn
+	PLEN: v=0
+OBEND
+
+#---  ---
+OBJ: obj18
+    PARL: P0=LoggerTbl18FOpen
+    FUNC: IF P0 : Q1; ELSE Q0;
+	OFMT: v=18
+	TRIG: s=LoggerTbl18Write
+	CNTL: v=1
+	DIRN: v=vl_type
+	PIND: v=0 s=T_Tbl18SendToPrn
+	PLEN: v=0
+OBEND
+

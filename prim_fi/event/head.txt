@@ -1,0 +1,314 @@
+# the values of the P0-P31 parameters
+C1:		ELSE P0;
+C2:		ELSE P1;
+C3:		ELSE P2;
+C4:		ELSE P3;
+C5:		ELSE P4;
+C6:		ELSE P5;
+C7:		ELSE P6;
+C8:		ELSE P7;
+C9:		ELSE P8;
+C10:		ELSE P9;
+C11:		ELSE P10;
+C12:		ELSE P11;
+C13:		ELSE P12;
+C14:		ELSE P13;
+C15:		ELSE P14;
+C16:		ELSE P15;
+C17:		ELSE P16;
+C18:		ELSE P17;
+C19:		ELSE P18;
+C20:		ELSE P19;
+C21:		ELSE P20;
+C22:		ELSE P21;
+C23:		ELSE P22;
+C24:		ELSE P23;
+C25:		ELSE P24;
+C26:		ELSE P25;
+C27:		ELSE P26;
+C28:		ELSE P27;
+C29:		ELSE P28;
+C30:		ELSE P29;
+C31:		ELSE P30;
+C32:		ELSE P31;
+
+# 02.0 formats
+Q1:	      	#02.0C1
+Q2:	      	#02.0C2
+Q3:	      	#02.0C3
+Q4:	      	#02.0C4
+Q5:	      	#02.0C5
+Q6:	      	#02.0C6
+Q7:	      	#02.0C7
+Q8:	      	#02.0C8
+Q9:	      	#02.0C9
+Q10:	      	#02.0C10
+Q11:	      	#02.0C11
+Q12:	      	#02.0C12
+Q13:	      	#02.0C13
+Q14:	      	#02.0C14
+Q15:	      	#02.0C15
+Q16:	      	#02.0C16
+Q17:	      	#02.0C17
+Q18:	      	#02.0C18
+Q19:	      	#02.0C19
+Q20:	      	#02.0C20
+Q21:	      	#02.0C21
+Q22:	      	#02.0C22
+Q23:	      	#02.0C23
+Q24:	      	#02.0C24
+Q25:	      	#02.0C25
+Q26:	      	#02.0C26
+Q27:	      	#02.0C27
+Q28:	      	#02.0C28
+Q29:	      	#02.0C29
+Q30:	      	#02.0C30
+Q31:	      	#02.0C31
+Q32:	      	#02.0C32
+
+# -7.0 formats
+Q33:	      	#-7.0C1
+Q34:	      	#-7.0C2
+Q35:	      	#-7.0C3
+Q36:	      	#-7.0C4
+Q37:	      	#-7.0C5
+Q38:	      	#-7.0C6
+Q39:	      	#-7.0C7
+Q40:	      	#-7.0C8
+Q41:	      	#-7.0C9
+Q42:	      	#-7.0C10
+Q43:	      	#-7.0C11
+Q44:	      	#-7.0C12
+Q45:	      	#-7.0C13
+Q46:	      	#-7.0C14
+Q47:	      	#-7.0C15
+Q48:	      	#-7.0C16
+Q49:	      	#-7.0C17
+Q50:	      	#-7.0C18
+Q51:	      	#-7.0C19
+Q52:	      	#-7.0C20
+Q53:	      	#-7.0C21
+Q54:	      	#-7.0C22
+Q55:	      	#-7.0C23
+Q56:	      	#-7.0C24
+Q57:	      	#-7.0C25
+Q58:	      	#-7.0C26
+Q59:	      	#-7.0C27
+Q60:	      	#-7.0C28
+Q61:	      	#-7.0C29
+Q62:	      	#-7.0C30
+Q63:	      	#-7.0C31
+Q64:	      	#-7.0C32
+
+# -7.2 formats
+Q65:	      	#-7.2C1
+Q66:	      	#-7.2C2
+Q67:	      	#-7.2C3
+Q68:	      	#-7.2C4
+Q69:	      	#-7.2C5
+Q70:	      	#-7.2C6
+Q71:	      	#-7.2C7
+Q72:	      	#-7.2C8
+Q73:	      	#-7.2C9
+Q74:	      	#-7.2C10
+Q75:	      	#-7.2C11
+Q76:	      	#-7.2C12
+Q77:	      	#-7.2C13
+Q78:	      	#-7.2C14
+Q79:	      	#-7.2C15
+Q80:	      	#-7.2C16
+Q81:	      	#-7.2C17
+Q82:	      	#-7.2C18
+Q83:	      	#-7.2C19
+Q84:	      	#-7.2C20
+Q85:	      	#-7.2C21
+Q86:	      	#-7.2C22
+Q87:	      	#-7.2C23
+Q88:	      	#-7.2C24
+Q89:	      	#-7.2C25
+Q90:	      	#-7.2C26
+Q91:	      	#-7.2C27
+Q92:	      	#-7.2C28
+Q93:	      	#-7.2C29
+Q94:	      	#-7.2C30
+Q95:	      	#-7.2C31
+Q96:	      	#-7.2C32
+
+# comment fields ($-20)
+Q97:            $-20P0
+Q98:            $-20P1
+Q99:            $-20P2
+Q100:           $-20P3
+Q101:           $-20P4
+Q102:           $-20P5
+Q103:           $-20P6
+Q104:           $-20P7
+Q105:           $-20P8
+Q106:           $-20P9
+Q107:           $-20P10
+Q108:           $-20P11
+Q109:           $-20P12
+Q110:           $-20P13
+Q111:           $-20P14
+Q112:           $-20P15
+Q113:           $-20P16
+Q114:           $-20P17
+Q115:           $-20P18
+Q116:           $-20P19
+Q117:           $-20P20
+Q118:           $-20P21
+Q119:           $-20P22
+Q120:           $-20P23
+Q121:           $-20P24
+Q122:           $-20P25
+Q123:           $-20P26
+Q124:           $-20P27
+Q125:           $-20P28
+Q126:           $-20P29
+Q127:           $-20P30
+Q128:           $-20P31
+
+# comment fields ($-40)
+Q129:           $-40P0
+Q130:           $-40P1
+Q131:           $-40P2
+Q132:           $-40P3
+Q133:           $-40P4
+Q134:           $-40P5
+Q135:           $-40P6
+Q136:           $-40P7
+Q137:           $-40P8
+Q138:           $-40P9
+Q139:           $-40P10
+Q140:           $-40P11
+Q141:           $-40P12
+Q142:           $-40P13
+Q143:           $-40P14
+Q144:           $-40P15
+
+# comment fields ($-50)
+Q145:           $-50P0
+Q146:           $-50P1
+Q147:           $-50P2
+Q148:           $-50P3
+Q149:           $-50P4
+Q150:           $-50P5
+Q151:           $-50P6
+Q152:           $-50P7
+Q153:           $-50P8
+Q154:           $-50P9
+Q155:           $-50P10
+Q156:           $-50P11
+Q157:           $-50P12
+Q158:           $-50P13
+Q159:           $-50P14
+Q160:           $-50P15
+
+# tagnames ($-20.20)
+Q161:		&-20.20P0
+Q162:		&-20.20P1
+Q163:		&-20.20P2
+Q164:		&-20.20P3
+Q165:		&-20.20P4
+Q166:		&-20.20P5
+Q167:		&-20.20P6
+Q168:		&-20.20P7
+Q169:		&-20.20P8
+Q170:		&-20.20P9
+Q171:		&-20.20P10
+Q172:		&-20.20P11
+Q173:		&-20.20P12
+Q174:		&-20.20P13
+Q175:		&-20.20P14
+Q176:		&-20.20P15
+Q177:		&-20.20P16
+Q178:		&-20.20P17
+Q179:		&-20.20P18
+Q180:		&-20.20P19
+Q181:		&-20.20P20
+Q182:		&-20.20P21
+Q183:		&-20.20P22
+Q184:		&-20.20P23
+Q185:		&-20.20P24
+Q186:		&-20.20P25
+Q187:		&-20.20P26
+Q188:		&-20.20P27
+Q189:		&-20.20P28
+Q190:		&-20.20P29
+Q191:		&-20.20P30
+Q192:		&-20.20P31
+
+
+# special events of the MON_MIND
+Q193:       (юпл-1 ноеп.м/а)
+Q194:       (юпл-2 ноеп.м/а)
+Q195:       (юпл-3 хмфем.)
+Q196:       (юпл-21 метреоп.1-2)
+Q197:       (юпл-22 метреоп.3-4)
+Q198:       (юпл-6)
+Q199:       (юпл-7)
+Q200:       (юпл-8)
+
+# strings
+Q201:       @P0
+
+# MRoute stuff # zuzu
+Q202:       @P1
+Q203:       @P2
+Q204:       @P3
+Q205:       @P4
+Q206:		$-7.7P0
+Q207:		$-7.7P1
+Q208:		$-7.7P2
+Q209:		$-7.7P3
+Q210:		$-7.7P4
+Q211:		$-18.18P0
+Q212:		$-18.18P1
+Q213:		$-18.18P2
+Q214:		$-18.18P3
+Q215:		$-18.18P4
+
+D1:         IF P1==3 : Q193;IF P1==4 : Q194;IF P1==5 : Q195;IF P1==6 : Q196;\
+            IF P1==7 : Q197;IF P1==8 : Q198;IF P1==9 : Q199;IF P1==10: Q200; ELSE;
+D2:         IF P2==3 : Q193;IF P2==4 : Q194;IF P2==5 : Q195;IF P2==6 : Q196;\
+            IF P2==7 : Q197;IF P2==8 : Q198;IF P2==9 : Q199;IF P2==10: Q200; ELSE;
+D3:         IF P3==3 : Q193;IF P3==4 : Q194;IF P3==5 : Q195;IF P3==6 : Q196;\
+            IF P3==7 : Q197;IF P3==8 : Q198;IF P3==9 : Q199;IF P3==10: Q200; ELSE;
+
+
+# These event are used for the empty outputs
+E1:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E01 event
+E2:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E02 event
+E3:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E03 event
+E4:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E04 event
+E5:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E05 event
+E6:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E06 event
+E7:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E07 event
+E8:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E08 event
+E9:             d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E09 event
+E10:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E10 event
+E11:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E11 event
+E12:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E12 event
+E13:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E13 event
+E14:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E14 event
+E15:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E15 event
+E16:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E16 event
+E17:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E17 event
+E18:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E18 event
+E19:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E19 event
+E20:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E20 event
+E21:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E21 event
+E22:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E22 event
+E23:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E23 event
+E24:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E24 event
+E25:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E25 event
+E26:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E26 event
+E27:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E27 event
+E28:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E28 event
+E29:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E29 event
+E30:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E30 event
+E31:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E31 event
+E32:            d=0 b=0 l=0 f=0 t=255 w=0 p=0 s=This is the E32 event
+
+# Template for system messages
+E33:	d=1 b=0 l=1 f=1 t=1 w=1 cf=1 cb=2 s=E33 for system messages

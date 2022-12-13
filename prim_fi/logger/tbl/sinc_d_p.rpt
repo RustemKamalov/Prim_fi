@@ -1,0 +1,264 @@
+C1: ELSE P0;
+C2: ELSE P1;
+C3: ELSE P2;
+C4: ELSE P3;
+C5: ELSE P4;
+C6: ELSE P5;
+C7: ELSE P6;
+C8: ELSE P7;
+
+#--- misc ---
+Q1:   *%D %T
+Q2:    $-26P0
+Q3:    $-28P0
+Q4:    $-16P2
+
+Q5:    $-26P2
+Q6:    #7.0C4
+
+
+#--- 7.0Cxxx ---
+Q10:   #7.0C1
+Q11:   #7.0C2
+Q12:   #7.0C3
+Q13:   #7.0C4
+Q14:   #7.0C5
+Q15:   #7.0C6
+Q16:   #7.0C7
+Q17:   #7.0C8
+
+
+:STRT
+:BODY
+
+
+#      ^*%d.%m.%y^   ^*%T      ^
+      ^%Q1                   ^
+
+
+         —¬Œƒ ¿ –¿¡Œ“€ Œ¡Œ–”ƒŒ¬¿Õ»ﬂ œŒ∆¿–Œ“”ÿ≈Õ»ﬂ-1 «¿ œ–≈ƒ€ƒ”Ÿ»… ƒ≈Õ‹
+
+
+ |------------------------------|----------------------------|
+ |                              |              ◊ » — À Œ     |
+ |                              |---------|---------|--------|
+ |     Õ¿»Ã≈ÕŒ¬¿Õ»≈             |         |         |        |
+ |                              |  ◊¿—Œ¬  | Œ“ ¿«Œ¬ | ¬ Àﬁ◊. |
+ |                              |         |         |  ’ŒÀ.  |
+ |------------------------------|---------|---------|--------|
+:PARL: P0=Fi_Fe1_Name P1=Fi_Fe1WrkHoPv P2=Fi_Fe1FailrPv P3=Fi_Fe1StCoWPv P4=Fi_Fe1StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi_Fe2_Name P1=Fi_Fe2WrkHoPv P2=Fi_Fe2FailrPv P3=Fi_Fe2StCoWPv P4=Fi_Fe2StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi_Fe3_Name P1=Fi_Fe3WrkHoPv P2=Fi_Fe3FailrPv P3=Fi_Fe3StCoWPv P4=Fi_Fe3StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi_Fe4_Name P1=Fi_Fe4WrkHoPv P2=Fi_Fe4FailrPv P3=Fi_Fe4StCoWPv P4=Fi_Fe4StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi_Fe5_Name P1=Fi_Fe5WrkHoPv P2=Fi_Fe5FailrPv P3=Fi_Fe5StCoWPv P4=Fi_Fe5StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi_Fw5_Name P1=Fi_Fw5WrkHoPv P2=Fi_Fw5FailrPv P3=Fi_Fw5StCoWPv P4=Fi_Fw5StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+ |------------------------------|---------|---------|--------|
+
+
+    |---------------------|--------|                     |---------------------|--------|
+    |      ÕŒÃ≈–          | ◊»—ÀŒ  |                     |      ÕŒÃ≈–          | ◊»—ÀŒ  |
+    |     «¿ƒ¬»∆ »        |Œ“ –€“»…|                     |     «¿ƒ¬»∆ »        |Œ“ –€“»…|
+    |---------------------|--------|                     |---------------------|--------|
+:PARL: P0=Fi_GF102_1_1PName P1=Fi_GF102_1_1POpnPv P2=Fi_GF102_1_4PName P3=Fi_GF102_1_4POpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF102_1_3PName P1=Fi_GF102_1_3POpnPv P2=Fi_GF2_A___Name P3=Fi_GF2_A___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF2_B___Name P1=Fi_GF2_B___OpnPv P2=Fi_GF2_C___Name P3=Fi_GF2_C___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF3_A___Name P1=Fi_GF3_A___OpnPv P2=Fi_GF3_B___Name P3=Fi_GF3_B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF3_C___Name P1=Fi_GF3_C___OpnPv P2=Fi_GF4_A___Name P3=Fi_GF4_A___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF4_B___Name P1=Fi_GF4_B___OpnPv P2=Fi_GF4_C___Name P3=Fi_GF4_C___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF5_A___Name P1=Fi_GF5_A___OpnPv P2=Fi_GF5_B___Name P3=Fi_GF5_B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF5_C___Name P1=Fi_GF5_C___OpnPv P2=Fi_GF6_A___Name P3=Fi_GF6_A___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF6_B___Name P1=Fi_GF6_B___OpnPv P2=Fi_GF6_C___Name P3=Fi_GF6_C___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF7_A___Name P1=Fi_GF7_A___OpnPv P2=Fi_GF7_B___Name P3=Fi_GF7_B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF7_C___Name P1=Fi_GF7_C___OpnPv P2=Fi_GF8_A___Name P3=Fi_GF8_A___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF8_B___Name P1=Fi_GF8_B___OpnPv P2=Fi_GF8_C___Name P3=Fi_GF8_C___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF102_9_1PName P1=Fi_GF102_9_1POpnPv P2=Fi_GF102_9_2PName P3=Fi_GF102_9_2POpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF102_9_4PName P1=Fi_GF102_9_4POpnPv P2=Fi_GF10_A__Name P3=Fi_GF10_A__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF10_B__Name P1=Fi_GF10_B__OpnPv P2=Fi_GF10_C__Name P3=Fi_GF10_C__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF25_A__Name P1=Fi_GF25_A__OpnPv P2=Fi_GF25_B__Name P3=Fi_GF25_B__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF26_A__Name P1=Fi_GF26_A__OpnPv P2=Fi_GF26_B__Name P3=Fi_GF26_B__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF45____Name P1=Fi_GF45____OpnPv P2=Fi_GF82____Name P3=Fi_GF82____OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF285___Name P1=Fi_GF285___OpnPv P2=Fi_GF322___Name P3=Fi_GF322___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF83____Name P1=Fi_GF83____OpnPv P2=Fi_GF81____Name P3=Fi_GF81____OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF330___Name P1=Fi_GF330___OpnPv P2=Fi_GF288___Name P3=Fi_GF288___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF27_1__Name P1=Fi_GF27_1__OpnPv P2=Fi_GF27_2__Name P3=Fi_GF27_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF28_1__Name P1=Fi_GF28_1__OpnPv P2=Fi_GF28_2__Name P3=Fi_GF28_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF29_1__Name P1=Fi_GF29_1__OpnPv P2=Fi_GF29_2__Name P3=Fi_GF29_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GFY1____Name P1=Fi_GFY1____OpnPv P2=Fi_GF212___Name P3=Fi_GF212___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF236___Name P1=Fi_GF236___OpnPv P2=Fi_GF87____Name P3=Fi_GF87____OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF88____Name P1=Fi_GF88____OpnPv P2=Fi_GF141___Name P3=Fi_GF141___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF134___Name P1=Fi_GF134___OpnPv P2=Fi_GF143___Name P3=Fi_GF143___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF136___Name P1=Fi_GF136___OpnPv P2=Fi_GF145___Name P3=Fi_GF145___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF138___Name P1=Fi_GF138___OpnPv P2=Fi_GFa_4_1_Name P3=Fi_GFa_4_1_OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GFa_4_2_Name P1=Fi_GFa_4_2_OpnPv P2=Fi_GF155___Name P3=Fi_GF155___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF148___Name P1=Fi_GF148___OpnPv P2=Fi_GF157___Name P3=Fi_GF157___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF150___Name P1=Fi_GF150___OpnPv P2=Fi_GF159___Name P3=Fi_GF159___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GF152___Name P1=Fi_GF152___OpnPv P2=Fi_GFb_4_1_Name P3=Fi_GFb_4_1_OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi_GFb_4_2_Name P1=Fi_GFb_4_2_OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                     |---------------------|--------|
+    |---------------------|--------|
+
+
+         —¬Œƒ ¿ –¿¡Œ“€ Œ¡Œ–”ƒŒ¬¿Õ»ﬂ œŒ∆¿–Œ“”ÿ≈Õ»ﬂ-2 «¿ œ–≈ƒ€ƒ”Ÿ»… ƒ≈Õ‹
+
+
+ |------------------------------|----------------------------|
+ |                              |              ◊ » — À Œ     |
+ |                              |---------|---------|--------|
+ |     Õ¿»Ã≈ÕŒ¬¿Õ»≈             |         |         |        |
+ |                              |  ◊¿—Œ¬  | Œ“ ¿«Œ¬ | ¬ Àﬁ◊. |
+ |                              |         |         |  ’ŒÀ.  |
+ |------------------------------|---------|---------|--------|
+:PARL: P0=Fi2_Fe1_Name P1=Fi2_Fe1WrkHoPv P2=Fi2_Fe1FailrPv P3=Fi2_Fe1StCoWPv P4=Fi2_Fe1StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi2_Fe2_Name P1=Fi2_Fe2WrkHoPv P2=Fi2_Fe2FailrPv P3=Fi2_Fe2StCoWPv P4=Fi2_Fe2StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi2_Fe3_Name P1=Fi2_Fe3WrkHoPv P2=Fi2_Fe3FailrPv P3=Fi2_Fe3StCoWPv P4=Fi2_Fe3StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi2_Fw1_Name P1=Fi2_Fw1WrkHoPv P2=Fi2_Fw1FailrPv P3=Fi2_Fw1StCoWPv P4=Fi2_Fw1StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi2_Fw2_Name P1=Fi2_Fw2WrkHoPv P2=Fi2_Fw2FailrPv P3=Fi2_Fw2StCoWPv P4=Fi2_Fw2StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+:PARL: P0=Fi2_Fw3_Name P1=Fi2_Fw3WrkHoPv P2=Fi2_Fw3FailrPv P3=Fi2_Fw3StCoWPv P4=Fi2_Fw3StHtWPv
+ | ^%Q3                       ^ | ^%Q11 ^ | ^%Q12 ^ |^%Q13 ^ |
+ |------------------------------|---------|---------|--------|
+
+
+    |---------------------|--------|                    |---------------------|--------|
+    |      ÕŒÃ≈–          | ◊»—ÀŒ  |                    |      ÕŒÃ≈–          | ◊»—ÀŒ  |
+    |     «¿ƒ¬»∆ »        |Œ“ –€“»…|                    |     «¿ƒ¬»∆ »        |Œ“ –€“»…|
+    |---------------------|--------|                    |---------------------|--------|
+:PARL: P0=Fi2_GF13_1__Name P1=Fi2_GF13_1__OpnPv P2=Fi2_GF13_2__Name P3=Fi2_GF13_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF13_3__Name P1=Fi2_GF13_3__OpnPv P2=Fi2_GF13_4__Name P3=Fi2_GF13_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF13_5__Name P1=Fi2_GF13_5__OpnPv P2=Fi2_GF13_6__Name P3=Fi2_GF13_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF13A___Name P1=Fi2_GF13A___OpnPv P2=Fi2_GF13B___Name P3=Fi2_GF13B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF13V___Name P1=Fi2_GF13V___OpnPv P2=Fi2_GF13G___Name P3=Fi2_GF13G___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF14_1__Name P1=Fi2_GF14_1__OpnPv P2=Fi2_GF14_2__Name P3=Fi2_GF14_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF14_3__Name P1=Fi2_GF14_3__OpnPv P2=Fi2_GF14_4__Name P3=Fi2_GF14_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF14_5__Name P1=Fi2_GF14_5__OpnPv P2=Fi2_GF14_6__Name P3=Fi2_GF14_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF14A___Name P1=Fi2_GF14A___OpnPv P2=Fi2_GF14B___Name P3=Fi2_GF14B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF14V___Name P1=Fi2_GF14V___OpnPv P2=Fi2_GF14G___Name P3=Fi2_GF14G___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF17_1__Name P1=Fi2_GF17_1__OpnPv P2=Fi2_GF17_2__Name P3=Fi2_GF17_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF17_3__Name P1=Fi2_GF17_3__OpnPv P2=Fi2_GF17_4__Name P3=Fi2_GF17_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF17_5__Name P1=Fi2_GF17_5__OpnPv P2=Fi2_GF17_6__Name P3=Fi2_GF17_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF17A___Name P1=Fi2_GF17A___OpnPv P2=Fi2_GF17B___Name P3=Fi2_GF17B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF17V___Name P1=Fi2_GF17V___OpnPv P2=Fi2_GF17G___Name P3=Fi2_GF17G___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF18_1__Name P1=Fi2_GF18_1__OpnPv P2=Fi2_GF18_2__Name P3=Fi2_GF18_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF18_3__Name P1=Fi2_GF18_3__OpnPv P2=Fi2_GF18_4__Name P3=Fi2_GF18_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF18_5__Name P1=Fi2_GF18_5__OpnPv P2=Fi2_GF18_6__Name P3=Fi2_GF18_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF18A___Name P1=Fi2_GF18A___OpnPv P2=Fi2_GF18B___Name P3=Fi2_GF18B___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF18V___Name P1=Fi2_GF18V___OpnPv P2=Fi2_GF18G___Name P3=Fi2_GF18G___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF11_1__Name P1=Fi2_GF11_1__OpnPv P2=Fi2_GF11_2__Name P3=Fi2_GF11_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF11_3__Name P1=Fi2_GF11_3__OpnPv P2=Fi2_GF11_4__Name P3=Fi2_GF11_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF11_5__Name P1=Fi2_GF11_5__OpnPv P2=Fi2_GF11_6__Name P3=Fi2_GF11_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF11B___Name P1=Fi2_GF11B___OpnPv P2=Fi2_GF11V___Name P3=Fi2_GF11V___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF12_1__Name P1=Fi2_GF12_1__OpnPv P2=Fi2_GF12_2__Name P3=Fi2_GF12_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF12_3__Name P1=Fi2_GF12_3__OpnPv P2=Fi2_GF12_4__Name P3=Fi2_GF12_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF12_5__Name P1=Fi2_GF12_5__OpnPv P2=Fi2_GF12_6__Name P3=Fi2_GF12_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF12A___Name P1=Fi2_GF12A___OpnPv P2=Fi2_GF12V___Name P3=Fi2_GF12V___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF15_1__Name P1=Fi2_GF15_1__OpnPv P2=Fi2_GF15_2__Name P3=Fi2_GF15_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF15_3__Name P1=Fi2_GF15_3__OpnPv P2=Fi2_GF15_4__Name P3=Fi2_GF15_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF15_5__Name P1=Fi2_GF15_5__OpnPv P2=Fi2_GF15_6__Name P3=Fi2_GF15_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF15B___Name P1=Fi2_GF15B___OpnPv P2=Fi2_GF15G___Name P3=Fi2_GF15G___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF16_1__Name P1=Fi2_GF16_1__OpnPv P2=Fi2_GF16_2__Name P3=Fi2_GF16_2__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF16_3__Name P1=Fi2_GF16_3__OpnPv P2=Fi2_GF16_4__Name P3=Fi2_GF16_4__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF16_5__Name P1=Fi2_GF16_5__OpnPv P2=Fi2_GF16_6__Name P3=Fi2_GF16_6__OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF16A___Name P1=Fi2_GF16A___OpnPv P2=Fi2_GF16G___Name P3=Fi2_GF16G___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GFK1_15_Name P1=Fi2_GFK1_15_OpnPv P2=Fi2_GFK2_15_Name P3=Fi2_GFK2_15_OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GFK3_15_Name P1=Fi2_GFK3_15_OpnPv P2=Fi2_GFK1_16_Name P3=Fi2_GFK1_16_OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GFK2_16_Name P1=Fi2_GFK2_16_OpnPv P2=Fi2_GFK3_16_Name P3=Fi2_GFK3_16_OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF588___Name P1=Fi2_GF588___OpnPv P2=Fi2_GF589___Name P3=Fi2_GF589___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF381___Name P1=Fi2_GF381___OpnPv P2=Fi2_GF386___Name P3=Fi2_GF386___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF383___Name P1=Fi2_GF383___OpnPv P2=Fi2_GF388___Name P3=Fi2_GF388___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF387___Name P1=Fi2_GF387___OpnPv P2=Fi2_GF385___Name P3=Fi2_GF385___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF390___Name P1=Fi2_GF390___OpnPv P2=Fi2_GF382___Name P3=Fi2_GF382___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF389___Name P1=Fi2_GF389___OpnPv P2=Fi2_GF384___Name P3=Fi2_GF384___OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+:PARL: P0=Fi2_GF14____Name P1=Fi2_GF14____OpnPv P2=Fi2_GF15____Name P3=Fi2_GF15____OpnPv
+    | ^%Q2               ^| ^%Q11 ^|                    | ^%Q5               ^| ^%Q6  ^|
+	|---------------------|--------|                    |---------------------|--------|
+
+:STOP

@@ -1,0 +1,52 @@
+#!/bin/sh
+
+	# modification - kill the following processes when they are running
+	if sin | grep -q "lpsrvr"
+        then
+           slay lpsrvr
+	fi
+	if sin | grep -q "lpd"
+        then
+           slay lpd
+	fi
+	if sin | grep -q "SMBfsys"
+        then
+           slay SMBfsys
+	fi
+	# modification - end
+
+	export SOCK=$NODE
+	/bin/slay -f Socket Socklet;
+	/bin/prefix -D /dev/console >/dev/null 2>&1;
+	/bin/prefix -A /dev/console=/dev/con1;
+
+	# start up Socket: assume hostnames are defined as 'node#'
+	# Note:  if not using NFS, use Socklet instead
+	#/usr/ucb/Socket   node$NODE &
+      /usr/ucb/Socket prim_fi$NODE &
+
+	# Note:  assuming ethernet interface on logical LAN 1
+   /usr/ucb/ifconfig en1 prim_fi$NODE up netmask 255.255.255.0
+	/usr/ucb/ifconfig lo0 localhost up
+	/usr/bin/syslogd
+
+	# Note:  to act as an NFS server, uncomment the next line
+	# /etc/nfsstart
+
+	# Note:  to act as a TCP/IP server, uncomment the next line
+	#/usr/ucb/inetd
+
+	# adds the default gateway
+    #/usr/ucb/route -n add default 10.10.52.1
+
+	# modification - start the print processes
+    #sleep 1
+	#/bin/SMBfsys &
+    #sleep 1
+	#/usr/ucb/lpd &
+    #sleep 1
+	#/usr/ucb/lprc up lp &
+    #sleep 1
+	#/usr/bin/lpsrvr &
+	# modification - end
+

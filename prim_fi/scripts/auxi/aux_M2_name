@@ -1,0 +1,71 @@
+//M2_auxilary system names
+
+//Plunger_pump_of_pig_area_system
+M2_PPS_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Погружной насос УППС
+M2_PP1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Погружной насос УППС
+M2_PPR_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve N2
+
+//Water_supply_of_Station_system
+M2_WS1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Hacocы сырой воды
+M2_Ws1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Hacocы сырой воды N1
+M2_Ws2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Hacocы сырой воды N2
+
+//Water_supply_of_Station_system
+M2_WS2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Hacocы сырой воды
+M2_Ws3_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Hacocы сырой воды N3
+M2_WsR_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve N2
+
+//Canal.pumps_of_Tankfarm_system
+M2_CS2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Насосы КНС2
+M2_Ct3_Name             ,  Y,  0, M2_Name             , N, 0, 0, "КНС2.насос N1
+M2_Ct4_Name             ,  Y,  0, M2_Name             , N, 0, 0, "КНС2.насос N2
+
+//Canal.pumps_of_Tankfarm_system
+M2_CS3_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Насосы КНС2
+M2_Ct5_Name             ,  Y,  0, M2_Name             , N, 0, 0, "КНС2.насос N3
+M2_CtR_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve N2
+
+//Drain.ret.pump_of_Quay_system
+M2_DS1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Дренажнасосы нефтепричала 1
+M2_Dr1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Дренажнасос N1  НП 1
+M2_Dr2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Дренажнасос N1a НП 1
+
+//Drain.ret.pump_of_Quay_system
+M2_DS2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Дренажнасосы нефтепричала 2
+M2_Dr3_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Дренажнасос N2a НП 2
+M2_Dr4_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Дренажнасос N2  НП 2
+
+//Plunger
+M2_PqS_Name             ,  Y,  0, M2_Name             , N, 0, 0, "#8 Система откачки утечек
+M2_Pq1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Погружной насос УУН и ТПУ
+M2_PqR_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve N2
+
+//Exhausting_vent_of_Quay_system
+M2_EvS_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Вытяжная ветиляция ТПУ
+M2_Ev1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Вытяжной ветилятор ТПУ
+M2_EvR_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve N2
+
+//Water_pump_of_Quay_system
+M2_WP1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "#10 Водонасосы нефтепричала 1
+M2_Wp1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Водонасос N1 нефтепричала 1
+M2_Wp2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Водонасос N2 нефтепричала 1
+
+//Water_pump_of_Quay_system
+M2_WP2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "#11 Водонасосы нефтепричала 2
+M2_Wp3_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Водонасос N3 нефтепричала 2
+M2_Wp4_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Водонасос N4 нефтепричала 2
+
+//Reserve_system_1
+M2_RS1_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve system 1
+M2_R11_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve 11
+M2_R12_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve 12
+
+//Reserve_system_2
+M2_RS2_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve system 2
+M2_R21_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve 21
+M2_R22_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve 22
+
+//Pre-pur.wat.pump_syst.
+M2_EQS_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Система электронагривателей нефтепричала
+M2_EhQ_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Электронагриватель ПА нефтепричала
+M2_EhR_Name             ,  Y,  0, M2_Name             , N, 0, 0, "Reserve N2

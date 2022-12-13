@@ -1,0 +1,63 @@
+#!/bin/sh
+
+#Задвижка 40A       Рег.клапан 40A
+#Задвижка 40B       Рег.клапан 40B
+#Задвижка 58        Рег.клапан 58
+#Задвижка 57        Рег.клапан 57
+#Задвижка 49        Рег.клапан 130A
+#Задвижка 130A      Рег.клапан 49A
+#Задвижка 130B      Рег.клапан 49B
+
+search="
+Задвижка 40A|\
+Задвижка 40B|\
+Задвижка 58|\
+Задвижка 57|\
+Задвижка 49|\
+Задвижка 130A|\
+Задвижка 130B"
+
+ch_scr='s/Задвижка 40A/Рег.клапан 40A/g
+        s/Задвижка 40B/Рег.клапан 40B/g
+        s/Задвижка 58/Рег.клапан 58/g
+        s/Задвижка 57/Рег.клапан 57/g
+        s/Задвижка 49/Рег.клапан 130A/g
+        s/Задвижка 130A/Рег.клапан 49A/g
+        s/Задвижка 130B/Рег.клапан 49B/g'
+
+for i in $(find /prim_fi -type f)
+do
+
+#  file=$(file $i | grep ' text' | awk '{sub(/:/,"",$1); print $1}')
+  file=$(file $i | grep ' text' | sed 's/:.*$//' | grep -v '.ori$')
+
+  if [ "$file" != "" ]
+  then
+#    echo $file nem ures
+    if grep -q -E "$search" "$file"
+    then
+#      echo found search in file "$file" "\a"
+      read resp?"Convert $file ?      <Y/N>":
+      case $resp in
+        y|Y)
+            if test -f $file.ori
+            then
+              echo $file.ori exists, not converting
+            else
+              echo converting $file
+              cp $file $file.ori
+              sed "$ch_scr" $file > temp
+              mv temp $file
+              if [ "$(ls -F $file.ori | grep '*')" != "" ]
+              then
+                chmod a+x $file
+              fi
+            fi
+
+            ;;
+      esac
+
+    fi
+  fi
+
+done

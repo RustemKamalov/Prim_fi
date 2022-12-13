@@ -1,0 +1,30 @@
+# Csak a Route ablak bezarasanak figyelese miatt kell!
+
+OBJ: MR_PARAMWINDOW_STAT
+    CPAR: P0=MON1_PAR13_STAT 
+          P1=MON2_PAR13_STAT 
+          P2=MON3_PAR13_STAT 
+          P3=MON4_PAR13_STAT 
+          P4=MON5_PAR13_STAT 
+          P5=MON6_PAR13_STAT 
+          P6=MON7_PAR13_STAT 
+          P7=MON8_PAR13_STAT
+    CFV:  ELSE Q1;
+    OPAR: P0=MR_PARAMWINDOW_STAT
+          P1=MON1_PAR13_STAT 
+          P2=MON2_PAR13_STAT 
+          P3=MON3_PAR13_STAT 
+          P4=MON4_PAR13_STAT 
+          P5=MON5_PAR13_STAT 
+          P6=MON6_PAR13_STAT 
+          P7=MON7_PAR13_STAT 
+          P8=MON8_PAR13_STAT
+    OFV0:  P0=ELSE P1||P2||P3||P4||P5||P6||P7||P8;
+
+ OBJ: RouteWStatListener
+     CPAR: P0=MR_PARAMWINDOW_STAT
+     CFV:  IF (P0==0):Q1;ELSE Q0;
+     OPAR: P0=MR_Route001_Cmd
+           P1=MR_Route001_Stat
+     OFV0: P0=IF ((P1&0xF000)==0x1000):0x8000;IF ((P1&0xF000)==0x2000):0x4000;ELSE 0x8000;
+

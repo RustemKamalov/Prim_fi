@@ -1,0 +1,20 @@
+
+WOPT: p=Cc r=0 c=0 o=ks-r;kmsa-O t=1 e=0 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 97
+  PARL: P0=PARAM8 P1=PARAM9 P2=PARAM10 P3=PARAM11
+  TXTD: Q1=ощбл1_(лдо1) Q2=ощбл2_(лдо1) Q3=ощбл3_(лдо2) Q4=ощбл4_(лдо2)
+  TXTF: IF P0 : Q2; IF P1 : Q1; IF P2 : Q4; IF P3 : Q3; ELSE;
+OBEND
+
+OBJ: 80
+  PARL: P0=PARAM12
+  SELD: a=FV p=P0  f=1  v=ELSE 1;
+OBEND
+
+OBJ: 98_80
+  PARL: P0=PARAM12
+  SELD: a=FV p=P0  f=1  v=ELSE 2;
+OBEND

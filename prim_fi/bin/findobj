@@ -1,0 +1,36 @@
+#! /bin/sh
+#ifdef __USAGE
+#Usage:
+#%C pict_file obj_to_find
+#
+#%C finds objects in a pict file and gives the position
+#   obj_to_find may be eg. ciril, _128 ...
+#endif
+
+if test $# -lt 2
+then
+	exit 1
+fi
+
+PICT_FILE=$1
+OBJ=$2
+
+OBJ_LINES=`/windows/bin/pict -a $PICT_FILE | grep $OBJ | tr -s ' ' '/' `
+
+typeset -i ROW
+typeset -i COL
+
+for OBJ_LINE in $OBJ_LINES
+do
+    echo $OBJ_LINE
+
+    ROW=$(echo $OBJ_LINE | cut -f 3  -d '/')
+    COL=$(echo $OBJ_LINE | cut -f 4  -d '/')
+    TAG=$(echo $OBJ_LINE | cut -f 10 -d '/')
+
+    ROW=$ROW/11
+    COL=$COL/11
+
+    echo obj_name:$TAG  row:$ROW  col:$COL
+
+done

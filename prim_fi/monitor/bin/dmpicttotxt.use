@@ -1,0 +1,17 @@
+D-mon Pict To Text V5.10.2.0 (ScadaSys Ltd.)
+
+usage: dmpicttotxt.exe [-c|-s|-l|-p|-C1|-C2|-T|-x|-?] pictfile [listfile [listfile2]] 
+where 
+    pictfile - name of picture file 
+    listfile - name of output file 
+    listfile2- name of output header file (with option '-C2')
+    -c       - write output on stdout 
+    -s       - make short list (like qnx utility 'pict') 
+    -l       - make long list 
+               (list of all attribute of all picture element) 
+    -p       - dump of content of symbol and image elements 
+    -C1      - C source output 
+    -C2      - C source output with header 
+    -T       - text output (default) 
+    -x       - svg output 
+    -?,-h    - this message 

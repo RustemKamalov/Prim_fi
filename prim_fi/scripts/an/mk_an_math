@@ -1,0 +1,80 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="an_"$M"_list"
+math1_file="an_"$M"_math1"
+math2_file="an_"$M"_math2"
+
+# begin output files
+echo Writing file $math1_file ...
+echo "// analog math-log 1\n" > $math1_file
+
+echo Writing file $math2_file ...
+echo "// analog math-log 2 (the last object must be edited!!!)\n" > $math2_file
+
+# find ChDtTrg number
+chdttrg_num=$(grep ChDtTrg an_math1_tmpl | \
+    sed 's/^.*ChDtTrg\([0-9]*\).*$/\1/')
+
+# find ValTrig number
+valtrig_num=$(grep 'OBJ.*Ana_ValTrig' an_math2_tmpl | \
+    sed 's/^.*Ana_ValTrig\([0-9]*\).*$/\1/')
+
+echo processing math-log_tmpl files with all analogs
+
+# find analog names (identifiers)
+an_num=0
+for i in $(awk '/^AnValue/ { print(NR) }' $list_file)
+do
+    line=$(awk 'NR=='$i' {print $0}' $list_file)
+    name=$(echo $line | awk '{print $2}')
+	if [ "$name" = "" ]
+	  then
+        name=$(echo $line| awk '{print($1) }' | sed 's/AnValue/RM/')
+    fi
+
+    echo analog_$an_num:   $name
+
+    #write math-log 1 file
+    sed 's/$M/'$M'/g' an_math1_tmpl | sed 's/$id/'$name'/' | \
+        sed 's/ChDtTrg[0-9]*/ChDtTrg'$chdttrg_num'/' >> $math1_file
+
+    # write an_math2.tmp file
+    let id_num=$an_num%10
+    if [ $id_num -eq 0 ]
+      then 
+        sed 's/$M/'$M'/g' an_math2_tmpl | \
+            sed 's/Ana_ValTrig[0-9]*/Ana_ValTrig'$valtrig_num'/' |
+            sed 's/$id0/'$name'/' \
+            > an_math2.tmp
+      else
+        sed 's/$id'$id_num'/'$name'/' an_math2.tmp > temp
+        mv temp an_math2.tmp
+    fi
+
+    # append an_math2.tmp to math-log 2 file if necessary
+    if [ $id_num -eq 9 ]
+      then cat an_math2.tmp >> $math2_file
+    fi
+
+    #increment an_num, chdttrg_num and valtrig_num if necessary
+    let an_num=$an_num+1
+    if [ "("$an_num" % 4)" -eq 0 ]
+      then 
+        chdttrg_num=$(echo $chdttrg_num | awk '{printf "%03d", $1+1}')
+    fi
+    if [ "("$an_num" % 10)" -eq 0 ]
+      then 
+        valtrig_num=$(echo $valtrig_num | awk '{printf "%02d", $1+1}')
+    fi
+
+done
+
+# finish math-log 2 file if necessary
+if [ $id_num -ne 9 ]
+  then
+    cat an_math2.tmp >> $math2_file
+    echo '//The last object must be edited' >> $math2_file
+fi
+rm an_math2.tmp

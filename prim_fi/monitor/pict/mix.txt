@@ -1,0 +1,54 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0
+
+WPICT: c=20 h=600 w=1010
+
+OBJ: 0
+  PARL: P0=P2_Dr1_Stat
+  COLD: Q1=1,8,0 Q2=1,10,0
+  COLF: IF P0 & 0X0008 : Q1;ELSE Q2;
+OBEND
+
+OBJ: 1
+  PARL: P0=P2_StaMask104 P1=P2_StaImit104 P2=P2_StaTest104
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 2
+  PARL: P0=P2_StationName P1=P2_ProtPtrVal104 P2=P2_StaMask104 P3=P2_StaImit104 P4=P2_StaTest104 P5=P2_StaProt104 P6=P2_StaTPro104 P7=P2_StaMsPr P8=P2_StaImPr P9=P2_StaTsPr P10=P2_StaDbPr
+  COLD: Q1=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q0;
+  BLND: Q1=1,0,14,0
+  BLNF: IF P5 | P6 : Q0;ELSE Q1;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 4
+  PARL: P0=P2_Dr2_Stat
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 & 0X0800 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 7
+  PARL: P0=P2_StationName P1=P2_DrS_Name P2=P2_Dr2_Name P3=P2_Dr2_CtrWrd P4=P2_Dr2_Duty P5=P2_Dr2_Stat
+  COLD: Q1=1,8,0 Q2=1,78,0 Q3=1,13,0 Q4=1,10,0 Q5=1,15,0 Q6=1,9,0
+  COLF: IF P5 & (0X8000|0X2000|0X0800) : Q1; IF P4&0X0002 : Q2; IF P4&0X0010 : Q3; IF P5&(0x4000|0X1000) : Q4; ELSE Q0;
+  BLND: Q1=1,0,8,0 Q2=1,0,10,0
+  BLNF: IF P5 & 0X2000 : Q1;IF P5 & 0X1000 : Q2;ELSE Q0;
+  SELD: a=PO p=21
+OBEND
+
+OBJ: 8
+  PARL: P0=P2_StationName P1=P2_DrS_Name P2=P2_Dr2_Name P3=P2_Dr2_CtrWrd P4=P2_Dr2_Duty P5=P2_Dr2_Stat
+  BLND: Q1=1,0,14,0
+  BLNF: IF P5 & 0X0001 : Q1;ELSE Q0;
+  SELD: a=PO p=21
+OBEND
+
+OBJ: 9
+  PARL: P0=P2_StationName P1=P2_DrS_Name P2=P2_Dr2_Name P3=P2_Dr2_Duty P4=P2_Dr2_DutySend P5=P2_Dr2_Stat
+  TXTD: Q1=ÄÇí Q2=êÖá Q3=êìó Q4=êÖå Q5=äçè
+  TXTF: IF P3 == 1 : Q1;IF P3 == 2 : Q2;IF P3 == 4 : Q5;IF P3 == 8 : Q3;IF P3 == 16: Q4;ELSE Q0;
+  SELD: a=PO p=2
+OBEND

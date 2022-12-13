@@ -1,0 +1,29 @@
+#!/bin/sh
+
+#ch_from="
+#GV49A__|\
+#GV49B__|\
+#GV130A_"
+
+ch_from="
+GV130_A|\
+GV130_B|\
+GV49___"
+
+for i in $(find /prim_fi/ -type f)
+do
+
+#  file=$(file $i | grep ' text' | awk '{sub(/:/,"",$1); print $1}')
+  file=$(file $i | grep ' text' | sed 's/:.*$//' | grep -v '.ori$')
+
+  if [ "$file" != "" ]
+  then
+#    echo $file nem ures
+    if grep -q "$ch_from" "$file"
+    then
+      echo found ch_from in file "$file" "\a"
+
+    fi
+  fi
+
+done

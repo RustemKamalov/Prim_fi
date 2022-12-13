@@ -1,0 +1,1310 @@
+####################################################################
+# Change of the analog parameters.
+#
+OBJ: AnaParamChange
+     PARL: P00=$MinRaw P01=$MaxRaw P02=$MinEU P03=$MaxEU  P04=$ManV  P05=$ZeCr \
+           P06=$CrHL   P07=$CrLL   P08=$Filt  P09=$4_L    P10=$3_L   P11=$2_L  \
+           P12=$1_L    P13=$Hyst   P14=$UTrL  P15=$DTrL   P16=$MxDv  P17=$Sign
+     ARGL: P18=$Name
+     OEVT: Q00=$E0							       \
+           Q01=$MinRaw Q02=$MaxRaw Q03=$MinEU Q04=$MaxEU  Q05=$ManV  Q06=$ZeCr \
+	   Q07=$CrHL   Q08=$CrLL   Q09=$Filt  Q10=$4_L    Q11=$3_L   Q12=$2_L  \
+	   Q13=$1_L    Q14=$Hyst   Q15=$UTrL  Q16=$DTrL   Q17=$MxDv  Q18=$Sign
+     FUNC: IF (S0 ==3):  Q1;  \
+           IF (S1 ==3):  Q2;  \
+           IF (S2 ==3):  Q3;  \
+           IF (S3 ==3):  Q4;  \
+           IF (S4 ==3):  Q5;  \
+           IF (S5 ==3):  Q6;  \
+           IF (S6 ==3):  Q7;  \
+           IF (S7 ==3):  Q8;  \
+           IF (S8 ==3):  Q9;  \
+           IF (S9 ==3): Q10;  \
+           IF (S10==3): Q11;  \
+           IF (S11==3): Q12;  \
+           IF (S12==3): Q13;  \
+           IF (S13==3): Q14;  \
+           IF (S14==3): Q15;  \
+           IF (S15==3): Q16;  \
+           IF (S16==3): Q17;  \
+           IF (S17==3): Q18;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: AnaParamChangeNew
+     PARL: P00=$MinRaw P01=$MaxRaw P02=$MinEU P03=$MaxEU  P04=$ManV  P05=$ZeCr \
+           P06=$CrHL   P07=$CrLL   P08=$Filt  P09=$4_L    P10=$3_L   P11=$2_L  \
+           P12=$1_L    P13=$Hyst   P14=$UTrL  P15=$DTrL   P16=$MxDv
+     ARGL: P17=$Name
+     OEVT: Q00=$E0							       \
+           Q01=$MinRaw Q02=$MaxRaw Q03=$MinEU Q04=$MaxEU  Q05=$ManV  Q06=$ZeCr \
+	   Q07=$CrHL   Q08=$CrLL   Q09=$Filt  Q10=$4_L    Q11=$3_L   Q12=$2_L  \
+	   Q13=$1_L    Q14=$Hyst   Q15=$UTrL  Q16=$DTrL   Q17=$MxDv
+     FUNC: IF (S0 ==3):  Q1;  \
+           IF (S1 ==3):  Q2;  \
+           IF (S2 ==3):  Q3;  \
+           IF (S3 ==3):  Q4;  \
+           IF (S4 ==3):  Q5;  \
+           IF (S5 ==3):  Q6;  \
+           IF (S6 ==3):  Q7;  \
+           IF (S7 ==3):  Q8;  \
+           IF (S8 ==3):  Q9;  \
+           IF (S9 ==3): Q10;  \
+           IF (S10==3): Q11;  \
+           IF (S11==3): Q12;  \
+           IF (S12==3): Q13;  \
+           IF (S13==3): Q14;  \
+           IF (S14==3): Q15;  \
+           IF (S15==3): Q16;  \
+           IF (S16==3): Q17;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+# Change of the analog parameters from PTK.
+#
+OBJ: AnaParamPTKChange_1
+     PARL: P0=$MinRaw P1=$MaxRaw P2=$MinEU P3=$MaxEU  P4=$Dly  P5=$4_L \
+           P6=$3_L
+     ARGL: P7=$Name
+     OEVT: Q00=$E0							       \
+           Q1=$MinRaw Q2=$MaxRaw Q3=$MinEU Q4=$MaxEU  Q5=$Dly  Q6=$4_L \
+	   Q7=$3_L
+     FUNC: IF (S0 ==3):  Q1;  \
+           IF (S1 ==3):  Q2;  \
+           IF (S2 ==3):  Q3;  \
+           IF (S3 ==3):  Q4;  \
+           IF (S4 ==3):  Q5;  \
+           IF (S5 ==3):  Q6;  \
+           IF (S6 ==3):  Q7;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+OBJ: AnaParamPTKChange_2
+     PARL: P0=$MinRaw P1=$MaxRaw P2=$MinEU P3=$MaxEU
+     ARGL: P4=$Name
+     OEVT: Q0=$E0		
+     \
+           Q1=$MinRaw Q2=$MaxRaw Q3=$MinEU Q4=$MaxEU
+     FUNC: IF (S0 ==3):  Q1;  \
+           IF (S1 ==3):  Q2;  \
+           IF (S2 ==3):  Q3;  \
+           IF (S3 ==3):  Q4;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+OBJ: ParamPTKChange
+     PARL: P0=$Param
+     OEVT: Q0=E0  Q1=$MSg
+     FUNC: IF (S0==0x0003): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+
+####################################################################
+# Change of the analog variables.
+#
+OBJ: AnaVarChange
+     PARL: P0=$UTrH P1=$DTrH P2=$Maxm P3=$Minm
+     ARGL: P4=$Name
+     OEVT: Q0=$E0 Q1=$UTrH Q2=$DTrH Q3=$Maxm Q4=$Minm
+     FUNC: IF (S0==3): Q1;  \
+           IF (S1==3): Q2;  \
+           IF (S2==3): Q3;  \
+           IF (S3==3): Q4;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of the bits of a word with 2 arguments.
+# Warning, the 1. bit was the least significant, now
+# the name corresponds to the Modicon bit order.
+#
+OBJ: Bit01_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X8000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit02_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X4000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit03_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X2000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit04_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X1000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit05_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0800): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit06_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0400): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit07_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0200): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit08_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0100): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit09_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0080): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit10_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0040): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit11_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0020): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit12_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0010): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit13_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0008): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit14_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0004): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit15_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0002): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit16_2Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0001): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of the bits of a word with an argument.
+# Warning, the 1. bit was the least significant, now
+# the name corresponds to the Modicon bit order.
+#
+OBJ: Bit01Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X8000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+OBJ: Bit02Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X4000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit03Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X2000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit04Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X1000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit05Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0800): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit06Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0400): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit07Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0200): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit08Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0100): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit09Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0080): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit10Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0040): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit11Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0020): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit12Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0010): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit13Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0008): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit14Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0004): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit15Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0002): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit16Arg+-
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0001): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of the bits of a word without.
+# Warning, the 1. bit was the least significant, now
+# the name corresponds to the Modicon bit order.
+#
+OBJ: Bit01+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X8000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+OBJ: Bit02+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X4000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit03+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X2000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit04+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X1000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit05+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0800): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit06+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0400): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit07+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0200): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit08+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0100): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit09+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0080): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit10+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0040): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit11+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0020): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit12+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0010): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit13+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0008): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit14+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0004): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit15+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0002): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: Bit16+-
+     PARL: P0=$Word
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (P0 & 0X0001): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Analog control word setting by the operator
+#
+OBJ: AnaOpCtwdSet
+     PARL: P0=$Ctwd_set
+     ARGL: P1=$Name
+     OEVT: Q00=$E0						        \
+           Q01=$Min/MaxOn  Q02=$Min/MaxOff  Q03=$TrendOn  Q04=$TrendOff \
+           Q05=$StacOn     Q06=$StacOff     Q07=$ZeroOn   Q08=$ZeroOff  \
+           Q09=$FilterOn   Q10=$FilterOff   Q11=$ReplOn   Q12=$ReplOff  \
+           Q13=$Disable    Q14=$Enable
+     FUNC: IF (S0 && (P0==21)):  Q1;IF (S0 && (P0==20)):  Q2; \
+           IF (S0 && (P0==23)):  Q3;IF (S0 && (P0==22)):  Q4; \
+           IF (S0 && (P0==25)):  Q5;IF (S0 && (P0==24)):  Q6; \
+           IF (S0 && (P0==27)):  Q7;IF (S0 && (P0==26)):  Q8; \
+           IF (S0 && (P0==29)):  Q9;IF (S0 && (P0==28)): Q10; \
+           IF (S0 && (P0==31)): Q11;IF (S0 && (P0==30)): Q12; \
+           IF (S0 && (P0==33)): Q13;IF (S0 && (P0==32)): Q14;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Valve control word setting by the operator
+#
+OBJ: GVOpCtwdSet
+     PARL: P0=$Ctwd
+     ARGL: P1=$Name P2=$Node
+     OEVT: Q0=$E0  Q1=$Debl  Q2=$Stop  Q3=$Close  Q4=$Open  Q5=$OpTimeSet
+     FUNC: IF (S0 && (P0 & 0X1000)): Q1;  \
+           IF (S0 && (P0 & 0X2000)): Q2;  \
+           IF (S0 && (P0 & 0X4000)): Q3;  \
+           IF (S0 && (P0 & 0X8000)): Q4;  \
+           IF (S0 && (P0 & 0X0800)): Q5;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVOpCtwdSetTF
+     PARL: P0=$Ctwd
+     ARGL: P1=$Name P2=$Node
+     OEVT: Q0=$E0  Q1=$Open  Q2=$Close  Q3=$Stop  
+     FUNC: IF (S0 && (P0 & 0X0001)): Q1;  \
+           IF (S0 && (P0 & 0X0002)): Q2;  \
+           IF (S0 && (P0 & 0X0004)): Q3; ELSE Q0; 
+     TYPE: t1=$ t2=$
+
+OBJ: MixOpCtwdSetTF
+     PARL: P0=$Ctwd
+     ARGL: P1=$Name P2=$Node
+     OEVT: Q0=$E0  Q1=$On  Q2=$Off    
+     FUNC: IF (S0 && (P0 & 0X0001)): Q1;  \
+           IF (S0 && (P0 & 0X0002)): Q2; ELSE Q0; 
+     TYPE: t1=$ t2=$
+
+OBJ: GVOpCtwdSetNew
+     PARL: P0=$CtrWrd P1=$ImitBit
+     ARGL: P2=$Name P3=$Node
+     OEVT: Q0=$E0 Q1=$Debl Q2=$Stop Q3=$Close Q4=$Open Q5=$ImitOn Q6=$ImitOff
+     FUNC: IF (S0 && (P0 & 0X1000)): Q1;  \
+           IF (S0 && (P0 & 0X2000)): Q2;  \
+           IF (S0 && (P0 & 0X4000)): Q3;  \
+           IF (S0 && (P0 & 0X8000)): Q4;  \
+           IF (S0 && (P0 & 0X0800) && !P1) : Q5;      \
+           IF (S0 && (P0 & 0X0800) &&  P1) : Q6; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Valve type register bits
+#
+OBJ: GVOpTypeSet
+     PARL: P0=$Type_set
+     ARGL: P1=$Name P2=$Node
+     OEVT: Q0=$E0 Q1=$New_type 				           \
+           Q2=$Go2InitOn  Q3=$ImitOn  Q4=$CtrlSigCont Q5=$MaskOn   \
+           Q6=$Go2InitOff Q7=$ImitOff Q8=$CtrlSigImp  Q9=$MaskOff
+     FUNC: IF (S0 && (P0<=9) && (P0>0)): Q1;          \
+           IF (S0 && (P0 & 0X0010))    : Q2;          \
+           IF (S0 && (P0 & 0X0020))    : Q3;          \
+           IF (S0 && (P0 & 0X0040))    : Q4;          \
+           IF (S0 && (P0 & 0X0080))    : Q5;          \
+           IF (S0 && (P0 & 0X0100))    : Q6;          \
+           IF (S0 && (P0 & 0X0200))    : Q7;          \
+           IF (S0 && (P0 & 0X0400))    : Q8;          \
+           IF (S0 && (P0 & 0X0800))    : Q9;ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+OBJ: GIOpTypeSet
+     PARL: P0=$CtrWrd P1=$ImitBit
+     ARGL: P2=$Name P3=$Node
+     OEVT: Q0=$E0 Q1=$ImitOn Q2=$ImitOff
+     FUNC: IF (S0 && (P0 & 0X0800) && !P1) : Q1;      \
+           IF (S0 && (P0 & 0X0800) &&  P1) : Q2; ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+OBJ: GIType
+     PARL: P0=$Type
+     ARGL: P1=$Name
+     OEVT: Q0=$E0 Q1=$Type00 Q2=$Type01 Q3=$Type10 Q4=$Type11
+     FUNC: IF (S0 && ((P0 & 0X0030)==0X00)): Q1;        \
+           IF (S0 && ((P0 & 0X0030)==0X10)): Q2;        \
+           IF (S0 && ((P0 & 0X0030)==0X20)): Q3;        \
+           IF (S0 && ((P0 & 0X0030)==0X30)): Q4; ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+OBJ: GFOpMaskSet
+     PARL: P0=$CtrWrd P1=$NotMaskedBit
+     ARGL: P2=$Name P3=$Node
+     OEVT: Q0=$E0 Q1=$MaskOn Q2=$MaskOff
+     FUNC: IF (S0 && (P0 & 0X0001) &&  P1) : Q1;      \
+           IF (S0 && (P0 & 0X0001) && !P1) : Q2; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+       	
+####################################################################
+# Valve type index
+#
+OBJ: GVIndex
+     PARL: P0=$Index
+     ARGL: P1=$Name
+     OEVT: Q0=$E0 Q1=$IndexMsg
+     FUNC: IF ((S0 & 0X0002) && (P0<=9) && (P0>0)): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVType
+     PARL: P0=$Type
+     ARGL: P1=$Name
+     OEVT: Q0=$E0 Q1=$TypeMsg1 Q2=$TypeMsg2 Q3=$TypeMsg3 Q4=$TypeMsg4 \
+           Q5=$TypeMsg5 Q6=$TypeMsg6 Q7=$TypeMsg7 Q8=$TypeMsg8 Q9=$TypeMsg9
+     FUNC: IF (S0 & 0X0002) && ((P0 & 0x000F) == 1) : Q1; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 2) : Q2; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 3) : Q3; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 4) : Q4; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 5) : Q5; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 6) : Q6; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 7) : Q7; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 8) : Q8; \
+           IF (S0 & 0X0002) && ((P0 & 0x000F) == 9) : Q9; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Command status of the valve
+#
+
+OBJ: GVMsgStatus
+     PARL: P00=$OpenCDP  P01=$CloseCDP  P02=$StopCDP   P03=$OpenOp   \
+           P04=$CloseOp  P05=$StopOp    P06=$OpenTM    P07=$CloseTM  \
+           P08=$OpenAut  P09=$CloseAut  P10=$OpenBRU   P11=$CloseBRU \
+           P12=$StopBRU  P13=$NoRemote  P14=$PowerFail P15=$Deblok
+     ARGL: P16=$Arg1
+     OEVT: Q00=$E0						     \
+           Q01=$OpenCDP  Q02=$CloseCDP  Q03=$StopCDP   Q04=$OpenOp   \
+	   Q05=$CloseOp  Q06=$StopOp    Q07=$OpenTM    Q08=$CloseTM  \
+	   Q09=$OpenAut  Q10=$CloseAut  Q11=$OpenBRU   Q12=$CloseBRU \
+	   Q13=$StopBRU  Q14=$NoRemote  Q15=$PowerFail Q16=$Deblok
+     FUNC: IF (S0  && P0) :  Q1;  \
+           IF (S1  && P1) :  Q2;  \
+           IF (S2  && P2) :  Q3;  \
+           IF (S3  && P3) :  Q4;  \
+           IF (S4  && P4) :  Q5;  \
+           IF (S5  && P5) :  Q6;  \
+           IF (S6  && P6) :  Q7;  \
+           IF (S7  && P7) :  Q8;  \
+           IF (S8  && P8) :  Q9;  \
+           IF (S9  && P9) : Q10;  \
+           IF (S10 && P10): Q11;  \
+           IF (S11 && P11): Q12;  \
+           IF (S12 && P12): Q13;  \
+           IF (S13 && P13): Q14;  \
+           IF (S14 && P14): Q15;  \
+           IF (S15 && P15): Q16;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+OBJ: GVMsgStatusTF
+     PARL: P00=$Open  P01=$Close  P02=$Opening   P03=$Closing
+     ARGL: P04=$Arg1
+     OEVT: Q00=$E0						     \
+           Q01=$Open  Q02=$Close  Q03=$Opening   Q04=$Closing   \
+	       Q05=$IntermediateState  Q06=$Fault
+     FUNC: IF P0 && P1    :  Q6;  \
+           IF P0 :  Q1;  \
+           IF P1 :  Q2;  \
+           IF (S2  && P2) :  Q3;  \
+           IF (S3  && P3) :  Q4;  \
+           IF (!P0 && !P1 && !P2 && !P3) :  Q5; ELSE Q0; 
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Special events of the command status
+#
+
+OBJ: GVMsgStatusTF01
+     PARL: P0=$Open P1=$Closed P2=$Closing P3=$Opening
+     ARGL: P4=$Arg1
+     OEVT: Q0=$E0 Q1=$IntermediateState
+     FUNC: IF !P0 && !P1 && !P2 && !P3 : Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusTF02
+     PARL: P0=$Open P1=$Closed 
+     ARGL: P2=$Arg1
+     OEVT: Q0=$E0 Q1=$Fault
+     FUNC: IF P0 && P1 : Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB01
+     PARL: P0=$Open(B01) P1=$OpenProcess(B11)
+     ARGL: P2=$Arg1
+     OEVT: Q0=$E0 Q1=$Opened Q2=$WarningOpened
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && !P1): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB02
+     PARL: P0=$Closed(B02) P1=$CloseProcess(B13)
+     ARGL: P2=$Arg1
+     OEVT: Q0=$E0 Q1=$Closed Q2=$WarningClosed
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && !P1): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB04
+     PARL: P0=$Opening(B04) P1=$OpenProcess(B11)
+     ARGL: P2=$Arg1
+     OEVT: Q0=$E0 Q1=$OpenProc Q2=$WarningOpenProcess
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && !P1): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB04_M
+     PARL: P0=$Opening(B04) P1=$OpenProcess(B11) P2=$MotorWorks(B07)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$OpenProc Q2=$WarningOpenProcess  Q3=$WarningOpenProcessEndswitchbad
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && !P1 && P2): Q2;IF (S0 && P0 && !P1 && !P2): Q3;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB05
+     PARL: P0=$Closing(B05) P1=$CloseProcess(B13)
+     ARGL: P2=$Arg1
+     OEVT: Q0=$E0 Q1=$CloseProcess Q2=$WarningCloseProcess
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && !P1): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB05_M
+     PARL: P0=$Closing(B05) P1=$CloseProcess(B13) P2=$MotorWorks(B07)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$CloseProcess Q2=$WarningCloseProcess   Q3=$WarningCloseProcessEndswitchbad
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && !P1 && P2): Q2;IF (S0 && P0 && !P1 && !P2): Q3;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB06
+     PARL: P0=$Intermediate(B06) P1=$OpenProcess(B11) P2=$CloseProcess(B13)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$IntermediateState Q2=$WarningIntermediateState
+     FUNC: IF (S0 && P0 && (P1 || P2)):Q1;                  \
+           IF (S0 && P0 && !(P1 || P2)):Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgStatusB07
+     PARL: P0=$InMove(B07) P1=$Intermediate(B06)
+     ARGL: P2=$Name
+     OEVT: Q0=$E0  Q1=$WarningInMove
+     FUNC: IF (S0 && P0 && P1): Q1; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GVMsgDuties
+     PARL: P0=$RemoteDuty P1=$LocalDuty P2=$DutyError
+     ARGL: P3=$Name
+     OEVT: Q0=$Off Q1=$InRemote Q2=$InLocal Q3=$Error
+     FUNC: IF (!P0 && !P1): Q0;IF (P0 && !P1): Q1;IF (!P0 && P1): Q2;IF P2 : Q3;ELSE;
+     TYPE: t1=$ t2=$
+
+
+OBJ: GIMsgStatusB01
+     PARL: P0=$Open(B01) P1=$OpenProcess(B11) P2=$LocalDuty(B08)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$Open Q2=$WarningOpen Q3=$LocalOpen
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && P2): Q3;IF (S0 && P0): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GIMsgStatusB02
+     PARL: P0=$Closed(B02) P1=$CloseProcess(B13) P2=$LocalDuty(B08)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$Closed Q2=$WarningClosed Q3=$LocalClosed
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && P2): Q3;IF (S0 && P0): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GIMsgStatusB04
+     PARL: P0=$Opening(B04) P1=$OpenProcess(B11) P2=$LocalDuty(B08)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$OpenProc Q2=$WarningOpenProc Q3=$LocalOpenProc
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && P2): Q3;IF (S0 && P0): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: GIMsgStatusB05
+     PARL: P0=$Closing(B05) P1=$CloseProcess(B13) P2=$LocalDuty(B08)
+     ARGL: P3=$Arg1
+     OEVT: Q0=$E0 Q1=$CloseProc Q2=$WarningCloseProc Q3=$LocalOpenProc
+     FUNC: IF (S0 && P0 && P1): Q1;IF (S0 && P0 && P2): Q3;IF (S0 && P0): Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+
+####################################################################
+# Change of a bit without any argument
+#		
+OBJ: Bit+-
+     PARL: P0=$Bit
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF P0: Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+####################################################################
+# Change of a bit with too argument
+#		
+OBJ: Bit2Arg+-
+     PARL: P0=$Bit
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF P0: Q1; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+
+####################################################################
+# Change of a bit with an argument
+#		
+OBJ: BitArg+-
+     PARL: P0=$Bit
+     ARGL: P1=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF P0: Q1; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Station duty set by operator
+#		
+OBJ: StaOpDutySet
+     PARL: P0=$DutySend P1=$Duty
+     ARGL: P2=$Node P3=$Name
+     OEVT: Q0=$E0 Q1=$TM Q2=$LOC
+     FUNC: IF (S0 && (P0 & 0X1))                 : Q1;  \
+           IF (S0 && (P0 & 0X2))                 : Q2;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of all of the bits of a word with two argument.
+#		
+OBJ: BitAll2Arg+
+     PARL: P0=$Word
+     ARGL: P1=$Arg1 P2=$Arg2
+     OEVT: Q00=$E0  						  \
+           Q01=$Bit01Up  Q02=$Bit02Up  Q03=$Bit03Up  Q04=$Bit04Up \
+           Q05=$Bit05Up  Q06=$Bit06Up  Q07=$Bit07Up  Q08=$Bit08Up \
+           Q09=$Bit09Up  Q10=$Bit10Up  Q11=$Bit11Up  Q12=$Bit12Up \
+           Q13=$Bit13Up  Q14=$Bit14Up  Q15=$Bit15Up  Q16=$Bit16Up
+     FUNC: IF P0 & 0x8000:  Q1; \
+           IF P0 & 0x4000:  Q2; \
+           IF P0 & 0x2000:  Q3; \
+           IF P0 & 0x1000:  Q4; \
+           IF P0 & 0X0800:  Q5; \
+           IF P0 & 0X0400:  Q6; \
+           IF P0 & 0X0200:  Q7; \
+           IF P0 & 0X0100:  Q8; \
+           IF P0 & 0X0080:  Q9; \
+           IF P0 & 0X0040: Q10; \
+           IF P0 & 0X0020: Q11; \
+           IF P0 & 0X0010: Q12; \
+           IF P0 & 0X0008: Q13; \
+           IF P0 & 0X0004: Q14; \
+           IF P0 & 0X0002: Q15; \
+           IF P0 & 0X0001: Q16;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+
+####################################################################
+# Change of all of the bits of a (set)word compared to a state
+# with two argument.
+#		
+OBJ: BitAllComp2Arg+
+     PARL: P0=$Word P1=$State
+     ARGL: P2=$Arg1 P3=$Arg2
+     OEVT: Q00=$E0  						  \
+           Q01=$Bit01Up  Q02=$Bit02Up  Q03=$Bit03Up  Q04=$Bit04Up \
+           Q05=$Bit05Up  Q06=$Bit06Up  Q07=$Bit07Up  Q08=$Bit08Up \
+           Q09=$Bit09Up  Q10=$Bit10Up  Q11=$Bit11Up  Q12=$Bit12Up \
+           Q13=$Bit13Up  Q14=$Bit14Up  Q15=$Bit15Up  Q16=$Bit16Up \
+           Q17=$Bit01Down Q18=$Bit02Down Q19=$Bit03Down Q20=$Bit04Down \
+           Q21=$Bit05Down Q22=$Bit06Down Q23=$Bit07Down Q24=$Bit08Down \
+           Q25=$Bit09Down Q26=$Bit10Down Q27=$Bit11Down Q28=$Bit12Down \
+           Q29=$Bit13Down Q30=$Bit14Down Q31=$Bit15Down Q32=$Bit16Down
+     FUNC: IF S0 && (P0 & 0x8000) && !(P1 & 0x8000):  Q1; \
+           IF S0 && (P0 & 0x4000) && !(P1 & 0x4000):  Q2; \
+           IF S0 && (P0 & 0x2000) && !(P1 & 0x2000):  Q3; \
+           IF S0 && (P0 & 0x1000) && !(P1 & 0x1000):  Q4; \
+           IF S0 && (P0 & 0X0800) && !(P1 & 0X0800):  Q5; \
+           IF S0 && (P0 & 0X0400) && !(P1 & 0X0400):  Q6; \
+           IF S0 && (P0 & 0X0200) && !(P1 & 0X0200):  Q7; \
+           IF S0 && (P0 & 0X0100) && !(P1 & 0X0100):  Q8; \
+           IF S0 && (P0 & 0X0080) && !(P1 & 0X0080):  Q9; \
+           IF S0 && (P0 & 0X0040) && !(P1 & 0X0040): Q10; \
+           IF S0 && (P0 & 0X0020) && !(P1 & 0X0020): Q11; \
+           IF S0 && (P0 & 0X0010) && !(P1 & 0X0010): Q12; \
+           IF S0 && (P0 & 0X0008) && !(P1 & 0X0008): Q13; \
+           IF S0 && (P0 & 0X0004) && !(P1 & 0X0004): Q14; \
+           IF S0 && (P0 & 0X0002) && !(P1 & 0X0002): Q15; \
+           IF S0 && (P0 & 0X0001) && !(P1 & 0X0001): Q16; \
+           IF S0 && (P0 & 0x8000) && (P1 & 0x8000):  Q17; \
+           IF S0 && (P0 & 0x4000) && (P1 & 0x4000):  Q18; \
+           IF S0 && (P0 & 0x2000) && (P1 & 0x2000):  Q19; \
+           IF S0 && (P0 & 0x1000) && (P1 & 0x1000):  Q20; \
+           IF S0 && (P0 & 0X0800) && (P1 & 0X0800):  Q21; \
+           IF S0 && (P0 & 0X0400) && (P1 & 0X0400):  Q22; \
+           IF S0 && (P0 & 0X0200) && (P1 & 0X0200):  Q23; \
+           IF S0 && (P0 & 0X0100) && (P1 & 0X0100):  Q24; \
+           IF S0 && (P0 & 0X0080) && (P1 & 0X0080):  Q25; \
+           IF S0 && (P0 & 0X0040) && (P1 & 0X0040):  Q26; \
+           IF S0 && (P0 & 0X0020) && (P1 & 0X0020):  Q27; \
+           IF S0 && (P0 & 0X0010) && (P1 & 0X0010):  Q28; \
+           IF S0 && (P0 & 0X0008) && (P1 & 0X0008):  Q29; \
+           IF S0 && (P0 & 0X0004) && (P1 & 0X0004):  Q30; \
+           IF S0 && (P0 & 0X0002) && (P1 & 0X0002):  Q31; \
+           IF S0 && (P0 & 0X0001) && (P1 & 0X0001):  Q32; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+
+####################################################################
+# Change of all of the bits of a word with an argument.
+#		
+OBJ: BitAllArg+
+     PARL: P0=$Word
+     ARGL: P1=$Arg
+     OEVT: Q00=$E0  						  \
+           Q01=$Bit01Up  Q02=$Bit02Up  Q03=$Bit03Up  Q04=$Bit04Up \
+           Q05=$Bit05Up  Q06=$Bit06Up  Q07=$Bit07Up  Q08=$Bit08Up \
+           Q09=$Bit09Up  Q10=$Bit10Up  Q11=$Bit11Up  Q12=$Bit12Up \
+           Q13=$Bit13Up  Q14=$Bit14Up  Q15=$Bit15Up  Q16=$Bit16Up
+     FUNC: IF P0 & 0x8000:  Q1; \
+           IF P0 & 0x4000:  Q2; \
+           IF P0 & 0x2000:  Q3; \
+           IF P0 & 0x1000:  Q4; \
+           IF P0 & 0X0800:  Q5; \
+           IF P0 & 0X0400:  Q6; \
+           IF P0 & 0X0200:  Q7; \
+           IF P0 & 0X0100:  Q8; \
+           IF P0 & 0X0080:  Q9; \
+           IF P0 & 0X0040: Q10; \
+           IF P0 & 0X0020: Q11; \
+           IF P0 & 0X0010: Q12; \
+           IF P0 & 0X0008: Q13; \
+           IF P0 & 0X0004: Q14; \
+           IF P0 & 0X0002: Q15; \
+           IF P0 & 0X0001: Q16;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of all of the bits of a word without any argument.
+#		
+OBJ: BitAll+
+     PARL: P0=$Word
+     OEVT: Q00=$E0  						  \
+           Q01=$Bit01Up  Q02=$Bit02Up  Q03=$Bit03Up  Q04=$Bit04Up \
+           Q05=$Bit05Up  Q06=$Bit06Up  Q07=$Bit07Up  Q08=$Bit08Up \
+           Q09=$Bit09Up  Q10=$Bit10Up  Q11=$Bit11Up  Q12=$Bit12Up \
+           Q13=$Bit13Up  Q14=$Bit14Up  Q15=$Bit15Up  Q16=$Bit16Up
+     FUNC: IF P0 & 0x8000:  Q1; \
+           IF P0 & 0x4000:  Q2; \
+           IF P0 & 0x2000:  Q3; \
+           IF P0 & 0x1000:  Q4; \
+           IF P0 & 0X0800:  Q5; \
+           IF P0 & 0X0400:  Q6; \
+           IF P0 & 0X0200:  Q7; \
+           IF P0 & 0X0100:  Q8; \
+           IF P0 & 0X0080:  Q9; \
+           IF P0 & 0X0040: Q10; \
+           IF P0 & 0X0020: Q11; \
+           IF P0 & 0X0010: Q12; \
+           IF P0 & 0X0008: Q13; \
+           IF P0 & 0X0004: Q14; \
+           IF P0 & 0X0002: Q15; \
+           IF P0 & 0X0001: Q16;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of a parameter without any argument
+#		
+OBJ: ParamChange
+     PARL: P0=$Param
+     OEVT: Q0=E0  Q1=$MSg
+     FUNC: IF (S0==0x0003): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Change of a parameter with an argument
+#		
+OBJ: ParamChangeArg
+     PARL: P0=$Param
+     ARGL: P1=$Arg
+     OEVT: Q0=$E0  Q1=$MSg
+     FUNC: IF (S0==0x0003): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+####################################################################
+# Setting the operator variables (spec Torgili)
+#		
+OBJ: OpVarBit_01_04
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==1) && !(P1 & 0X8000)): Q1; \
+           IF (S0 && (P0==1) &&  (P1 & 0X8000)): Q2; \
+           IF (S0 && (P0==2) && !(P1 & 0X4000)): Q3; \
+           IF (S0 && (P0==2) &&  (P1 & 0X4000)): Q4; \
+           IF (S0 && (P0==3) && !(P1 & 0X2000)): Q5; \
+           IF (S0 && (P0==3) &&  (P1 & 0X2000)): Q6; \
+           IF (S0 && (P0==4) && !(P1 & 0X1000)): Q7; \
+           IF (S0 && (P0==4) &&  (P1 & 0X1000)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_05_08
+     PARL: P0=$Ser P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==5) && !(P1 & 0X800)): Q1; \
+           IF (S0 && (P0==5) &&  (P1 & 0X800)): Q2; \
+           IF (S0 && (P0==6) && !(P1 & 0X400)): Q3; \
+           IF (S0 && (P0==6) &&  (P1 & 0X400)): Q4; \
+           IF (S0 && (P0==7) && !(P1 & 0X200)): Q5; \
+           IF (S0 && (P0==7) &&  (P1 & 0X200)): Q6; \
+           IF (S0 && (P0==8) && !(P1 & 0X100)): Q7; \
+           IF (S0 && (P0==8) &&  (P1 & 0X100)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_09_12
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==9)  && !(P1 & 0X80)): Q1; \
+           IF (S0 && (P0==9)  &&  (P1 & 0X80)): Q2; \
+           IF (S0 && (P0==10) && !(P1 & 0X40)): Q3; \
+           IF (S0 && (P0==10) &&  (P1 & 0X40)): Q4; \
+           IF (S0 && (P0==11) && !(P1 & 0X20)): Q5; \
+           IF (S0 && (P0==11) &&  (P1 & 0X20)): Q6; \
+           IF (S0 && (P0==12) && !(P1 & 0X10)): Q7; \
+           IF (S0 && (P0==12) &&  (P1 & 0X10)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_13_16
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==13) &&! (P1 & 0X8)): Q1; \
+           IF (S0 && (P0==13) &&  (P1 & 0X8)): Q2; \
+           IF (S0 && (P0==14) &&! (P1 & 0X4)): Q3; \
+           IF (S0 && (P0==14) &&  (P1 & 0X4)): Q4; \
+           IF (S0 && (P0==15) &&! (P1 & 0X2)): Q5; \
+           IF (S0 && (P0==15) &&  (P1 & 0X2)): Q6; \
+           IF (S0 && (P0==16) &&! (P1 & 0X1)): Q7; \
+           IF (S0 && (P0==16) &&  (P1 & 0X1)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_17_20
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==17) && !(P1 & 0X8000)): Q1; \
+           IF (S0 && (P0==17) &&  (P1 & 0X8000)): Q2; \
+           IF (S0 && (P0==18) && !(P1 & 0X4000)): Q3; \
+           IF (S0 && (P0==18) &&  (P1 & 0X4000)): Q4; \
+           IF (S0 && (P0==19) && !(P1 & 0X2000)): Q5; \
+           IF (S0 && (P0==19) &&  (P1 & 0X2000)): Q6; \
+           IF (S0 && (P0==20) && !(P1 & 0X1000)): Q7; \
+           IF (S0 && (P0==20) &&  (P1 & 0X1000)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_21_24
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==21) && !(P1 & 0X800)): Q1; \
+           IF (S0 && (P0==21) &&  (P1 & 0X800)): Q2; \
+           IF (S0 && (P0==22) && !(P1 & 0X400)): Q3; \
+           IF (S0 && (P0==22) &&  (P1 & 0X400)): Q4; \
+           IF (S0 && (P0==23) && !(P1 & 0X200)): Q5; \
+           IF (S0 && (P0==23) &&  (P1 & 0X200)): Q6; \
+           IF (S0 && (P0==24) && !(P1 & 0X100)): Q7; \
+           IF (S0 && (P0==24) &&  (P1 & 0X100)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_25_28
+     PARL: P0=$Set P1=$Set
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==25) && !(P1 & 0X80)): Q1; \
+           IF (S0 && (P0==25) &&  (P1 & 0X80)): Q2; \
+           IF (S0 && (P0==26) && !(P1 & 0X40)): Q3; \
+           IF (S0 && (P0==26) &&  (P1 & 0X40)): Q4; \
+           IF (S0 && (P0==27) && !(P1 & 0X20)): Q5; \
+           IF (S0 && (P0==27) &&  (P1 & 0X20)): Q6; \
+           IF (S0 && (P0==28) && !(P1 & 0X10)): Q7; \
+           IF (S0 && (P0==28) &&  (P1 & 0X10)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_29_32
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==29) && !(P1 & 0X8)): Q1; \
+           IF (S0 && (P0==29) &&  (P1 & 0X8)): Q2; \
+           IF (S0 && (P0==30) && !(P1 & 0X4)): Q3; \
+           IF (S0 && (P0==30) &&  (P1 & 0X4)): Q4; \
+           IF (S0 && (P0==31) && !(P1 & 0X2)): Q5; \
+           IF (S0 && (P0==31) &&  (P1 & 0X2)): Q6; \
+           IF (S0 && (P0==32) && !(P1 & 0X1)): Q7; \
+           IF (S0 && (P0==32) &&  (P1 & 0X1)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_33_36
+     PARL: P0=$Set P1=$Reg	
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==33) && !(P1 & 0X8000)): Q1; \
+           IF (S0 && (P0==33) &&  (P1 & 0X8000)): Q2; \
+           IF (S0 && (P0==34) && !(P1 & 0X4000)): Q3; \
+           IF (S0 && (P0==34) &&  (P1 & 0X4000)): Q4; \
+           IF (S0 && (P0==35) && !(P1 & 0X2000)): Q5; \
+           IF (S0 && (P0==35) &&  (P1 & 0X2000)): Q6; \
+           IF (S0 && (P0==36) && !(P1 & 0X1000)): Q7; \
+           IF (S0 && (P0==36) &&  (P1 & 0X1000)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_37_40
+     PARL: P0=$Set P1=$Reg	
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==37) && !(P1 & 0X800)): Q1; \
+           IF (S0 && (P0==37) &&  (P1 & 0X800)): Q2; \
+           IF (S0 && (P0==38) && !(P1 & 0X400)): Q3; \
+           IF (S0 && (P0==38) &&  (P1 & 0X400)): Q4; \
+           IF (S0 && (P0==39) && !(P1 & 0X200)): Q5; \
+           IF (S0 && (P0==39) &&  (P1 & 0X200)): Q6; \
+           IF (S0 && (P0==40) && !(P1 & 0X100)): Q7; \
+           IF (S0 && (P0==40) &&  (P1 & 0X100)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_41_44
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==41) && !(P1 & 0X80)): Q1; \
+           IF (S0 && (P0==41) &&  (P1 & 0X80)): Q2; \
+           IF (S0 && (P0==42) && !(P1 & 0X40)): Q3; \
+           IF (S0 && (P0==42) &&  (P1 & 0X40)): Q4; \
+           IF (S0 && (P0==43) && !(P1 & 0X20)): Q5; \
+           IF (S0 && (P0==43) &&  (P1 & 0X20)): Q6; \
+           IF (S0 && (P0==44) && !(P1 & 0X10)): Q7; \
+           IF (S0 && (P0==44) &&  (P1 & 0X10)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_45_48
+     PARL: P0=$Set P1=$Reg	
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==45) &&! (P1 & 0X8)): Q1; \
+           IF (S0 && (P0==45) &&  (P1 & 0X8)): Q2; \
+           IF (S0 && (P0==46) &&! (P1 & 0X4)): Q3; \
+           IF (S0 && (P0==46) &&  (P1 & 0X4)): Q4; \
+           IF (S0 && (P0==47) &&! (P1 & 0X2)): Q5; \
+           IF (S0 && (P0==47) &&  (P1 & 0X2)): Q6; \
+           IF (S0 && (P0==48) &&! (P1 & 0X1)): Q7; \
+           IF (S0 && (P0==48) &&  (P1 & 0X1)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_49_52
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==49) && !(P1 & 0X8000)): Q1; \
+           IF (S0 && (P0==49) &&  (P1 & 0X8000)): Q2; \
+           IF (S0 && (P0==50) && !(P1 & 0X4000)): Q3; \
+           IF (S0 && (P0==50) &&  (P1 & 0X4000)): Q4; \
+           IF (S0 && (P0==51) && !(P1 & 0X2000)): Q5; \
+           IF (S0 && (P0==51) &&  (P1 & 0X2000)): Q6; \
+           IF (S0 && (P0==52) && !(P1 & 0X1000)): Q7; \
+           IF (S0 && (P0==52) &&  (P1 & 0X1000)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_53_56
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==53) && !(P1 & 0X800)): Q1; \
+           IF (S0 && (P0==53) &&  (P1 & 0X800)): Q2; \
+           IF (S0 && (P0==54) && !(P1 & 0X400)): Q3; \
+           IF (S0 && (P0==54) &&  (P1 & 0X400)): Q4; \
+           IF (S0 && (P0==55) && !(P1 & 0X200)): Q5; \
+           IF (S0 && (P0==55) &&  (P1 & 0X200)): Q6; \
+           IF (S0 && (P0==56) && !(P1 & 0X100)): Q7; \
+           IF (S0 && (P0==56) &&  (P1 & 0X100)): Q8;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_57_60
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==57) && !(P1 & 0X80)):Q1 ;\
+           IF (S0 && (P0==57) &&  (P1 & 0X80)):Q2 ;\
+           IF (S0 && (P0==58) && !(P1 & 0X40)):Q3 ;\
+           IF (S0 && (P0==58) &&  (P1 & 0X40)):Q4 ;\
+           IF (S0 && (P0==59) && !(P1 & 0X20)):Q5 ;\
+           IF (S0 && (P0==59) &&  (P1 & 0X20)):Q6 ;\
+           IF (S0 && (P0==60) && !(P1 & 0X10)):Q7 ;\
+           IF (S0 && (P0==60) &&  (P1 & 0X10)):Q8 ;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: OpVarBit_61_64
+     PARL: P0=$Set P1=$Reg
+     ARGL: P2=$Node
+     OEVT: Q0=$ Q1=$ Q2=$ Q3=$ Q4=$ Q5=$ Q6=$ Q7=$ Q8=$
+     FUNC: IF (S0 && (P0==61) && !(P1 & 0X8)):Q1; \
+           IF (S0 && (P0==61) &&  (P1 & 0X8)):Q2; \
+           IF (S0 && (P0==62) && !(P1 & 0X4)):Q3; \
+           IF (S0 && (P0==62) &&  (P1 & 0X4)):Q4; \
+           IF (S0 && (P0==63) && !(P1 & 0X2)):Q5; \
+           IF (S0 && (P0==63) &&  (P1 & 0X2)):Q6; \
+           IF (S0 && (P0==64) && !(P1 & 0X1)):Q7; \
+           IF (S0 && (P0==64) &&  (P1 & 0X1)):Q8; ELSE Q0;
+     TYPE: t1=$ t2=$
+
+###############################################################
+# Healthy events about 10 MB_PATH & MB_SRV_STAT
+#
+OBJ: MB_PATH
+     PARL: P0=$Path1 P1=$Path2 P2=$Path3 P3=$Path4 P4=$Path5 P5=$Path6 P6=$Path7 P7=$Path8 P8=$Path9 P9=$Path10 P10=$MB_SRV_STAT
+     OEVT: Q0=$bad Q1=$OK
+     FUNC: IF ((P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) & 0x0001) || (P10!=3):Q0; \
+           ELSE Q1;
+     TYPE: t1=$ t2=$
+
+
+########################################################################
+#   Manual Event
+#
+#
+OBJ: ManualEvent
+     PARL: P0=$TEXT P1=$TRG P2=$OPER
+     OEVT: Q0=$Msg1  Q1=$Msg2	
+     FUNC: IF (S1 && P1) :  Q1; IF S1 : Q0; ELSE ;
+     TYPE: t1=$ t2=$
+     FLGS: cf=0 CF=ManualEventFgColor  cb=0 CB=ManualEventBgColor
+
+OBJ: LoginEvent
+     PARL: P0=$UserName P1=$UserPrio P2=$MonIndex
+     OEVT: Q0=$MsgProg Q1=$MsgEng Q2=$MsgTechn Q3=$MsgOper Q4=$MsgGuest Q5=$MsgUnknown
+     FUNC: IF S1 && (P1==  0) : Q0; IF S1 && (P1== 20) : Q1; \
+           IF S1 && (P1== 50) : Q2; IF S1 && (P1==100) : Q3; \
+           IF S1 && (P1==254) : Q4; ELSE Q5;
+     TYPE: t1=$ t2=$
+
+OBJ: LevelMeterParam 
+     PARL: P00=$ManLevel P01=$CrHi P02=$CrLo P03=$4_L  P04=$3_L  P05=$2_L \
+           P06=$Hyst P07=$LR_4_L 
+     ARGL: P08=$Name
+     OEVT: Q00=$E0							       \
+           Q01=$ManLevel Q02=$CrHi Q03=$CrLo Q04=$4_L  Q05=$3_L  Q06=$2_L \
+	   Q07=$Hyst Q08=$LR_4_L   
+     FUNC: IF (S0 ==3):  Q1;  \
+           IF (S1 ==3):  Q2;  \
+           IF (S2 ==3):  Q3;  \
+           IF (S3 ==3):  Q4;  \
+           IF (S4 ==3):  Q5;  \
+           IF (S5 ==3):  Q6;  \
+           IF (S6 ==3):  Q7;  \
+           IF (S7 ==3):  Q8;ELSE Q0;
+     TYPE: t1=$ t2=$ 
+
+OBJ: LevelMeterParam_new
+     PARL: P00=$ManLevel P01=$CrHi P02=$CrLo P03=$4_L P04=$3_L P05=$2_L \
+           P06=$1_L P07=$0_L P08=$5_L P09=$Hyst
+     ARGL: P10=$Name
+     OEVT: Q00=$E0							       \
+           Q01=$ManLevel Q02=$CrHi Q03=$CrLo Q04=$4_L Q05=$3_L Q06=$2_L \
+           Q07=$1_L Q08=$0_L Q09=$5_L Q10=$Hyst
+     FUNC: IF (S0 ==3):  Q1;  \
+           IF (S1 ==3):  Q2;  \
+           IF (S2 ==3):  Q3;  \
+           IF (S3 ==3):  Q4;  \
+           IF (S4 ==3):  Q5;  \
+           IF (S5 ==3):  Q6;  \
+           IF (S6 ==3):  Q7;  \
+           IF (S7 ==3):  Q8;  \
+           IF (S8 ==3):  Q9;  \
+           IF (S9 ==3):  Q10;ELSE Q0;
+     TYPE: t1=$ t2=$ 
+
+OBJ: LevelOpCtwdSet
+     PARL: P0=$Ctwd_set
+     ARGL: P1=$Arg1 
+     OEVT: Q00=$E0						        \
+           Q01=$ReplOn   Q02=$ReplOff   Q03=$Disable   Q04=$Enable  
+     FUNC: IF (S0 && (P0==31)):  Q1;IF (S0 && (P0==30)):  Q2; \
+           IF (S0 && (P0==33)):  Q3;IF (S0 && (P0==32)):  Q4;ELSE Q0;
+     TYPE: t1=$ t2=$ 
+
+
+####################################################################
+# Change of the bits of a word with an argument.
+# Warning, the 1. bit was the least significant, now
+# the name corresponds to the Modicon bit order.
+#
+OBJ: zuzuBit01ArgX
+     PARL: P0=$Word1 P1=$Word2
+     ARGL: P2=$Arg
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (S0 | S1) && (P1 & 0X8000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+       	
+OBJ: zuzuBit02ArgX
+     PARL: P0=$Word1 P1=$Word2
+     ARGL: P2=$Arg 
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (S0 | S1) && (P1 & 0X4000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+####################################################################
+# Change of the bits of a word with an argument.
+# Warning, the 1. bit was the least significant, now
+# the name corresponds to the Modicon bit order.
+#
+
+OBJ: zuzuBit01SpecX
+     PARL: P0=$Word1 P1=$Word2
+     ARGL: P2=$Arg1  P3=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (S0) && (P1 & 0X8000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+OBJ: zuzuBit02SpecX
+     PARL: P0=$Word1 P1=$Word2
+     ARGL: P2=$Arg1  P3=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (S0) && (P1 & 0X4000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+
+
+OBJ: zuzuBit04SpecX
+     PARL: P0=$Word1 P1=$Word2
+     ARGL: P2=$Arg1  P3=$Arg2
+     OEVT: Q0=$DownEvent Q1=$UpEvent
+     FUNC: IF (S0) && (P1 & 0X1000): Q1;ELSE Q0;
+     TYPE: t1=$ t2=$
+

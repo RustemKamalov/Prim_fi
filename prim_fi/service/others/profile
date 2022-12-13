@@ -1,0 +1,30 @@
+# startup profile executed by shell during login
+export PATH=$PATH:/etc:/usr/ucb:/usr/local/bin:/util TMPDIR=${TMPDIR:-/tmp}
+export SYSNAME=${SYSNAME:-qnx4}
+if [ "$LOGNAME" != root ]; then
+  MAIL=${MAIL:-/usr/spool/mail/$LOGNAME}
+  test -s $MAIL -a $MAIL -nt .lastlogin && echo "You have new mail."
+fi
+if [ -f .hushlogin ]; then
+  echo -n >.lastlogin
+else
+  test /etc/motd -nt .lastlogin && cat /etc/motd
+  test -s .lastlogin && echo $(<.lastlogin)
+  echo "Last login: ${DATE=`date +%c`} on ${TTY=`tty`}" >.lastlogin
+  echo $DATE
+fi
+alias lf='ls -CF'
+
+#VIDEO
+export WINGRAFX="/windows/bin/gr.scitech -g1024x768"
+
+# CRISP
+export BTERM=qnx
+
+#Watcom C
+export INCLUDE=/usr/include
+export WATCOM=/usr/lib
+
+alias down='shutdown -f'
+stty quit ^\\
+umask 2

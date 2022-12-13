@@ -1,0 +1,1284 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=179 h=830 w=1265
+
+OBJ: 2202
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2204
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2206
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2208
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2210
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2212
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2214
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2216
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2217
+  PARL: P0=Fi_OperVarB01
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2218
+  PARL: P0=Fi_OperVarB02
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2219
+  PARL: P0=Fi_OperVarB03
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2220
+  PARL: P0=Fi_OperVarB04
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2222
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2224
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2226
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2228
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2230
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2232
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2234
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2236
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2237
+  PARL: P0=Fi_OperVarB05
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2238
+  PARL: P0=Fi_OperVarB06
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2239
+  PARL: P0=Fi_OperVarB07
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2240
+  PARL: P0=Fi_OperVarB08
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2242
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2244
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2246
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2248
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2250
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2252
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2254
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2256
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2257
+  PARL: P0=Fi_OperVarB09
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2258
+  PARL: P0=Fi_OperVarB10
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2259
+  PARL: P0=Fi_OperVarB11
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2260
+  PARL: P0=Fi_OperVarB12
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2262
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2264
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2266
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2268
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2270
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2272
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2274
+  PARL: P0=Fi_SetOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2276
+  PARL: P0=Fi_ClrOperVars1 P1=Fi_OperVarRg1
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2277
+  PARL: P0=Fi_OperVarB13
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2278
+  PARL: P0=Fi_OperVarB14
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2279
+  PARL: P0=Fi_OperVarB15
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2280
+  PARL: P0=Fi_OperVarB16
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2282
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2284
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2286
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2288
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2290
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2292
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2294
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2296
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2297
+  PARL: P0=Fi_OperVarB33
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2298
+  PARL: P0=Fi_OperVarB34
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2299
+  PARL: P0=Fi_OperVarB35
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2300
+  PARL: P0=Fi_OperVarB36
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2302
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2304
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2306
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2308
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2310
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2312
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2314
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2316
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2317
+  PARL: P0=Fi_OperVarB37
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2318
+  PARL: P0=Fi_OperVarB38
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2319
+  PARL: P0=Fi_OperVarB39
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2320
+  PARL: P0=Fi_OperVarB40
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2322
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2324
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2326
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2328
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2330
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2332
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2334
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2336
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2337
+  PARL: P0=Fi_OperVarB41
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2338
+  PARL: P0=Fi_OperVarB42
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2339
+  PARL: P0=Fi_OperVarB43
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2340
+  PARL: P0=Fi_OperVarB44
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2342
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2344
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2346
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2348
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2350
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2352
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2354
+  PARL: P0=Fi_SetOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2356
+  PARL: P0=Fi_ClrOperVars3 P1=Fi_OperVarRg3
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2357
+  PARL: P0=Fi_OperVarB45
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2358
+  PARL: P0=Fi_OperVarB46
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2359
+  PARL: P0=Fi_OperVarB47
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2360
+  PARL: P0=Fi_OperVarB48
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2362
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2364
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2366
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2368
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2370
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2372
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2374
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2376
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2377
+  PARL: P0=Fi_OperVarB17
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2378
+  PARL: P0=Fi_OperVarB18
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2379
+  PARL: P0=Fi_OperVarB19
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2380
+  PARL: P0=Fi_OperVarB20
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2382
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2384
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2386
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2388
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2390
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2392
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2394
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2396
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2397
+  PARL: P0=Fi_OperVarB21
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2398
+  PARL: P0=Fi_OperVarB22
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2399
+  PARL: P0=Fi_OperVarB23
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2400
+  PARL: P0=Fi_OperVarB24
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2402
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2404
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2406
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2408
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2410
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2412
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2414
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2416
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2417
+  PARL: P0=Fi_OperVarB25
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2418
+  PARL: P0=Fi_OperVarB26
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2419
+  PARL: P0=Fi_OperVarB27
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2420
+  PARL: P0=Fi_OperVarB28
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2422
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2424
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2426
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2428
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2430
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2432
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2434
+  PARL: P0=Fi_SetOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2436
+  PARL: P0=Fi_ClrOperVars2 P1=Fi_OperVarRg2
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2437
+  PARL: P0=Fi_OperVarB29
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2438
+  PARL: P0=Fi_OperVarB30
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2439
+  PARL: P0=Fi_OperVarB31
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2440
+  PARL: P0=Fi_OperVarB32
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2442
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2444
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X8000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x8000;
+OBEND
+
+OBJ: 2446
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2448
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X4000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x4000;
+OBEND
+
+OBJ: 2450
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2452
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X2000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x2000;
+OBEND
+
+OBJ: 2454
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2456
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0X1000) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x1000;
+OBEND
+
+OBJ: 2457
+  PARL: P0=Fi_OperVarB49
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2458
+  PARL: P0=Fi_OperVarB50
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2459
+  PARL: P0=Fi_OperVarB51
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2460
+  PARL: P0=Fi_OperVarB52
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2462
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2464
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0800) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0800;
+OBEND
+
+OBJ: 2466
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2468
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0400) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0400;
+OBEND
+
+OBJ: 2470
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2472
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0200) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+OBJ: 2474
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2476
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0100) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0100;
+OBEND
+
+OBJ: 2477
+  PARL: P0=Fi_OperVarB53
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2478
+  PARL: P0=Fi_OperVarB54
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2479
+  PARL: P0=Fi_OperVarB55
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2480
+  PARL: P0=Fi_OperVarB56
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2482
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2484
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0080) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0080;
+OBEND
+
+OBJ: 2486
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2488
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0040) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0040;
+OBEND
+
+OBJ: 2490
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2492
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0020) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0020;
+OBEND
+
+OBJ: 2494
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2496
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0010) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0010;
+OBEND
+
+OBJ: 2497
+  PARL: P0=Fi_OperVarB57
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2498
+  PARL: P0=Fi_OperVarB58
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2499
+  PARL: P0=Fi_OperVarB59
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2500
+  PARL: P0=Fi_OperVarB60
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2502
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2504
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0008) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0008;
+OBEND
+
+OBJ: 2506
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2508
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0004) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0004;
+OBEND
+
+OBJ: 2510
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2512
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0002) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0002;
+OBEND
+
+OBJ: 2514
+  PARL: P0=Fi_SetOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF (P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2516
+  PARL: P0=Fi_ClrOperVars4 P1=Fi_OperVarRg4
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF !(P1 & 0x0001) : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0001;
+OBEND
+
+OBJ: 2517
+  PARL: P0=Fi_OperVarB61
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2518
+  PARL: P0=Fi_OperVarB62
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2519
+  PARL: P0=Fi_OperVarB63
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 2520
+  PARL: P0=Fi_OperVarB64
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND

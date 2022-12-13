@@ -1,0 +1,2940 @@
+HEADER:	
+	SIZE:	height=9130 width=13915
+	COLORS:	bkgd=6
+END
+
+#==================== QW_RECTANGLE (SR1488_1488_1053) ====================
+
+RECTANGLE:	SR1488_1488_1053
+	POS:	row=3014 col=1551
+	COLOR:	color=17 fill=188
+	PEN:	thickness=44
+	SIZE:	height=4114 width=2013
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR1053_1053) ====================
+
+RECTANGLE:	SR1053_1053
+	POS:	row=2541 col=3619
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR1247_1247) ====================
+
+RECTANGLE:	SR1247_1247
+	POS:	row=3080 col=3663
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (SR1024_1024) ====================
+
+RECTANGLE:	SR1024_1024
+	POS:	row=187 col=4851
+	COLOR:	color=15 fill=15
+	OPT:	opts=em
+	PEN:	thickness=5
+	SIZE:	height=297 width=4444
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST1025_1025) ====================
+
+TEXT:	ST1025_1025
+	POS:	row=407 col=5577
+
+#@@@@@@@@@ header.size.text.height(264) != header.height(231) @@@@@@@@@@
+	COLOR:	color=10
+	FONT:	face=times_cyr style=B size=264
+	STRING:	str="ПРИБОР   ЗАГАЗОВАННОСТИ"
+END
+
+#==================== QW_RECTANGLE (DR1186_ch01b01) ====================
+
+RECTANGLE:	DR1186_ch01b01
+	POS:	row=3586 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1188_ch01b02) ====================
+
+RECTANGLE:	DR1188_ch01b02
+	POS:	row=3806 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST1244_1244) ====================
+
+TEXT:	ST1244_1244
+	POS:	row=2805 col=3674
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:01
+END
+
+#==================== QW_NUMBER (DG1246_ch01meas) ====================
+
+DIGIT:	DG1246_ch01meas
+	POS:	row=3223 col=3707
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST1248_1248) ====================
+
+TEXT:	ST1248_1248
+	POS:	row=3685 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Авария1 не деблок."
+END
+
+#==================== QW_TEXT (ST1250_1250_1248) ====================
+
+TEXT:	ST1250_1250_1248
+	POS:	row=3905 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Авария1 возникла"
+END
+
+#==================== QW_TEXT (ST1251_1251_1250_1248) ====================
+
+TEXT:	ST1251_1251_1250_1248
+	POS:	row=4125 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Аварийный уровень1"
+END
+
+#==================== QW_TEXT (ST1252_1252_1250_1248) ====================
+
+TEXT:	ST1252_1252_1250_1248
+	POS:	row=4345 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Критическая ошибка"
+END
+
+#==================== QW_TEXT (ST1256_1256_1252_1250_12) ====================
+
+TEXT:	ST1256_1256_1252_1250_12
+	POS:	row=5225 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str=Калибрация
+END
+
+#==================== QW_TEXT (ST1260_1260_1256_1252_12) ====================
+
+TEXT:	ST1260_1260_1256_1252_12
+	POS:	row=6105 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Карта не активная"
+END
+
+#==================== QW_TEXT (ST1261_1261_1257_1253_12) ====================
+
+TEXT:	ST1261_1261_1257_1253_12
+	POS:	row=6325 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Помехи не деблок."
+END
+
+#==================== QW_TEXT (ST1262_1262_1258_1254_12) ====================
+
+TEXT:	ST1262_1262_1258_1254_12
+	POS:	row=6545 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Помехи возникли"
+END
+
+#==================== QW_TEXT (ST1263_1263_1259_1255_12) ====================
+
+TEXT:	ST1263_1263_1259_1255_12
+	POS:	row=6765 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Сигнал помех"
+END
+
+#==================== QW_TEXT (ST1264_1264_1260_1256_12) ====================
+
+TEXT:	ST1264_1264_1260_1256_12
+	POS:	row=6985 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Неисправность карты"
+END
+
+#==================== QW_RECTANGLE (DR1265_ch01b03) ====================
+
+RECTANGLE:	DR1265_ch01b03
+	POS:	row=4026 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1266_ch01b04) ====================
+
+RECTANGLE:	DR1266_ch01b04
+	POS:	row=4246 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1267_ch01b05) ====================
+
+RECTANGLE:	DR1267_ch01b05
+	POS:	row=4466 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1268_ch01b06) ====================
+
+RECTANGLE:	DR1268_ch01b06
+	POS:	row=4686 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1269_ch01b07) ====================
+
+RECTANGLE:	DR1269_ch01b07
+	POS:	row=4906 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1270_ch01b08) ====================
+
+RECTANGLE:	DR1270_ch01b08
+	POS:	row=5126 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1271_ch01b09) ====================
+
+RECTANGLE:	DR1271_ch01b09
+	POS:	row=5346 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1272_ch01b10) ====================
+
+RECTANGLE:	DR1272_ch01b10
+	POS:	row=5566 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1273_ch01b11) ====================
+
+RECTANGLE:	DR1273_ch01b11
+	POS:	row=5786 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1274_ch01b12) ====================
+
+RECTANGLE:	DR1274_ch01b12
+	POS:	row=6006 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1275_ch01b13) ====================
+
+RECTANGLE:	DR1275_ch01b13
+	POS:	row=6226 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1276_ch01b14) ====================
+
+RECTANGLE:	DR1276_ch01b14
+	POS:	row=6446 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1277_ch01b15) ====================
+
+RECTANGLE:	DR1277_ch01b15
+	POS:	row=6666 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR1278_ch01b16) ====================
+
+RECTANGLE:	DR1278_ch01b16
+	POS:	row=6886 col=3828
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST1281_1281_1248) ====================
+
+TEXT:	ST1281_1281_1248
+	POS:	row=3267 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Концентрация газа"
+END
+
+#==================== QW_TEXT (ST1482_1482_1248) ====================
+
+TEXT:	ST1482_1482_1248
+	POS:	row=4565 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Авария2 не деблок."
+END
+
+#==================== QW_TEXT (ST1483_1483_1250_1248) ====================
+
+TEXT:	ST1483_1483_1250_1248
+	POS:	row=4785 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Авария2 возникла"
+END
+
+#==================== QW_TEXT (ST1484_1484_1251_1250_12) ====================
+
+TEXT:	ST1484_1484_1251_1250_12
+	POS:	row=5005 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Аварийный уровень2"
+END
+
+#==================== QW_TEXT (ST1485_1485_1248) ====================
+
+TEXT:	ST1485_1485_1248
+	POS:	row=5445 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Авария3 не деблок."
+END
+
+#==================== QW_TEXT (ST1486_1486_1250_1248) ====================
+
+TEXT:	ST1486_1486_1250_1248
+	POS:	row=5665 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Авария3 возникла"
+END
+
+#==================== QW_TEXT (ST1487_1487_1251_1250_12) ====================
+
+TEXT:	ST1487_1487_1251_1250_12
+	POS:	row=5885 col=1595
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=121
+	STRING:	str="Аварийный уровень3"
+END
+
+#==================== QW_RECTANGLE (SR1526_1526_1525) ====================
+
+RECTANGLE:	SR1526_1526_1525
+	POS:	row=2035 col=3619
+	COLOR:	color=17 fill=188
+	PEN:	thickness=11
+	SIZE:	height=495 width=2728
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST1517_1517_1517_1515_15) ====================
+
+TEXT:	ST1517_1517_1517_1515_15
+	POS:	row=2343 col=4620
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str="Причал 1"
+END
+
+#==================== QW_RECTANGLE (SR1542_1542_4617_4493) ====================
+
+RECTANGLE:	SR1542_1542_4617_4493
+	POS:	row=1881 col=1914
+	COLOR:	fill=11
+	PEN:	thickness=5
+	SIZE:	height=308 width=1364
+	FMT:	roundness=90
+END
+
+#==================== QW_RECTANGLE (DR1543_1543_4619_4614_36) ====================
+
+RECTANGLE:	DR1543_1543_4619_4614_36
+	POS:	row=1870 col=1881
+	COLOR:	color=8
+	OPT:	opts=N
+	PEN:	thickness=50
+	SIZE:	height=330 width=1430
+	FMT:	roundness=90
+END
+
+#==================== QW_TEXT (ST1544_1544_4618_4494) ====================
+
+TEXT:	ST1544_1544_4618_4494
+	POS:	row=2079 col=2079
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=КОММУНИКАЦИЯ
+END
+
+#==================== QW_RECTANGLE (SR1546_1546_602) ====================
+
+RECTANGLE:	SR1546_1546_602
+	POS:	row=1353 col=1870
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=385 width=1936
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST1547_1547_605) ====================
+
+TEXT:	ST1547_1547_605
+	POS:	row=1584 col=2178
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=НЕИСПР.СИГН.ЗАГАЗ.
+END
+
+#==================== QW_RECTANGLE (SR1784_1784) ====================
+
+RECTANGLE:	SR1784_1784
+	POS:	row=2035 col=9240
+	COLOR:	color=17 fill=188
+	PEN:	thickness=11
+	SIZE:	height=495 width=2695
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST1825_1825) ====================
+
+TEXT:	ST1825_1825
+	POS:	row=2343 col=10307
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=РЕЗЕРВ
+END
+
+#==================== QW_RECTANGLE (SR2048_2048) ====================
+
+RECTANGLE:	SR2048_2048
+	POS:	row=2541 col=4323
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2049_2049) ====================
+
+RECTANGLE:	SR2049_2049
+	POS:	row=3080 col=4367
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2050_2050) ====================
+
+RECTANGLE:	DR2050_2050
+	POS:	row=3586 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2051_2051) ====================
+
+RECTANGLE:	DR2051_2051
+	POS:	row=3806 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2052_2052) ====================
+
+TEXT:	ST2052_2052
+	POS:	row=2805 col=4378
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:02
+END
+
+#==================== QW_NUMBER (DG2053_2053) ====================
+
+DIGIT:	DG2053_2053
+	POS:	row=3223 col=4411
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2054_2054) ====================
+
+RECTANGLE:	DR2054_2054
+	POS:	row=4026 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2055_2055) ====================
+
+RECTANGLE:	DR2055_2055
+	POS:	row=4246 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2056_2056) ====================
+
+RECTANGLE:	DR2056_2056
+	POS:	row=4466 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2057_2057) ====================
+
+RECTANGLE:	DR2057_2057
+	POS:	row=4686 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2058_2058) ====================
+
+RECTANGLE:	DR2058_2058
+	POS:	row=4906 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2059_2059) ====================
+
+RECTANGLE:	DR2059_2059
+	POS:	row=5126 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2060_2060) ====================
+
+RECTANGLE:	DR2060_2060
+	POS:	row=5346 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2061_2061) ====================
+
+RECTANGLE:	DR2061_2061
+	POS:	row=5566 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2062_2062) ====================
+
+RECTANGLE:	DR2062_2062
+	POS:	row=5786 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2063_2063) ====================
+
+RECTANGLE:	DR2063_2063
+	POS:	row=6006 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2064_2064) ====================
+
+RECTANGLE:	DR2064_2064
+	POS:	row=6226 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2065_2065) ====================
+
+RECTANGLE:	DR2065_2065
+	POS:	row=6446 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2066_2066) ====================
+
+RECTANGLE:	DR2066_2066
+	POS:	row=6666 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2067_2067) ====================
+
+RECTANGLE:	DR2067_2067
+	POS:	row=6886 col=4532
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2068_2068) ====================
+
+RECTANGLE:	SR2068_2068
+	POS:	row=2541 col=5016
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2069_2069) ====================
+
+RECTANGLE:	SR2069_2069
+	POS:	row=3080 col=5060
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2070_2070) ====================
+
+RECTANGLE:	DR2070_2070
+	POS:	row=3586 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2071_2071) ====================
+
+RECTANGLE:	DR2071_2071
+	POS:	row=3806 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2072_2072) ====================
+
+TEXT:	ST2072_2072
+	POS:	row=2805 col=5071
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:03
+END
+
+#==================== QW_NUMBER (DG2073_2073) ====================
+
+DIGIT:	DG2073_2073
+	POS:	row=3223 col=5104
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2074_2074) ====================
+
+RECTANGLE:	DR2074_2074
+	POS:	row=4026 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2075_2075) ====================
+
+RECTANGLE:	DR2075_2075
+	POS:	row=4246 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2076_2076) ====================
+
+RECTANGLE:	DR2076_2076
+	POS:	row=4466 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2077_2077) ====================
+
+RECTANGLE:	DR2077_2077
+	POS:	row=4686 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2078_2078) ====================
+
+RECTANGLE:	DR2078_2078
+	POS:	row=4906 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2079_2079) ====================
+
+RECTANGLE:	DR2079_2079
+	POS:	row=5126 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2080_2080) ====================
+
+RECTANGLE:	DR2080_2080
+	POS:	row=5346 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2081_2081) ====================
+
+RECTANGLE:	DR2081_2081
+	POS:	row=5566 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2082_2082) ====================
+
+RECTANGLE:	DR2082_2082
+	POS:	row=5786 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2083_2083) ====================
+
+RECTANGLE:	DR2083_2083
+	POS:	row=6006 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2084_2084) ====================
+
+RECTANGLE:	DR2084_2084
+	POS:	row=6226 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2085_2085) ====================
+
+RECTANGLE:	DR2085_2085
+	POS:	row=6446 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2086_2086) ====================
+
+RECTANGLE:	DR2086_2086
+	POS:	row=6666 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2087_2087) ====================
+
+RECTANGLE:	DR2087_2087
+	POS:	row=6886 col=5225
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2088_2088) ====================
+
+RECTANGLE:	SR2088_2088
+	POS:	row=2541 col=5731
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2089_2089) ====================
+
+RECTANGLE:	SR2089_2089
+	POS:	row=3080 col=5775
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2090_2090) ====================
+
+RECTANGLE:	DR2090_2090
+	POS:	row=3586 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2091_2091) ====================
+
+RECTANGLE:	DR2091_2091
+	POS:	row=3806 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2092_2092) ====================
+
+TEXT:	ST2092_2092
+	POS:	row=2805 col=5786
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:04
+END
+
+#==================== QW_NUMBER (DG2093_2093) ====================
+
+DIGIT:	DG2093_2093
+	POS:	row=3223 col=5819
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2094_2094) ====================
+
+RECTANGLE:	DR2094_2094
+	POS:	row=4026 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2095_2095) ====================
+
+RECTANGLE:	DR2095_2095
+	POS:	row=4246 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2096_2096) ====================
+
+RECTANGLE:	DR2096_2096
+	POS:	row=4466 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2097_2097) ====================
+
+RECTANGLE:	DR2097_2097
+	POS:	row=4686 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2098_2098) ====================
+
+RECTANGLE:	DR2098_2098
+	POS:	row=4906 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2099_2099) ====================
+
+RECTANGLE:	DR2099_2099
+	POS:	row=5126 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2100_2100) ====================
+
+RECTANGLE:	DR2100_2100
+	POS:	row=5346 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2101_2101) ====================
+
+RECTANGLE:	DR2101_2101
+	POS:	row=5566 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2102_2102) ====================
+
+RECTANGLE:	DR2102_2102
+	POS:	row=5786 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2103_2103) ====================
+
+RECTANGLE:	DR2103_2103
+	POS:	row=6006 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2104_2104) ====================
+
+RECTANGLE:	DR2104_2104
+	POS:	row=6226 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2105_2105) ====================
+
+RECTANGLE:	DR2105_2105
+	POS:	row=6446 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2106_2106) ====================
+
+RECTANGLE:	DR2106_2106
+	POS:	row=6666 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2107_2107) ====================
+
+RECTANGLE:	DR2107_2107
+	POS:	row=6886 col=5940
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2268_2268) ====================
+
+RECTANGLE:	SR2268_2268
+	POS:	row=2541 col=6435
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2269_2269) ====================
+
+RECTANGLE:	SR2269_2269
+	POS:	row=3080 col=6479
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2270_2270) ====================
+
+RECTANGLE:	DR2270_2270
+	POS:	row=3586 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2271_2271) ====================
+
+RECTANGLE:	DR2271_2271
+	POS:	row=3806 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2272_2272) ====================
+
+TEXT:	ST2272_2272
+	POS:	row=2805 col=6490
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:05
+END
+
+#==================== QW_NUMBER (DG2273_2273) ====================
+
+DIGIT:	DG2273_2273
+	POS:	row=3223 col=6523
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2274_2274) ====================
+
+RECTANGLE:	DR2274_2274
+	POS:	row=4026 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2275_2275) ====================
+
+RECTANGLE:	DR2275_2275
+	POS:	row=4246 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2276_2276) ====================
+
+RECTANGLE:	DR2276_2276
+	POS:	row=4466 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2277_2277) ====================
+
+RECTANGLE:	DR2277_2277
+	POS:	row=4686 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2278_2278) ====================
+
+RECTANGLE:	DR2278_2278
+	POS:	row=4906 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2279_2279) ====================
+
+RECTANGLE:	DR2279_2279
+	POS:	row=5126 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2280_2280) ====================
+
+RECTANGLE:	DR2280_2280
+	POS:	row=5346 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2281_2281) ====================
+
+RECTANGLE:	DR2281_2281
+	POS:	row=5566 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2282_2282) ====================
+
+RECTANGLE:	DR2282_2282
+	POS:	row=5786 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2283_2283) ====================
+
+RECTANGLE:	DR2283_2283
+	POS:	row=6006 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2284_2284) ====================
+
+RECTANGLE:	DR2284_2284
+	POS:	row=6226 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2285_2285) ====================
+
+RECTANGLE:	DR2285_2285
+	POS:	row=6446 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2286_2286) ====================
+
+RECTANGLE:	DR2286_2286
+	POS:	row=6666 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2287_2287) ====================
+
+RECTANGLE:	DR2287_2287
+	POS:	row=6886 col=6644
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2288_2288) ====================
+
+RECTANGLE:	SR2288_2288
+	POS:	row=2541 col=7139
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2289_2289) ====================
+
+RECTANGLE:	SR2289_2289
+	POS:	row=3080 col=7183
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2290_2290) ====================
+
+RECTANGLE:	DR2290_2290
+	POS:	row=3586 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2291_2291) ====================
+
+RECTANGLE:	DR2291_2291
+	POS:	row=3806 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2292_2292) ====================
+
+TEXT:	ST2292_2292
+	POS:	row=2805 col=7194
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:06
+END
+
+#==================== QW_NUMBER (DG2293_2293) ====================
+
+DIGIT:	DG2293_2293
+	POS:	row=3223 col=7227
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2294_2294) ====================
+
+RECTANGLE:	DR2294_2294
+	POS:	row=4026 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2295_2295) ====================
+
+RECTANGLE:	DR2295_2295
+	POS:	row=4246 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2296_2296) ====================
+
+RECTANGLE:	DR2296_2296
+	POS:	row=4466 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2297_2297) ====================
+
+RECTANGLE:	DR2297_2297
+	POS:	row=4686 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2298_2298) ====================
+
+RECTANGLE:	DR2298_2298
+	POS:	row=4906 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2299_2299) ====================
+
+RECTANGLE:	DR2299_2299
+	POS:	row=5126 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2300_2300) ====================
+
+RECTANGLE:	DR2300_2300
+	POS:	row=5346 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2301_2301) ====================
+
+RECTANGLE:	DR2301_2301
+	POS:	row=5566 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2302_2302) ====================
+
+RECTANGLE:	DR2302_2302
+	POS:	row=5786 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2303_2303) ====================
+
+RECTANGLE:	DR2303_2303
+	POS:	row=6006 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2304_2304) ====================
+
+RECTANGLE:	DR2304_2304
+	POS:	row=6226 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2305_2305) ====================
+
+RECTANGLE:	DR2305_2305
+	POS:	row=6446 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2306_2306) ====================
+
+RECTANGLE:	DR2306_2306
+	POS:	row=6666 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2307_2307) ====================
+
+RECTANGLE:	DR2307_2307
+	POS:	row=6886 col=7348
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2308_2308) ====================
+
+RECTANGLE:	SR2308_2308
+	POS:	row=2541 col=7832
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2309_2309) ====================
+
+RECTANGLE:	SR2309_2309
+	POS:	row=3080 col=7876
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2310_2310) ====================
+
+RECTANGLE:	DR2310_2310
+	POS:	row=3586 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2311_2311) ====================
+
+RECTANGLE:	DR2311_2311
+	POS:	row=3806 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2312_2312) ====================
+
+TEXT:	ST2312_2312
+	POS:	row=2805 col=7887
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:07
+END
+
+#==================== QW_NUMBER (DG2313_2313) ====================
+
+DIGIT:	DG2313_2313
+	POS:	row=3223 col=7920
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2314_2314) ====================
+
+RECTANGLE:	DR2314_2314
+	POS:	row=4026 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2315_2315) ====================
+
+RECTANGLE:	DR2315_2315
+	POS:	row=4246 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2316_2316) ====================
+
+RECTANGLE:	DR2316_2316
+	POS:	row=4466 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2317_2317) ====================
+
+RECTANGLE:	DR2317_2317
+	POS:	row=4686 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2318_2318) ====================
+
+RECTANGLE:	DR2318_2318
+	POS:	row=4906 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2319_2319) ====================
+
+RECTANGLE:	DR2319_2319
+	POS:	row=5126 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2320_2320) ====================
+
+RECTANGLE:	DR2320_2320
+	POS:	row=5346 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2321_2321) ====================
+
+RECTANGLE:	DR2321_2321
+	POS:	row=5566 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2322_2322) ====================
+
+RECTANGLE:	DR2322_2322
+	POS:	row=5786 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2323_2323) ====================
+
+RECTANGLE:	DR2323_2323
+	POS:	row=6006 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2324_2324) ====================
+
+RECTANGLE:	DR2324_2324
+	POS:	row=6226 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2325_2325) ====================
+
+RECTANGLE:	DR2325_2325
+	POS:	row=6446 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2326_2326) ====================
+
+RECTANGLE:	DR2326_2326
+	POS:	row=6666 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2327_2327) ====================
+
+RECTANGLE:	DR2327_2327
+	POS:	row=6886 col=8041
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2328_2328) ====================
+
+RECTANGLE:	SR2328_2328
+	POS:	row=2541 col=8547
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2329_2329) ====================
+
+RECTANGLE:	SR2329_2329
+	POS:	row=3080 col=8591
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2330_2330) ====================
+
+RECTANGLE:	DR2330_2330
+	POS:	row=3586 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2331_2331) ====================
+
+RECTANGLE:	DR2331_2331
+	POS:	row=3806 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2332_2332) ====================
+
+TEXT:	ST2332_2332
+	POS:	row=2805 col=8602
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:08
+END
+
+#==================== QW_NUMBER (DG2333_2333) ====================
+
+DIGIT:	DG2333_2333
+	POS:	row=3223 col=8635
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2334_2334) ====================
+
+RECTANGLE:	DR2334_2334
+	POS:	row=4026 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2335_2335) ====================
+
+RECTANGLE:	DR2335_2335
+	POS:	row=4246 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2336_2336) ====================
+
+RECTANGLE:	DR2336_2336
+	POS:	row=4466 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2337_2337) ====================
+
+RECTANGLE:	DR2337_2337
+	POS:	row=4686 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2338_2338) ====================
+
+RECTANGLE:	DR2338_2338
+	POS:	row=4906 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2339_2339) ====================
+
+RECTANGLE:	DR2339_2339
+	POS:	row=5126 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2340_2340) ====================
+
+RECTANGLE:	DR2340_2340
+	POS:	row=5346 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2341_2341) ====================
+
+RECTANGLE:	DR2341_2341
+	POS:	row=5566 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2342_2342) ====================
+
+RECTANGLE:	DR2342_2342
+	POS:	row=5786 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2343_2343) ====================
+
+RECTANGLE:	DR2343_2343
+	POS:	row=6006 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2344_2344) ====================
+
+RECTANGLE:	DR2344_2344
+	POS:	row=6226 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2345_2345) ====================
+
+RECTANGLE:	DR2345_2345
+	POS:	row=6446 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2346_2346) ====================
+
+RECTANGLE:	DR2346_2346
+	POS:	row=6666 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2347_2347) ====================
+
+RECTANGLE:	DR2347_2347
+	POS:	row=6886 col=8756
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2348_2348) ====================
+
+RECTANGLE:	SR2348_2348
+	POS:	row=2541 col=9251
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2349_2349) ====================
+
+RECTANGLE:	SR2349_2349
+	POS:	row=3080 col=9295
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2350_2350) ====================
+
+RECTANGLE:	DR2350_2350
+	POS:	row=3586 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2351_2351) ====================
+
+RECTANGLE:	DR2351_2351
+	POS:	row=3806 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2352_2352) ====================
+
+TEXT:	ST2352_2352
+	POS:	row=2805 col=9306
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:09
+END
+
+#==================== QW_NUMBER (DG2353_2353) ====================
+
+DIGIT:	DG2353_2353
+	POS:	row=3223 col=9339
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2354_2354) ====================
+
+RECTANGLE:	DR2354_2354
+	POS:	row=4026 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2355_2355) ====================
+
+RECTANGLE:	DR2355_2355
+	POS:	row=4246 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2356_2356) ====================
+
+RECTANGLE:	DR2356_2356
+	POS:	row=4466 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2357_2357) ====================
+
+RECTANGLE:	DR2357_2357
+	POS:	row=4686 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2358_2358) ====================
+
+RECTANGLE:	DR2358_2358
+	POS:	row=4906 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2359_2359) ====================
+
+RECTANGLE:	DR2359_2359
+	POS:	row=5126 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2360_2360) ====================
+
+RECTANGLE:	DR2360_2360
+	POS:	row=5346 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2361_2361) ====================
+
+RECTANGLE:	DR2361_2361
+	POS:	row=5566 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2362_2362) ====================
+
+RECTANGLE:	DR2362_2362
+	POS:	row=5786 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2363_2363) ====================
+
+RECTANGLE:	DR2363_2363
+	POS:	row=6006 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2364_2364) ====================
+
+RECTANGLE:	DR2364_2364
+	POS:	row=6226 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2365_2365) ====================
+
+RECTANGLE:	DR2365_2365
+	POS:	row=6446 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2366_2366) ====================
+
+RECTANGLE:	DR2366_2366
+	POS:	row=6666 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2367_2367) ====================
+
+RECTANGLE:	DR2367_2367
+	POS:	row=6886 col=9460
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2368_2368) ====================
+
+RECTANGLE:	SR2368_2368
+	POS:	row=2541 col=9955
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2369_2369) ====================
+
+RECTANGLE:	SR2369_2369
+	POS:	row=3080 col=9999
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2370_2370) ====================
+
+RECTANGLE:	DR2370_2370
+	POS:	row=3586 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2371_2371) ====================
+
+RECTANGLE:	DR2371_2371
+	POS:	row=3806 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2372_2372) ====================
+
+TEXT:	ST2372_2372
+	POS:	row=2805 col=10010
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:10
+END
+
+#==================== QW_NUMBER (DG2373_2373) ====================
+
+DIGIT:	DG2373_2373
+	POS:	row=3223 col=10043
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2374_2374) ====================
+
+RECTANGLE:	DR2374_2374
+	POS:	row=4026 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2375_2375) ====================
+
+RECTANGLE:	DR2375_2375
+	POS:	row=4246 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2376_2376) ====================
+
+RECTANGLE:	DR2376_2376
+	POS:	row=4466 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2377_2377) ====================
+
+RECTANGLE:	DR2377_2377
+	POS:	row=4686 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2378_2378) ====================
+
+RECTANGLE:	DR2378_2378
+	POS:	row=4906 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2379_2379) ====================
+
+RECTANGLE:	DR2379_2379
+	POS:	row=5126 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2380_2380) ====================
+
+RECTANGLE:	DR2380_2380
+	POS:	row=5346 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2381_2381) ====================
+
+RECTANGLE:	DR2381_2381
+	POS:	row=5566 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2382_2382) ====================
+
+RECTANGLE:	DR2382_2382
+	POS:	row=5786 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2383_2383) ====================
+
+RECTANGLE:	DR2383_2383
+	POS:	row=6006 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2384_2384) ====================
+
+RECTANGLE:	DR2384_2384
+	POS:	row=6226 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2385_2385) ====================
+
+RECTANGLE:	DR2385_2385
+	POS:	row=6446 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2386_2386) ====================
+
+RECTANGLE:	DR2386_2386
+	POS:	row=6666 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2387_2387) ====================
+
+RECTANGLE:	DR2387_2387
+	POS:	row=6886 col=10164
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2388_2388) ====================
+
+RECTANGLE:	SR2388_2388
+	POS:	row=2541 col=10648
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2389_2389) ====================
+
+RECTANGLE:	SR2389_2389
+	POS:	row=3080 col=10692
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2390_2390) ====================
+
+RECTANGLE:	DR2390_2390
+	POS:	row=3586 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2391_2391) ====================
+
+RECTANGLE:	DR2391_2391
+	POS:	row=3806 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2392_2392) ====================
+
+TEXT:	ST2392_2392
+	POS:	row=2805 col=10703
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:11
+END
+
+#==================== QW_NUMBER (DG2393_2393) ====================
+
+DIGIT:	DG2393_2393
+	POS:	row=3223 col=10736
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2394_2394) ====================
+
+RECTANGLE:	DR2394_2394
+	POS:	row=4026 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2395_2395) ====================
+
+RECTANGLE:	DR2395_2395
+	POS:	row=4246 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2396_2396) ====================
+
+RECTANGLE:	DR2396_2396
+	POS:	row=4466 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2397_2397) ====================
+
+RECTANGLE:	DR2397_2397
+	POS:	row=4686 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2398_2398) ====================
+
+RECTANGLE:	DR2398_2398
+	POS:	row=4906 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2399_2399) ====================
+
+RECTANGLE:	DR2399_2399
+	POS:	row=5126 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2400_2400) ====================
+
+RECTANGLE:	DR2400_2400
+	POS:	row=5346 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2401_2401) ====================
+
+RECTANGLE:	DR2401_2401
+	POS:	row=5566 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2402_2402) ====================
+
+RECTANGLE:	DR2402_2402
+	POS:	row=5786 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2403_2403) ====================
+
+RECTANGLE:	DR2403_2403
+	POS:	row=6006 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2404_2404) ====================
+
+RECTANGLE:	DR2404_2404
+	POS:	row=6226 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2405_2405) ====================
+
+RECTANGLE:	DR2405_2405
+	POS:	row=6446 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2406_2406) ====================
+
+RECTANGLE:	DR2406_2406
+	POS:	row=6666 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2407_2407) ====================
+
+RECTANGLE:	DR2407_2407
+	POS:	row=6886 col=10857
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (SR2408_2408) ====================
+
+RECTANGLE:	SR2408_2408
+	POS:	row=2541 col=11363
+	COLOR:	color=26 fill=11
+	PEN:	thickness=44
+	SIZE:	height=4609 width=605
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR2409_2409) ====================
+
+RECTANGLE:	SR2409_2409
+	POS:	row=3080 col=11407
+	COLOR:	color=1 fill=16
+	PEN:	thickness=11
+	SIZE:	height=264 width=517
+END
+
+#==================== QW_RECTANGLE (DR2410_2410) ====================
+
+RECTANGLE:	DR2410_2410
+	POS:	row=3586 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2411_2411) ====================
+
+RECTANGLE:	DR2411_2411
+	POS:	row=3806 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_TEXT (ST2412_2412) ====================
+
+TEXT:	ST2412_2412
+	POS:	row=2805 col=11418
+
+#@@@@@@@@@ header.size.text.height(154) != header.height(132) @@@@@@@@@@
+	COLOR:	color=1
+	FONT:	face=cour_cyr style=B size=154
+	STRING:	str=CH:12
+END
+
+#==================== QW_NUMBER (DG2413_2413) ====================
+
+DIGIT:	DG2413_2413
+	POS:	row=3223 col=11451
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (DR2414_2414) ====================
+
+RECTANGLE:	DR2414_2414
+	POS:	row=4026 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2415_2415) ====================
+
+RECTANGLE:	DR2415_2415
+	POS:	row=4246 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2416_2416) ====================
+
+RECTANGLE:	DR2416_2416
+	POS:	row=4466 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2417_2417) ====================
+
+RECTANGLE:	DR2417_2417
+	POS:	row=4686 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2418_2418) ====================
+
+RECTANGLE:	DR2418_2418
+	POS:	row=4906 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2419_2419) ====================
+
+RECTANGLE:	DR2419_2419
+	POS:	row=5126 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2420_2420) ====================
+
+RECTANGLE:	DR2420_2420
+	POS:	row=5346 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2421_2421) ====================
+
+RECTANGLE:	DR2421_2421
+	POS:	row=5566 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2422_2422) ====================
+
+RECTANGLE:	DR2422_2422
+	POS:	row=5786 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2423_2423) ====================
+
+RECTANGLE:	DR2423_2423
+	POS:	row=6006 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2424_2424) ====================
+
+RECTANGLE:	DR2424_2424
+	POS:	row=6226 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2425_2425) ====================
+
+RECTANGLE:	DR2425_2425
+	POS:	row=6446 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2426_2426) ====================
+
+RECTANGLE:	DR2426_2426
+	POS:	row=6666 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_RECTANGLE (DR2427_2427) ====================
+
+RECTANGLE:	DR2427_2427
+	POS:	row=6886 col=11572
+	COLOR:	color=1 fill=8
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=121 width=187
+END
+
+#==================== QW_LINE (SP1489_1489) ====================
+
+LINE:	SP1489_1489
+	POS:	row=3520 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1492_1492_1489) ====================
+
+LINE:	SP1492_1492_1489
+	POS:	row=3740 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1493_1493_1492_1489) ====================
+
+LINE:	SP1493_1493_1492_1489
+	POS:	row=3960 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1494_1494_1493_1492_14) ====================
+
+LINE:	SP1494_1494_1493_1492_14
+	POS:	row=4180 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1500_1500_1494_1493_14) ====================
+
+LINE:	SP1500_1500_1494_1493_14
+	POS:	row=4400 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1501_1501_1500_1494_14) ====================
+
+LINE:	SP1501_1501_1500_1494_14
+	POS:	row=4620 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1502_1502_1501_1500_14) ====================
+
+LINE:	SP1502_1502_1501_1500_14
+	POS:	row=4840 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1503_1503_1502_1501_15) ====================
+
+LINE:	SP1503_1503_1502_1501_15
+	POS:	row=5060 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1504_1504_1503_1502_15) ====================
+
+LINE:	SP1504_1504_1503_1502_15
+	POS:	row=5280 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1505_1505_1504_1503_15) ====================
+
+LINE:	SP1505_1505_1504_1503_15
+	POS:	row=5500 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1506_1506_1505_1504_15) ====================
+
+LINE:	SP1506_1506_1505_1504_15
+	POS:	row=5720 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1507_1507_1506_1505_15) ====================
+
+LINE:	SP1507_1507_1506_1505_15
+	POS:	row=5940 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1508_1508_1507_1506_15) ====================
+
+LINE:	SP1508_1508_1507_1506_15
+	POS:	row=6160 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1509_1509_1508_1507_15) ====================
+
+LINE:	SP1509_1509_1508_1507_15
+	POS:	row=6369 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1510_1510_1509_1508_15) ====================
+
+LINE:	SP1510_1510_1509_1508_15
+	POS:	row=6600 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10370
+END
+
+#==================== QW_LINE (SP1511_1511_1510_1509_15) ====================
+
+LINE:	SP1511_1511_1510_1509_15
+	POS:	row=6853 col=1584
+	COLOR:	color=170 fill=178
+	PEN:	thickness=22
+	POINT:	row=0 col=10371
+END
+
+#==================== QW_RECTANGLE (SR2428_2428) ====================
+
+RECTANGLE:	SR2428_2428
+	POS:	row=2035 col=6424
+	COLOR:	color=17 fill=188
+	PEN:	thickness=11
+	SIZE:	height=495 width=2728
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST2429_2429) ====================
+
+TEXT:	ST2429_2429
+	POS:	row=2343 col=7436
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str="Причал 2"
+END
+
+#==================== QW_RECTANGLE (DR2430_2430) ====================
+
+RECTANGLE:	DR2430_2430
+	POS:	row=1430 col=1936
+	COLOR:	color=1 fill=10
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=209 width=187
+END
+
+#==================== QW_ARC (DA2431_2431) ====================
+
+ARC:	DA2431_2431
+	POS:	row=1452 col=1947
+	COLOR:	color=1 fill=3
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=165 width=176
+END
+
+#==================== QW_LINE (CKSUM1114058408) ====================
+
+LINE:	CKSUM1114058408
+	POS:	row=0 col=0
+	COLOR:	color=5
+	OPT:	opts=X
+	PEN:	thickness=1
+	POINT:	row=0 col=1
+END
+
+
+#number of elements: 290
+
+
+#     ########## 25 warnings ##########

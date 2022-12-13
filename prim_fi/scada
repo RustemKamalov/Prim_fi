@@ -1,0 +1,15 @@
+        Megjegyszesek a Dmon SCADA rendszerrel kapcsolatban
+        ---------------------------------------------------
+
+-   Monitor Editor idonkent teglalap rajzolasakor elszall, magaval rantja a
+QWindows-t is.
+
+-   Api-s moduloknal (clock, chain, tank) mindig 19 a prioritas.
+
+-   Clock nem allitja a hardver orat.
+
+-   Archive modul nem csak a sajat objektum regi archiv file-jait torli
+
+-   Monitor modul idonkent lefagy? - megfogja a gepet es csak a modul leallitasa
+    segit. Eredetileg azt gondoltuk, hogy csak a masik node-on futo modullal
+    van gond a halozat miatt, de azon a gepen is elofordult ahol a szerver fut.

@@ -1,0 +1,1002 @@
+################################################################################
+###
+### PRIMORSK Firesystem
+###
+##############################################
+
+#           M1_-1   ChangeTable   Q_Ch01
+#           M1_-2                 Q_Ch02
+#           M2_-1   ChangeTable   Q_Ch03
+#           M2_-2                 Q_Ch04
+#           P2_-1                 Q_Ch05
+#           P2_-2   ChangeTable   Q_Ch06
+#           A2_-1   ChangeTable   Q_Ch07
+#   chain1  Fi_-1                 Q_Ch08
+#   chain2  Fi_-2   ChangeTable   Q_Ch09
+#           P3_-1                 Q_Ch10
+#           P3_-2   ChangeTable   Q_Ch11
+#   chain3  Fi2_-1                Q_Ch12
+#   chain4  Fi2_-2  ChangeTable   Q_Ch13
+#           P4_-1                 Q_Ch14
+#           P4_-2   ChangeTable   Q_Ch15
+#   chain5  Fi3_-1                Q_Ch16
+#   chain6  Fi3_-2  ChangeTable   Q_Ch17
+
+################################################################################
+# Module parameters
+#
+
+#	IMPORTANT: to use logging to a console, !both! LOGC and CNAM must be set correctly
+#
+# CNAM=the name of the logging console, valid devices are the /dev/con_x_,
+#	and /D16/win_x_ consoles. Consult the /dev directory for more information ;)
+#CNAM:	v=/D16/win6	s=CHAIN_CNAM
+#CNAM:  v=/dev/con3 s=CHAIN_CNAM
+#
+# LOGC=if set, miscellanious chain module messages are written on the selected console
+LOGC:   v=0          s=CHAIN_LOGC
+
+
+
+#	IMPORTANT: to use logging to a file, !both! LOGF and FLEN must be set correctly
+#
+#	LOGF=if set, a logfile is written in /Dmon/log/ (chainxyz.ini->chainxyz.log)
+LOGF: v=1          s=CHAIN_LOGF
+#
+#	FLEN=the maximum length of the logfile (number of lines), [1000:10000]
+FLEN:	v=10000			s=CHAIN_FLEN
+
+
+################################################################################
+# Init parameters
+#       d=if not 0, the signals and repetitions will be checked   [1]
+#					obsolete !!! not used !!!
+#       c=the control consol of the module			              [-]
+#					obsolete !!! use LOGC with CNAM instead !!!
+#       p=the priority of the module                             [10]
+#       q=the size of the output signal buffer (max 5000)        [100]
+#					obsolete !!! not used !!!
+#       t=init time-out                                          [60]
+#				f=use index 255 in the communication block header to indicate the end of database initialisation
+I       f=0 p=16 q=5000  t=15
+
+
+################################################################################
+# PLC clock for the time stamp calculation
+#       Y=Year    [-]
+#       M=Month   [-]
+#       D=Day     [-]
+#       h=Hour    [-]
+#       m=Minute  [-]
+#       s=Second  [-]
+
+T       Y=PLCClkYear M=PLCClkMonth D=PLCClkDay h=PLCClkHour m=PLCClkMin s=PLCClkSec
+
+################################################################################
+# Time stamp
+#       Y=Year    [-]
+#       M=Month   [-]
+#       D=Day     [-]
+#       h=Hour    [-]
+#       m=Minute  [-]
+#       s=Second  [-]
+
+t       Y=Q_ChainYear M=Q_ChainMonth D=Q_ChainDay h=Q_ChainHour m=Q_ChainMinute s=Q_ChainSecond
+
+################################################################################
+# Block descriptor
+#       t=must be set to 1 if the PLC sends time stamp           [0]
+#       i=init signal						                     [-]
+#       s=the status of the chain                                [-]
+#       e=the status of the modul qdchain                        [-]
+#       c=the number of the events                               [-]
+#       a=acknowledge signal		                             [-]
+#       r=the first signal of the chain buffer                   [-]
+#       n=the number of signals from the first signal	         [-]
+#		d=chain enable/disable signal
+#		w=set to 1, if waiting for change tables is necessary after init
+#		q=acktrigger signal, triggers queue reading
+
+###########################################################################
+# Chain1 Fi_PLC_chain1  Q_Ch08
+
+B1     t=1 i=Q_Ch08ChainInit m=Q_Ch08ChainInitTrg s=Q_Ch08ChainStat c=Q_Ch08ChainCount a=Q_Ch08ChainAck e=Q_Ch08ChainErr n=118 r=Q_Ch08Queue001 d=Q_Ch08ChainEnable w=0 q=Q_Ch08ChainAckTrg
+
+#---------------------------------------------------------------------------
+# Subsystem messages
+C                       c=1
+                        s=0     t=Fi_StaDeblR00!256
+                        s=1     t=Fi_StaMask000!256
+                        s=2     t=Fi_BStMask000!256
+
+                        s=3     t=Fi_StaImit000!256
+                        s=4     t=Fi_StaTest000!256
+                        s=5     t=Fi_StaProt000!256
+                        s=6     t=Fi_StaTPro000!256
+                        s=7     t=Fi_StaEvMs000!256
+
+                        s=8     t=Fi_BStImit000!256
+                        s=9    	t=Fi_Fdd5EvMs000!256
+                        s=10    t=Fi_Fdd1EvMs000!256
+                        s=11    t=Fi_BStTest000!256
+
+                        s=13    t=Fi_Fdd2EvMs000!256
+                        s=14    t=Fi_BStProt000!256
+                        s=15    t=Fi_Fdd6EvMs000!256
+                        s=16    t=Fi_Fdd3EvMs000!256
+                        s=17    t=Fi_BStTPro000!256
+
+                        s=19    t=Fi_Fdd4EvMs000!256
+                        s=20    t=Fi_Fe1EvMs000!128,Fi_Fe2EvMs000!128
+                        s=21    t=Fi_Fe3EvMs000!128,Fi_Fe4EvMs000!128
+                        s=22    t=Fi_Fe5EvMs000!128,Fi_Fw5EvMs000!64,Fi_Fp1EvMs000!64
+                        s=23    t=Fi_Fp2EvMs000!64,Fi_Fp3EvMs000!64,Fi_Fp4EvMs000!64
+
+                        s=31    t=Fi_StaPhysR00!256
+
+#----------------------------------------------------------------------------
+# Events of gate valves
+C                       c=2
+
+                        s=0     t=Fi_GF1_A___S1_B01!16,Fi_GF1_A___S2_B01!16
+                        s=1     t=Fi_GF1_B___S1_B01!16,Fi_GF1_B___S2_B01!16
+                        s=2     t=Fi_GF1_C___S1_B01!16,Fi_GF1_C___S2_B01!16
+                        s=3     t=Fi_GF2_A___S1_B01!16,Fi_GF2_A___S2_B01!16
+                        s=4     t=Fi_GF2_B___S1_B01!16,Fi_GF2_B___S2_B01!16
+                        s=5     t=Fi_GF2_C___S1_B01!16,Fi_GF2_C___S2_B01!16
+                        s=6     t=Fi_GF3_A___S1_B01!16,Fi_GF3_A___S2_B01!16
+                        s=7     t=Fi_GF3_B___S1_B01!16,Fi_GF3_B___S2_B01!16
+                        s=8     t=Fi_GF3_C___S1_B01!16,Fi_GF3_C___S2_B01!16
+                        s=9     t=Fi_GF4_A___S1_B01!16,Fi_GF4_A___S2_B01!16
+                        s=10    t=Fi_GF4_B___S1_B01!16,Fi_GF4_B___S2_B01!16
+                        s=11    t=Fi_GF4_C___S1_B01!16,Fi_GF4_C___S2_B01!16
+                        s=12    t=Fi_GF5_A___S1_B01!16,Fi_GF5_A___S2_B01!16
+                        s=13    t=Fi_GF5_B___S1_B01!16,Fi_GF5_B___S2_B01!16
+                        s=14    t=Fi_GF5_C___S1_B01!16,Fi_GF5_C___S2_B01!16
+                        s=15    t=Fi_GF6_A___S1_B01!16,Fi_GF6_A___S2_B01!16
+                        s=16    t=Fi_GF6_B___S1_B01!16,Fi_GF6_B___S2_B01!16
+                        s=17    t=Fi_GF6_C___S1_B01!16,Fi_GF6_C___S2_B01!16
+                        s=18    t=Fi_GF7_A___S1_B01!16,Fi_GF7_A___S2_B01!16
+                        s=19    t=Fi_GF7_B___S1_B01!16,Fi_GF7_B___S2_B01!16
+                        s=20    t=Fi_GF7_C___S1_B01!16,Fi_GF7_C___S2_B01!16
+                        s=21    t=Fi_GF8_A___S1_B01!16,Fi_GF8_A___S2_B01!16
+                        s=22    t=Fi_GF8_B___S1_B01!16,Fi_GF8_B___S2_B01!16
+                        s=23    t=Fi_GF8_C___S1_B01!16,Fi_GF8_C___S2_B01!16
+                        s=24    t=Fi_GF9_A___S1_B01!16,Fi_GF9_A___S2_B01!16
+                        s=25    t=Fi_GF9_B___S1_B01!16,Fi_GF9_B___S2_B01!16
+                        s=26    t=Fi_GF9_C___S1_B01!16,Fi_GF9_C___S2_B01!16
+                        s=27    t=Fi_GF10_A__S1_B01!16,Fi_GF10_A__S2_B01!16
+                        s=28    t=Fi_GF10_B__S1_B01!16,Fi_GF10_B__S2_B01!16
+                        s=29    t=Fi_GF10_C__S1_B01!16,Fi_GF10_C__S2_B01!16
+                        s=30    t=Fi_GF25_A__S1_B01!16,Fi_GF25_A__S2_B01!16
+                        s=31    t=Fi_GF25_B__S1_B01!16,Fi_GF25_B__S2_B01!16
+                        s=32    t=Fi_GF26_A__S1_B01!16,Fi_GF26_A__S2_B01!16
+                        s=33    t=Fi_GF26_B__S1_B01!16,Fi_GF26_B__S2_B01!16
+                        s=34    t=Fi_GF45____S1_B01!16,Fi_GF45____S2_B01!16
+                        s=35    t=Fi_GF82____S1_B01!16,Fi_GF82____S2_B01!16
+                        s=36    t=Fi_GF285___S1_B01!16,Fi_GF285___S2_B01!16
+                        s=37    t=Fi_GF322___S1_B01!16,Fi_GF322___S2_B01!16
+                        s=38    t=Fi_GF83____S1_B01!16,Fi_GF83____S2_B01!16
+                        s=39    t=Fi_GF81____S1_B01!16,Fi_GF81____S2_B01!16
+                        s=40    t=Fi_GF330___S1_B01!16,Fi_GF330___S2_B01!16
+                        s=41    t=Fi_GF288___S1_B01!16,Fi_GF288___S2_B01!16
+                        s=42    t=Fi_GF27_1__S1_B01!16,Fi_GF27_1__S2_B01!16
+                        s=43    t=Fi_GF27_2__S1_B01!16,Fi_GF27_2__S2_B01!16
+                        s=44    t=Fi_GF28_1__S1_B01!16,Fi_GF28_1__S2_B01!16
+                        s=45    t=Fi_GF28_2__S1_B01!16,Fi_GF28_2__S2_B01!16
+                        s=46    t=Fi_GF29_1__S1_B01!16,Fi_GF29_1__S2_B01!16
+                        s=47    t=Fi_GF29_2__S1_B01!16,Fi_GF29_2__S2_B01!16
+                        s=48    t=Fi_GFY1____S1_B01!16,Fi_GFY1____S2_B01!16
+                        s=49    t=Fi_GF212___S1_B01!16,Fi_GF212___S2_B01!16
+                        s=50    t=Fi_GF236___S1_B01!16,Fi_GF236___S2_B01!16
+                        s=51    t=Fi_GF87____S1_B01!16,Fi_GF87____S2_B01!16
+                        s=52    t=Fi_GF88____S1_B01!16,Fi_GF88____S2_B01!16
+                        s=53    t=Fi_GF141___S1_B01!16,Fi_GF141___S2_B01!16
+                        s=54    t=Fi_GF134___S1_B01!16,Fi_GF134___S2_B01!16
+                        s=55    t=Fi_GF143___S1_B01!16,Fi_GF143___S2_B01!16
+                        s=56    t=Fi_GF136___S1_B01!16,Fi_GF136___S2_B01!16
+                        s=57    t=Fi_GF145___S1_B01!16,Fi_GF145___S2_B01!16
+                        s=58    t=Fi_GF138___S1_B01!16,Fi_GF138___S2_B01!16
+                        s=59    t=Fi_GFa_4_1_S1_B01!16,Fi_GFa_4_1_S2_B01!16
+                        s=60    t=Fi_GFa_4_2_S1_B01!16,Fi_GFa_4_2_S2_B01!16
+                        s=61    t=Fi_GF155___S1_B01!16,Fi_GF155___S2_B01!16
+                        s=62    t=Fi_GF148___S1_B01!16,Fi_GF148___S2_B01!16
+                        s=63    t=Fi_GF157___S1_B01!16,Fi_GF157___S2_B01!16
+                        s=64    t=Fi_GF150___S1_B01!16,Fi_GF150___S2_B01!16
+                        s=65    t=Fi_GF159___S1_B01!16,Fi_GF159___S2_B01!16
+                        s=66    t=Fi_GF152___S1_B01!16,Fi_GF152___S2_B01!16
+                        s=67    t=Fi_GFb_4_1_S1_B01!16,Fi_GFb_4_1_S2_B01!16
+                        s=68    t=Fi_GFb_4_2_S1_B01!16,Fi_GFb_4_2_S2_B01!16
+						
+                        s=69    t=Fi_GF102_2_1PS1_B01!16,Fi_GF102_2_1PS2_B01!16
+                        s=70    t=Fi_GF102_2_1VS1_B01!16,Fi_GF102_2_1VS2_B01!16
+                        s=71    t=Fi_GF102_2_2PS1_B01!16,Fi_GF102_2_2PS2_B01!16
+                        s=72    t=Fi_GF102_2_3PS1_B01!16,Fi_GF102_2_3PS2_B01!16
+                        s=73    t=Fi_GF102_2_4PS1_B01!16,Fi_GF102_2_4PS2_B01!16
+                        s=74    t=Fi_GF102_2_2VS1_B01!16,Fi_GF102_2_2VS2_B01!16
+                        s=75    t=Fi_GF102_2_5PS1_B01!16,Fi_GF102_2_5PS2_B01!16
+                        s=76    t=Fi_GF102_6_1PS1_B01!16,Fi_GF102_6_1PS2_B01!16
+                        s=77    t=Fi_GF102_6_2PS1_B01!16,Fi_GF102_6_2PS2_B01!16
+                        s=78    t=Fi_GF102_6_3PS1_B01!16,Fi_GF102_6_3PS2_B01!16
+                        s=79    t=Fi_GF102_6_1VS1_B01!16,Fi_GF102_6_1VS2_B01!16
+                        s=80    t=Fi_GF102_6_4PS1_B01!16,Fi_GF102_6_4PS2_B01!16
+                        s=81    t=Fi_GF102_6_5PS1_B01!16,Fi_GF102_6_5PS2_B01!16
+                        s=82    t=Fi_GF102_6_2VS1_B01!16,Fi_GF102_6_2VS2_B01!16
+
+                        s=139   t=Fi_GF811___S1_B01!16,Fi_GF811___S2_B01!16
+                        s=140   t=Fi_GF812___S1_B01!16,Fi_GF812___S2_B01!16
+                        s=141   t=Fi_GF813___S1_B01!16,Fi_GF813___S2_B01!16
+                        s=142   t=Fi_GF814___S1_B01!16,Fi_GF814___S2_B01!16
+                        s=143   t=Fi_GF815___S1_B01!16,Fi_GF815___S2_B01!16
+                        s=144   t=Fi_GF816___S1_B01!16,Fi_GF816___S2_B01!16
+                        s=145   t=Fi_GF817___S1_B01!16,Fi_GF817___S2_B01!16
+                        s=146   t=Fi_GF818___S1_B01!16,Fi_GF818___S2_B01!16
+                        s=147   t=Fi_GFP1____S1_B01!16,Fi_GFP1____S2_B01!16
+                        s=148   t=Fi_GFP2____S1_B01!16,Fi_GFP2____S2_B01!16
+                        s=149   t=Fi_GFP3____S1_B01!16,Fi_GFP3____S2_B01!16
+                        s=150   t=Fi_GFP4____S1_B01!16,Fi_GFP4____S2_B01!16
+
+						
+
+                        s=159   t=Fi_GI368_7_S1_B01!16,Fi_GI368_7_S2_B01!16
+
+
+# Chain status
+                        s=255   t=Q_Ch08Stat1,Q_Ch08Stat2
+
+#----------------------------------------------------------------------------
+# Analog measurings
+C                       c=3
+
+                        s=0     t=Fi_TT753____S1;Fi_TT753____RawChain
+
+                        s=4     t=Fi_YT703____S1;Fi_YT703____RawChain
+                        s=5     t=Fi_YT704____S1;Fi_YT704____RawChain
+
+                        s=8     t=Fi_TT705____S1;Fi_TT705____RawChain
+                        s=9     t=Fi_TT754____S1;Fi_TT754____RawChain
+                        s=10    t=Fi_TT755____S1;Fi_TT755____RawChain
+                        s=11    t=Fi_TT756____S1;Fi_TT756____RawChain
+                        s=12    t=Fi_TT757____S1;Fi_TT757____RawChain
+                        s=13    t=Fi_TT751____S1;Fi_TT751____RawChain
+                        s=14    t=Fi_TT752____S1;Fi_TT752____RawChain
+
+                        s=16    t=Fi_LT3527___S1;Fi_LT3527___RawChain
+                        s=17    t=Fi_TT3527___S1;Fi_TT3527___RawChain
+                        s=18    t=Fi_TT3687___S1;Fi_TT3687___RawChain
+												
+                        s=20    t=Fi_TT711____S1;Fi_TT711____RawChain
+                        s=21    t=Fi_TT712____S1;Fi_TT712____RawChain
+                        s=22    t=Fi_TT713____S1;Fi_TT713____RawChain
+                        s=23    t=Fi_TT714____S1;Fi_TT714____RawChain
+                        s=24    t=Fi_TT721____S1;Fi_TT721____RawChain
+                        s=25    t=Fi_TT722____S1;Fi_TT722____RawChain
+                        s=26    t=Fi_TT723____S1;Fi_TT723____RawChain
+                        s=27    t=Fi_TT724____S1;Fi_TT724____RawChain
+                        s=28    t=Fi_TT731____S1;Fi_TT731____RawChain
+                        s=29    t=Fi_TT732____S1;Fi_TT732____RawChain
+                        s=30    t=Fi_TT733____S1;Fi_TT733____RawChain
+                        s=31    t=Fi_TT734____S1;Fi_TT734____RawChain
+                        s=32    t=Fi_TT741____S1;Fi_TT741____RawChain
+                        s=33    t=Fi_TT742____S1;Fi_TT742____RawChain
+                        s=34    t=Fi_TT743____S1;Fi_TT743____RawChain
+                        s=35    t=Fi_TT744____S1;Fi_TT744____RawChain
+
+                        s=38    t=Fi_TT703____S1;Fi_TT703____RawChain
+                        s=39    t=Fi_TT704____S1;Fi_TT704____RawChain
+                        s=40    t=Fi_TT758____S1;Fi_TT758____RawChain
+                        s=41    t=Fi_TT759____S1;Fi_TT759____RawChain
+                        s=42    t=Fi_TT760____S1;Fi_TT760____RawChain
+
+                        s=44    t=Fi_YT701____S1;Fi_YT701____RawChain
+
+                        s=46    t=Fi_TT701____S1;Fi_TT701____RawChain
+
+                        s=48    t=Fi_TT731_1__S1;Fi_TT731_1__RawChain
+                        s=49    t=Fi_TT731_2__S1;Fi_TT731_2__RawChain
+                        s=50    t=Fi_TT731_3__S1;Fi_TT731_3__RawChain
+                        s=51    t=Fi_TT731_4__S1;Fi_TT731_4__RawChain
+                        s=52    t=Fi_TT731_5__S1;Fi_TT731_5__RawChain
+                        s=53    t=Fi_TT731_6__S1;Fi_TT731_6__RawChain
+                        s=54    t=Fi_TT731_7__S1;Fi_TT731_7__RawChain
+                        s=55    t=Fi_TT731_8__S1;Fi_TT731_8__RawChain
+                        s=56    t=Fi_TT732_1__S1;Fi_TT732_1__RawChain
+                        s=57    t=Fi_TT732_2__S1;Fi_TT732_2__RawChain
+                        s=58    t=Fi_TT732_3__S1;Fi_TT732_3__RawChain
+                        s=59    t=Fi_TT732_4__S1;Fi_TT732_4__RawChain
+                        s=60    t=Fi_TT732_5__S1;Fi_TT732_5__RawChain
+                        s=61    t=Fi_TT732_6__S1;Fi_TT732_6__RawChain
+                        s=62    t=Fi_TT732_7__S1;Fi_TT732_7__RawChain
+                        s=63    t=Fi_TT732_8__S1;Fi_TT732_8__RawChain
+                        s=64    t=Fi_TT733_1__S1;Fi_TT733_1__RawChain
+                        s=65    t=Fi_TT733_2__S1;Fi_TT733_2__RawChain
+                        s=66    t=Fi_TT733_3__S1;Fi_TT733_3__RawChain
+                        s=67    t=Fi_TT733_4__S1;Fi_TT733_4__RawChain
+                        s=68    t=Fi_TT733_5__S1;Fi_TT733_5__RawChain
+                        s=69    t=Fi_TT733_6__S1;Fi_TT733_6__RawChain
+                        s=70    t=Fi_TT733_7__S1;Fi_TT733_7__RawChain
+                        s=71    t=Fi_TT733_8__S1;Fi_TT733_8__RawChain
+                        s=72    t=Fi_TT702____S1;Fi_TT702____RawChain
+
+                        s=80    t=Fi_TT761____S1;Fi_TT761____RawChain
+                        s=81    t=Fi_TT762____S1;Fi_TT762____RawChain
+                        s=82    t=Fi_TT763____S1;Fi_TT763____RawChain
+                        s=83    t=Fi_TT764____S1;Fi_TT764____RawChain
+                        s=84    t=Fi_TT765____S1;Fi_TT765____RawChain
+                        s=85    t=Fi_YT702____S1;Fi_YT702____RawChain
+
+                        s=88    t=Fi_TT766____S1;Fi_TT766____RawChain
+                        s=89    t=Fi_TT767____S1;Fi_TT767____RawChain
+
+
+                        s=96    t=Fi_CT711____S1;Fi_CT711____RawChain
+                        s=97    t=Fi_CT712____S1;Fi_CT712____RawChain
+                        s=98    t=Fi_CT713____S1;Fi_CT713____RawChain
+                        s=99    t=Fi_CT714____S1;Fi_CT714____RawChain
+                        s=100   t=Fi_eCT751___S1;Fi_eCT751___RawChain
+
+                        s=104   t=Fi_TT768____S1;Fi_TT768____RawChain
+
+                        s=108   t=Fi_KT704____S1;Fi_KT704____RawChain
+                        s=109   t=Fi_KT705____S1;Fi_KT705____RawChain
+                        s=110   t=Fi_KT706_1__S1;Fi_KT706_1__RawChain
+                        s=111   t=Fi_KT706_2__S1;Fi_KT706_2__RawChain
+                        s=112   t=Fi_eTT751___S1;Fi_eTT751___RawChain
+                        s=113   t=Fi_eTT752___S1;Fi_eTT752___RawChain
+                        s=114   t=Fi_eTT753___S1;Fi_eTT753___RawChain
+                        s=115   t=Fi_eTT754___S1;Fi_eTT754___RawChain
+
+                        s=120   t=Fi_KT709_1__S1;Fi_KT709_1__RawChain
+                        s=121   t=Fi_KT709_2__S1;Fi_KT709_2__RawChain
+                        s=122   t=Fi_KT709_3__S1;Fi_KT709_3__RawChain
+                        s=123   t=Fi_KT709_4__S1;Fi_KT709_4__RawChain
+
+                        s=128   t=Fi_KT707____S1;Fi_KT707____RawChain
+                        s=129   t=Fi_KT708____S1;Fi_KT708____RawChain
+
+                        s=136   t=Fi_TT767_4__S1;Fi_TT767_4__RawChain
+                        s=137   t=Fi_TT767_6__S1;Fi_TT767_6__RawChain
+                        s=138   t=Fi_TT767_9__S1;Fi_TT767_9__RawChain
+                        s=139   t=Fi_TT92100__S1;Fi_TT92100__RawChain
+                        s=140   t=Fi_TT767_3__S1;Fi_TT767_3__RawChain
+                        s=141   t=Fi_TT767_5__S1;Fi_TT767_5__RawChain
+                        s=142   t=Fi_TT94107__S1;Fi_TT94107__RawChain
+						
+                        s=143   t=Fi_KKT701___S1;Fi_KKT701___RawChain
+                        s=144   t=Fi_KKT701T__S1;Fi_KKT701T__RawChain
+                        s=145   t=Fi_KKT703___S1;Fi_KKT703___RawChain
+                        s=146   t=Fi_TT983____S1;Fi_TT983____RawChain
+                        s=147   t=Fi_KKT702___S1;Fi_KKT702___RawChain
+                        s=148   t=Fi_KKT704P__S1;Fi_KKT704P__RawChain
+                        s=149   t=Fi_KKT702T__S1;Fi_KKT702T__RawChain
+						
+						
+						
+                        s=176   t=Fi_TT711411_S1;Fi_TT711411_RawChain
+                        s=177   t=Fi_TT711421_S1;Fi_TT711421_RawChain
+
+                        s=180   t=Fi_TT712411_S1;Fi_TT712411_RawChain
+                        s=181   t=Fi_TT712421_S1;Fi_TT712421_RawChain
+
+                        s=192   t=Fi_TT711412_S1;Fi_TT711412_RawChain
+                        s=193   t=Fi_TT711422_S1;Fi_TT711422_RawChain
+
+                        s=196   t=Fi_TT712412_S1;Fi_TT712412_RawChain
+                        s=197   t=Fi_TT712422_S1;Fi_TT712422_RawChain
+
+###########################################################################
+# Chain2 Fi_PLC_chain2  Q_Ch09
+
+B2     t=1 i=Q_Ch09ChainInit m=Q_Ch09ChainInitTrg s=Q_Ch09ChainStat c=Q_Ch09ChainCount a=Q_Ch09ChainAck e=Q_Ch09ChainErr n=118 r=Q_Ch09Queue001 d=Q_Ch09ChainEnable w=1 q=Q_Ch09ChainAckTrg
+
+#----------------------------------------------------------------------------
+# Subsystem messages
+C                       c=1
+                        s=0     t=Fi_AStDeblR00!256
+                        s=1     t=Fi_AStMask000!256
+					s=2     t=Fi_CStMask000!256
+
+                        s=3     t=Fi_AStImit000!256
+                        s=4     t=Fi_AStTest000!256
+                        s=5     t=Fi_AStProt000!256
+                        s=6     t=Fi_AStTPro000!256
+
+                        s=7     t=Fi_AStEvMs000!256
+					s=8     t=Fi_CStImit000!256
+
+					s=11    t=Fi_CStTest000!256
+					s=14    t=Fi_CStProt000!256
+					s=17    t=Fi_CStTPro000!256
+					
+
+                        s=20    t=Fi_FE01TEvMs000!256
+
+                        s=25    t=Fi_T25EvMs000!256
+
+                        s=28    t=Fi_RemOT1S000!256
+                        s=29    t=Fi_RemOT2S000!256
+                        s=30    t=Fi_ChangeS000!256
+                        s=31    t=Fi_AStPhysR00!256
+
+#----------------------------------------------------------------------------
+# Events of gate valves
+C                       c=2
+
+# Chain status
+                        s=255   t=Q_Ch09Stat1,Q_Ch09Stat2
+
+
+###########################################################################
+# Chain3 Fi2_PLC_chain1  Q_Ch12
+
+B3     t=1 i=Q_Ch12ChainInit m=Q_Ch12ChainInitTrg s=Q_Ch12ChainStat c=Q_Ch12ChainCount a=Q_Ch12ChainAck e=Q_Ch12ChainErr n=118 r=Q_Ch12Queue001 d=Q_Ch12ChainEnable w=0 q=Q_Ch12ChainAckTrg
+
+#---------------------------------------------------------------------------
+# Subsystem messages
+C                       c=1
+                        s=0     t=Fi2_StaDeblR00!256
+                        s=1     t=Fi2_StaMask000!256
+                        s=2     t=Fi2_BStMask000!256
+                        s=3     t=Fi2_StaImit000!256
+                        s=4     t=Fi2_StaTest000!256
+                        s=5     t=Fi2_StaProt000!256
+                        s=6     t=Fi2_StaTPro000!256
+                        s=7     t=Fi2_StaEvMs000!256
+                        s=8     t=Fi2_BStImit000!256
+
+                        s=10    t=Fi2_Fdd1EvMs000!256
+                        s=11    t=Fi2_BStTest000!256
+
+                        s=13    t=Fi2_Fdd2EvMs000!256
+                        s=14    t=Fi2_BStProt000!256
+
+                        s=16    t=Fi2_Fdd3EvMs000!256
+                        s=17    t=Fi2_BStTPro000!256
+
+                        s=19    t=Fi2_Fdd4EvMs000!256
+
+                        s=20    t=Fi2_Fe1EvMs000!128,Fi2_Fe2EvMs000!128
+                        s=21    t=Fi2_Fe3EvMs000!128,Fi2_Fw1EvMs000!64,Fi2_Fw2EvMs000!64
+                        s=22    t=Fi2_Fw3EvMs000!64
+
+                        s=31    t=Fi2_StaPhysR00!256
+
+
+
+
+
+
+
+
+
+
+#----------------------------------------------------------------------------
+# Events of gate valves
+C                       c=2
+
+                        s=0     t=Fi2_GF13_1__S1_B01!16,Fi2_GF13_1__S2_B01!16
+                        s=1     t=Fi2_GF13_2__S1_B01!16,Fi2_GF13_2__S2_B01!16
+                        s=2     t=Fi2_GF13_3__S1_B01!16,Fi2_GF13_3__S2_B01!16
+                        s=3     t=Fi2_GF13_4__S1_B01!16,Fi2_GF13_4__S2_B01!16
+                        s=4     t=Fi2_GF13_5__S1_B01!16,Fi2_GF13_5__S2_B01!16
+                        s=5     t=Fi2_GF13_6__S1_B01!16,Fi2_GF13_6__S2_B01!16
+                        s=6     t=Fi2_GF13A___S1_B01!16,Fi2_GF13A___S2_B01!16
+                        s=7     t=Fi2_GF13B___S1_B01!16,Fi2_GF13B___S2_B01!16
+                        s=8     t=Fi2_GF13V___S1_B01!16,Fi2_GF13V___S2_B01!16
+                        s=9     t=Fi2_GF13G___S1_B01!16,Fi2_GF13G___S2_B01!16
+                        s=10    t=Fi2_GF14_1__S1_B01!16,Fi2_GF14_1__S2_B01!16
+                        s=11    t=Fi2_GF14_2__S1_B01!16,Fi2_GF14_2__S2_B01!16
+                        s=12    t=Fi2_GF14_3__S1_B01!16,Fi2_GF14_3__S2_B01!16
+                        s=13    t=Fi2_GF14_4__S1_B01!16,Fi2_GF14_4__S2_B01!16
+                        s=14    t=Fi2_GF14_5__S1_B01!16,Fi2_GF14_5__S2_B01!16
+                        s=15    t=Fi2_GF14_6__S1_B01!16,Fi2_GF14_6__S2_B01!16
+                        s=16    t=Fi2_GF14A___S1_B01!16,Fi2_GF14A___S2_B01!16
+                        s=17    t=Fi2_GF14B___S1_B01!16,Fi2_GF14B___S2_B01!16
+                        s=18    t=Fi2_GF14V___S1_B01!16,Fi2_GF14V___S2_B01!16
+                        s=19    t=Fi2_GF14G___S1_B01!16,Fi2_GF14G___S2_B01!16
+                        s=20    t=Fi2_GF17_1__S1_B01!16,Fi2_GF17_1__S2_B01!16
+                        s=21    t=Fi2_GF17_2__S1_B01!16,Fi2_GF17_2__S2_B01!16
+                        s=22    t=Fi2_GF17_3__S1_B01!16,Fi2_GF17_3__S2_B01!16
+                        s=23    t=Fi2_GF17_4__S1_B01!16,Fi2_GF17_4__S2_B01!16
+                        s=24    t=Fi2_GF17_5__S1_B01!16,Fi2_GF17_5__S2_B01!16
+                        s=25    t=Fi2_GF17_6__S1_B01!16,Fi2_GF17_6__S2_B01!16
+                        s=26    t=Fi2_GF17A___S1_B01!16,Fi2_GF17A___S2_B01!16
+                        s=27    t=Fi2_GF17B___S1_B01!16,Fi2_GF17B___S2_B01!16
+                        s=28    t=Fi2_GF17V___S1_B01!16,Fi2_GF17V___S2_B01!16
+                        s=29    t=Fi2_GF17G___S1_B01!16,Fi2_GF17G___S2_B01!16
+                        s=30    t=Fi2_GF18_1__S1_B01!16,Fi2_GF18_1__S2_B01!16
+                        s=31    t=Fi2_GF18_2__S1_B01!16,Fi2_GF18_2__S2_B01!16
+                        s=32    t=Fi2_GF18_3__S1_B01!16,Fi2_GF18_3__S2_B01!16
+                        s=33    t=Fi2_GF18_4__S1_B01!16,Fi2_GF18_4__S2_B01!16
+                        s=34    t=Fi2_GF18_5__S1_B01!16,Fi2_GF18_5__S2_B01!16
+                        s=35    t=Fi2_GF18_6__S1_B01!16,Fi2_GF18_6__S2_B01!16
+                        s=36    t=Fi2_GF18A___S1_B01!16,Fi2_GF18A___S2_B01!16
+                        s=37    t=Fi2_GF18B___S1_B01!16,Fi2_GF18B___S2_B01!16
+                        s=38    t=Fi2_GF18V___S1_B01!16,Fi2_GF18V___S2_B01!16
+                        s=39    t=Fi2_GF18G___S1_B01!16,Fi2_GF18G___S2_B01!16
+                        s=40    t=Fi2_GF11_1__S1_B01!16,Fi2_GF11_1__S2_B01!16
+                        s=41    t=Fi2_GF11_2__S1_B01!16,Fi2_GF11_2__S2_B01!16
+                        s=42    t=Fi2_GF11_3__S1_B01!16,Fi2_GF11_3__S2_B01!16
+                        s=43    t=Fi2_GF11_4__S1_B01!16,Fi2_GF11_4__S2_B01!16
+                        s=44    t=Fi2_GF11_5__S1_B01!16,Fi2_GF11_5__S2_B01!16
+                        s=45    t=Fi2_GF11_6__S1_B01!16,Fi2_GF11_6__S2_B01!16
+                        s=46    t=Fi2_GFR000__S1_B01!16,Fi2_GFR000__S2_B01!16
+                        s=47    t=Fi2_GF11B___S1_B01!16,Fi2_GF11B___S2_B01!16
+                        s=48    t=Fi2_GF11V___S1_B01!16,Fi2_GF11V___S2_B01!16
+                        s=49    t=Fi2_GFR001__S1_B01!16,Fi2_GFR001__S2_B01!16
+                        s=50    t=Fi2_GF12_1__S1_B01!16,Fi2_GF12_1__S2_B01!16
+                        s=51    t=Fi2_GF12_2__S1_B01!16,Fi2_GF12_2__S2_B01!16
+                        s=52    t=Fi2_GF12_3__S1_B01!16,Fi2_GF12_3__S2_B01!16
+                        s=53    t=Fi2_GF12_4__S1_B01!16,Fi2_GF12_4__S2_B01!16
+                        s=54    t=Fi2_GF12_5__S1_B01!16,Fi2_GF12_5__S2_B01!16
+                        s=55    t=Fi2_GF12_6__S1_B01!16,Fi2_GF12_6__S2_B01!16
+                        s=56    t=Fi2_GF12A___S1_B01!16,Fi2_GF12A___S2_B01!16
+                        s=57    t=Fi2_GFR002__S1_B01!16,Fi2_GFR002__S2_B01!16
+                        s=58    t=Fi2_GF12V___S1_B01!16,Fi2_GF12V___S2_B01!16
+                        s=59    t=Fi2_GFR003__S1_B01!16,Fi2_GFR003__S2_B01!16
+                        s=60    t=Fi2_GF15_1__S1_B01!16,Fi2_GF15_1__S2_B01!16
+                        s=61    t=Fi2_GF15_2__S1_B01!16,Fi2_GF15_2__S2_B01!16
+                        s=62    t=Fi2_GF15_3__S1_B01!16,Fi2_GF15_3__S2_B01!16
+                        s=63    t=Fi2_GF15_4__S1_B01!16,Fi2_GF15_4__S2_B01!16
+                        s=64    t=Fi2_GF15_5__S1_B01!16,Fi2_GF15_5__S2_B01!16
+                        s=65    t=Fi2_GF15_6__S1_B01!16,Fi2_GF15_6__S2_B01!16
+                        s=66    t=Fi2_GFR004__S1_B01!16,Fi2_GFR004__S2_B01!16
+                        s=67    t=Fi2_GF15B___S1_B01!16,Fi2_GF15B___S2_B01!16
+                        s=68    t=Fi2_GFR005__S1_B01!16,Fi2_GFR005__S2_B01!16
+                        s=69    t=Fi2_GF15G___S1_B01!16,Fi2_GF15G___S2_B01!16
+                        s=70    t=Fi2_GF16_1__S1_B01!16,Fi2_GF16_1__S2_B01!16
+                        s=71    t=Fi2_GF16_2__S1_B01!16,Fi2_GF16_2__S2_B01!16
+                        s=72    t=Fi2_GF16_3__S1_B01!16,Fi2_GF16_3__S2_B01!16
+                        s=73    t=Fi2_GF16_4__S1_B01!16,Fi2_GF16_4__S2_B01!16
+                        s=74    t=Fi2_GF16_5__S1_B01!16,Fi2_GF16_5__S2_B01!16
+                        s=75    t=Fi2_GF16_6__S1_B01!16,Fi2_GF16_6__S2_B01!16
+                        s=76    t=Fi2_GF16A___S1_B01!16,Fi2_GF16A___S2_B01!16
+                        s=77    t=Fi2_GFR006__S1_B01!16,Fi2_GFR006__S2_B01!16
+                        s=78    t=Fi2_GFR007__S1_B01!16,Fi2_GFR007__S2_B01!16
+                        s=79    t=Fi2_GF16G___S1_B01!16,Fi2_GF16G___S2_B01!16
+                        s=80    t=Fi2_GFK1_15_S1_B01!16,Fi2_GFK1_15_S2_B01!16
+                        s=81    t=Fi2_GFK2_15_S1_B01!16,Fi2_GFK2_15_S2_B01!16
+                        s=82    t=Fi2_GFK3_15_S1_B01!16,Fi2_GFK3_15_S2_B01!16
+                        s=83    t=Fi2_GFK1_16_S1_B01!16,Fi2_GFK1_16_S2_B01!16
+                        s=84    t=Fi2_GFK2_16_S1_B01!16,Fi2_GFK2_16_S2_B01!16
+                        s=85    t=Fi2_GFK3_16_S1_B01!16,Fi2_GFK3_16_S2_B01!16
+                        s=86    t=Fi2_GF588___S1_B01!16,Fi2_GF588___S2_B01!16
+                        s=87    t=Fi2_GF589___S1_B01!16,Fi2_GF589___S2_B01!16
+                        s=88    t=Fi2_GF381___S1_B01!16,Fi2_GF381___S2_B01!16
+                        s=89    t=Fi2_GF386___S1_B01!16,Fi2_GF386___S2_B01!16
+                        s=90    t=Fi2_GF383___S1_B01!16,Fi2_GF383___S2_B01!16
+                        s=91    t=Fi2_GF388___S1_B01!16,Fi2_GF388___S2_B01!16
+                        s=92    t=Fi2_GF387___S1_B01!16,Fi2_GF387___S2_B01!16
+                        s=93    t=Fi2_GF385___S1_B01!16,Fi2_GF385___S2_B01!16
+                        s=94    t=Fi2_GF390___S1_B01!16,Fi2_GF390___S2_B01!16
+                        s=95    t=Fi2_GF382___S1_B01!16,Fi2_GF382___S2_B01!16
+                        s=96    t=Fi2_GF389___S1_B01!16,Fi2_GF389___S2_B01!16
+                        s=97    t=Fi2_GF384___S1_B01!16,Fi2_GF384___S2_B01!16
+                        s=98    t=Fi2_GFR008__S1_B01!16,Fi2_GFR008__S2_B01!16
+                        s=99    t=Fi2_GFR009__S1_B01!16,Fi2_GFR009__S2_B01!16
+                        s=100   t=Fi2_GFR010__S1_B01!16,Fi2_GFR010__S2_B01!16
+                        s=101   t=Fi2_GFR011__S1_B01!16,Fi2_GFR011__S2_B01!16
+                        s=102   t=Fi2_GFR012__S1_B01!16,Fi2_GFR012__S2_B01!16
+                        s=103   t=Fi2_GFR013__S1_B01!16,Fi2_GFR013__S2_B01!16
+                        s=104   t=Fi2_GFR014__S1_B01!16,Fi2_GFR014__S2_B01!16
+                        s=105   t=Fi2_GFR015__S1_B01!16,Fi2_GFR015__S2_B01!16
+                        s=106   t=Fi2_GFR016__S1_B01!16,Fi2_GFR016__S2_B01!16
+                        s=107   t=Fi2_GFR017__S1_B01!16,Fi2_GFR017__S2_B01!16
+                        s=108   t=Fi2_GFR018__S1_B01!16,Fi2_GFR018__S2_B01!16
+                        s=109   t=Fi2_GFR019__S1_B01!16,Fi2_GFR019__S2_B01!16
+                        s=110   t=Fi2_GFR020__S1_B01!16,Fi2_GFR020__S2_B01!16
+                        s=111   t=Fi2_GFR021__S1_B01!16,Fi2_GFR021__S2_B01!16
+                        s=112   t=Fi2_GFR022__S1_B01!16,Fi2_GFR022__S2_B01!16
+                        s=113   t=Fi2_GFR023__S1_B01!16,Fi2_GFR023__S2_B01!16
+                        s=114   t=Fi2_GFR024__S1_B01!16,Fi2_GFR024__S2_B01!16
+                        s=115   t=Fi2_GFR025__S1_B01!16,Fi2_GFR025__S2_B01!16
+                        s=116   t=Fi2_GFR026__S1_B01!16,Fi2_GFR026__S2_B01!16
+                        s=117   t=Fi2_GFR027__S1_B01!16,Fi2_GFR027__S2_B01!16
+                        s=118   t=Fi2_GFR028__S1_B01!16,Fi2_GFR028__S2_B01!16
+                        s=119   t=Fi2_GFR029__S1_B01!16,Fi2_GFR029__S2_B01!16
+                        s=120   t=Fi2_GFR030__S1_B01!16,Fi2_GFR030__S2_B01!16
+                        s=121   t=Fi2_GFR031__S1_B01!16,Fi2_GFR031__S2_B01!16
+                        s=122   t=Fi2_GFR032__S1_B01!16,Fi2_GFR032__S2_B01!16
+                        s=123   t=Fi2_GFR033__S1_B01!16,Fi2_GFR033__S2_B01!16
+                        s=124   t=Fi2_GF14____S1_B01!16,Fi2_GF14____S2_B01!16
+                        s=125   t=Fi2_GF15____S1_B01!16,Fi2_GF15____S2_B01!16
+                        s=126   t=Fi2_GFR034__S1_B01!16,Fi2_GFR034__S2_B01!16
+                        s=127   t=Fi2_GFR035__S1_B01!16,Fi2_GFR035__S2_B01!16
+
+# Chain status
+                        s=255   t=Q_Ch12Stat1,Q_Ch12Stat2
+
+#----------------------------------------------------------------------------
+# Analog measurings
+C                       c=3
+
+                        s=0     t=Fi2_RM000_S1;Fi2_RM000_RawChain
+                        s=1     t=Fi2_RM001_S1;Fi2_RM001_RawChain
+                        s=2     t=Fi2_RM002_S1;Fi2_RM002_RawChain
+                        s=3     t=Fi2_RM003_S1;Fi2_RM003_RawChain
+                        s=4     t=Fi2_RM004_S1;Fi2_RM004_RawChain
+                        s=5     t=Fi2_RM005_S1;Fi2_RM005_RawChain
+                        s=6     t=Fi2_RM006_S1;Fi2_RM006_RawChain
+                        s=7     t=Fi2_RM007_S1;Fi2_RM007_RawChain
+                        s=8     t=Fi2_TT725____S1;Fi2_TT725____RawChain
+                        s=9     t=Fi2_4_TT706__S1;Fi2_4_TT706__RawChain
+                        s=10    t=Fi2_RM010_S1;Fi2_RM010_RawChain
+                        s=11    t=Fi2_RM011_S1;Fi2_RM011_RawChain
+                        s=12    t=Fi2_RM012_S1;Fi2_RM012_RawChain
+                        s=13    t=Fi2_RM013_S1;Fi2_RM013_RawChain
+                        s=14    t=Fi2_RM014_S1;Fi2_RM014_RawChain
+                        s=15    t=Fi2_RM015_S1;Fi2_RM015_RawChain
+                        s=16    t=Fi2_TT726____S1;Fi2_TT726____RawChain
+                        s=17    t=Fi2_RM017_S1;Fi2_RM017_RawChain
+                        s=18    t=Fi2_RM018_S1;Fi2_RM018_RawChain
+                        s=19    t=Fi2_RM019_S1;Fi2_RM019_RawChain
+                        s=20    t=Fi2_RM020_S1;Fi2_RM020_RawChain
+                        s=21    t=Fi2_RM021_S1;Fi2_RM021_RawChain
+                        s=22    t=Fi2_RM022_S1;Fi2_RM022_RawChain
+                        s=23    t=Fi2_RM023_S1;Fi2_RM023_RawChain
+                        s=24    t=Fi2_TT729____S1;Fi2_TT729____RawChain
+                        s=25    t=Fi2_TT730____S1;Fi2_TT730____RawChain
+                        s=26    t=Fi2_RM026_S1;Fi2_RM026_RawChain
+                        s=27    t=Fi2_RM027_S1;Fi2_RM027_RawChain
+                        s=28    t=Fi2_RM028_S1;Fi2_RM028_RawChain
+                        s=29    t=Fi2_RM029_S1;Fi2_RM029_RawChain
+                        s=30    t=Fi2_RM030_S1;Fi2_RM030_RawChain
+                        s=31    t=Fi2_RM031_S1;Fi2_RM031_RawChain
+                        s=32    t=Fi2_TT731____S1;Fi2_TT731____RawChain
+                        s=33    t=Fi2_TT732____S1;Fi2_TT732____RawChain
+                        s=34    t=Fi2_RM034_S1;Fi2_RM034_RawChain
+                        s=35    t=Fi2_RM035_S1;Fi2_RM035_RawChain
+                        s=36    t=Fi2_RM036_S1;Fi2_RM036_RawChain
+                        s=37    t=Fi2_RM037_S1;Fi2_RM037_RawChain
+                        s=38    t=Fi2_RM038_S1;Fi2_RM038_RawChain
+                        s=39    t=Fi2_RM039_S1;Fi2_RM039_RawChain
+                        s=40    t=Fi2_TT734____S1;Fi2_TT734____RawChain
+                        s=41    t=Fi2_RM041_S1;Fi2_RM041_RawChain
+                        s=42    t=Fi2_RM042_S1;Fi2_RM042_RawChain
+                        s=43    t=Fi2_RM043_S1;Fi2_RM043_RawChain
+                        s=44    t=Fi2_RM044_S1;Fi2_RM044_RawChain
+                        s=45    t=Fi2_RM045_S1;Fi2_RM045_RawChain
+                        s=46    t=Fi2_RM046_S1;Fi2_RM046_RawChain
+                        s=47    t=Fi2_RM047_S1;Fi2_RM047_RawChain
+                        s=48    t=Fi2_4_BT711__S1;Fi2_4_BT711__RawChain
+                        s=49    t=Fi2_4_CT711__S1;Fi2_4_CT711__RawChain
+                        s=50    t=Fi2_4_BT721__S1;Fi2_4_BT721__RawChain
+                        s=51    t=Fi2_4_CT721__S1;Fi2_4_CT721__RawChain
+                        s=52    t=Fi2_4_BT731__S1;Fi2_4_BT731__RawChain
+                        s=53    t=Fi2_4_CT731__S1;Fi2_4_CT731__RawChain
+                        s=54    t=Fi2_RM054_S1;Fi2_RM054_RawChain
+                        s=55    t=Fi2_RM055_S1;Fi2_RM055_RawChain
+                        s=56    t=Fi2_4_TT709__S1;Fi2_4_TT709__RawChain
+                        s=57    t=Fi2_RM057_S1;Fi2_RM057_RawChain
+                        s=58    t=Fi2_RM058_S1;Fi2_RM058_RawChain
+                        s=59    t=Fi2_RM059_S1;Fi2_RM059_RawChain
+                        s=60    t=Fi2_RM060_S1;Fi2_RM060_RawChain
+                        s=61    t=Fi2_RM061_S1;Fi2_RM061_RawChain
+                        s=62    t=Fi2_RM062_S1;Fi2_RM062_RawChain
+                        s=63    t=Fi2_RM063_S1;Fi2_RM063_RawChain
+                        s=64    t=Fi2_4_TT708__S1;Fi2_4_TT708__RawChain
+                        s=65    t=Fi2_RM065_S1;Fi2_RM065_RawChain
+                        s=66    t=Fi2_RM066_S1;Fi2_RM066_RawChain
+                        s=67    t=Fi2_RM067_S1;Fi2_RM067_RawChain
+                        s=68    t=Fi2_RM068_S1;Fi2_RM068_RawChain
+                        s=69    t=Fi2_RM069_S1;Fi2_RM069_RawChain
+                        s=70    t=Fi2_RM070_S1;Fi2_RM070_RawChain
+                        s=71    t=Fi2_RM071_S1;Fi2_RM071_RawChain
+                        s=72    t=Fi2_4_YT701__S1;Fi2_4_YT701__RawChain
+                        s=73    t=Fi2_4_TT701__S1;Fi2_4_TT701__RawChain
+                        s=74    t=Fi2_4_YT702__S1;Fi2_4_YT702__RawChain
+                        s=75    t=Fi2_4_TT702__S1;Fi2_4_TT702__RawChain
+                        s=76    t=Fi2_4_TT703__S1;Fi2_4_TT703__RawChain
+                        s=77    t=Fi2_4_TT704__S1;Fi2_4_TT704__RawChain
+                        s=78    t=Fi2_4_TT705__S1;Fi2_4_TT705__RawChain
+                        s=79    t=Fi2_RM079_S1;Fi2_RM079_RawChain
+                        s=80    t=Fi2_4_TT707__S1;Fi2_4_TT707__RawChain
+                        s=81    t=Fi2_4_TT710__S1;Fi2_4_TT710__RawChain
+                        s=82    t=Fi2_RM082_S1;Fi2_RM082_RawChain
+                        s=83    t=Fi2_RM083_S1;Fi2_RM083_RawChain
+                        s=84    t=Fi2_RM084_S1;Fi2_RM084_RawChain
+                        s=85    t=Fi2_RM085_S1;Fi2_RM085_RawChain
+                        s=86    t=Fi2_RM086_S1;Fi2_RM086_RawChain
+                        s=87    t=Fi2_RM087_S1;Fi2_RM087_RawChain
+                        s=88    t=Fi2_KT710_1__S1;Fi2_KT710_1__RawChain
+                        s=89    t=Fi2_KT710_2__S1;Fi2_KT710_2__RawChain
+                        s=90    t=Fi2_KT710_3__S1;Fi2_KT710_3__RawChain
+                        s=91    t=Fi2_KT710_4__S1;Fi2_KT710_4__RawChain
+                        s=92    t=Fi2_RM092_S1;Fi2_RM092_RawChain
+                        s=93    t=Fi2_RM093_S1;Fi2_RM093_RawChain
+                        s=94    t=Fi2_RM094_S1;Fi2_RM094_RawChain
+                        s=95    t=Fi2_RM095_S1;Fi2_RM095_RawChain
+                        s=96    t=Fi2_TT715401_S1;Fi2_TT715401_RawChain
+                        s=97    t=Fi2_TT715402_S1;Fi2_TT715402_RawChain
+                        s=98    t=Fi2_TT715403_S1;Fi2_TT715403_RawChain
+                        s=99    t=Fi2_TT715404_S1;Fi2_TT715404_RawChain
+                        s=100   t=Fi2_TT715405_S1;Fi2_TT715405_RawChain
+                        s=101   t=Fi2_TT715406_S1;Fi2_TT715406_RawChain
+                        s=102   t=Fi2_TT715407_S1;Fi2_TT715407_RawChain
+                        s=103   t=Fi2_TT715408_S1;Fi2_TT715408_RawChain
+                        s=104   t=Fi2_TT715409_S1;Fi2_TT715409_RawChain
+                        s=105   t=Fi2_TT715410_S1;Fi2_TT715410_RawChain
+                        s=106   t=Fi2_TT715411_S1;Fi2_TT715411_RawChain
+                        s=107   t=Fi2_TT715412_S1;Fi2_TT715412_RawChain
+                        s=108   t=Fi2_TT715413_S1;Fi2_TT715413_RawChain
+                        s=109   t=Fi2_TT715414_S1;Fi2_TT715414_RawChain
+                        s=110   t=Fi2_TT715415_S1;Fi2_TT715415_RawChain
+                        s=111   t=Fi2_TT715416_S1;Fi2_TT715416_RawChain
+                        s=112   t=Fi2_TT716401_S1;Fi2_TT716401_RawChain
+                        s=113   t=Fi2_TT716402_S1;Fi2_TT716402_RawChain
+                        s=114   t=Fi2_TT716403_S1;Fi2_TT716403_RawChain
+                        s=115   t=Fi2_TT716404_S1;Fi2_TT716404_RawChain
+                        s=116   t=Fi2_TT716405_S1;Fi2_TT716405_RawChain
+                        s=117   t=Fi2_TT716406_S1;Fi2_TT716406_RawChain
+                        s=118   t=Fi2_TT716407_S1;Fi2_TT716407_RawChain
+                        s=119   t=Fi2_TT716408_S1;Fi2_TT716408_RawChain
+                        s=120   t=Fi2_TT716409_S1;Fi2_TT716409_RawChain
+                        s=121   t=Fi2_TT716410_S1;Fi2_TT716410_RawChain
+                        s=122   t=Fi2_TT716411_S1;Fi2_TT716411_RawChain
+                        s=123   t=Fi2_TT716412_S1;Fi2_TT716412_RawChain
+                        s=124   t=Fi2_TT716413_S1;Fi2_TT716413_RawChain
+                        s=125   t=Fi2_TT716414_S1;Fi2_TT716414_RawChain
+                        s=126   t=Fi2_TT716415_S1;Fi2_TT716415_RawChain
+                        s=127   t=Fi2_TT716416_S1;Fi2_TT716416_RawChain
+
+###########################################################################
+# Chain4 Fi2_PLC_chain2  Q_Ch13
+
+B4     t=1 i=Q_Ch13ChainInit m=Q_Ch13ChainInitTrg s=Q_Ch13ChainStat c=Q_Ch13ChainCount a=Q_Ch13ChainAck e=Q_Ch13ChainErr n=118 r=Q_Ch13Queue001 d=Q_Ch13ChainEnable w=1 q=Q_Ch13ChainAckTrg
+
+#----------------------------------------------------------------------------
+# Subsystem messages
+C                       c=1
+
+                        s=7     t=Fi2_AStEvMs000!256
+
+                        s=20    t=Fi2_FE01TEvMs000!256
+
+                        s=25    t=Fi2_T25EvMs000!256
+
+                        s=27    t=Fi2_TFiEv2Ms000!128
+
+                        s=28    t=Fi2_RemOT1S000!256
+                        s=29    t=Fi2_RemOT2S000!256
+                        s=30    t=Fi2_ChangeS000!256
+
+#----------------------------------------------------------------------------
+# Events of gate valves
+C                       c=2
+
+# Chain status
+                        s=255   t=Q_Ch13Stat1,Q_Ch13Stat2
+
+
+###########################################################################
+# Chain5 Fi3_PLC_chain1  Q_Ch16
+
+B5     t=1 i=Q_Ch16ChainInit m=Q_Ch16ChainInitTrg s=Q_Ch16ChainStat c=Q_Ch16ChainCount a=Q_Ch16ChainAck e=Q_Ch16ChainErr n=118 r=Q_Ch16Queue001 d=Q_Ch16ChainEnable w=0 q=Q_Ch16ChainAckTrg
+
+#---------------------------------------------------------------------------
+# Subsystem messages
+C                       c=1
+                        s=0     t=Fi3_StaDeblR00!256
+                        s=1     t=Fi3_StaMask000!256
+                        s=2     t=Fi3_BStMask000!256
+                        s=3     t=Fi3_StaImit000!256
+                        s=4     t=Fi3_StaTest000!256
+                        s=5     t=Fi3_StaProt000!256
+                        s=6     t=Fi3_StaTPro000!256
+                        s=7     t=Fi3_StaEvMs000!256
+                        s=8     t=Fi3_BStImit000!256
+
+                        s=11    t=Fi3_BStTest000!256
+
+                        s=13    t=Fi3_Fdd1EvMs000!256
+                        s=14    t=Fi3_BStProt000!256
+
+                        s=16    t=Fi3_Fdd2EvMs000!256
+                        s=17    t=Fi3_BStTPro000!256
+
+                        s=20    t=Fi3_Fp1EvMs000!64,Fi3_Fp2EvMs000!64,Fi3_Fp3EvMs000!64,Fi3_Wp1EvMs000!64
+                        s=21    t=Fi3_Wp2EvMs000!64,Fi3_Wp3EvMs000!64,Fi3_Wp4EvMs000!64,Fi3_Fe1EvMs000!64
+                        s=22    t=Fi3_Fe2EvMs000!64,Fi3_Fe3EvMs000!64,Fi3_We1EvMs000!64,Fi3_We2EvMs000!64
+                        s=23    t=Fi3_We3EvMs000!64,Fi3_Wa1EvMs000!64,Fi3_Wa2EvMs000!64,Fi3_Wc1EvMs000!64
+                        s=24    t=Fi3_Wc2EvMs000!64
+
+                        s=31    t=Fi3_StaPhysR00!256
+
+#----------------------------------------------------------------------------
+# Events of gate valves
+C                       c=2
+
+                        s=0     t=Fi3_GFB2_5___S1_B01!16,Fi3_GFB2_5___S2_B01!16
+                        s=1     t=Fi3_GFB2_6___S1_B01!16,Fi3_GFB2_6___S2_B01!16
+                        s=2     t=Fi3_GFB2_7___S1_B01!16,Fi3_GFB2_7___S2_B01!16
+                        s=3     t=Fi3_GFB2_8___S1_B01!16,Fi3_GFB2_8___S2_B01!16
+                        s=4     t=Fi3_GFB10_5__S1_B01!16,Fi3_GFB10_5__S2_B01!16
+                        s=5     t=Fi3_GFB10_6__S1_B01!16,Fi3_GFB10_6__S2_B01!16
+                        s=6     t=Fi3_GFB10_7__S1_B01!16,Fi3_GFB10_7__S2_B01!16
+                        s=7     t=Fi3_GFB10_8__S1_B01!16,Fi3_GFB10_8__S2_B01!16
+                        s=8     t=Fi3_GFB10_9__S1_B01!16,Fi3_GFB10_9__S2_B01!16
+                        s=9     t=Fi3_GFB10_10_S1_B01!16,Fi3_GFB10_10_S2_B01!16
+                        s=10    t=Fi3_GFB10_11_S1_B01!16,Fi3_GFB10_11_S2_B01!16
+                        s=11    t=Fi3_GFB10_12_S1_B01!16,Fi3_GFB10_12_S2_B01!16
+                        s=12    t=Fi3_GFB10_13_S1_B01!16,Fi3_GFB10_13_S2_B01!16
+                        s=13    t=Fi3_GFB10_14_S1_B01!16,Fi3_GFB10_14_S2_B01!16
+                        s=14    t=Fi3_GF3D1_1__S1_B01!16,Fi3_GF3D1_1__S2_B01!16
+                        s=15    t=Fi3_GF3D1_2__S1_B01!16,Fi3_GF3D1_2__S2_B01!16
+                        s=16    t=Fi3_GF3D2_1__S1_B01!16,Fi3_GF3D2_1__S2_B01!16
+                        s=17    t=Fi3_GF3D2_2__S1_B01!16,Fi3_GF3D2_2__S2_B01!16
+                        s=18    t=Fi3_GF3D3_1__S1_B01!16,Fi3_GF3D3_1__S2_B01!16
+                        s=19    t=Fi3_GF3D4_1__S1_B01!16,Fi3_GF3D4_1__S2_B01!16
+                        s=20    t=Fi3_GF3NR1___S1_B01!16,Fi3_GF3NR1___S2_B01!16
+                        s=21    t=Fi3_GF3NR2___S1_B01!16,Fi3_GF3NR2___S2_B01!16
+                        s=22    t=Fi3_GF3NR3___S1_B01!16,Fi3_GF3NR3___S2_B01!16
+                        s=23    t=Fi3_GF3NV1___S1_B01!16,Fi3_GF3NV1___S2_B01!16
+                        s=24    t=Fi3_GF3NV2___S1_B01!16,Fi3_GF3NV2___S2_B01!16
+                        s=25    t=Fi3_GF3NV3___S1_B01!16,Fi3_GF3NV3___S2_B01!16
+                        s=26    t=Fi3_GF3NV4___S1_B01!16,Fi3_GF3NV4___S2_B01!16
+                        s=27    t=Fi3_GF3RP1___S1_B01!16,Fi3_GF3RP1___S2_B01!16
+                        s=28    t=Fi3_GF3RP2___S1_B01!16,Fi3_GF3RP2___S2_B01!16
+                        s=29    t=Fi3_GF3VP1___S1_B01!16,Fi3_GF3VP1___S2_B01!16
+                        s=30    t=Fi3_GF3VP2___S1_B01!16,Fi3_GF3VP2___S2_B01!16
+                        s=31    t=Fi3_GF3ZSN1_1S1_B01!16,Fi3_GF3ZSN1_1S2_B01!16
+                        s=32    t=Fi3_GF3ZSN1_2S1_B01!16,Fi3_GF3ZSN1_2S2_B01!16
+                        s=33    t=Fi3_GF3ZSN2_1S1_B01!16,Fi3_GF3ZSN2_1S2_B01!16
+                        s=34    t=Fi3_GF3ZSN2_2S1_B01!16,Fi3_GF3ZSN2_2S2_B01!16
+                        s=35    t=Fi3_GFP_1____S1_B01!16,Fi3_GFP_1____S2_B01!16
+                        s=36    t=Fi3_GFP_2____S1_B01!16,Fi3_GFP_2____S2_B01!16
+                        s=37    t=Fi3_GFP_3____S1_B01!16,Fi3_GFP_3____S2_B01!16
+                        s=38    t=Fi3_GFP_4____S1_B01!16,Fi3_GFP_4____S2_B01!16
+                        s=39    t=Fi3_GFR039___S1_B01!16,Fi3_GFR039___S2_B01!16
+                        s=40    t=Fi3_GFR040___S1_B01!16,Fi3_GFR040___S2_B01!16
+                        s=41    t=Fi3_GFR041___S1_B01!16,Fi3_GFR041___S2_B01!16
+                        s=42    t=Fi3_GFR042___S1_B01!16,Fi3_GFR042___S2_B01!16
+                        s=43    t=Fi3_GFR043___S1_B01!16,Fi3_GFR043___S2_B01!16
+                        s=44    t=Fi3_GFR044___S1_B01!16,Fi3_GFR044___S2_B01!16
+                        s=45    t=Fi3_GFR045___S1_B01!16,Fi3_GFR045___S2_B01!16
+                        s=46    t=Fi3_GFR046___S1_B01!16,Fi3_GFR046___S2_B01!16
+                        s=47    t=Fi3_GFR047___S1_B01!16,Fi3_GFR047___S2_B01!16
+                        s=48    t=Fi3_GFR048___S1_B01!16,Fi3_GFR048___S2_B01!16
+                        s=49    t=Fi3_GFR049___S1_B01!16,Fi3_GFR049___S2_B01!16
+                        s=50    t=Fi3_GFR050___S1_B01!16,Fi3_GFR050___S2_B01!16
+                        s=51    t=Fi3_GFR051___S1_B01!16,Fi3_GFR051___S2_B01!16
+                        s=52    t=Fi3_GFR052___S1_B01!16,Fi3_GFR052___S2_B01!16
+                        s=53    t=Fi3_GFR053___S1_B01!16,Fi3_GFR053___S2_B01!16
+                        s=54    t=Fi3_GFR054___S1_B01!16,Fi3_GFR054___S2_B01!16
+                        s=55    t=Fi3_GFR055___S1_B01!16,Fi3_GFR055___S2_B01!16
+                        s=56    t=Fi3_GFR056___S1_B01!16,Fi3_GFR056___S2_B01!16
+                        s=57    t=Fi3_GFR057___S1_B01!16,Fi3_GFR057___S2_B01!16
+                        s=58    t=Fi3_GFR058___S1_B01!16,Fi3_GFR058___S2_B01!16
+                        s=59    t=Fi3_GFR059___S1_B01!16,Fi3_GFR059___S2_B01!16
+                        s=60    t=Fi3_GFR060___S1_B01!16,Fi3_GFR060___S2_B01!16
+                        s=61    t=Fi3_GFR061___S1_B01!16,Fi3_GFR061___S2_B01!16
+                        s=62    t=Fi3_GFR062___S1_B01!16,Fi3_GFR062___S2_B01!16
+                        s=63    t=Fi3_GFR063___S1_B01!16,Fi3_GFR063___S2_B01!16
+
+# Chain status
+                        s=255   t=Q_Ch16Stat1,Q_Ch16Stat2
+
+#----------------------------------------------------------------------------
+# Analog measurings
+C                       c=3
+
+                        s=0     t=Fi3_PT708_S1;Fi3_PT708_RawChain
+                        s=1     t=Fi3_PT709_S1;Fi3_PT709_RawChain
+                        s=2     t=Fi3_PT710_S1;Fi3_PT710_RawChain
+                        s=3     t=Fi3_PT711_S1;Fi3_PT711_RawChain
+                        s=4     t=Fi3_PT712_S1;Fi3_PT712_RawChain
+                        s=5     t=Fi3_PT713_S1;Fi3_PT713_RawChain
+                        s=6     t=Fi3_RM006_S1;Fi3_RM006_RawChain
+                        s=7     t=Fi3_RM007_S1;Fi3_RM007_RawChain
+                        s=8     t=Fi3_TT702_S1;Fi3_TT702_RawChain
+                        s=9     t=Fi3_TT752_S1;Fi3_TT752_RawChain
+                        s=10    t=Fi3_RM010_S1;Fi3_RM010_RawChain
+                        s=11    t=Fi3_RM011_S1;Fi3_RM011_RawChain
+                        s=12    t=Fi3_RM012_S1;Fi3_RM012_RawChain
+                        s=13    t=Fi3_RM013_S1;Fi3_RM013_RawChain
+                        s=14    t=Fi3_RM014_S1;Fi3_RM014_RawChain
+                        s=15    t=Fi3_RM015_S1;Fi3_RM015_RawChain
+                        s=16    t=Fi3_TT701_S1;Fi3_TT701_RawChain
+                        s=17    t=Fi3_TT753_S1;Fi3_TT753_RawChain
+                        s=18    t=Fi3_RM018_S1;Fi3_RM018_RawChain
+                        s=19    t=Fi3_RM019_S1;Fi3_RM019_RawChain
+                        s=20    t=Fi3_RM020_S1;Fi3_RM020_RawChain
+                        s=21    t=Fi3_RM021_S1;Fi3_RM021_RawChain
+                        s=22    t=Fi3_RM022_S1;Fi3_RM022_RawChain
+                        s=23    t=Fi3_RM023_S1;Fi3_RM023_RawChain
+                        s=24    t=Fi3_PT701_S1;Fi3_PT701_RawChain
+                        s=25    t=Fi3_PT702_S1;Fi3_PT702_RawChain
+                        s=26    t=Fi3_PT703_S1;Fi3_PT703_RawChain
+                        s=27    t=Fi3_PT704_S1;Fi3_PT704_RawChain
+                        s=28    t=Fi3_PT705_S1;Fi3_PT705_RawChain
+                        s=29    t=Fi3_PT706_S1;Fi3_PT706_RawChain
+                        s=30    t=Fi3_PT707_S1;Fi3_PT707_RawChain
+                        s=31    t=Fi3_RM031_S1;Fi3_RM031_RawChain
+                        s=32    t=Fi3_PT714_S1;Fi3_PT714_RawChain
+                        s=33    t=Fi3_PT715_S1;Fi3_PT715_RawChain
+                        s=34    t=Fi3_PT718_S1;Fi3_PT718_RawChain
+                        s=35    t=Fi3_PT716_S1;Fi3_PT716_RawChain
+                        s=36    t=Fi3_PT717_S1;Fi3_PT717_RawChain
+                        s=37    t=Fi3_PT719_S1;Fi3_PT719_RawChain
+                        s=38    t=Fi3_RM038_S1;Fi3_RM038_RawChain
+                        s=39    t=Fi3_RM039_S1;Fi3_RM039_RawChain
+                        s=40    t=Fi3_TT703_S1;Fi3_TT703_RawChain
+                        s=41    t=Fi3_RM041_S1;Fi3_RM041_RawChain
+                        s=42    t=Fi3_RM042_S1;Fi3_RM042_RawChain
+                        s=43    t=Fi3_RM043_S1;Fi3_RM043_RawChain
+                        s=44    t=Fi3_RM044_S1;Fi3_RM044_RawChain
+                        s=45    t=Fi3_RM045_S1;Fi3_RM045_RawChain
+                        s=46    t=Fi3_RM046_S1;Fi3_RM046_RawChain
+                        s=47    t=Fi3_RM047_S1;Fi3_RM047_RawChain
+                        s=48    t=Fi3_DT711_S1;Fi3_DT711_RawChain
+                        s=49    t=Fi3_DT721_S1;Fi3_DT721_RawChain
+                        s=50    t=Fi3_DT731_S1;Fi3_DT731_RawChain
+                        s=51    t=Fi3_DT741_S1;Fi3_DT741_RawChain
+                        s=52    t=Fi3_DT712_S1;Fi3_DT712_RawChain
+                        s=53    t=Fi3_DT722_S1;Fi3_DT722_RawChain
+                        s=54    t=Fi3_DT733_S1;Fi3_DT733_RawChain
+                        s=55    t=Fi3_DT742_S1;Fi3_DT742_RawChain
+# not used
+#                        s=56    t=Fi3_ET711_S1;Fi3_ET711_RawChain
+#
+                        s=57    t=Fi3_KT708_S1;Fi3_KT708_RawChain
+                        s=58    t=Fi3_KT709_S1;Fi3_KT709_RawChain
+                        s=59    t=Fi3_KT710_S1;Fi3_KT710_RawChain
+                        s=60    t=Fi3_TT712_S1;Fi3_TT712_RawChain
+                        s=61    t=Fi3_RM061_S1;Fi3_RM061_RawChain
+                        s=62    t=Fi3_RM062_S1;Fi3_RM062_RawChain
+                        s=63    t=Fi3_RM063_S1;Fi3_RM063_RawChain
+                        s=64    t=Fi3_RM064_S1;Fi3_RM064_RawChain
+                        s=65    t=Fi3_RM065_S1;Fi3_RM065_RawChain
+                        s=66    t=Fi3_RM066_S1;Fi3_RM066_RawChain
+                        s=67    t=Fi3_RM067_S1;Fi3_RM067_RawChain
+                        s=68    t=Fi3_RM068_S1;Fi3_RM068_RawChain
+                        s=69    t=Fi3_RM069_S1;Fi3_RM069_RawChain
+                        s=70    t=Fi3_RM070_S1;Fi3_RM070_RawChain
+                        s=71    t=Fi3_RM071_S1;Fi3_RM071_RawChain
+                        s=72    t=Fi3_KT7111___S1;Fi3_KT7111___RawChain
+                        s=73    t=Fi3_KT7112___S1;Fi3_KT7112___RawChain
+                        s=74    t=Fi3_KT7113___S1;Fi3_KT7113___RawChain
+                        s=75    t=Fi3_KT7114___S1;Fi3_KT7114___RawChain
+                        s=76    t=Fi3_KT7115_1_S1;Fi3_KT7115_1_RawChain
+                        s=77    t=Fi3_KT7115_2_S1;Fi3_KT7115_2_RawChain
+                        s=78    t=Fi3_KT716_1__S1;Fi3_KT716_1__RawChain
+                        s=79    t=Fi3_KT716_2__S1;Fi3_KT716_2__RawChain
+
+###########################################################################
+# Chain6 Fi3_PLC_chain2  Q_Ch17
+
+B6     t=1 i=Q_Ch17ChainInit m=Q_Ch17ChainInitTrg s=Q_Ch17ChainStat c=Q_Ch17ChainCount a=Q_Ch17ChainAck e=Q_Ch17ChainErr n=118 r=Q_Ch17Queue001 d=Q_Ch17ChainEnable w=1 q=Q_Ch17ChainAckTrg
+
+#----------------------------------------------------------------------------
+# Subsystem messages
+C                       c=1
+
+                        s=1     t=Fi3_AStMask000!256
+
+                        s=3     t=Fi3_AStImit000!256
+                        s=4     t=Fi3_AStTest000!256
+                        s=5     t=Fi3_AStProt000!256
+                        s=6     t=Fi3_AStTPro000!256
+                        s=7     t=Fi3_AStEvMs000!256
+
+                        s=10    t=Fi3_BStEvMs000!256
+
+                        s=20    t=Fi3_FASPStaW040B01!256
+                        s=21    t=Fi3_FE01TEvMs000!128,Fi3_FASPStaW020B01!16,Fi3_FE01TEvMs144!112
+                        s=22    t=Fi3_FASPStaW000B01!256
+                        s=23    t=Fi3_FASInpInfB01!256
+                        s=24    t=Fi3_G100_We1StatB01!256
+                        s=25    t=Fi3_G100_Wp1StatB01!256
+
+                        s=28    t=Fi3_RemOT1S000!256
+                        s=29    t=Fi3_RemOT2S000!256
+                        s=30    t=Fi3_ChangeS000!256
+
+#----------------------------------------------------------------------------
+# Events of gate valves
+C                       c=2
+
+# Chain status
+                        s=255   t=Q_Ch17Stat1,Q_Ch17Stat2
+
+
+#################################   END    #################################

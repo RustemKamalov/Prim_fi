@@ -1,0 +1,142 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=6 h=830 w=1265
+
+OBJ: 15360
+  PARL: P0=Fi_AStMask025 P1=Fi_AStImit025 P2=Fi_AStTest025
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 15361
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal025 P2=Fi_AStMask025 P3=Fi_AStImit025 P4=Fi_AStTest025 P5=Fi_AStProt025 P6=Fi_AStTPro025 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,14,0 Q2=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q2;
+  SELD: a=PO p=303
+OBEND
+
+OBJ: 15362
+  PARL: P0=Fi_StaMask035 P1=Fi_StaImit035 P2=Fi_StaTest035
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 15363
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal035 P2=Fi_StaMask035 P3=Fi_StaImit035 P4=Fi_StaTest035 P5=Fi_StaProt035 P6=Fi_StaTPro035 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,14,0 Q2=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q2;
+  SELD: a=PO p=303
+OBEND
+
+OBJ: 15364
+  PARL: P0=Fi_StaMask036 P1=Fi_StaImit036 P2=Fi_StaTest036
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 15365
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal036 P2=Fi_StaMask036 P3=Fi_StaImit036 P4=Fi_StaTest036 P5=Fi_StaProt036 P6=Fi_StaTPro036 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,14,0 Q2=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q2;
+  SELD: a=PO p=303
+OBEND
+
+OBJ: 15366
+  PARL: P0=Fi_AStMask026 P1=Fi_AStImit026 P2=Fi_AStTest026
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 15367
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal026 P2=Fi_AStMask026 P3=Fi_AStImit026 P4=Fi_AStTest026 P5=Fi_AStProt026 P6=Fi_AStTPro026 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,14,0 Q2=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q2;
+  SELD: a=PO p=303
+OBEND
+
+OBJ: 15369
+  PARL: P0=Fi_AStMask027 P1=Fi_AStImit027 P2=Fi_AStTest027
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 15370
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal027 P2=Fi_AStMask027 P3=Fi_AStImit027 P4=Fi_AStTest027 P5=Fi_AStProt027 P6=Fi_AStTPro027 P7=Fi_AStMsPr P8=Fi_AStImPr P9=Fi_AStTsPr P10=Fi_AStDbPr
+  COLD: Q1=1,14,0 Q2=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q2;
+  SELD: a=PO p=303
+OBEND
+
+OBJ: 15375
+  PARL: P0=Fi_StaMask072 P1=Fi_StaImit072 P2=Fi_StaTest072
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0 | P1 | P2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 15376
+  PARL: P0=Fi_StationName P1=Fi_ProtPtrVal072 P2=Fi_StaMask072 P3=Fi_StaImit072 P4=Fi_StaTest072 P5=Fi_StaProt072 P6=Fi_StaTPro072 P7=Fi_StaMsPr P8=Fi_StaImPr P9=Fi_StaTsPr P10=Fi_StaDbPr
+  COLD: Q1=1,14,0 Q2=1,8,0
+  COLF: IF P5 | P6 : Q1;ELSE Q2;
+  SELD: a=PO p=103
+OBEND
+
+OBJ: 15383
+  SELD: a=WO p=39
+OBEND
+
+OBJ: 15408
+  SELD: a=WO p=1140
+OBEND
+
+OBJ: 15409
+  SELD: a=WO p=1147
+OBEND
+
+OBJ: 15410
+  SELD: a=WO p=2310
+OBEND
+
+OBJ: 15411
+  SELD: a=WO p=1141
+OBEND
+
+OBJ: 15412
+  SELD: a=WO p=1142
+OBEND
+
+OBJ: 15413
+  SELD: a=WO p=1149
+OBEND
+
+OBJ: 15414
+  SELD: a=WO p=1139
+OBEND
+
+OBJ: 15415
+  SELD: a=WO p=2501
+OBEND
+
+OBJ: 15418
+  SELD: a=WO p=2503
+OBEND
+
+OBJ: 15420
+  SELD: a=WO p=1151
+OBEND
+
+OBJ: 15423
+  SELD: a=WO p=1136
+OBEND
+
+OBJ: 15425
+  SELD: a=WO p=1138
+OBEND
+
+OBJ: 15427
+  SELD: a=WO p=2315
+OBEND
+
+OBJ: 15428
+  SELD: a=WO p=1152
+OBEND

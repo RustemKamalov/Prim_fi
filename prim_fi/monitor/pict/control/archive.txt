@@ -1,0 +1,820 @@
+
+WOPT: p=Cc r=10 c=0 o=k;kmsab t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=2 h=0 w=0
+
+OBJ: 19
+  PARL: P0=ARCHIVE_CFGS
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 21
+  PARL: P0=ARCHIVE_ERRC
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 25
+  PARL: P0=ARCHIVE_PRIO
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 27
+  PARL: P0=ARCHIVE_LOGF
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 29
+  PARL: P0=ARCHIVE_FLEN
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 31
+  PARL: P0=ARCHIVE_LOGC
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 33
+  PARL: P0=ARCHIVE_LOGM
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 35
+  PARL: P0=ARCHIVE_CHKT
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 45
+  PARL: P0=ARCHIVE_ESEQ
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 193_STAT
+  PARL: P0=ARCH_SRV_STAT
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 195_LNCH
+  PARL: P0=ARCH_SRV_LNCH
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 197_PRIO
+  PARL: P0=ARCH_SRV_PRIO
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 199_ENAB
+  PARL: P0=ARCH_SRV_ENAB
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 201_DELA
+  PARL: P0=ARCH_SRV_DELA
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 204_INIT
+  PARL: P0=ARCH_SRV_INIT
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 205_NAME
+  PARL: P0=ARCH_SRV_NAME
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 209_53
+  PARL: P0=ArchOb1CiclNum
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 210_56
+  PARL: P0=ArchOb1CiclHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 211_57
+  PARL: P0=ArchOb1CiclMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 212_58
+  PARL: P0=ArchOb1CiclSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 222_68
+  PARL: P0=ArchOb1Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 0: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 223_69
+  PARL: P0=ArchOb1Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 1: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 224_70
+  PARL: P0=ArchOb1Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 2: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 2.000000;
+OBEND
+
+OBJ: 227_76
+  PARL: P0=ArchOb1CiclDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 232_113
+  PARL: P0=ArchOb1StopDelaHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 233_114
+  PARL: P0=ArchOb1StopDelaMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 234_115
+  PARL: P0=ArchOb1StopDelaSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 235_116
+  PARL: P0=ArchOb1StopDelaDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 242_123
+  PARL: P0=ArchOb1Type
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 245_128
+  PARL: P0=ArchOb1_ORSsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 246_129
+  PARL: P0=ArchOb1_ORSmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 247_130
+  PARL: P0=ArchOb1_OAOmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 248_131
+  PARL: P0=ArchOb1_OAOsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 264_158
+  PARL: P0=ArchOb1_OFILEm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 265_159
+  PARL: P0=ArchOb1_OFILEw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 269_163
+  PARL: P0=ArchOb1_OFTXTm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 270_164
+  PARL: P0=ArchOb1_OFTXTw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 272_166
+  PARL: P0=ArchOb1_CAF
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 273_167
+  PARL: P0=ArchOb1_CA1
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 274_168
+  PARL: P0=ArchOb1_CA0
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 278_172
+  PARL: P0=ArchOb1_CA2
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 281_209_53
+  PARL: P0=ArchOb2CiclNum
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 282_210_56
+  PARL: P0=ArchOb2CiclHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 283_211_57
+  PARL: P0=ArchOb2CiclMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 284_212_58
+  PARL: P0=ArchOb2CiclSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 294_222_68
+  PARL: P0=ArchOb2Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 0: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 295_223_69
+  PARL: P0=ArchOb2Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 1: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 296_224_70
+  PARL: P0=ArchOb2Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 2: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 2.000000;
+OBEND
+
+OBJ: 299_227_76
+  PARL: P0=ArchOb2CiclDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 304_232_113
+  PARL: P0=ArchOb2StopDelaHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 305_233_114
+  PARL: P0=ArchOb2StopDelaMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 306_234_115
+  PARL: P0=ArchOb2StopDelaSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 307_235_116
+  PARL: P0=ArchOb2StopDelaDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 312_242_123
+  PARL: P0=ArchOb2Type
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 333_264_158
+  PARL: P0=ArchOb2_OFILEm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 334_265_159
+  PARL: P0=ArchOb2_OFILEw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 338_269_163
+  PARL: P0=ArchOb2_OFTXTm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 339_270_164
+  PARL: P0=ArchOb2_OFTXTw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 341_272_166
+  PARL: P0=ArchOb2_CAF
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 342_273_167
+  PARL: P0=ArchOb2_CA1
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 343_274_168
+  PARL: P0=ArchOb2_CA0
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 347_278_172
+  PARL: P0=ArchOb2_CA2
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 349_21
+  PARL: P0=ARCHIVE_STAT
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 351
+  PARL: P0=ARCHIVE_CNAM
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 357_246_129
+  PARL: P0=ArchOb1_ORShour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 358_247_130
+  PARL: P0=ArchOb1_OAOhour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 359_357_246_129
+  PARL: P0=ArchOb1_ORSday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 361_245_128
+  PARL: P0=ArchOb2_ORSsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 362_246_129
+  PARL: P0=ArchOb2_ORSmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 363_247_130
+  PARL: P0=ArchOb2_OAOmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 364_248_131
+  PARL: P0=ArchOb2_OAOsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 377_357_246_129
+  PARL: P0=ArchOb2_ORShour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 378_358_247_130
+  PARL: P0=ArchOb2_OAOhour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 379
+  PARL: P0=ArchOb2_ORSday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 383_209_53
+  PARL: P0=ArchOb3CiclNum
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 384_210_56
+  PARL: P0=ArchOb3CiclHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 385_211_57
+  PARL: P0=ArchOb3CiclMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 386_212_58
+  PARL: P0=ArchOb3CiclSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 396_222_68
+  PARL: P0=ArchOb3Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 0: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 397_223_69
+  PARL: P0=ArchOb3Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 1: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 398_224_70
+  PARL: P0=ArchOb3Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 2: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 2.000000;
+OBEND
+
+OBJ: 401_227_76
+  PARL: P0=ArchOb3CiclDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 406_232_113
+  PARL: P0=ArchOb3StopDelaHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 407_233_114
+  PARL: P0=ArchOb3StopDelaMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 408_234_115
+  PARL: P0=ArchOb3StopDelaSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 409_235_116
+  PARL: P0=ArchOb3StopDelaDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 414_242_123
+  PARL: P0=ArchOb3Type
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 416_245_128
+  PARL: P0=ArchOb3_ORSsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 417_246_129
+  PARL: P0=ArchOb3_ORSmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 418_247_130
+  PARL: P0=ArchOb3_OAOmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 419_248_131
+  PARL: P0=ArchOb3_OAOsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 432_264_158
+  PARL: P0=ArchOb3_OFILEm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 433_265_159
+  PARL: P0=ArchOb3_OFILEw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 437_269_163
+  PARL: P0=ArchOb3_OFTXTm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 438_270_164
+  PARL: P0=ArchOb3_OFTXTw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 440_272_166
+  PARL: P0=ArchOb3_CAF
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 441_273_167
+  PARL: P0=ArchOb3_CA1
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 442_274_168
+  PARL: P0=ArchOb3_CA0
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 446_278_172
+  PARL: P0=ArchOb3_CA2
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 449_281_209_53
+  PARL: P0=ArchOb4CiclNum
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 450_282_210_56
+  PARL: P0=ArchOb4CiclHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 451_283_211_57
+  PARL: P0=ArchOb4CiclMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 452_284_212_58
+  PARL: P0=ArchOb4CiclSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 462_294_222_68
+  PARL: P0=ArchOb4Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 0: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 463_295_223_69
+  PARL: P0=ArchOb4Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 1: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 464_296_224_70
+  PARL: P0=ArchOb4Activate
+  OPTD: Q1=-d-e-m-s-H-R-X
+  OPTF: IF P0 == 2: Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 2.000000;
+OBEND
+
+OBJ: 467_299_227_76
+  PARL: P0=ArchOb4CiclDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 472_304_232_113
+  PARL: P0=ArchOb4StopDelaHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 473_305_233_114
+  PARL: P0=ArchOb4StopDelaMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 474_306_234_115
+  PARL: P0=ArchOb4StopDelaSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 475_307_235_116
+  PARL: P0=ArchOb4StopDelaDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 480_312_242_123
+  PARL: P0=ArchOb4Type
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 484_333_264_158
+  PARL: P0=ArchOb4_OFILEm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 485_334_265_159
+  PARL: P0=ArchOb4_OFILEw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 489_338_269_163
+  PARL: P0=ArchOb4_OFTXTm
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 490_339_270_164
+  PARL: P0=ArchOb4_OFTXTw
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 492_341_272_166
+  PARL: P0=ArchOb4_CAF
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 493_342_273_167
+  PARL: P0=ArchOb4_CA1
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 494_343_274_168
+  PARL: P0=ArchOb4_CA0
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 498_347_278_172
+  PARL: P0=ArchOb4_CA2
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 502_357_246_129
+  PARL: P0=ArchOb3_ORShour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 503_358_247_130
+  PARL: P0=ArchOb3_OAOhour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 504
+  PARL: P0=ArchOb3_ORSday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 507_361_245_128
+  PARL: P0=ArchOb4_ORSsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 508_362_246_129
+  PARL: P0=ArchOb4_ORSmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 509_363_247_130
+  PARL: P0=ArchOb4_OAOmin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 510_364_248_131
+  PARL: P0=ArchOb4_OAOsec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 523
+  PARL: P0=ArchOb4_ORShour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 524
+  PARL: P0=ArchOb4_OAOhour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 525_379
+  PARL: P0=ArchOb4_ORSday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 527_359_357_246_1
+  PARL: P0=ArchOb1_OAOday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 528_527_359_357_2
+  PARL: P0=ArchOb2_OAOday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 529_527_359_357_2
+  PARL: P0=ArchOb3_OAOday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 530_527_359_357_2
+  PARL: P0=ArchOb4_OAOday
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND

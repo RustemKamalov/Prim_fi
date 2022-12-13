@@ -1,0 +1,12 @@
+#/bin/sh
+
+if test -f $1.ori
+then
+    echo $1.ori exists, not converting
+    exit 1
+fi
+
+echo converting $1
+cp $1 $1.ori
+sed -f /prim_fi/scripts/mrsh/gvchange.scr $1 > temp
+mv temp $1

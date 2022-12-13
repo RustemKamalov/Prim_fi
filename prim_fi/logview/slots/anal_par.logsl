@@ -1,0 +1,85 @@
+
+# Window:
+
+# Alias:
+пред_изм_парам
+# Group:
+prim_fi
+# Input Dir:
+s:/logger/anal_par
+# Disable Signals/Disable Signals When Loaded/Enable Signals (0/1/2):
+0
+# Refresh Rate:
+0
+# Scroll Limit:
+100
+# Files To Show:
+0
+# X Pos:
+0
+# Y Pos:
+0
+# Rows:
+20
+# Coloumns:
+80
+# Font Typeface:
+System
+# Font Style:
+N
+# Font Size:
+11
+
+# Options:
+
+# Moveable:
+1
+# Resizeable:
+1
+# Coverable:
+1
+# Closeable:
+1
+# Horizontal Scroll:
+1
+# Vertical Scroll:
+1
+# Force Front For New Lines:
+0
+# Close Inactive Child Windows:
+0
+# Configureable:
+1
+# Choose Button:
+1
+# Config Button:
+1
+# Date Button:
+1
+# Print Button:
+1
+# Modifiable:
+1
+# Reset Date Limit:
+1
+# Indexed:
+0
+# Abortable:
+0
+# Auto Save Config:
+0
+# Draw Dividers:
+0
+# Stream Mode:
+0
+
+# Display:
+
+# Foreground:
+1
+# Background:
+2
+
+# Filter:
+
+*

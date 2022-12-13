@@ -1,0 +1,152 @@
+.item
+0
+prtsc
+Screen Snapshot
+.item
+1
+s1
+Programs
+.item
+0
+s6
+Command Line...
+.item
+0
+s7
+Windows -> Text
+.item
+0
+s8
+About QNX Windows...
+.item
+1
+s2
+Utilities
+.item
+0
+s3
+Properties...
+.item
+0
+s4
+Exit
+.item
+0
+w1
+Close
+.item
+0
+w2
+Full Size
+.item
+0
+w3
+Back
+.item
+0
+w4
+Refresh
+.item
+0
+w5
+Quit
+.item
+0
+w6
+Restore Size
+.item
+0
+w7
+Open
+.item
+0
+w8
+Dismiss
+.item
+0
+w9
+Cancel
+.item
+0
+w0
+Owner?
+.item
+3
+u1
+Refresh
+.item
+3
+u2
+Window Controls
+.item
+0
+u3
+Clipboard...
+.item
+0
+u4
+Print Screen
+.item
+0
+u5
+Shell
+.item
+0
+v1
+Here to Top
+.item
+0
+v2
+Top to Here
+.item
+0
+v3
+Previous
+.item
+0
+h1
+Here to Left
+.item
+0
+h2
+Left to Here
+.item
+0
+h3
+Previous
+.item
+0
+text
+Windows -> Text
+.item
+0
+pin
+Pinpoint...
+.item
+0
+ca
+Close All Windows
+.item
+0
+$3
+Print Picture
+.item
+0
+$4
+Print Window
+.item
+0
+h4
+Split View
+.item
+0
+h5
+Join Views
+.item
+0
+v4
+Split View
+.item
+0
+v5
+Join Views

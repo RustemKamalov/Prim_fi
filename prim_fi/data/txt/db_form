@@ -1,0 +1,32 @@
+                        Format of CDBF (pipe)
+
+Fields:
+STRCONST    Char    20      (name)
+TYPE        Char    1       (F/L/G/I/U/C/Y/B/X)
+SIGNALNAME  Char    40      (long name)
+PRIORITY    Char    5       (0-255)
+UNIT        Char    10      (eg. bar)
+
+Types:
+F       float               4 byte
+L       signed long int     4 byte
+G       unsigned long int   4 byte
+I       signed int          2 byte
+U       unsigned int        2 byte
+C       signed byte         1 byte
+Y       unsigned byte       1 byte
+B       bit                 1 byte (0/1)
+X       string              string
+
+Dezso's pipe.txt format:
+Name, Type, Priority, [[Init][;Unit],] Group, Trend, MView_tren, MTime, "Comment                                 "
+
+************************************************************************
+                        Format of MDB (MAB) txt file
+
+    - field_name, field_type, strconst, mview_tren, mtime
+	- f=field_name t=field_type s=strconst v=mview_tren m=mtime
+
+field_name:     group
+field_type:     type
+strconst:       name

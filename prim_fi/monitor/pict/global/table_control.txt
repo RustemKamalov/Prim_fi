@@ -1,0 +1,23 @@
+
+WOPT: p=A r=181 c=363 o=k-r;kmsa t=0 e=0 a=1 b=0 k=0
+
+WPICT: c=4 h=0 w=0
+
+OBJ: 856
+  PARL: P0=T_LoggerGlbPrint
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 857
+  PARL: P0=T_LoggerGlbSet
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 858
+  PARL: P0=T_LoggerGlbSet
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 860
+  SELD: a=FN p=23
+OBEND

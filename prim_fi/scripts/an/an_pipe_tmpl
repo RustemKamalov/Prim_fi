@@ -1,0 +1,51 @@
+$M_$id_MinRaw        ,  F, 20,      0,  $M_AnalogParam , N, 0, 0, "$comment
+$M_$id_MaxRaw        ,  F, 20,   9999,  $M_AnalogParam , N, 0, 0, "$comment
+$M_$id_MinEU         ,  F, 20,   $Min,  $M_AnalogParam , N, 0, 0, "$comment
+$M_$id_MaxEU         ,  F, 20,   $Max,  $M_AnalogParam , N, 0, 0, "$comment
+$M_$id_ScaleWidth    ,  F, 20,   $Wid,  $M_AnalogParam , N, 0, 0, "$comment
+$M_$id_CtWdSet1      ,  U, 50, $M_AnalogParam_U        , N, 0, 0, "$comment
+$M_$id_CtWdSet2      ,  U,100, $M_AnalogParam_U        , N, 0, 0, "$comment
+$M_$id_CtWdSend      ,  U,  0, $M_AnalogParam_U        , N, 0, 0, "$comment
+$M_$id_CtWd          ,  U,  0, $M_AnalogParam_U        , N, 0, 0, "$comment
+$M_$id_SmpR          ,  U,  0, $M_AnalogParam_U        , N, 0, 0, "$comment
+$M_$id_ManV          ,  F,100, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_ZeCr          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_CrHL          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_CrLL          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_Filt          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_4_L           ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_3_L           ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_2_L           ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_1_L           ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_Hyst          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_UTrL          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_DTrL          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_MxDv          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_ManVS         ,  F,100, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_ZeCrS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_CrHLS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_CrLLS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_FiltS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_4_LS          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_3_LS          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_2_LS          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_1_LS          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_HystS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_UTrLS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_DTrLS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_MxDvS         ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_Sign          ,  F, 50, $M_AnalogParam          , N, 0, 0, "$comment
+$M_$id_Percent       ,  F,  0, $M_AnalogVar          , Y, 360, 5, "$comment
+$M_$id_S1            ,  U,  0, $M_AnalogVariable_U     , N, 0, 0, "$comment
+$M_$id_S2            ,  U,  0, $M_AnalogVariable_U     , N, 0, 0, "$comment
+$M_$id_Raw           ,  U,  0, $M_AnalogVariable_U     , N, 0, 0, "$comment
+$M_$id_RawChain      ,  U,  0, $M_AnalogVariable_U     , N, 0, 0, "$comment
+$M_$id_Vl            ,  F,  0, ;$unit  , $M_AnalogVar  , N, 0, 0, "$comment
+$M_$id_Unit          ,  X,  0, $unit,  $M_AnalogVarX   , N, 0, 0, "$comment
+$M_$id_Tren          ,  F,  0, $M_AnalogVar            , N, 0, 0, "$comment
+$M_$id_UTrH          ,  F,  0, $M_AnalogVar            , N, 0, 0, "$comment
+$M_$id_DTrH          ,  F,  0, $M_AnalogVar            , N, 0, 0, "$comment
+$M_$id_FixV          ,  F,  0, $M_AnalogVar            , N, 0, 0, "$comment
+$M_$id_Maxm          ,  F,  0, $M_AnalogVar            , N, 0, 0, "$comment
+$M_$id_Minm          ,  F,  0, $M_AnalogVar            , N, 0, 0, "$comment
+$M_$id_ValTrig       ,  U,  0, $M_AnalogVarTrig        , N, 0, 0, "$comment

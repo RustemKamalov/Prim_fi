@@ -1,0 +1,10 @@
+
+WOPT: p=A r=100 c=100 o=k-r;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 21
+  PARL: P0=MBT_PATH132_STATE
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P0==0 :Q1; ELSE Q0;
+OBEND

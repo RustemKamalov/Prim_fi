@@ -1,0 +1,391 @@
+CFG:
+  CPAR:
+        P0 = ARCHIVE_ERRC
+        P1 = ARCHIVE_CFGS
+        P2 = ARCHIVE_PRIO
+        P3 = ARCHIVE_LOGF
+        P4 = ARCHIVE_FLEN
+        P5 = ARCHIVE_LOGC
+        P6 = ARCHIVE_LOGM
+        P7 = ARCHIVE_CHKT
+        P8 = ARCHIVE_CNAM
+        P9 = ARCHIVE_ESEQ
+
+CFGS = P1
+PRIO = P2
+LOGF = P3
+FLEN = P4
+LOGC = P5
+LOGM = P6
+CHKT = P7
+CNAM = P8
+ESEQ = P9
+
+#   5s objects are cleared, because module archive deletes all objects
+#   the same way
+
+OBJ: ob1_1s
+    YPAR:
+        P0 = ArchOb1Type
+    TYPE: P0
+    IPAR:
+        P0   =Fi_TT753____Vl
+        P1   =Fi_YT703____Vl
+        P2   =Fi_YT704____Vl
+        P3   =Fi_TT705____Vl
+        P4   =Fi_TT754____Vl
+        P5   =Fi_TT755____Vl
+        P6   =Fi_TT756____Vl
+        P7   =Fi_TT757____Vl
+        P8   =Fi_TT751____Vl
+        P9   =Fi_TT752____Vl
+        P10  =Fi_TT711____Vl
+        P11  =Fi_TT712____Vl
+        P12  =Fi_TT713____Vl
+        P13  =Fi_TT714____Vl
+        P14  =Fi_TT721____Vl
+        P15  =Fi_TT722____Vl
+        P16  =Fi_TT723____Vl
+        P17  =Fi_TT724____Vl
+        P18  =Fi_TT731____Vl
+        P19  =Fi_TT732____Vl
+        P20  =Fi_TT733____Vl
+        P21  =Fi_TT734____Vl
+        P22  =Fi_TT741____Vl
+        P23  =Fi_TT742____Vl
+        P24  =Fi_TT743____Vl
+        P25  =Fi_TT744____Vl
+        P26  =Fi_TT703____Vl
+        P27  =Fi_TT704____Vl
+        P28  =Fi_TT758____Vl
+        P29  =Fi_TT759____Vl
+        P30  =Fi_TT760____Vl
+        P31  =Fi_YT701____Vl
+        P32  =Fi_TT701____Vl
+        P33  =Fi_TT731_1__Vl
+        P34  =Fi_TT731_2__Vl
+        P35  =Fi_TT731_3__Vl
+        P36  =Fi_TT731_4__Vl
+        P37  =Fi_TT731_5__Vl
+        P38  =Fi_TT731_6__Vl
+        P39  =Fi_TT731_7__Vl
+        P40  =Fi_TT731_8__Vl
+        P41  =Fi_TT732_1__Vl
+        P42  =Fi_TT732_2__Vl
+        P43  =Fi_TT732_3__Vl
+        P44  =Fi_TT732_4__Vl
+        P45  =Fi_TT732_5__Vl
+        P46  =Fi_TT732_6__Vl
+        P47  =Fi_TT732_7__Vl
+        P48  =Fi_TT732_8__Vl
+        P49  =Fi_TT733_1__Vl
+        P50  =Fi_TT733_2__Vl
+        P51  =Fi_TT733_3__Vl
+        P52  =Fi_TT733_4__Vl
+        P53  =Fi_TT733_5__Vl
+        P54  =Fi_TT733_6__Vl
+        P55  =Fi_TT733_7__Vl
+        P56  =Fi_TT733_8__Vl
+        P57  =Fi_TT702____Vl
+        P58  =Fi_TT761____Vl
+        P59  =Fi_TT762____Vl
+        P60  =Fi_TT763____Vl
+        P61  =Fi_TT764____Vl
+        P62  =Fi_TT765____Vl
+        P63  =Fi_YT702____Vl
+        P64  =Fi_TT766____Vl
+        P65  =Fi_TT767____Vl
+        P66  =Fi_CT711____Vl
+        P67  =Fi_CT712____Vl
+        P68  =Fi_CT713____Vl
+        P69  =Fi_CT714____Vl
+        P70  =Fi_eCT751___Vl
+        P71  =Fi_TT768____Vl
+        P72  =Fi_eTT751___Vl
+        P73  =Fi_eTT752___Vl
+        P74  =Fi_eTT753___Vl
+        P75  =Fi_eTT754___Vl
+		
+        P76  =Fi_KT704____Vl
+        P77  =Fi_KT705____Vl
+        P78  =Fi_KT706_1__Vl
+        P79  =Fi_KT706_2__Vl
+        P80  =Fi_KT709_1__Vl
+        P81  =Fi_KT709_2__Vl
+        P82  =Fi_KT709_3__Vl
+        P83  =Fi_KT709_4__Vl
+        P84  =Fi_KT707____Vl
+        P85  =Fi_KT708____Vl
+        P86  =Fi_TT711411_Vl
+        P87  =Fi_TT711421_Vl
+        P88  =Fi_TT712411_Vl
+        P89  =Fi_TT712421_Vl
+        P90  =Fi_TT711412_Vl
+        P91  =Fi_TT711422_Vl
+        P92  =Fi_TT712412_Vl
+        P93  =Fi_TT712422_Vl
+		
+        P94  =Fi_LT3527___Vl
+        P95  =Fi_TT3527___Vl
+        P96  =Fi_TT3687___Vl
+		
+        P97  =Fi_TT767_4__Vl
+        P98  =Fi_TT767_6__Vl
+        P99  =Fi_TT767_9__Vl
+        P100 =Fi_TT92100__Vl
+        P101 =Fi_TT767_3__Vl
+        P102 =Fi_TT767_5__Vl
+        P103 =Fi_TT94107__Vl
+
+        P104 =Fi_KKT701___Vl
+        P105 =Fi_KKT701T__Vl
+        P106 =Fi_KKT703___Vl
+        P107 =Fi_TT983____Vl
+        P108 =Fi_KKT702___Vl
+        P109 =Fi_KKT704P__Vl
+        P110 =Fi_KKT702T__Vl
+		
+
+    CPAR:
+        P0 = ArchOb1Activate
+        P1 = ArchOb1_CAF
+        P2 = ArchOb1_CA0
+        P3 = ArchOb1_CA1
+        P4 = ArchOb1_CA2
+    CFV: IF P0 == 1 : Q1; IF P0 == 2: Q2; ELSE Q0;
+    CAFV: ELSE P1;
+    CA0: SEC:P2,
+    CA1: SEC:P3,
+    CA2: SEC:P4,
+    TPAR:
+        P0 = ArchOb1CiclSec
+        P1 = ArchOb1CiclMin
+        P2 = ArchOb1CiclHour
+        P3 = ArchOb1CiclDay
+        P4 = ArchOb1CiclNum
+        P5 = ArchOb1StopDelaSec
+        P6 = ArchOb1StopDelaMin
+        P7 = ArchOb1StopDelaHour
+        P8 = ArchOb1StopDelaDay
+    TR: SEC:P0, MIN:P1, HOUR:P2, YDAY:P3
+    TC: P4
+    TDR: SEC:P5, MIN:P6, HOUR:P7, YDAY:P8
+
+    OPAR:
+        P0 = ArchOb1_OFILEm
+        P1 = ArchOb1_OFILEw
+        P2 = ArchOb1_OFTXTm
+        P3 = ArchOb1_OFTXTw
+        P4 = ArchOb1_OAOsec
+        P5 = ArchOb1_OAOmin
+        P6 = ArchOb1_OAOhour
+        P7 = ArchOb1_OAOday
+        P8 = ArchOb1_ORSsec
+        P9 = ArchOb1_ORSmin
+        P10= ArchOb1_ORShour
+        P11= ArchOb1_ORSday
+
+    OFILE: ENABLE:P1, PATH:/prim_fi_data/archive/, NAME:bin,
+    OFTXT: ENABLE:P3, PATH:/prim_fi_data/archive/, NAME:txt,
+    OAO: SEC:P4, MIN:P5, HOUR:P6, YDAY:P7
+    ORS: SEC:P8, MIN:P9, HOUR:P10, YDAY:P11
+
+
+OBJ: ob2_1s
+    YPAR:
+        P0 = ArchOb2Type
+    TYPE: P0
+    IPAR:
+        P0   =Fi2_TT725____Vl
+        P1   =Fi2_4_TT706__Vl
+        P2   =Fi2_TT726____Vl
+        P3   =Fi2_TT729____Vl
+        P4   =Fi2_TT730____Vl
+        P5   =Fi2_TT731____Vl
+        P6   =Fi2_TT732____Vl
+        P7   =Fi2_TT734____Vl
+        P8   =Fi2_4_BT711__Vl
+        P9   =Fi2_4_CT711__Vl
+        P10  =Fi2_4_BT721__Vl
+        P11  =Fi2_4_CT721__Vl
+        P12  =Fi2_4_BT731__Vl
+        P13  =Fi2_4_CT731__Vl
+        P14  =Fi2_4_TT709__Vl
+        P15  =Fi2_4_TT708__Vl
+        P16  =Fi2_4_YT701__Vl
+        P17  =Fi2_4_TT701__Vl
+        P18  =Fi2_4_YT702__Vl
+        P19  =Fi2_4_TT702__Vl
+        P20  =Fi2_4_TT703__Vl
+        P21  =Fi2_4_TT704__Vl
+        P22  =Fi2_4_TT705__Vl
+        P23  =Fi2_4_TT707__Vl
+        P24  =Fi2_4_TT710__Vl
+		
+        P25  =Fi2_KT710_1__Vl
+        P26  =Fi2_KT710_2__Vl
+        P27  =Fi2_KT710_3__Vl
+        P28  =Fi2_KT710_4__Vl
+        P29  =Fi2_TT715401_Vl
+        P30  =Fi2_TT715402_Vl
+        P31  =Fi2_TT715403_Vl
+        P32  =Fi2_TT715404_Vl
+        P33  =Fi2_TT715405_Vl
+        P34  =Fi2_TT715406_Vl
+        P35  =Fi2_TT715407_Vl
+        P36  =Fi2_TT715408_Vl
+        P37  =Fi2_TT715409_Vl
+        P38  =Fi2_TT715410_Vl
+        P39  =Fi2_TT715411_Vl
+        P40  =Fi2_TT715412_Vl
+        P41  =Fi2_TT715413_Vl
+        P42  =Fi2_TT715414_Vl
+        P43  =Fi2_TT715415_Vl
+        P44  =Fi2_TT715416_Vl
+        P45  =Fi2_TT716401_Vl
+        P46  =Fi2_TT716402_Vl
+        P47  =Fi2_TT716403_Vl
+        P48  =Fi2_TT716404_Vl
+        P49  =Fi2_TT716405_Vl
+        P50  =Fi2_TT716406_Vl
+        P51  =Fi2_TT716407_Vl
+        P52  =Fi2_TT716408_Vl
+        P53  =Fi2_TT716409_Vl
+        P54  =Fi2_TT716410_Vl
+        P55  =Fi2_TT716411_Vl
+        P56  =Fi2_TT716412_Vl
+        P57  =Fi2_TT716413_Vl
+        P58  =Fi2_TT716414_Vl
+        P59  =Fi2_TT716415_Vl
+        P60  =Fi2_TT716416_Vl
+	
+		
+    CPAR:
+        P0 = ArchOb2Activate
+        P1 = ArchOb2_CAF
+        P2 = ArchOb2_CA0
+        P3 = ArchOb2_CA1
+        P4 = ArchOb2_CA2
+    CFV: IF P0 == 1 : Q1; IF P0 == 2: Q2; ELSE Q0;
+    CAFV: ELSE P1;
+    CA0: SEC:P2,
+    CA1: SEC:P3,
+    CA2: SEC:P4,
+    TPAR:
+        P0 = ArchOb2CiclSec
+        P1 = ArchOb2CiclMin
+        P2 = ArchOb2CiclHour
+        P3 = ArchOb2CiclDay
+        P4 = ArchOb2CiclNum
+        P5 = ArchOb2StopDelaSec
+        P6 = ArchOb2StopDelaMin
+        P7 = ArchOb2StopDelaHour
+        P8 = ArchOb2StopDelaDay
+    TR: SEC:P0, MIN:P1, HOUR:P2, YDAY:P3
+    TC: P4
+    TDR: SEC:P5, MIN:P6, HOUR:P7, YDAY:P8
+
+    OPAR:
+        P0 = ArchOb2_OFILEm
+        P1 = ArchOb2_OFILEw
+        P2 = ArchOb2_OFTXTm
+        P3 = ArchOb2_OFTXTw
+        P4 = ArchOb2_OAOsec
+        P5 = ArchOb2_OAOmin
+        P6 = ArchOb2_OAOhour
+        P7 = ArchOb2_OAOday
+        P8 = ArchOb2_ORSsec
+        P9 = ArchOb2_ORSmin
+        P10= ArchOb2_ORShour
+        P11= ArchOb2_ORSday
+
+    OFILE: ENABLE:P1, PATH:/prim_fi_data/archive/, NAME:bin,
+    OFTXT: ENABLE:P3, PATH:/prim_fi_data/archive/, NAME:txt,
+    OAO: SEC:P4, MIN:P5, HOUR:P6, YDAY:P7
+    ORS: SEC:P8, MIN:P9, HOUR:P10, YDAY:P11
+
+
+OBJ: ob3_1s
+    YPAR:
+        P0 = ArchOb3Type
+    TYPE: P0
+    IPAR:
+        P0   =Fi3_PT708_Vl
+        P1   =Fi3_PT709_Vl
+        P2   =Fi3_PT710_Vl
+        P3   =Fi3_PT711_Vl
+        P4   =Fi3_PT712_Vl
+        P5   =Fi3_PT713_Vl
+        P6   =Fi3_TT702_Vl
+        P7   =Fi3_TT752_Vl
+        P8   =Fi3_TT701_Vl
+        P9   =Fi3_TT753_Vl
+        P10  =Fi3_PT701_Vl
+        P11  =Fi3_PT702_Vl
+        P12  =Fi3_PT703_Vl
+        P13  =Fi3_PT704_Vl
+        P14  =Fi3_PT705_Vl
+        P15  =Fi3_PT706_Vl
+        P16  =Fi3_PT707_Vl
+        P17  =Fi3_PT714_Vl
+        P18  =Fi3_PT715_Vl
+        P19  =Fi3_PT718_Vl
+        P20  =Fi3_PT716_Vl
+        P21  =Fi3_PT717_Vl
+        P22  =Fi3_PT719_Vl
+        P23  =Fi3_TT703_Vl
+        P24  =Fi3_KT7111___Vl
+        P25  =Fi3_KT7112___Vl
+        P26  =Fi3_KT7113___Vl
+        P27  =Fi3_KT7114___Vl
+        P28  =Fi3_KT7115_1_Vl
+        P29  =Fi3_KT7115_2_Vl
+        P30  =Fi3_KT716_1__Vl
+        P31  =Fi3_KT716_2__Vl
+		
+		
+		
+		
+    CPAR:
+        P0 = ArchOb3Activate
+        P1 = ArchOb3_CAF
+        P2 = ArchOb3_CA0
+        P3 = ArchOb3_CA1
+        P4 = ArchOb3_CA2
+    CFV: IF P0 == 1 : Q1; IF P0 == 2: Q2; ELSE Q0;
+    CAFV: ELSE P1;
+    CA0: SEC:P2,
+    CA1: SEC:P3,
+    CA2: SEC:P4,
+    TPAR:
+        P0 = ArchOb3CiclSec
+        P1 = ArchOb3CiclMin
+        P2 = ArchOb3CiclHour
+        P3 = ArchOb3CiclDay
+        P4 = ArchOb3CiclNum
+        P5 = ArchOb3StopDelaSec
+        P6 = ArchOb3StopDelaMin
+        P7 = ArchOb3StopDelaHour
+        P8 = ArchOb3StopDelaDay
+    TR: SEC:P0, MIN:P1, HOUR:P2, YDAY:P3
+    TC: P4
+    TDR: SEC:P5, MIN:P6, HOUR:P7, YDAY:P8
+
+    OPAR:
+        P0 = ArchOb3_OFILEm
+        P1 = ArchOb3_OFILEw
+        P2 = ArchOb3_OFTXTm
+        P3 = ArchOb3_OFTXTw
+        P4 = ArchOb3_OAOsec
+        P5 = ArchOb3_OAOmin
+        P6 = ArchOb3_OAOhour
+        P7 = ArchOb3_OAOday
+        P8 = ArchOb3_ORSsec
+        P9 = ArchOb3_ORSmin
+        P10= ArchOb3_ORShour
+        P11= ArchOb3_ORSday
+
+    OFILE: ENABLE:P1, PATH:/prim_fi_data/archive/, NAME:bin,
+    OFTXT: ENABLE:P3, PATH:/prim_fi_data/archive/, NAME:txt,
+    OAO: SEC:P4, MIN:P5, HOUR:P6, YDAY:P7
+    ORS: SEC:P8, MIN:P9, HOUR:P10, YDAY:P11

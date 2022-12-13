@@ -1,0 +1,11 @@
+###########################################################################
+#
+# Differences between monitorx.cfg files
+#
+
+MON1_       -> MONx_
+menu_fix1   -> menu_fixx
+service1    -> servicex
+/prim_fi       -> //x/prim_fi
+
+

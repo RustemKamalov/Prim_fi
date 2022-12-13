@@ -1,0 +1,51 @@
+#!/bin/sh
+
+#from:
+#  PARL: P0=M1_StationName P1=M1_GI2_14_Name P2=M1_A5_CtrWrd1 P3=M1_GI2_14_Type P4=M1_GI2_14_TypeSet P5=M1_GI2_14_Index P6=M1_GI2_14_S2_B01 P7=M1_GI2_14_S2_B02 P8=M1_GI2_14_S2_B03 P9=M1_GI2_14_S2_B04 P10=M1_GI2_14_S2_B05 P11=M1_GI2_14_S2_B06 P12=M1_GI2_14_S2_B07 P13=M1_GI2_14_S2_B08 P14=M1_GI2_14_S2_B09 P15=M1_GI2_14_S2_B10 P16=M1_GI2_14_S2_B11 P17=M1_GI2_14_S2_B12 P18=M1_GI2_14_S2_B13 P19=M1_GI2_14_S2_B14 P20=M1_GI2_14_S2_B15 P21=M1_GI2_14_S2_B16 P22=M1_GI2_14_CtrWrd
+#
+#to:
+#  PARL: P0=M1_StationName P1=M1_GI2_14_Name P2=M1_A5_CtrWrd1 P3=M1_GI2_14_Type P4=M1_GI2_14_TypeSet P5=M1_GI2_14_Index P6=M1_GI2_14_S2_B01 P7=M1_GI2_14_S2_B02 P8=M1_GI2_14_S2_B03 P9=M1_GI2_14_S2_B04 P10=M1_GI2_14_S2_B05 P11=M1_GI2_14_S2_B06 P12=M1_GI2_14_S2_B07 P13=M1_GI2_14_S2_B08 P14=M1_GI2_14_S2_B09 P15=M1_GI2_14_S2_B10 P16=M1_GI2_14_S2_B11 P17=M1_GI2_14_S2_B12 P18=M1_GI2_14_S2_B13 P19=M1_GI2_14_S2_B14 P20=M1_GI2_14_S2_B15 P21=M1_GI2_14_S2_B16 P22=M1_GI2_14_CtrWrd P23=M1_GI21_1_RdSt1 P24=M1_GI21_1_WrtSt P25=M1_GI21_1_PrCmd P26=M1_GI21_1_Stat1 P27=M1_GI21_1_Stat2 P28=M1_GI21_1_Posit P29=M1_GI21_1_PrPos P30=M1_GI21_1_Cmd P31=M1_GI21_1_PosSP
+#
+
+search='PARL: P0=\(M[12]_\)StationName P1=\(\1GI.....\)Name P2=\1A[1-5]_CtrWrd[12] P3=\2Type P4=\2TypeSet P5=\2Index P6=\2S2_B01 P7=\2S2_B02 P8=\2S2_B03 P9=\2S2_B04 P10=\2S2_B05 P11=\2S2_B06 P12=\2S2_B07 P13=\2S2_B08 P14=\2S2_B09 P15=\2S2_B10 P16=\2S2_B11 P17=\2S2_B12 P18=\2S2_B13 P19=\2S2_B14 P20=\2S2_B15 P21=\2S2_B16 P22=\2CtrWrd *$'
+#search='PARL: P0=\(M[12]_\)StationName P1=\(\1GI.....\)Name P2=\1A[1-5]_CtrWrd[12]'
+
+ch_scr='s/PARL: P0=\(M[12]_\)StationName P1=\(\1GI.....\)Name P2=\(\1A[1-5]_CtrWrd[12]\) P3=\2Type P4=\2TypeSet P5=\2Index P6=\2S2_B01 P7=\2S2_B02 P8=\2S2_B03 P9=\2S2_B04 P10=\2S2_B05 P11=\2S2_B06 P12=\2S2_B07 P13=\2S2_B08 P14=\2S2_B09 P15=\2S2_B10 P16=\2S2_B11 P17=\2S2_B12 P18=\2S2_B13 P19=\2S2_B14 P20=\2S2_B15 P21=\2S2_B16 P22=\2CtrWrd/PARL: P0=\1StationName P1=\2Name P2=\3 P3=\2Type P4=\2TypeSet P5=\2Index P6=\2S2_B01 P7=\2S2_B02 P8=\2S2_B03 P9=\2S2_B04 P10=\2S2_B05 P11=\2S2_B06 P12=\2S2_B07 P13=\2S2_B08 P14=\2S2_B09 P15=\2S2_B10 P16=\2S2_B11 P17=\2S2_B12 P18=\2S2_B13 P19=\2S2_B14 P20=\2S2_B15 P21=\2S2_B16 P22=\2CtrWrd P23=\2RdSt1 P24=\2WrtSt P25=\2PrCmd P26=\2Stat1 P27=\2Stat2 P28=\2Posit P29=\2PrPos P30=\2Cmd P31=\2PosSP/'
+
+for i in $(find /prim_fi/monitor/pict -type f -name '*.txt')
+#for i in $(find /tmp/proba -type f -name '*.txt')
+do
+
+#  file=$(file $i | grep ' text' | sed 's/:.*$//' | grep -v '.ori$')
+  file=$i
+
+  if [ "$file" != "" ]
+  then
+#    echo $file nem ures
+    if grep -q "$search" "$file"
+    then
+#      echo found search in file "$file" "\a"
+      read resp?"Convert $file ?      <Y/N>":
+      case $resp in
+        y|Y)
+            if test -f $file.ori
+            then
+              echo $file.ori exists, not converting
+            else
+              echo converting $file
+              cp $file $file.ori
+              sed "$ch_scr" $file > temp
+              mv temp $file
+              if [ "$(ls -F $file.ori | grep '*')" != "" ]
+              then
+                chmod a+x $file
+              fi
+            fi
+
+            ;;
+      esac
+
+    fi
+  fi
+
+done

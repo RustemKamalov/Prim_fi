@@ -1,0 +1,317 @@
+
+WOPT: p=A r=69 c=0 o=k;kmsab t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=2 h=0 w=0
+
+OBJ: 179_LNCH
+  PARL: P0=CLK_SRV_LNCH
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 177_STAT
+  PARL: P0=CLK_SRV_STAT
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 181_PRIO
+  PARL: P0=CLK_SRV_PRIO
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 183_ENAB
+  PARL: P0=CLK_SRV_ENAB
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 185_DELA
+  PARL: P0=CLK_SRV_DELA
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 188_INIT
+  PARL: P0=CLK_SRV_INIT
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 189_NAME
+  PARL: P0=CLK_SRV_NAME
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 5
+  PARL: P0=CLK_PRIO
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 19
+  PARL: P0=CLK_LOGF
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 21
+  PARL: P0=CLK_FLEN
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 23
+  PARL: P0=CLK_LOGC
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 25
+  PARL: P0=CLK_LOGM
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 27
+  PARL: P0=CLK_DELA
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 148
+  PARL: P0=CLK_RDCT
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 29
+  PARL: P0=CLK_OVRD
+  VALF: ELSE P0;
+OBEND
+
+OBJ: CLK_CNAM
+  PARL: P0=CLK_CNAM
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 32
+  PARL: P0=SysClkYear
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 34
+  PARL: P0=SysClkMonth
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 36
+  PARL: P0=SysClkDay
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 38
+  PARL: P0=SysClkHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 40
+  PARL: P0=SysClkMin
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 42
+  PARL: P0=SysClkSec
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 151
+  PARL: P0=PLCClkYear
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 153
+  PARL: P0=PLCClkMonth
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 155
+  PARL: P0=PLCClkDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 157
+  PARL: P0=PLCClkHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 159
+  PARL: P0=PLCClkMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 161
+  PARL: P0=PLCClkSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 167
+  PARL: P0=CLK_STAT
+  VALF: ELSE P0;
+OBEND
+
+OBJ: TSET
+  PARL: P0=CLK_TSET
+  SELD: a=FV p=P0 f=1 v=ELSE 1;
+OBEND
+
+OBJ: Close
+  SELD: a=FN p=21
+OBEND
+
+OBJ: 205_151
+  PARL: P0=SetClkYear
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 206_153
+  PARL: P0=SetClkMonth
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 207_155
+  PARL: P0=SetClkDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 208_157
+  PARL: P0=SetClkHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 209_159
+  PARL: P0=SetClkMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 210_161
+  PARL: P0=SetClkSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 211_TSET
+  PARL: P0=CLK_OSET
+  SELD: a=FV p=P0 f=1 v=ELSE 1;
+OBEND
+
+OBJ: 214_176_26_162_76
+  PARL: P0=SysClkDayOfWeek
+  TXTD: Q1="Sun" Q2="Mon" Q3="Tue" Q4="Wed" Q5="Thu" Q6="Fri" Q7="Sat"
+  TXTF: IF P0 == 1 : Q1;IF P0 == 2 : Q2;IF P0 == 3 : Q3;IF P0 == 4 : Q4;IF P0 == 5 : Q5;IF P0 == 6 : Q6;IF P0 == 7 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 216_214_176_26_16
+  PARL: P0=PLCClkDayOfWeek
+  TXTD: Q1="Sun" Q2="Mon" Q3="Tue" Q4="Wed" Q5="Thu" Q6="Fri" Q7="Sat"
+  TXTF: IF P0 == 1 : Q1;IF P0 == 2 : Q2;IF P0 == 3 : Q3;IF P0 == 4 : Q4;IF P0 == 5 : Q5;IF P0 == 6 : Q6;IF P0 == 7 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 218_216_214_176_2
+  PARL: P0=SetClkDayOfWeek
+  TXTD: Q1="Sun" Q2="Mon" Q3="Tue" Q4="Wed" Q5="Thu" Q6="Fri" Q7="Sat"
+  TXTF: IF P0 == 1 : Q1;IF P0 == 2 : Q2;IF P0 == 3 : Q3;IF P0 == 4 : Q4;IF P0 == 5 : Q5;IF P0 == 6 : Q6;IF P0 == 7 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 227_205_151
+  PARL: P0=OprClkYear
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 228_206_153
+  PARL: P0=OprClkMonth
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 229_207_155
+  PARL: P0=OprClkDay
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 230_208_157
+  PARL: P0=OprClkHour
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 231_209_159
+  PARL: P0=OprClkMin
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 232_210_161
+  PARL: P0=OprClkSec
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 234_218_216_214_1
+  PARL: P0=OprClkDayOfWeek
+  TXTD: Q1="Sun" Q2="Mon" Q3="Tue" Q4="Wed" Q5="Thu" Q6="Fri" Q7="Sat"
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: CLK_SPAR
+  PARL: P0=CLK_SPAR
+  TXTD: Q1=@P0
+  TXTF: ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: BEEP
+  PARL: P0=Beep
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: CYCL
+  PARL: P0=CLK_CYCL
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: NODE
+  PARL: P0=CLK_NODE
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: DIFF
+  PARL: P0=CLK_DIFF
+  VALF: ELSE P0;
+OBEND
+
+OBJ: UTCT
+  PARL: P0=CLK_UTCT
+  VALF: ELSE P0;
+OBEND

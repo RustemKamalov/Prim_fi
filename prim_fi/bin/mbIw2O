@@ -1,0 +1,282 @@
+# /bin/sh -c
+#ifdef __USAGE
+# Usage:
+#%C <mb_txt_file> [<out_file>]
+#%C changes asyncron o=Iw writes to o=O in <mb_txt_file>
+#   resulting <out_file>.
+#   If not specified <out_file>=<mb_txt_file>.Iw2O
+#
+#   Rectrictions: Clock and chain writes should be done before.
+#       An object could contain maximum one #@Address: #@End: pair,
+#       if one of them exist alone: warning.
+#       Only o=Iw objects are checked (eg. o=IW, o=Iiw,... not)
+#       For Mx_MB_Enable Mx always form the tag derived
+#       Only first tag looked after S=
+#       ,? tags are ignored at o=O
+#endif
+
+if test $# -eq 0
+then
+    echo 'Usage: mbIw2O <mb_txt_file> [<obj_header> [<out_file>]]'
+    echo 'Changes asyncron o=Iw writes to o=O in <mb_txt_file>'
+    exit -1
+fi
+
+txt_file=$1
+
+if test $# -gt 1
+then
+  out_file=$2
+else
+  out_file="$txt_file".Iw2O
+fi
+
+max_line_no=$(cat $txt_file | wc -l)
+let max_line_no="$max_line_no"+1
+
+echo "mbIw2O: converting $txt_file to $out_file"
+echo "#File converted by mbIw2O" > $out_file
+
+# make todo list
+for todo in $(awk '
+    BEGIN   {copy_start_no=1; head_ok=0; found_iw=0; found_com=0;}
+    /^OBJ:/ {
+              if (head_ok!=1) {
+                head_ok=1; obj_start_no=NR;
+              }
+              else {
+                if (found_iw==1) {
+                  print(copy_start_no ":" obj_start_no-1 ":copy");
+                  copy_start_no=obj_last_no+1;
+                  if (found_com==1) {
+                    print(obj_start_no ":" obj_last_no ":comment")
+                  }
+                  else if (found_trg==1) {
+                    print(obj_start_no ":" obj_last_no ":change")
+                  }
+                  else {
+                    print(obj_start_no ":" obj_last_no ":notrg")
+                  }
+                }
+                obj_start_no=NR;
+                found_trg=0;
+                found_com=0;
+                found_iw=0;
+              }
+            }
+
+    /^M:.*o=Iw/ {found_iw=1}
+    /^[ \t]*FUNC:[ \t]*ELSE[ \t]*Q0[ \t]*;/ {found_com=1}
+    /^[ /t]*PARL:[ /t]*P0=.._ChDtTrg[0-9][0-9][0-9]/ {found_trg=1}
+    /^M:.*p=|^#@End/ {obj_last_no=NR}
+
+    END {
+          if (found_iw==1) {
+            print(copy_start_no ":" obj_start_no-1 ":copy");
+            if (found_com==1) {
+              print(obj_start_no ":" obj_last_no ":comment")
+            }
+            else if (found_trg==1) {
+              print(obj_start_no ":" obj_last_no ":change")
+            }
+            else {
+              print(obj_start_no ":" obj_last_no ":notrg")
+            }
+            print(obj_last_no+1 ":" NR ":copy");
+          }
+          else {
+            print(copy_start_no ":" NR ":copy");
+          }
+        }
+    ' $txt_file)
+
+do #for
+  #execute todo list
+  start=$(echo $todo| awk -F':' '{print $1}')
+  end=$(echo $todo| awk -F':' '{print $2}')
+  command=$(echo $todo| awk -F':' '{print $3}')
+
+  if [ $command = "copy" ]
+  # nothing to do, copy only lines
+  then
+    echo "copy lines $start-$end"
+    awk 'NR=='"$start"', NR=='"$end"' {print $0}' $txt_file >> $out_file
+
+  elif [ $command = "comment" ]
+  # comment original lines, insert o=O objects in "always_write" mode
+  then
+    echo "comment lines $start-$end"
+    echo "found o=Iw and FUNC: ELSE Q0;: commenting object"
+    echo "#mbIw2O: found o=Iw and FUNC: ELSE Q0;: commenting object" \
+        >> $out_file
+    echo "inserting o=O objects in \"always_write\" mode"
+    echo "#mbIw2O: inserting o=O objects in \"always_write\" mode" > tmpob
+    
+    awk 'NR=='"$start"', NR=='"$end"' { 
+          print("#" $0);
+          if ($0 ~ /^OBJ:/) {
+            if (objfound==1) {
+              print("#Error: unexpected OBJ: found") >> "tmpob"
+            }
+            else {objname=$2; objfound=1;}
+          }
+          if ($0 ~ /^#@Address:/) {
+            if (addrfound==1) {
+              print("#Warning: more #@Address: found, missing #@End") \
+                >>"tmpob"
+            }
+            print $0 >> "tmpob";
+            addrfound=1;
+          }
+          if ($0 ~ /^#@End/) {
+            if (addrfound!=1) {
+              print "#Warning: unexpected #@End found" >> "tmpob"
+            }
+            print $0 >> "tmpob";
+            addrfound=0;
+          }
+          if ($0 ~ /^M:.*o=Iw.*S=[a-zA-Z]/) {
+            if (objfound!=1) {
+              print "#Error: o=Iw line found without OBJ:" >> "tmpob"
+            }
+            else {
+              sub(/o=Iw/,"o=O");
+              gsub(/[,][?]/,"");
+              tagname=$0;
+              sub(/^.*S=/,"",tagname);
+              sub(/[, \t].*/,"",tagname);
+              Mx=substr(tagname,1,2);
+
+              print("OBJ: " objname "_" tagname) >> "tmpob";
+              print("  DBG:  v=3") >> "tmpob";
+              print("  TMNG: t=0") >> "tmpob";
+              print("  PARL: P0=" Mx "_MB_Enable P1=MBPLUS_SRV_STAT P2=" \
+                "SystemStart P3=" tagname) >> "tmpob";
+              print("  FUNC: IF P0 && !S1 && (P1==3) && P2 && S3 :Q1; " \
+                "ELSE Q0;") >> "tmpob";
+              print($0) >> "tmpob";
+            }
+          }
+        }
+      END {
+            if (addrfound==1) {
+              print("#Warning: missing #@End")  >> "tmpob"
+            }
+            close("tmpob");
+          }
+      ' $txt_file >> $out_file
+
+    cat tmpob >> $out_file
+
+  elif [ $command = "change" ]
+  # change o=Iw to o=I in lines, insert o=O objects in "smart_write" mode
+  then
+    echo "change lines $start-$end"
+    echo "found o=Iw and not found FUNC: ELSE Q0;: changing object"
+    echo "#mbIw2O: found o=Iw and not found FUNC: ELSE Q0;: changing object" \
+        >> $out_file
+    echo "inserting o=O objects in \"smart_write\" mode"
+    echo "#mbIw2O: inserting o=O objects in \"smart_write\" mode" > tmpob
+    
+    awk 'NR=='"$start"', NR=='"$end"' { 
+          line=$0
+          sub(/o=Iw/,"o=I",line);         
+          print(line);
+          if ($0 ~ /^OBJ:/) {
+            if (objfound==1) {
+              print("#Error: unexpected OBJ: found") >> "tmpob"
+            }
+            else {objname=$2; objfound=1;}
+          }
+          if ($0 ~ /^[ /t]*PARL:[ /t]*P0=.._ChDtTrg[0-9][0-9][0-9]/) {
+            if (trgfound==1) {
+              print("#Error: unexpected PARL:...ChDtTrg found") >> "tmpob"
+            }
+            else {
+              trgfound=1;
+              trgname=$2;
+              sub(/^P0=/,"",trgname);
+              sub(/DtTrg/,"WrDis",trgname);
+            }
+          }
+          if ($0 ~ /^#@Address:/) {
+            if (addrfound==1) {
+              print("#Warning: more #@Address: found, missing #@End") \
+                >>"tmpob"
+            }
+            print $0 >> "tmpob";
+            addrfound=1;
+          }
+          if ($0 ~ /^#@End/) {
+            if (addrfound!=1) {
+              print "#Warning: unexpected #@End found" >> "tmpob"
+            }
+            print $0 >> "tmpob";
+            addrfound=0;
+          }
+          if ($0 ~ /^M:.*o=Iw.*S=[a-zA-Z]/) {
+            if (trgfound!=1) {
+              print "#Error: o=Iw line found without PARL:...ChDtTrg" \
+                >> "tmpob"
+            }
+            else if (objfound!=1) {
+              print "#Error: o=Iw line found without OBJ:" >> "tmpob"
+            }
+            else {
+              sub(/o=Iw/,"o=O");
+              gsub(/[,][?]/,"");
+              tagname=$0;
+              sub(/^.*S=/,"",tagname);
+              sub(/[, \t].*/,"",tagname);
+              Mx=substr(tagname,1,2);
+
+              print("OBJ: " objname "_" tagname) >> "tmpob";
+              print("  DBG:  v=3") >> "tmpob";
+              print("  TMNG: t=0") >> "tmpob";
+              print("  PARL: P0=" Mx "_MB_Enable P1=MBPLUS_SRV_STAT P2=" \
+                "SystemStart P3=" tagname " P4=" trgname) >> "tmpob";
+              print("  FUNC: IF P0 && !S1 && (P1==3) && P2 && S3 && (P4==0) "\
+                ":Q1; ELSE Q0;") >> "tmpob";
+              print($0) >> "tmpob";
+            }
+          }
+        }
+      END {
+            if (addrfound==1) {
+              print("#Warning: missing #@End")  >> "tmpob"
+            }
+            close("tmpob");
+          }
+      ' $txt_file >> $out_file
+
+    cat tmpob >> $out_file
+
+  elif [ $command = "notrg" ]
+  # warning: object should be changed but no ChDtTrg found for "smart_write"
+  # copy only object
+  then
+    echo "notrg: copy lines $start-$end"
+    echo "Warning: found o=Iw and not found FUNC: ELSE Q0; and ChDtTrg: copy object"
+    echo "#Warning: found o=Iw and not found FUNC: ELSE Q0; and ChDtTrg: copy object" \
+        >> $out_file
+
+    awk 'NR=='"$start"', NR=='"$end"' {print $0}' $txt_file >> $out_file
+
+  else
+    echo "Error: unknown command ( $command ) lines $start-$end"
+  fi
+  
+done
+
+awk 'BEGIN {errno=0; warno=0}
+    /^#Error/ {errno+=1}
+    /^#Warning/ {warno+=1}
+    END { print(errno " errors, " warno " warnings");
+          if ((errno)!=0) {exit -1}
+        }' $out_file
+
+exit_stat=$?  #Exit status of the previous command
+
+rm tmpob
+
+exit $exit_stat

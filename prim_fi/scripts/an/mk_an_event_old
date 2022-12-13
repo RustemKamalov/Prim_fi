@@ -1,0 +1,50 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="an_"$M"_list"
+event_file="an_"$M"_event"
+
+echo finding analog identifiers
+
+# find analog names (identifiers)
+for i in $(awk '/^AnValue/ { print(NR) }' $list_file)
+do
+    line=$(awk 'NR=='$i' {print $0}' $list_file)
+    name=$(echo $line | awk '{print $2}')
+	if [ "$name" = "" ]
+	  then
+        name=$(echo $line| awk '{print($1) }' | sed 's/AnValue/RM/')
+    fi
+    names=$names" "$name
+done
+
+# begin output files
+echo Writing file $event_file ...
+echo "# analog events\n" > $event_file
+
+# processing an_event_tmpl
+head_line_no=1
+for obj_line_no in $(awk '/^OBJ/ {print NR}' an_event_tmpl)
+do
+    echo head_line_no: $head_line_no  obj_line_no $obj_line_no 
+    #find header
+    awk 'NR=='$head_line_no', NR=='"$obj_line_no-1"' {print $0}' an_event_tmpl \
+        >> $event_file
+
+    #find object
+    awk 'NR=='$obj_line_no',  /[^\\]$/ {print $0}' an_event_tmpl | \
+        sed 's/$M/'$M'/g' > obj_file
+    head_line_no=$(awk 'NR=='$obj_line_no',  /[^\\]$/ \
+        {if ($0 ~ /[^\\]$/) {print NR} }' an_event_tmpl)
+    head_line_no=$(expr $head_line_no + 1)
+
+    #make all analogs with this object
+    for id in $names
+    do
+        sed 's/$id/'$id'/g' obj_file >> $event_file
+    done
+
+done
+
+rm obj_file

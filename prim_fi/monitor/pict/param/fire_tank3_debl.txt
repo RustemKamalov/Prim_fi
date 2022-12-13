@@ -1,0 +1,11 @@
+
+WOPT: p=Cc r=0 c=0 o=ks-r;kmsa-O t=1 e=0 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 81
+  PARL: P0=PARAM0
+  SELD: a=FV p=P0  f=1  v=ELSE 0x0200;
+OBEND
+
+KBDG2: 81

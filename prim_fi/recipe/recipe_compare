@@ -1,0 +1,51 @@
+#!/bin/sh
+
+#ﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂ
+# recipe compare
+# compares init values in pipe.txt (->data_init.txt.pipe)
+# and data_init.d.live (->data_init.txt.live)
+#       (also needed header data_init.h.live)
+# difference: data_init.txt.diff
+#‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹
+echo "\n<ﬂﬂﬂﬂﬂﬂﬂﬂ\n  RECIPE COMPARE\n‹‹‹‹‹‹‹‹\n >"
+
+# Save existing rcp_dyn and data_init files
+echo 'Save existing rcp_dyn and data_init files to *.ori'
+cp /prim_fi/recipe/rcp_dyn /prim_fi/recipe/rcp_dyn.ori
+cp /prim_fi/recipe/data_init.txt /prim_fi/recipe/data_init.txt.ori
+cp /prim_fi/recipe/data_init.hdr /prim_fi/recipe/data_init.hdr.ori
+cp /prim_fi/recipe/data_init.dat.0 /prim_fi/recipe/data_init.d.ori
+
+# Get init values form pipe.txt
+/prim_fi/bin/rcpdatagen /prim_fi/data/txt/pipe.txt /prim_fi/recipe/data_init.txt | tee recipe_gen.err
+grep -e "error" recipe_gen.err
+set +v
+grep -e "error" recipe_gen.err
+echo "\a"
+read resp?"Continue ?      <Y/N>":
+case $resp in
+  y|Y) echo continue ;;
+  n|N) exit -1  ;;
+esac
+
+/Dmon/bin/dmrecipecomp  /prim_fi/config/recipex.ini
+/Dmon/bin/dmrecipedecomp data_init /prim_fi/recipe /prim_fi/recipe
+cp /prim_fi/recipe/data_init.txt /prim_fi/recipe/data_init.txt.pipe
+
+
+#get init values form data_init.d.live to data_init.txt.live
+cp /prim_fi/recipe/data_init.d.live /prim_fi/recipe/data_init.dat.0
+cp /prim_fi/recipe/data_init.h.live /prim_fi/recipe/data_init.hdr
+/Dmon/bin/dmrecipedecomp data_init /prim_fi/recipe /prim_fi/recipe
+cp /prim_fi/recipe/data_init.txt /prim_fi/recipe/data_init.txt.live
+
+
+# Copy back ori rcp_dyn and data_init files
+cp /prim_fi/recipe/rcp_dyn.ori /prim_fi/recipe/rcp_dyn
+cp /prim_fi/recipe/data_init.txt.ori /prim_fi/recipe/data_init.txt
+cp /prim_fi/recipe/data_init.hdr.ori /prim_fi/recipe/data_init.hdr
+cp /prim_fi/recipe/data_init.d.ori /prim_fi/recipe/data_init.dat.0
+
+
+#compare data_init.txt.live and data_init.txt.pipe files
+diff data_init.txt.live data_init.txt.pipe > data_init.txt.diff

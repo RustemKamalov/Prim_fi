@@ -1,0 +1,12 @@
+OBJ: M1_ChWrDisxxx
+    CPAR: P0 = M1_ChDtTrgxxx
+    CFV: ELSE Q2;
+    TR0: SEC:0,
+    TR1: SEC:1,
+    TC: 2,
+    OPAR:
+        P0 = M1_ChWrDisxxx
+        P1 = M1_ChDtTrgxxx
+    OFV0: P0 = ELSE 1;
+    OFV1: P0 = ELSE P1;
+

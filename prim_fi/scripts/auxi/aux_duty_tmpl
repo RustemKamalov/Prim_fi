@@ -1,0 +1,6 @@
+$M_$mi_DutySend        ,  U,100, $M_AuxWords          , N, 0, 0, "$machname duty sel.send"
+$M_$mi_Duty            ,  U,  0, $M_AuxWords          , N, 0, 0, "$machname duty selector"
+$M_$mi_Stat            ,  U,  0, $M_AuxWords          , N, 0, 0, "$machname status word"
+$M_$mi_CtrWrd          ,  U,100, $M_AuxWords          , N, 0, 0, "$machname ctr.word from MDP "
+$M_$mi_RemTSet         ,  B,100, $M_AuxBits           , N, 0, 0, "$machname set REMONT time   "
+$M_$mi_OprTSet         ,  B, 50, $M_AuxBits           , N, 0, 0, "$machname set put in oper.time"

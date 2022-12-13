@@ -1,0 +1,82 @@
+
+WOPT: p=A r=181 c=181 o=k-r;kmsa t=1 e=1 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 40
+  PARL: P0=PARAM2
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 45
+  PARL: P0=PARAM4
+  VALF: IF P0 < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 1500
+  PARL: P0=PARAM4
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 49
+  PARL: P0=PARAM5
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 1501
+  PARL: P0=PARAM5
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 53
+  PARL: P0=PARAM3
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 54
+  PARL: P0=PARAM1
+  TXTD: Q1=Включен
+  TXTF: ELSE Q1;
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 60
+  PARL: P0=PARAM0
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 61
+  PARL: P0=PARAM1
+  TXTD: Q1=Отключен
+  TXTF: ELSE Q1;
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF P0 : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 63
+  PARL: P0=PARAM6
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 65
+  PARL: P0=PARAM6
+  TXTD: Q1=Не_учитывается Q2=Воскресенье Q3=Понедельник Q4=Вторник Q5=Среда Q6=Четверг Q7=Пятница Q8=Суббота
+  TXTF: IF P0 == 0 : Q2;IF P0 == 1 : Q3;IF P0 == 2 : Q4;IF P0 == 3 : Q5;IF P0 == 4 : Q6;IF P0 == 5 : Q7;IF P0 == 6 : Q8;ELSE Q1;
+OBEND

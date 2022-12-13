@@ -1,0 +1,3 @@
+echo  "ciril font es klaviatura betoltes \a"
+cfont -f3 /etc/config/cfont/cyr.11
+kbd /etc/config/kbd/CYR102

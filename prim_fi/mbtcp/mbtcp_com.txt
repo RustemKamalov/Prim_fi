@@ -1,0 +1,898 @@
+########################################################################
+#
+# Common config file for the new MODBUS protocoll family
+# MODBUS+ (PC1), DO NOT MODIFY THE LINES BEGINNING WITH '#@'
+# They are the addresses of the second PC.
+#
+########################################################################
+
+###############################################################################
+#
+# Qdiagem Modbus/Modbus Plus Protocol configuration file
+#
+#      - lines starting with '#' are considered as comments;
+#      - default values are shown in [];
+#      - lines ending with '\' are continueing in the next line(s);
+#      - when defining values, if the first character is '0', the digits
+#        are treated as octal, and if the first characters are '0x' or
+#        '0X' the digits are treated as hexadecimal;
+#      - when defining signal names the special predefined signal '?'
+#        means 'any signal'; it can be used to be assigned to unused
+#        PLC locations thus reducing the number of the necessary
+#        messages;
+#
+##############################################################################
+
+#===========================================================================
+#
+# Configuration parameters;
+#  In this section every data consits of two parameters, where
+#    v=fix value (valid if 's' is not defined or initially while the
+#      signal is not set by a module)
+#    s=signal name (the value of the signal overrides 'v' if the signal
+#      is written; when the module starts the signals' values are set
+#      to the value given with 'v')
+#
+
+#--------------------------------------------------------------------------
+#
+# Module's priority (0-19/29)                  [10, -]
+#
+#PRIO:  v=10 s=MBT_PRIO
+PRIO:  v=14 s=MBT_PRIO
+
+
+#--------------------------------------------------------------------------
+#
+# Print messages to logfile (0/1/2)                [0, -]
+#      v=0 means don't print anything (except upon initialisation)
+#      v=1 means print error messages
+#      v=2 means give detailed info about the communication with the PLCs
+#
+LOGF:  v=1    s=MBT_LOGF
+
+
+#--------------------------------------------------------------------------
+#
+# Maximum number of lines in logfile (min 1)          [10000, -]
+#      The logfile will be reopened after the given number of lines
+#      had been written. (Backup will be created.)
+#
+FLEN:  v=10000  s=MBT_FLEN
+
+
+#--------------------------------------------------------------------------
+#
+# Print messages to console (0/1/2/)              [0, -]
+#      v=0 means don't print anything (except upon initialisation)
+#      v=1 means print error messages
+#      v=2 means give detailed info about the messages sent/received of
+#        an object (if 'DBG' is enabled at the object's definition)
+#
+LOGC:  v=1    s=MBT_LOGC
+
+
+#--------------------------------------------------------------------------
+#
+# Console name                          [-, -]
+#      If not defined, the program's current console is assumed
+#
+#CNAM:  v=/dev/con1  s=MBT_CNAM
+
+
+#--------------------------------------------------------------------------
+#
+# Send messages to monitor module                [1, -]
+#      v=0 means don't print anything
+#      v=1 means print error messages
+#      v=2 means give detailed info about the messages sent/received of
+#        an object (if 'DBG' is enabled at the object's definition)
+#
+LOGM:  v=1     s=MBT_LOGM
+
+
+#--------------------------------------------------------------------------
+#
+# Evaluation sequence of input messages (0/1/2)         [2]
+#       v=0 means that the database will be updated with contents of the
+#               whole message, and the objects will be evaluated afterwards;
+#               This is the fastest method, but the original sequence of the
+#               signals' changes will be lost and recurring values to the same
+#               signal and short pulses are filtered out;
+#       v=1 processes a submessage (sent by the modules to the server in
+#               the same second) as v=0 does for the entire message;
+#       v=2 processes all siganls individually; in this case every
+#               modification in the signals' state are noticed but consumes
+#               somewhat more CPU time;
+#
+#   ESEQ new !!!!!
+ESEQ:   v=2  s=MBT_ESEQ
+
+
+
+#--------------------------------------------------------------------------
+#
+# Override configuration data from the server's database (0/1)  [0]
+#      If set to 1, the default initial values of all the configuration
+#      signals listed in this file will be overriden with the values read
+#      from the server upon startup.
+#      Note: this value cannot be modified upon running; the signal can
+#      only be used to display the given setting;
+#
+#OVRD:  v=1    s=MBT_OVRD
+OVRD:  v=1    s=MBT_OVRD
+
+
+#--------------------------------------------------------------------------
+#
+# Status signal
+#       If an error or internal action occurs, this signal will be set to
+#       a value according to the error/action. Every bit represents a
+#       certain state. The meaning of the different bits are:
+#               0x0001 - File access error;
+#               0x0002 - Insufficient memory;
+#               0x0004 - Priority setting error;
+#               0x0010 - Other (internal) error;
+#               0x0020 - New event (.event) file opened;
+#
+#   STAT new !!!!
+STAT: s=MBT_STAT
+
+
+#--------------------------------------------------------------------------
+#
+# Status parameter
+#       This text ('X') type of signal contains the last non-externally
+#       received message text (i.e. those generated by the event handler
+#       itself). (This is the same message whose destination is filtered by
+#       the 'LOGx' switches.)
+#
+#   SPAR new !!!!
+SPAR: s=MBT_SPAR
+
+
+#--------------------------------------------------------------------------
+#
+# Optimisation (0/1)                      [1, -]
+#      If set, the compiler optimises (tries to concatenate) Modbus
+#      messages to use the less possible transactions.
+#      Note: this value cannot be modified upon running; the signal can
+#      only be used to display the given setting;
+#
+OPTI=1
+
+
+#--------------------------------------------------------------------------
+#
+# Max number of registers (min 1)                [200, -]
+#      This is number of input/holding registers which can be read/written
+#      in a Modbus message (used only during optimisation).
+#      Note: this value cannot be modified upon running; the signal can
+#      only be used to display the given setting;
+#   max:125
+REGS=125
+
+
+#--------------------------------------------------------------------------
+#
+# Max number of coils (min 1)                  [200, -]
+#      This is number of input bits/coils which can be read/written
+#      in a Modbus messages (used only during optimisation).
+#      Note: this value cannot be modified upon running; the signal can
+#      only be used to display the given setting;
+#   max:2000
+BITS=2000
+
+
+#--------------------------------------------------------------------------
+#
+# Dump an object's Modbus messages to file (if 'DBG' is     [0, -]
+#      enabled at the object's definition)
+#      The sent/replied messages are dumped in hex to files named
+#      'obj_name.in' and 'obj_name.out' respectively. (Where 'obj_name'
+#      is the name field given at the objects definition; if undefined,
+#      this will be the object's index.)
+#      WARNING! These files grow unlimited while they are open.
+#      v=0 means don't dump
+#      v=1 dump input messages
+#      v=2 dump output messages
+#      v=3 both input and output
+#
+#   DUMP still existing ???
+#DUMP:  v=0    s=MBT_DUMP
+
+
+
+#--------------------------------------------------------------------------
+#
+# Server event verification (0/1/2)                [1]
+#      This value defines when should messages from the server be checked
+#      v=0 means check after processing all objects (user interventions
+#        could be slow in the case of many objects)
+#      v=1 means check after processing an object
+#      v=2 means check after every every message in objects
+#
+#   SRVM still existing ???
+#SRVM:  v=1    s=MBT_SRVM
+
+
+
+#--------------------------------------------------------------------------
+#
+# Time-out for the multipath handling
+#
+#   ITMC still existing ???
+#ITMC:  v=1    s=MBT_ITMC
+
+
+
+#--------------------------------------------------------------------------
+#
+# Scaling factors:
+#  For scaling input/output analogue values
+#  l-h range in the PLC covers n-x range in the PC
+#     (y = L + x * ((x - n) / (h - l)))
+#      l=PLC range low                    [0]
+#      L=PLC range low                    [-]
+#        (The same as 'l' via a signal's value)
+#      h=PLC range high                  [1000]
+#      H=PLC range high                  [-]
+#        (The same as 'h' via a signal's value)
+#      n=PC range low                    [0]
+#      N=PC range low                    [-]
+#        (The same as 'n' via a signal's value)
+#      x=PC range high                    [1000]
+#      X=PC range high                    [-]
+#        (The same as 'x' via a signal's value)
+#  Note:
+#    SCAL1 is defined by default with the default values
+#                    (ie. one-to-one transforming)
+
+# default scale
+SCAL1:    l=0 h=1 n=0 x=1
+# to be done for analog measurings of the systems
+# analog filtering
+SCAL2:    l=0 h=9999 n=0 x=1
+
+# analog cycle time
+SCAL3:   l=0 h=10000 n=0 x=1000
+
+# 1 s scale for timers
+SCAL4:    l=0 h=10 n=0 x=10
+
+# 0.1 s scale for timers
+SCAL5:    l=0 h=10 n=0 x=1
+
+# Changed because of regulatorvalve: closing % -> opening %
+# 0-9999 ->100-0 %
+SCAL6:    l=0 h=9999 n=100 x=0
+
+# 0-4095 -> 0-100 %
+SCAL7:    l=0 h=4095 n=0 x=100
+
+# 0-9999 -> 0-99.99
+SCAL8:    l=0 h=9999 n=0 x=99.99
+
+# 0-255 -> 0->100 %
+SCAL9:    l=0 h=255 n=0 x=100
+
+# hysterese (0-9999 -> 0-999)
+SCAL10:   l=0 h=9999 n=0 x=999
+
+# min->hour scale
+SCAL11:   l=0 h=65536 n=0 x=1092.25
+
+# Level change rate of tank level measuring (old)
+SCAL12:  l=0 h=4999 n=-6000 x=0
+
+# Level change rate of tank level measuring (old)
+SCAL13:  l=0 h=4999 n=0 x=6000
+
+# Level change rate of tank level measuring (new)
+SCAL14:  l=0 h=5000 n=0 x=1000
+
+#Regul.valve N1 velocity in local duty
+SCAL15:  l=0 h=2000 n=0 x=100
+#Regul.valve N2 velocity in local duty
+SCAL16:  l=0 h=2000 n=0 x=100
+
+# unused
+SCAL17:  l=0 h=1 n=0 x=1
+SCAL18:  l=0 h=1 n=0 x=1
+SCAL19:  l=0 h=1 n=0 x=1
+
+# 1msec scale for Concept timers
+SCAL20:  l=0 h=1000 n=0 x=1
+
+# unused
+SCAL21:  l=0 h=1 n=0 x=1
+SCAL22:  l=0 h=1 n=0 x=1
+SCAL23:  l=0 h=1 n=0 x=1
+SCAL24:  l=0 h=1 n=0 x=1
+SCAL25:  l=0 h=1 n=0 x=1
+SCAL26:  l=0 h=1 n=0 x=1
+SCAL27:  l=0 h=1 n=0 x=1
+SCAL28:  l=0 h=1 n=0 x=1
+SCAL29:  l=0 h=1 n=0 x=1
+
+# PID1 scale
+#SCAL31:     L=P2_LI_1_MinRaw H=P2_LI_1_MaxRaw N=P2_LI_1_MinEU X=P2_LI_1_MaxEU
+SCAL31:    l=0 h=9999 n=0 x=19998
+# PID2 scale
+#SCAL32:     L=P2_LI_2_MinRaw H=P2_LI_2_MaxRaw N=P2_LI_2_MinEU X=P2_LI_2_MaxEU
+SCAL32:    l=0 h=9999 n=0 x=19998
+# PID3 scale
+#SCAL33:     L=P2_LI_3_MinRaw H=P2_LI_3_MaxRaw N=P2_LI_3_MinEU X=P2_LI_3_MaxEU
+SCAL33:    l=0 h=9999 n=0 x=19998
+# PID4 scale
+#SCAL34:     L=P2_LI_4_MinRaw H=P2_LI_4_MaxRaw N=P2_LI_4_MinEU X=P2_LI_4_MaxEU
+SCAL34:    l=0 h=9999 n=0 x=19998
+# PID5 scale
+#SCAL35:     L=P3_LI_1_MinRaw H=P3_LI_1_MaxRaw N=P3_LI_1_MinEU X=P3_LI_1_MaxEU
+SCAL35:    l=0 h=9999 n=0 x=19998
+# ...
+
+# PLC (analog measurings)
+# PLC M1_:  scal100-419
+# PLC M2_:  scal420-739
+# PLC P2_:  scal1000-1999 (mptcp_p2.txt)
+# PLC A2_:  scal2000-2999 (mptcp_a2.txt)
+# PLC Fi_:  scal3000-3999 (mptcp_fi.txt)
+# PLC P3_:  scal4000-4999 (mptcp_p3.txt)
+# PLC Fi2_: scal5000-5999 (mptcp_Fi2.txt)
+# PLC P4_:  scal6000-6999 (mptcp_p4.txt)
+# PLC Fi3_: scal7000-7999 (mptcp_Fi3.txt)
+
+
+#--------------------------------------------------------------------------
+#
+# Significancy tresholds:
+#  Only those signals are forwarded to the server which difference to their
+#  former values reach the given level.
+#      d=difference limit                  [0.0]
+#      Note:
+#      a) if smaller than 0, this value is interpreted as the weight
+#        factor in the following filtering algorythm:
+#          Xn+1 = (1 - d) * Xn + d * X
+#        in this case d's absolute value must be smaller than 1;
+#      b) if equals -1 unchanged signals are sent as well
+#      D=difference limit                  [-]
+#        (The same as 'd' via a signal's value)
+#  Note:
+#    FLTR1 is defined by default with the default values
+#                    (ie. send any changes)
+#
+FLTR1: d=0   D=MBT_FLTR1
+FLTR2: d=-1  D=MBT_FLTR2
+FLTR3: d=20  D=MBT_FLTR3
+FLTR4: d=50  D=MBT_FLTR4
+FLTR5: d=100 D=MBT_FLTR5
+FLTR6: d=200 D=MBT_FLTR6
+FLTR7: d=300 D=MBT_FLTR7
+
+
+
+#--------------------------------------------------------------------------
+#
+#  Modbus Plus board parameters:
+#       a=SA85 memory base address              [D000]
+#       A=SA85 memory base address              [-]
+#        (The same as 'a' via a signal's value)
+#        Note: this value cannot be modified upon running; the signal
+#        can only be used to display the given setting;
+#      d=board delay (msec)                [10]
+#        After writing a request to the board, don't poll it for
+#        reply for that time. (Not to load the CPU while the board
+#        surely won't process the request.)
+#      D=board delay (The same as 'd' via a signal's value)[-]
+#        Note: this value cannot be modified upon running; the signal
+#        can only be used to display the given setting;
+#      t=board type (1/2)                  [1]
+#        1=single port board
+#        2=dual port board
+#      T=board type (The same as 't' via a signal's value)  [-]
+#        Note: this value cannot be modified upon running; the signal
+#        can only be used to display the given setting;
+#  Note:
+#    SA85 is defined by default with the default values
+#
+#SA85: a=0xD000 A=MBT_ADDR d=10  D=MBT_DELAY t=1 T=MBT_TYPE
+# d not used any more
+#SA85: a=0xD000 A=MBT_ADDR t=1 T=MBT_TYPE
+
+
+
+#--------------------------------------------------------------------------
+#
+# Channel descriptors
+#  The parameters for Modbus are:
+#      n=device name                    [/dev/ser1]
+#      N=device name (The same as 'n' via a signal's value)[-]
+#      b=Baud rate                      [9600]
+#      B=Baud rate (The same as 'b' via a signal's value)  [-]
+#      d=data bits (5, 6, 7, 8)              [8]
+#      D=data bits (The same as 'd' via a signal's value)  [-]
+#      s=stopbits (1, 2)                  [1]
+#      S=stopbits (The same as 's' via a signal's value)  [-]
+#      p=parity (N=none, O=odd, E=even)          [E]
+#      P=parity (The same as 'p' via a signal's value)    [-]
+#      w=sleep time between two messages (msec)      [0]
+#        Some device is incapable to accept new messages for a few
+#        miliseconds after responding to one
+#      W=sleep time between two messages          [-]
+#        (The same as 'w' via a signal's value)
+#      t=communication timeout (*100 msec)      [1]
+#      T=communication timeout (The same as 't' via a signal's value) [-]
+#      r=repeat count after errors              [2]
+#        the module tries to send the message that many times
+#      R=repeat count after errors              [-]
+#        (The same as 'R' via a signal's value)
+#      m=bit masking direction (0/1)            [0]
+#        if set, registers interpreted as bits will be masked from MSB to LSB
+#        (from LSB to MSB otherwise)
+#      M=bit masking direction (The same as 'm' via a signal's value) [-]
+#      e=Error cancel timeout (sec; min 1)      [300]
+#        If the communication with a node failed (no valid response received
+#        to the given number of trials - see the path configuration section)
+#        the module suspends polling the node for that time to avoid waiting
+#        for the timeouts.
+#      E=Error cancel timeout (The same as 'e' via a signal's value) [-]
+#      o=disable channel (0/1)  [0]
+#        If set the channel is disabled, no communication through the channel
+#      O=disable channel (The same as 'o' via a signal's value) [-]
+#
+#CH1:   n=/dev/ser1 N=MBT_DEV1 b=9600 B=MBT_BAUD1 d=8 D=MBT_BITS1 \
+#       s=1 S=MBT_STOPB1 p=E P=MBT_PAR1 w=0 W=MBT_DELAY1 t=2 T=MBT_TIMO1 \
+#       r=2 R=MBT_REPE1  m=0 M=MBT_MASK1  e=300 E=MBT_ERTM1 o=0 O=MBT_OFF1
+
+
+#--------------------------------------------------------------------------
+#
+# Channel descriptors
+#  The parameters for Modbus Plus are:
+#      p=first part of the PLC's path
+#      P=first part of the PLC's path
+#           (The same as 't' via a signal's value) [-]
+#      t=communication timeout (*100 msec)      [1]
+#      T=communication timeout (The same as 't' via a signal's value) [-]
+#      r=repeat count after errors              [2]
+#        the module tries to send the message that many times
+#      R=repeat count after errors              [-]
+#        (The same as 'R' via a signal's value)
+#      m=bit masking direction (0/1)            [0]
+#        if set, registers interpreted as bits will be masked from MSB to LSB
+#        (from LSB to MSB otherwise)
+#      M=bit masking direction (The same as 'm' via a signal's value) [-]
+#      e=Error cancel timeout (sec; min 1)      [300]
+#        If the communication with a node failed (no valid response received
+#        to the given number of trials - see the path configuration section)
+#        the module suspends polling the node for that time to avoid waiting
+#        for the timeouts.
+#      E=Error cancel timeout (The same as 'e' via a signal's value) [-]
+#      o=disable channel (0/1)  [0]
+#        If set the channel is disabled, no communication through the channel
+#      O=disable channel (The same as 'o' via a signal's value) [-]
+#
+#CH1:   p=1.0.0.0.0  P=MBT_PATH1 t=2 T=MBT_TIMO1 \
+#       r=2 R=MBT_REPE1  m=0 M=MBT_MASK1  e=300 E=MBT_ERTM1 o=0 O=MBT_OFF1
+
+#--------------------------------------------------------------------------
+#
+# Channel descriptors
+#  The parameters for Modbus TCP are:
+#      i=the PLC's IP address
+#      I=the PLC's IP address
+#           (The same as 't' via a signal's value) [-]
+#      t=communication timeout (*100 msec)      [1]
+#      T=communication timeout (The same as 't' via a signal's value) [-]
+#      r=repeat count after errors              [2]
+#        the module tries to send the message that many times
+#      R=repeat count after errors              [-]
+#        (The same as 'R' via a signal's value)
+#      m=bit masking direction (0/1)            [0]
+#        if set, registers interpreted as bits will be masked from MSB to LSB
+#        (from LSB to MSB otherwise)
+#      M=bit masking direction (The same as 'm' via a signal's value) [-]
+#      e=Error cancel timeout (sec; min 1)      [300]
+#        If the communication with a node failed (no valid response received
+#        to the given number of trials - see the path configuration section)
+#        the module suspends polling the node for that time to avoid waiting
+#        for the timeouts.
+#      E=Error cancel timeout (The same as 'm' via a signal's value) [-]
+#      o=disable channel (0/1)  [0]
+#        If set the channel is disabled, no communication through the channel
+#      O=disable channel (The same as 'o' via a signal's value) [-]
+#
+#CH1:   i=10.0.0.1  I=MBT_IPAD1 t=2 T=MBT_TIMO1 \
+#       r=2 R=MBT_REPE1  m=0 M=MBT_MASK1  e=300 E=MBT_ERTM1 o=0 O=MBT_OFF1
+
+#CH1:    i=10.200.30.61 t=100 r=2  m=0  e=5 o=0 O=MBT_CHAN01_OFF
+
+# ---- PLCs ----
+# 4 channels for reading, the 5th for writing
+#M1 PLC
+CH1:    i=10.48.3.11 t=40 r=2  m=1  e=2  O=MBT_CH01_OFF
+CH2:    i=10.48.3.11 t=40 r=2  m=1  e=2  O=MBT_CH02_OFF
+CH3:    i=10.48.3.11 t=40 r=2  m=1  e=2  O=MBT_CH03_OFF
+CH4:    i=10.48.3.11 t=40 r=2  m=1  e=2  O=MBT_CH04_OFF
+CH5:    i=10.48.3.11 t=40 r=2  m=1  e=2  O=MBT_CH05_OFF
+#
+PLC1:   c=1            n=0 S=MBT_PATH01_STATE
+PLC2:   c=2            n=0 S=MBT_PATH02_STATE
+PLC3:   c=3            n=0 S=MBT_PATH03_STATE
+PLC4:   c=4            n=0 S=MBT_PATH04_STATE
+PLC5:   c=5            n=0 S=MBT_PATH05_STATE
+
+#M2 PLC
+CH6:    i=10.48.3.13 t=40 r=2  m=1  e=2  O=MBT_CH06_OFF
+CH7:    i=10.48.3.13 t=40 r=2  m=1  e=2  O=MBT_CH07_OFF
+CH8:    i=10.48.3.13 t=40 r=2  m=1  e=2  O=MBT_CH08_OFF
+CH9:    i=10.48.3.13 t=40 r=2  m=1  e=2  O=MBT_CH09_OFF
+CH10:   i=10.48.3.13 t=40 r=2  m=1  e=2  O=MBT_CH10_OFF
+#
+PLC6:   c=6            n=0 S=MBT_PATH06_STATE
+PLC7:   c=7            n=0 S=MBT_PATH07_STATE
+PLC8:   c=8            n=0 S=MBT_PATH08_STATE
+PLC9:   c=9            n=0 S=MBT_PATH09_STATE
+PLC10:  c=10           n=0 S=MBT_PATH10_STATE
+
+#P2 PLC
+CH11:   i=10.48.3.1   t=40 r=2  m=1  e=2  O=MBT_CH11_OFF
+CH12:   i=10.48.3.1   t=40 r=2  m=1  e=2  O=MBT_CH12_OFF
+CH13:   i=10.48.3.1   t=40 r=2  m=1  e=2  O=MBT_CH13_OFF
+CH14:   i=10.48.3.1   t=40 r=2  m=1  e=2  O=MBT_CH14_OFF
+CH15:   i=10.48.3.1   t=40 r=2  m=1  e=2  O=MBT_CH15_OFF
+#
+PLC11:  c=11    n=0 S=MBT_PATH11_STATE
+PLC12:  c=12    n=0 S=MBT_PATH12_STATE
+PLC13:  c=13    n=0 S=MBT_PATH13_STATE
+PLC14:  c=14    n=0 S=MBT_PATH14_STATE
+PLC15:  c=15    n=0 S=MBT_PATH15_STATE
+
+#A2 PLC
+CH16:   i=10.48.3.3   t=40 r=2  m=1  e=2  O=MBT_CH16_OFF
+CH17:   i=10.48.3.3   t=40 r=2  m=1  e=2  O=MBT_CH17_OFF
+CH18:   i=10.48.3.3   t=40 r=2  m=1  e=2  O=MBT_CH18_OFF
+CH19:   i=10.48.3.3   t=40 r=2  m=1  e=2  O=MBT_CH19_OFF
+CH20:   i=10.48.3.3   t=40 r=2  m=1  e=2  O=MBT_CH20_OFF
+#
+PLC16:  c=16    n=0 S=MBT_PATH16_STATE
+PLC17:  c=17    n=0 S=MBT_PATH17_STATE
+PLC18:  c=18    n=0 S=MBT_PATH18_STATE
+PLC19:  c=19    n=0 S=MBT_PATH19_STATE
+PLC20:  c=20    n=0 S=MBT_PATH20_STATE
+
+#Fi PLC
+CH21:   i=10.48.3.5   t=40 r=2  m=1  e=2  O=MBT_CH21_OFF
+CH22:   i=10.48.3.5   t=40 r=2  m=1  e=2  O=MBT_CH22_OFF
+CH23:   i=10.48.3.5   t=40 r=2  m=1  e=2  O=MBT_CH23_OFF
+CH24:   i=10.48.3.5   t=40 r=2  m=1  e=2  O=MBT_CH24_OFF
+CH25:   i=10.48.3.5   t=40 r=2  m=1  e=2  O=MBT_CH25_OFF
+#
+PLC21:  c=21    n=0 S=MBT_PATH21_STATE
+PLC22:  c=22    n=0 S=MBT_PATH22_STATE
+PLC23:  c=23    n=0 S=MBT_PATH23_STATE
+PLC24:  c=24    n=0 S=MBT_PATH24_STATE
+PLC25:  c=25    n=0 S=MBT_PATH25_STATE
+
+#P3 PLC
+CH26:   i=10.48.3.31  t=40 r=2  m=1  e=2  O=MBT_CH26_OFF
+CH27:   i=10.48.3.31  t=40 r=2  m=1  e=2  O=MBT_CH27_OFF
+CH28:   i=10.48.3.31  t=40 r=2  m=1  e=2  O=MBT_CH28_OFF
+CH29:   i=10.48.3.31  t=40 r=2  m=1  e=2  O=MBT_CH29_OFF
+CH30:   i=10.48.3.31  t=40 r=2  m=1  e=2  O=MBT_CH30_OFF
+#
+PLC26:  c=26    n=0 S=MBT_PATH26_STATE
+PLC27:  c=27    n=0 S=MBT_PATH27_STATE
+PLC28:  c=28    n=0 S=MBT_PATH28_STATE
+PLC29:  c=29    n=0 S=MBT_PATH29_STATE
+PLC30:  c=30    n=0 S=MBT_PATH30_STATE
+
+#Fi2 PLC
+CH31:   i=10.48.3.35  t=40 r=2  m=1  e=2  O=MBT_CH31_OFF
+CH32:   i=10.48.3.35  t=40 r=2  m=1  e=2  O=MBT_CH32_OFF
+CH33:   i=10.48.3.35  t=40 r=2  m=1  e=2  O=MBT_CH33_OFF
+CH34:   i=10.48.3.35  t=40 r=2  m=1  e=2  O=MBT_CH34_OFF
+CH35:   i=10.48.3.35  t=40 r=2  m=1  e=2  O=MBT_CH35_OFF
+#
+PLC31:  c=31    n=0 S=MBT_PATH31_STATE
+PLC32:  c=32    n=0 S=MBT_PATH32_STATE
+PLC33:  c=33    n=0 S=MBT_PATH33_STATE
+PLC34:  c=34    n=0 S=MBT_PATH34_STATE
+PLC35:  c=35    n=0 S=MBT_PATH35_STATE
+
+#P4 PLC
+CH36:   i=10.48.3.41  t=40 r=2  m=1  e=2  O=MBT_CH36_OFF
+CH37:   i=10.48.3.41  t=40 r=2  m=1  e=2  O=MBT_CH37_OFF
+CH38:   i=10.48.3.41  t=40 r=2  m=1  e=2  O=MBT_CH38_OFF
+CH39:   i=10.48.3.41  t=40 r=2  m=1  e=2  O=MBT_CH39_OFF
+CH40:   i=10.48.3.41  t=40 r=2  m=1  e=2  O=MBT_CH40_OFF
+#
+PLC36:  c=36    n=0 S=MBT_PATH36_STATE
+PLC37:  c=37    n=0 S=MBT_PATH37_STATE
+PLC38:  c=38    n=0 S=MBT_PATH38_STATE
+PLC39:  c=39    n=0 S=MBT_PATH39_STATE
+PLC40:  c=40    n=0 S=MBT_PATH40_STATE
+
+#Fi3 PLC
+CH41:   i=10.48.3.45  t=40 r=2  m=1  e=2  O=MBT_CH41_OFF
+CH42:   i=10.48.3.45  t=40 r=2  m=1  e=2  O=MBT_CH42_OFF
+CH43:   i=10.48.3.45  t=40 r=2  m=1  e=2  O=MBT_CH43_OFF
+CH44:   i=10.48.3.45  t=40 r=2  m=1  e=2  O=MBT_CH44_OFF
+CH45:   i=10.48.3.45  t=40 r=2  m=1  e=2  O=MBT_CH45_OFF
+#
+PLC41:  c=41    n=0 S=MBT_PATH41_STATE
+PLC42:  c=42    n=0 S=MBT_PATH42_STATE
+PLC43:  c=43    n=0 S=MBT_PATH43_STATE
+PLC44:  c=44    n=0 S=MBT_PATH44_STATE
+PLC45:  c=45    n=0 S=MBT_PATH45_STATE
+
+# Autronica firesystem
+CH46:   i=10.48.3.33  t=40 r=2  m=1  e=2  O=MBT_CH46_OFF
+PLC46:  c=46    n=1 S=MBT_PATH46_STATE
+
+# MBP devices through CEV
+# AUMA GV diag CEV1-MBP:23,5
+#CH63:   i=10.48.3.91  t=40 r=2  m=1  e=2  O=MBT_CH63_OFF
+#PLC63:  c=63    n=123 S=MBT_PATH63_STATE
+
+# AUMA GV diag CEV1-MBP:24,5
+#CH64:   i=10.48.3.91  t=40 r=2  m=1  e=2  O=MBT_CH64_OFF
+#PLC64:  c=64    n=124 S=MBT_PATH64_STATE
+
+# AUMA GV diag CEV1-MBP:25,5
+#CH65:   i=10.48.3.91  t=40 r=2  m=1  e=2  O=MBT_CH65_OFF
+#PLC65:  c=65    n=125 S=MBT_PATH65_STATE
+
+# AUMA GV diag CEV1-MBP:26,5
+#CH66:   i=10.48.3.91  t=40 r=2  m=1  e=2  O=MBT_CH66_OFF
+#PLC66:  c=66    n=126 S=MBT_PATH66_STATE
+
+# AUMA GV diag CEV1-MBP:27,5
+#CH67:   i=10.48.3.91  t=40 r=2  m=1  e=2  O=MBT_CH67_OFF
+#PLC67:  c=67    n=127 S=MBT_PATH67_STATE
+
+# UUN (725,726) CEV1-MBP:28,5
+#CH68:   i=10.48.3.91  t=40 r=2  m=1  e=2  O=MBT_CH68_OFF
+#PLC68:  c=68    n=128 S=MBT_PATH68_STATE
+
+#KP18   CEV2-MBP:32,4,5
+CH72:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH72_OFF
+PLC72:  c=72    n=165 S=MBT_PATH72_STATE
+
+# UUN-2 (4,5) (940,941) CEV2-MBP:33,5
+CH73:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH73_OFF
+PLC73:  c=73    n=133 S=MBT_PATH73_STATE
+
+# IGV diag CEV2-MBP:62,36,5
+CH76:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH76_OFF
+PLC76:  c=76    n=136 S=MBT_PATH76_STATE
+
+# IGV+PV420 diag CEV2-MBP:62,37,5
+CH77:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH77_OFF
+PLC77:  c=77    n=137 S=MBT_PATH77_STATE
+
+# IGV+SCS diag CEV2-MBP:62,38,5
+CH78:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH78_OFF
+PLC78:  c=78    n=138 S=MBT_PATH78_STATE
+
+# IGV diag CEV2-MBP:62,39,5
+CH79:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH79_OFF
+PLC79:  c=79    n=139 S=MBT_PATH79_STATE
+
+# IGV diag CEV2-MBP:62,40,5
+CH80:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH80_OFF
+PLC80:  c=80    n=140 S=MBT_PATH80_STATE
+
+# IGV diag CEV2-MBP:62,41,5
+CH81:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH81_OFF
+PLC81:  c=81    n=141 S=MBT_PATH81_STATE
+
+
+# IPCES diag Fire 20.11,12 CEV2-MBP:62,55,5
+CH95:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH95_OFF
+PLC95:  c=95    n=155 S=MBT_PATH95_STATE
+
+# IPCES diag Fire 20.15,16 CEV2-MBP:62,56,5
+CH96:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH96_OFF
+PLC96:  c=96    n=156 S=MBT_PATH96_STATE
+
+# IPCES diag Fire 20.13,14,17,18 CEV2-MBP:62,57,5
+CH97:   i=10.48.3.92  t=40 r=2  m=1  e=2  O=MBT_CH97_OFF
+PLC97:  c=97    n=157 S=MBT_PATH97_STATE
+
+
+# IGV diag CEV3-MBP:25,5        (BMX-89)
+CH129:   i=10.48.3.93  t=40 r=2  m=1  e=2  O=MBT_CH129_OFF
+PLC129:  c=129    n=89 S=MBT_PATH129_STATE
+
+# IGV diag CEV3-MBP:26,5        (BMX-90)
+CH130:   i=10.48.3.93  t=40 r=2  m=1  e=2  O=MBT_CH130_OFF
+PLC130:  c=130    n=90 S=MBT_PATH130_STATE
+
+#--------------------------------------------------------------------------
+#
+# PLC routing;
+#  This section describes PLC node within a channel
+#      c=index of the communication channel (CHn)   [1]
+#        0 means disable
+#      C=index of the communication channel (CHn)   [-]
+#        (The same as 'c' s signal's value)
+#      n=PLC address         [1]
+#        For Modbus: the address of the PLC; 0 means broadcast.
+#        For Modbus Plus: the end of the PLC path defined at CHn param 'p';
+#           0 means CHn param 'p' used only.
+#        For Modbus TCP: this is the unit id (the PLC address in the Modbus
+#           line);
+#           -1 means broadcast for the Modbus line;
+#           0 means the IP address at CHn param 'i' used only.
+#      N=PLC address         [-]
+#        (The same as 'n' via a signal's value)
+#      S=status signal                    [-]
+#        Every bit represents an error:
+#        0x01 - Communication error: path disabled (for 'ERTM' secs);
+#        0x02 - CRC error, errorenous format of answer;
+#        0x04 - Input/output error, possibly bad configuration;
+#        0x08 - Exception response, the exeption code in the higher 16 bits;
+#        0x10 - Timeout;
+#        0x20 - Other error, not handled by the modul;
+#        0x40 - Floating point error;
+#        Starting the modul or changing parameters of the channel (CHn) or
+#           the PLC (PLCn), the status signals' init value 0x8000.
+#
+#
+#PLC1: c=1 C=MBT_CH1 n=0 N=MBT_NODE1 S=MBT_PATH1_STATE
+#
+
+# PLCx: see above at channels
+
+
+#--------------------------------------------------------------------------
+#
+# Messaging objects:
+#  This section describes the Modbus messaging objects.
+#  The general format of an object is the following:
+#
+#  OBJ: name
+#    PARL: P0=strcons P1=strcons ...
+#    FUNC: IF P0>P1:Q1;ELSE Q0;
+#    CYCL: v=1 s=strcons
+#    CNTL: v=0 s=strcons
+#    TRIG: s=strcons
+#    DIAG: v=1 s=strcons
+#    ERRC: s=strcons
+#
+#      OBJ=start of object definition; 'name' can be any string
+#      PARL=parameterlist; the parameters given here can be referred in
+#          the function below
+#      FUNC=func(PARL, Q0, Q1); usual Qdiagem interpreter function.
+#          Q0 is predefined as 'do not send messages' and
+#          Q1 as 'send messages'
+#      CYCL=cycle time of sending telegrams (sec)   [0]
+#      CNTL=count limit for sending telegrams with cycle time [0]
+#      TRIG=trigger for sending telegram: if written to not 0 telegrams will
+#           be sent not depending on cycle time (CYCL) but FUNC should enable
+#      DIAG=enables/disables diagnostics (0/1/2/3):      [0]
+#          v=0 no diagnostics messages
+#          v=1 text messages about telegrams
+#          v=2 telegrams in hexadecimal format
+#          v=3 telegrams both in text and hexadecimal formats
+#
+#   itt jartam - innen baromsagok
+#
+#      TMNG=timing section, where
+#        t=send messages that many seconds (min 0)    [0]
+#        T=The same as 't' via a signal's value      [-]
+#        c=send messages that many times if FUNC is true  [0]
+#          (used only if 't' is not 0); 0 means no limit
+#        C=The same as 'c' via a signal's value      [-]
+#        OR adjust 't' to absolute time given with the parameters below:
+#          (fields set to -1 don't matter)
+#        s=second                    [-1]
+#        S=The same as 's' via a signal's value      [-]
+#        m=minute                    [-1]
+#        M=The same as 'm' via a signal's value      [-]
+#        h=hour                      [-1]
+#        H=The same as 'h' via a signal's value      [-]
+#        d=day                      [-1]
+#        D=The same as 'd' via a signal's value      [-]
+#        n=month                      [-1]
+#        N=The same as 'n' via a signal's value      [-]
+#        y=year                      [-1]
+#        Y=The same as 'y' via a signal's value      [-]
+#  Note:
+#    If a function is defined it is evaluated if any of its parameters is
+#    written. If 't' is zero the function triggers messaging (messages are
+#    sent only once), otherwise enables/disables it. When messaging is
+#    enabled 'c' defines how many times the messages should be sent before
+#    evaluating the function again. If the function is undefined it is
+#    assumed to be 'ELSE Q1'(always send messages if 't' is not 0).
+#    's', 'm', 'h', 'd', 'n', and 'y' can also be given; these values define
+#    an absolute base time for the cyclical messaging (if 't' is not 0).
+#
+#    M:   p=1 t=IR o=I/i f=W/F/D/B r=1 n=10 S=strcons s=1 d=1
+#    M:   p=1 t=HR o=I/O/i/w/W/c/C  f=W/F/D/B r=1 n=20 S=strcons s=1 d=1
+#    M:   p=1 t=IN o=I/i r=1 n=30 S=strcons d=1
+#    M:   p=1 t=CO o=I/O/i/w/W/c/C r=1 n=40 S=strcons d=1
+#    M:   p=1 t=D o=I/O/i/w/W/c/C n=32 S=strcons d=1
+#
+#      Mn=message descriptor
+#        p=index to path descriptor ('PATHn')      [1]
+#        t=type of PLC data location            [HR]
+#          IR=Input Register
+#          HR=Holding Register
+#          IN=Input Bit
+#          CO=Coil
+#          D=Datagram (Modbus Plus only)
+#        o=options; defines how the data is handled    [I]
+#          I=input; data is read if FUNC/TMNG condition is true
+#            ('IR', 'HR', 'IN' and 'CO' only)
+#          O=output; data is written if FUNC/TMNG condition is true
+#            ('HR', 'CO' and 'D' only)
+#          i=init; data is processed upon initialisation (ie upon
+#            startup and after error recoveries.)
+#          w=if a signal of the message is written it is sent to the
+#            PLC ('HR' and 'CO' only)
+#          W=if a signal of the message is written all the data (the
+#            entire message) is sent to the PLC ('HR', 'CO' and 'D'
+#            only)
+#          c=the same as 'w' except that the signal must be changed
+#            not only written
+#          C=the same as 'W' except that the signal must be changed
+#            not only written
+#  Note:
+#    'I' and 'O' are mutually excluding
+#
+#          f=data format in PLC ('IR', 'HR', 'D' only)  [W]
+#            W=word; one register represents an integral value
+#              (stored in one Qdiagem signal)
+#            F=float; 2 consecutive registers are interpreted as a
+#              PC floating point number (stored in one Qdiagem
+#              signal)
+#            D=double word; 2 consecutive registers represent a
+#              (long) integral value (stored in one Qdiagem signal)
+#            B=bits; one register is interpreted bit-by-bit (stored
+#              in 16 Qdiagem signal)
+#          r=starting location              [1]
+#            (Coil/Input Bit-10000/Input Reg-30000/Holding Reg-40000)
+#          n=number of signals (if it's unnecessary  [1]
+#            to list them all - see 'S' below)
+#          S=Qdiagem signals to store PLC data read/to be written;
+#            A comma separated signal list is expected (remember
+#            to use '?' to reduce the number of the necessary
+#            messages); if fewer than 'n' signals are listed, then
+#            the list will be expanded with the signals which follow
+#            the last listed signal in PIPE (these cannot be text
+#            type of signals);
+#          s=index to scaling descriptor ('SCALn')    [1]
+#          d=index to filtering descriptor ('FLTRn')  [1]
+#  Note:
+#    For input messages ('o=I') the broadcast address ('r=0') is ignored;
+#    For bit values ('t=IN/CO', 'f=B') the scale and filter ('s', 'd')
+#      definitions are ignored;
+#
+# OBEND End of the object
+#
+#OBJ: Msg Block #1
+#  DBG: v=0 s=MBT_M1_DEBUG
+#  TMNG: t=1 T=MBT_M1_CYCLE c=0 C=MBT_M1_COUNT\
+#      s=-1 S=MBT_M1_SEC m=-1 M=MBT_M1_MIN h=-1 H=MBT_M1_HOUR\
+#      d=-1 D=MBT_M1_DAY n=-1 N=MBT_M1_MONTH y=-1 Y=MBT_M1_YEAR
+#  PARL:  P0=ANALIN01\
+#      P1=ANALIN02
+#  FUNC: IF P0>P1:Q1;ELSE Q0;
+#  M:   p=1 t=HR o=Iiw f=W r=1 n=10 S=PARAIN01 s=1 d=1
+#  M:   p=1 t=IR o=Ii f=W r=1 n=10 S=PARAOU01 s=1 d=1
+#
+#OBJ: Msg Block #2
+#  DBG: v=0 s=MBT_M2_DEBUG
+#  TMNG: t=1 T=MBT_M2_CYCLE c=0 C=MBT_M2_COUNT\
+#      s=-1 S=MBT_M2_SEC m=-1 M=MBT_M2_MIN h=-1 H=MBT_M2_HOUR\
+#      d=-1 D=MBT_M2_DAY n=-1 N=MBT_M2_MONTH y=-1 Y=MBT_M2_YEAR
+#  PARL:  P0=ANALIN03\
+#      P1=ANALIN04
+#  FUNC: IF P0>P1:Q1;ELSE Q0;
+#  M:   p=1 t=HR o=Iiw f=W r=1 n=10 S=PARAIN01 s=1 d=1
+#  M:   p=1 t=IR o=Ii f=W r=1 n=10 S=PARAOU01 s=1 d=1
+#
+

@@ -1,0 +1,72 @@
+
+WOPT: p=Cc r=0 c=0 o=k-r;kmsa t=0 e=0 a=1 b=0 k=0
+
+WPICT: c=179 h=0 w=0
+
+OBJ: 138
+  SELD: a=WO p=6
+OBEND
+
+OBJ: 155
+  SELD: a=WO p=25
+OBEND
+
+OBJ: 157
+  SELD: a=WO p=1480
+OBEND
+
+OBJ: 159
+  SELD: a=WO p=1500
+OBEND
+
+OBJ: 161
+  SELD: a=WO p=1481
+OBEND
+
+OBJ: 162
+  SELD: a=WO p=1470
+OBEND
+
+OBJ: 163
+  SELD: a=WO p=1460
+OBEND
+
+OBJ: 176
+  SELD: a=WO p=2560
+OBEND
+
+OBJ: 177
+  SELD: a=WO p=2570
+OBEND
+
+OBJ: 185
+  SELD: a=WO p=2580
+OBEND
+
+OBJ: 186
+  SELD: a=WO p=2581
+OBEND
+
+OBJ: 187
+  SELD: a=WO p=2610
+OBEND
+
+OBJ: 188
+  SELD: a=WO p=2560
+OBEND
+
+OBJ: 189
+  SELD: a=WO p=2570
+OBEND
+
+OBJ: 190
+  SELD: a=WO p=3610
+OBEND
+
+OBJ: 191
+  SELD: a=WO p=3580
+OBEND
+
+OBJ: 192
+  SELD: a=WO p=3581
+OBEND

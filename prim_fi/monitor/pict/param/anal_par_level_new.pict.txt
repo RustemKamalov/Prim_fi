@@ -1,0 +1,619 @@
+HEADER:	
+	SIZE:	height=0 width=0
+	COLORS:	bkgd=3
+END
+
+#==================== QW_RECTANGLE (SR403_403) ====================
+
+RECTANGLE:	SR403_403
+	POS:	row=1779 col=209
+	COLOR:	color=7 fill=7
+	PEN:	thickness=5
+	SIZE:	height=2097 width=6859
+END
+
+#==================== QW_RECTANGLE (SR407_407) ====================
+
+RECTANGLE:	SR407_407
+	POS:	row=1691 col=121
+	COLOR:	color=1 fill=3
+	PEN:	thickness=5
+	SIZE:	height=2097 width=6869
+END
+
+#==================== QW_RECTANGLE (SR564_564) ====================
+
+RECTANGLE:	SR564_564
+	POS:	row=1688 col=3920
+	COLOR:	color=1 fill=3
+	PEN:	thickness=5
+	SIZE:	height=1122 width=3079
+END
+
+#==================== QW_RECTANGLE (DR401_401) ====================
+
+RECTANGLE:	DR401_401
+	POS:	row=3894 col=2926
+	COLOR:	color=1 fill=2
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=261 width=1484
+	FMT:	fmt=m
+END
+
+#==================== QW_TEXT (ST402_402) ====================
+
+TEXT:	ST402_402
+	POS:	row=4070 col=3322
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=Закрыть
+END
+
+#==================== QW_RECTANGLE (SR404_404) ====================
+
+RECTANGLE:	SR404_404
+	POS:	row=605 col=209
+	COLOR:	color=7 fill=7
+	PEN:	thickness=5
+	SIZE:	height=1060 width=4416
+END
+
+#==================== QW_RECTANGLE (SR406_406) ====================
+
+RECTANGLE:	SR406_406
+	POS:	row=517 col=121
+	COLOR:	color=1 fill=3
+	PEN:	thickness=5
+	SIZE:	height=1060 width=4416
+END
+
+#==================== QW_RECTANGLE (SR408_408) ====================
+
+RECTANGLE:	SR408_408
+	POS:	row=3167 col=6069
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=231 width=824
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR414_414) ====================
+
+RECTANGLE:	SR414_414
+	POS:	row=3364 col=262
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=243 width=826
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR416_416) ====================
+
+RECTANGLE:	SR416_416
+	POS:	row=2999 col=262
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=252 width=825
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR417_417) ====================
+
+RECTANGLE:	SR417_417
+	POS:	row=2501 col=262
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=243 width=826
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR418_418) ====================
+
+RECTANGLE:	SR418_418
+	POS:	row=2202 col=262
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=243 width=826
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (SR419_419) ====================
+
+RECTANGLE:	SR419_419
+	POS:	row=1837 col=262
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=243 width=826
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST421_421) ====================
+
+TEXT:	ST421_421
+	POS:	row=2013 col=1122
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str=Тех.макс.
+END
+
+#==================== QW_TEXT (DT422_422) ====================
+
+TEXT:	DT422_422
+	POS:	row=2684 col=1133
+	COLOR:	color=11 fill=3
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str="Макс.1  - Нормативный верхний"
+END
+
+#==================== QW_TEXT (DT423_423) ====================
+
+TEXT:	DT423_423
+	POS:	row=3179 col=1133
+	COLOR:	color=11 fill=3
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str="Мин.1   - Нормативный нижний"
+END
+
+#==================== QW_TEXT (DT424_424) ====================
+
+TEXT:	DT424_424
+	POS:	row=2387 col=1133
+	COLOR:	color=11 fill=3
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str="Макс.2  - Макс. допустимый"
+END
+
+#==================== QW_TEXT (ST426_426) ====================
+
+TEXT:	ST426_426
+	POS:	row=3509 col=1122
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str="Тех.мин.- Мин. допустимый"
+END
+
+#==================== QW_NUMBER (DG434_434) ====================
+
+DIGIT:	DG434_434
+	POS:	row=3124 col=330
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_NUMBER (DG436_436) ====================
+
+DIGIT:	DG436_436
+	POS:	row=3509 col=330
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_NUMBER (DG443_443) ====================
+
+DIGIT:	DG443_443
+	POS:	row=2354 col=330
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_NUMBER (DG444_444) ====================
+
+DIGIT:	DG444_444
+	POS:	row=2651 col=330
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_NUMBER (DG445_445) ====================
+
+DIGIT:	DG445_445
+	POS:	row=1991 col=330
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_TEXT (ST446_446) ====================
+
+TEXT:	ST446_446
+	POS:	row=3575 col=4928
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str=Изм.замещено
+END
+
+#==================== QW_NUMBER (DG450_450) ====================
+
+DIGIT:	DG450_450
+	POS:	row=3311 col=6193
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=7 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_RECTANGLE (SR451_451) ====================
+
+RECTANGLE:	SR451_451
+	POS:	row=737 col=418
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=402 width=3834
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (DR452_452) ====================
+
+RECTANGLE:	DR452_452
+	POS:	row=3443 col=6109
+	COLOR:	color=1 fill=10
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=176 width=770
+	FMT:	fmt=m
+END
+
+#==================== QW_TEXT (DT453_453) ====================
+
+TEXT:	DT453_453
+	POS:	row=924 col=517
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str="short nm"
+END
+
+#==================== QW_TEXT (DT461_461) ====================
+
+TEXT:	DT461_461
+	POS:	row=1067 col=517
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str="long name (xxxVl signalname)           <"
+END
+
+#==================== QW_TEXT (ST462_462) ====================
+
+TEXT:	ST462_462
+	POS:	row=682 col=187
+	COLOR:	color=10
+	FONT:	face=System size=121
+	STRING:	str=Идент.
+END
+
+#==================== QW_TEXT (DT477_477) ====================
+
+TEXT:	DT477_477
+	POS:	row=1430 col=1782
+	COLOR:	color=5 fill=14
+	OPT:	opts=emN
+	FONT:	face=cour_cyr style=B size=198
+	STRING:	str=Изм.запр.
+END
+
+#==================== QW_TEXT (DT480_480) ====================
+
+TEXT:	DT480_480
+	POS:	row=1430 col=1782
+	COLOR:	color=1 fill=8
+	OPT:	opts=emN
+	FONT:	face=cour_cyr style=B size=198
+	STRING:	str=Изм.разр.
+END
+
+#==================== QW_RECTANGLE (DR481_481) ====================
+
+RECTANGLE:	DR481_481
+	POS:	row=3443 col=6091
+	COLOR:	color=1 fill=7
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=176 width=803
+	FMT:	fmt=m
+END
+
+#==================== QW_RECTANGLE (SR491_491) ====================
+
+RECTANGLE:	SR491_491
+	POS:	row=605 col=4708
+	COLOR:	color=7 fill=7
+	PEN:	thickness=5
+	SIZE:	height=1061 width=2370
+END
+
+#==================== QW_RECTANGLE (SR493_493) ====================
+
+RECTANGLE:	SR493_493
+	POS:	row=517 col=4620
+	COLOR:	color=1 fill=3
+	PEN:	thickness=5
+	SIZE:	height=1061 width=2370
+END
+
+#==================== QW_TEXT (ST494_494) ====================
+
+TEXT:	ST494_494
+	POS:	row=1067 col=5995
+	COLOR:	color=11
+	FONT:	face=System size=121
+	STRING:	str=Акт.знач.
+END
+
+#==================== QW_TEXT (ST495_495) ====================
+
+TEXT:	ST495_495
+	POS:	row=814 col=5995
+	COLOR:	color=11
+	FONT:	face=System size=121
+	STRING:	str=Статус
+END
+
+#==================== QW_RECTANGLE (SR498_498) ====================
+
+RECTANGLE:	SR498_498
+	POS:	row=891 col=4687
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=248 width=1269
+	FMT:	fmt=d
+END
+
+#==================== QW_NUMBER (DG499_499) ====================
+
+DIGIT:	DG499_499
+	POS:	row=1034 col=4928
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=10 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	FMT:	fmt=-CT
+END
+
+#==================== QW_RECTANGLE (SR500_500) ====================
+
+RECTANGLE:	SR500_500
+	POS:	row=627 col=4688
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=248 width=1269
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (DT501_501) ====================
+
+TEXT:	DT501_501
+	POS:	row=803 col=4741
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str="Нормал       "
+END
+
+#==================== QW_TEXT (ST531_531) ====================
+
+TEXT:	ST531_531
+	POS:	row=3366 col=4917
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str=Замещ.значен.
+END
+
+#==================== QW_TEXT (ST545_545) ====================
+
+TEXT:	ST545_545
+	POS:	row=308 col=825
+	COLOR:	color=10 fill=15
+	OPT:	opts=eRm
+	FONT:	face=terminal_cyr size=308
+	STRING:	str="     АНАЛОГОВЫЕ ПАРАМЕТРЫ     "
+END
+
+#==================== QW_RECTANGLE (SR549_549) ====================
+
+RECTANGLE:	SR549_549
+	POS:	row=2903 col=6069
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=231 width=824
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST550_550) ====================
+
+TEXT:	ST550_550
+	POS:	row=3091 col=5148
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str=Гистерезис
+END
+
+#==================== QW_NUMBER (DG551_551) ====================
+
+DIGIT:	DG551_551
+	POS:	row=3036 col=6182
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=7 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_TEXT (ST552_552) ====================
+
+TEXT:	ST552_552
+	POS:	row=1331 col=5995
+	COLOR:	color=11
+	FONT:	face=System size=121
+	STRING:	str=скор.запол.
+END
+
+#==================== QW_RECTANGLE (SR553_553) ====================
+
+RECTANGLE:	SR553_553
+	POS:	row=1155 col=4687
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=248 width=1269
+	FMT:	fmt=d
+END
+
+#==================== QW_NUMBER (DG554_554) ====================
+
+DIGIT:	DG554_554
+	POS:	row=1298 col=4928
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=10 precision=2 low=-10000.000 high=10000.000 min=-10000.000 max=10000.000 delta=1.000
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (SR555_555) ====================
+
+RECTANGLE:	SR555_555
+	POS:	row=1759 col=6069
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=231 width=824
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST556_556) ====================
+
+TEXT:	ST556_556
+	POS:	row=1947 col=4147
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str="Макс.скорость заполн."
+END
+
+#==================== QW_NUMBER (DG557_557) ====================
+
+DIGIT:	DG557_557
+	POS:	row=1892 col=6182
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=7 precision=2 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_RECTANGLE (SR558_558) ====================
+
+RECTANGLE:	SR558_558
+	POS:	row=2101 col=6061
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=231 width=824
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST559_559) ====================
+
+TEXT:	ST559_559
+	POS:	row=2299 col=4147
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str="Макс.скорость опорож."
+END
+
+#==================== QW_NUMBER (DG560_560) ====================
+
+DIGIT:	DG560_560
+	POS:	row=2244 col=6182
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=7 precision=2 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+#==================== QW_RECTANGLE (SR561_561) ====================
+
+RECTANGLE:	SR561_561
+	POS:	row=2453 col=6061
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=231 width=824
+	FMT:	fmt=d
+END
+
+#==================== QW_TEXT (ST562_562) ====================
+
+TEXT:	ST562_562
+	POS:	row=2651 col=4004
+	COLOR:	color=11 fill=3
+	FONT:	face=System size=121
+	STRING:	str=Гист.скор.заполн./опор.
+END
+
+#==================== QW_NUMBER (DG563_563) ====================
+
+DIGIT:	DG563_563
+	POS:	row=2596 col=6182
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(55) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=7 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=-CT
+END
+
+
+#number of elements: 58
+
+
+#     ########## 12 warnings ##########

@@ -1,0 +1,102 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0
+
+WPICT: c=6 h=600 w=1010
+
+OBJ: 152
+  PARL: P0=Fi_H701S P1=Fi_H701
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 634_152
+  PARL: P0=Fi_H702S P1=Fi_H702
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 640_152
+  PARL: P0=Fi_H703S P1=Fi_H703
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 646_152
+  PARL: P0=Fi_H704S P1=Fi_H704
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 658_152
+  PARL: P0=Fi_H711S P1=Fi_H711
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 664_634_152
+  PARL: P0=Fi_H712S P1=Fi_H712
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 670_640_152
+  PARL: P0=Fi_H713S P1=Fi_H713
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 676_646_152
+  PARL: P0=timer08S P1=timer08
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 682_152
+  PARL: P0=timer09S P1=timer09
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 688_634_152
+  PARL: P0=timer10S P1=timer10
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 694_640_152
+  PARL: P0=timer11S P1=timer11
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 700_646_152
+  PARL: P0=timer12S P1=timer12
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 706_152
+  PARL: P0=timer13S P1=timer13
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 712_634_152
+  PARL: P0=timer14S P1=timer14
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 732_706_152
+  PARL: P0=timer15S P1=timer15
+  VALF: ELSE P1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 739
+  SELD: a=WO p=1500
+OBEND
+
+OBJ: 742
+  SELD: a=WO p=1501
+OBEND

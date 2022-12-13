@@ -1,0 +1,56 @@
+set -i
+
+# time management
+export TZ=utc00
+rtc hw
+
+# device manager & drivers
+Dev &
+Dev.ansi -Q -n 10 &
+reopen //0/dev/con1
+Dev.ser &
+Dev.par -s2 &
+Dev.pty &
+#mousetrap start
+Mouse.ok ps2 &
+Iso9660fsys /cd=/dev/cd0 &
+Fsys.floppy &
+Pipe &
+#Dosfsys -L -t &
+#Fatfsys
+nameloc &
+
+#RUSKEY
+ruskey &
+export KBD=ru_RU_101.kbd
+cfont -f0 /etc/config/cfont/rus/vga.rus
+cfont -f1 /etc/config/cfont/cyr.11
+cfont -f2 /etc/config/cfont/cga
+stty font=0 < /dev/con1
+
+# wterm
+/bin/Dev16 -N /D16 &
+/windows/apps/Wterm/Dev.win -N /D16/win -n12 -r &
+
+#ETHERNET
+#nettrap start
+Net &
+#Net.ether905 -p2000 -i5 -I0 &
+Net.ether905 &
+netmap -f
+#netpoll -i 2 -p 2 -r 5
+
+chkfsys -P /
+
+/etc/netstart
+/etc/printstart
+
+export WINGRAFX='/windows/bin/gr.scitech -g1024x768'
+
+#D-mon
+export DMLICENSEPATH=/Dmon/licenses
+/Dmon/bin/dmkey &
+
+#freeze -cdz /etc/logo.F
+#tinit -T /dev/con* -t /dev/con1 &
+tinit -T /dev/con* -c "login prim_fi" -t /dev/con1 -c "nice --9 login root" -t /dev/con2 &

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if test $# -lt 2
+then
+    echo usage: cmp_dir dir1 dir2
+    echo cmp_dir compares 2 directories
+    exit 1
+fi
+
+DIR1=$1
+DIR2=$2
+
+echo Comparing $DIR1 $DIR2
+
+PLACE=`pwd`
+
+cd $DIR1
+
+find ./ -type f | xargs -i "cmp '{}' '$DIR2/{}' "
+
+cd $PLACE

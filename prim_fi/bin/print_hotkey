@@ -1,0 +1,13 @@
+# gray pcl5
+#/Dmon/bin/dmprhp -o /dev/spool/picture -a -M 2 -r lj -c /home/prim_fi/windows/colors.cfg
+#/Dmon/bin/dmprhp -o /dev/spool/picture -a -M 2 -r lj -c /prim_fi/bin/dmprhp_colors.cfg
+
+# gray pcl5 (high quality???)
+/Dmon/bin/dmprhp -o /dev/spool/picture -a -q 2 -M 2 -r lj -c /home/prim_fi/windows/colors.cfg
+#/Dmon/bin/dmprhp -o /dev/spool/picture -a -q 2 -M 2 -r lj -c /prim_fi/bin/dmprhp_colors.cfg
+
+# color pcl3
+#/Dmon/bin/dmprhp -o /dev/spool/picture -a -M 2 -c /home/prim_fi/windows/colors.cfg
+
+# color pcl3 (high quality???)
+#/Dmon/bin/dmprhp -o /dev/spool/picture -a -q 2 -M 2 -c /home/prim_fi/windows/colors.cfg

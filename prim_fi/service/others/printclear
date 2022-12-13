@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Clear TCP/IP printer spooler /usr/spool/lpd/cf* .../df*
+
+lprc down all
+find /usr/spool/output/lpd/ -name 'cf*' -exec rm -fv {}
+find /usr/spool/output/lpd/ -name 'df*' -exec rm -fv {}
+rm -fv /usr/spool/output/lpd/lock
+lprc up all

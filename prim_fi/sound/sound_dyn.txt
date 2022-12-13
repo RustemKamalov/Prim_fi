@@ -1,0 +1,63 @@
+CFG:
+	   CPAR:
+        P0  = SOUND_STAT
+        P1  = SOUND_ERRC
+        P2  = SOUND_CFGS
+        P3  = SOUND_PRIO
+        P4  = SOUND_LOGF
+        P5  = SOUND_FLEN
+        P6  = SOUND_LOGC
+        P7  = SOUND_LOGM
+        P8  = SOUND_CHKT
+        P9  = SOUND_ESEQ
+        P10 = SOUND_BASS
+        P11 = SOUND_TREB
+
+  STAT = P0
+  ERRC = P1
+  CFGS = P2
+  PRIO = P3
+  LOGF = P4
+  FLEN = P5
+  LOGC = P6
+  LOGM = P7
+  CHKT = P8
+  ESEQ = P9
+  BASS = P10
+  TREB = P11
+
+
+
+
+#OBJ: sound_start
+#    OFILE: /krsh/sound/wavs/tada.wav
+
+
+OBJ: Fire_sirena
+    CPAR:   P0=SOUND_TRIG
+
+    CFV:    IF P0: Q1; ELSE Q0;
+    MPRI:   1
+    MIRQ:   0
+    MINTR:  1
+    MDISC:  2
+    MLVOL:  100
+    MRVOL:  100
+    MC:     0
+    OFILE: /prim_fi/sound/wavs/Sirens/schoolbell.wav
+
+OBJ: mild_warning
+    CPAR:   P0=SOUND_TRIG_099
+            P1=SOUND_TRIG
+            P2=Fi_StaProt152
+    CFV:    IF (P0||P2)&!P1: Q1; ELSE Q0;
+    MPRI:   1
+    MIRQ:   0
+    MINTR:  1
+    MDISC:  2
+    MLVOL:  100
+    MRVOL:  100
+    MC:     0
+    OFILE: /prim_fi/sound/wavs1/notify.wav
+
+

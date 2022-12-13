@@ -1,0 +1,13 @@
+#	Fieldname,Type,Length,Decimals
+FIELDS:
+	STRCONST,C,30,0
+	TYPE,C,1,0
+	SIGNALNAME,C,50,0
+	PRIORITY,C,5,0
+	UNIT,C,10,0
+ENDFIELDS:
+
+#	Indexname,Expression,Filter,Unique,Descending
+INDEXES:
+	STRCONST,STRCONST,-,0,0
+ENDINDEXES:

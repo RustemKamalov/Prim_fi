@@ -1,0 +1,43 @@
+len=90
+pre=P3_
+file=timers6
+
+awk 'BEGIN { 
+                empty_line="";
+                for (i=0; i<'"$len"'; i++) empty_line=empty_line" ";
+            }
+     {  if (NF>1){
+					head=$1
+					body=$0;
+					l1="";
+					l2="";
+					l3="";
+					al=1;
+					ll=0;
+					print(":PARL: P0='"$pre"'"head);
+					while(length(head)<7){
+						head=head " ";
+					}
+
+					for(i=2;i<=NF;i++){
+						aline="";
+						for(j=i; (length(aline " " $j)<'"$len"') && (j<=NF)  ;j++){
+							aline=aline " "$j;
+						}
+						i=j-1;
+						while(length(aline)<'"$len"'+1){
+							aline=aline " ";
+						}
+						if(al){
+							print("³"head"³"aline"³^%Q10 ^ ³");
+							al=0;
+						} else {
+							print("³       ³"aline"³        ³");
+						}
+					}					
+					print("³       ³"empty_line" ³        ³");
+
+			 }
+
+}' $file
+

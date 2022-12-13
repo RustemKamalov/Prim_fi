@@ -1,0 +1,27 @@
+echo "\a\a"
+set -v
+############################################
+# Anzserszkaja konfiguracio mentese
+#       superuser  -kent futtatando
+#
+#
+# a mentett lemes install-lal toltheto be
+#    betoltes utan "setup" le fog futni 
+############################################
+
+
+drive=/dev/fd0
+case $# in
+	0)	;;
+	*)	drive=$1;
+esac
+mkdir /anzser.tmp
+cd /anzser.tmp
+cp /anzser/service/egyeb/install_xxx /anzser.tmp/install_msg
+cp /anzser/service/egyeb/setup.xxx /anzser.tmp/setup
+#pax -w -v install_msg setup /anzser | freeze -f | vol -w $drive
+
+pax -w -v install_msg /anzser | freeze -f | vol -w $drive
+cd /anzser
+rm -Rf /anzser.tmp
+

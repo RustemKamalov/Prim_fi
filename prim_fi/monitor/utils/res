@@ -1,0 +1,42 @@
+Converting Pictures ...
+Found "1/0" in dynamic of picture "control_valve1.pict"
+  in directory "/prim_fi/monitor/pict/station_2"
+
+D-mon Pict To Text V5.10.2.0 (ScadaSys Ltd.)
+D-mon Text To Pict V5.11.2.2? (ScadaSys Ltd.)
+D-mon Monitor Editor V5.10.1.6 (ScadaSys Ltd.)
+DmMonEdit: ./control_valve1: Compiling...
+  0%  1%  2%  3%  4%  5%  6%  7%  8%  9% 10% 11% 12% 13% 14% 15% 16% 17% 18% 19% 20% 21% 22% 23% 24% 25% 26% 27% 28%DmMonEdit: WARNING Line 329: Recurring Definition
+ 29%DmMonEdit: WARNING Line 349: Recurring Definition
+ 30% 31% 32% 33% 34% 35%DmMonEdit: WARNING Line 420: Recurring Definition
+ 36% 37% 38% 39% 40% 41% 42% 43% 44% 45% 46% 47%DmMonEdit: WARNING Line 560: Recurring Definition
+ 48% 49% 50% 51% 52% 53% 54%DmMonEdit: WARNING Line 636: Recurring Definition
+ 55% 56% 57%DmMonEdit: WARNING Line 668: Recurring Definition
+ 58% 59%DmMonEdit: WARNING Line 694: Recurring Definition
+ 60% 61%DmMonEdit: WARNING Line 720: Recurring Definition
+ 62% 63% 64% 65% 66% 67% 68% 69% 70% 71% 72% 73% 74% 75%DmMonEdit: WARNING Line 887: Recurring Definition
+ 76% 77%DmMonEdit: WARNING Line 912: Recurring Definition
+ 78% 79% 80% 81% 82% 83% 84% 85% 86% 87% 88% 89% 90% 91% 92% 93% 94% 95% 96% 97% 98% 99%DmMonEdit: Warnings Detected Upon Compilation
+DmMonEdit: Compilation Succeeded
+Found "1/0" in dynamic of picture "control_valve2.pict"
+  in directory "/prim_fi/monitor/pict/station_2"
+
+D-mon Pict To Text V5.10.2.0 (ScadaSys Ltd.)
+D-mon Text To Pict V5.11.2.2? (ScadaSys Ltd.)
+D-mon Monitor Editor V5.10.1.6 (ScadaSys Ltd.)
+DmMonEdit: ./control_valve2: Compiling...
+  0%  1%  2%  3%  4%  5%  6%  7%  8%  9% 10% 11% 12% 13% 14% 15% 16% 17% 18% 19% 20% 21% 22% 23% 24% 25% 26% 27% 28% 29% 30% 31% 32% 33% 34% 35% 36%DmMonEdit: WARNING Line 434: Recurring Definition
+ 37% 38%DmMonEdit: WARNING Line 454: Recurring Definition
+ 39% 40% 41% 42% 43% 44% 45%DmMonEdit: WARNING Line 530: Recurring Definition
+ 46%DmMonEdit: WARNING Line 550: Recurring Definition
+ 47% 48% 49%DmMonEdit: WARNING Line 578: Recurring Definition
+ 50%DmMonEdit: WARNING Line 598: Recurring Definition
+ 51% 52% 53% 54% 55% 56% 57% 58% 59%DmMonEdit: WARNING Line 692: Recurring Definition
+ 60% 61%DmMonEdit: WARNING Line 718: Recurring Definition
+ 62% 63%DmMonEdit: WARNING Line 744: Recurring Definition
+ 64% 65%DmMonEdit: WARNING Line 770: Recurring Definition
+ 66% 67% 68% 69% 70% 71% 72% 73% 74% 75% 76% 77% 78% 79% 80% 81% 82% 83% 84% 85% 86% 87% 88% 89% 90% 91% 92% 93% 94% 95% 96% 97% 98% 99%DmMonEdit: Warnings Detected Upon Compilation
+DmMonEdit: Compilation Succeeded
+
+  Number of found and corrected "1/0" objs: 20
+

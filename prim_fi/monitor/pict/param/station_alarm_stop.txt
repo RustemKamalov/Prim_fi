@@ -1,0 +1,10 @@
+
+WOPT: p=Cc r=0 c=0 o=ks-r;kmsa t=1 e=0 a=1 b=0 k=0
+
+WPICT: c=6 h=0 w=0
+
+OBJ: 15
+  PARL: P0=PARAM0 P1=PARAM1
+  SELD: a=FV p=P0  f=1  v=ELSE 8192.000000;
+  SELD: a=FV p=P1  f=1  v=ELSE 8192.000000;
+OBEND

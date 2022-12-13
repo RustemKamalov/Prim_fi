@@ -1,0 +1,4 @@
+
+WOPT: p=A r=69 c=0 o=k;kmsaHV t=0 e=0 a=0 b=0
+
+WPICT: c=6 h=0 w=0

@@ -1,0 +1,53 @@
+WinZip:
+-------
+    Lehetõleg kerüljük a használatát, helyette használuk a tar-t és a gzip-et 
+        illetve a backup és a restore utilityk-et
+    Ha mégis, akkor 
+        Options-Configuration-Miscellaneous
+            Ne piáljuk be a "Tar file smart CR/LF conversion"-t !
+
+
+Far Manager beállításai:
+-----------------------------
+    javasolt könyvtár: c:\Program Files\Far
+
+    F9 - Options - Editor settings - Editor command:"%TEXT_EDITOR%" !.!
+
+    Ikonon jobb gomb / Properties / Layout
+      Screen buffer: Width = 80 Height=44
+      Window size  : Width = 80 Height=44
+
+Vedit Plus installálás
+---------------------------
+    javasolt könyvtár: c:\vedit
+
+tutorial felhasználó létrehozása W2K alatt (cygwin alatti fejlesztéshez)
+--------------------------------------------------------------------------
+
+ - W2K: 
+	 Bejelentkezés Adminisztrátori joggal
+         Control panel / Users and Passwords - Advanced fül / Advanced panelon a Users kiválasztása
+		Action / New user panelon báírható a azonosító és a teljes név, valamint a passwd.
+		(Ajánlás: User must ... pipát kivenni, Password never expires pipát kapjon.)
+
+	 Kiválasztjuk a létrehozott felhasználót jobb gomb / Properties panel Member Of fül
+		Add.. Administrators
+		A nem administrators bejegyzések törlendõk
+
+         Hozzuk létre az appikáció könyvtárát.
+
+ - Cygwin:
+	Hozzuk létre pl. a cygwin/home/tutorial könyvtárat.
+	Másoljuk bele a .../tutorial/utils/Ms/cygwin/home/tutorial/.profile-t.
+
+	Hajtsuk végre a mkpasswd -l > /etc/passwd parancsot
+
+ - W2K:
+	Kijelentkezés
+    Bejelentkezés a létrehozott felhasználóként (tutorial)
+
+ - W2K: Környezeti változók belállítása:
+ 	\Dmon\apps\tutorial\utils\Ms\set_environment.reg  
+	\Dmon\apps\tutorial\utils\Ms\set_environment.exe
+
+			

@@ -1,0 +1,610 @@
+// analog math-log 2 (the last object must be edited!!!)
+
+OBJ: M1_Ana_ValTrig01
+   CPAR:
+        P0  = M1_XT551_ValTrig
+        P1  = M1_XT552_ValTrig
+        P2  = M1_XT553_ValTrig
+        P3  = M1_XT554_ValTrig
+        P4  = M1_XT561_ValTrig
+        P5  = M1_XT562_ValTrig
+        P6  = M1_XT563_ValTrig
+        P7  = M1_XT564_ValTrig
+        P8  = M1_XT571_ValTrig
+        P9  = M1_XT572_ValTrig
+        P10 = M1_Ana_ValTrig01
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_XT551_ValTrig
+        P1  = M1_XT552_ValTrig
+        P2  = M1_XT553_ValTrig
+        P3  = M1_XT554_ValTrig
+        P4  = M1_XT561_ValTrig
+        P5  = M1_XT562_ValTrig
+        P6  = M1_XT563_ValTrig
+        P7  = M1_XT564_ValTrig
+        P8  = M1_XT571_ValTrig
+        P9  = M1_XT572_ValTrig
+        P10 = M1_Ana_ValTrig01
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig02
+   CPAR:
+        P0  = M1_XT573_ValTrig
+        P1  = M1_XT574_ValTrig
+        P2  = M1_XT581_ValTrig
+        P3  = M1_XT582_ValTrig
+        P4  = M1_XT583_ValTrig
+        P5  = M1_XT584_ValTrig
+        P6  = M1_XT591_ValTrig
+        P7  = M1_XT592_ValTrig
+        P8  = M1_XT593_ValTrig
+        P9  = M1_XT594_ValTrig
+        P10 = M1_Ana_ValTrig02
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_XT573_ValTrig
+        P1  = M1_XT574_ValTrig
+        P2  = M1_XT581_ValTrig
+        P3  = M1_XT582_ValTrig
+        P4  = M1_XT583_ValTrig
+        P5  = M1_XT584_ValTrig
+        P6  = M1_XT591_ValTrig
+        P7  = M1_XT592_ValTrig
+        P8  = M1_XT593_ValTrig
+        P9  = M1_XT594_ValTrig
+        P10 = M1_Ana_ValTrig02
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig03
+   CPAR:
+        P0  = M1_RM020_ValTrig
+        P1  = M1_RM021_ValTrig
+        P2  = M1_RM022_ValTrig
+        P3  = M1_RM023_ValTrig
+        P4  = M1_TT001_ValTrig
+        P5  = M1_TT923_ValTrig
+        P6  = M1_TT924_ValTrig
+        P7  = M1_TT925_ValTrig
+        P8  = M1_TT927_ValTrig
+        P9  = M1_TT681_ValTrig
+        P10 = M1_Ana_ValTrig03
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_RM020_ValTrig
+        P1  = M1_RM021_ValTrig
+        P2  = M1_RM022_ValTrig
+        P3  = M1_RM023_ValTrig
+        P4  = M1_TT001_ValTrig
+        P5  = M1_TT923_ValTrig
+        P6  = M1_TT924_ValTrig
+        P7  = M1_TT925_ValTrig
+        P8  = M1_TT927_ValTrig
+        P9  = M1_TT681_ValTrig
+        P10 = M1_Ana_ValTrig03
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig04
+   CPAR:
+        P0  = M1_RM030_ValTrig
+        P1  = M1_RM031_ValTrig
+        P2  = M1_YT703_ValTrig
+        P3  = M1_YT704_ValTrig
+        P4  = M1_YT802_ValTrig
+        P5  = M1_YT803_ValTrig
+        P6  = M1_RM036_ValTrig
+        P7  = M1_RM037_ValTrig
+        P8  = M1_RM038_ValTrig
+        P9  = M1_RM039_ValTrig
+        P10 = M1_Ana_ValTrig04
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_RM030_ValTrig
+        P1  = M1_RM031_ValTrig
+        P2  = M1_YT703_ValTrig
+        P3  = M1_YT704_ValTrig
+        P4  = M1_YT802_ValTrig
+        P5  = M1_YT803_ValTrig
+        P6  = M1_RM036_ValTrig
+        P7  = M1_RM037_ValTrig
+        P8  = M1_RM038_ValTrig
+        P9  = M1_RM039_ValTrig
+        P10 = M1_Ana_ValTrig04
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig05
+   CPAR:
+        P0  = M1_CT711_ValTrig
+        P1  = M1_CT721_ValTrig
+        P2  = M1_CT731_ValTrig
+        P3  = M1_CT741_ValTrig
+        P4  = M1_RM044_ValTrig
+        P5  = M1_RM045_ValTrig
+        P6  = M1_RM046_ValTrig
+        P7  = M1_RM047_ValTrig
+        P8  = M1_PT551_ValTrig
+        P9  = M1_PT561_ValTrig
+        P10 = M1_Ana_ValTrig05
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_CT711_ValTrig
+        P1  = M1_CT721_ValTrig
+        P2  = M1_CT731_ValTrig
+        P3  = M1_CT741_ValTrig
+        P4  = M1_RM044_ValTrig
+        P5  = M1_RM045_ValTrig
+        P6  = M1_RM046_ValTrig
+        P7  = M1_RM047_ValTrig
+        P8  = M1_PT551_ValTrig
+        P9  = M1_PT561_ValTrig
+        P10 = M1_Ana_ValTrig05
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig06
+   CPAR:
+        P0  = M1_PT571_ValTrig
+        P1  = M1_PT581_ValTrig
+        P2  = M1_PT591_ValTrig
+        P3  = M1_RM053_ValTrig
+        P4  = M1_RM054_ValTrig
+        P5  = M1_RM055_ValTrig
+        P6  = M1_TT551_ValTrig
+        P7  = M1_TT552_ValTrig
+        P8  = M1_TT553_ValTrig
+        P9  = M1_TT554_ValTrig
+        P10 = M1_Ana_ValTrig06
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_PT571_ValTrig
+        P1  = M1_PT581_ValTrig
+        P2  = M1_PT591_ValTrig
+        P3  = M1_RM053_ValTrig
+        P4  = M1_RM054_ValTrig
+        P5  = M1_RM055_ValTrig
+        P6  = M1_TT551_ValTrig
+        P7  = M1_TT552_ValTrig
+        P8  = M1_TT553_ValTrig
+        P9  = M1_TT554_ValTrig
+        P10 = M1_Ana_ValTrig06
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig07
+   CPAR:
+        P0  = M1_TT555_ValTrig
+        P1  = M1_TT556_ValTrig
+        P2  = M1_TT561_ValTrig
+        P3  = M1_TT562_ValTrig
+        P4  = M1_TT563_ValTrig
+        P5  = M1_TT564_ValTrig
+        P6  = M1_TT565_ValTrig
+        P7  = M1_TT566_ValTrig
+        P8  = M1_TT571_ValTrig
+        P9  = M1_TT572_ValTrig
+        P10 = M1_Ana_ValTrig07
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_TT555_ValTrig
+        P1  = M1_TT556_ValTrig
+        P2  = M1_TT561_ValTrig
+        P3  = M1_TT562_ValTrig
+        P4  = M1_TT563_ValTrig
+        P5  = M1_TT564_ValTrig
+        P6  = M1_TT565_ValTrig
+        P7  = M1_TT566_ValTrig
+        P8  = M1_TT571_ValTrig
+        P9  = M1_TT572_ValTrig
+        P10 = M1_Ana_ValTrig07
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig08
+   CPAR:
+        P0  = M1_TT573_ValTrig
+        P1  = M1_TT574_ValTrig
+        P2  = M1_TT575_ValTrig
+        P3  = M1_TT576_ValTrig
+        P4  = M1_TT581_ValTrig
+        P5  = M1_TT582_ValTrig
+        P6  = M1_TT583_ValTrig
+        P7  = M1_TT584_ValTrig
+        P8  = M1_TT585_ValTrig
+        P9  = M1_TT586_ValTrig
+        P10 = M1_Ana_ValTrig08
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_TT573_ValTrig
+        P1  = M1_TT574_ValTrig
+        P2  = M1_TT575_ValTrig
+        P3  = M1_TT576_ValTrig
+        P4  = M1_TT581_ValTrig
+        P5  = M1_TT582_ValTrig
+        P6  = M1_TT583_ValTrig
+        P7  = M1_TT584_ValTrig
+        P8  = M1_TT585_ValTrig
+        P9  = M1_TT586_ValTrig
+        P10 = M1_Ana_ValTrig08
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig09
+   CPAR:
+        P0  = M1_TT591_ValTrig
+        P1  = M1_TT592_ValTrig
+        P2  = M1_TT593_ValTrig
+        P3  = M1_TT594_ValTrig
+        P4  = M1_TT595_ValTrig
+        P5  = M1_TT596_ValTrig
+        P6  = M1_RM086_ValTrig
+        P7  = M1_RM087_ValTrig
+        P8  = M1_TT711_ValTrig
+        P9  = M1_TT712_ValTrig
+        P10 = M1_Ana_ValTrig09
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_TT591_ValTrig
+        P1  = M1_TT592_ValTrig
+        P2  = M1_TT593_ValTrig
+        P3  = M1_TT594_ValTrig
+        P4  = M1_TT595_ValTrig
+        P5  = M1_TT596_ValTrig
+        P6  = M1_RM086_ValTrig
+        P7  = M1_RM087_ValTrig
+        P8  = M1_TT711_ValTrig
+        P9  = M1_TT712_ValTrig
+        P10 = M1_Ana_ValTrig09
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig10
+   CPAR:
+        P0  = M1_TT713_ValTrig
+        P1  = M1_TT714_ValTrig
+        P2  = M1_TT721_ValTrig
+        P3  = M1_TT722_ValTrig
+        P4  = M1_TT723_ValTrig
+        P5  = M1_TT724_ValTrig
+        P6  = M1_TT731_ValTrig
+        P7  = M1_TT732_ValTrig
+        P8  = M1_TT733_ValTrig
+        P9  = M1_TT734_ValTrig
+        P10 = M1_Ana_ValTrig10
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_TT713_ValTrig
+        P1  = M1_TT714_ValTrig
+        P2  = M1_TT721_ValTrig
+        P3  = M1_TT722_ValTrig
+        P4  = M1_TT723_ValTrig
+        P5  = M1_TT724_ValTrig
+        P6  = M1_TT731_ValTrig
+        P7  = M1_TT732_ValTrig
+        P8  = M1_TT733_ValTrig
+        P9  = M1_TT734_ValTrig
+        P10 = M1_Ana_ValTrig10
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig11
+   CPAR:
+        P0  = M1_TT741_ValTrig
+        P1  = M1_TT742_ValTrig
+        P2  = M1_TT743_ValTrig
+        P3  = M1_TT744_ValTrig
+        P4  = M1_TT703_ValTrig
+        P5  = M1_TT704_ValTrig
+        P6  = M1_TT705_ValTrig
+        P7  = M1_YT651_ValTrig
+        P8  = M1_YT801_ValTrig
+        P9  = M1_PT601_ValTrig
+        P10 = M1_Ana_ValTrig11
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_TT741_ValTrig
+        P1  = M1_TT742_ValTrig
+        P2  = M1_TT743_ValTrig
+        P3  = M1_TT744_ValTrig
+        P4  = M1_TT703_ValTrig
+        P5  = M1_TT704_ValTrig
+        P6  = M1_TT705_ValTrig
+        P7  = M1_YT651_ValTrig
+        P8  = M1_YT801_ValTrig
+        P9  = M1_PT601_ValTrig
+        P10 = M1_Ana_ValTrig11
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig12
+   CPAR:
+        P0  = M1_RM110_ValTrig
+        P1  = M1_RM111_ValTrig
+        P2  = M1_CT950_ValTrig
+        P3  = M1_BT950_ValTrig
+        P4  = M1_CT951_ValTrig
+        P5  = M1_BT951_ValTrig
+        P6  = M1_CT952_ValTrig
+        P7  = M1_BT952_ValTrig
+        P8  = M1_CT953_ValTrig
+        P9  = M1_BT953_ValTrig
+        P10 = M1_Ana_ValTrig12
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_RM110_ValTrig
+        P1  = M1_RM111_ValTrig
+        P2  = M1_CT950_ValTrig
+        P3  = M1_BT950_ValTrig
+        P4  = M1_CT951_ValTrig
+        P5  = M1_BT951_ValTrig
+        P6  = M1_CT952_ValTrig
+        P7  = M1_BT952_ValTrig
+        P8  = M1_CT953_ValTrig
+        P9  = M1_BT953_ValTrig
+        P10 = M1_Ana_ValTrig12
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig13
+   CPAR:
+        P0  = M1_CT954_ValTrig
+        P1  = M1_BT954_ValTrig
+        P2  = M1_CT955_ValTrig
+        P3  = M1_BT955_ValTrig
+        P4  = M1_CT956_ValTrig
+        P5  = M1_BT956_ValTrig
+        P6  = M1_CT957_ValTrig
+        P7  = M1_BT957_ValTrig
+        P8  = M1_CT958_ValTrig
+        P9  = M1_BT958_ValTrig
+        P10 = M1_Ana_ValTrig13
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_CT954_ValTrig
+        P1  = M1_BT954_ValTrig
+        P2  = M1_CT955_ValTrig
+        P3  = M1_BT955_ValTrig
+        P4  = M1_CT956_ValTrig
+        P5  = M1_BT956_ValTrig
+        P6  = M1_CT957_ValTrig
+        P7  = M1_BT957_ValTrig
+        P8  = M1_CT958_ValTrig
+        P9  = M1_BT958_ValTrig
+        P10 = M1_Ana_ValTrig13
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig14
+   CPAR:
+        P0  = M1_RM130_ValTrig
+        P1  = M1_RM131_ValTrig
+        P2  = M1_RM132_ValTrig
+        P3  = M1_RM133_ValTrig
+        P4  = M1_RM134_ValTrig
+        P5  = M1_RM135_ValTrig
+        P6  = M1_RM136_ValTrig
+        P7  = M1_RM137_ValTrig
+        P8  = M1_RM138_ValTrig
+        P9  = M1_RM139_ValTrig
+        P10 = M1_Ana_ValTrig14
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_RM130_ValTrig
+        P1  = M1_RM131_ValTrig
+        P2  = M1_RM132_ValTrig
+        P3  = M1_RM133_ValTrig
+        P4  = M1_RM134_ValTrig
+        P5  = M1_RM135_ValTrig
+        P6  = M1_RM136_ValTrig
+        P7  = M1_RM137_ValTrig
+        P8  = M1_RM138_ValTrig
+        P9  = M1_RM139_ValTrig
+        P10 = M1_Ana_ValTrig14
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig15
+   CPAR:
+        P0  = M1_RM140_ValTrig
+        P1  = M1_RM141_ValTrig
+        P2  = M1_RM142_ValTrig
+        P3  = M1_RM143_ValTrig
+        P4  = M1_CT101_ValTrig
+        P5  = M1_CT201_ValTrig
+        P6  = M1_CT301_ValTrig
+        P7  = M1_CT401_ValTrig
+        P8  = M1_CT501_ValTrig
+        P9  = M1_MT101_ValTrig
+        P10 = M1_Ana_ValTrig15
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_RM140_ValTrig
+        P1  = M1_RM141_ValTrig
+        P2  = M1_RM142_ValTrig
+        P3  = M1_RM143_ValTrig
+        P4  = M1_CT101_ValTrig
+        P5  = M1_CT201_ValTrig
+        P6  = M1_CT301_ValTrig
+        P7  = M1_CT401_ValTrig
+        P8  = M1_CT501_ValTrig
+        P9  = M1_MT101_ValTrig
+        P10 = M1_Ana_ValTrig15
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+
+OBJ: M1_Ana_ValTrig16
+   CPAR:
+        P0  = M1_MT201_ValTrig
+        P1  = M1_MT301_ValTrig
+        P2  = M1_MT401_ValTrig
+        P3  = M1_MT501_ValTrig
+        P4  = M1_BT051_ValTrig
+        P5  = M1_BT052_ValTrig
+        P6  = M1_CT051_ValTrig
+        P7  = M1_CT052_ValTrig
+        P8  = M1_RM158_ValTrig
+        P9  = M1_RM159_ValTrig
+        P10 = M1_Ana_ValTrig16
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = M1_MT201_ValTrig
+        P1  = M1_MT301_ValTrig
+        P2  = M1_MT401_ValTrig
+        P3  = M1_MT501_ValTrig
+        P4  = M1_BT051_ValTrig
+        P5  = M1_BT052_ValTrig
+        P6  = M1_CT051_ValTrig
+        P7  = M1_CT052_ValTrig
+        P8  = M1_RM158_ValTrig
+        P9  = M1_RM159_ValTrig
+        P10 = M1_Ana_ValTrig16
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+

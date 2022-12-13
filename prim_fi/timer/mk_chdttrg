@@ -1,0 +1,12 @@
+startno=0
+endno=255
+
+i=$startno
+
+while [ $i -le $endno ]
+do
+  szam=$(echo $i | awk '{printf("%03d", $1)}')
+  sed "s/xxx/$szam/" templ >> chdttrg
+  echo $szam
+  let i=$i+1
+done

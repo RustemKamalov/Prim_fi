@@ -1,0 +1,597 @@
+M1_GI21_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.1
+M1_GI21_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.2
+M1_GI21_3_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.3
+M1_GI21_4_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.4
+M1_GI21_5_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.5
+M1_GI21_6_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.6
+M1_GI21_51Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.51
+M1_GI21_52Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.52
+M1_GI21_53Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.53
+M1_GI21_54Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 21.54
+M1_GI29_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 29.1
+M1_GI29_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 29.2
+M1_GI2_1__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.1
+M1_GI2_2__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.2
+M1_GI2_3__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.3
+M1_GI2_4__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.4
+M1_GI2_5__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.5
+M1_GI2_6__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.6
+M1_GI2_7__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.7
+M1_GI2_8__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.8
+M1_GI2_9__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.9
+M1_GI2_10_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.10
+M1_GI2_11_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.11
+M1_GI2_12_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.12
+M1_GI2_13_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.13
+M1_GI2_14_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.14
+M1_GI2_15_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.15
+M1_GI2_16_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.16
+M1_GI2_17_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.17
+M1_GI2_18_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.18
+M1_GI2_19_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.19
+M1_GI2_20_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.20
+M1_GI2_21_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.21
+M1_GI2_22_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 2.22
+M1_GI23_47Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.47
+M1_GI23_48Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.48
+M1_GI23_4_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.4
+M1_GI23_6_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.6
+M1_GI23_7_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.7
+M1_GI23_8_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.8
+M1_GI23_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.1
+M1_GI23_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.2
+M1_GI23_3_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.3
+M1_GI20_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.1
+M1_GI20_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.2
+M1_GI23_9_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.9
+M1_GI23_10Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.10
+M1_GI23_11Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.11
+M1_GI20_10Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.10
+M1_GI20_11Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.11
+M1_GI23_12Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.12
+M1_GI23_13Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.13
+M1_GI23_14Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.14
+M1_GI20_19Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.19
+M1_GI20_20Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.20
+M1_GI23_15Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.15
+M1_GI23_16Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.16
+M1_GI23_17Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.17
+M1_GI20_28Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.28
+M1_GI20_29Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.29
+M1_GI23_18Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.18
+M1_GI23_19Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.19
+M1_GI23_20Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.20
+M1_GI20_37Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.37
+M1_GI20_38Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.38
+M1_GI23_21Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.21
+M1_GI23_22Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.22
+M1_GI23_23Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.23
+M1_GI20_46Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.46
+M1_GI20_47Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.47
+M1_GI23_24Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.24
+M1_GI23_25Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.25
+M1_GI23_26Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.26
+M1_GI20_55Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.55
+M1_GI20_56Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.56
+M1_GI23_27Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.27
+M1_GI23_28Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.28
+M1_GI23_29Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.29
+M1_GI20_64Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.64
+M1_GI20_65Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.65
+M1_GI23_30Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.30
+M1_GI23_31Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.31
+M1_GI23_32Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.32
+M1_GI20_73Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.73
+M1_GI20_74Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.74
+M1_GI23_33Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.33
+M1_GI23_34Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.34
+M1_GI23_35Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.35
+M1_GI20_82Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.82
+M1_GI20_83Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 20.83
+M1_GI23_36Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.36
+M1_GI23_37Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.37
+M1_GI23_38Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.38
+M1_GI22_91Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 22.91
+M1_GI22_92Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 22.92
+M1_GI23_39Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.39
+M1_GI23_40Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.40
+M1_GI23_41Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.41
+M1_GI23_42Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.42
+M1_GI23_43Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.43
+M1_GI23_44Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.44
+M1_GI23_45Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.45
+M1_GI23_46Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 23.46
+M1_GI22_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:Задвижка 22.1
+M1_GIR1I02Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I02
+M1_GIR1I03Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I03
+M1_GIR1I04Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I04
+M1_GIR1I05Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I05
+M1_GIR1I06Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I06
+M1_GIR1I07Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I07
+M1_GIR1I08Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I08
+M1_GIR1I09Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I09
+M1_GIR1I10Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I10
+M1_GIR1I11Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I11
+M1_GIR1I12Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I12
+M1_GIR1I13Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I13
+M1_GIR1I14Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I14
+M1_GIR1I15Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I15
+M1_GIR1I16Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I16
+M1_GIR1I17Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I17
+M1_GIR1I18Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I18
+M1_GIR1I19Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I19
+M1_GIR1I20Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I20
+M1_GIR1I21Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I21
+M1_GIR1I22Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I22
+M1_GIR1I23Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I23
+M1_GIR1I24Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I24
+M1_GIR1I25Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1И:GIR1I25
+M1_GV40A__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Рег.клапан 40A
+M1_GV40B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Рег.клапан 40B
+M1_GV58___Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Рег.клапан 58
+M1_GV57___Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Рег.клапан 57
+M1_GV1_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 1-Б
+M1_GV1_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 1-С
+M1_GV2_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 2-Б
+M1_GV2_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 2-С
+M1_GV3_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 3-Б
+M1_GV3_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 3-С
+M1_GV4_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 4-Б
+M1_GV4_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 4-С
+M1_GV8_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 8-Б
+M1_GV9_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 9-С
+M1_GV121_3Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 121.3
+M1_GV121_4Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:Задвижка 121.4
+M1_GVR1S01Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S01
+M1_GVR1S02Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S02
+M1_GVR1S03Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S03
+M1_GVR1S04Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S04
+M1_GVR1S05Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S05
+M1_GVR1S06Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S06
+M1_GVR1S07Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S07
+M1_GVR1S08Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S08
+M1_GVR1S09Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S09
+M1_GVR1S10Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S10
+M1_GVR1S11Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S11
+M1_GVR1S12Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S12
+M1_GVR1S13Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S13
+M1_GVR1S14Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S14
+M1_GVR1S15Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S15
+M1_GVR1S16Name          ,  Y,  0, M1_Name             , N, 0, 0, "M1О:GVR1S16
+
+M2_GI181_1Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 181.1
+M2_GI181_2Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 181.2
+M2_GI203__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 203
+M2_GI203_1Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 203.1
+M2_GI203_2Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 203.2
+M2_GI203_3Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 203.3
+M2_GI203_4Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 203.4
+M2_GI205__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 205
+M2_GI206__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 206
+M2_GI208__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 208
+M2_GI209__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 209
+M2_GI211__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 211
+M2_GI212__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 212
+M2_GI214__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 214
+M2_GI215__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 215
+M2_GI216__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 216
+M2_GI217__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 217
+M2_GI218__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 218
+M2_GI219__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 219
+M2_GI220__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 220
+M2_GI221__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 221
+M2_GI222__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 222
+M2_GI223__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 223
+M2_GI224__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 224
+M2_GI225__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 225
+M2_GI226__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 226
+M2_GI227__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 227
+M2_GI228__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 228
+M2_GI229__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 229
+M2_GI230__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 230
+M2_GI231__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 231
+M2_GI232__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 232
+M2_GI233__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 233
+M2_GI235__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 235
+M2_GI236__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 236
+M2_GI238__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 238
+M2_GI239__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 239
+M2_GI241__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 241
+M2_GI242__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 242
+M2_GI244__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 244
+M2_GI255__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 255
+M2_GI256__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 256
+M2_GI257__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 257
+M2_GI258__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 258
+M2_GI259__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 259
+M2_GI260__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 260
+M2_GI261__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 261
+M2_GI262__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 262
+M2_GI263__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 263
+M2_GI264__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 264
+M2_GI265__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 265
+M2_GI266__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 266
+M2_GI267__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 267
+M2_GI268__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 268
+M2_GI269__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 269
+M2_GI270__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 270
+M2_GI271__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 271
+M2_GI272__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 272
+M2_GI273__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 273
+M2_GI274__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 274
+M2_GI275__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 275
+M2_GI276__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 276
+M2_GI277__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:Задвижка 277
+M2_GIR2I01Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I01
+M2_GIR2I02Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I02
+M2_GIR2I03Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I03
+M2_GIR2I04Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I04
+M2_GIR2I05Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I05
+M2_GIR2I06Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I06
+M2_GIR2I07Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I07
+M2_GIR2I08Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I08
+M2_GIR2I09Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I09
+M2_GIR2I10Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I10
+M2_GIR2I11Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I11
+M2_GIR2I12Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I12
+M2_GIR2I13Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I13
+M2_GIR2I14Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I14
+M2_GIR2I15Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I15
+M2_GIR2I16Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I16
+M2_GIR2I17Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I17
+M2_GIR2I18Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I18
+M2_GIR2I19Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I19
+M2_GIR2I20Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I20
+M2_GIR2I21Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I21
+M2_GIR2I22Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I22
+M2_GIR2I23Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I23
+M2_GIR2I24Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I24
+M2_GIR2I25Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I25
+M2_GIR2I26Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I26
+M2_GIR2I27Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I27
+M2_GIR2I28Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I28
+M2_GIR2I29Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I29
+M2_GIR2I30Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I30
+M2_GIR2I31Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I31
+M2_GIR2I32Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I32
+M2_GIR2I33Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2И:GIR2I33
+M2_GV1_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 1-А
+M2_GV2_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 2-А
+M2_GV3_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 3-А
+M2_GV4_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 4-А
+M2_GV5_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 5-А
+M2_GV5_B__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 5-Б
+M2_GV5_C__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 5-С
+M2_GV6_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 6-А
+M2_GV6_B__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 6-Б
+M2_GV6_C__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 6-С
+M2_GV7_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 7-А
+M2_GV7_B__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 7-Б
+M2_GV7_C__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 7-С
+M2_GV8_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 8-А
+M2_GV8_C__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 8-С
+M2_GV9_A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 9-А
+M2_GV9_B__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 9-Б
+M2_GV10_A_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 10-А
+M2_GV10_B_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 10-Б
+M2_GV10_C_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 10-С
+M2_GV25_A_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 25-А
+M2_GV25_B_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 25-Б
+M2_GV26_A_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 26-А
+M2_GV26_B_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 26-Б
+M2_GV130A_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Рег.клапан 130A
+M2_GV111_5Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 111.5
+M2_GV111_6Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 111.6
+M2_GV116__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 116
+M2_GV121_1Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 121.1
+M2_GV121_2Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 121.2
+M2_GV49A__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Рег.клапан 49A
+M2_GV49B__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Рег.клапан 49B
+M2_GV204__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 204
+M2_GV207__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 207
+M2_GV210__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 210
+M2_GV213__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 213
+M2_GV234__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 234
+M2_GV237__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 237
+M2_GV240__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 240
+M2_GV243__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Затвор 243
+M2_GVZ_1__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка Z-1
+M2_GVZ_2__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка Z-2
+M2_GV3B2__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 3В2
+M2_GV4B2__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 4В2
+M2_GV1B2__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 1В2
+M2_GV2B2__Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 2В2
+M2_GV3B10_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 3В10
+M2_GV4B10_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 4В10
+M2_GV1B10_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 1В10
+M2_GV2B10_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 2В10
+M2_GV301A_Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:Задвижка 301A
+M2_GVR2S02Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S02
+M2_GVR2S03Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S03
+M2_GVR2S04Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S04
+M2_GVR2S05Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S05
+M2_GVR2S06Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S06
+M2_GVR2S07Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S07
+M2_GVR2S08Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S08
+M2_GVR2S09Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S09
+M2_GVR2S10Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S10
+M2_GVR2S11Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S11
+M2_GVR2S12Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S12
+M2_GVR2S13Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S13
+M2_GVR2S14Name          ,  Y,  0, M2_Name             , N, 0, 0, "M2О:GVR2S14
+
+MS_725_GV5_5__Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.5
+MS_725_GV5_42_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.42
+MS_725_GV5_43_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.43
+MS_725_GV5_44_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.44
+MS_725_GV5_45_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.45
+MS_725_GV5_34_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.34
+MS_725_GV5_35_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.35
+MS_725_GV5_36_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.36
+MS_725_GV5_37_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.37
+MS_725_GV5_38_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.38
+MS_725_GV5_39_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.39
+MS_725_GV5_40_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.40
+MS_725_GV5_41_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.41
+MS_725_GV5_7__Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.7
+MS_725_GV5_6__Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.6
+MS_725_GV5_10_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.10
+MS_725_GV5_11_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.11
+MS_725_GV5_12_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.12
+MS_725_GV5_13_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.13
+MS_725_GV5_20_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.20
+MS_725_GV5_21_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.21
+MS_725_GV5_2__Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.2
+MS_725_GV5_18_Name , U,   0,           Meas725ValveU     , N, 0, 0, "Задвижка 5.18
+MS_726_GV5_4__Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.4
+MS_726_GV5_42AName , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.42
+MS_726_GV5_22_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.22
+MS_726_GV5_23_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.23
+MS_726_GV5_24_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.24
+MS_726_GV5_25_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.25
+MS_726_GV5_26_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.26
+MS_726_GV5_27_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.27
+MS_726_GV5_28_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.28
+MS_726_GV5_29_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.29
+MS_726_GV5_30_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.30
+MS_726_GV5_31_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.31
+MS_726_GV5_32_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.32
+MS_726_GV5_33_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.33
+MS_726_GV5_17_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.17
+MS_726_GV5_16_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.16
+MS_726_GV5_14_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.14
+MS_726_GV5_15_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.15
+MS_726_GV5_9__Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.9
+MS_726_GV5_8__Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.8
+MS_726_GV5_19_Name , U,   0,           Meas726ValveU     , N, 0, 0, "Задвижка 5.19
+
+P2_GIXV337_Name          ,  Y,  0, 001, P2_Name     , N, 0, 0, "ЗАДВИЖКА 337
+P2_GIXV572_Name          ,  Y,  0, 002, P2_Name     , N, 0, 0, "ЗАДВИЖКА 572
+P2_GIXV338_Name          ,  Y,  0, 003, P2_Name     , N, 0, 0, "ЗАДВИЖКА 338
+P2_GIXV438_Name          ,  Y,  0, 004, P2_Name     , N, 0, 0, "ЗАДВИЖКА 438
+P2_GIXV441_Name          ,  Y,  0, 005, P2_Name     , N, 0, 0, "ЗАДВИЖКА 441
+P2_GIXV440_Name          ,  Y,  0, 006, P2_Name     , N, 0, 0, "ЗАДВИЖКА 440
+P2_GIXV443_Name          ,  Y,  0, 007, P2_Name     , N, 0, 0, "ЗАДВИЖКА 443
+P2_GIXV432_Name          ,  Y,  0, 008, P2_Name     , N, 0, 0, "ЗАДВИЖКА 432
+P2_GIXV433_Name          ,  Y,  0, 009, P2_Name     , N, 0, 0, "ЗАДВИЖКА 433
+P2_GIESV390Name          ,  Y,  0, 010, P2_Name     , N, 0, 0, "ЗАДВИЖКА 390
+P2_GIESV389Name          ,  Y,  0, 011, P2_Name     , N, 0, 0, "ЗАДВИЖКА 389
+P2_GIXV334_Name          ,  Y,  0, 012, P2_Name     , N, 0, 0, "ЗАДВИЖКА 334
+P2_GIXV333_Name          ,  Y,  0, 013, P2_Name     , N, 0, 0, "ЗАДВИЖКА 333
+P2_GIXV335_Name          ,  Y,  0, 014, P2_Name     , N, 0, 0, "ЗАДВИЖКА 335
+P2_GIXV326_Name          ,  Y,  0, 015, P2_Name     , N, 0, 0, "ЗАДВИЖКА 326
+P2_GIXV336_Name          ,  Y,  0, 016, P2_Name     , N, 0, 0, "ЗАДВИЖКА 336
+P2_GIXV577_Name          ,  Y,  0, 017, P2_Name     , N, 0, 0, "ЗАДВИЖКА 577
+P2_GIXV319_Name          ,  Y,  0, 018, P2_Name     , N, 0, 0, "ЗАДВИЖКА 319
+P2_GIESV321Name          ,  Y,  0, 019, P2_Name     , N, 0, 0, "ЗАДВИЖКА 321
+P2_GIESV323Name          ,  Y,  0, 020, P2_Name     , N, 0, 0, "ЗАДВИЖКА 323
+P2_GIESV324Name          ,  Y,  0, 021, P2_Name     , N, 0, 0, "ЗАДВИЖКА 324
+P2_GIXV316_Name          ,  Y,  0, 022, P2_Name     , N, 0, 0, "ЗАДВИЖКА 316
+P2_GIXV317_Name          ,  Y,  0, 023, P2_Name     , N, 0, 0, "ЗАДВИЖКА 317
+P2_GIXV318_Name          ,  Y,  0, 024, P2_Name     , N, 0, 0, "ЗАДВИЖКА 318
+P2_GIXV392_Name          ,  Y,  0, 025, P2_Name     , N, 0, 0, "ЗАДВИЖКА 392
+P2_GIXV391_Name          ,  Y,  0, 026, P2_Name     , N, 0, 0, "ЗАДВИЖКА 391
+P2_GIXV412_Name          ,  Y,  0, 027, P2_Name     , N, 0, 0, "ЗАДВИЖКА 412
+P2_GIXV400_Name          ,  Y,  0, 028, P2_Name     , N, 0, 0, "ЗАДВИЖКА 400
+P2_GIXV573_Name          ,  Y,  0, 029, P2_Name     , N, 0, 0, "ЗАДВИЖКА 573
+P2_GIXV574_Name          ,  Y,  0, 030, P2_Name     , N, 0, 0, "ЗАДВИЖКА 574
+P2_GIXV402_Name          ,  Y,  0, 031, P2_Name     , N, 0, 0, "ЗАДВИЖКА 402
+P2_GIXV404_Name          ,  Y,  0, 032, P2_Name     , N, 0, 0, "ЗАДВИЖКА 404
+P2_GIXV405_Name          ,  Y,  0, 033, P2_Name     , N, 0, 0, "ЗАДВИЖКА 405
+P2_GIXV408_Name          ,  Y,  0, 034, P2_Name     , N, 0, 0, "ЗАДВИЖКА 408
+P2_GIXV410_Name          ,  Y,  0, 035, P2_Name     , N, 0, 0, "ЗАДВИЖКА 410
+P2_GIXV411_Name          ,  Y,  0, 036, P2_Name     , N, 0, 0, "ЗАДВИЖКА 411
+P2_GIXV409_Name          ,  Y,  0, 037, P2_Name     , N, 0, 0, "ЗАДВИЖКА 409
+P2_GIXV407_Name          ,  Y,  0, 038, P2_Name     , N, 0, 0, "ЗАДВИЖКА 407
+P2_GIXV406_Name          ,  Y,  0, 039, P2_Name     , N, 0, 0, "ЗАДВИЖКА 406
+P2_GIXV403_Name          ,  Y,  0, 040, P2_Name     , N, 0, 0, "ЗАДВИЖКА 403
+P2_GIXV401_Name          ,  Y,  0, 041, P2_Name     , N, 0, 0, "ЗАДВИЖКА 401
+P2_GIXV305_Name          ,  Y,  0, 042, P2_Name     , N, 0, 0, "ЗАДВИЖКА 305
+P2_GIXV304_Name          ,  Y,  0, 043, P2_Name     , N, 0, 0, "ЗАДВИЖКА 304
+P2_GIXV306_Name          ,  Y,  0, 044, P2_Name     , N, 0, 0, "ЗАДВИЖКА 306
+P2_GIXV308_Name          ,  Y,  0, 045, P2_Name     , N, 0, 0, "ЗАДВИЖКА 308
+P2_GIXV307_Name          ,  Y,  0, 046, P2_Name     , N, 0, 0, "ЗАДВИЖКА 307
+P2_GIXV309_Name          ,  Y,  0, 047, P2_Name     , N, 0, 0, "ЗАДВИЖКА 309
+P2_GIESV315Name          ,  Y,  0, 048, P2_Name     , N, 0, 0, "ЗАДВИЖКА 315
+P2_GIXV430_Name          ,  Y,  0, 049, P2_Name     , N, 0, 0, "ЗАДВИЖКА 430
+P2_GIXV425_Name          ,  Y,  0, 050, P2_Name     , N, 0, 0, "ЗАДВИЖКА 425
+P2_GIXV431_Name          ,  Y,  0, 051, P2_Name     , N, 0, 0, "ЗАДВИЖКА 431
+P2_GIXV428_Name          ,  Y,  0, 052, P2_Name     , N, 0, 0, "ЗАДВИЖКА 428
+P2_GIXV426_Name          ,  Y,  0, 053, P2_Name     , N, 0, 0, "ЗАДВИЖКА 426
+P2_GIXV423_Name          ,  Y,  0, 054, P2_Name     , N, 0, 0, "ЗАДВИЖКА 423
+P2_GIXV319AName          ,  Y,  0, 055, P2_Name     , N, 0, 0, "ЗАДВИЖКА 319A
+P2_GIESV322Name          ,  Y,  0, 056, P2_Name     , N, 0, 0, "ЗАДВИЖКА 322
+P2_GIESV388Name          ,  Y,  0, 057, P2_Name     , N, 0, 0, "ЗАДВИЖКА 388
+P2_GIXV434_Name          ,  Y,  0, 058, P2_Name     , N, 0, 0, "ЗАДВИЖКА 434
+P2_GIR004__Name          ,  Y,  0, 059, P2_Name     , N, 0, 0, "ЗАДВИЖКА R004
+P2_GIR005__Name          ,  Y,  0, 060, P2_Name     , N, 0, 0, "ЗАДВИЖКА R005
+P2_GIR006__Name          ,  Y,  0, 061, P2_Name     , N, 0, 0, "ЗАДВИЖКА R006
+P2_GIR007__Name          ,  Y,  0, 062, P2_Name     , N, 0, 0, "ЗАДВИЖКА R007
+P2_GIR008__Name          ,  Y,  0, 063, P2_Name     , N, 0, 0, "ЗАДВИЖКА R008
+P2_GIR009__Name          ,  Y,  0, 064, P2_Name     , N, 0, 0, "ЗАДВИЖКА R009
+P2_GV82_1__Name          ,  Y,  0, 065, P2_Name     , N, 0, 0, "ЗАДВИЖКА 82-1
+P2_GV82_2__Name          ,  Y,  0, 066, P2_Name     , N, 0, 0, "ЗАДВИЖКА 82-2
+P2_GV40_1_1Name          ,  Y,  0, 067, P2_Name     , N, 0, 0, "ЗАДВИЖКА 40-1-1
+P2_GV40_1_2Name          ,  Y,  0, 068, P2_Name     , N, 0, 0, "ЗАДВИЖКА 40-1-2
+P2_GV40_1_3Name          ,  Y,  0, 069, P2_Name     , N, 0, 0, "ЗАДВИЖКА 40-1-3
+P2_GV40_1_4Name          ,  Y,  0, 070, P2_Name     , N, 0, 0, "ЗАДВИЖКА 40-1-4
+P2_GV27_1__Name          ,  Y,  0, 071, P2_Name     , N, 0, 0, "ЗАДВИЖКА 27-1
+P2_GV27_2__Name          ,  Y,  0, 072, P2_Name     , N, 0, 0, "ЗАДВИЖКА 27-2
+P2_GV27_3__Name          ,  Y,  0, 073, P2_Name     , N, 0, 0, "ЗАДВИЖКА 27-3
+P2_GVR000__Name          ,  Y,  0, 074, P2_Name     , N, 0, 0, "ЗАДВИЖКА R000
+P2_GVR001__Name          ,  Y,  0, 075, P2_Name     , N, 0, 0, "ЗАДВИЖКА R001
+P2_GVR002__Name          ,  Y,  0, 076, P2_Name     , N, 0, 0, "ЗАДВИЖКА R002
+P2_GVR003__Name          ,  Y,  0, 077, P2_Name     , N, 0, 0, "ЗАДВИЖКА R003
+P2_GVR004__Name          ,  Y,  0, 078, P2_Name     , N, 0, 0, "ЗАДВИЖКА R004
+P2_GVR005__Name          ,  Y,  0, 079, P2_Name     , N, 0, 0, "ЗАДВИЖКА R005
+P2_GVR006__Name          ,  Y,  0, 080, P2_Name     , N, 0, 0, "ЗАДВИЖКА R006
+P2_GVR007__Name          ,  Y,  0, 081, P2_Name     , N, 0, 0, "ЗАДВИЖКА R007
+P2_GVR008__Name          ,  Y,  0, 082, P2_Name     , N, 0, 0, "ЗАДВИЖКА R008
+P2_GVR009__Name          ,  Y,  0, 083, P2_Name     , N, 0, 0, "ЗАДВИЖКА R009
+P2_GVR010__Name          ,  Y,  0, 084, P2_Name     , N, 0, 0, "ЗАДВИЖКА R010
+P2_GVR011__Name          ,  Y,  0, 085, P2_Name     , N, 0, 0, "ЗАДВИЖКА R011
+P2_GVR012__Name          ,  Y,  0, 086, P2_Name     , N, 0, 0, "ЗАДВИЖКА R012
+P2_GVR013__Name          ,  Y,  0, 087, P2_Name     , N, 0, 0, "ЗАДВИЖКА R013
+P2_GVR014__Name          ,  Y,  0, 088, P2_Name     , N, 0, 0, "ЗАДВИЖКА R014
+P2_GV107_1_Name          ,  Y,  0, 089, P2_Name     , N, 0, 0, "ЗАДВИЖКА 107-1
+P2_GV107_2_Name          ,  Y,  0, 090, P2_Name     , N, 0, 0, "ЗАДВИЖКА 107-2
+P2_GV107_3_Name          ,  Y,  0, 091, P2_Name     , N, 0, 0, "ЗАДВИЖКА 107-3
+P2_GV107_4_Name          ,  Y,  0, 092, P2_Name     , N, 0, 0, "ЗАДВИЖКА 107-4
+P2_GVR015__Name          ,  Y,  0, 093, P2_Name     , N, 0, 0, "ЗАДВИЖКА R015
+P2_GVR016__Name          ,  Y,  0, 094, P2_Name     , N, 0, 0, "ЗАДВИЖКА R016
+P2_GVR017__Name          ,  Y,  0, 095, P2_Name     , N, 0, 0, "ЗАДВИЖКА R017
+P2_GVR018__Name          ,  Y,  0, 096, P2_Name     , N, 0, 0, "ЗАДВИЖКА R018
+
+MS2_4_GV312__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 312
+MS2_4_GV313__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 313
+MS2_4_GV314__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 314
+MS2_4_GV601__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 601
+MS2_4_GV602__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 602
+MS2_4_GV603__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 603
+MS2_4_GV605__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 605
+MS2_4_GV606__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 606
+MS2_4_GV607__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 607
+MS2_4_GV609__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 609
+MS2_4_GV610__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 610
+MS2_4_GV611__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 611
+MS2_4_GV613__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 613
+MS2_4_GV614__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 614
+MS2_4_GV615__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 615
+MS2_4_GV468__Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 468
+MS2_4_GV468A_Name , U,   0,           Meas4ValveU     , N, 0, 0, "Задвижка 468а
+MS2_5_GV516__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 516
+MS2_5_GV515__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 515
+MS2_5_GV514__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 514
+MS2_5_GV617__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 617
+MS2_5_GV618__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 618
+MS2_5_GV620__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 620
+MS2_5_GV621__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 621
+MS2_5_GV622__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 622
+MS2_5_GV624__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 624
+MS2_5_GV625__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 625
+MS2_5_GV626__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 626
+MS2_5_GV628__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 628
+MS2_5_GV505__Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 505
+MS2_5_GV505A_Name , U,   0,           Meas5ValveU     , N, 0, 0, "Задвижка 505а
+
+P3_GIXV572aName          ,  Y,  0, 001, P3_Name     , N, 0, 0, "ЗАДВИЖКА 572a
+P3_GIXV327_Name          ,  Y,  0, 002, P3_Name     , N, 0, 0, "ЗАДВИЖКА 327
+P3_GIXV328_Name          ,  Y,  0, 003, P3_Name     , N, 0, 0, "ЗАДВИЖКА 328
+P3_GIXV329_Name          ,  Y,  0, 004, P3_Name     , N, 0, 0, "ЗАДВИЖКА 329
+P3_GIXV330_Name          ,  Y,  0, 005, P3_Name     , N, 0, 0, "ЗАДВИЖКА 330
+P3_GIXV331_Name          ,  Y,  0, 006, P3_Name     , N, 0, 0, "ЗАДВИЖКА 331
+P3_GIXV332_Name          ,  Y,  0, 007, P3_Name     , N, 0, 0, "ЗАДВИЖКА 332
+P3_GIXV332aName          ,  Y,  0, 008, P3_Name     , N, 0, 0, "ЗАДВИЖКА 332a
+P3_GIXV358_Name          ,  Y,  0, 009, P3_Name     , N, 0, 0, "ЗАДВИЖКА 358
+P3_GIXV359_Name          ,  Y,  0, 010, P3_Name     , N, 0, 0, "ЗАДВИЖКА 359
+P3_GIXV353_Name          ,  Y,  0, 011, P3_Name     , N, 0, 0, "ЗАДВИЖКА 353
+P3_GIXV354_Name          ,  Y,  0, 012, P3_Name     , N, 0, 0, "ЗАДВИЖКА 354
+P3_GIXV355_Name          ,  Y,  0, 013, P3_Name     , N, 0, 0, "ЗАДВИЖКА 355
+P3_GIXV356_Name          ,  Y,  0, 014, P3_Name     , N, 0, 0, "ЗАДВИЖКА 356
+P3_GIXV357_Name          ,  Y,  0, 015, P3_Name     , N, 0, 0, "ЗАДВИЖКА 357
+P3_GIXV360_Name          ,  Y,  0, 016, P3_Name     , N, 0, 0, "ЗАДВИЖКА 360
+P3_GIXV361_Name          ,  Y,  0, 017, P3_Name     , N, 0, 0, "ЗАДВИЖКА 361
+P3_GIXV362_Name          ,  Y,  0, 018, P3_Name     , N, 0, 0, "ЗАДВИЖКА 362
+P3_GIR000__Name          ,  Y,  0, 019, P3_Name     , N, 0, 0, "ЗАДВИЖКА R000
+P3_GIR001__Name          ,  Y,  0, 020, P3_Name     , N, 0, 0, "ЗАДВИЖКА R001
+P3_GIXV377_Name          ,  Y,  0, 021, P3_Name     , N, 0, 0, "ЗАДВИЖКА 377
+P3_GIXV378_Name          ,  Y,  0, 022, P3_Name     , N, 0, 0, "ЗАДВИЖКА 378
+P3_GIXV379_Name          ,  Y,  0, 023, P3_Name     , N, 0, 0, "ЗАДВИЖКА 379
+P3_GIXV380_Name          ,  Y,  0, 024, P3_Name     , N, 0, 0, "ЗАДВИЖКА 380
+P3_GIXV381_Name          ,  Y,  0, 025, P3_Name     , N, 0, 0, "ЗАДВИЖКА 381
+P3_GIXV384_Name          ,  Y,  0, 026, P3_Name     , N, 0, 0, "ЗАДВИЖКА 384
+P3_GIXV385_Name          ,  Y,  0, 027, P3_Name     , N, 0, 0, "ЗАДВИЖКА 385
+P3_GIXV386_Name          ,  Y,  0, 028, P3_Name     , N, 0, 0, "ЗАДВИЖКА 386
+P3_GIXV382_Name          ,  Y,  0, 029, P3_Name     , N, 0, 0, "ЗАДВИЖКА 382
+P3_GIXV383_Name          ,  Y,  0, 030, P3_Name     , N, 0, 0, "ЗАДВИЖКА 383
+P3_GIR002__Name          ,  Y,  0, 031, P3_Name     , N, 0, 0, "ЗАДВИЖКА R002
+P3_GIR003__Name          ,  Y,  0, 032, P3_Name     , N, 0, 0, "ЗАДВИЖКА R003
+P3_GIR004__Name          ,  Y,  0, 033, P3_Name     , N, 0, 0, "ЗАДВИЖКА R004
+P3_GIR005__Name          ,  Y,  0, 034, P3_Name     , N, 0, 0, "ЗАДВИЖКА R005
+P3_GIR006__Name          ,  Y,  0, 035, P3_Name     , N, 0, 0, "ЗАДВИЖКА R006
+P3_GIR007__Name          ,  Y,  0, 036, P3_Name     , N, 0, 0, "ЗАДВИЖКА R007
+P3_GIR008__Name          ,  Y,  0, 037, P3_Name     , N, 0, 0, "ЗАДВИЖКА R008
+P3_GIR009__Name          ,  Y,  0, 038, P3_Name     , N, 0, 0, "ЗАДВИЖКА R009
+P3_GIR010__Name          ,  Y,  0, 039, P3_Name     , N, 0, 0, "ЗАДВИЖКА R010
+P3_GIR011__Name          ,  Y,  0, 040, P3_Name     , N, 0, 0, "ЗАДВИЖКА R011
+P3_GIR012__Name          ,  Y,  0, 041, P3_Name     , N, 0, 0, "ЗАДВИЖКА R012
+P3_GIR013__Name          ,  Y,  0, 042, P3_Name     , N, 0, 0, "ЗАДВИЖКА R013
+P3_GIR014__Name          ,  Y,  0, 043, P3_Name     , N, 0, 0, "ЗАДВИЖКА R014
+P3_GIR015__Name          ,  Y,  0, 044, P3_Name     , N, 0, 0, "ЗАДВИЖКА R015
+P3_GIR016__Name          ,  Y,  0, 045, P3_Name     , N, 0, 0, "ЗАДВИЖКА R016
+P3_GIR017__Name          ,  Y,  0, 046, P3_Name     , N, 0, 0, "ЗАДВИЖКА R017
+P3_GIR018__Name          ,  Y,  0, 047, P3_Name     , N, 0, 0, "ЗАДВИЖКА R018
+P3_GIR019__Name          ,  Y,  0, 048, P3_Name     , N, 0, 0, "ЗАДВИЖКА R019
+P3_GIR020__Name          ,  Y,  0, 049, P3_Name     , N, 0, 0, "ЗАДВИЖКА R020
+P3_GIR021__Name          ,  Y,  0, 050, P3_Name     , N, 0, 0, "ЗАДВИЖКА R021
+P3_GIR022__Name          ,  Y,  0, 051, P3_Name     , N, 0, 0, "ЗАДВИЖКА R022
+P3_GIR023__Name          ,  Y,  0, 052, P3_Name     , N, 0, 0, "ЗАДВИЖКА R023
+P3_GIR024__Name          ,  Y,  0, 053, P3_Name     , N, 0, 0, "ЗАДВИЖКА R024
+P3_GIR025__Name          ,  Y,  0, 054, P3_Name     , N, 0, 0, "ЗАДВИЖКА R025
+P3_GIR026__Name          ,  Y,  0, 055, P3_Name     , N, 0, 0, "ЗАДВИЖКА R026
+P3_GIR027__Name          ,  Y,  0, 056, P3_Name     , N, 0, 0, "ЗАДВИЖКА R027
+P3_GIR028__Name          ,  Y,  0, 057, P3_Name     , N, 0, 0, "ЗАДВИЖКА R028
+P3_GIR029__Name          ,  Y,  0, 058, P3_Name     , N, 0, 0, "ЗАДВИЖКА R029
+P3_GIR030__Name          ,  Y,  0, 059, P3_Name     , N, 0, 0, "ЗАДВИЖКА R030
+P3_GIR031__Name          ,  Y,  0, 060, P3_Name     , N, 0, 0, "ЗАДВИЖКА R031
+P3_GIR032__Name          ,  Y,  0, 061, P3_Name     , N, 0, 0, "ЗАДВИЖКА R032
+P3_GIR033__Name          ,  Y,  0, 062, P3_Name     , N, 0, 0, "ЗАДВИЖКА R033
+P3_GIR034__Name          ,  Y,  0, 063, P3_Name     , N, 0, 0, "ЗАДВИЖКА R034
+P3_GIR035__Name          ,  Y,  0, 064, P3_Name     , N, 0, 0, "ЗАДВИЖКА R035
+P3_GIR036__Name          ,  Y,  0, 065, P3_Name     , N, 0, 0, "ЗАДВИЖКА R036
+P3_GIR037__Name          ,  Y,  0, 066, P3_Name     , N, 0, 0, "ЗАДВИЖКА R037
+P3_GIR038__Name          ,  Y,  0, 067, P3_Name     , N, 0, 0, "ЗАДВИЖКА R038
+P3_GIR039__Name          ,  Y,  0, 068, P3_Name     , N, 0, 0, "ЗАДВИЖКА R039
+P3_GIR040__Name          ,  Y,  0, 069, P3_Name     , N, 0, 0, "ЗАДВИЖКА R040
+P3_GIR041__Name          ,  Y,  0, 070, P3_Name     , N, 0, 0, "ЗАДВИЖКА R041
+P3_GIR042__Name          ,  Y,  0, 071, P3_Name     , N, 0, 0, "ЗАДВИЖКА R042
+P3_GIR043__Name          ,  Y,  0, 072, P3_Name     , N, 0, 0, "ЗАДВИЖКА R043
+P3_GIR044__Name          ,  Y,  0, 073, P3_Name     , N, 0, 0, "ЗАДВИЖКА R044
+P3_GIR045__Name          ,  Y,  0, 074, P3_Name     , N, 0, 0, "ЗАДВИЖКА R045
+P3_GIR046__Name          ,  Y,  0, 075, P3_Name     , N, 0, 0, "ЗАДВИЖКА R046
+P3_GIR047__Name          ,  Y,  0, 076, P3_Name     , N, 0, 0, "ЗАДВИЖКА R047
+P3_GIR048__Name          ,  Y,  0, 077, P3_Name     , N, 0, 0, "ЗАДВИЖКА R048
+P3_GIR049__Name          ,  Y,  0, 078, P3_Name     , N, 0, 0, "ЗАДВИЖКА R049
+P3_GIR050__Name          ,  Y,  0, 079, P3_Name     , N, 0, 0, "ЗАДВИЖКА R050
+P3_GIR051__Name          ,  Y,  0, 080, P3_Name     , N, 0, 0, "ЗАДВИЖКА R051
+P3_GIR052__Name          ,  Y,  0, 081, P3_Name     , N, 0, 0, "ЗАДВИЖКА R052
+P3_GIR053__Name          ,  Y,  0, 082, P3_Name     , N, 0, 0, "ЗАДВИЖКА R053
+P3_GIR054__Name          ,  Y,  0, 083, P3_Name     , N, 0, 0, "ЗАДВИЖКА R054
+P3_GIR055__Name          ,  Y,  0, 084, P3_Name     , N, 0, 0, "ЗАДВИЖКА R055
+P3_GIR056__Name          ,  Y,  0, 085, P3_Name     , N, 0, 0, "ЗАДВИЖКА R056
+P3_GIR057__Name          ,  Y,  0, 086, P3_Name     , N, 0, 0, "ЗАДВИЖКА R057
+P3_GIR058__Name          ,  Y,  0, 087, P3_Name     , N, 0, 0, "ЗАДВИЖКА R058
+P3_GIR059__Name          ,  Y,  0, 088, P3_Name     , N, 0, 0, "ЗАДВИЖКА R059
+P3_GIR060__Name          ,  Y,  0, 089, P3_Name     , N, 0, 0, "ЗАДВИЖКА R060
+P3_GIR061__Name          ,  Y,  0, 090, P3_Name     , N, 0, 0, "ЗАДВИЖКА R061
+P3_GIR062__Name          ,  Y,  0, 091, P3_Name     , N, 0, 0, "ЗАДВИЖКА R062
+P3_GIR063__Name          ,  Y,  0, 092, P3_Name     , N, 0, 0, "ЗАДВИЖКА R063
+P3_GIR064__Name          ,  Y,  0, 093, P3_Name     , N, 0, 0, "ЗАДВИЖКА R064
+P3_GIR065__Name          ,  Y,  0, 094, P3_Name     , N, 0, 0, "ЗАДВИЖКА R065
+P3_GIR066__Name          ,  Y,  0, 095, P3_Name     , N, 0, 0, "ЗАДВИЖКА R066
+P3_GIR067__Name          ,  Y,  0, 096, P3_Name     , N, 0, 0, "ЗАДВИЖКА R067
+
+KP18_GV301_Name    ,  Y,  0, 001, KP18_Name     , N, 0, 0, "КП18_ЗАДВИЖКА 1
+KP18_GV302_Name    ,  Y,  0, 002, KP18_Name     , N, 0, 0, "КП18_ЗАДВИЖКА 2
+KP18_GV303_Name    ,  Y,  0, 003, KP18_Name     , N, 0, 0, "КП18_ЗАДВИЖКА 3
+KP18_GV301BName    ,  Y,  0, 004, KP18_Name     , N, 0, 0, "КП18_ЗАДВИЖКА 11

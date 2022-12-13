@@ -1,0 +1,159 @@
+
+# Window:
+
+# Source: Event File/Server Message/Event Signal (0/1/2):
+0
+# Alias:
+*
+# Group:
+*
+# Input Dir:
+S:\event\event# Disable Signals/Disable Signals When
+# Disable Signals/Disable Signals When Loaded/Enable Signals (0/1/2):
+2
+# Refresh Rate:
+10
+# Scroll Limit:
+100
+# Files To Show:
+0
+# X Pos:
+616
+# Y Pos:
+616
+# Rows:
+5
+# Coloumns:
+125
+# Font Typeface:
+System
+# Font Style:
+N
+# Font Size:
+11
+
+# Options:
+
+# Moveable:
+1
+# Resizeable:
+1
+# Coverable:
+1
+# Closeable:
+1
+# Horizontal Scroll:
+0
+# Vertical Scroll:
+1
+# Force Front For New Lines:
+0
+# Close Inactive Child Windows:
+0
+# Configureable:
+1
+# Choose Button:
+1
+# Config Button:
+1
+# Date Button:
+1
+# Print Button:
+1
+# Modifiable:
+1
+# Reset Date Limit:
+1
+# Indexed:
+1
+# Abortable:
+1
+# Auto Save Config:
+1
+# Draw Dividers:
+1
+# Text Log Button:
+1
+
+# Display/Order:
+
+# 0 = Input Time
+# 1 = Source Time
+# 2 = Time Stamp
+# 3 = Alarm Tag
+# 4 = Alarm Name
+# 5 = Alarm State
+# 6 = Foreground
+# 7 = Background
+# 8 = Event Code
+# 9 = Type #1
+# 10 = Type #2
+# 11 = Event Text
+# 12 = Empty
+
+0
+2
+11
+12
+12
+12
+12
+12
+12
+12
+12
+12
+
+# Display/Length:
+
+# Input Time:
+19
+# Source Time:
+19
+# Time Stamp:
+19
+# Alarm Tag:
+20
+# Alarm Name:
+40
+# Alarm State:
+10
+# Foreground:
+10
+# Background:
+10
+# Event Code:
+10
+# Type #1:
+10
+# Type #2:
+10
+# Event Text:
+120
+
+# Filter:
+
+# Input Time:
+*
+# Source Time:
+*
+# Time Stamp:
+*
+# Alarm Tag:
+*
+# Alarm Name:
+*
+# Alarm State:
+*
+# Foreground:
+*
+# Background:
+*
+# Event Code:
+*
+# Type #1:
+*
+# Type #2:
+*
+# Event Text:
+*

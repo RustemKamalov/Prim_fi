@@ -1,0 +1,64 @@
+#!/bin/sh
+
+search="M2_GT910|\
+M2_GT912|\
+M2_GT914|\
+M2_GT916|\
+M2_GT918|\
+M2_GT911|\
+M2_GT913|\
+M2_GT915|\
+M2_GT917|\
+M2_GT919|\
+M2_GT901|\
+M2_GT902"
+
+ch_scr='s/M2_GT910/M2_GT921/g
+        s/M2_GT912/M2_GT922/g
+        s/M2_GT914/M2_GT923/g
+        s/M2_GT916/M2_GT924/g
+        s/M2_GT918/M2_GT925/g
+        s/M2_GT911/M2_GT926/g
+        s/M2_GT913/M2_GT927/g
+        s/M2_GT915/M2_GT928/g
+        s/M2_GT917/M2_GT929/g
+        s/M2_GT919/M2_GT930/g
+        s/M2_GT901/M2_GT931/g
+        s/M2_GT902/M2_GT932/g'
+
+for i in $(find /prim_fi/modbus -type f)
+do
+
+#  file=$(file $i | grep ' text' | awk '{sub(/:/,"",$1); print $1}')
+  file=$(file $i | grep ' text' | sed 's/:.*$//' | grep -v '.ori$')
+
+  if [ "$file" != "" ]
+  then
+#    echo $file nem ures
+    if grep -q -E "$search" "$file"
+    then
+#      echo found search in file "$file" "\a"
+      read resp?"Convert $file ?      <Y/N>":
+      case $resp in
+        y|Y)
+            if test -f $file.ori
+            then
+              echo $file.ori exists, not converting
+            else
+              echo converting $file
+              cp $file $file.ori
+              sed "$ch_scr" $file > temp
+              mv temp $file
+              if [ "$(ls -F $file.ori | grep '*')" != "" ]
+              then
+                chmod a+x $file
+              fi
+            fi
+
+            ;;
+      esac
+
+    fi
+  fi
+
+done

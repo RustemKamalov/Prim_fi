@@ -1,0 +1,164 @@
+#!!! Check setting oper_time events from PLC at the end of the file !!!
+
+#--------------------------------Gate valves----------------------------------
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=9 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: „…‹‚€’
+Q2= d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‘’
+Q3= d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‡€›’
+Q4= d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ’›’
+Q5= d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: “‘’€‚€ ‚…… …€’€
+OBJ=GVOpCtwdSet ARG=$M_$GVxxxName,MON_MIND TYP=21,2 PAR=$M_$GVxxxCtrWrd
+
+
+Q0= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98: €‘€ ‘’€
+Q1= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98: ‡€„‚†€ €‘‚€€  						     	
+OBJ=Bit09Arg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxType
+
+
+Q0= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98: ‘‹.‘ƒ€‹ “‹‘›‰
+Q1= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98: ‘‹.‘ƒ€‹ ‚‹.„ ‹ƒ ’/‡€.  						     	
+OBJ=Bit10Arg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxType
+
+
+Q0= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98: ‚ …€‹ …†…
+Q1= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98: ‚ …†… ’€–  						     	
+OBJ=Bit11Arg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxType
+
+
+Q0= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98:  … … ‚‡‚.‚ ‘•„… ‘‘’…
+Q1= d=1 b=1 l=1 f=0 t=53 w=1 cf=15 cb=2 s=%Q98:  … ‚‡‚.‚ ‘•„… ‘‘’…  						     	
+OBJ=Bit12Arg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxType
+
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‚›‰ ’ ‡€„‚†: %Q33
+Q2= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98:  … ‚‡‚.‚ ‘•„… ‘‘’…
+Q3= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ……‚…‘’ ‚ …† ’€–
+Q4= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‘‹.‘ƒ€‹ ‚‹.„ ‹ƒ ’/‡€.
+Q5= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‡€„‚†“ €‘‚€’
+Q6= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98:  … … ‚‡‚.‚ ‘•„… ‘‘’…
+Q7= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ……‚…‘’ ‚ …€‹›‰ …†
+Q8= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‘‹.‘ƒ€‹ “‹‘›‰
+Q9= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: €‘“ ‘’
+OBJ=GVOpTypeSet ARG=$M_$GVxxxName,MON_MIND TYP=21,2 PAR=$M_$GVxxxTypeSet
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=4 w=1 cf=15 cb=2 s=%Q98: ‚›‰ ’ ‡€„‚†: %Q33
+OBJ=GVIndex ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxIndex
+
+
+Q0=  E0
+Q1=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ „1
+Q2=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ „1
+Q3=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‘’ ‡ „1
+Q4=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ „2
+Q5=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ „2
+Q6=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‘’ ‡ „2
+Q7=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‘ “‹’€ MAGELIS
+Q8=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‘ “‹’€ MAGELIS
+Q9=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ €‚’€’—…‘
+Q10= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ €‚’€’—…‘
+Q11= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ “
+Q12= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ “
+Q13= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‘’ ‡ “
+Q14= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: …“€‚‹…€: ‹— … ‚ „‘’€– …†…
+Q15= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: …“€‚‹…€: …’ €†…
+Q16= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: „…‹‚€€
+OBJ=GVMsgStatus ARG=$M_$GVxxxName TYP=21,2 				     \
+    PAR=$M_$GVxxxS1_B01,$M_$GVxxxS1_B02,$M_$GVxxxS1_B03,$M_$GVxxxS1_B04, \
+        $M_$GVxxxS1_B05,$M_$GVxxxS1_B06,$M_$GVxxxS1_B07,$M_$GVxxxS1_B08, \
+        $M_$GVxxxS1_B09,$M_$GVxxxS1_B10,$M_$GVxxxS1_B11,$M_$GVxxxS1_B12, \
+        $M_$GVxxxS1_B13,$M_$GVxxxS1_B14,$M_$GVxxxS1_B15,$M_$GVxxxS1_B16
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q99: ’›‹€‘
+Q2= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q99: ’›‹€‘
+OBJ=GVMsgStatusB01 ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B01,$M_$GVxxxS2_B11
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q99: ‡€›‹€‘
+Q2= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q99: ‡€›‹€‘
+OBJ=GVMsgStatusB02 ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B02,$M_$GVxxxS2_B13
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=14 cb=2 s=%Q98: …‘€‚€
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B03
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q100: ’›‚€…’‘
+Q2= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q100: ’›‚€…’‘
+Q3= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q100: ’›‚€…’‘-–…‚ …‘€‚…
+OBJ=GVMsgStatusB04_M ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B04,$M_$GVxxxS2_B11,$M_$GVxxxS2_B07
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q100: ‡€›‚€…’‘
+Q2= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q100: ‡€›‚€…’‘
+Q3= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q100: ‡€›‚€…’‘-–…‚ …‘€‚…
+OBJ=GVMsgStatusB05_M ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B05,$M_$GVxxxS2_B13,$M_$GVxxxS2_B07
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q100: ‚ …†“’— ‹†…
+Q2= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q100: ‚ …†“’— ‹†…
+OBJ=GVMsgStatusB06 ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B06,$M_$GVxxxS2_B11,$M_$GVxxxS2_B13
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=‚€…! %Q99: ‚ „‚†…
+OBJ=GVMsgStatusB07 ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B07,$M_$GVxxxS2_B06
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ …‘’ …†…
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ „‘’€– …†…
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B09
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=14 cb=2 s=%Q98: €‚€ (­¥®΅ε®¤¨¬  ¤¥΅«®ª¨ΰ®Άª )
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B10
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: …“‘…… ’›’…
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B12
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: …“‘…… ‡€›’…
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B14
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=‘¨£­ « α­οβ! %Q98: €‚€!
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=14 cb=2 s=%Q98: €‚€!
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B15
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: €†…… „€
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: …’ €†…
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=21,2 PAR=$M_$GVxxxS2_B16
+
+
+#-----------------------setting_oper_time------------------------
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: “‘’€‚’ ‚… ‘‹“€’€–
+OBJ=Bit2Arg+- ARG=$M_$GVxxxName,MON_MIND TYP=30,2 PAR=$M_$GVxxxOprTSet
+
+
+#!!! Setting oper_time events from PLC should be checked !!!
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ νªα―«γ β ζ¨¨ ¨§ „1
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=40,1 PAR=$M_RemOT1S192
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ νªα―«γ β ζ¨¨ ¨§ „2
+OBJ=BitArg+- ARG=$M_$GVxxxName TYP=40,1 PAR=$M_RemOT2S192
+

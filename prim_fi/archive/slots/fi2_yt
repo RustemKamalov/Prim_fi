@@ -1,0 +1,124 @@
+
+WIN:
+
+	WIN_ROW:          1210
+	WIN_COL:          1914
+	WIN_HEIGHT:       8041
+	WIN_WIDTH:        11066
+	TR_LIND:          118
+	TR_STIME:         06/17/16 06:31:40
+	TR_MODE:          ONLINE
+	TR_ZOOM:          128
+	TR_CURRENT:       0
+	TR_SCALE1:        2
+	TR_SCALE2:        0
+	TR_SCALE3:        0
+	TR_SCALE4:        0
+	TR_SCALE5:        0
+	TR_SCALE6:        0
+	TR_SCALE7:        0
+	TR_SCALE8:        0
+	TR_SCALE9:        0
+	TR_SCALE10:       0
+	TR_SCALE11:       0
+	TR_SCALE12:       0
+	TR_SCALE13:       0
+	TR_SCALE14:       0
+	TR_SCALE15:       0
+	TR_SCALE16:       0
+	TR_SCALE17:       0
+	TR_SCALE18:       0
+	TR_SCALE19:       0
+	TR_SCALE20:       0
+	TR_SCALE21:       0
+	TR_SCALE22:       0
+	TR_SCALE23:       0
+	TR_SCALE24:       0
+	TR_SCALE25:       0
+	NAME:             20160617.000000.ob2_1s.arch
+	DIR:              S:/archive/bin/
+	BACK_COLOR:       3
+	AXIS_COLOR:       5
+	GRID_COLOR:       2
+	UNIT_WIDTH:       10
+	TAG_WIDTH:        20
+	TAGLONG_WIDTH:    40
+	TR_GRID_X:        20
+	TR_GRID_Y:        10
+	TR_ROW:           1
+	TR_COL:           1
+	TR_POINTS:        121
+	TR_REFR:          0
+	TR_A_SAVE:        0
+	TR_DRAW_MODE:     1
+	FDATE_STR:        %y-%m-%d
+
+WIND:
+
+	WIN_ROW:          500
+	WIN_COL:          500
+	WIN_HEIGHT:       3900
+	WIN_WIDTH:        6400
+	TR_LIND:          60
+	TR_STIME:         01/01/70 03:00:00
+	TR_MODE:          HOME
+	TR_ZOOM:          1
+	TR_CURRENT:       0
+	TR_SCALE1:        0
+	TR_SCALE2:        0
+	TR_SCALE3:        0
+	TR_SCALE4:        0
+	TR_SCALE5:        0
+	TR_SCALE6:        0
+	TR_SCALE7:        0
+	TR_SCALE8:        0
+	TR_SCALE9:        0
+	TR_SCALE10:       0
+	TR_SCALE11:       0
+	TR_SCALE12:       0
+	TR_SCALE13:       0
+	TR_SCALE14:       0
+	TR_SCALE15:       0
+	TR_SCALE16:       0
+	TR_SCALE17:       0
+	TR_SCALE18:       0
+	TR_SCALE19:       0
+	TR_SCALE20:       0
+	TR_SCALE21:       0
+	TR_SCALE22:       0
+	TR_SCALE23:       0
+	TR_SCALE24:       0
+	TR_SCALE25:       0
+	NAME:             20080225.000000.ob2_1s.arch
+
+TREND:
+
+	SIG:              Fi2_4_YT701__Vl
+	COLOR:            63
+	STROKE1:          0
+	SPACE:            0
+	STROKE2:          0
+	THICKNESS:        11
+	CHAR:             ' '
+	MODE:             NORM
+	DEC:              2
+	LOW:              10500.000000
+	HIGH:             10700.000000
+	HIDE:             1
+	HIDE_D:           1
+
+TREND:
+
+	SIG:              Fi2_4_YT702__Vl
+	COLOR:            1
+	STROKE1:          0
+	SPACE:            0
+	STROKE2:          0
+	THICKNESS:        11
+	CHAR:             ' '
+	MODE:             NORM
+	DEC:              3
+	LOW:              8000.000000
+	HIGH:             10600.000000
+	HIDE:             1
+	HIDE_D:           1

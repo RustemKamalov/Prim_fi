@@ -1,0 +1,14 @@
+
+WOPT: p=A r=300 c=500 o=k-rf;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=9 h=0 w=0
+
+OBJ: 4
+  PARL: P0=Fi_DialogCtrWrd1
+  SELD: a=FV p=P0  f=1  v=ELSE 32768.000000;
+OBEND
+
+OBJ: 6
+  PARL: P0=Fi_DialogCtrWrd1
+  SELD: a=FV p=P0  f=1  v=ELSE 16384.000000;
+OBEND

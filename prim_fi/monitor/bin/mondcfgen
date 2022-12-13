@@ -1,0 +1,2 @@
+#! /bin/sh
+/Dmon/bin/dmmondbcomp  -n -a -l /prim_fi/config/monx.ini

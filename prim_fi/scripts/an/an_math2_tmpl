@@ -1,0 +1,38 @@
+OBJ: $M_Ana_ValTrig01
+   CPAR:
+        P0  = $M_$id0_ValTrig
+        P1  = $M_$id1_ValTrig
+        P2  = $M_$id2_ValTrig
+        P3  = $M_$id3_ValTrig
+        P4  = $M_$id4_ValTrig
+        P5  = $M_$id5_ValTrig
+        P6  = $M_$id6_ValTrig
+        P7  = $M_$id7_ValTrig
+        P8  = $M_$id8_ValTrig
+        P9  = $M_$id9_ValTrig
+        P10 = $M_Ana_ValTrig01
+   CFV: ELSE Q1;
+   OPAR:
+        P0  = $M_$id0_ValTrig
+        P1  = $M_$id1_ValTrig
+        P2  = $M_$id2_ValTrig
+        P3  = $M_$id3_ValTrig
+        P4  = $M_$id4_ValTrig
+        P5  = $M_$id5_ValTrig
+        P6  = $M_$id6_ValTrig
+        P7  = $M_$id7_ValTrig
+        P8  = $M_$id8_ValTrig
+        P9  = $M_$id9_ValTrig
+        P10 = $M_Ana_ValTrig01
+   OFV0:  P10 = IF (P0|P1|P2|P3|P4|P5|P6|P7|P8|P9) && (S0|S1|S2|S3|S4|S5|S6|S7|S8|S9): 1; ELSE;
+   OFV1:  P0  = IF (P10 == 0) : 0; ELSE;
+   OFV2:  P1  = IF (P10 == 0) : 0; ELSE;
+   OFV3:  P2  = IF (P10 == 0) : 0; ELSE;
+   OFV4:  P3  = IF (P10 == 0) : 0; ELSE;
+   OFV5:  P4  = IF (P10 == 0) : 0; ELSE;
+   OFV6:  P5  = IF (P10 == 0) : 0; ELSE;
+   OFV7:  P6  = IF (P10 == 0) : 0; ELSE;
+   OFV8:  P7  = IF (P10 == 0) : 0; ELSE;
+   OFV9:  P8  = IF (P10 == 0) : 0; ELSE;
+   OFV10: P9  = IF (P10 == 0) : 0; ELSE;
+

@@ -1,0 +1,314 @@
+Q1: –¿¡Œ“¿≈“
+Q2:  Õ≈ –¿¡.
+Q3: ¿¬.Œ“ À.
+Q4: Õ≈ Œ“ À.
+Q5:  Õ≈»—œ–.
+Q6: »—œ
+Q7: T”.
+Q8: –≈«
+Q9:  Õœ
+Q10: –”◊
+Q11: –≈M
+Q12: ¿¬“
+Q13: œ1
+Q14: œ2
+Q15: œ3
+Q16: œ4
+Q17: œ5
+Q18: œ6
+Q19: Œ“ –€“¿
+Q20: «¿ –€“¿
+Q21: Õ≈»—œ–¿¬Õ¿
+Q22: Œ“ –€¬¿≈“—ﬂ
+Q23: «¿ –€¬¿≈“—ﬂ
+Q24: œ–ŒÃ≈∆”.—Œ—“.
+Q25: ¿¬¿–»ﬂ (“≈œÀŒ«¿Ÿ»“¿)
+Q26: Õ≈“ Õ¿œ–ﬂ∆≈Õ»ﬂ
+Q27:   -
+Q29: œ-42
+Q30: œ-41
+Q31: œ-52
+Q32: œ-51
+Q33: œ-62
+Q34: œ-61
+Q35: œ-72
+Q36: œ-71
+Q37: œ-73
+Q38: œ-74
+Q42: œ-12
+Q43: œ-11
+Q44: œ-22
+Q45: œ-21
+Q46: œ-32
+Q47: œ-31
+
+#--- misc ---
+Q28:   *%D %T
+Q40:    $-26P8
+Q41:    $-28P2
+Q50:    $-26P17
+
+# agregat status
+D9: IF P0 & 0X8000: Q1; IF P0 & 0X0800: Q4; IF P0 & 0X0002: Q3; IF P0 != 0: Q2; ELSE Q27;
+# aux. system status
+D1: IF P0 & 0X8000: Q1; IF P0 & 0X0800: Q4; IF P0 & 0X0001: Q5; IF P0 != 0: Q2; ELSE Q27;
+# agregat duty
+D2: IF P1 & 0X0001 :Q7; IF P1 & 0X0002:Q12; IF P1 & 0X0008:Q9; IF P1 & 0X0020:Q11; ELSE Q27;
+# agregat reserve
+D3: IF P1 & 0X0004 :Q8; ELSE Q27;
+# agregat test
+D4: IF P1 & 0X0010 :Q6; ELSE Q27;
+# aux. system duty
+D5: IF P1 & 0X1 : Q12; IF P1 & 0X2 : Q8; IF P1 & 0X4 : Q9; IF P1 & 0X8 : Q10; IF P1 & 0X10 : Q11; ELSE Q27;
+# agregat program
+D6: IF P1 & 0X8000: Q13; IF P1 & 0X4000: Q14; IF P1 & 0X2000: Q15;  ELSE Q27;
+# ÒÓÒÚÓˇÌËe Á‡‰‚ËÊÍË
+D7: IF P0: Q19; IF P1: Q20; IF P2: Q21; IF P3: Q22; IF P4: Q23; IF P5: Q24; IF P6: Q25; IF P7: Q26; ELSE Q27;
+D8: IF P9: Q19; IF P10: Q20; IF P11: Q21; IF P12: Q22; IF P13: Q23; IF P14: Q24; IF P15: Q25; IF P16: Q26; ELSE Q27;
+# Aux agregat autom control gate-valve
+D10: IF P1 & 0X0100: Q29; IF P1 & 0X0080: Q30; ELSE Q27;
+D11: IF P1 & 0X0100: Q31; IF P1 & 0X0080: Q32; ELSE Q27;
+D12: IF P1 & 0X0100: Q33; IF P1 & 0X0080: Q34; ELSE Q27;
+D13: IF P1 & 0X0100: Q35; IF P1 & 0X0080: Q36; ELSE Q27;
+D14: IF P1 & 0X0400: Q37; IF P1 & 0X0200: Q38; ELSE Q27;
+# Oil-brake_switch status
+D15: IF P0 & 0X8000: Q1; IF P0 & 0X2000: Q5; IF P0 != 0: Q2; ELSE Q27;
+D16: IF P1 & 0X0100: Q42; IF P1 & 0X0080: Q43; ELSE Q27;
+D17: IF P1 & 0X0100: Q44; IF P1 & 0X0080: Q45; ELSE Q27;
+D18: IF P1 & 0X0100: Q46; IF P1 & 0X0080: Q47; ELSE Q27;
+
+
+:STRT
+:BODY
+#      ^*%d.%m.%y^   ^*%T      ^
+      ^%Q28                  ^
+
+
+               C¬Œƒ ¿ “≈ ”Ÿ≈√Œ —Œ—“ŒﬂÕ»ﬂ Œ¡Œ–”ƒŒ¬¿Õ»ﬂ œŒ∆¿–Œ“”ÿ≈Õ»ﬂ
+
+               |------------------------------|---------|---------|
+               |   Õ¿»Ã≈ÕŒ¬¿Õ»≈               |—Œ—“ŒﬂÕ»≈|  –≈∆»Ã  |
+               |------------------------------|---------|---------|
+:PARL: P0=Fi_Fe1_Stat P1=Fi_Fe1_Duty P2=Fi_Fe1_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi_Fe2_Stat P1=Fi_Fe2_Duty P2=Fi_Fe2_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi_Fe3_Stat P1=Fi_Fe3_Duty P2=Fi_Fe3_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi_Fe4_Stat P1=Fi_Fe4_Duty P2=Fi_Fe4_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi_Fe5_Stat P1=Fi_Fe5_Duty P2=Fi_Fe5_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi_Fw5_Stat P1=Fi_Fw5_Duty P2=Fi_Fw5_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+               |------------------------------|---------|---------|
+
+
+                                      “≈ ”Ÿ≈≈ —Œ—“ŒﬂÕ»≈ «¿ƒ¬»∆≈  œŒ∆¿–Œ“”ÿ≈Õ»ﬂ
+
+            |---------------------|---------------|              |---------------------|---------------|
+            |     ÕŒÃ≈–           |   —Œ—“ŒﬂÕ»≈   |              |     ÕŒÃ≈–           |   —Œ—“ŒﬂÕ»≈   |
+            |    «¿ƒ¬»∆ »         |               |              |    «¿ƒ¬»∆ »         |               |
+            |---------------------|---------------|              |---------------------|---------------|
+:PARL: P0=Fi_GF102_1_1PS2_B01 P1=Fi_GF102_1_1PS2_B02 P2=Fi_GF102_1_1PS2_B03 P3=Fi_GF102_1_1PS2_B04 P4=Fi_GF102_1_1PS2_B05 P5=Fi_GF102_1_1PS2_B06 P6=Fi_GF102_1_1PS2_B15 P7=Fi_GF102_1_1PS2_B16 P8=Fi_GF102_1_1PName P9=Fi_GF102_1_4PS2_B01 P10=Fi_GF102_1_4PS2_B02 P11=Fi_GF102_1_4PS2_B03 P12=Fi_GF102_1_4PS2_B04 P13=Fi_GF102_1_4PS2_B05 P14=Fi_GF102_1_4PS2_B06 P15=Fi_GF102_1_4PS2_B15 P16=Fi_GF102_1_4PS2_B16 P17=Fi_GF102_1_4PName
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF102_1_3PS2_B01 P1=Fi_GF102_1_3PS2_B02 P2=Fi_GF102_1_3PS2_B03 P3=Fi_GF102_1_3PS2_B04 P4=Fi_GF102_1_3PS2_B05 P5=Fi_GF102_1_3PS2_B06 P6=Fi_GF102_1_3PS2_B15 P7=Fi_GF102_1_3PS2_B16 P8=Fi_GF102_1_3PName P9=Fi_GF2_A___S2_B01 P10=Fi_GF2_A___S2_B02 P11=Fi_GF2_A___S2_B03 P12=Fi_GF2_A___S2_B04 P13=Fi_GF2_A___S2_B05 P14=Fi_GF2_A___S2_B06 P15=Fi_GF2_A___S2_B15 P16=Fi_GF2_A___S2_B16 P17=Fi_GF2_A___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF2_B___S2_B01 P1=Fi_GF2_B___S2_B02 P2=Fi_GF2_B___S2_B03 P3=Fi_GF2_B___S2_B04 P4=Fi_GF2_B___S2_B05 P5=Fi_GF2_B___S2_B06 P6=Fi_GF2_B___S2_B15 P7=Fi_GF2_B___S2_B16 P8=Fi_GF2_B___Name P9=Fi_GF2_C___S2_B01 P10=Fi_GF2_C___S2_B02 P11=Fi_GF2_C___S2_B03 P12=Fi_GF2_C___S2_B04 P13=Fi_GF2_C___S2_B05 P14=Fi_GF2_C___S2_B06 P15=Fi_GF2_C___S2_B15 P16=Fi_GF2_C___S2_B16 P17=Fi_GF2_C___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF3_A___S2_B01 P1=Fi_GF3_A___S2_B02 P2=Fi_GF3_A___S2_B03 P3=Fi_GF3_A___S2_B04 P4=Fi_GF3_A___S2_B05 P5=Fi_GF3_A___S2_B06 P6=Fi_GF3_A___S2_B15 P7=Fi_GF3_A___S2_B16 P8=Fi_GF3_A___Name P9=Fi_GF3_B___S2_B01 P10=Fi_GF3_B___S2_B02 P11=Fi_GF3_B___S2_B03 P12=Fi_GF3_B___S2_B04 P13=Fi_GF3_B___S2_B05 P14=Fi_GF3_B___S2_B06 P15=Fi_GF3_B___S2_B15 P16=Fi_GF3_B___S2_B16 P17=Fi_GF3_B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF3_C___S2_B01 P1=Fi_GF3_C___S2_B02 P2=Fi_GF3_C___S2_B03 P3=Fi_GF3_C___S2_B04 P4=Fi_GF3_C___S2_B05 P5=Fi_GF3_C___S2_B06 P6=Fi_GF3_C___S2_B15 P7=Fi_GF3_C___S2_B16 P8=Fi_GF3_C___Name P9=Fi_GF4_A___S2_B01 P10=Fi_GF4_A___S2_B02 P11=Fi_GF4_A___S2_B03 P12=Fi_GF4_A___S2_B04 P13=Fi_GF4_A___S2_B05 P14=Fi_GF4_A___S2_B06 P15=Fi_GF4_A___S2_B15 P16=Fi_GF4_A___S2_B16 P17=Fi_GF4_A___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF4_B___S2_B01 P1=Fi_GF4_B___S2_B02 P2=Fi_GF4_B___S2_B03 P3=Fi_GF4_B___S2_B04 P4=Fi_GF4_B___S2_B05 P5=Fi_GF4_B___S2_B06 P6=Fi_GF4_B___S2_B15 P7=Fi_GF4_B___S2_B16 P8=Fi_GF4_B___Name P9=Fi_GF4_C___S2_B01 P10=Fi_GF4_C___S2_B02 P11=Fi_GF4_C___S2_B03 P12=Fi_GF4_C___S2_B04 P13=Fi_GF4_C___S2_B05 P14=Fi_GF4_C___S2_B06 P15=Fi_GF4_C___S2_B15 P16=Fi_GF4_C___S2_B16 P17=Fi_GF4_C___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF5_A___S2_B01 P1=Fi_GF5_A___S2_B02 P2=Fi_GF5_A___S2_B03 P3=Fi_GF5_A___S2_B04 P4=Fi_GF5_A___S2_B05 P5=Fi_GF5_A___S2_B06 P6=Fi_GF5_A___S2_B15 P7=Fi_GF5_A___S2_B16 P8=Fi_GF5_A___Name P9=Fi_GF5_B___S2_B01 P10=Fi_GF5_B___S2_B02 P11=Fi_GF5_B___S2_B03 P12=Fi_GF5_B___S2_B04 P13=Fi_GF5_B___S2_B05 P14=Fi_GF5_B___S2_B06 P15=Fi_GF5_B___S2_B15 P16=Fi_GF5_B___S2_B16 P17=Fi_GF5_B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF5_C___S2_B01 P1=Fi_GF5_C___S2_B02 P2=Fi_GF5_C___S2_B03 P3=Fi_GF5_C___S2_B04 P4=Fi_GF5_C___S2_B05 P5=Fi_GF5_C___S2_B06 P6=Fi_GF5_C___S2_B15 P7=Fi_GF5_C___S2_B16 P8=Fi_GF5_C___Name P9=Fi_GF6_A___S2_B01 P10=Fi_GF6_A___S2_B02 P11=Fi_GF6_A___S2_B03 P12=Fi_GF6_A___S2_B04 P13=Fi_GF6_A___S2_B05 P14=Fi_GF6_A___S2_B06 P15=Fi_GF6_A___S2_B15 P16=Fi_GF6_A___S2_B16 P17=Fi_GF6_A___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF6_B___S2_B01 P1=Fi_GF6_B___S2_B02 P2=Fi_GF6_B___S2_B03 P3=Fi_GF6_B___S2_B04 P4=Fi_GF6_B___S2_B05 P5=Fi_GF6_B___S2_B06 P6=Fi_GF6_B___S2_B15 P7=Fi_GF6_B___S2_B16 P8=Fi_GF6_B___Name P9=Fi_GF6_C___S2_B01 P10=Fi_GF6_C___S2_B02 P11=Fi_GF6_C___S2_B03 P12=Fi_GF6_C___S2_B04 P13=Fi_GF6_C___S2_B05 P14=Fi_GF6_C___S2_B06 P15=Fi_GF6_C___S2_B15 P16=Fi_GF6_C___S2_B16 P17=Fi_GF6_C___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF7_A___S2_B01 P1=Fi_GF7_A___S2_B02 P2=Fi_GF7_A___S2_B03 P3=Fi_GF7_A___S2_B04 P4=Fi_GF7_A___S2_B05 P5=Fi_GF7_A___S2_B06 P6=Fi_GF7_A___S2_B15 P7=Fi_GF7_A___S2_B16 P8=Fi_GF7_A___Name P9=Fi_GF7_B___S2_B01 P10=Fi_GF7_B___S2_B02 P11=Fi_GF7_B___S2_B03 P12=Fi_GF7_B___S2_B04 P13=Fi_GF7_B___S2_B05 P14=Fi_GF7_B___S2_B06 P15=Fi_GF7_B___S2_B15 P16=Fi_GF7_B___S2_B16 P17=Fi_GF7_B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF7_C___S2_B01 P1=Fi_GF7_C___S2_B02 P2=Fi_GF7_C___S2_B03 P3=Fi_GF7_C___S2_B04 P4=Fi_GF7_C___S2_B05 P5=Fi_GF7_C___S2_B06 P6=Fi_GF7_C___S2_B15 P7=Fi_GF7_C___S2_B16 P8=Fi_GF7_C___Name P9=Fi_GF8_A___S2_B01 P10=Fi_GF8_A___S2_B02 P11=Fi_GF8_A___S2_B03 P12=Fi_GF8_A___S2_B04 P13=Fi_GF8_A___S2_B05 P14=Fi_GF8_A___S2_B06 P15=Fi_GF8_A___S2_B15 P16=Fi_GF8_A___S2_B16 P17=Fi_GF8_A___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF8_B___S2_B01 P1=Fi_GF8_B___S2_B02 P2=Fi_GF8_B___S2_B03 P3=Fi_GF8_B___S2_B04 P4=Fi_GF8_B___S2_B05 P5=Fi_GF8_B___S2_B06 P6=Fi_GF8_B___S2_B15 P7=Fi_GF8_B___S2_B16 P8=Fi_GF8_B___Name P9=Fi_GF8_C___S2_B01 P10=Fi_GF8_C___S2_B02 P11=Fi_GF8_C___S2_B03 P12=Fi_GF8_C___S2_B04 P13=Fi_GF8_C___S2_B05 P14=Fi_GF8_C___S2_B06 P15=Fi_GF8_C___S2_B15 P16=Fi_GF8_C___S2_B16 P17=Fi_GF8_C___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF102_9_1PS2_B01 P1=Fi_GF102_9_1PS2_B02 P2=Fi_GF102_9_1PS2_B03 P3=Fi_GF102_9_1PS2_B04 P4=Fi_GF102_9_1PS2_B05 P5=Fi_GF102_9_1PS2_B06 P6=Fi_GF102_9_1PS2_B15 P7=Fi_GF102_9_1PS2_B16 P8=Fi_GF102_9_1PName P9=Fi_GF102_9_2PS2_B01 P10=Fi_GF102_9_2PS2_B02 P11=Fi_GF102_9_2PS2_B03 P12=Fi_GF102_9_2PS2_B04 P13=Fi_GF102_9_2PS2_B05 P14=Fi_GF102_9_2PS2_B06 P15=Fi_GF102_9_2PS2_B15 P16=Fi_GF102_9_2PS2_B16 P17=Fi_GF102_9_2PName
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF102_9_4PS2_B01 P1=Fi_GF102_9_4PS2_B02 P2=Fi_GF102_9_4PS2_B03 P3=Fi_GF102_9_4PS2_B04 P4=Fi_GF102_9_4PS2_B05 P5=Fi_GF102_9_4PS2_B06 P6=Fi_GF102_9_4PS2_B15 P7=Fi_GF102_9_4PS2_B16 P8=Fi_GF102_9_4PName P9=Fi_GF10_A__S2_B01 P10=Fi_GF10_A__S2_B02 P11=Fi_GF10_A__S2_B03 P12=Fi_GF10_A__S2_B04 P13=Fi_GF10_A__S2_B05 P14=Fi_GF10_A__S2_B06 P15=Fi_GF10_A__S2_B15 P16=Fi_GF10_A__S2_B16 P17=Fi_GF10_A__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF10_B__S2_B01 P1=Fi_GF10_B__S2_B02 P2=Fi_GF10_B__S2_B03 P3=Fi_GF10_B__S2_B04 P4=Fi_GF10_B__S2_B05 P5=Fi_GF10_B__S2_B06 P6=Fi_GF10_B__S2_B15 P7=Fi_GF10_B__S2_B16 P8=Fi_GF10_B__Name P9=Fi_GF10_C__S2_B01 P10=Fi_GF10_C__S2_B02 P11=Fi_GF10_C__S2_B03 P12=Fi_GF10_C__S2_B04 P13=Fi_GF10_C__S2_B05 P14=Fi_GF10_C__S2_B06 P15=Fi_GF10_C__S2_B15 P16=Fi_GF10_C__S2_B16 P17=Fi_GF10_C__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF25_A__S2_B01 P1=Fi_GF25_A__S2_B02 P2=Fi_GF25_A__S2_B03 P3=Fi_GF25_A__S2_B04 P4=Fi_GF25_A__S2_B05 P5=Fi_GF25_A__S2_B06 P6=Fi_GF25_A__S2_B15 P7=Fi_GF25_A__S2_B16 P8=Fi_GF25_A__Name P9=Fi_GF25_B__S2_B01 P10=Fi_GF25_B__S2_B02 P11=Fi_GF25_B__S2_B03 P12=Fi_GF25_B__S2_B04 P13=Fi_GF25_B__S2_B05 P14=Fi_GF25_B__S2_B06 P15=Fi_GF25_B__S2_B15 P16=Fi_GF25_B__S2_B16 P17=Fi_GF25_B__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF26_A__S2_B01 P1=Fi_GF26_A__S2_B02 P2=Fi_GF26_A__S2_B03 P3=Fi_GF26_A__S2_B04 P4=Fi_GF26_A__S2_B05 P5=Fi_GF26_A__S2_B06 P6=Fi_GF26_A__S2_B15 P7=Fi_GF26_A__S2_B16 P8=Fi_GF26_A__Name P9=Fi_GF26_B__S2_B01 P10=Fi_GF26_B__S2_B02 P11=Fi_GF26_B__S2_B03 P12=Fi_GF26_B__S2_B04 P13=Fi_GF26_B__S2_B05 P14=Fi_GF26_B__S2_B06 P15=Fi_GF26_B__S2_B15 P16=Fi_GF26_B__S2_B16 P17=Fi_GF26_B__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF45____S2_B01 P1=Fi_GF45____S2_B02 P2=Fi_GF45____S2_B03 P3=Fi_GF45____S2_B04 P4=Fi_GF45____S2_B05 P5=Fi_GF45____S2_B06 P6=Fi_GF45____S2_B15 P7=Fi_GF45____S2_B16 P8=Fi_GF45____Name P9=Fi_GF82____S2_B01 P10=Fi_GF82____S2_B02 P11=Fi_GF82____S2_B03 P12=Fi_GF82____S2_B04 P13=Fi_GF82____S2_B05 P14=Fi_GF82____S2_B06 P15=Fi_GF82____S2_B15 P16=Fi_GF82____S2_B16 P17=Fi_GF82____Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF285___S2_B01 P1=Fi_GF285___S2_B02 P2=Fi_GF285___S2_B03 P3=Fi_GF285___S2_B04 P4=Fi_GF285___S2_B05 P5=Fi_GF285___S2_B06 P6=Fi_GF285___S2_B15 P7=Fi_GF285___S2_B16 P8=Fi_GF285___Name P9=Fi_GF322___S2_B01 P10=Fi_GF322___S2_B02 P11=Fi_GF322___S2_B03 P12=Fi_GF322___S2_B04 P13=Fi_GF322___S2_B05 P14=Fi_GF322___S2_B06 P15=Fi_GF322___S2_B15 P16=Fi_GF322___S2_B16 P17=Fi_GF322___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF83____S2_B01 P1=Fi_GF83____S2_B02 P2=Fi_GF83____S2_B03 P3=Fi_GF83____S2_B04 P4=Fi_GF83____S2_B05 P5=Fi_GF83____S2_B06 P6=Fi_GF83____S2_B15 P7=Fi_GF83____S2_B16 P8=Fi_GF83____Name P9=Fi_GF81____S2_B01 P10=Fi_GF81____S2_B02 P11=Fi_GF81____S2_B03 P12=Fi_GF81____S2_B04 P13=Fi_GF81____S2_B05 P14=Fi_GF81____S2_B06 P15=Fi_GF81____S2_B15 P16=Fi_GF81____S2_B16 P17=Fi_GF81____Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF330___S2_B01 P1=Fi_GF330___S2_B02 P2=Fi_GF330___S2_B03 P3=Fi_GF330___S2_B04 P4=Fi_GF330___S2_B05 P5=Fi_GF330___S2_B06 P6=Fi_GF330___S2_B15 P7=Fi_GF330___S2_B16 P8=Fi_GF330___Name P9=Fi_GF288___S2_B01 P10=Fi_GF288___S2_B02 P11=Fi_GF288___S2_B03 P12=Fi_GF288___S2_B04 P13=Fi_GF288___S2_B05 P14=Fi_GF288___S2_B06 P15=Fi_GF288___S2_B15 P16=Fi_GF288___S2_B16 P17=Fi_GF288___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF27_1__S2_B01 P1=Fi_GF27_1__S2_B02 P2=Fi_GF27_1__S2_B03 P3=Fi_GF27_1__S2_B04 P4=Fi_GF27_1__S2_B05 P5=Fi_GF27_1__S2_B06 P6=Fi_GF27_1__S2_B15 P7=Fi_GF27_1__S2_B16 P8=Fi_GF27_1__Name P9=Fi_GF27_2__S2_B01 P10=Fi_GF27_2__S2_B02 P11=Fi_GF27_2__S2_B03 P12=Fi_GF27_2__S2_B04 P13=Fi_GF27_2__S2_B05 P14=Fi_GF27_2__S2_B06 P15=Fi_GF27_2__S2_B15 P16=Fi_GF27_2__S2_B16 P17=Fi_GF27_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF28_1__S2_B01 P1=Fi_GF28_1__S2_B02 P2=Fi_GF28_1__S2_B03 P3=Fi_GF28_1__S2_B04 P4=Fi_GF28_1__S2_B05 P5=Fi_GF28_1__S2_B06 P6=Fi_GF28_1__S2_B15 P7=Fi_GF28_1__S2_B16 P8=Fi_GF28_1__Name P9=Fi_GF28_2__S2_B01 P10=Fi_GF28_2__S2_B02 P11=Fi_GF28_2__S2_B03 P12=Fi_GF28_2__S2_B04 P13=Fi_GF28_2__S2_B05 P14=Fi_GF28_2__S2_B06 P15=Fi_GF28_2__S2_B15 P16=Fi_GF28_2__S2_B16 P17=Fi_GF28_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF29_1__S2_B01 P1=Fi_GF29_1__S2_B02 P2=Fi_GF29_1__S2_B03 P3=Fi_GF29_1__S2_B04 P4=Fi_GF29_1__S2_B05 P5=Fi_GF29_1__S2_B06 P6=Fi_GF29_1__S2_B15 P7=Fi_GF29_1__S2_B16 P8=Fi_GF29_1__Name P9=Fi_GF29_2__S2_B01 P10=Fi_GF29_2__S2_B02 P11=Fi_GF29_2__S2_B03 P12=Fi_GF29_2__S2_B04 P13=Fi_GF29_2__S2_B05 P14=Fi_GF29_2__S2_B06 P15=Fi_GF29_2__S2_B15 P16=Fi_GF29_2__S2_B16 P17=Fi_GF29_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GFY1____S2_B01 P1=Fi_GFY1____S2_B02 P2=Fi_GFY1____S2_B03 P3=Fi_GFY1____S2_B04 P4=Fi_GFY1____S2_B05 P5=Fi_GFY1____S2_B06 P6=Fi_GFY1____S2_B15 P7=Fi_GFY1____S2_B16 P8=Fi_GFY1____Name P9=Fi_GF212___S2_B01 P10=Fi_GF212___S2_B02 P11=Fi_GF212___S2_B03 P12=Fi_GF212___S2_B04 P13=Fi_GF212___S2_B05 P14=Fi_GF212___S2_B06 P15=Fi_GF212___S2_B15 P16=Fi_GF212___S2_B16 P17=Fi_GF212___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF236___S2_B01 P1=Fi_GF236___S2_B02 P2=Fi_GF236___S2_B03 P3=Fi_GF236___S2_B04 P4=Fi_GF236___S2_B05 P5=Fi_GF236___S2_B06 P6=Fi_GF236___S2_B15 P7=Fi_GF236___S2_B16 P8=Fi_GF236___Name P9=Fi_GF87____S2_B01 P10=Fi_GF87____S2_B02 P11=Fi_GF87____S2_B03 P12=Fi_GF87____S2_B04 P13=Fi_GF87____S2_B05 P14=Fi_GF87____S2_B06 P15=Fi_GF87____S2_B15 P16=Fi_GF87____S2_B16 P17=Fi_GF87____Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF88____S2_B01 P1=Fi_GF88____S2_B02 P2=Fi_GF88____S2_B03 P3=Fi_GF88____S2_B04 P4=Fi_GF88____S2_B05 P5=Fi_GF88____S2_B06 P6=Fi_GF88____S2_B15 P7=Fi_GF88____S2_B16 P8=Fi_GF88____Name P9=Fi_GF141___S2_B01 P10=Fi_GF141___S2_B02 P11=Fi_GF141___S2_B03 P12=Fi_GF141___S2_B04 P13=Fi_GF141___S2_B05 P14=Fi_GF141___S2_B06 P15=Fi_GF141___S2_B15 P16=Fi_GF141___S2_B16 P17=Fi_GF141___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF134___S2_B01 P1=Fi_GF134___S2_B02 P2=Fi_GF134___S2_B03 P3=Fi_GF134___S2_B04 P4=Fi_GF134___S2_B05 P5=Fi_GF134___S2_B06 P6=Fi_GF134___S2_B15 P7=Fi_GF134___S2_B16 P8=Fi_GF134___Name P9=Fi_GF143___S2_B01 P10=Fi_GF143___S2_B02 P11=Fi_GF143___S2_B03 P12=Fi_GF143___S2_B04 P13=Fi_GF143___S2_B05 P14=Fi_GF143___S2_B06 P15=Fi_GF143___S2_B15 P16=Fi_GF143___S2_B16 P17=Fi_GF143___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF136___S2_B01 P1=Fi_GF136___S2_B02 P2=Fi_GF136___S2_B03 P3=Fi_GF136___S2_B04 P4=Fi_GF136___S2_B05 P5=Fi_GF136___S2_B06 P6=Fi_GF136___S2_B15 P7=Fi_GF136___S2_B16 P8=Fi_GF136___Name P9=Fi_GF145___S2_B01 P10=Fi_GF145___S2_B02 P11=Fi_GF145___S2_B03 P12=Fi_GF145___S2_B04 P13=Fi_GF145___S2_B05 P14=Fi_GF145___S2_B06 P15=Fi_GF145___S2_B15 P16=Fi_GF145___S2_B16 P17=Fi_GF145___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF138___S2_B01 P1=Fi_GF138___S2_B02 P2=Fi_GF138___S2_B03 P3=Fi_GF138___S2_B04 P4=Fi_GF138___S2_B05 P5=Fi_GF138___S2_B06 P6=Fi_GF138___S2_B15 P7=Fi_GF138___S2_B16 P8=Fi_GF138___Name P9=Fi_GFa_4_1_S2_B01 P10=Fi_GFa_4_1_S2_B02 P11=Fi_GFa_4_1_S2_B03 P12=Fi_GFa_4_1_S2_B04 P13=Fi_GFa_4_1_S2_B05 P14=Fi_GFa_4_1_S2_B06 P15=Fi_GFa_4_1_S2_B15 P16=Fi_GFa_4_1_S2_B16 P17=Fi_GFa_4_1_Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GFa_4_2_S2_B01 P1=Fi_GFa_4_2_S2_B02 P2=Fi_GFa_4_2_S2_B03 P3=Fi_GFa_4_2_S2_B04 P4=Fi_GFa_4_2_S2_B05 P5=Fi_GFa_4_2_S2_B06 P6=Fi_GFa_4_2_S2_B15 P7=Fi_GFa_4_2_S2_B16 P8=Fi_GFa_4_2_Name P9=Fi_GF155___S2_B01 P10=Fi_GF155___S2_B02 P11=Fi_GF155___S2_B03 P12=Fi_GF155___S2_B04 P13=Fi_GF155___S2_B05 P14=Fi_GF155___S2_B06 P15=Fi_GF155___S2_B15 P16=Fi_GF155___S2_B16 P17=Fi_GF155___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF148___S2_B01 P1=Fi_GF148___S2_B02 P2=Fi_GF148___S2_B03 P3=Fi_GF148___S2_B04 P4=Fi_GF148___S2_B05 P5=Fi_GF148___S2_B06 P6=Fi_GF148___S2_B15 P7=Fi_GF148___S2_B16 P8=Fi_GF148___Name P9=Fi_GF157___S2_B01 P10=Fi_GF157___S2_B02 P11=Fi_GF157___S2_B03 P12=Fi_GF157___S2_B04 P13=Fi_GF157___S2_B05 P14=Fi_GF157___S2_B06 P15=Fi_GF157___S2_B15 P16=Fi_GF157___S2_B16 P17=Fi_GF157___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF150___S2_B01 P1=Fi_GF150___S2_B02 P2=Fi_GF150___S2_B03 P3=Fi_GF150___S2_B04 P4=Fi_GF150___S2_B05 P5=Fi_GF150___S2_B06 P6=Fi_GF150___S2_B15 P7=Fi_GF150___S2_B16 P8=Fi_GF150___Name P9=Fi_GF159___S2_B01 P10=Fi_GF159___S2_B02 P11=Fi_GF159___S2_B03 P12=Fi_GF159___S2_B04 P13=Fi_GF159___S2_B05 P14=Fi_GF159___S2_B06 P15=Fi_GF159___S2_B15 P16=Fi_GF159___S2_B16 P17=Fi_GF159___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GF152___S2_B01 P1=Fi_GF152___S2_B02 P2=Fi_GF152___S2_B03 P3=Fi_GF152___S2_B04 P4=Fi_GF152___S2_B05 P5=Fi_GF152___S2_B06 P6=Fi_GF152___S2_B15 P7=Fi_GF152___S2_B16 P8=Fi_GF152___Name P9=Fi_GFb_4_1_S2_B01 P10=Fi_GFb_4_1_S2_B02 P11=Fi_GFb_4_1_S2_B03 P12=Fi_GFb_4_1_S2_B04 P13=Fi_GFb_4_1_S2_B05 P14=Fi_GFb_4_1_S2_B06 P15=Fi_GFb_4_1_S2_B15 P16=Fi_GFb_4_1_S2_B16 P17=Fi_GFb_4_1_Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi_GFb_4_2_S2_B01 P1=Fi_GFb_4_2_S2_B02 P2=Fi_GFb_4_2_S2_B03 P3=Fi_GFb_4_2_S2_B04 P4=Fi_GFb_4_2_S2_B05 P5=Fi_GFb_4_2_S2_B06 P6=Fi_GFb_4_2_S2_B15 P7=Fi_GFb_4_2_S2_B16 P8=Fi_GFb_4_2_Name
+            | ^%Q40              ^| ^%D7         ^|              |---------------------|---------------|
+            |---------------------|---------------|
+
+
+      ^%Q28                  ^
+
+               C¬Œƒ ¿ “≈ ”Ÿ≈√Œ —Œ—“ŒﬂÕ»ﬂ Œ¡Œ–”ƒŒ¬¿Õ»ﬂ œŒ∆¿–Œ“”ÿ≈Õ»ﬂ 2
+
+               |------------------------------|---------|---------|
+               |   Õ¿»Ã≈ÕŒ¬¿Õ»≈               |—Œ—“ŒﬂÕ»≈|  –≈∆»Ã  |
+               |------------------------------|---------|---------|
+:PARL: P0=Fi2_Fe1_Stat P1=Fi2_Fe1_Duty P2=Fi2_Fe1_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_FR1_Stat P1=Fi2_FR1_Duty P2=Fi2_FR1_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_Fe2_Stat P1=Fi2_Fe2_Duty P2=Fi2_Fe2_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_FR2_Stat P1=Fi2_FR2_Duty P2=Fi2_FR2_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_Fe3_Stat P1=Fi2_Fe3_Duty P2=Fi2_Fe3_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_FR3_Stat P1=Fi2_FR3_Duty P2=Fi2_FR3_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_Fw1_Stat P1=Fi2_Fw1_Duty P2=Fi2_Fw1_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_Fw2_Stat P1=Fi2_Fw2_Duty P2=Fi2_Fw2_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+:PARL: P0=Fi2_Fw3_Stat P1=Fi2_Fw3_Duty P2=Fi2_Fw3_Name
+               | ^%Q41                      ^ |^%D1	   ^|   ^%D5^ |
+               |------------------------------|---------|---------|
+
+                                      “≈ ”Ÿ≈≈ —Œ—“ŒﬂÕ»≈ «¿ƒ¬»∆≈  œŒ∆¿–Œ“”ÿ≈Õ»ﬂ 2
+
+            |---------------------|---------------|              |---------------------|---------------|
+            |     ÕŒÃ≈–           |   —Œ—“ŒﬂÕ»≈   |              |     ÕŒÃ≈–           |   —Œ—“ŒﬂÕ»≈   |
+            |    «¿ƒ¬»∆ »         |               |              |    «¿ƒ¬»∆ »         |               |
+            |---------------------|---------------|              |---------------------|---------------|
+:PARL: P0=Fi2_GF13_1__S2_B01 P1=Fi2_GF13_1__S2_B02 P2=Fi2_GF13_1__S2_B03 P3=Fi2_GF13_1__S2_B04 P4=Fi2_GF13_1__S2_B05 P5=Fi2_GF13_1__S2_B06 P6=Fi2_GF13_1__S2_B15 P7=Fi2_GF13_1__S2_B16 P8=Fi2_GF13_1__Name P9=Fi2_GF13_2__S2_B01 P10=Fi2_GF13_2__S2_B02 P11=Fi2_GF13_2__S2_B03 P12=Fi2_GF13_2__S2_B04 P13=Fi2_GF13_2__S2_B05 P14=Fi2_GF13_2__S2_B06 P15=Fi2_GF13_2__S2_B15 P16=Fi2_GF13_2__S2_B16 P17=Fi2_GF13_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF13_3__S2_B01 P1=Fi2_GF13_3__S2_B02 P2=Fi2_GF13_3__S2_B03 P3=Fi2_GF13_3__S2_B04 P4=Fi2_GF13_3__S2_B05 P5=Fi2_GF13_3__S2_B06 P6=Fi2_GF13_3__S2_B15 P7=Fi2_GF13_3__S2_B16 P8=Fi2_GF13_3__Name P9=Fi2_GF13_4__S2_B01 P10=Fi2_GF13_4__S2_B02 P11=Fi2_GF13_4__S2_B03 P12=Fi2_GF13_4__S2_B04 P13=Fi2_GF13_4__S2_B05 P14=Fi2_GF13_4__S2_B06 P15=Fi2_GF13_4__S2_B15 P16=Fi2_GF13_4__S2_B16 P17=Fi2_GF13_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF13_5__S2_B01 P1=Fi2_GF13_5__S2_B02 P2=Fi2_GF13_5__S2_B03 P3=Fi2_GF13_5__S2_B04 P4=Fi2_GF13_5__S2_B05 P5=Fi2_GF13_5__S2_B06 P6=Fi2_GF13_5__S2_B15 P7=Fi2_GF13_5__S2_B16 P8=Fi2_GF13_5__Name P9=Fi2_GF13_6__S2_B01 P10=Fi2_GF13_6__S2_B02 P11=Fi2_GF13_6__S2_B03 P12=Fi2_GF13_6__S2_B04 P13=Fi2_GF13_6__S2_B05 P14=Fi2_GF13_6__S2_B06 P15=Fi2_GF13_6__S2_B15 P16=Fi2_GF13_6__S2_B16 P17=Fi2_GF13_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF13A___S2_B01 P1=Fi2_GF13A___S2_B02 P2=Fi2_GF13A___S2_B03 P3=Fi2_GF13A___S2_B04 P4=Fi2_GF13A___S2_B05 P5=Fi2_GF13A___S2_B06 P6=Fi2_GF13A___S2_B15 P7=Fi2_GF13A___S2_B16 P8=Fi2_GF13A___Name P9=Fi2_GF13B___S2_B01 P10=Fi2_GF13B___S2_B02 P11=Fi2_GF13B___S2_B03 P12=Fi2_GF13B___S2_B04 P13=Fi2_GF13B___S2_B05 P14=Fi2_GF13B___S2_B06 P15=Fi2_GF13B___S2_B15 P16=Fi2_GF13B___S2_B16 P17=Fi2_GF13B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF13V___S2_B01 P1=Fi2_GF13V___S2_B02 P2=Fi2_GF13V___S2_B03 P3=Fi2_GF13V___S2_B04 P4=Fi2_GF13V___S2_B05 P5=Fi2_GF13V___S2_B06 P6=Fi2_GF13V___S2_B15 P7=Fi2_GF13V___S2_B16 P8=Fi2_GF13V___Name P9=Fi2_GF13G___S2_B01 P10=Fi2_GF13G___S2_B02 P11=Fi2_GF13G___S2_B03 P12=Fi2_GF13G___S2_B04 P13=Fi2_GF13G___S2_B05 P14=Fi2_GF13G___S2_B06 P15=Fi2_GF13G___S2_B15 P16=Fi2_GF13G___S2_B16 P17=Fi2_GF13G___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF14_1__S2_B01 P1=Fi2_GF14_1__S2_B02 P2=Fi2_GF14_1__S2_B03 P3=Fi2_GF14_1__S2_B04 P4=Fi2_GF14_1__S2_B05 P5=Fi2_GF14_1__S2_B06 P6=Fi2_GF14_1__S2_B15 P7=Fi2_GF14_1__S2_B16 P8=Fi2_GF14_1__Name P9=Fi2_GF14_2__S2_B01 P10=Fi2_GF14_2__S2_B02 P11=Fi2_GF14_2__S2_B03 P12=Fi2_GF14_2__S2_B04 P13=Fi2_GF14_2__S2_B05 P14=Fi2_GF14_2__S2_B06 P15=Fi2_GF14_2__S2_B15 P16=Fi2_GF14_2__S2_B16 P17=Fi2_GF14_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF14_3__S2_B01 P1=Fi2_GF14_3__S2_B02 P2=Fi2_GF14_3__S2_B03 P3=Fi2_GF14_3__S2_B04 P4=Fi2_GF14_3__S2_B05 P5=Fi2_GF14_3__S2_B06 P6=Fi2_GF14_3__S2_B15 P7=Fi2_GF14_3__S2_B16 P8=Fi2_GF14_3__Name P9=Fi2_GF14_4__S2_B01 P10=Fi2_GF14_4__S2_B02 P11=Fi2_GF14_4__S2_B03 P12=Fi2_GF14_4__S2_B04 P13=Fi2_GF14_4__S2_B05 P14=Fi2_GF14_4__S2_B06 P15=Fi2_GF14_4__S2_B15 P16=Fi2_GF14_4__S2_B16 P17=Fi2_GF14_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF14_5__S2_B01 P1=Fi2_GF14_5__S2_B02 P2=Fi2_GF14_5__S2_B03 P3=Fi2_GF14_5__S2_B04 P4=Fi2_GF14_5__S2_B05 P5=Fi2_GF14_5__S2_B06 P6=Fi2_GF14_5__S2_B15 P7=Fi2_GF14_5__S2_B16 P8=Fi2_GF14_5__Name P9=Fi2_GF14_6__S2_B01 P10=Fi2_GF14_6__S2_B02 P11=Fi2_GF14_6__S2_B03 P12=Fi2_GF14_6__S2_B04 P13=Fi2_GF14_6__S2_B05 P14=Fi2_GF14_6__S2_B06 P15=Fi2_GF14_6__S2_B15 P16=Fi2_GF14_6__S2_B16 P17=Fi2_GF14_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF14A___S2_B01 P1=Fi2_GF14A___S2_B02 P2=Fi2_GF14A___S2_B03 P3=Fi2_GF14A___S2_B04 P4=Fi2_GF14A___S2_B05 P5=Fi2_GF14A___S2_B06 P6=Fi2_GF14A___S2_B15 P7=Fi2_GF14A___S2_B16 P8=Fi2_GF14A___Name P9=Fi2_GF14B___S2_B01 P10=Fi2_GF14B___S2_B02 P11=Fi2_GF14B___S2_B03 P12=Fi2_GF14B___S2_B04 P13=Fi2_GF14B___S2_B05 P14=Fi2_GF14B___S2_B06 P15=Fi2_GF14B___S2_B15 P16=Fi2_GF14B___S2_B16 P17=Fi2_GF14B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF14V___S2_B01 P1=Fi2_GF14V___S2_B02 P2=Fi2_GF14V___S2_B03 P3=Fi2_GF14V___S2_B04 P4=Fi2_GF14V___S2_B05 P5=Fi2_GF14V___S2_B06 P6=Fi2_GF14V___S2_B15 P7=Fi2_GF14V___S2_B16 P8=Fi2_GF14V___Name P9=Fi2_GF14G___S2_B01 P10=Fi2_GF14G___S2_B02 P11=Fi2_GF14G___S2_B03 P12=Fi2_GF14G___S2_B04 P13=Fi2_GF14G___S2_B05 P14=Fi2_GF14G___S2_B06 P15=Fi2_GF14G___S2_B15 P16=Fi2_GF14G___S2_B16 P17=Fi2_GF14G___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF17_1__S2_B01 P1=Fi2_GF17_1__S2_B02 P2=Fi2_GF17_1__S2_B03 P3=Fi2_GF17_1__S2_B04 P4=Fi2_GF17_1__S2_B05 P5=Fi2_GF17_1__S2_B06 P6=Fi2_GF17_1__S2_B15 P7=Fi2_GF17_1__S2_B16 P8=Fi2_GF17_1__Name P9=Fi2_GF17_2__S2_B01 P10=Fi2_GF17_2__S2_B02 P11=Fi2_GF17_2__S2_B03 P12=Fi2_GF17_2__S2_B04 P13=Fi2_GF17_2__S2_B05 P14=Fi2_GF17_2__S2_B06 P15=Fi2_GF17_2__S2_B15 P16=Fi2_GF17_2__S2_B16 P17=Fi2_GF17_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF17_3__S2_B01 P1=Fi2_GF17_3__S2_B02 P2=Fi2_GF17_3__S2_B03 P3=Fi2_GF17_3__S2_B04 P4=Fi2_GF17_3__S2_B05 P5=Fi2_GF17_3__S2_B06 P6=Fi2_GF17_3__S2_B15 P7=Fi2_GF17_3__S2_B16 P8=Fi2_GF17_3__Name P9=Fi2_GF17_4__S2_B01 P10=Fi2_GF17_4__S2_B02 P11=Fi2_GF17_4__S2_B03 P12=Fi2_GF17_4__S2_B04 P13=Fi2_GF17_4__S2_B05 P14=Fi2_GF17_4__S2_B06 P15=Fi2_GF17_4__S2_B15 P16=Fi2_GF17_4__S2_B16 P17=Fi2_GF17_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF17_5__S2_B01 P1=Fi2_GF17_5__S2_B02 P2=Fi2_GF17_5__S2_B03 P3=Fi2_GF17_5__S2_B04 P4=Fi2_GF17_5__S2_B05 P5=Fi2_GF17_5__S2_B06 P6=Fi2_GF17_5__S2_B15 P7=Fi2_GF17_5__S2_B16 P8=Fi2_GF17_5__Name P9=Fi2_GF17_6__S2_B01 P10=Fi2_GF17_6__S2_B02 P11=Fi2_GF17_6__S2_B03 P12=Fi2_GF17_6__S2_B04 P13=Fi2_GF17_6__S2_B05 P14=Fi2_GF17_6__S2_B06 P15=Fi2_GF17_6__S2_B15 P16=Fi2_GF17_6__S2_B16 P17=Fi2_GF17_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF17A___S2_B01 P1=Fi2_GF17A___S2_B02 P2=Fi2_GF17A___S2_B03 P3=Fi2_GF17A___S2_B04 P4=Fi2_GF17A___S2_B05 P5=Fi2_GF17A___S2_B06 P6=Fi2_GF17A___S2_B15 P7=Fi2_GF17A___S2_B16 P8=Fi2_GF17A___Name P9=Fi2_GF17B___S2_B01 P10=Fi2_GF17B___S2_B02 P11=Fi2_GF17B___S2_B03 P12=Fi2_GF17B___S2_B04 P13=Fi2_GF17B___S2_B05 P14=Fi2_GF17B___S2_B06 P15=Fi2_GF17B___S2_B15 P16=Fi2_GF17B___S2_B16 P17=Fi2_GF17B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF17V___S2_B01 P1=Fi2_GF17V___S2_B02 P2=Fi2_GF17V___S2_B03 P3=Fi2_GF17V___S2_B04 P4=Fi2_GF17V___S2_B05 P5=Fi2_GF17V___S2_B06 P6=Fi2_GF17V___S2_B15 P7=Fi2_GF17V___S2_B16 P8=Fi2_GF17V___Name P9=Fi2_GF17G___S2_B01 P10=Fi2_GF17G___S2_B02 P11=Fi2_GF17G___S2_B03 P12=Fi2_GF17G___S2_B04 P13=Fi2_GF17G___S2_B05 P14=Fi2_GF17G___S2_B06 P15=Fi2_GF17G___S2_B15 P16=Fi2_GF17G___S2_B16 P17=Fi2_GF17G___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF18_1__S2_B01 P1=Fi2_GF18_1__S2_B02 P2=Fi2_GF18_1__S2_B03 P3=Fi2_GF18_1__S2_B04 P4=Fi2_GF18_1__S2_B05 P5=Fi2_GF18_1__S2_B06 P6=Fi2_GF18_1__S2_B15 P7=Fi2_GF18_1__S2_B16 P8=Fi2_GF18_1__Name P9=Fi2_GF18_2__S2_B01 P10=Fi2_GF18_2__S2_B02 P11=Fi2_GF18_2__S2_B03 P12=Fi2_GF18_2__S2_B04 P13=Fi2_GF18_2__S2_B05 P14=Fi2_GF18_2__S2_B06 P15=Fi2_GF18_2__S2_B15 P16=Fi2_GF18_2__S2_B16 P17=Fi2_GF18_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF18_3__S2_B01 P1=Fi2_GF18_3__S2_B02 P2=Fi2_GF18_3__S2_B03 P3=Fi2_GF18_3__S2_B04 P4=Fi2_GF18_3__S2_B05 P5=Fi2_GF18_3__S2_B06 P6=Fi2_GF18_3__S2_B15 P7=Fi2_GF18_3__S2_B16 P8=Fi2_GF18_3__Name P9=Fi2_GF18_4__S2_B01 P10=Fi2_GF18_4__S2_B02 P11=Fi2_GF18_4__S2_B03 P12=Fi2_GF18_4__S2_B04 P13=Fi2_GF18_4__S2_B05 P14=Fi2_GF18_4__S2_B06 P15=Fi2_GF18_4__S2_B15 P16=Fi2_GF18_4__S2_B16 P17=Fi2_GF18_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF18_5__S2_B01 P1=Fi2_GF18_5__S2_B02 P2=Fi2_GF18_5__S2_B03 P3=Fi2_GF18_5__S2_B04 P4=Fi2_GF18_5__S2_B05 P5=Fi2_GF18_5__S2_B06 P6=Fi2_GF18_5__S2_B15 P7=Fi2_GF18_5__S2_B16 P8=Fi2_GF18_5__Name P9=Fi2_GF18_6__S2_B01 P10=Fi2_GF18_6__S2_B02 P11=Fi2_GF18_6__S2_B03 P12=Fi2_GF18_6__S2_B04 P13=Fi2_GF18_6__S2_B05 P14=Fi2_GF18_6__S2_B06 P15=Fi2_GF18_6__S2_B15 P16=Fi2_GF18_6__S2_B16 P17=Fi2_GF18_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF18A___S2_B01 P1=Fi2_GF18A___S2_B02 P2=Fi2_GF18A___S2_B03 P3=Fi2_GF18A___S2_B04 P4=Fi2_GF18A___S2_B05 P5=Fi2_GF18A___S2_B06 P6=Fi2_GF18A___S2_B15 P7=Fi2_GF18A___S2_B16 P8=Fi2_GF18A___Name P9=Fi2_GF18B___S2_B01 P10=Fi2_GF18B___S2_B02 P11=Fi2_GF18B___S2_B03 P12=Fi2_GF18B___S2_B04 P13=Fi2_GF18B___S2_B05 P14=Fi2_GF18B___S2_B06 P15=Fi2_GF18B___S2_B15 P16=Fi2_GF18B___S2_B16 P17=Fi2_GF18B___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF18V___S2_B01 P1=Fi2_GF18V___S2_B02 P2=Fi2_GF18V___S2_B03 P3=Fi2_GF18V___S2_B04 P4=Fi2_GF18V___S2_B05 P5=Fi2_GF18V___S2_B06 P6=Fi2_GF18V___S2_B15 P7=Fi2_GF18V___S2_B16 P8=Fi2_GF18V___Name P9=Fi2_GF18G___S2_B01 P10=Fi2_GF18G___S2_B02 P11=Fi2_GF18G___S2_B03 P12=Fi2_GF18G___S2_B04 P13=Fi2_GF18G___S2_B05 P14=Fi2_GF18G___S2_B06 P15=Fi2_GF18G___S2_B15 P16=Fi2_GF18G___S2_B16 P17=Fi2_GF18G___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF11_1__S2_B01 P1=Fi2_GF11_1__S2_B02 P2=Fi2_GF11_1__S2_B03 P3=Fi2_GF11_1__S2_B04 P4=Fi2_GF11_1__S2_B05 P5=Fi2_GF11_1__S2_B06 P6=Fi2_GF11_1__S2_B15 P7=Fi2_GF11_1__S2_B16 P8=Fi2_GF11_1__Name P9=Fi2_GF11_2__S2_B01 P10=Fi2_GF11_2__S2_B02 P11=Fi2_GF11_2__S2_B03 P12=Fi2_GF11_2__S2_B04 P13=Fi2_GF11_2__S2_B05 P14=Fi2_GF11_2__S2_B06 P15=Fi2_GF11_2__S2_B15 P16=Fi2_GF11_2__S2_B16 P17=Fi2_GF11_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF11_3__S2_B01 P1=Fi2_GF11_3__S2_B02 P2=Fi2_GF11_3__S2_B03 P3=Fi2_GF11_3__S2_B04 P4=Fi2_GF11_3__S2_B05 P5=Fi2_GF11_3__S2_B06 P6=Fi2_GF11_3__S2_B15 P7=Fi2_GF11_3__S2_B16 P8=Fi2_GF11_3__Name P9=Fi2_GF11_4__S2_B01 P10=Fi2_GF11_4__S2_B02 P11=Fi2_GF11_4__S2_B03 P12=Fi2_GF11_4__S2_B04 P13=Fi2_GF11_4__S2_B05 P14=Fi2_GF11_4__S2_B06 P15=Fi2_GF11_4__S2_B15 P16=Fi2_GF11_4__S2_B16 P17=Fi2_GF11_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF11_5__S2_B01 P1=Fi2_GF11_5__S2_B02 P2=Fi2_GF11_5__S2_B03 P3=Fi2_GF11_5__S2_B04 P4=Fi2_GF11_5__S2_B05 P5=Fi2_GF11_5__S2_B06 P6=Fi2_GF11_5__S2_B15 P7=Fi2_GF11_5__S2_B16 P8=Fi2_GF11_5__Name P9=Fi2_GF11_6__S2_B01 P10=Fi2_GF11_6__S2_B02 P11=Fi2_GF11_6__S2_B03 P12=Fi2_GF11_6__S2_B04 P13=Fi2_GF11_6__S2_B05 P14=Fi2_GF11_6__S2_B06 P15=Fi2_GF11_6__S2_B15 P16=Fi2_GF11_6__S2_B16 P17=Fi2_GF11_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF11B___S2_B01 P1=Fi2_GF11B___S2_B02 P2=Fi2_GF11B___S2_B03 P3=Fi2_GF11B___S2_B04 P4=Fi2_GF11B___S2_B05 P5=Fi2_GF11B___S2_B06 P6=Fi2_GF11B___S2_B15 P7=Fi2_GF11B___S2_B16 P8=Fi2_GF11B___Name P9=Fi2_GF11V___S2_B01 P10=Fi2_GF11V___S2_B02 P11=Fi2_GF11V___S2_B03 P12=Fi2_GF11V___S2_B04 P13=Fi2_GF11V___S2_B05 P14=Fi2_GF11V___S2_B06 P15=Fi2_GF11V___S2_B15 P16=Fi2_GF11V___S2_B16 P17=Fi2_GF11V___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF12_1__S2_B01 P1=Fi2_GF12_1__S2_B02 P2=Fi2_GF12_1__S2_B03 P3=Fi2_GF12_1__S2_B04 P4=Fi2_GF12_1__S2_B05 P5=Fi2_GF12_1__S2_B06 P6=Fi2_GF12_1__S2_B15 P7=Fi2_GF12_1__S2_B16 P8=Fi2_GF12_1__Name P9=Fi2_GF12_2__S2_B01 P10=Fi2_GF12_2__S2_B02 P11=Fi2_GF12_2__S2_B03 P12=Fi2_GF12_2__S2_B04 P13=Fi2_GF12_2__S2_B05 P14=Fi2_GF12_2__S2_B06 P15=Fi2_GF12_2__S2_B15 P16=Fi2_GF12_2__S2_B16 P17=Fi2_GF12_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF12_3__S2_B01 P1=Fi2_GF12_3__S2_B02 P2=Fi2_GF12_3__S2_B03 P3=Fi2_GF12_3__S2_B04 P4=Fi2_GF12_3__S2_B05 P5=Fi2_GF12_3__S2_B06 P6=Fi2_GF12_3__S2_B15 P7=Fi2_GF12_3__S2_B16 P8=Fi2_GF12_3__Name P9=Fi2_GF12_4__S2_B01 P10=Fi2_GF12_4__S2_B02 P11=Fi2_GF12_4__S2_B03 P12=Fi2_GF12_4__S2_B04 P13=Fi2_GF12_4__S2_B05 P14=Fi2_GF12_4__S2_B06 P15=Fi2_GF12_4__S2_B15 P16=Fi2_GF12_4__S2_B16 P17=Fi2_GF12_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF12_5__S2_B01 P1=Fi2_GF12_5__S2_B02 P2=Fi2_GF12_5__S2_B03 P3=Fi2_GF12_5__S2_B04 P4=Fi2_GF12_5__S2_B05 P5=Fi2_GF12_5__S2_B06 P6=Fi2_GF12_5__S2_B15 P7=Fi2_GF12_5__S2_B16 P8=Fi2_GF12_5__Name P9=Fi2_GF12_6__S2_B01 P10=Fi2_GF12_6__S2_B02 P11=Fi2_GF12_6__S2_B03 P12=Fi2_GF12_6__S2_B04 P13=Fi2_GF12_6__S2_B05 P14=Fi2_GF12_6__S2_B06 P15=Fi2_GF12_6__S2_B15 P16=Fi2_GF12_6__S2_B16 P17=Fi2_GF12_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF12A___S2_B01 P1=Fi2_GF12A___S2_B02 P2=Fi2_GF12A___S2_B03 P3=Fi2_GF12A___S2_B04 P4=Fi2_GF12A___S2_B05 P5=Fi2_GF12A___S2_B06 P6=Fi2_GF12A___S2_B15 P7=Fi2_GF12A___S2_B16 P8=Fi2_GF12A___Name P9=Fi2_GF12V___S2_B01 P10=Fi2_GF12V___S2_B02 P11=Fi2_GF12V___S2_B03 P12=Fi2_GF12V___S2_B04 P13=Fi2_GF12V___S2_B05 P14=Fi2_GF12V___S2_B06 P15=Fi2_GF12V___S2_B15 P16=Fi2_GF12V___S2_B16 P17=Fi2_GF12V___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF15_1__S2_B01 P1=Fi2_GF15_1__S2_B02 P2=Fi2_GF15_1__S2_B03 P3=Fi2_GF15_1__S2_B04 P4=Fi2_GF15_1__S2_B05 P5=Fi2_GF15_1__S2_B06 P6=Fi2_GF15_1__S2_B15 P7=Fi2_GF15_1__S2_B16 P8=Fi2_GF15_1__Name P9=Fi2_GF15_2__S2_B01 P10=Fi2_GF15_2__S2_B02 P11=Fi2_GF15_2__S2_B03 P12=Fi2_GF15_2__S2_B04 P13=Fi2_GF15_2__S2_B05 P14=Fi2_GF15_2__S2_B06 P15=Fi2_GF15_2__S2_B15 P16=Fi2_GF15_2__S2_B16 P17=Fi2_GF15_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF15_3__S2_B01 P1=Fi2_GF15_3__S2_B02 P2=Fi2_GF15_3__S2_B03 P3=Fi2_GF15_3__S2_B04 P4=Fi2_GF15_3__S2_B05 P5=Fi2_GF15_3__S2_B06 P6=Fi2_GF15_3__S2_B15 P7=Fi2_GF15_3__S2_B16 P8=Fi2_GF15_3__Name P9=Fi2_GF15_4__S2_B01 P10=Fi2_GF15_4__S2_B02 P11=Fi2_GF15_4__S2_B03 P12=Fi2_GF15_4__S2_B04 P13=Fi2_GF15_4__S2_B05 P14=Fi2_GF15_4__S2_B06 P15=Fi2_GF15_4__S2_B15 P16=Fi2_GF15_4__S2_B16 P17=Fi2_GF15_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF15_5__S2_B01 P1=Fi2_GF15_5__S2_B02 P2=Fi2_GF15_5__S2_B03 P3=Fi2_GF15_5__S2_B04 P4=Fi2_GF15_5__S2_B05 P5=Fi2_GF15_5__S2_B06 P6=Fi2_GF15_5__S2_B15 P7=Fi2_GF15_5__S2_B16 P8=Fi2_GF15_5__Name P9=Fi2_GF15_6__S2_B01 P10=Fi2_GF15_6__S2_B02 P11=Fi2_GF15_6__S2_B03 P12=Fi2_GF15_6__S2_B04 P13=Fi2_GF15_6__S2_B05 P14=Fi2_GF15_6__S2_B06 P15=Fi2_GF15_6__S2_B15 P16=Fi2_GF15_6__S2_B16 P17=Fi2_GF15_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF15B___S2_B01 P1=Fi2_GF15B___S2_B02 P2=Fi2_GF15B___S2_B03 P3=Fi2_GF15B___S2_B04 P4=Fi2_GF15B___S2_B05 P5=Fi2_GF15B___S2_B06 P6=Fi2_GF15B___S2_B15 P7=Fi2_GF15B___S2_B16 P8=Fi2_GF15B___Name P9=Fi2_GF15G___S2_B01 P10=Fi2_GF15G___S2_B02 P11=Fi2_GF15G___S2_B03 P12=Fi2_GF15G___S2_B04 P13=Fi2_GF15G___S2_B05 P14=Fi2_GF15G___S2_B06 P15=Fi2_GF15G___S2_B15 P16=Fi2_GF15G___S2_B16 P17=Fi2_GF15G___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF16_1__S2_B01 P1=Fi2_GF16_1__S2_B02 P2=Fi2_GF16_1__S2_B03 P3=Fi2_GF16_1__S2_B04 P4=Fi2_GF16_1__S2_B05 P5=Fi2_GF16_1__S2_B06 P6=Fi2_GF16_1__S2_B15 P7=Fi2_GF16_1__S2_B16 P8=Fi2_GF16_1__Name P9=Fi2_GF16_2__S2_B01 P10=Fi2_GF16_2__S2_B02 P11=Fi2_GF16_2__S2_B03 P12=Fi2_GF16_2__S2_B04 P13=Fi2_GF16_2__S2_B05 P14=Fi2_GF16_2__S2_B06 P15=Fi2_GF16_2__S2_B15 P16=Fi2_GF16_2__S2_B16 P17=Fi2_GF16_2__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF16_3__S2_B01 P1=Fi2_GF16_3__S2_B02 P2=Fi2_GF16_3__S2_B03 P3=Fi2_GF16_3__S2_B04 P4=Fi2_GF16_3__S2_B05 P5=Fi2_GF16_3__S2_B06 P6=Fi2_GF16_3__S2_B15 P7=Fi2_GF16_3__S2_B16 P8=Fi2_GF16_3__Name P9=Fi2_GF16_4__S2_B01 P10=Fi2_GF16_4__S2_B02 P11=Fi2_GF16_4__S2_B03 P12=Fi2_GF16_4__S2_B04 P13=Fi2_GF16_4__S2_B05 P14=Fi2_GF16_4__S2_B06 P15=Fi2_GF16_4__S2_B15 P16=Fi2_GF16_4__S2_B16 P17=Fi2_GF16_4__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF16_5__S2_B01 P1=Fi2_GF16_5__S2_B02 P2=Fi2_GF16_5__S2_B03 P3=Fi2_GF16_5__S2_B04 P4=Fi2_GF16_5__S2_B05 P5=Fi2_GF16_5__S2_B06 P6=Fi2_GF16_5__S2_B15 P7=Fi2_GF16_5__S2_B16 P8=Fi2_GF16_5__Name P9=Fi2_GF16_6__S2_B01 P10=Fi2_GF16_6__S2_B02 P11=Fi2_GF16_6__S2_B03 P12=Fi2_GF16_6__S2_B04 P13=Fi2_GF16_6__S2_B05 P14=Fi2_GF16_6__S2_B06 P15=Fi2_GF16_6__S2_B15 P16=Fi2_GF16_6__S2_B16 P17=Fi2_GF16_6__Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF16A___S2_B01 P1=Fi2_GF16A___S2_B02 P2=Fi2_GF16A___S2_B03 P3=Fi2_GF16A___S2_B04 P4=Fi2_GF16A___S2_B05 P5=Fi2_GF16A___S2_B06 P6=Fi2_GF16A___S2_B15 P7=Fi2_GF16A___S2_B16 P8=Fi2_GF16A___Name P9=Fi2_GF16G___S2_B01 P10=Fi2_GF16G___S2_B02 P11=Fi2_GF16G___S2_B03 P12=Fi2_GF16G___S2_B04 P13=Fi2_GF16G___S2_B05 P14=Fi2_GF16G___S2_B06 P15=Fi2_GF16G___S2_B15 P16=Fi2_GF16G___S2_B16 P17=Fi2_GF16G___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GFK1_15_S2_B01 P1=Fi2_GFK1_15_S2_B02 P2=Fi2_GFK1_15_S2_B03 P3=Fi2_GFK1_15_S2_B04 P4=Fi2_GFK1_15_S2_B05 P5=Fi2_GFK1_15_S2_B06 P6=Fi2_GFK1_15_S2_B15 P7=Fi2_GFK1_15_S2_B16 P8=Fi2_GFK1_15_Name P9=Fi2_GFK2_15_S2_B01 P10=Fi2_GFK2_15_S2_B02 P11=Fi2_GFK2_15_S2_B03 P12=Fi2_GFK2_15_S2_B04 P13=Fi2_GFK2_15_S2_B05 P14=Fi2_GFK2_15_S2_B06 P15=Fi2_GFK2_15_S2_B15 P16=Fi2_GFK2_15_S2_B16 P17=Fi2_GFK2_15_Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GFK3_15_S2_B01 P1=Fi2_GFK3_15_S2_B02 P2=Fi2_GFK3_15_S2_B03 P3=Fi2_GFK3_15_S2_B04 P4=Fi2_GFK3_15_S2_B05 P5=Fi2_GFK3_15_S2_B06 P6=Fi2_GFK3_15_S2_B15 P7=Fi2_GFK3_15_S2_B16 P8=Fi2_GFK3_15_Name P9=Fi2_GFK1_16_S2_B01 P10=Fi2_GFK1_16_S2_B02 P11=Fi2_GFK1_16_S2_B03 P12=Fi2_GFK1_16_S2_B04 P13=Fi2_GFK1_16_S2_B05 P14=Fi2_GFK1_16_S2_B06 P15=Fi2_GFK1_16_S2_B15 P16=Fi2_GFK1_16_S2_B16 P17=Fi2_GFK1_16_Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GFK2_16_S2_B01 P1=Fi2_GFK2_16_S2_B02 P2=Fi2_GFK2_16_S2_B03 P3=Fi2_GFK2_16_S2_B04 P4=Fi2_GFK2_16_S2_B05 P5=Fi2_GFK2_16_S2_B06 P6=Fi2_GFK2_16_S2_B15 P7=Fi2_GFK2_16_S2_B16 P8=Fi2_GFK2_16_Name P9=Fi2_GFK3_16_S2_B01 P10=Fi2_GFK3_16_S2_B02 P11=Fi2_GFK3_16_S2_B03 P12=Fi2_GFK3_16_S2_B04 P13=Fi2_GFK3_16_S2_B05 P14=Fi2_GFK3_16_S2_B06 P15=Fi2_GFK3_16_S2_B15 P16=Fi2_GFK3_16_S2_B16 P17=Fi2_GFK3_16_Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF588___S2_B01 P1=Fi2_GF588___S2_B02 P2=Fi2_GF588___S2_B03 P3=Fi2_GF588___S2_B04 P4=Fi2_GF588___S2_B05 P5=Fi2_GF588___S2_B06 P6=Fi2_GF588___S2_B15 P7=Fi2_GF588___S2_B16 P8=Fi2_GF588___Name P9=Fi2_GF589___S2_B01 P10=Fi2_GF589___S2_B02 P11=Fi2_GF589___S2_B03 P12=Fi2_GF589___S2_B04 P13=Fi2_GF589___S2_B05 P14=Fi2_GF589___S2_B06 P15=Fi2_GF589___S2_B15 P16=Fi2_GF589___S2_B16 P17=Fi2_GF589___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF381___S2_B01 P1=Fi2_GF381___S2_B02 P2=Fi2_GF381___S2_B03 P3=Fi2_GF381___S2_B04 P4=Fi2_GF381___S2_B05 P5=Fi2_GF381___S2_B06 P6=Fi2_GF381___S2_B15 P7=Fi2_GF381___S2_B16 P8=Fi2_GF381___Name P9=Fi2_GF386___S2_B01 P10=Fi2_GF386___S2_B02 P11=Fi2_GF386___S2_B03 P12=Fi2_GF386___S2_B04 P13=Fi2_GF386___S2_B05 P14=Fi2_GF386___S2_B06 P15=Fi2_GF386___S2_B15 P16=Fi2_GF386___S2_B16 P17=Fi2_GF386___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF383___S2_B01 P1=Fi2_GF383___S2_B02 P2=Fi2_GF383___S2_B03 P3=Fi2_GF383___S2_B04 P4=Fi2_GF383___S2_B05 P5=Fi2_GF383___S2_B06 P6=Fi2_GF383___S2_B15 P7=Fi2_GF383___S2_B16 P8=Fi2_GF383___Name P9=Fi2_GF388___S2_B01 P10=Fi2_GF388___S2_B02 P11=Fi2_GF388___S2_B03 P12=Fi2_GF388___S2_B04 P13=Fi2_GF388___S2_B05 P14=Fi2_GF388___S2_B06 P15=Fi2_GF388___S2_B15 P16=Fi2_GF388___S2_B16 P17=Fi2_GF388___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF387___S2_B01 P1=Fi2_GF387___S2_B02 P2=Fi2_GF387___S2_B03 P3=Fi2_GF387___S2_B04 P4=Fi2_GF387___S2_B05 P5=Fi2_GF387___S2_B06 P6=Fi2_GF387___S2_B15 P7=Fi2_GF387___S2_B16 P8=Fi2_GF387___Name P9=Fi2_GF385___S2_B01 P10=Fi2_GF385___S2_B02 P11=Fi2_GF385___S2_B03 P12=Fi2_GF385___S2_B04 P13=Fi2_GF385___S2_B05 P14=Fi2_GF385___S2_B06 P15=Fi2_GF385___S2_B15 P16=Fi2_GF385___S2_B16 P17=Fi2_GF385___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF390___S2_B01 P1=Fi2_GF390___S2_B02 P2=Fi2_GF390___S2_B03 P3=Fi2_GF390___S2_B04 P4=Fi2_GF390___S2_B05 P5=Fi2_GF390___S2_B06 P6=Fi2_GF390___S2_B15 P7=Fi2_GF390___S2_B16 P8=Fi2_GF390___Name P9=Fi2_GF382___S2_B01 P10=Fi2_GF382___S2_B02 P11=Fi2_GF382___S2_B03 P12=Fi2_GF382___S2_B04 P13=Fi2_GF382___S2_B05 P14=Fi2_GF382___S2_B06 P15=Fi2_GF382___S2_B15 P16=Fi2_GF382___S2_B16 P17=Fi2_GF382___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF389___S2_B01 P1=Fi2_GF389___S2_B02 P2=Fi2_GF389___S2_B03 P3=Fi2_GF389___S2_B04 P4=Fi2_GF389___S2_B05 P5=Fi2_GF389___S2_B06 P6=Fi2_GF389___S2_B15 P7=Fi2_GF389___S2_B16 P8=Fi2_GF389___Name P9=Fi2_GF384___S2_B01 P10=Fi2_GF384___S2_B02 P11=Fi2_GF384___S2_B03 P12=Fi2_GF384___S2_B04 P13=Fi2_GF384___S2_B05 P14=Fi2_GF384___S2_B06 P15=Fi2_GF384___S2_B15 P16=Fi2_GF384___S2_B16 P17=Fi2_GF384___Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+:PARL: P0=Fi2_GF14____S2_B01 P1=Fi2_GF14____S2_B02 P2=Fi2_GF14____S2_B03 P3=Fi2_GF14____S2_B04 P4=Fi2_GF14____S2_B05 P5=Fi2_GF14____S2_B06 P6=Fi2_GF14____S2_B15 P7=Fi2_GF14____S2_B16 P8=Fi2_GF14____Name P9=Fi2_GF15____S2_B01 P10=Fi2_GF15____S2_B02 P11=Fi2_GF15____S2_B03 P12=Fi2_GF15____S2_B04 P13=Fi2_GF15____S2_B05 P14=Fi2_GF15____S2_B06 P15=Fi2_GF15____S2_B15 P16=Fi2_GF15____S2_B16 P17=Fi2_GF15____Name
+            | ^%Q40              ^| ^%D7         ^|              | ^%Q50              ^| ^%D8         ^|
+            |---------------------|---------------|              |---------------------|---------------|
+
+:STOP
+

@@ -1,0 +1,6 @@
+slay dmprhp
+/Dmon/bin/dmprhp -o /dev/spool/picture -a -M 2 -r pcl3 -c /home/prim_fi/windows/colors.cfg
+#/Dmon/bin/dmprhp -o /dev/spool/picture -d -v -a -r pcl3 -c /home/prim_fi/windows/colors.cfg -p c &
+#sleep 300
+#slay dmprhp
+

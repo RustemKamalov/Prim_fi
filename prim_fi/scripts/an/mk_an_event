@@ -1,0 +1,100 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="an_"$M"_list"
+event_file="an_"$M"_event"
+
+echo finding analog identifiers
+
+# find analog names (identifiers)
+for i in $(awk '/^AnValue/ { print(NR) }' $list_file)
+do
+    line=$(awk 'NR=='$i' {print $0}' $list_file)
+    name=$(echo $line | awk '{print $2}')
+	if [ "$name" = "" ]
+	  then
+        name=$(echo $line| awk '{print($1) }' | sed 's/AnValue/RM/')
+    fi
+
+    # look if 2max or 3max
+    if echo $name | grep -q '^XT' 
+      then
+        names_3max=$names_3max" "$name
+      else
+        names_2max=$names_2max" "$name
+    fi
+
+done
+
+
+# begin output files
+echo Writing file $event_file 2max analogs ...
+echo "# analog events 2max\n" > $event_file
+
+if [ "$names_2max" != "" ]
+  then
+
+    # processing an_event_tmpl 2max
+    head_line_no=1
+    for obj_line_no in $(awk '/^OBJ/ {print NR}' an_event_tmpl)
+    do
+        echo head_line_no: $head_line_no  obj_line_no $obj_line_no 
+        #find header
+        awk 'NR=='$head_line_no', NR=='"$obj_line_no-1"' {print $0}' an_event_tmpl \
+            >> $event_file
+
+        #find object
+        awk 'NR=='$obj_line_no',  /[^\\]$/ {print $0}' an_event_tmpl | \
+            sed 's/$M/'$M'/g' > obj_file
+        head_line_no=$(awk 'NR=='$obj_line_no',  /[^\\]$/ \
+            {if ($0 ~ /[^\\]$/) {print NR} }' an_event_tmpl)
+        head_line_no=$(expr $head_line_no + 1)
+
+        #make all 2max analogs with this object
+        for id in $names_2max
+        do
+            sed 's/$id/'$id'/g' obj_file >> $event_file
+        done
+
+    done
+  else
+    echo No 2max analogs found
+    echo "# No 2max analogs found\n" >> $event_file
+fi    
+
+echo Writing file $event_file 3max analogs ...
+echo "\n# analog events 3max\n" >> $event_file
+
+if [ "$names_3max" != "" ]
+  then
+
+    # processing an_event_tmpl 3max
+    head_line_no=1
+    for obj_line_no in $(awk '/^OBJ/ {print NR}' an_event_3max_tmpl)
+    do
+        echo head_line_no: $head_line_no  obj_line_no $obj_line_no 
+        #find header
+        awk 'NR=='$head_line_no', NR=='"$obj_line_no-1"' {print $0}' an_event_3max_tmpl \
+            >> $event_file
+
+        #find object
+        awk 'NR=='$obj_line_no',  /[^\\]$/ {print $0}' an_event_3max_tmpl | \
+            sed 's/$M/'$M'/g' > obj_file
+        head_line_no=$(awk 'NR=='$obj_line_no',  /[^\\]$/ \
+            {if ($0 ~ /[^\\]$/) {print NR} }' an_event_3max_tmpl)
+        head_line_no=$(expr $head_line_no + 1)
+
+        #make all 3max analogs with this object
+        for id in $names_3max
+        do
+            sed 's/$id/'$id'/g' obj_file >> $event_file
+        done
+
+    done
+  else
+    echo No 3max analogs found
+    echo "# No 3max analogs found\n" >> $event_file
+fi    
+
+rm obj_file

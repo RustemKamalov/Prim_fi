@@ -1,0 +1,149 @@
+#!!! Check setting oper_time events from PLC at the end of the file !!!
+
+#--------------------------------Gate valves----------------------------------
+
+Q0=  E0
+Q1=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ’›’
+Q2=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‡€›’
+Q3=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: ‘’
+Q4=  d=1 b=0 l=1 f=1 t=9 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: „…‹‚€’
+Q5=  E5
+Q6=  E6
+Q7=  E7
+Q8=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: €‚€’
+Q9=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: … €‚€’
+Q10= E10
+Q11= E11
+Q12= E12
+Q13= E13
+Q14= E14
+Q15= E15
+Q16= E16
+OBJ=BitAll2Arg+ ARG=$M_$GIxxxName,MON_MIND TYP=21,2 PAR=$M_$GIxxxCtrWrd
+
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D3! %Q99: ……‚…‘’ ‚ …† ’€–
+Q2= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D3! %Q99: ……‚…‘’ ‚ …€‹›‰ …†
+OBJ=GIOpTypeSet ARG=$M_$GIxxxName,MON_MIND TYP=21,2 PAR=$M_$GIxxxCtrWrd,$M_$GIxxxS2_B08
+
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=%Q98: ’: Limitorque
+Q2= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=%Q98: ’: Rotork
+Q3= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=%Q98: ’: Auma
+Q4= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=%Q98: ’: Unknown
+OBJ=GIType ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxType
+
+
+Q0=  E0
+Q1=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ „1
+Q2=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ „1
+Q3=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‘’ ‡ „1
+Q4=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ „2
+Q5=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ „2
+Q6=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‘’ ‡ „2
+Q7=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ ’
+Q8=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ ’
+Q9=  d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ €‚’€’—…‘
+Q10= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ €‚’€’—…‘
+Q11= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ’›’ ‡ “
+Q12= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‡€›’ ‡ “
+Q13= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: €„€ - ‘’ ‡ “
+Q14= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: …“€‚‹…€: ‹— … ‚ „‘’€– …†…
+Q15= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: …“‘…… ‚›‹…… €„›
+Q16= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q113: „…‹‚€€
+OBJ=GVMsgStatus ARG=$M_$GIxxxName TYP=21,2 				     \
+    PAR=$M_$GIxxxS1_B01,$M_$GIxxxS1_B02,$M_$GIxxxS1_B03,$M_$GIxxxS1_B04, \
+        $M_$GIxxxS1_B05,$M_$GIxxxS1_B06,$M_$GIxxxS1_B07,$M_$GIxxxS1_B08, \
+        $M_$GIxxxS1_B09,$M_$GIxxxS1_B10,$M_$GIxxxS1_B11,$M_$GIxxxS1_B12, \
+        $M_$GIxxxS1_B13,$M_$GIxxxS1_B14,$M_$GIxxxS1_B15,$M_$GIxxxS1_B16
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: ’›‹€‘
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B01
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: ‡€›‹€‘
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B02
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: “€– ‚ …
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=14 cb=2 s=%Q98: “€– … ‚ …
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B03
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: ’›‚€…’‘
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B04
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: ‡€›‚€…’‘
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B05
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ …†“’— ‹†…
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B06
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: „‘’€–›‰ …† ’‹—…
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ „‘’€– …†…
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B07
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: …‘’›‰ …† ’‹—…
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ …‘’ …†…
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B08
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ …€‹ …†…
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: ‚ …†… ’€–
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B09
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=14 cb=2 s=%Q98: €‚€ (­¥®΅ε®¤¨¬  ¤¥΅«®ª¨ΰ®Άª )
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B10
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: …“‘…… ’›’…
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B12
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=55 w=1 cf=15 cb=2 s=%Q98: …“‘…… ‡€›’…
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B14
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=‘¨£­ « α­οβ! %Q98: €‚€!
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=14 cb=2 s=%Q98: €‚€!
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B15
+
+
+Q0= d=1 b=1 l=1 f=0 t=55 w=1 cf=15 cb=2 s=%Q98: €†…… „€
+Q1= d=1 b=1 l=1 f=0 t=55 w=1 cf=14 cb=2 s=%Q98: …’ €†…
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=21,2 PAR=$M_$GIxxxS2_B16
+
+
+#-----------------------setting_oper_time------------------------
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: “‘’€‚’ ‚… ‘‹“€’€–
+OBJ=Bit2Arg+- ARG=$M_$GIxxxName,MON_MIND TYP=30,2 PAR=$M_$GIxxxOprTSet
+
+
+#!!! Setting oper_time events from PLC should be checked !!!
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ νªα―«γ β ζ¨¨ ¨§ „1
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=40,1 PAR=$M_RemOT1S192
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ νªα―«γ β ζ¨¨ ¨§ „2
+OBJ=BitArg+- ARG=$M_$GIxxxName TYP=40,1 PAR=$M_RemOT2S192
+

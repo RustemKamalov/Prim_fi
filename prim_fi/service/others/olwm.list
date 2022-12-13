@@ -1,0 +1,50 @@
+File Manager
+/windows/apps/Olfm/olfm
+Shell
+/bin/sh -c /windows/bin/wterm
+Root Shell
+/windows/bin/wterm -t Root su
+Nice Root Shell
+/bin/sh -c '/windows/bin/wterm -t "Nice Root" nice --9 su'
+Q-Commander
+/windows/bin/wterm -t "Q-Commander" qc
+Symbol Editor
+/windows/apps/Sedit/sedit
+Interface Editor
+/windows/apps/Iedit/iedit
+Calculator
+/windows/apps/Calc/qwcalc
+Clock
+/windows/apps/wclock
+Maildog
+/windows/apps/maildog
+Tunnel Mode Demo
+/windows/apps/tunnel
+Picture Viewer
+/windows/apps/showpict
+Ruler
+/windows/apps/ruler
+Eyes
+/windows/apps/eyes
+Load Monitor
+/windows/apps/loadmon
+Life
+/windows/apps/life
+Mandelbrot
+/windows/apps/Mandel/mandelq
+Puzzle
+/windows/apps/puzzle
+Rebound
+/windows/apps/rebound
+Slideshow
+/windows/apps/slideshow
+Solitaire
+/windows/apps/Solitaire/solitaire
+Plaid
+/windows/apps/plaid
+Video Poker
+/windows/apps/Vpoker/vpoker
+Zoom
+/windows/apps/zoom
+Font Display
+/windows/apps/fontdemo

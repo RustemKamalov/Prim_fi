@@ -1,0 +1,59 @@
+            PRIMORSK allomason a helyszinen vegrehajtott modositasok
+            --------------------------------------------------------
+
+-   ZRU-s szekrenybe bekotott gazkapcsolok jelei modosultak: a be- es ki-
+    kapcsolasi kor meghibasodasi jelei kozositve, + egy uj meghibasodasi jel
+-   ZRU-s szekrenybe az szinte osszes bemenet elcsuszott, a PLC-ben modositva
+-   ACM meresek egyelore torolve, helyettuk a ZRU-s szekrenybe PA aramok,
+    aktiv teljesitmeny, betap feszultsegek, aramok 4-20mA bekotve.
+
+-   A kikotoi tuziviz szivattyuk rendszere a mi automatikankbol kiveve sajat
+    autonom automatikajuk van, mi csak a kovetkezo jeleket adjuk ki ill. 
+    fogadjuk:
+        - tuz eseten inditasi parancs ki
+        - viztartaly szint maximum, minimum ki
+        - szivattyuk mukodnek jel be.
+-   Tartalypark semaja az allomasi megjeleniton a helyszini sema alapjan 
+    modositva.
+-   Tartalyparki tuzrendszer semaja a helyszini sema alapjan modositva.
+-   Kanalizacio modositasa: a mi automatikank helyett sajat autonom automatika
+    hozzank csak tartaly vesz szintek es a szivattyu veszek jonnek.
+
+2001.12.02.
+-   PA5-nel tolozarak modossitva: mas csore dolgoznak.
+
+2001.12.10.
+-   PA5-nel tolozarak modossitva: mas csore dolgoznak.
+-   NNS Bemeneti csovek elnevezese modositva.
+
+2001.12.11.
+-   A kikotoben 5-5 gazosodas mero helyett csak 4-4 kell, a TPU-n nem kell
+    egy sem (szobeli informaciok alapjan)
+
+2001.12.12.
+-   Misi beallitotta a szinteltolasokat a tartalyoknal az eddig meresi adatok
+    alapjan kesobbi pontositas a hitelesiteshez meg szukseges lehet.
+
+2001.12.13.
+-   A kikotoben ujabb bemenetek, kimenetek, teljesen megvaltozott veszjelek,
+    algoritmus is modosul, de meg nem tudni a veglegest.
+
+2001.12.14.
+-   Tartalypark kalibracios tablakat file-ban megkaptuk 6 tartalyra.
+
+2001.12.15.
+-   Kikotoi algoritmus ujra modosult.
+
+2001.12.17.
+-   Kikotoi algoritmus ujra modosult.
+-   Tartalypark kalibracios tablakat file-ban megkaptuk az osszes tartalyra,
+    es a helyi programozo betette a rendszerunkbe (piros pont).
+
+2000.12.20.
+-   A PA5-nel helyet cserelt a 2.17 es a 2.18 tolozar (2.17 - 3 vonal; 
+    2.18 - 2 vonal)
+-   Kikotoben a sztenderek szamozasa valtozott.
+-   Uj kikotoi jelek (tulnyomas levezeto meghibasodas jelzes)
+
+2000.12.22.
+-   Kikotoben a sztenderek szamozasa ujra valtozott.

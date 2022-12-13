@@ -1,0 +1,104 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="aux_"$M"_list"
+arch_file="aux_"$M"_arch"
+duty_file="aux_"$M"_duty"
+evmes_file="aux_"$M"_evmes"
+name_file="aux_"$M"_name"
+
+# begin output files
+echo Writing file $arch_file ...
+echo '//'$M'_auxilary systems archive tables'   >$arch_file
+echo Writing file $duty_file ...
+echo '//'$M'_auxilary systems duty,stat,ctr..'  >$duty_file
+echo Writing file $evmes_file ...
+echo '//'$M'_auxilary systems event messages'   >$evmes_file
+echo Writing file $name_file ...
+echo '//'$M'_auxilary system names'             >$name_file
+
+for line_no in $(awk '/^[A-Z].*sys/ {print(NR)}' $list_file)
+do
+    # find system things
+    si=$(awk 'NR == '$line_no' {print ($1)}' $list_file)
+    sysname=$(awk 'NR == '$line_no' {print ($2)}' $list_file)
+    system=$(awk 'NR == '$line_no' {$1=$2=$3=""; print ($0)}' $list_file \
+        | sed 's/^[ ]*//' )
+
+    echo system: $si $sysname $system
+
+    echo '\n//'$sysname                       >> $arch_file
+    echo '\n//'$sysname                       >> $duty_file
+    echo '\n//'$sysname' event messages'      >> $evmes_file
+
+    # write name
+    echo '\n//'$sysname                       >> $name_file
+    sed 's/$M/'$M'/g' aux_name_tmpl | sed 's/$mi/'$si'/g' \
+        | sed 's/$comment/'"$system"'/g' >> $name_file
+
+    line_no=$(expr $line_no + 1)
+
+    # find machine1 things
+    mi1=$(awk 'NR == '$line_no' {print ($1)}' $list_file)
+    machname=$(awk 'NR == '$line_no' {print ($2)}' $list_file)
+    machine1=$(awk 'NR == '$line_no' {$1=$2=""; print ($0)}' $list_file \
+        | sed 's/^[ ]*//' )
+
+    echo machine $mi1 $machname $machine1
+
+    # write archive
+    echo '\n//'$machname >> $arch_file
+    sed 's/$M/'$M'/g' aux_arch_tmpl | sed 's/$mi/'$mi1'/g' \
+        | sed 's/$si/'$si'/g' >> $arch_file
+
+    # write duty
+    echo '\n//'$machname >> $duty_file
+    sed 's/$M/'$M'/g' aux_duty_tmpl | sed 's/$mi/'$mi1'/g' \
+        | sed 's/$machname/'$machname'/g' >> $duty_file
+
+    # write name
+    sed 's/$M/'$M'/g' aux_name_tmpl | sed 's/$mi/'$mi1'/g' \
+        | sed 's/$comment/'"$machine1"'/g' >> $name_file
+
+    line_no=$(expr $line_no + 1)
+
+    # if machine2 exists
+    mi2=$(awk 'NR == '$line_no' {print ($1)}' $list_file)
+    if [ $(echo $mi2 | grep '^[A-Z]' | wc -c) != 0 ]
+    then
+        # find machine2 things
+        machname=$(awk 'NR == '$line_no' {print ($2)}' $list_file)
+        machine2=$(awk 'NR == '$line_no' {$1=$2=""; print ($0)}' $list_file \
+            | sed 's/^[ ]*//' )
+
+    else
+        mi2=$(echo $mi1 | sed 's/.$/R/')
+        machname="reserve_machine_2"
+        machine2="Reserve N2"
+    fi
+
+    echo machine $mi2 $machname $machine2
+
+    # write archive
+    echo '\n//'$machname >> $arch_file
+    sed 's/$M/'$M'/g' aux_arch_tmpl | sed 's/$mi/'$mi2'/g' \
+        | sed 's/$si/'$si'/g' >> $arch_file
+
+    # write duty
+    echo '\n//'$machname >> $duty_file
+    sed 's/$M/'$M'/g' aux_duty_tmpl | sed 's/$mi/'$mi2'/g' \
+        | sed 's/$machname/'$machname'/g' >> $duty_file
+
+    # write name
+    sed 's/$M/'$M'/g' aux_name_tmpl | sed 's/$mi/'$mi2'/g' \
+        | sed 's/$comment/'"$machine2"'/g' >> $name_file
+
+    # write event messages
+    sed 's/$M/'$M'/g' aux_evmes_tmpl | sed 's/$si/'$si'/g' \
+        | sed 's/$machine1/'"$machine1"'/g' \
+        | sed 's/$machine2/'"$machine2"'/g' >> $evmes_file
+
+done
+
+echo pipe changed: all other modules should be generated!

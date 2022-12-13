@@ -1,0 +1,928 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=2 h=830 w=1265
+
+OBJ: 15
+  PARL: P0=T_Abs01Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 16
+  PARL: P0=T_Abs01Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 23
+  PARL: P0=T_Abs01Day
+  VALF: IF P0 < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1500
+  PARL: P0=T_Abs01Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 24
+  PARL: P0=T_Abs01Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1501
+  PARL: P0=T_Abs01Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 39
+  PARL: P0=T_Abs01DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 1
+  PARL: P0=T_Cyc01StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 2
+  PARL: P0=T_Cyc01StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 3
+  PARL: P0=T_Cyc01CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 4
+  PARL: P0=T_Cyc01CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 31
+  PARL: P0=T_Cyc01Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 43
+  PARL: P0=T_Cyc02StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 44
+  PARL: P0=T_Cyc02StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 45
+  PARL: P0=T_Cyc02CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 46
+  PARL: P0=T_Cyc02CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 47
+  PARL: P0=T_Cyc02Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 49
+  PARL: P0=T_Cyc03StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 50
+  PARL: P0=T_Cyc03StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 51
+  PARL: P0=T_Cyc03CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 52
+  PARL: P0=T_Cyc03CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 53
+  PARL: P0=T_Cyc03Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 55
+  PARL: P0=T_Cyc04StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 56
+  PARL: P0=T_Cyc04StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 57
+  PARL: P0=T_Cyc04CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 58
+  PARL: P0=T_Cyc04CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 59
+  PARL: P0=T_Cyc04Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 61
+  PARL: P0=T_Cyc05StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 62
+  PARL: P0=T_Cyc05StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 63
+  PARL: P0=T_Cyc05CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 64
+  PARL: P0=T_Cyc05CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 65
+  PARL: P0=T_Cyc05Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 67
+  PARL: P0=T_Cyc06StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 68
+  PARL: P0=T_Cyc06StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 69
+  PARL: P0=T_Cyc06CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 70
+  PARL: P0=T_Cyc06CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 71
+  PARL: P0=T_Cyc06Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 73
+  PARL: P0=T_Cyc07StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 74
+  PARL: P0=T_Cyc07StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 75
+  PARL: P0=T_Cyc07CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 76
+  PARL: P0=T_Cyc07CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 77
+  PARL: P0=T_Cyc07Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 79
+  PARL: P0=T_Cyc08StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 80
+  PARL: P0=T_Cyc08StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 81
+  PARL: P0=T_Cyc08CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 82
+  PARL: P0=T_Cyc08CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 83
+  PARL: P0=T_Cyc08Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 85
+  PARL: P0=T_Cyc09StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 86
+  PARL: P0=T_Cyc09StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 87
+  PARL: P0=T_Cyc09CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 88
+  PARL: P0=T_Cyc09CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 89
+  PARL: P0=T_Cyc09Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 91
+  PARL: P0=T_Cyc10StartHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 92
+  PARL: P0=T_Cyc10StartMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 93
+  PARL: P0=T_Cyc10CycleHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 94
+  PARL: P0=T_Cyc10CycleMinute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 95
+  PARL: P0=T_Cyc10Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 111
+  PARL: P0=T_Abs02Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 112
+  PARL: P0=T_Abs02Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 113
+  PARL: P0=T_Abs02Day
+  VALF: IF P0 < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1502
+  PARL: P0=T_Abs02Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 114
+  PARL: P0=T_Abs02Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1503
+  PARL: P0=T_Abs02Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 115
+  PARL: P0=T_Abs02DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 118
+  PARL: P0=T_Abs03Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 119
+  PARL: P0=T_Abs03Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 120
+  PARL: P0=T_Abs03Day
+  VALF: IF P0 <1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 <1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1504
+  PARL: P0=T_Abs03Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 <1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 121
+  PARL: P0=T_Abs03Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1505
+  PARL: P0=T_Abs03Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 122
+  PARL: P0=T_Abs03DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 125
+  PARL: P0=T_Abs04Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 126
+  PARL: P0=T_Abs04Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 127
+  PARL: P0=T_Abs04Day
+  VALF: IF P0 < 1: 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1506
+  PARL: P0=T_Abs04Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 128
+  PARL: P0=T_Abs04Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1507
+  PARL: P0=T_Abs04Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 129
+  PARL: P0=T_Abs04DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 132
+  PARL: P0=T_Abs05Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 133
+  PARL: P0=T_Abs05Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 134
+  PARL: P0=T_Abs05Day
+  VALF: IF P0 < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1508
+  PARL: P0=T_Abs05Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 135
+  PARL: P0=T_Abs06Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1509
+  PARL: P0=T_Abs06Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 136
+  PARL: P0=T_Abs05DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 139
+  PARL: P0=T_Abs06Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 140
+  PARL: P0=T_Abs06Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 141
+  PARL: P0=T_Abs06Day
+  VALF: IF P0 < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1510
+  PARL: P0=T_Abs06Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 142
+  PARL: P0=T_Abs06Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1511
+  PARL: P0=T_Abs06Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 143
+  PARL: P0=T_Abs06DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 146
+  PARL: P0=T_Abs07Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 147
+  PARL: P0=T_Abs07Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 148
+  PARL: P0=T_Abs07Day
+  VALF: IF P0 < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1512
+  PARL: P0=T_Abs07Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 149
+  PARL: P0=T_Abs07Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1513
+  PARL: P0=T_Abs07Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 150
+  PARL: P0=T_Abs07DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 153
+  PARL: P0=T_Abs08Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 154
+  PARL: P0=T_Abs08Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 155
+  PARL: P0=T_Abs08Day
+  VALF: IF P0  < 1: 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0  < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1514
+  PARL: P0=T_Abs08Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0  < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 156
+  PARL: P0=T_Abs08Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1515
+  PARL: P0=T_Abs08Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 157
+  PARL: P0=T_Abs08DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 160
+  PARL: P0=T_Abs09Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 161
+  PARL: P0=T_Abs09Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 162
+  PARL: P0=T_Abs09Day
+  VALF: IF P0  < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0  < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1516
+  PARL: P0=T_Abs09Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0  < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 163
+  PARL: P0=T_Abs09Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1517
+  PARL: P0=T_Abs09Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 164
+  PARL: P0=T_Abs09DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 167
+  PARL: P0=T_Abs10Hour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 168
+  PARL: P0=T_Abs10Minute
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 169
+  PARL: P0=T_Abs10Day
+  VALF: IF P0  < 1 : 0;ELSE P0;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0  < 1) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1518
+  PARL: P0=T_Abs10Day
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0  < 1) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 170
+  PARL: P0=T_Abs10Month
+  VALF: IF P0 < 0 : 0;ELSE P0+1;
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q1; ELSE Q0;
+OBEND
+
+OBJ: 1519
+  PARL: P0=T_Abs10Month
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P0 < 0) : Q0; ELSE Q1;
+OBEND
+
+OBJ: 171
+  PARL: P0=T_Abs10DayOfWeek
+  TXTD: Q1="Воскресенье   " Q2="Понедельник   " Q3="Вторник       " Q4="Среда         " Q5="Четверг       " Q6="Пятница       " Q7="Суббота       "
+  TXTF: IF P0 == 0 : Q1;IF P0 == 1 : Q2;IF P0 == 2 : Q3;IF P0 == 3 : Q4;IF P0 == 4 : Q5;IF P0 == 5 : Q6;IF P0 == 6 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 173
+  PARL: P0=T_Abs01Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 174
+  PARL: P0=T_Abs02Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 175
+  PARL: P0=T_Abs03Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 176
+  PARL: P0=T_Abs04Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 177
+  PARL: P0=T_Abs05Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 178
+  PARL: P0=T_Abs06Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 179
+  PARL: P0=T_Abs07Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 180
+  PARL: P0=T_Abs08Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 181
+  PARL: P0=T_Abs09Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 182
+  PARL: P0=T_Abs10Control
+  TXTD: Q1=Включен Q2=ОтключенРЬ
+  TXTF: IF P0 : Q1;ELSE Q2;
+  COLD: Q1=5,13,0
+  COLF: IF P0 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 14
+  PARL: P0=T_Abs01Name P1=T_Abs01Control P2=T_Abs01Hour P3=T_Abs01Minute P4=T_Abs01Day P5=T_Abs01Month P6=T_Abs01DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 0
+  PARL: P0=T_Cyc01Name P1=T_Cyc01Control P2=T_Cyc01StartHour P3=T_Cyc01StartMinute P4=T_Cyc01CycleHour P5=T_Cyc01CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 42
+  PARL: P0=T_Cyc02Name P1=T_Cyc02Control P2=T_Cyc02StartHour P3=T_Cyc02StartMinute P4=T_Cyc02CycleHour P5=T_Cyc02CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 48
+  PARL: P0=T_Cyc03Name P1=T_Cyc03Control P2=T_Cyc03StartHour P3=T_Cyc03StartMinute P4=T_Cyc03CycleHour P5=T_Cyc03CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 54
+  PARL: P0=T_Cyc04Name P1=T_Cyc04Control P2=T_Cyc04StartHour P3=T_Cyc04StartMinute P4=T_Cyc04CycleHour P5=T_Cyc04CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 60
+  PARL: P0=T_Cyc05Name P1=T_Cyc05Control P2=T_Cyc05StartHour P3=T_Cyc05StartMinute P4=T_Cyc05CycleHour P5=T_Cyc05CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 66
+  PARL: P0=T_Cyc06Name P1=T_Cyc06Control P2=T_Cyc06StartHour P3=T_Cyc06StartMinute P4=T_Cyc06CycleHour P5=T_Cyc06CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 72
+  PARL: P0=T_Cyc07Name P1=T_Cyc07Control P2=T_Cyc07StartHour P3=T_Cyc07StartMinute P4=T_Cyc07CycleHour P5=T_Cyc07CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 78
+  PARL: P0=T_Cyc08Name P1=T_Cyc08Control P2=T_Cyc08StartHour P3=T_Cyc08StartMinute P4=T_Cyc08CycleHour P5=T_Cyc08CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 84
+  PARL: P0=T_Cyc09Name P1=T_Cyc09Control P2=T_Cyc09StartHour P3=T_Cyc09StartMinute P4=T_Cyc09CycleHour P5=T_Cyc09CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 90
+  PARL: P0=T_Cyc10Name P1=T_Cyc10Control P2=T_Cyc10StartHour P3=T_Cyc10StartMinute P4=T_Cyc10CycleHour P5=T_Cyc10CycleMinute
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=58
+OBEND
+
+OBJ: 110
+  PARL: P0=T_Abs02Name P1=T_Abs02Control P2=T_Abs02Hour P3=T_Abs02Minute P4=T_Abs02Day P5=T_Abs02Month P6=T_Abs02DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 117
+  PARL: P0=T_Abs03Name P1=T_Abs03Control P2=T_Abs03Hour P3=T_Abs03Minute P4=T_Abs03Day P5=T_Abs03Month P6=T_Abs03DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 124
+  PARL: P0=T_Abs04Name P1=T_Abs04Control P2=T_Abs04Hour P3=T_Abs04Minute P4=T_Abs04Day P5=T_Abs04Month P6=T_Abs04DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 131
+  PARL: P0=T_Abs05Name P1=T_Abs05Control P2=T_Abs05Hour P3=T_Abs05Minute P4=T_Abs05Day P5=T_Abs05Month P6=T_Abs05DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 138
+  PARL: P0=T_Abs06Name P1=T_Abs06Control P2=T_Abs06Hour P3=T_Abs06Minute P4=T_Abs06Day P5=T_Abs06Month P6=T_Abs06DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 145
+  PARL: P0=T_Abs07Name P1=T_Abs07Control P2=T_Abs07Hour P3=T_Abs07Minute P4=T_Abs07Day P5=T_Abs07Month P6=T_Abs07DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 152
+  PARL: P0=T_Abs08Name P1=T_Abs08Control P2=T_Abs08Hour P3=T_Abs08Minute P4=T_Abs08Day P5=T_Abs08Month P6=T_Abs08DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 159
+  PARL: P0=T_Abs09Name P1=T_Abs09Control P2=T_Abs09Hour P3=T_Abs09Minute P4=T_Abs09Day P5=T_Abs09Month P6=T_Abs09DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 166
+  PARL: P0=T_Abs10Name P1=T_Abs10Control P2=T_Abs10Hour P3=T_Abs10Minute P4=T_Abs10Day P5=T_Abs10Month P6=T_Abs10DayOfWeek
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  SELD: a=PO p=59
+OBEND
+
+OBJ: 191
+  SELD: a=WO p=25
+OBEND

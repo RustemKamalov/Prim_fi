@@ -1,0 +1,21 @@
+# Example setup file for printers.
+# This file assumes a PostScript printer on /dev/par
+# The following logical printers are defined:
+#   txt:   prints text files in simple courier font, 2 pages per page.
+#	doc:   prints formatted text files in Times-Roman
+#   ps:    sends files to printer as they are submitted,
+#            ie: assumes file is PostScript
+[txt]
+	ta=lpt
+	co=pr -h"$(fname)" $(spfile) | lps -F0 -M2 > $(device)
+
+[doc]
+	ta=lpt
+	co=lps -F4 $(spfile) > $(device)
+
+[ps]
+	ta=lpt
+	co=cat $(spfile) > $(device)
+
+[-lpt]
+	dv=/dev/par

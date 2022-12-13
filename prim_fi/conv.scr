@@ -1,0 +1,28 @@
+s/P2_A5/P2_Ax1/g
+s/P2_A6/P2_Ax2/g
+s/P2_A7/P2_Ax3/g
+s/P2_A8/P2_Ax4/g
+s/P2_A9/P2_Ax5/g
+s/P2_A4/P2_Ax6/g
+s/P2_Ax/P2_A/g
+s/€ 25/€x 21/g
+s/€ 26/€x 22/g
+s/€ 27/€x 23/g
+s/€ 28/€x 24/g
+s/€ 29/€x 25/g
+s/€ 24/€x 26/g
+s/€x/€/g
+s/€25/€x21/g
+s/€26/€x22/g
+s/€27/€x23/g
+s/€28/€x24/g
+s/€29/€x25/g
+s/€24/€x26/g
+s/€x/€/g
+s/€ N25/€ Nx21/g
+s/€ N26/€ Nx22/g
+s/€ N27/€ Nx23/g
+s/€ N28/€ Nx24/g
+s/€ N29/€ Nx25/g
+s/€ N24/€ Nx26/g
+s/€ Nx/€ N/g

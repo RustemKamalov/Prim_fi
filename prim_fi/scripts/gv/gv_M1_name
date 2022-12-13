@@ -1,0 +1,164 @@
+// gatevalve name table
+
+M1_GI21_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.1
+M1_GI21_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.2
+M1_GI21_3_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.3
+M1_GI21_4_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.4
+M1_GI21_5_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.5
+M1_GI21_6_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.6
+M1_GI21_51Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.51
+M1_GI21_52Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.52
+M1_GI21_53Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.53
+M1_GI21_54Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 21.54
+M1_GI29_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 29.1
+M1_GI29_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 29.2
+M1_GI2_1__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.1
+M1_GI2_2__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.2
+M1_GI2_3__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.3
+M1_GI2_4__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.4
+M1_GI2_5__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.5
+M1_GI2_6__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.6
+M1_GI2_7__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.7
+M1_GI2_8__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.8
+M1_GI2_9__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.9
+M1_GI2_10_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.10
+M1_GI2_11_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.11
+M1_GI2_12_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.12
+M1_GI2_13_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.13
+M1_GI2_14_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.14
+M1_GI2_15_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.15
+M1_GI2_16_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.16
+M1_GI2_17_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.17
+M1_GI2_18_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.18
+M1_GI2_19_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.19 
+M1_GI2_20_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.20 
+M1_GI2_21_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.21 
+M1_GI2_22_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2.22 
+M1_GI23_47Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.47
+M1_GI23_48Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.48
+M1_GI23_4_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.4 
+M1_GI23_6_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.6 
+M1_GI23_7_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.7 
+M1_GI23_8_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.8 
+M1_GI23_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.1 
+M1_GI23_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.2 
+M1_GI23_3_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.3 
+M1_GI20_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.1 
+M1_GI20_2_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.2 
+M1_GI23_9_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.9 
+M1_GI23_10Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.10 
+M1_GI23_11Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.11 
+M1_GI20_10Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.10 
+M1_GI20_11Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.11 
+M1_GI23_12Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.12 
+M1_GI23_13Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.13 
+M1_GI23_14Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.14 
+M1_GI20_19Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.19 
+M1_GI20_20Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.20 
+M1_GI23_15Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.15 
+M1_GI23_16Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.16 
+M1_GI23_17Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.17 
+M1_GI20_28Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.28 
+M1_GI20_29Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.29 
+M1_GI23_18Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.18 
+M1_GI23_19Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.19 
+M1_GI23_20Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.20 
+M1_GI20_37Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.37 
+M1_GI20_38Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.38 
+M1_GI23_21Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.21 
+M1_GI23_22Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.22 
+M1_GI23_23Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.23 
+M1_GI20_46Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.46 
+M1_GI20_47Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.47 
+M1_GI23_24Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.24 
+M1_GI23_25Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.25 
+M1_GI23_26Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.26 
+M1_GI20_55Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.55 
+M1_GI20_56Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.56 
+M1_GI23_27Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.27 
+M1_GI23_28Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.28 
+M1_GI23_29Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.29 
+M1_GI20_64Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.64 
+M1_GI20_65Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.65 
+M1_GI23_30Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.30 
+M1_GI23_31Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.31 
+M1_GI23_32Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.32 
+M1_GI20_73Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.73 
+M1_GI20_74Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.74 
+M1_GI23_33Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.33 
+M1_GI23_34Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.34 
+M1_GI23_35Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.35 
+M1_GI20_82Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.82 
+M1_GI20_83Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 20.83 
+M1_GI23_36Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.36 
+M1_GI23_37Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.37 
+M1_GI23_38Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.38 
+M1_GI22_91Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 22.91 
+M1_GI22_92Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 22.92 
+M1_GI23_39Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.39 
+M1_GI23_40Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.40 
+M1_GI23_41Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.41 
+M1_GI23_42Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.42 
+M1_GI23_43Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.43 
+M1_GI23_44Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.44 
+M1_GI23_45Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.45 
+M1_GI23_46Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 23.46 
+M1_GI22_1_Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 22.1  
+M1_GIR1I02Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I03Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I04Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I05Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I06Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I07Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I08Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I09Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I10Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I11Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I12Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I13Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I14Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I15Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I16Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I17Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I18Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I19Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I20Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I21Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I22Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I23Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I24Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GIR1I25Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GV40A__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Рег.клапан 40A
+M1_GV40B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Рег.клапан 40B
+M1_GV58___Name          ,  Y,  0, M1_Name             , N, 0, 0, "Рег.клапан 58
+M1_GV57___Name          ,  Y,  0, M1_Name             , N, 0, 0, "Рег.клапан 57
+M1_GV1_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 1-Б 
+M1_GV1_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 1-С 
+M1_GV2_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2-Б 
+M1_GV2_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 2-С 
+M1_GV3_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 3-Б 
+M1_GV3_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 3-С 
+M1_GV4_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 4-Б 
+M1_GV4_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 4-С 
+M1_GV8_B__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 8-Б 
+M1_GV9_C__Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 9-С 
+M1_GV121_3Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 121.3
+M1_GV121_4Name          ,  Y,  0, M1_Name             , N, 0, 0, "Задвижка 121.4
+M1_GVR1S01Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S02Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S03Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S04Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S05Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S06Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S07Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S08Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S09Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S10Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S11Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S12Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S13Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S14Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S15Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+M1_GVR1S16Name          ,  Y,  0, M1_Name             , N, 0, 0, " 
+// gatevalve name table end
+

@@ -1,0 +1,64 @@
+
+WOPT: p=A r=181 c=181 o=k-r;kmsa t=1 e=1 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 40
+  PARL: P0=PARAM2
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 45
+  PARL: P0=PARAM6
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 49
+  PARL: P0=PARAM7
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 53
+  PARL: P0=PARAM3
+  VALF: ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 54
+  PARL: P0=PARAM1
+  TXTD: Q1=Включен
+  TXTF: ELSE Q1;
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF P0 : Q0;ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 0.000000;
+OBEND
+
+OBJ: 61
+  PARL: P0=PARAM1
+  TXTD: Q1=Отключен
+  TXTF: ELSE Q1;
+  OPTD: Q1=-d+e+m-s-H-R+X
+  OPTF: IF P0 : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 62
+  PARL: P0=PARAM4
+  VALF: IF P0 < 1 : 1/0;ELSE P0;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 65
+  PARL: P0=PARAM5
+  VALF: IF P0 < 0: 1/0;ELSE P0+1;
+  SELD: a=ED p=P0  f=1
+OBEND
+
+OBJ: 66
+  PARL: P0=PARAM0
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND

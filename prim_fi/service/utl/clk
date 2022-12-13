@@ -1,0 +1,6 @@
+if sin | grep -q date
+then 
+    slay date
+else 
+    clock -b blue -f yellow &
+fi

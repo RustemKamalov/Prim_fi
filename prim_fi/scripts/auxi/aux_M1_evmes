@@ -1,0 +1,1431 @@
+//M1_auxilary systems event messages
+
+//Plunger_pump_of_Stat._system_N1 event messages
+M1_PlSEvMs000          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ АВТ ИЗ МДП1
+M1_PlSEvMs001          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_PlSEvMs002          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ КНОП ИЗ МДП1
+M1_PlSEvMs003          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_PlSEvMs004          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_PlSEvMs005          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_PlSEvMs006          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_PlSEvMs007          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_PlSEvMs008          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_PlSEvMs009          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_PlSEvMs010          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ АВТ ИЗ МДП2
+M1_PlSEvMs011          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_PlSEvMs012          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ КНОП ИЗ МДП2
+M1_PlSEvMs013          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_PlSEvMs014          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_PlSEvMs015          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_PlSEvMs016          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_PlSEvMs017          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_PlSEvMs018          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_PlSEvMs019          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_PlSEvMs020          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_PlSEvMs021          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_PlSEvMs022          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs023          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs024          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs025          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs026          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_PlSEvMs027          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_PlSEvMs028          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_PlSEvMs029          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_PlSEvMs030          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_PlSEvMs031          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_PlSEvMs032          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_PlSEvMs033          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_PlSEvMs034          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_PlSEvMs035          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_PlSEvMs036          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_PlSEvMs037          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_PlSEvMs038          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_PlSEvMs039          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_PlSEvMs040          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_PlSEvMs041          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_PlSEvMs042          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АВТ ПУСТИТЬ
+M1_PlSEvMs043          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСТИТЬ
+M1_PlSEvMs044          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСТИТЬ ИЗ МДП1
+M1_PlSEvMs045          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ ИЗ МДП1
+M1_PlSEvMs046          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСТИТЬ ИЗ МДП2
+M1_PlSEvMs047          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ ИЗ МДП2
+M1_PlSEvMs048          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ВКЛЮЧИЛСЯ
+M1_PlSEvMs049          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧИЛСЯ
+M1_PlSEvMs050          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_PlSEvMs051          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_PlSEvMs052          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС МП НЕ ВКЛЮЧИЛСЯ
+M1_PlSEvMs053          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 МП НЕ ВКЛЮЧИЛСЯ
+M1_PlSEvMs054          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_PlSEvMs055          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_PlSEvMs056          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Погружной насос ННС ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_PlSEvMs057          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_PlSEvMs058          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Погружной насос ННС ВКЛ.НЕУСТ ПРИЧИНА
+M1_PlSEvMs059          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve N2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_PlSEvMs060          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОТКЛЮЧЕН
+M1_PlSEvMs061          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН
+M1_PlSEvMs062          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_PlSEvMs063          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_PlSEvMs064          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕИСПР.(НЕТ ДАВЛ)
+M1_PlSEvMs065          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.(НЕТ ДАВЛ)
+M1_PlSEvMs066          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_PlSEvMs067          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_PlSEvMs068          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs069          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs070          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs071          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs072          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs073          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_PlSEvMs074          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АВТ ОСТАНОВИТЬ
+M1_PlSEvMs075          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВИТЬ
+M1_PlSEvMs076          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАНОВИТЬ ИЗ МДП1
+M1_PlSEvMs077          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ ИЗ МДП1
+M1_PlSEvMs078          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАНОВИТЬ ИЗ МДП2
+M1_PlSEvMs079          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ ИЗ МДП2
+M1_PlSEvMs080          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОТКЛЮЧИЛСЯ
+M1_PlSEvMs081          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧИЛСЯ
+M1_PlSEvMs082          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_PlSEvMs083          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_PlSEvMs084          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕ ОТКЛЮЧИЛСЯ
+M1_PlSEvMs085          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕ ОТКЛЮЧИЛСЯ
+M1_PlSEvMs086          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_PlSEvMs087          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_PlSEvMs088          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_PlSEvMs089          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_PlSEvMs090          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_PlSEvMs091          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_PlSEvMs092          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "
+M1_PlSEvMs093          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "
+M1_PlSEvMs094          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "
+M1_PlSEvMs095          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "
+M1_PlSEvMs096          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_PlSEvMs097          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_PlSEvMs098          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСТИТЬ С ПАНЕЛЬ 1
+M1_PlSEvMs099          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_PlSEvMs100          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_PlSEvMs101          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_PlSEvMs102          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ПУСТИТЬ С ПАНЕЛЬ 2
+M1_PlSEvMs103          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_PlSEvMs104          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_PlSEvMs105          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_PlSEvMs106          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Погружной насос ННС ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_PlSEvMs107          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_PlSEvMs108          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Погружной насос ННС. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_PlSEvMs109          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_PlSEvMs110          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Погружной насос ННС. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_PlSEvMs111          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_PlSEvMs112          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_PlSEvMs113          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_PlSEvMs114          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_PlSEvMs115          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_PlSEvMs116          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ОТКЛЮЧЕН ПО МЕСТУ
+M1_PlSEvMs117          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_PlSEvMs118          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС АПВ
+M1_PlSEvMs119          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 АПВ
+M1_PlSEvMs120          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_PlSEvMs121          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_PlSEvMs122          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_PlSEvMs123          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_PlSEvMs124          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ВКЛЮЧЕН.ПО МЕСТУ
+M1_PlSEvMs125          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_PlSEvMs126          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Погружной насос ННС ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_PlSEvMs127          ,  B,  0, M1_PlS_EventMessage  , N, 0, 0, "Reserve N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Canal.pumps_of_Station_system event messages
+M1_CaSEvMs000          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_CaSEvMs001          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_CaSEvMs002          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_CaSEvMs003          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_CaSEvMs004          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_CaSEvMs005          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_CaSEvMs006          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_CaSEvMs007          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_CaSEvMs008          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_CaSEvMs009          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_CaSEvMs010          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_CaSEvMs011          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_CaSEvMs012          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_CaSEvMs013          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_CaSEvMs014          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_CaSEvMs015          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_CaSEvMs016          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_CaSEvMs017          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_CaSEvMs018          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_CaSEvMs019          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_CaSEvMs020          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_CaSEvMs021          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_CaSEvMs022          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs023          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs024          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs025          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs026          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CaSEvMs027          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CaSEvMs028          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CaSEvMs029          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CaSEvMs030          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CaSEvMs031          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CaSEvMs032          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CaSEvMs033          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CaSEvMs034          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CaSEvMs035          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CaSEvMs036          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CaSEvMs037          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CaSEvMs038          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_CaSEvMs039          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_CaSEvMs040          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_CaSEvMs041          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_CaSEvMs042          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АВТ ПУСТИТЬ
+M1_CaSEvMs043          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АВТ ПУСТИТЬ
+M1_CaSEvMs044          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСТИТЬ ИЗ МДП1
+M1_CaSEvMs045          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСТИТЬ ИЗ МДП1
+M1_CaSEvMs046          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСТИТЬ ИЗ МДП2
+M1_CaSEvMs047          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСТИТЬ ИЗ МДП2
+M1_CaSEvMs048          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ВКЛЮЧИЛСЯ
+M1_CaSEvMs049          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ВКЛЮЧИЛСЯ
+M1_CaSEvMs050          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_CaSEvMs051          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_CaSEvMs052          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 МП НЕ ВКЛЮЧИЛСЯ
+M1_CaSEvMs053          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 МП НЕ ВКЛЮЧИЛСЯ
+M1_CaSEvMs054          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_CaSEvMs055          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_CaSEvMs056          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N1 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CaSEvMs057          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CaSEvMs058          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос бытовых стоков N1 ВКЛ.НЕУСТ ПРИЧИНА
+M1_CaSEvMs059          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос бытовых стоков N2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_CaSEvMs060          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОТКЛЮЧЕН
+M1_CaSEvMs061          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОТКЛЮЧЕН
+M1_CaSEvMs062          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_CaSEvMs063          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_CaSEvMs064          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕИСПР.(НЕТ ДАВЛ)
+M1_CaSEvMs065          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕИСПР.(НЕТ ДАВЛ)
+M1_CaSEvMs066          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CaSEvMs067          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CaSEvMs068          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs069          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs070          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs071          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs072          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs073          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CaSEvMs074          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АВТ ОСТАНОВИТЬ
+M1_CaSEvMs075          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АВТ ОСТАНОВИТЬ
+M1_CaSEvMs076          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАНОВИТЬ ИЗ МДП1
+M1_CaSEvMs077          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАНОВИТЬ ИЗ МДП1
+M1_CaSEvMs078          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАНОВИТЬ ИЗ МДП2
+M1_CaSEvMs079          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАНОВИТЬ ИЗ МДП2
+M1_CaSEvMs080          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОТКЛЮЧИЛСЯ
+M1_CaSEvMs081          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОТКЛЮЧИЛСЯ
+M1_CaSEvMs082          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_CaSEvMs083          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_CaSEvMs084          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕ ОТКЛЮЧИЛСЯ
+M1_CaSEvMs085          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕ ОТКЛЮЧИЛСЯ
+M1_CaSEvMs086          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CaSEvMs087          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CaSEvMs088          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CaSEvMs089          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CaSEvMs090          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_CaSEvMs091          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_CaSEvMs092          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "
+M1_CaSEvMs093          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "
+M1_CaSEvMs094          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "
+M1_CaSEvMs095          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "
+M1_CaSEvMs096          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_CaSEvMs097          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_CaSEvMs098          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_CaSEvMs099          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_CaSEvMs100          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_CaSEvMs101          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_CaSEvMs102          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_CaSEvMs103          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_CaSEvMs104          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_CaSEvMs105          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_CaSEvMs106          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N1 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_CaSEvMs107          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_CaSEvMs108          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N1. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_CaSEvMs109          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_CaSEvMs110          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N1. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_CaSEvMs111          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос бытовых стоков N2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_CaSEvMs112          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_CaSEvMs113          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_CaSEvMs114          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_CaSEvMs115          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_CaSEvMs116          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ОТКЛЮЧЕН ПО МЕСТУ
+M1_CaSEvMs117          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_CaSEvMs118          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 АПВ
+M1_CaSEvMs119          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 АПВ
+M1_CaSEvMs120          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_CaSEvMs121          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_CaSEvMs122          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CaSEvMs123          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CaSEvMs124          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ВКЛЮЧЕН.ПО МЕСТУ
+M1_CaSEvMs125          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_CaSEvMs126          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_CaSEvMs127          ,  B,  0, M1_CaS_EventMessage  , N, 0, 0, "Насос бытовых стоков N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Canal.pumps_of_Tankfarm_system event messages
+M1_CS1EvMs000          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_CS1EvMs001          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_CS1EvMs002          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_CS1EvMs003          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_CS1EvMs004          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_CS1EvMs005          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_CS1EvMs006          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_CS1EvMs007          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_CS1EvMs008          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_CS1EvMs009          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_CS1EvMs010          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_CS1EvMs011          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_CS1EvMs012          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_CS1EvMs013          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_CS1EvMs014          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_CS1EvMs015          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_CS1EvMs016          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_CS1EvMs017          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_CS1EvMs018          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_CS1EvMs019          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_CS1EvMs020          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_CS1EvMs021          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_CS1EvMs022          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs023          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs024          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs025          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs026          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CS1EvMs027          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CS1EvMs028          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CS1EvMs029          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CS1EvMs030          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CS1EvMs031          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_CS1EvMs032          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CS1EvMs033          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CS1EvMs034          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CS1EvMs035          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_CS1EvMs036          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CS1EvMs037          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CS1EvMs038          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_CS1EvMs039          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_CS1EvMs040          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_CS1EvMs041          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_CS1EvMs042          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АВТ ПУСТИТЬ
+M1_CS1EvMs043          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АВТ ПУСТИТЬ
+M1_CS1EvMs044          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСТИТЬ ИЗ МДП1
+M1_CS1EvMs045          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСТИТЬ ИЗ МДП1
+M1_CS1EvMs046          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСТИТЬ ИЗ МДП2
+M1_CS1EvMs047          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСТИТЬ ИЗ МДП2
+M1_CS1EvMs048          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ВКЛЮЧИЛСЯ
+M1_CS1EvMs049          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ВКЛЮЧИЛСЯ
+M1_CS1EvMs050          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_CS1EvMs051          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_CS1EvMs052          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 МП НЕ ВКЛЮЧИЛСЯ
+M1_CS1EvMs053          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 МП НЕ ВКЛЮЧИЛСЯ
+M1_CS1EvMs054          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_CS1EvMs055          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_CS1EvMs056          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N1 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CS1EvMs057          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CS1EvMs058          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР КНС1.насос N1 ВКЛ.НЕУСТ ПРИЧИНА
+M1_CS1EvMs059          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР КНС1.насос N2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_CS1EvMs060          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОТКЛЮЧЕН
+M1_CS1EvMs061          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОТКЛЮЧЕН
+M1_CS1EvMs062          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_CS1EvMs063          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_CS1EvMs064          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕИСПР.(НЕТ ДАВЛ)
+M1_CS1EvMs065          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕИСПР.(НЕТ ДАВЛ)
+M1_CS1EvMs066          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CS1EvMs067          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_CS1EvMs068          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs069          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs070          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs071          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs072          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs073          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_CS1EvMs074          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АВТ ОСТАНОВИТЬ
+M1_CS1EvMs075          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АВТ ОСТАНОВИТЬ
+M1_CS1EvMs076          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАНОВИТЬ ИЗ МДП1
+M1_CS1EvMs077          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАНОВИТЬ ИЗ МДП1
+M1_CS1EvMs078          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАНОВИТЬ ИЗ МДП2
+M1_CS1EvMs079          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАНОВИТЬ ИЗ МДП2
+M1_CS1EvMs080          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОТКЛЮЧИЛСЯ
+M1_CS1EvMs081          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОТКЛЮЧИЛСЯ
+M1_CS1EvMs082          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_CS1EvMs083          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_CS1EvMs084          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕ ОТКЛЮЧИЛСЯ
+M1_CS1EvMs085          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕ ОТКЛЮЧИЛСЯ
+M1_CS1EvMs086          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CS1EvMs087          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CS1EvMs088          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CS1EvMs089          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_CS1EvMs090          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_CS1EvMs091          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_CS1EvMs092          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "
+M1_CS1EvMs093          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "
+M1_CS1EvMs094          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "
+M1_CS1EvMs095          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "
+M1_CS1EvMs096          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_CS1EvMs097          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_CS1EvMs098          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_CS1EvMs099          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_CS1EvMs100          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_CS1EvMs101          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_CS1EvMs102          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_CS1EvMs103          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_CS1EvMs104          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_CS1EvMs105          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_CS1EvMs106          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N1 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_CS1EvMs107          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_CS1EvMs108          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N1. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_CS1EvMs109          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_CS1EvMs110          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N1. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_CS1EvMs111          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! КНС1.насос N2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_CS1EvMs112          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_CS1EvMs113          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_CS1EvMs114          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_CS1EvMs115          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_CS1EvMs116          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ОТКЛЮЧЕН ПО МЕСТУ
+M1_CS1EvMs117          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_CS1EvMs118          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 АПВ
+M1_CS1EvMs119          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 АПВ
+M1_CS1EvMs120          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_CS1EvMs121          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_CS1EvMs122          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CS1EvMs123          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_CS1EvMs124          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ВКЛЮЧЕН.ПО МЕСТУ
+M1_CS1EvMs125          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_CS1EvMs126          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_CS1EvMs127          ,  B,  0, M1_CS1_EventMessage  , N, 0, 0, "КНС1.насос N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Fire_ext_pump_system event messages
+M1_FS1EvMs000          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_FS1EvMs001          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_FS1EvMs002          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_FS1EvMs003          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_FS1EvMs004          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_FS1EvMs005          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_FS1EvMs006          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_FS1EvMs007          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_FS1EvMs008          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_FS1EvMs009          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_FS1EvMs010          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_FS1EvMs011          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_FS1EvMs012          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_FS1EvMs013          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_FS1EvMs014          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_FS1EvMs015          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_FS1EvMs016          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_FS1EvMs017          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_FS1EvMs018          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_FS1EvMs019          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_FS1EvMs020          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_FS1EvMs021          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_FS1EvMs022          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs023          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs024          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs025          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs026          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS1EvMs027          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS1EvMs028          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS1EvMs029          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS1EvMs030          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS1EvMs031          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS1EvMs032          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS1EvMs033          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS1EvMs034          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS1EvMs035          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS1EvMs036          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS1EvMs037          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS1EvMs038          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_FS1EvMs039          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_FS1EvMs040          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_FS1EvMs041          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_FS1EvMs042          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АВТ ПУСТИТЬ
+M1_FS1EvMs043          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АВТ ПУСТИТЬ
+M1_FS1EvMs044          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСТИТЬ ИЗ МДП1
+M1_FS1EvMs045          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСТИТЬ ИЗ МДП1
+M1_FS1EvMs046          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСТИТЬ ИЗ МДП2
+M1_FS1EvMs047          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСТИТЬ ИЗ МДП2
+M1_FS1EvMs048          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ВКЛЮЧИЛСЯ
+M1_FS1EvMs049          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ВКЛЮЧИЛСЯ
+M1_FS1EvMs050          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_FS1EvMs051          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_FS1EvMs052          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 МП НЕ ВКЛЮЧИЛСЯ
+M1_FS1EvMs053          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 МП НЕ ВКЛЮЧИЛСЯ
+M1_FS1EvMs054          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_FS1EvMs055          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_FS1EvMs056          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N1 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS1EvMs057          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS1EvMs058          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос пожаротушения N1 ВКЛ.НЕУСТ ПРИЧИНА
+M1_FS1EvMs059          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос пожаротушения N2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_FS1EvMs060          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОТКЛЮЧЕН
+M1_FS1EvMs061          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОТКЛЮЧЕН
+M1_FS1EvMs062          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_FS1EvMs063          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_FS1EvMs064          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕИСПР.(НЕТ ДАВЛ)
+M1_FS1EvMs065          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕИСПР.(НЕТ ДАВЛ)
+M1_FS1EvMs066          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS1EvMs067          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS1EvMs068          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs069          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs070          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs071          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs072          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs073          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS1EvMs074          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АВТ ОСТАНОВИТЬ
+M1_FS1EvMs075          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АВТ ОСТАНОВИТЬ
+M1_FS1EvMs076          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАНОВИТЬ ИЗ МДП1
+M1_FS1EvMs077          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАНОВИТЬ ИЗ МДП1
+M1_FS1EvMs078          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАНОВИТЬ ИЗ МДП2
+M1_FS1EvMs079          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАНОВИТЬ ИЗ МДП2
+M1_FS1EvMs080          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОТКЛЮЧИЛСЯ
+M1_FS1EvMs081          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОТКЛЮЧИЛСЯ
+M1_FS1EvMs082          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_FS1EvMs083          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_FS1EvMs084          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕ ОТКЛЮЧИЛСЯ
+M1_FS1EvMs085          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕ ОТКЛЮЧИЛСЯ
+M1_FS1EvMs086          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS1EvMs087          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS1EvMs088          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS1EvMs089          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS1EvMs090          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_FS1EvMs091          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_FS1EvMs092          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "
+M1_FS1EvMs093          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "
+M1_FS1EvMs094          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "
+M1_FS1EvMs095          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "
+M1_FS1EvMs096          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_FS1EvMs097          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_FS1EvMs098          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_FS1EvMs099          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_FS1EvMs100          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_FS1EvMs101          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_FS1EvMs102          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_FS1EvMs103          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_FS1EvMs104          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_FS1EvMs105          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_FS1EvMs106          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N1 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_FS1EvMs107          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_FS1EvMs108          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N1. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_FS1EvMs109          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_FS1EvMs110          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N1. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_FS1EvMs111          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_FS1EvMs112          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_FS1EvMs113          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_FS1EvMs114          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_FS1EvMs115          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_FS1EvMs116          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ОТКЛЮЧЕН ПО МЕСТУ
+M1_FS1EvMs117          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_FS1EvMs118          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 АПВ
+M1_FS1EvMs119          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 АПВ
+M1_FS1EvMs120          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_FS1EvMs121          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_FS1EvMs122          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS1EvMs123          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS1EvMs124          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ВКЛЮЧЕН.ПО МЕСТУ
+M1_FS1EvMs125          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_FS1EvMs126          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_FS1EvMs127          ,  B,  0, M1_FS1_EventMessage  , N, 0, 0, "Насос пожаротушения N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Fire_ext_pump_system event messages
+M1_FS2EvMs000          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_FS2EvMs001          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_FS2EvMs002          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_FS2EvMs003          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_FS2EvMs004          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_FS2EvMs005          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_FS2EvMs006          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_FS2EvMs007          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_FS2EvMs008          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_FS2EvMs009          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_FS2EvMs010          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_FS2EvMs011          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_FS2EvMs012          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_FS2EvMs013          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_FS2EvMs014          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_FS2EvMs015          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_FS2EvMs016          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_FS2EvMs017          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_FS2EvMs018          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_FS2EvMs019          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_FS2EvMs020          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_FS2EvMs021          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_FS2EvMs022          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs023          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs024          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs025          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs026          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS2EvMs027          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS2EvMs028          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS2EvMs029          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS2EvMs030          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS2EvMs031          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS2EvMs032          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS2EvMs033          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS2EvMs034          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS2EvMs035          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS2EvMs036          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS2EvMs037          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS2EvMs038          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_FS2EvMs039          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_FS2EvMs040          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_FS2EvMs041          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_FS2EvMs042          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АВТ ПУСТИТЬ
+M1_FS2EvMs043          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АВТ ПУСТИТЬ
+M1_FS2EvMs044          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСТИТЬ ИЗ МДП1
+M1_FS2EvMs045          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСТИТЬ ИЗ МДП1
+M1_FS2EvMs046          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСТИТЬ ИЗ МДП2
+M1_FS2EvMs047          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСТИТЬ ИЗ МДП2
+M1_FS2EvMs048          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ВКЛЮЧИЛСЯ
+M1_FS2EvMs049          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ВКЛЮЧИЛСЯ
+M1_FS2EvMs050          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_FS2EvMs051          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_FS2EvMs052          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 МП НЕ ВКЛЮЧИЛСЯ
+M1_FS2EvMs053          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 МП НЕ ВКЛЮЧИЛСЯ
+M1_FS2EvMs054          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_FS2EvMs055          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_FS2EvMs056          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N3 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS2EvMs057          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N4 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS2EvMs058          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос пожаротушения N3 ВКЛ.НЕУСТ ПРИЧИНА
+M1_FS2EvMs059          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос пожаротушения N4 ВКЛ.НЕУСТ ПРИЧИНА
+M1_FS2EvMs060          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОТКЛЮЧЕН
+M1_FS2EvMs061          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОТКЛЮЧЕН
+M1_FS2EvMs062          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_FS2EvMs063          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_FS2EvMs064          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕИСПР.(НЕТ ДАВЛ)
+M1_FS2EvMs065          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕИСПР.(НЕТ ДАВЛ)
+M1_FS2EvMs066          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS2EvMs067          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS2EvMs068          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs069          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs070          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs071          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs072          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs073          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS2EvMs074          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АВТ ОСТАНОВИТЬ
+M1_FS2EvMs075          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АВТ ОСТАНОВИТЬ
+M1_FS2EvMs076          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАНОВИТЬ ИЗ МДП1
+M1_FS2EvMs077          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАНОВИТЬ ИЗ МДП1
+M1_FS2EvMs078          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАНОВИТЬ ИЗ МДП2
+M1_FS2EvMs079          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАНОВИТЬ ИЗ МДП2
+M1_FS2EvMs080          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОТКЛЮЧИЛСЯ
+M1_FS2EvMs081          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОТКЛЮЧИЛСЯ
+M1_FS2EvMs082          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_FS2EvMs083          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_FS2EvMs084          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕ ОТКЛЮЧИЛСЯ
+M1_FS2EvMs085          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕ ОТКЛЮЧИЛСЯ
+M1_FS2EvMs086          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS2EvMs087          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS2EvMs088          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS2EvMs089          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS2EvMs090          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_FS2EvMs091          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_FS2EvMs092          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "
+M1_FS2EvMs093          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "
+M1_FS2EvMs094          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "
+M1_FS2EvMs095          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "
+M1_FS2EvMs096          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_FS2EvMs097          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_FS2EvMs098          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_FS2EvMs099          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_FS2EvMs100          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_FS2EvMs101          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_FS2EvMs102          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_FS2EvMs103          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_FS2EvMs104          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_FS2EvMs105          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_FS2EvMs106          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N3 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_FS2EvMs107          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N4 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_FS2EvMs108          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N3. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_FS2EvMs109          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N4. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_FS2EvMs110          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N3. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_FS2EvMs111          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N4. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_FS2EvMs112          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_FS2EvMs113          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_FS2EvMs114          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_FS2EvMs115          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_FS2EvMs116          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ОТКЛЮЧЕН ПО МЕСТУ
+M1_FS2EvMs117          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ОТКЛЮЧЕН ПО МЕСТУ
+M1_FS2EvMs118          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 АПВ
+M1_FS2EvMs119          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 АПВ
+M1_FS2EvMs120          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_FS2EvMs121          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_FS2EvMs122          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS2EvMs123          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS2EvMs124          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ВКЛЮЧЕН.ПО МЕСТУ
+M1_FS2EvMs125          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ВКЛЮЧЕН.ПО МЕСТУ
+M1_FS2EvMs126          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N3 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_FS2EvMs127          ,  B,  0, M1_FS2_EventMessage  , N, 0, 0, "Насос пожаротушения N4 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Fire_ext_pump_system event messages
+M1_FS3EvMs000          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_FS3EvMs001          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_FS3EvMs002          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_FS3EvMs003          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_FS3EvMs004          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_FS3EvMs005          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_FS3EvMs006          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_FS3EvMs007          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_FS3EvMs008          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_FS3EvMs009          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_FS3EvMs010          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_FS3EvMs011          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_FS3EvMs012          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_FS3EvMs013          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_FS3EvMs014          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_FS3EvMs015          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_FS3EvMs016          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_FS3EvMs017          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_FS3EvMs018          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_FS3EvMs019          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_FS3EvMs020          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_FS3EvMs021          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_FS3EvMs022          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs023          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs024          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs025          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs026          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS3EvMs027          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS3EvMs028          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS3EvMs029          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS3EvMs030          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS3EvMs031          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_FS3EvMs032          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS3EvMs033          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS3EvMs034          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS3EvMs035          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_FS3EvMs036          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS3EvMs037          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS3EvMs038          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_FS3EvMs039          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_FS3EvMs040          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_FS3EvMs041          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_FS3EvMs042          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АВТ ПУСТИТЬ
+M1_FS3EvMs043          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСТИТЬ
+M1_FS3EvMs044          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСТИТЬ ИЗ МДП1
+M1_FS3EvMs045          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ ИЗ МДП1
+M1_FS3EvMs046          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСТИТЬ ИЗ МДП2
+M1_FS3EvMs047          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ ИЗ МДП2
+M1_FS3EvMs048          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ВКЛЮЧИЛСЯ
+M1_FS3EvMs049          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧИЛСЯ
+M1_FS3EvMs050          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_FS3EvMs051          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_FS3EvMs052          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 МП НЕ ВКЛЮЧИЛСЯ
+M1_FS3EvMs053          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 МП НЕ ВКЛЮЧИЛСЯ
+M1_FS3EvMs054          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_FS3EvMs055          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_FS3EvMs056          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N5 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS3EvMs057          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS3EvMs058          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Насос пожаротушения N5 ВКЛ.НЕУСТ ПРИЧИНА
+M1_FS3EvMs059          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve N2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_FS3EvMs060          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОТКЛЮЧЕН
+M1_FS3EvMs061          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН
+M1_FS3EvMs062          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_FS3EvMs063          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_FS3EvMs064          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕИСПР.(НЕТ ДАВЛ)
+M1_FS3EvMs065          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.(НЕТ ДАВЛ)
+M1_FS3EvMs066          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS3EvMs067          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_FS3EvMs068          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs069          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs070          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs071          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs072          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs073          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_FS3EvMs074          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АВТ ОСТАНОВИТЬ
+M1_FS3EvMs075          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВИТЬ
+M1_FS3EvMs076          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАНОВИТЬ ИЗ МДП1
+M1_FS3EvMs077          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ ИЗ МДП1
+M1_FS3EvMs078          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАНОВИТЬ ИЗ МДП2
+M1_FS3EvMs079          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ ИЗ МДП2
+M1_FS3EvMs080          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОТКЛЮЧИЛСЯ
+M1_FS3EvMs081          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧИЛСЯ
+M1_FS3EvMs082          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_FS3EvMs083          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_FS3EvMs084          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕ ОТКЛЮЧИЛСЯ
+M1_FS3EvMs085          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕ ОТКЛЮЧИЛСЯ
+M1_FS3EvMs086          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS3EvMs087          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS3EvMs088          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS3EvMs089          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_FS3EvMs090          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_FS3EvMs091          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_FS3EvMs092          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "
+M1_FS3EvMs093          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "
+M1_FS3EvMs094          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "
+M1_FS3EvMs095          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "
+M1_FS3EvMs096          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_FS3EvMs097          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_FS3EvMs098          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_FS3EvMs099          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_FS3EvMs100          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_FS3EvMs101          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_FS3EvMs102          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_FS3EvMs103          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_FS3EvMs104          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_FS3EvMs105          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_FS3EvMs106          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N5 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_FS3EvMs107          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_FS3EvMs108          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N5. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_FS3EvMs109          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_FS3EvMs110          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Насос пожаротушения N5. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_FS3EvMs111          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_FS3EvMs112          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_FS3EvMs113          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_FS3EvMs114          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_FS3EvMs115          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_FS3EvMs116          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ОТКЛЮЧЕН ПО МЕСТУ
+M1_FS3EvMs117          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_FS3EvMs118          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 АПВ
+M1_FS3EvMs119          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 АПВ
+M1_FS3EvMs120          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_FS3EvMs121          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_FS3EvMs122          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS3EvMs123          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_FS3EvMs124          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ВКЛЮЧЕН.ПО МЕСТУ
+M1_FS3EvMs125          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_FS3EvMs126          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Насос пожаротушения N5 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_FS3EvMs127          ,  B,  0, M1_FS3_EventMessage  , N, 0, 0, "Reserve N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Reserve_system_1 event messages
+M1_RS1EvMs000          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_RS1EvMs001          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_RS1EvMs002          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_RS1EvMs003          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_RS1EvMs004          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_RS1EvMs005          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_RS1EvMs006          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_RS1EvMs007          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_RS1EvMs008          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_RS1EvMs009          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_RS1EvMs010          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_RS1EvMs011          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_RS1EvMs012          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_RS1EvMs013          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_RS1EvMs014          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_RS1EvMs015          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_RS1EvMs016          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_RS1EvMs017          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_RS1EvMs018          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_RS1EvMs019          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_RS1EvMs020          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_RS1EvMs021          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_RS1EvMs022          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs023          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs024          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs025          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs026          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS1EvMs027          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS1EvMs028          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS1EvMs029          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS1EvMs030          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS1EvMs031          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS1EvMs032          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS1EvMs033          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS1EvMs034          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS1EvMs035          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS1EvMs036          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS1EvMs037          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS1EvMs038          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_RS1EvMs039          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_RS1EvMs040          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_RS1EvMs041          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_RS1EvMs042          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АВТ ПУСТИТЬ
+M1_RS1EvMs043          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АВТ ПУСТИТЬ
+M1_RS1EvMs044          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСТИТЬ ИЗ МДП1
+M1_RS1EvMs045          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСТИТЬ ИЗ МДП1
+M1_RS1EvMs046          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСТИТЬ ИЗ МДП2
+M1_RS1EvMs047          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСТИТЬ ИЗ МДП2
+M1_RS1EvMs048          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ВКЛЮЧИЛСЯ
+M1_RS1EvMs049          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ВКЛЮЧИЛСЯ
+M1_RS1EvMs050          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_RS1EvMs051          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_RS1EvMs052          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 МП НЕ ВКЛЮЧИЛСЯ
+M1_RS1EvMs053          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 МП НЕ ВКЛЮЧИЛСЯ
+M1_RS1EvMs054          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_RS1EvMs055          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_RS1EvMs056          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 11 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS1EvMs057          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 12 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS1EvMs058          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve 11 ВКЛ.НЕУСТ ПРИЧИНА
+M1_RS1EvMs059          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve 12 ВКЛ.НЕУСТ ПРИЧИНА
+M1_RS1EvMs060          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОТКЛЮЧЕН
+M1_RS1EvMs061          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОТКЛЮЧЕН
+M1_RS1EvMs062          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_RS1EvMs063          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_RS1EvMs064          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕИСПР.(НЕТ ДАВЛ)
+M1_RS1EvMs065          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕИСПР.(НЕТ ДАВЛ)
+M1_RS1EvMs066          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS1EvMs067          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS1EvMs068          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs069          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs070          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs071          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs072          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs073          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS1EvMs074          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АВТ ОСТАНОВИТЬ
+M1_RS1EvMs075          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АВТ ОСТАНОВИТЬ
+M1_RS1EvMs076          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАНОВИТЬ ИЗ МДП1
+M1_RS1EvMs077          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАНОВИТЬ ИЗ МДП1
+M1_RS1EvMs078          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАНОВИТЬ ИЗ МДП2
+M1_RS1EvMs079          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАНОВИТЬ ИЗ МДП2
+M1_RS1EvMs080          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОТКЛЮЧИЛСЯ
+M1_RS1EvMs081          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОТКЛЮЧИЛСЯ
+M1_RS1EvMs082          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_RS1EvMs083          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_RS1EvMs084          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕ ОТКЛЮЧИЛСЯ
+M1_RS1EvMs085          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕ ОТКЛЮЧИЛСЯ
+M1_RS1EvMs086          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS1EvMs087          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS1EvMs088          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS1EvMs089          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS1EvMs090          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_RS1EvMs091          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_RS1EvMs092          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "
+M1_RS1EvMs093          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "
+M1_RS1EvMs094          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "
+M1_RS1EvMs095          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "
+M1_RS1EvMs096          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_RS1EvMs097          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_RS1EvMs098          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_RS1EvMs099          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_RS1EvMs100          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_RS1EvMs101          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_RS1EvMs102          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_RS1EvMs103          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_RS1EvMs104          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_RS1EvMs105          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_RS1EvMs106          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 11 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_RS1EvMs107          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 12 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_RS1EvMs108          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 11. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_RS1EvMs109          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 12. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_RS1EvMs110          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 11. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_RS1EvMs111          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 12. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_RS1EvMs112          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_RS1EvMs113          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_RS1EvMs114          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_RS1EvMs115          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_RS1EvMs116          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ОТКЛЮЧЕН ПО МЕСТУ
+M1_RS1EvMs117          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ОТКЛЮЧЕН ПО МЕСТУ
+M1_RS1EvMs118          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 АПВ
+M1_RS1EvMs119          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 АПВ
+M1_RS1EvMs120          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_RS1EvMs121          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_RS1EvMs122          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS1EvMs123          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS1EvMs124          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ВКЛЮЧЕН.ПО МЕСТУ
+M1_RS1EvMs125          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ВКЛЮЧЕН.ПО МЕСТУ
+M1_RS1EvMs126          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 11 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_RS1EvMs127          ,  B,  0, M1_RS1_EventMessage  , N, 0, 0, "Reserve 12 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Reserve_system_2 event messages
+M1_RS2EvMs000          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_RS2EvMs001          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_RS2EvMs002          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_RS2EvMs003          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_RS2EvMs004          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_RS2EvMs005          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_RS2EvMs006          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_RS2EvMs007          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_RS2EvMs008          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_RS2EvMs009          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_RS2EvMs010          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_RS2EvMs011          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_RS2EvMs012          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_RS2EvMs013          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_RS2EvMs014          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_RS2EvMs015          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_RS2EvMs016          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_RS2EvMs017          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_RS2EvMs018          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_RS2EvMs019          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_RS2EvMs020          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_RS2EvMs021          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_RS2EvMs022          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs023          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs024          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs025          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs026          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS2EvMs027          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS2EvMs028          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS2EvMs029          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS2EvMs030          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS2EvMs031          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_RS2EvMs032          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS2EvMs033          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS2EvMs034          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS2EvMs035          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_RS2EvMs036          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS2EvMs037          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS2EvMs038          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_RS2EvMs039          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_RS2EvMs040          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_RS2EvMs041          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_RS2EvMs042          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АВТ ПУСТИТЬ
+M1_RS2EvMs043          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АВТ ПУСТИТЬ
+M1_RS2EvMs044          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСТИТЬ ИЗ МДП1
+M1_RS2EvMs045          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСТИТЬ ИЗ МДП1
+M1_RS2EvMs046          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСТИТЬ ИЗ МДП2
+M1_RS2EvMs047          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСТИТЬ ИЗ МДП2
+M1_RS2EvMs048          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ВКЛЮЧИЛСЯ
+M1_RS2EvMs049          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ВКЛЮЧИЛСЯ
+M1_RS2EvMs050          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_RS2EvMs051          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_RS2EvMs052          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 МП НЕ ВКЛЮЧИЛСЯ
+M1_RS2EvMs053          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 МП НЕ ВКЛЮЧИЛСЯ
+M1_RS2EvMs054          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_RS2EvMs055          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_RS2EvMs056          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 21 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS2EvMs057          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 22 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS2EvMs058          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve 21 ВКЛ.НЕУСТ ПРИЧИНА
+M1_RS2EvMs059          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve 22 ВКЛ.НЕУСТ ПРИЧИНА
+M1_RS2EvMs060          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОТКЛЮЧЕН
+M1_RS2EvMs061          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОТКЛЮЧЕН
+M1_RS2EvMs062          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_RS2EvMs063          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_RS2EvMs064          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕИСПР.(НЕТ ДАВЛ)
+M1_RS2EvMs065          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕИСПР.(НЕТ ДАВЛ)
+M1_RS2EvMs066          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS2EvMs067          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_RS2EvMs068          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs069          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs070          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs071          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs072          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs073          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_RS2EvMs074          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АВТ ОСТАНОВИТЬ
+M1_RS2EvMs075          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АВТ ОСТАНОВИТЬ
+M1_RS2EvMs076          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАНОВИТЬ ИЗ МДП1
+M1_RS2EvMs077          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАНОВИТЬ ИЗ МДП1
+M1_RS2EvMs078          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАНОВИТЬ ИЗ МДП2
+M1_RS2EvMs079          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАНОВИТЬ ИЗ МДП2
+M1_RS2EvMs080          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОТКЛЮЧИЛСЯ
+M1_RS2EvMs081          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОТКЛЮЧИЛСЯ
+M1_RS2EvMs082          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_RS2EvMs083          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_RS2EvMs084          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕ ОТКЛЮЧИЛСЯ
+M1_RS2EvMs085          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕ ОТКЛЮЧИЛСЯ
+M1_RS2EvMs086          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS2EvMs087          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS2EvMs088          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS2EvMs089          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_RS2EvMs090          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_RS2EvMs091          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_RS2EvMs092          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "
+M1_RS2EvMs093          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "
+M1_RS2EvMs094          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "
+M1_RS2EvMs095          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "
+M1_RS2EvMs096          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_RS2EvMs097          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_RS2EvMs098          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_RS2EvMs099          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_RS2EvMs100          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_RS2EvMs101          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_RS2EvMs102          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_RS2EvMs103          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_RS2EvMs104          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_RS2EvMs105          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_RS2EvMs106          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 21 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_RS2EvMs107          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 22 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_RS2EvMs108          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 21. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_RS2EvMs109          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 22. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_RS2EvMs110          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 21. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_RS2EvMs111          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve 22. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_RS2EvMs112          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_RS2EvMs113          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_RS2EvMs114          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_RS2EvMs115          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_RS2EvMs116          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ОТКЛЮЧЕН ПО МЕСТУ
+M1_RS2EvMs117          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ОТКЛЮЧЕН ПО МЕСТУ
+M1_RS2EvMs118          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 АПВ
+M1_RS2EvMs119          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 АПВ
+M1_RS2EvMs120          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_RS2EvMs121          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_RS2EvMs122          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS2EvMs123          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_RS2EvMs124          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ВКЛЮЧЕН.ПО МЕСТУ
+M1_RS2EvMs125          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ВКЛЮЧЕН.ПО МЕСТУ
+M1_RS2EvMs126          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 21 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_RS2EvMs127          ,  B,  0, M1_RS2_EventMessage  , N, 0, 0, "Reserve 22 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Electric_heater_of_agr.system event messages
+M1_ES1EvMs000          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_ES1EvMs001          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_ES1EvMs002          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_ES1EvMs003          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_ES1EvMs004          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_ES1EvMs005          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_ES1EvMs006          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_ES1EvMs007          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_ES1EvMs008          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_ES1EvMs009          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_ES1EvMs010          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_ES1EvMs011          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_ES1EvMs012          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_ES1EvMs013          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_ES1EvMs014          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_ES1EvMs015          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_ES1EvMs016          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_ES1EvMs017          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_ES1EvMs018          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_ES1EvMs019          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_ES1EvMs020          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_ES1EvMs021          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_ES1EvMs022          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs023          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs024          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs025          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs026          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES1EvMs027          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES1EvMs028          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES1EvMs029          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES1EvMs030          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES1EvMs031          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES1EvMs032          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES1EvMs033          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES1EvMs034          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES1EvMs035          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES1EvMs036          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES1EvMs037          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES1EvMs038          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_ES1EvMs039          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_ES1EvMs040          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_ES1EvMs041          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_ES1EvMs042          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АВТ ПУСТИТЬ
+M1_ES1EvMs043          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АВТ ПУСТИТЬ
+M1_ES1EvMs044          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСТИТЬ ИЗ МДП1
+M1_ES1EvMs045          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСТИТЬ ИЗ МДП1
+M1_ES1EvMs046          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСТИТЬ ИЗ МДП2
+M1_ES1EvMs047          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСТИТЬ ИЗ МДП2
+M1_ES1EvMs048          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ВКЛЮЧИЛСЯ
+M1_ES1EvMs049          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ВКЛЮЧИЛСЯ
+M1_ES1EvMs050          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_ES1EvMs051          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_ES1EvMs052          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 МП НЕ ВКЛЮЧИЛСЯ
+M1_ES1EvMs053          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 МП НЕ ВКЛЮЧИЛСЯ
+M1_ES1EvMs054          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_ES1EvMs055          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_ES1EvMs056          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-1 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES1EvMs057          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES1EvMs058          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Электронагриватель ПА-1 ВКЛ.НЕУСТ ПРИЧИНА
+M1_ES1EvMs059          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Электронагриватель ПА-2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_ES1EvMs060          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОТКЛЮЧЕН
+M1_ES1EvMs061          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОТКЛЮЧЕН
+M1_ES1EvMs062          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_ES1EvMs063          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_ES1EvMs064          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕИСПР.(НЕТ ДАВЛ)
+M1_ES1EvMs065          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕИСПР.(НЕТ ДАВЛ)
+M1_ES1EvMs066          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES1EvMs067          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES1EvMs068          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs069          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs070          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs071          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs072          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs073          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES1EvMs074          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АВТ ОСТАНОВИТЬ
+M1_ES1EvMs075          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АВТ ОСТАНОВИТЬ
+M1_ES1EvMs076          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАНОВИТЬ ИЗ МДП1
+M1_ES1EvMs077          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАНОВИТЬ ИЗ МДП1
+M1_ES1EvMs078          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАНОВИТЬ ИЗ МДП2
+M1_ES1EvMs079          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАНОВИТЬ ИЗ МДП2
+M1_ES1EvMs080          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОТКЛЮЧИЛСЯ
+M1_ES1EvMs081          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОТКЛЮЧИЛСЯ
+M1_ES1EvMs082          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_ES1EvMs083          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_ES1EvMs084          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕ ОТКЛЮЧИЛСЯ
+M1_ES1EvMs085          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕ ОТКЛЮЧИЛСЯ
+M1_ES1EvMs086          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES1EvMs087          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES1EvMs088          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES1EvMs089          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES1EvMs090          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_ES1EvMs091          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_ES1EvMs092          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "
+M1_ES1EvMs093          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "
+M1_ES1EvMs094          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "
+M1_ES1EvMs095          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "
+M1_ES1EvMs096          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_ES1EvMs097          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_ES1EvMs098          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_ES1EvMs099          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_ES1EvMs100          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_ES1EvMs101          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_ES1EvMs102          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_ES1EvMs103          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_ES1EvMs104          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_ES1EvMs105          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_ES1EvMs106          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-1 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_ES1EvMs107          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_ES1EvMs108          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-1. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_ES1EvMs109          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_ES1EvMs110          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-1. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_ES1EvMs111          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_ES1EvMs112          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_ES1EvMs113          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_ES1EvMs114          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_ES1EvMs115          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_ES1EvMs116          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ОТКЛЮЧЕН ПО МЕСТУ
+M1_ES1EvMs117          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_ES1EvMs118          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 АПВ
+M1_ES1EvMs119          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 АПВ
+M1_ES1EvMs120          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_ES1EvMs121          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_ES1EvMs122          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES1EvMs123          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES1EvMs124          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ВКЛЮЧЕН.ПО МЕСТУ
+M1_ES1EvMs125          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_ES1EvMs126          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-1 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_ES1EvMs127          ,  B,  0, M1_ES1_EventMessage  , N, 0, 0, "Электронагриватель ПА-2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Electric_heater_of_agr.system event messages
+M1_ES2EvMs000          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_ES2EvMs001          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_ES2EvMs002          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_ES2EvMs003          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_ES2EvMs004          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_ES2EvMs005          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_ES2EvMs006          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_ES2EvMs007          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_ES2EvMs008          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_ES2EvMs009          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_ES2EvMs010          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_ES2EvMs011          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_ES2EvMs012          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_ES2EvMs013          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_ES2EvMs014          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_ES2EvMs015          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_ES2EvMs016          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_ES2EvMs017          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_ES2EvMs018          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_ES2EvMs019          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_ES2EvMs020          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_ES2EvMs021          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_ES2EvMs022          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs023          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs024          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs025          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs026          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES2EvMs027          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES2EvMs028          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES2EvMs029          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES2EvMs030          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES2EvMs031          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES2EvMs032          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES2EvMs033          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES2EvMs034          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES2EvMs035          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES2EvMs036          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES2EvMs037          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES2EvMs038          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_ES2EvMs039          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_ES2EvMs040          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_ES2EvMs041          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_ES2EvMs042          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АВТ ПУСТИТЬ
+M1_ES2EvMs043          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АВТ ПУСТИТЬ
+M1_ES2EvMs044          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСТИТЬ ИЗ МДП1
+M1_ES2EvMs045          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСТИТЬ ИЗ МДП1
+M1_ES2EvMs046          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСТИТЬ ИЗ МДП2
+M1_ES2EvMs047          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСТИТЬ ИЗ МДП2
+M1_ES2EvMs048          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ВКЛЮЧИЛСЯ
+M1_ES2EvMs049          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ВКЛЮЧИЛСЯ
+M1_ES2EvMs050          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_ES2EvMs051          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_ES2EvMs052          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 МП НЕ ВКЛЮЧИЛСЯ
+M1_ES2EvMs053          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 МП НЕ ВКЛЮЧИЛСЯ
+M1_ES2EvMs054          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_ES2EvMs055          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_ES2EvMs056          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-3 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES2EvMs057          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-4 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES2EvMs058          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Электронагриватель ПА-3 ВКЛ.НЕУСТ ПРИЧИНА
+M1_ES2EvMs059          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Электронагриватель ПА-4 ВКЛ.НЕУСТ ПРИЧИНА
+M1_ES2EvMs060          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОТКЛЮЧЕН
+M1_ES2EvMs061          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОТКЛЮЧЕН
+M1_ES2EvMs062          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_ES2EvMs063          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_ES2EvMs064          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕИСПР.(НЕТ ДАВЛ)
+M1_ES2EvMs065          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕИСПР.(НЕТ ДАВЛ)
+M1_ES2EvMs066          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES2EvMs067          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES2EvMs068          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs069          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs070          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs071          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs072          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs073          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES2EvMs074          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АВТ ОСТАНОВИТЬ
+M1_ES2EvMs075          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АВТ ОСТАНОВИТЬ
+M1_ES2EvMs076          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАНОВИТЬ ИЗ МДП1
+M1_ES2EvMs077          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАНОВИТЬ ИЗ МДП1
+M1_ES2EvMs078          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАНОВИТЬ ИЗ МДП2
+M1_ES2EvMs079          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАНОВИТЬ ИЗ МДП2
+M1_ES2EvMs080          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОТКЛЮЧИЛСЯ
+M1_ES2EvMs081          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОТКЛЮЧИЛСЯ
+M1_ES2EvMs082          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_ES2EvMs083          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_ES2EvMs084          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕ ОТКЛЮЧИЛСЯ
+M1_ES2EvMs085          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕ ОТКЛЮЧИЛСЯ
+M1_ES2EvMs086          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES2EvMs087          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES2EvMs088          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES2EvMs089          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES2EvMs090          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_ES2EvMs091          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_ES2EvMs092          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "
+M1_ES2EvMs093          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "
+M1_ES2EvMs094          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "
+M1_ES2EvMs095          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "
+M1_ES2EvMs096          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_ES2EvMs097          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_ES2EvMs098          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_ES2EvMs099          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_ES2EvMs100          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_ES2EvMs101          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_ES2EvMs102          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_ES2EvMs103          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_ES2EvMs104          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_ES2EvMs105          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_ES2EvMs106          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-3 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_ES2EvMs107          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-4 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_ES2EvMs108          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-3. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_ES2EvMs109          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-4. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_ES2EvMs110          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-3. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_ES2EvMs111          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-4. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_ES2EvMs112          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_ES2EvMs113          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_ES2EvMs114          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_ES2EvMs115          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_ES2EvMs116          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ОТКЛЮЧЕН ПО МЕСТУ
+M1_ES2EvMs117          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ОТКЛЮЧЕН ПО МЕСТУ
+M1_ES2EvMs118          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 АПВ
+M1_ES2EvMs119          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 АПВ
+M1_ES2EvMs120          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_ES2EvMs121          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_ES2EvMs122          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES2EvMs123          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES2EvMs124          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ВКЛЮЧЕН.ПО МЕСТУ
+M1_ES2EvMs125          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ВКЛЮЧЕН.ПО МЕСТУ
+M1_ES2EvMs126          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-3 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_ES2EvMs127          ,  B,  0, M1_ES2_EventMessage  , N, 0, 0, "Электронагриватель ПА-4 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+
+//Electric_heater_of_agr.system event messages
+M1_ES3EvMs000          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_ES3EvMs001          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_ES3EvMs002          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_ES3EvMs003          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_ES3EvMs004          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_ES3EvMs005          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ АВТ ИЗ МДП1
+M1_ES3EvMs006          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕЗ ИЗ МДП1
+M1_ES3EvMs007          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ КНОП ИЗ МДП1
+M1_ES3EvMs008          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РУЧ ИЗ МДП1
+M1_ES3EvMs009          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕМ ИЗ МДП1
+M1_ES3EvMs010          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_ES3EvMs011          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_ES3EvMs012          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_ES3EvMs013          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_ES3EvMs014          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_ES3EvMs015          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ АВТ ИЗ МДП2
+M1_ES3EvMs016          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕЗ ИЗ МДП2
+M1_ES3EvMs017          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ КНОП ИЗ МДП2
+M1_ES3EvMs018          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РУЧ ИЗ МДП2
+M1_ES3EvMs019          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 УСТАН РЕЖ РЕМ ИЗ МДП2
+M1_ES3EvMs020          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_ES3EvMs021          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСК НЕВОЗ.ЗАПРЕТ ПО РЕЖИМУ
+M1_ES3EvMs022          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs023          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs024          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs025          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs026          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES3EvMs027          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСК НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES3EvMs028          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES3EvMs029          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES3EvMs030          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES3EvMs031          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.СТАНЦ ЗАЩ
+M1_ES3EvMs032          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES3EvMs033          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП1 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES3EvMs034          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES3EvMs035          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСК ИЗ МДП2 НЕВОЗМОЖ.ТЕХН ПРИЧИНА
+M1_ES3EvMs036          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES3EvMs037          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES3EvMs038          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_ES3EvMs039          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.ПУСК ИЗ МДП1 НЕВОЗМОЖ
+M1_ES3EvMs040          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_ES3EvMs041          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.ПУСК ИЗ МДП2 НЕВОЗМОЖ
+M1_ES3EvMs042          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АВТ ПУСТИТЬ
+M1_ES3EvMs043          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ПУСТИТЬ
+M1_ES3EvMs044          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСТИТЬ ИЗ МДП1
+M1_ES3EvMs045          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ ИЗ МДП1
+M1_ES3EvMs046          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСТИТЬ ИЗ МДП2
+M1_ES3EvMs047          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ ИЗ МДП2
+M1_ES3EvMs048          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ВКЛЮЧИЛСЯ
+M1_ES3EvMs049          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧИЛСЯ
+M1_ES3EvMs050          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_ES3EvMs051          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕ ВКЛЮЧИЛСЯ.НЕТ НАПРЯЖ
+M1_ES3EvMs052          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 МП НЕ ВКЛЮЧИЛСЯ
+M1_ES3EvMs053          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 МП НЕ ВКЛЮЧИЛСЯ
+M1_ES3EvMs054          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_ES3EvMs055          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕ ВКЛЮЧИЛСЯ.НЕТ ДАВЛ
+M1_ES3EvMs056          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-5 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES3EvMs057          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2 ВКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES3EvMs058          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Электронагриватель ПА-5 ВКЛ.НЕУСТ ПРИЧИНА
+M1_ES3EvMs059          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! НЕИСПР Reserve N2 ВКЛ.НЕУСТ ПРИЧИНА
+M1_ES3EvMs060          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОТКЛЮЧЕН
+M1_ES3EvMs061          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН
+M1_ES3EvMs062          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_ES3EvMs063          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН.НЕТ НАПРЯЖ
+M1_ES3EvMs064          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕИСПР.(НЕТ ДАВЛ)
+M1_ES3EvMs065          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР.(НЕТ ДАВЛ)
+M1_ES3EvMs066          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES3EvMs067          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН.НЕУСТ ПРИЧИНА
+M1_ES3EvMs068          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs069          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВ НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs070          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs071          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП1 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs072          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs073          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ЗАПР.ПО РЕЖИМУ
+M1_ES3EvMs074          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АВТ ОСТАНОВИТЬ
+M1_ES3EvMs075          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВИТЬ
+M1_ES3EvMs076          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАНОВИТЬ ИЗ МДП1
+M1_ES3EvMs077          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ ИЗ МДП1
+M1_ES3EvMs078          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАНОВИТЬ ИЗ МДП2
+M1_ES3EvMs079          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ ИЗ МДП2
+M1_ES3EvMs080          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОТКЛЮЧИЛСЯ
+M1_ES3EvMs081          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧИЛСЯ
+M1_ES3EvMs082          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_ES3EvMs083          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧИЛСЯ.ЕСТЬ ДАВЛ
+M1_ES3EvMs084          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕ ОТКЛЮЧИЛСЯ
+M1_ES3EvMs085          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕ ОТКЛЮЧИЛСЯ
+M1_ES3EvMs086          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES3EvMs087          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АВТ ОСТАНОВ. НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES3EvMs088          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES3EvMs089          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП1 НЕВОЗ. ТЕХН ПРИЧИНА
+M1_ES3EvMs090          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_ES3EvMs091          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАН.ИЗ МДП2 НЕВОЗ.ТЕХН ПРИЧИНА
+M1_ES3EvMs092          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "
+M1_ES3EvMs093          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "
+M1_ES3EvMs094          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "
+M1_ES3EvMs095          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "
+M1_ES3EvMs096          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_ES3EvMs097          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ (ДАТЧИК)
+M1_ES3EvMs098          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_ES3EvMs099          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_ES3EvMs100          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ С ПАНЕЛЬ 1
+M1_ES3EvMs101          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ С ПАНЕЛЬ 1
+M1_ES3EvMs102          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_ES3EvMs103          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_ES3EvMs104          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ПУСТИТЬ С ПАНЕЛЬ 2
+M1_ES3EvMs105          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОСТАНОВИТЬ С ПАНЕЛЬ 2
+M1_ES3EvMs106          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-5 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_ES3EvMs107          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2 ОТКЛЮЧЕН АВТ. СТАНЦ ЗАЩ
+M1_ES3EvMs108          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-5. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_ES3EvMs109          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2. ИСЧЕЗНОВЕНИЕ НАПР-Я
+M1_ES3EvMs110          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Электронагриватель ПА-5. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_ES3EvMs111          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "ВНИМАНИЕ! Reserve N2. ВОССТАНОВЛЕНИЕ НАПР-Я
+M1_ES3EvMs112          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_ES3EvMs113          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН ПО МЕСТУ.ЕСТЬ ДАВЛ
+M1_ES3EvMs114          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_ES3EvMs115          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 НЕИСПР ВКЛЮЧЕН ПО МЕСТУ
+M1_ES3EvMs116          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ОТКЛЮЧЕН ПО МЕСТУ
+M1_ES3EvMs117          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ОТКЛЮЧЕН ПО МЕСТУ
+M1_ES3EvMs118          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 АПВ
+M1_ES3EvMs119          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 АПВ
+M1_ES3EvMs120          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_ES3EvMs121          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН ПО МЕСТУ.НЕТ ДАВЛ
+M1_ES3EvMs122          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES3EvMs123          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 РЕЗ НЕИСПР.АВТ ПУСК НЕВОЗМОЖ
+M1_ES3EvMs124          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ВКЛЮЧЕН.ПО МЕСТУ
+M1_ES3EvMs125          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ВКЛЮЧЕН.ПО МЕСТУ
+M1_ES3EvMs126          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Электронагриватель ПА-5 ДАВЛ. НА ВЫХОДЕ В НОРМЕ
+M1_ES3EvMs127          ,  B,  0, M1_ES3_EventMessage  , N, 0, 0, "Reserve N2 ДАВЛ. НА ВЫХОДЕ В НОРМЕ

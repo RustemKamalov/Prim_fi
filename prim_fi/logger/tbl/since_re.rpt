@@ -1,0 +1,85 @@
+C1: ELSE P0;
+C2: ELSE P1;
+C3: ELSE P2;
+C4: IF P3<90 : P3+2000 ; ELSE P3+1900;
+C5: ELSE P4;
+C6: ELSE P5;
+C7: IF P2<90 : P2+2000 ; ELSE P2+1900;
+C8: ELSE P6;
+C9: ELSE P7;
+
+#--- misc ---
+Q1:   *%D %T
+Q2:    $-16P0
+Q3:    $-28P0
+Q4:    $-16P2
+Q5:    $-28P13
+Q6:    $-28P7
+
+
+#------------
+Q10:   #02.0C1
+Q11:   #02.0C2
+Q12:   #02.0C3
+Q13:   #4.0C4
+Q14:   #7.0C5
+Q15:   #7.0C6
+Q16:   #7.0C8
+Q17:   #7.0C9
+
+
+:STRT
+:BODY
+
+#      ^*%d.%m.%y^   ^*%T      ^
+      ^%Q1                  ^
+
+
+           CÂÎÄÊÀ ÐÀÁÎÒÛ ÎÁÎÐÓÄÎÂÀÍÈß ÏÎÆÀÐÎÒÓØ. Ñ ÌÎÌÅÍÒÀ ÂÛÂÎÄÀ ÈÇ ÐÅÌÎÍÒÀ
+
+ |------------------------------|-------------|----------------------------|
+ |                              |             |              × È Ñ Ë Î     |
+ |                              |    ÄÀÒÀ     |---------|---------|--------|
+ |     ÍÀÈÌÅÍÎÂÀÍÈÅ             |   ÂÛÂÎÄÀ    |         |         |        |
+ |                              |  ÈÇ ÐÅÌÎÍÒÀ |  ×ÀÑÎÂ  | ÎÒÊÀÇÎÂ | ÂÊËÞ×. |
+ |                              |(÷÷;ää.ìì.ãã)|         |         |  ÕÎË.  |
+ |------------------------------|-------------|---------|---------|--------|
+:PARL: P0=Fi_Fe1TSReHou P1=Fi_Fe1DSReDay P2=Fi_Fe1DSReMth P3=Fi_Fe1DSReYea P4=Fi_Fe1WoHoRem P5=Fi_Fe1FailRem P6=Fi_Fe1StCoRem P7=Fi_Fe1_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi_Fe2TSReHou P1=Fi_Fe2DSReDay P2=Fi_Fe2DSReMth P3=Fi_Fe2DSReYea P4=Fi_Fe2WoHoRem P5=Fi_Fe2FailRem P6=Fi_Fe2StCoRem P7=Fi_Fe2_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi_Fe3TSReHou P1=Fi_Fe3DSReDay P2=Fi_Fe3DSReMth P3=Fi_Fe3DSReYea P4=Fi_Fe3WoHoRem P5=Fi_Fe3FailRem P6=Fi_Fe3StCoRem P7=Fi_Fe3_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi_Fe4TSReHou P1=Fi_Fe4DSReDay P2=Fi_Fe4DSReMth P3=Fi_Fe4DSReYea P4=Fi_Fe4WoHoRem P5=Fi_Fe4FailRem P6=Fi_Fe4StCoRem P7=Fi_Fe4_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi_Fe5TSReHou P1=Fi_Fe5DSReDay P2=Fi_Fe5DSReMth P3=Fi_Fe5DSReYea P4=Fi_Fe5WoHoRem P5=Fi_Fe5FailRem P6=Fi_Fe5StCoRem P7=Fi_Fe5_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi_Fw5TSReHou P1=Fi_Fw5DSReDay P2=Fi_Fw5DSReMth P3=Fi_Fw5DSReYea P4=Fi_Fw5WoHoRem P5=Fi_Fw5FailRem P6=Fi_Fw5StCoRem P7=Fi_Fw5_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+ |------------------------------|-------------|---------|---------|--------|
+
+
+               ÑÂÎÄÊÀ ÐÀÁÎÒÛ ÎÁÎÐÓÄÎÂÀÍÈß ÏÎÆÀÐÎÒÓØ.-2 ÑÎ ÂÐÅÌEÍÈ ÎÏÅÐÀÒÎÐÀ
+
+ |------------------------------|-------------|----------------------------|
+ |                              |             |              × È Ñ Ë Î     |
+ |                              |             |---------|---------|--------|
+ |       ÍÀÈÌÅÍÎÂÀÍÈÅ           |     ÄÀÒÀ    |         |         |        |
+ |                              |(÷÷;ää.ìì.ãã)|  ×ÀÑÎÂ  | ÎÒÊÀÇÎÂ | ÂÊËÞ×. |
+ |                              |             |         |         |  ÕÎË.  |
+ |------------------------------|-------------|---------|---------|--------|
+:PARL: P0=Fi2_Fe1TSReHou P1=Fi2_Fe1DSReDay P2=Fi2_Fe1DSReMth P3=Fi2_Fe1DSReYea P4=Fi2_Fe1WoHoRem P5=Fi2_Fe1FailRem P6=Fi2_Fe1StCoRem P7=Fi2_Fe1_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi2_Fe2TSReHou P1=Fi2_Fe2DSReDay P2=Fi2_Fe2DSReMth P3=Fi2_Fe2DSReYea P4=Fi2_Fe2WoHoRem P5=Fi2_Fe2FailRem P6=Fi2_Fe2StCoRem P7=Fi2_Fe2_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi2_Fe3TSReHou P1=Fi2_Fe3DSReDay P2=Fi2_Fe3DSReMth P3=Fi2_Fe3DSReYea P4=Fi2_Fe3WoHoRem P5=Fi2_Fe3FailRem P6=Fi2_Fe3StCoRem P7=Fi2_Fe3_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi2_Fw1TSReHou P1=Fi2_Fw1DSReDay P2=Fi2_Fw1DSReMth P3=Fi2_Fw1DSReYea P4=Fi2_Fw1WoHoRem P5=Fi2_Fw1FailRem P6=Fi2_Fw1StCoRem P7=Fi2_Fw1_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi2_Fw2TSReHou P1=Fi2_Fw2DSReDay P2=Fi2_Fw2DSReMth P3=Fi2_Fw2DSReYea P4=Fi2_Fw2WoHoRem P5=Fi2_Fw2FailRem P6=Fi2_Fw2StCoRem P7=Fi2_Fw2_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+:PARL: P0=Fi2_Fw3TSReHou P1=Fi2_Fw3DSReDay P2=Fi2_Fw3DSReMth P3=Fi2_Fw3DSReYea P4=Fi2_Fw3WoHoRem P5=Fi2_Fw3FailRem P6=Fi2_Fw3StCoRem P7=Fi2_Fw3_Name
+ | ^%Q6                       ^ |%Q10;%Q11.%Q12.%Q13| ^%Q14 ^ | ^%Q15 ^ |^%Q16 ^ |
+ |------------------------------|-------------|---------|---------|--------|
+
+:STOP

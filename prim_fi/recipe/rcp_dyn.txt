@@ -1,0 +1,29 @@
+CFG:
+    CPAR:
+        P0 = RECIPE_ERRC
+        P1 = RECIPE_CFGS
+        P2 = RECIPE_PRIO
+        P3 = RECIPE_LOGF
+        P4 = RECIPE_FLEN
+        P5 = RECIPE_LOGC
+        P6 = RECIPE_LOGM
+        P7 = RECIPE_CHKT
+        P8 = RECIPE_CNAM
+        P9 = RECIPE_ESEQ
+
+CFGS = P1
+PRIO = P2
+LOGF = P3
+FLEN = P4
+LOGC = P5
+LOGM = P6
+CHKT = P7
+CNAM = P8
+ESEQ = P9
+
+
+OBJ: data_init
+   CIFV: Q3
+   IOPATHTXT: /prim_fi/recipe/
+   IOPATHBIN: /prim_fi/recipe/
+

@@ -1,0 +1,54 @@
+
+WOPT: p=Cc r=9 c=9 o=ks-r;kmsa t=1 e=0 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 15
+  PARL: P0=PARAM0
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 122
+  PARL: P0=PARAM1
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 211
+  PARL: P0=PARAM2
+  COLD: Q1=1,8,0
+  COLF: IF P0 == 4 : Q1;ELSE Q0;
+  OPTD: Q1=+d+e+m-s-H+R-X
+  OPTF: IF P0 == 4 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 212
+  PARL: P0=PARAM2
+  COLD: Q1=1,8,0
+  COLF: IF P0 == 2 : Q1;ELSE Q0;
+  OPTD: Q1=+d+e+m-s-H+R-X
+  OPTF: IF P0 == 2 : Q0;ELSE Q1;
+OBEND
+
+OBJ: 213
+  PARL: P0=PARAM2
+  COLD: Q1=1,8,0
+  COLF: IF P0 == 1 : Q1;ELSE Q0;
+  OPTD: Q1=+d+e+m-s-H+R-X
+  OPTF: IF P0 == 1 : Q0; ELSE Q1;
+OBEND
+
+OBJ: 242
+  PARL: P0=PARAM3 P1=PARAM2
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P1 == 2 : Q0; ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 1;
+OBEND
+
+OBJ: 243
+  PARL: P0=PARAM3 P1=PARAM2
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P1 == 1 : Q0; ELSE Q1;
+  SELD: a=FV p=P0  f=1  v=ELSE 2;
+OBEND

@@ -1,0 +1,311 @@
+
+###############################################################################
+#
+# Qdiagem Event Module configuration file
+#					(lines starting with '#' are considered as comments)
+#					(default values are shown in [])
+#					(lines ending with '\' are continueing in the next line(s))
+###############################################################################
+
+# Configuration parameters;
+#	In this section every data consits of two parameters, where
+#		v=fix value (valid if 's' is not defined or initially while the
+#			signal is not set by a module)
+#		s=signal name (the value of the signal overrides 'v' if the signal
+#			is written; when the module starts the signals' values are set
+#			to the value given with 'v')
+#
+
+# Module's priority (0-29)										[10, -]
+
+PRIO:	v=17	s=EV_PRIO
+
+# Print messages to logfile (0/1)								[0, -]
+#			v=0 means don't print anything (except upon initialisation)
+#			v=1 means print error messages
+
+LOGF:	v=1		s=EV_LOGF
+
+# Maximum number of lines in logfile (min 1)					[10000, -]
+#			The logfile will be reopened after the given number of lines
+#			had been written. (Backup will be created.)
+
+FLEN:	v=10000	s=EV_FLEN
+
+# Print messages to console (0/1)								[0, -]
+#			v=0 means don't print anything (except upon initialisation)
+#			v=1 means print error messages
+
+LOGC:	v=1		s=EV_LOGC
+
+# Console name													[-, -]
+#			If not defined, the program's current console is assumed
+
+#CNAM:	v=/dev/con1 s=EV_CNAM
+
+# Print messages to message window (0/1)						[1, -]
+#			v=0 means don't print anything
+#			v=1 means print error messages
+
+LOGM:	v=1		s=EV_LOGM
+
+# Evaluation sequence of input messages (0/1/2)					[2, -]
+#			v=0 means that the database will be updated with contents of the
+#				whole message, and the objects will be evaluated afterwards;
+#				This is the fastest method, but the original sequence of the
+#				signals' changes will be lost and recurring values to the same
+#				signal and short pulses are filtered out;
+#			v=1 precesses a submessage (sent to the server in the same second)
+#				as v=0 does for the entire message;
+#			v=2 processes all siganls individually; in this case every
+#				modification in the signals' state are noticed but consumes
+#				significantly more CPU time;
+
+ESEQ:	v=2		s=EV_ESEQ
+
+# Override configuration data from the server's database (0/1)	[0, -]
+#			If set to 1, the default initial values of all the configuration
+#			signals listed in this file will be overriden with the values read
+#			from the server upon startup.
+#			Note: this value cannot be modified upon running; the signal can
+#			only be used to display the given setting;
+
+OVRD:	v=0		s=EV_OVRD
+
+###############################################################################
+# Status signal; contains the last action's or non fatal error'	[-]
+#			code where every bit represents a certain action/error state.
+#			The different bits are:
+#				0x01 - File access error;
+#				0x02 - Insufficient memory;
+#               0x04 - Priority setting error;
+#               0x10 - Other (internal) error;
+#               0x20 - New event (.event) file opened;
+
+STAT:	s=EV_STAT
+
+# Status parameter; This text type of signal contains 			[-]
+#			additional info to the error code; currently this is the file's
+#			name if any file handling error occurs.
+
+SPAR:	s=EV_SPAR
+
+# Event template to use for error messages							[0, -]
+#			If external error (log, debug...) messages are sent by the server
+#			or generated internally, this value defines the event template to
+#			use for logging the message. The value 'n' means 'En' (see below);
+#			'En's' 't', 'fc', 'bc' and 'p' fields will only be used; 0 means
+#			no logging.
+
+TMPL:	v=33		s=EV_TMPL
+
+# Event log disabling (0/1)											[0, -]
+#			If this value is set, all output logging will be supressed; this
+#			can be useful in cases when large parts of the database are re-
+#			initialised (via hot-standby or protocol reconfiguration).
+
+EDSB:	v= 0	s=EV_EDSB
+
+# Reduced memory (0/1)								[0]
+#			If this flag is unset, all of the event definitions (see 'En'
+#			below) are held in memory. If many (i.e. more ten thousands of)
+#			event definitons are configured this can be an unnecessary waste of
+#			system memory. If this value is set, these definitions are
+#			unloaded; if an event occurs the appropriate event is read from the
+#			disk. Although this method is somewhat slower it can save
+#			affordable amount of resources and still ensures appropriate
+#			efficiency in cases when events occur not too frequently
+#			(approximately one event in a second).
+
+REDM:   v=0     s=EV_REDM
+
+###############################################################################
+# Event files' parameters:
+#
+# Event files' directory; event files will be created in		[-, -]
+#			this directory
+#			Note: this value cannot be modified upon running; the signal can
+#			only be used to display the given setting;
+
+EDIR: v=/prim_fi_data/event/event s=EV_EDIR
+
+# Event file duration (day; min 1)								[30, -]
+#		Event files created earlier than that many days will be deleted when
+#		a new file is opened
+
+EDUR:	v=30	s=EV_EDUR
+
+# Event files' length (day; min 1)								[1, -]
+#		Event files are written for that many days
+
+ELEN:	v=1		s=EV_ELEN
+
+# Event files' reopening time (hour, 0-23)						[0, -]
+#			If 'ELEN' days elapsed the currently written file will be closed
+#			and the new one will be created at this time
+
+ERES:	v=0		s=EV_ERES
+
+###############################################################################
+# On-line event logging sparameters:
+#
+# Log files' directory; log files will be created in			[-, -]
+#			this directory
+#			Note: this value cannot be modified upon running; the signal can
+#			only be used to display the given setting;
+
+LDIR: v=/prim_fi_data/event/log s=EV_LDIR
+
+# Log device													[-, -]
+
+#LDEV:	v=/dev/null s=EV_LDEV
+
+# Log files' duration (day; min 1)								[30, -]
+#		Files created earlier than that many days will be deleted when
+#		a new file is opened
+
+LDUR:	v=30	s=EV_LDUR
+
+# Log files' length (day; min 1)								[1, -]
+#		Files are written for that many days
+
+LLEN:	v=1		s=EV_LLEN
+
+# Log files' reopening time (hour, 0-23)						[0, -]
+#			If 'LLEN' days elapsed the currently written file will be closed
+#			and the new one will be created at this time
+
+LRES:	v=0		s=EV_LRES
+
+# Printer's pagelen (rows; min 1)								[60, -]
+
+LLNO:	v=60	s=EV_LLNO
+
+# When to print header (0-2) 									[0, 0]
+#			v=0 means never
+#			v=1 means upon startup only
+#			v=2 means to every page (after every 'LLNO' rows)
+
+LHDT:	v=2		s=EV_LHDT
+
+# Log files' header file										[-, -]
+#			Note: this value cannot be modified upon running; the signal can
+#			only be used to display the given setting;
+
+LHDF: v=/prim_fi/event/header.cfg s=EV_LHDF
+
+
+###############################################################################
+# Maximum number of events to write to
+#		signals (-1-100)									[0]
+#		This value defines that how many events' data should be written to
+#		the signals listed at 'EVNF', 'EVNB' and 'EVNT'. If this value is
+#		set to -1, the first signal of 'EVNT' will contain the latest event
+#		text and the first signal of 'EVNF' and 'EVNB' its color codes. The
+#		previous (i.e. the one before the latest one) event text/colors
+#		will be copied to the second signals and so on. This means that
+#		if a new event is generated the signals' contents are 'scrolled',
+#		i.e they will set to the values previously stored in their
+#		preceeding counterpart in the list. This doesn't mean, however that
+#		all of the event messages are copied to the signals: if more events
+#		are generated from a server message than number of signals listed,
+#		the events which should 'scroll out' from the signals' list are
+#		discarded. This way the listed signals will always contain the last
+#		few events' data, thus enabling to display them on a picture in the
+#		monitoring module.
+#			If this value is set other than -1, only the FIRST signals of
+#		'EVNF', 'EVNB' and 'EVNT' are used. When the event handler receives
+#		a message from the server module only the last 'EVNN' number of
+#		newly generated events will be copied to the first signals. For
+#		example, if a user-written algorythm's task is to display the last
+#		three events only, this value should be set to 3 as the previous
+#		messages would  only load the system and would be discarded in the
+#		end. The maximum value is 100; 0 means that all of the messages are
+#		sent to the signals.
+#			Note: As the maximum value of 'EVNN' is 100, no more than 100
+#		signals can be listed in the 'EVNF', 'EVNB' and 'EVNT' fields.
+
+EVNN: v=0 s=EV_EVNN
+
+# Events' foreground colors
+#		These signals will contain the last events' foreground color codes.
+
+EVNF: s=EV_EVNF
+
+# Events' backround colors
+#		These signals will contain the last events' background color codes.
+
+EVNB: s=EV_EVNB
+
+# Event messages' format code						[2052]
+#		This value defines that which data from the event record should
+#		be collected to the 'EVNT' text. Every bit of this value represents
+#		a field from the event record. The meaning of the different bits
+#		are the following (the fields are detailed later in this manual):
+#			0x0001 - Time of message reception
+#			0x0002 - Messages' source time
+#			0x0004 - Time stamp ('TMST' signals') value
+#			0x0008 - Alarm/object signal's short name
+#			0x0010 - Alarm/object signal's long name
+#			0x0020 - Alarm/object signal's value
+#			0x0040 - Event's foreground color
+#			0x0080 - Event's background color
+#			0x0100 - Event's type code
+#			0x0200 - Event object's type code #1
+#			0x0400 - Event object's type code #2
+#			0x0800 - Event text
+#
+#			The default value is 2052 (0x0804) which means that the time
+#		stamp and the event text are concatenated into one string and this
+#		string is written to the first 'EVNT' signal. If this value is set
+#		to 0, nothing will be written to the 'EVNF', 'EVNB' and 'EVNT'
+#		signals. The sequence of the fields is not configurable, always the
+#		the smallest code field's text starts the string and the others
+#		follow in increasing order. This way the event text will always be
+#		at the end of the string.
+
+EVNC: v=2052 s=EV_EVNC
+
+# Event text signals
+#		The strings formed from the fields of the event record by the
+#		'EVNC' switch are written to these textual signals.
+
+EVNT: s=EV_EVNT
+
+
+##############################################################################
+# Time format; every time value will be described according		[%D-%T]
+#			to this control string; the format of the string is conform  to
+#			the 'strftime()' C function
+#			Note: the value ('v') field currently should not contain blank
+#					characters.
+
+TMFM: v=%d.%m.%Y-%H:%M:%S   s=EV_TMFM
+
+##############################################################################
+# Timestamp Signals; these signals are regarded as a 			[-]
+# 			time-stamp for every event
+
+TMST: year=Q_ChainYear  mon=Q_ChainMonth  day=Q_ChainDay  \
+      hour=Q_ChainHour  min=Q_ChainMinute sec=Q_ChainSecond
+
+# Display disabled time-stamp as an empty string (0/1)			[0]
+#		If the external time-stamp (defined at 'TMST') shouldn't be used
+#		for an event (e.g. a user login is independent of an event derived
+#		from the process via an IO device), this value defines that what
+#		should be written to event record's time-stamp field. If it is 0,
+#		the source time will be copied there. If it is 1, this field will
+#		remain empty.
+
+EDTS: v=0 s=EV_EDTS
+
+
+###############################################################################
+# Definition Section
+#	The definitions below are indexed. Indices must be monotonously but not
+#	continuously increasing. In the case of recurring definitions the last one
+#	will be used.
+
+
+
+

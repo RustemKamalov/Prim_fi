@@ -1,0 +1,55 @@
+num=1
+my_timer="my_timer"
+line_len=90
+
+ablox=$(awk 'BEGIN { i=0;bl_beg=0 } 
+            { if (NF<=1) {bl_beg=0;}
+              else if (bl_beg==0) { i++; bl_beg=1; }
+            } 
+            END{ print(i) }' timers_list)
+
+echo NumofBlocks: $ablox
+
+if [ $ablox = 0 ]
+then
+    echo hajjajj
+    exit
+fi
+
+while [ $num -le $ablox ]
+do
+    cat tmsrc_head_tmpl > $my_timer$num.src
+    awk 'BEGIN{i='$num'-1} {
+            if(NF<=1)i--;
+            if(i<0)exit(1);
+            if( (i==0) && (NF > 1)){
+                print("NAME:");
+                print($1);
+                print("TEXT:");
+                zuzu=$2;
+                for(j=3;(j<=NF) && ((length(zuzu)+length($j)+1)<'"$line_len"');j++)
+                    zuzu=zuzu" "$j;
+                print(zuzu);
+                if( j<=NF ) {
+                    zuzu=$j;
+                    for(j++;j<=NF;j++)zuzu=zuzu" "$j;
+                    print(zuzu);
+                }
+                print("ENDTEXT");
+                print("\n");
+            }
+    }' timers_list >> $my_timer$num.src
+    echo $my_timer$num.src done
+    let num=$num+1
+done
+
+
+for i in $(ls my*.src)
+do
+    nn=$(echo $i | sed 's/.*[a-z]\([0-9][0-9]*\)[.]src/\1/')
+    echo making timer$nn.pict
+
+    ./timer_pict_new $i
+    mv timerx.txt timer$nn.txt
+    mv timerx.pict timer$nn.pict
+done

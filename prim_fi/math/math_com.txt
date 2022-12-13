@@ -1,0 +1,4182 @@
+#####################################################################
+#
+# Configuration & common formulas
+#
+############################################################
+
+#####################################################################
+##
+## Configuration parameters
+##
+CFG:
+   CPAR:
+        P0  = MATH_STAT
+        P1  = MATH_ERRC
+        P2  = MATH_CFGS
+        P3  = MATH_PRIO
+        P4  = MATH_LOGF
+        P5  = MATH_FLEN
+        P6  = MATH_LOGC
+        P7  = MATH_LOGM
+        P8  = MATH_CHKT
+        P9  = MATH_ESEQ
+        P10 = MATH_CNAM
+        P11 = MATH_DBUG
+
+  STAT = P0
+  ERRC = P1
+  CFGS = P2
+  PRIO = P3
+  LOGF = P4
+  FLEN = P5
+  LOGC = P6
+  LOGM = P7
+  CHKT = P8
+  ESEQ = P9
+  CNAM = P10
+  DBUG = P11
+
+
+#//////////////////////////////////////////////////////////////////////////////
+
+#####################################################################
+##
+## Year2000 handling.
+##
+OBJ: Year2000
+     CPAR:
+         P0 = OprClkInpYear
+     CFV: ELSE Q1;
+     OPAR:
+         P0 = OprClkInpYear
+         P1 = OprClkYear
+     OFV0: P1 = IF P0<1900 : P1;ELSE P0-1900;
+
+OBJ: Fi_SetPLCClocks
+     CPAR:
+         P0  = OprClkControl
+         P1  = OprClkDayOfWeek
+         P2  = OprClkMonth
+         P3  = OprClkDay
+         P4  = OprClkYear
+         P5  = OprClkHour
+         P6  = OprClkMin
+         P7  = OprClkSec
+     #CFV: IF P0 == 2048 : Q1;ELSE Q0;
+     CFV: ELSE Q1;
+     OPAR:
+    # Operator tags
+         P0  = OprClkControl
+         P1  = OprClkDayOfWeek
+         P2  = OprClkMonth
+         P3  = OprClkDay
+         P4  = OprClkYear
+         P5  = OprClkHour
+         P6  = OprClkMin
+         P7  = OprClkSec
+    # PLC
+         P8  = Fi_WrtClkControl
+         P9  = Fi_WrtClkDayOfWeek
+         P10 = Fi_WrtClkMonth
+         P11 = Fi_WrtClkDay
+         P12 = Fi_WrtClkYear
+         P13 = Fi_WrtClkHour
+         P14 = Fi_WrtClkMin
+         P15 = Fi_WrtClkSec
+     # PLC
+     OFV0:  P9  = IF S1 : P1+1; ELSE ;
+     OFV1:  P10 = IF S2 : P2; ELSE ;
+     OFV2:  P11 = IF S3 : P3; ELSE ;
+     OFV3:  P12 = IF S4 : P4; ELSE ;
+     OFV4:  P13 = IF S5 : P5; ELSE ;
+     OFV5:  P14 = IF S6 : P6; ELSE ;
+     OFV6:  P15 = IF S7 : P7; ELSE ;
+     OFV7:  P8  = IF S0 : P0; ELSE ;
+
+OBJ: Fi2_SetPLCClocks
+     CPAR:
+         P0  = OprClkControl
+         P1  = OprClkDayOfWeek
+         P2  = OprClkMonth
+         P3  = OprClkDay
+         P4  = OprClkYear
+         P5  = OprClkHour
+         P6  = OprClkMin
+         P7  = OprClkSec
+     #CFV: IF P0 == 2048 : Q1;ELSE Q0;
+     CFV: ELSE Q1;
+     OPAR:
+    # Operator tags
+         P0  = OprClkControl
+         P1  = OprClkDayOfWeek
+         P2  = OprClkMonth
+         P3  = OprClkDay
+         P4  = OprClkYear
+         P5  = OprClkHour
+         P6  = OprClkMin
+         P7  = OprClkSec
+    # PLC
+         P8  = Fi2_WrtClkControl
+         P9  = Fi2_WrtClkDayOfWeek
+         P10 = Fi2_WrtClkMonth
+         P11 = Fi2_WrtClkDay
+         P12 = Fi2_WrtClkYear
+         P13 = Fi2_WrtClkHour
+         P14 = Fi2_WrtClkMin
+         P15 = Fi2_WrtClkSec
+     # PLC
+     OFV0:  P9  = IF S1 : P1+1; ELSE ;
+     OFV1:  P10 = IF S2 : P2; ELSE ;
+     OFV2:  P11 = IF S3 : P3; ELSE ;
+     OFV3:  P12 = IF S4 : P4; ELSE ;
+     OFV4:  P13 = IF S5 : P5; ELSE ;
+     OFV5:  P14 = IF S6 : P6; ELSE ;
+     OFV6:  P15 = IF S7 : P7; ELSE ;
+     OFV7:  P8  = IF S0 : P0; ELSE ;
+
+OBJ: Fi3_SetPLCClocks
+     CPAR:
+         P0  = OprClkControl
+         P1  = OprClkDayOfWeek
+         P2  = OprClkMonth
+         P3  = OprClkDay
+         P4  = OprClkYear
+         P5  = OprClkHour
+         P6  = OprClkMin
+         P7  = OprClkSec
+     #CFV: IF P0 == 2048 : Q1;ELSE Q0;
+     CFV: ELSE Q1;
+     OPAR:
+    # Operator tags
+         P0  = OprClkControl
+         P1  = OprClkDayOfWeek
+         P2  = OprClkMonth
+         P3  = OprClkDay
+         P4  = OprClkYear
+         P5  = OprClkHour
+         P6  = OprClkMin
+         P7  = OprClkSec
+    # PLC
+         P8  = Fi3_WrtClkControl
+         P9  = Fi3_WrtClkDayOfWeek
+         P10 = Fi3_WrtClkMonth
+         P11 = Fi3_WrtClkDay
+         P12 = Fi3_WrtClkYear
+         P13 = Fi3_WrtClkHour
+         P14 = Fi3_WrtClkMin
+         P15 = Fi3_WrtClkSec
+     # PLC
+     OFV0:  P9  = IF S1 : P1+1; ELSE ;
+     OFV1:  P10 = IF S2 : P2; ELSE ;
+     OFV2:  P11 = IF S3 : P3; ELSE ;
+     OFV3:  P12 = IF S4 : P4; ELSE ;
+     OFV4:  P13 = IF S5 : P5; ELSE ;
+     OFV5:  P14 = IF S6 : P6; ELSE ;
+     OFV6:  P15 = IF S7 : P7; ELSE ;
+     OFV7:  P8  = IF S0 : P0; ELSE ;
+
+
+OBJ: Fi_CopyClock
+     CPAR:
+   P0 = Fi_PLCClkDayOfWeek
+   P1 = Fi_PLCClkMonth
+   P2 = Fi_PLCClkDay
+   P3 = Fi_PLCClkYear
+   P4 = Fi_PLCClkHour
+   P5 = Fi_PLCClkMin
+   P6 = Fi_PLCClkSec
+   P7 = Fi_PLCClkSet
+   P8 = Fi_PLC_CommOK
+     CFV: IF P8 && !(S8&3): Q1; ELSE Q0;
+     OPAR:
+   P0  = Fi_PLCClkDayOfWeek
+   P1  = Fi_PLCClkMonth
+   P2  = Fi_PLCClkDay
+   P3  = Fi_PLCClkYear
+   P4  = Fi_PLCClkHour
+   P5  = Fi_PLCClkMin
+   P6  = Fi_PLCClkSec
+   P7  = Fi_PLCClkSet
+   P8  = PLCClkDayOfWeek
+   P9  = PLCClkMonth
+   P10 = PLCClkDay
+   P11 = PLCClkYear
+   P12 = PLCClkHour
+   P13 = PLCClkMin
+   P14 = PLCClkSec
+   P15 = CLK_TSET
+     OFV0:  P8  = ELSE P0;
+     OFV1:  P9  = ELSE P1;
+     OFV2:  P10 = ELSE P2;
+     OFV3:  P11 = ELSE P3;
+     OFV4:  P12 = ELSE P4;
+     OFV5:  P13 = ELSE P5;
+     OFV6:  P14 = ELSE P6;
+     OFV7:  P15 = IF (P0!=0) && (P1!=0) && (P2!=0) && (S7==3) : P7; ELSE ;
+
+OBJ: Fi2_CopyClock
+     CPAR:
+   P0 = Fi2_PLCClkDayOfWeek
+   P1 = Fi2_PLCClkMonth
+   P2 = Fi2_PLCClkDay
+   P3 = Fi2_PLCClkYear
+   P4 = Fi2_PLCClkHour
+   P5 = Fi2_PLCClkMin
+   P6 = Fi2_PLCClkSec
+   P7 = Fi2_PLCClkSet
+   P8 = Fi_PLC_CommOK
+   P9 = Fi2_PLC_CommOK
+     CFV: IF !P8 && !(S8&3) && P9 && !(S9&3): Q1; ELSE Q0;
+     OPAR:
+   P0  = Fi2_PLCClkDayOfWeek
+   P1  = Fi2_PLCClkMonth
+   P2  = Fi2_PLCClkDay
+   P3  = Fi2_PLCClkYear
+   P4  = Fi2_PLCClkHour
+   P5  = Fi2_PLCClkMin
+   P6  = Fi2_PLCClkSec
+   P7  = Fi2_PLCClkSet
+   P8  = PLCClkDayOfWeek
+   P9  = PLCClkMonth
+   P10 = PLCClkDay
+   P11 = PLCClkYear
+   P12 = PLCClkHour
+   P13 = PLCClkMin
+   P14 = PLCClkSec
+   P15 = CLK_TSET
+     OFV0:  P8  = ELSE P0;
+     OFV1:  P9  = ELSE P1;
+     OFV2:  P10 = ELSE P2;
+     OFV3:  P11 = ELSE P3;
+     OFV4:  P12 = ELSE P4;
+     OFV5:  P13 = ELSE P5;
+     OFV6:  P14 = ELSE P6;
+     OFV7:  P15 = IF (P0!=0) && (P1!=0) && (P2!=0) && (S7==3) : P7; ELSE ;
+
+OBJ: Fi3_CopyClock
+     CPAR:
+   P0 = Fi3_PLCClkDayOfWeek
+   P1 = Fi3_PLCClkMonth
+   P2 = Fi3_PLCClkDay
+   P3 = Fi3_PLCClkYear
+   P4 = Fi3_PLCClkHour
+   P5 = Fi3_PLCClkMin
+   P6 = Fi3_PLCClkSec
+   P7 = Fi3_PLCClkSet
+   P8 = Fi_PLC_CommOK
+   P9 = Fi2_PLC_CommOK
+   P10= Fi3_PLC_CommOK
+     CFV: IF !P8 && !(S8&3) && !P9 && !(S9&3) && P10 && !(S10&3): Q1; ELSE Q0;
+     OPAR:
+   P0  = Fi3_PLCClkDayOfWeek
+   P1  = Fi3_PLCClkMonth
+   P2  = Fi3_PLCClkDay
+   P3  = Fi3_PLCClkYear
+   P4  = Fi3_PLCClkHour
+   P5  = Fi3_PLCClkMin
+   P6  = Fi3_PLCClkSec
+   P7  = Fi3_PLCClkSet
+   P8  = PLCClkDayOfWeek
+   P9  = PLCClkMonth
+   P10 = PLCClkDay
+   P11 = PLCClkYear
+   P12 = PLCClkHour
+   P13 = PLCClkMin
+   P14 = PLCClkSec
+   P15 = CLK_TSET
+     OFV0:  P8  = ELSE P0;
+     OFV1:  P9  = ELSE P1;
+     OFV2:  P10 = ELSE P2;
+     OFV3:  P11 = ELSE P3;
+     OFV4:  P12 = ELSE P4;
+     OFV5:  P13 = ELSE P5;
+     OFV6:  P14 = ELSE P6;
+     OFV7:  P15 = IF (P0!=0) && (P1!=0) && (P2!=0) && (S7==3) : P7; ELSE ;
+
+
+# Syncronize PC to clock to PLC clock if Difference > 2s
+# Convert Daily time to seconds and compare it
+
+OBJ: PCClockSync
+     CPAR:
+   P0 = PLCClkMonth
+   P1 = PLCClkDay
+   P2 = PLCClkYear
+   P3 = PLCClkHour
+   P4 = PLCClkMin
+   P5 = PLCClkSec
+     CFV: IF (P0!=0) && (P1!=0) && (S5 == 3) : Q1; ELSE Q0;
+     OPAR:
+   P0  = PLCClkMonth
+   P1  = PLCClkDay
+   P2  = PLCClkYear
+   P3  = PLCClkHour
+   P4  = PLCClkMin
+   P5  = PLCClkSec
+   P6  = SysClkMonth
+   P7  = SysClkDay
+   P8  = SysClkYear
+   P9  = SysClkHour
+   P10 = SysClkMin
+   P11 = SysClkSec
+   P12 = CLK_TSET
+     # If (10 < DailyPLCTimeInSec < (86400-10)) and PLCDate!=PCDate then Set PC Time
+     OFV0:  P12  = IF ((10 < (P3*60+P4)*60+P5) && ((P3*60+P4)*60+P5 < (86400-10))) && \
+                ((P0!=P6) || (P1!=P7) || ((ABS(P2-P8)!=0) && ((ABS(P2-P8)!=100)))) : 1; ELSE ;
+     # If (PLCDate==PCDate) and (10 < DailyPLCTimeInSec < (86400-10)) and
+     #          (ABS(DailyPLCTimeInSec-DailyPCTimeInSec)>3) then Set PC Time
+     OFV1:  P12  = IF ((P0==P6) && (P1==P7) && ((ABS(P2-P8)==0) || ((ABS(P2-P8)==100)))) && \
+                ((10 < (P3*60+P4)*60+P5) && ((P3*60+P4)*60+P5 < (86400-10))) && \
+                ( ABS( ((P3*60+P4)*60+P5) - ((P9*60+P10)*60+P11) ) > 2) : 1; ELSE ;
+
+##//////////////////////////////////////////////////////////////////////////////
+
+
+####################################################################
+#
+# Writing the system start flag
+#
+OBJ: SystemStart
+     CPAR:
+        P0 = ARCH_SRV_STAT
+     CFV: ELSE Q1;
+     OPAR:
+        P0 = SystemStart
+        P1 = ARCH_SRV_STAT
+     OFV0: P0 = IF P1 : 1; ELSE ;
+
+
+#/////////////////////////////////////////////////////////////////////////////
+
+## Set MBT_PRIO to 14 if MBTCP started or MBT_PRIO==19
+#OBJ: MBTCP_PRIO
+#    CPAR:
+#       P0 = MBTCP_SRV_STAT
+#       P1 = MBT_PRIO
+#    CFV: IF (((S0&3)==3) && (P0==3)) || (((S1&3)==3) && (P1==19)): Q1; ELSE Q0;
+#    OPAR:
+#       P0 = MBT_PRIO
+#    OFV0: P0= ELSE 14;
+
+#####################################################################
+##
+## MODBUS+, MBTCP, TIMER restart
+##
+OBJ: MBPTaskStop
+    CPAR:
+        P0 = CLK_DIFF
+    CFV: IF (P0<-30 || P0>300) : Q1;ELSE Q0;
+    OPAR:
+       P0= Task_Restart01
+       P1= MBPLUS_SRV_LNCH
+       P2= MBPLUS_SRV_STAT
+    # If any MB+ is running must be stopped when the clock is
+    # changed backwards more than 30 seconds or forward more than 5 minutes
+    OFV0: P1 = IF P2 : 0;ELSE;
+    OFV1: P0 = IF P2 : 1;ELSE;
+
+OBJ: MBPTaskStart
+    CPAR:
+       P0 = MBPLUS_SRV_STAT
+    CFV: ELSE Q1;
+    OPAR:
+       P0 = Task_Restart01
+       P1 = MBPLUS_SRV_LNCH
+    OFV0: P1 = IF P0 && !P1: 1; ELSE;
+    OFV1: P0 = ELSE 0;
+
+OBJ: MBTTaskStop
+    CPAR:
+        P0 = CLK_DIFF
+    CFV: IF (P0<-30 || P0>300) : Q1;ELSE Q0;
+    OPAR:
+       P0= Task_Restart02
+       P1= MBTCP_SRV_LNCH
+       P2= MBTCP_SRV_STAT
+    # If any MB+ is running must be stopped when the clock is
+    # changed backwards more than 30 seconds or forward more than 5 minutes
+    OFV0: P1 = IF P2 : 0;ELSE;
+    OFV1: P0 = IF P2 : 1;ELSE;
+
+OBJ: MBTTaskStart
+    CPAR:
+       P0 = MBTCP_SRV_STAT
+    CFV: ELSE Q1;
+    OPAR:
+       P0 = Task_Restart02
+       P1 = MBTCP_SRV_LNCH
+    OFV0: P1 = IF P0 && !P1: 1; ELSE;
+    OFV1: P0 = ELSE 0;
+
+OBJ: TimerTaskStop
+    CPAR:
+        P0 = CLK_DIFF
+    CFV: IF (P0<-30 || P0>300) : Q1;ELSE Q0;
+    OPAR:
+       P0= Task_Restart03
+       P1= TIM_SRV_LNCH
+       P2= TIM_SRV_STAT
+    OFV0: P1 = IF P2 : 0;ELSE;
+    OFV1: P0 = IF P2 : 1;ELSE;
+
+OBJ: TimerTaskStart
+    CPAR:
+       P0 = TIM_SRV_STAT
+    CFV: ELSE Q1;
+    OPAR:
+       P0 = Task_Restart03
+       P1 = TIM_SRV_LNCH
+    OFV0: P1 = IF P0 && !P1: 1; ELSE;
+    OFV1: P0 = ELSE 0;
+
+
+##########################################################################
+#
+# START/STOP Monitor on other node
+#
+OBJ: MON1_START
+   CPAR:
+      P0 = MON1_START
+   CFV:   ELSE Q1;
+   OPAR:
+      P0 = MON1_START
+      P1 = MON1_SRV_LNCH
+      P2 = EVVI1_SRV_LNCH
+   OFV0:   P1 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+   OFV1:   P2 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+
+OBJ: MON2_START
+   CPAR:
+      P0 = MON2_START
+   CFV:   ELSE Q1;
+   OPAR:
+      P0 = MON2_START
+      P1 = MON2_SRV_LNCH
+      P2 = EVVI2_SRV_LNCH
+   OFV0:   P1 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+   OFV1:   P2 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+
+OBJ: MON3_START
+   CPAR:
+      P0 = MON3_START
+   CFV:   ELSE Q1;
+   OPAR:
+      P0 = MON3_START
+      P1 = MON3_SRV_LNCH
+      P2 = EVVI3_SRV_LNCH
+   OFV0:   P1 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+   OFV1:   P2 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+
+OBJ: MON4_START
+   CPAR:
+      P0 = MON4_START
+   CFV:   ELSE Q1;
+   OPAR:
+      P0 = MON4_START
+      P1 = MON4_SRV_LNCH
+      P2 = EVVI4_SRV_LNCH
+   OFV0:   P1 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+   OFV1:   P2 = IF P0 == 1 : 1; IF P0 == 2 : 0; ELSE;
+
+
+
+###########################################################################
+##
+## Create SRV_Live signal (Living server for events LSB: server1 etc.)
+##
+#OBJ: SRV_Live
+#   CPAR:
+#      P0 = SRV1_PRIO
+#      P1 = SRV2_PRIO
+#      P2 = SRV3_PRIO
+#      P3 = SRV4_PRIO
+#   CFV:   ELSE Q1;
+#   OPAR:
+#      P0 = SRV_Live
+#      P1 = SRV1_PRIO
+#      P2 = SRV2_PRIO
+#      P3 = SRV3_PRIO
+#      P4 = SRV4_PRIO
+#   OFV0:   P0 = IF S1 && P1 : P0 | 0x0001; IF S1 && !P1 : P0 & ~(0x0001); ELSE;
+#   OFV1:   P0 = IF S2 && P2 : P0 | 0x0002; IF S2 && !P2 : P0 & ~(0x0002); ELSE;
+#   OFV2:   P0 = IF S3 && P3 : P0 | 0x0004; IF S3 && !P3 : P0 & ~(0x0004); ELSE;
+#   OFV3:   P0 = IF S4 && P4 : P0 | 0x0008; IF S4 && !P4 : P0 & ~(0x0008); ELSE;
+#
+##//////////////////////////////////////////////////////////////////////////////
+
+
+#####################################################################
+##
+## Formulas for the logger tables
+##
+
+
+#####################################################################
+##
+## Mark/unmark the tables
+##
+OBJ: LoggerTableSelect
+    CPAR:
+        P0 = T_LoggerGlbSet
+    CFV: ELSE Q1;
+     OPAR:
+        P0 = T_LoggerGlbSet
+        P1 = T_Tbl01Selected
+        P2 = T_Tbl02Selected
+        P3 = T_Tbl03Selected
+        P4 = T_Tbl04Selected
+        P5 = T_Tbl05Selected
+        P6 = T_Tbl06Selected
+        P7 = T_Tbl07Selected
+        P8 = T_Tbl08Selected
+        P9 = T_Tbl09Selected
+        P10= T_Tbl10Selected
+        P11= T_Tbl11Selected
+        P12= T_Tbl12Selected
+        P13= T_Tbl13Selected
+        P14= T_Tbl14Selected
+        P15= T_Tbl15Selected
+        P16= T_Tbl16Selected
+        P17= T_Tbl17Selected
+        P18= T_Tbl18Selected
+        P19= T_Tbl19Selected
+        P20= T_Tbl20Selected
+        P21= T_Tbl21Selected
+        P22= T_Tbl22Selected
+        P23= T_Tbl23Selected
+        P24= T_Tbl24Selected
+        P25= T_Tbl25Selected
+        P26= T_Tbl26Selected
+        P27= T_Tbl27Selected
+        P28= T_Tbl28Selected
+        P29= T_Tbl29Selected
+        P30= T_Tbl30Selected
+  OFV0: P1 = ELSE P0;
+  OFV1: P2 = ELSE P0;
+  OFV2: P3 = ELSE P0;
+  OFV3: P4 = ELSE P0;
+  OFV4: P5 = ELSE P0;
+  OFV5: P6 = ELSE P0;
+  OFV6: P7 = ELSE P0;
+  OFV7: P8 = ELSE P0;
+  OFV8: P9 = ELSE P0;
+  OFV9: P10= ELSE P0;
+  OFV10: P11= ELSE P0;
+  OFV11: P12= ELSE P0;
+  OFV12: P13= ELSE P0;
+  OFV13: P14= ELSE P0;
+  OFV14: P15= ELSE P0;
+  OFV15: P16= ELSE P0;
+  OFV16: P17= ELSE P0;
+  OFV17: P18= ELSE P0;
+  OFV18: P19= ELSE P0;
+  OFV19: P20= ELSE P0;
+  OFV20: P21= ELSE P0;
+  OFV21: P22= ELSE P0;
+  OFV22: P23= ELSE P0;
+  OFV23: P24= ELSE P0;
+  OFV24: P25= ELSE P0;
+  OFV25: P26= ELSE P0;
+  OFV26: P27= ELSE P0;
+  OFV27: P28= ELSE P0;
+  OFV28: P29= ELSE P0;
+  OFV29: P30= ELSE P0;
+
+
+#####################################################################
+##
+## Setting the day selector
+## If the day selector is 0, it will be set to -1
+##
+OBJ: LoggerDaySelector
+    CPAR:
+        P0  = T_Abs01Day
+        P1  = T_Abs02Day
+        P2  = T_Abs03Day
+        P3  = T_Abs04Day
+        P4  = T_Abs05Day
+        P5  = T_Abs06Day
+        P6  = T_Abs07Day
+        P7  = T_Abs08Day
+        P8  = T_Abs09Day
+        P9  = T_Abs10Day
+        P10 = T_Tbl01StartDay
+        P11 = T_Tbl02StartDay
+        P12 = T_Tbl03StartDay
+        P13 = T_Tbl04StartDay
+        P14 = T_Tbl05StartDay
+        P15 = T_Tbl06StartDay
+        P16 = T_Tbl07StartDay
+        P17 = T_Tbl08StartDay
+        P18 = T_Tbl09StartDay
+        P19 = T_Tbl10StartDay
+        P20 = T_Tbl11StartDay
+        P21 = T_Tbl12StartDay
+        P22 = T_Tbl13StartDay
+        P23 = T_Tbl14StartDay
+        P24 = T_Tbl15StartDay
+        P25 = T_Tbl16StartDay
+        P26 = T_Tbl17StartDay
+        P27 = T_Tbl18StartDay
+        P28 = T_Tbl19StartDay
+        P29 = T_Tbl20StartDay
+        P30 = T_Tbl21StartDay
+        P31 = T_Tbl22StartDay
+        P32 = T_Tbl23StartDay
+        P33 = T_Tbl24StartDay
+        P34 = T_Tbl25StartDay
+        P35 = T_Tbl26StartDay
+        P36 = T_Tbl27StartDay
+        P37 = T_Tbl28StartDay
+        P38 = T_Tbl29StartDay
+        P39 = T_Tbl30StartDay
+    CFV: ELSE Q1;
+     OPAR:
+        P0  = T_Abs01Day
+        P1  = T_Abs02Day
+        P2  = T_Abs03Day
+        P3  = T_Abs04Day
+        P4  = T_Abs05Day
+        P5  = T_Abs06Day
+        P6  = T_Abs07Day
+        P7  = T_Abs08Day
+        P8  = T_Abs09Day
+        P9  = T_Abs10Day
+        P10 = T_Tbl01StartDay
+        P11 = T_Tbl02StartDay
+        P12 = T_Tbl03StartDay
+        P13 = T_Tbl04StartDay
+        P14 = T_Tbl05StartDay
+        P15 = T_Tbl06StartDay
+        P16 = T_Tbl07StartDay
+        P17 = T_Tbl08StartDay
+        P18 = T_Tbl09StartDay
+        P19 = T_Tbl10StartDay
+        P20 = T_Tbl11StartDay
+        P21 = T_Tbl12StartDay
+        P22 = T_Tbl13StartDay
+        P23 = T_Tbl14StartDay
+        P24 = T_Tbl15StartDay
+        P25 = T_Tbl16StartDay
+        P26 = T_Tbl17StartDay
+        P27 = T_Tbl18StartDay
+        P28 = T_Tbl19StartDay
+        P29 = T_Tbl20StartDay
+        P30 = T_Tbl21StartDay
+        P31 = T_Tbl22StartDay
+        P32 = T_Tbl23StartDay
+        P33 = T_Tbl24StartDay
+        P34 = T_Tbl25StartDay
+        P35 = T_Tbl26StartDay
+        P36 = T_Tbl27StartDay
+        P37 = T_Tbl28StartDay
+        P38 = T_Tbl29StartDay
+        P39 = T_Tbl30StartDay
+  OFV0: P0 = IF P0 == 0 : -1; ELSE ;
+  OFV1: P1 = IF P1 == 0 : -1; ELSE ;
+  OFV2: P2 = IF P2 == 0 : -1; ELSE ;
+  OFV3: P3 = IF P3 == 0 : -1; ELSE ;
+  OFV4: P4 = IF P4 == 0 : -1; ELSE ;
+  OFV5: P5 = IF P5 == 0 : -1; ELSE ;
+  OFV6: P6 = IF P6 == 0 : -1; ELSE ;
+  OFV7: P7 = IF P7 == 0 : -1; ELSE ;
+  OFV8: P8 = IF P8 == 0 : -1; ELSE ;
+  OFV9: P9 = IF P9 == 0 : -1; ELSE ;
+  OFV10: P10= IF P10== 0 : -1; ELSE ;
+  OFV11: P11= IF P11== 0 : -1; ELSE ;
+  OFV12: P12= IF P12== 0 : -1; ELSE ;
+  OFV13: P13= IF P13== 0 : -1; ELSE ;
+  OFV14: P14= IF P14== 0 : -1; ELSE ;
+  OFV15: P15= IF P15== 0 : -1; ELSE ;
+  OFV16: P16= IF P16== 0 : -1; ELSE ;
+  OFV17: P17= IF P17== 0 : -1; ELSE ;
+  OFV18: P18= IF P18== 0 : -1; ELSE ;
+  OFV19: P19= IF P19== 0 : -1; ELSE ;
+  OFV20: P20= IF P20== 0 : -1; ELSE ;
+  OFV21: P21= IF P21== 0 : -1; ELSE ;
+  OFV22: P22= IF P22== 0 : -1; ELSE ;
+  OFV23: P23= IF P23== 0 : -1; ELSE ;
+  OFV24: P24= IF P24== 0 : -1; ELSE ;
+  OFV25: P25= IF P25== 0 : -1; ELSE ;
+  OFV26: P26= IF P26== 0 : -1; ELSE ;
+  OFV27: P27= IF P27== 0 : -1; ELSE ;
+  OFV28: P28= IF P28== 0 : -1; ELSE ;
+  OFV29: P29= IF P29== 0 : -1; ELSE ;
+  OFV30: P30= IF P30== 0 : -1; ELSE ;
+  OFV31: P31= IF P31== 0 : -1; ELSE ;
+  OFV32: P32= IF P32== 0 : -1; ELSE ;
+  OFV33: P33= IF P33== 0 : -1; ELSE ;
+  OFV34: P34= IF P34== 0 : -1; ELSE ;
+  OFV35: P35= IF P35== 0 : -1; ELSE ;
+  OFV36: P36= IF P36== 0 : -1; ELSE ;
+  OFV37: P37= IF P37== 0 : -1; ELSE ;
+  OFV38: P38= IF P38== 0 : -1; ELSE ;
+  OFV39: P39= IF P39== 0 : -1; ELSE ;
+
+
+#####################################################################
+##
+## Decrementing the month selector
+##
+OBJ: LoggerTableMonth
+    CPAR:
+        P0  = SystemStart
+        P1  = T_Abs01Month
+        P2  = T_Abs02Month
+        P3  = T_Abs03Month
+        P4  = T_Abs04Month
+        P5  = T_Abs05Month
+        P6  = T_Abs06Month
+        P7  = T_Abs07Month
+        P8  = T_Abs08Month
+        P9  = T_Abs09Month
+        P10 = T_Abs10Month
+        P11 = T_Tbl01StartMonth
+        P12 = T_Tbl02StartMonth
+        P13 = T_Tbl03StartMonth
+        P14 = T_Tbl04StartMonth
+        P15 = T_Tbl05StartMonth
+        P16 = T_Tbl06StartMonth
+        P17 = T_Tbl07StartMonth
+        P18 = T_Tbl08StartMonth
+        P19 = T_Tbl09StartMonth
+        P20 = T_Tbl10StartMonth
+        P21 = T_Tbl11StartMonth
+        P22 = T_Tbl12StartMonth
+        P23 = T_Tbl13StartMonth
+        P24 = T_Tbl14StartMonth
+        P25 = T_Tbl15StartMonth
+        P26 = T_Tbl16StartMonth
+        P27 = T_Tbl17StartMonth
+        P28 = T_Tbl18StartMonth
+        P29 = T_Tbl19StartMonth
+        P30 = T_Tbl20StartMonth
+        P31 = T_Tbl21StartMonth
+        P32 = T_Tbl22StartMonth
+        P33 = T_Tbl23StartMonth
+        P34 = T_Tbl24StartMonth
+        P35 = T_Tbl25StartMonth
+        P36 = T_Tbl26StartMonth
+        P37 = T_Tbl27StartMonth
+        P38 = T_Tbl28StartMonth
+        P39 = T_Tbl29StartMonth
+        P40 = T_Tbl30StartMonth
+    CFV: IF S0 : Q0; ELSE Q1;
+     OPAR:
+        P0  = T_Abs01Month
+        P1  = T_Abs02Month
+        P2  = T_Abs03Month
+        P3  = T_Abs04Month
+        P4  = T_Abs05Month
+        P5  = T_Abs06Month
+        P6  = T_Abs07Month
+        P7  = T_Abs08Month
+        P8  = T_Abs09Month
+        P9  = T_Abs10Month
+        P10 = T_Tbl01StartMonth
+        P11 = T_Tbl02StartMonth
+        P12 = T_Tbl03StartMonth
+        P13 = T_Tbl04StartMonth
+        P14 = T_Tbl05StartMonth
+        P15 = T_Tbl06StartMonth
+        P16 = T_Tbl07StartMonth
+        P17 = T_Tbl08StartMonth
+        P18 = T_Tbl09StartMonth
+        P19 = T_Tbl10StartMonth
+        P20 = T_Tbl11StartMonth
+        P21 = T_Tbl12StartMonth
+        P22 = T_Tbl13StartMonth
+        P23 = T_Tbl14StartMonth
+        P24 = T_Tbl15StartMonth
+        P25 = T_Tbl16StartMonth
+        P26 = T_Tbl17StartMonth
+        P27 = T_Tbl18StartMonth
+        P28 = T_Tbl19StartMonth
+        P29 = T_Tbl20StartMonth
+        P30 = T_Tbl21StartMonth
+        P31 = T_Tbl22StartMonth
+        P32 = T_Tbl23StartMonth
+        P33 = T_Tbl24StartMonth
+        P34 = T_Tbl25StartMonth
+        P35 = T_Tbl26StartMonth
+        P36 = T_Tbl27StartMonth
+        P37 = T_Tbl28StartMonth
+        P38 = T_Tbl29StartMonth
+        P39 = T_Tbl30StartMonth
+  OFV0: P0 = IF (S0 & 03) && (P0 != -1) : P0-1; ELSE ;
+  OFV1: P1 = IF (S1 & 03) && (P1 != -1) : P1-1; ELSE ;
+  OFV2: P2 = IF (S2 & 03) && (P2 != -1) : P2-1; ELSE ;
+  OFV3: P3 = IF (S3 & 03) && (P3 != -1) : P3-1; ELSE ;
+  OFV4: P4 = IF (S4 & 03) && (P4 != -1) : P4-1; ELSE ;
+  OFV5: P5 = IF (S5 & 03) && (P5 != -1) : P5-1; ELSE ;
+  OFV6: P6 = IF (S6 & 03) && (P6 != -1) : P6-1; ELSE ;
+  OFV7: P7 = IF (S7 & 03) && (P7 != -1) : P7-1; ELSE ;
+  OFV8: P8 = IF (S8 & 03) && (P8 != -1) : P8-1; ELSE ;
+  OFV9: P9 = IF (S9 & 03) && (P9 != -1) : P9-1; ELSE ;
+  OFV10: P10= IF (S10 & 03) && (P10 != -1) : P10-1; ELSE ;
+  OFV11: P11= IF (S11 & 03) && (P11 != -1) : P11-1; ELSE ;
+  OFV12: P12= IF (S12 & 03) && (P12 != -1) : P12-1; ELSE ;
+  OFV13: P13= IF (S13 & 03) && (P13 != -1) : P13-1; ELSE ;
+  OFV14: P14= IF (S14 & 03) && (P14 != -1) : P14-1; ELSE ;
+  OFV15: P15= IF (S15 & 03) && (P15 != -1) : P15-1; ELSE ;
+  OFV16: P16= IF (S16 & 03) && (P16 != -1) : P16-1; ELSE ;
+  OFV17: P17= IF (S17 & 03) && (P17 != -1) : P17-1; ELSE ;
+  OFV18: P18= IF (S18 & 03) && (P18 != -1) : P18-1; ELSE ;
+  OFV19: P19= IF (S19 & 03) && (P19 != -1) : P19-1; ELSE ;
+  OFV20: P20= IF (S20 & 03) && (P20 != -1) : P20-1; ELSE ;
+  OFV21: P21= IF (S21 & 03) && (P21 != -1) : P21-1; ELSE ;
+  OFV22: P22= IF (S22 & 03) && (P22 != -1) : P22-1; ELSE ;
+  OFV23: P23= IF (S23 & 03) && (P23 != -1) : P23-1; ELSE ;
+  OFV24: P24= IF (S24 & 03) && (P24 != -1) : P24-1; ELSE ;
+  OFV25: P25= IF (S25 & 03) && (P25 != -1) : P25-1; ELSE ;
+  OFV26: P26= IF (S26 & 03) && (P26 != -1) : P26-1; ELSE ;
+  OFV27: P27= IF (S27 & 03) && (P27 != -1) : P27-1; ELSE ;
+  OFV28: P28= IF (S28 & 03) && (P28 != -1) : P28-1; ELSE ;
+  OFV29: P29= IF (S29 & 03) && (P29 != -1) : P29-1; ELSE ;
+  OFV30: P30= IF (S30 & 03) && (P30 != -1) : P30-1; ELSE ;
+  OFV31: P31= IF (S31 & 03) && (P31 != -1) : P31-1; ELSE ;
+  OFV32: P32= IF (S32 & 03) && (P32 != -1) : P32-1; ELSE ;
+  OFV33: P33= IF (S33 & 03) && (P33 != -1) : P33-1; ELSE ;
+  OFV34: P34= IF (S34 & 03) && (P34 != -1) : P34-1; ELSE ;
+  OFV35: P35= IF (S35 & 03) && (P35 != -1) : P35-1; ELSE ;
+  OFV36: P36= IF (S36 & 03) && (P36 != -1) : P36-1; ELSE ;
+  OFV37: P37= IF (S37 & 03) && (P37 != -1) : P37-1; ELSE ;
+  OFV38: P38= IF (S38 & 03) && (P38 != -1) : P38-1; ELSE ;
+  OFV39: P39= IF (S39 & 03) && (P39 != -1) : P39-1; ELSE ;
+
+#####################################################################
+##
+## Checking the relative cycle time
+## If the relative cycle time == 0, then must be set to 1
+##
+OBJ: LoggerRelativeChk
+    CPAR:
+        P0  = T_Cyc01CycleHour
+        P1  = T_Cyc01CycleMinute
+        P2  = T_Cyc02CycleHour
+        P3  = T_Cyc02CycleMinute
+        P4  = T_Cyc03CycleHour
+        P5  = T_Cyc03CycleMinute
+        P6  = T_Cyc04CycleHour
+        P7  = T_Cyc04CycleMinute
+        P8  = T_Cyc05CycleHour
+        P9  = T_Cyc05CycleMinute
+        P10 = T_Cyc06CycleHour
+        P11 = T_Cyc06CycleMinute
+        P12 = T_Cyc07CycleHour
+        P13 = T_Cyc07CycleMinute
+        P14 = T_Cyc08CycleHour
+        P15 = T_Cyc08CycleMinute
+        P16 = T_Cyc09CycleHour
+        P17 = T_Cyc09CycleMinute
+        P18 = T_Cyc10CycleHour
+        P19 = T_Cyc10CycleMinute
+        P20 = T_Tbl01CycleHour
+        P21 = T_Tbl01CycleMinute
+        P22 = T_Tbl02CycleHour
+        P23 = T_Tbl02CycleMinute
+        P24 = T_Tbl03CycleHour
+        P25 = T_Tbl03CycleMinute
+        P26 = T_Tbl04CycleHour
+        P27 = T_Tbl04CycleMinute
+        P28 = T_Tbl05CycleHour
+        P29 = T_Tbl05CycleMinute
+        P30 = T_Tbl06CycleHour
+        P31 = T_Tbl06CycleMinute
+        P32 = T_Tbl07CycleHour
+        P33 = T_Tbl07CycleMinute
+        P34 = T_Tbl08CycleHour
+        P35 = T_Tbl08CycleMinute
+        P36 = T_Tbl09CycleHour
+        P37 = T_Tbl09CycleMinute
+        P38 = T_Tbl10CycleHour
+        P39 = T_Tbl10CycleMinute
+        P40 = T_Tbl11CycleHour
+        P41 = T_Tbl11CycleMinute
+        P42 = T_Tbl12CycleHour
+        P43 = T_Tbl12CycleMinute
+        P44 = T_Tbl13CycleHour
+        P45 = T_Tbl13CycleMinute
+        P46 = T_Tbl14CycleHour
+        P47 = T_Tbl14CycleMinute
+        P48 = T_Tbl15CycleHour
+        P49 = T_Tbl15CycleMinute
+        P50 = T_Tbl16CycleHour
+        P51 = T_Tbl16CycleMinute
+        P52 = T_Tbl17CycleHour
+        P53 = T_Tbl17CycleMinute
+        P54 = T_Tbl18CycleHour
+        P55 = T_Tbl18CycleMinute
+        P56 = T_Tbl19CycleHour
+        P57 = T_Tbl19CycleMinute
+        P58 = T_Tbl20CycleHour
+        P59 = T_Tbl20CycleMinute
+        P60 = T_Tbl21CycleHour
+        P61 = T_Tbl21CycleMinute
+        P62 = T_Tbl22CycleHour
+        P63 = T_Tbl22CycleMinute
+        P64 = T_Tbl23CycleHour
+        P65 = T_Tbl23CycleMinute
+        P66 = T_Tbl24CycleHour
+        P67 = T_Tbl24CycleMinute
+        P68 = T_Tbl25CycleHour
+        P69 = T_Tbl25CycleMinute
+        P70 = T_Tbl26CycleHour
+        P71 = T_Tbl26CycleMinute
+        P72 = T_Tbl27CycleHour
+        P73 = T_Tbl27CycleMinute
+        P74 = T_Tbl28CycleHour
+        P75 = T_Tbl28CycleMinute
+        P76 = T_Tbl29CycleHour
+        P77 = T_Tbl29CycleMinute
+        P78 = T_Tbl30CycleHour
+        P79 = T_Tbl30CycleMinute
+    CFV: ELSE Q1;
+     OPAR:
+        P0  = T_Cyc01CycleHour
+        P1  = T_Cyc01CycleMinute
+        P2  = T_Cyc02CycleHour
+        P3  = T_Cyc02CycleMinute
+        P4  = T_Cyc03CycleHour
+        P5  = T_Cyc03CycleMinute
+        P6  = T_Cyc04CycleHour
+        P7  = T_Cyc04CycleMinute
+        P8  = T_Cyc05CycleHour
+        P9  = T_Cyc05CycleMinute
+        P10 = T_Cyc06CycleHour
+        P11 = T_Cyc06CycleMinute
+        P12 = T_Cyc07CycleHour
+        P13 = T_Cyc07CycleMinute
+        P14 = T_Cyc08CycleHour
+        P15 = T_Cyc08CycleMinute
+        P16 = T_Cyc09CycleHour
+        P17 = T_Cyc09CycleMinute
+        P18 = T_Cyc10CycleHour
+        P19 = T_Cyc10CycleMinute
+        P20 = T_Tbl01CycleHour
+        P21 = T_Tbl01CycleMinute
+        P22 = T_Tbl02CycleHour
+        P23 = T_Tbl02CycleMinute
+        P24 = T_Tbl03CycleHour
+        P25 = T_Tbl03CycleMinute
+        P26 = T_Tbl04CycleHour
+        P27 = T_Tbl04CycleMinute
+        P28 = T_Tbl05CycleHour
+        P29 = T_Tbl05CycleMinute
+        P30 = T_Tbl06CycleHour
+        P31 = T_Tbl06CycleMinute
+        P32 = T_Tbl07CycleHour
+        P33 = T_Tbl07CycleMinute
+        P34 = T_Tbl08CycleHour
+        P35 = T_Tbl08CycleMinute
+        P36 = T_Tbl09CycleHour
+        P37 = T_Tbl09CycleMinute
+        P38 = T_Tbl10CycleHour
+        P39 = T_Tbl10CycleMinute
+        P40 = T_Tbl11CycleHour
+        P41 = T_Tbl11CycleMinute
+        P42 = T_Tbl12CycleHour
+        P43 = T_Tbl12CycleMinute
+        P44 = T_Tbl13CycleHour
+        P45 = T_Tbl13CycleMinute
+        P46 = T_Tbl14CycleHour
+        P47 = T_Tbl14CycleMinute
+        P48 = T_Tbl15CycleHour
+        P49 = T_Tbl15CycleMinute
+        P50 = T_Tbl16CycleHour
+        P51 = T_Tbl16CycleMinute
+        P52 = T_Tbl17CycleHour
+        P53 = T_Tbl17CycleMinute
+        P54 = T_Tbl18CycleHour
+        P55 = T_Tbl18CycleMinute
+        P56 = T_Tbl19CycleHour
+        P57 = T_Tbl19CycleMinute
+        P58 = T_Tbl20CycleHour
+        P59 = T_Tbl20CycleMinute
+        P60 = T_Tbl21CycleHour
+        P61 = T_Tbl21CycleMinute
+        P62 = T_Tbl22CycleHour
+        P63 = T_Tbl22CycleMinute
+        P64 = T_Tbl23CycleHour
+        P65 = T_Tbl23CycleMinute
+        P66 = T_Tbl24CycleHour
+        P67 = T_Tbl24CycleMinute
+        P68 = T_Tbl25CycleHour
+        P69 = T_Tbl25CycleMinute
+        P70 = T_Tbl26CycleHour
+        P71 = T_Tbl26CycleMinute
+        P72 = T_Tbl27CycleHour
+        P73 = T_Tbl27CycleMinute
+        P74 = T_Tbl28CycleHour
+        P75 = T_Tbl28CycleMinute
+        P76 = T_Tbl29CycleHour
+        P77 = T_Tbl29CycleMinute
+        P78 = T_Tbl30CycleHour
+        P79 = T_Tbl30CycleMinute
+  OFV0: P1 = IF (P0 == 0) && (P1 == 0) : 1; ELSE ;
+  OFV1: P3 = IF (P2 == 0) && (P3 == 0) : 1; ELSE ;
+  OFV2: P5 = IF (P4 == 0) && (P5 == 0) : 1; ELSE ;
+  OFV3: P7 = IF (P6 == 0) && (P7 == 0) : 1; ELSE ;
+  OFV4: P9 = IF (P8 == 0) && (P9 == 0) : 1; ELSE ;
+  OFV5: P11= IF (P10== 0) && (P11== 0) : 1; ELSE ;
+  OFV6: P13= IF (P12== 0) && (P13== 0) : 1; ELSE ;
+  OFV7: P15= IF (P14== 0) && (P15== 0) : 1; ELSE ;
+  OFV8: P17= IF (P16== 0) && (P17== 0) : 1; ELSE ;
+  OFV9: P19= IF (P18== 0) && (P19== 0) : 1; ELSE ;
+  OFV10: P21= IF (P20== 0) && (P21== 0) : 1; ELSE ;
+  OFV11: P23= IF (P22== 0) && (P23== 0) : 1; ELSE ;
+  OFV12: P25= IF (P24== 0) && (P25== 0) : 1; ELSE ;
+  OFV13: P27= IF (P26== 0) && (P27== 0) : 1; ELSE ;
+  OFV14: P29= IF (P28== 0) && (P29== 0) : 1; ELSE ;
+  OFV15: P31= IF (P30== 0) && (P31== 0) : 1; ELSE ;
+  OFV16: P33= IF (P32== 0) && (P33== 0) : 1; ELSE ;
+  OFV17: P35= IF (P34== 0) && (P35== 0) : 1; ELSE ;
+  OFV18: P37= IF (P36== 0) && (P37== 0) : 1; ELSE ;
+  OFV19: P39= IF (P38== 0) && (P39== 0) : 1; ELSE ;
+  OFV20: P41= IF (P40== 0) && (P41== 0) : 1; ELSE ;
+  OFV21: P43= IF (P42== 0) && (P43== 0) : 1; ELSE ;
+  OFV22: P45= IF (P44== 0) && (P45== 0) : 1; ELSE ;
+  OFV23: P47= IF (P46== 0) && (P47== 0) : 1; ELSE ;
+  OFV24: P49= IF (P48== 0) && (P49== 0) : 1; ELSE ;
+  OFV25: P51= IF (P50== 0) && (P51== 0) : 1; ELSE ;
+  OFV26: P53= IF (P52== 0) && (P53== 0) : 1; ELSE ;
+  OFV27: P55= IF (P54== 0) && (P55== 0) : 1; ELSE ;
+  OFV28: P57= IF (P56== 0) && (P57== 0) : 1; ELSE ;
+  OFV29: P59= IF (P58== 0) && (P59== 0) : 1; ELSE ;
+  OFV30: P61= IF (P60== 0) && (P61== 0) : 1; ELSE ;
+  OFV31: P63= IF (P62== 0) && (P63== 0) : 1; ELSE ;
+  OFV32: P65= IF (P64== 0) && (P65== 0) : 1; ELSE ;
+  OFV33: P67= IF (P66== 0) && (P67== 0) : 1; ELSE ;
+  OFV34: P69= IF (P68== 0) && (P69== 0) : 1; ELSE ;
+  OFV35: P71= IF (P70== 0) && (P71== 0) : 1; ELSE ;
+  OFV36: P73= IF (P72== 0) && (P73== 0) : 1; ELSE ;
+  OFV37: P75= IF (P74== 0) && (P75== 0) : 1; ELSE ;
+  OFV38: P77= IF (P76== 0) && (P77== 0) : 1; ELSE ;
+  OFV39: P79= IF (P78== 0) && (P79== 0) : 1; ELSE ;
+
+
+#####################################################################
+##
+## Triggering the logger T_Tbls
+##
+##
+
+OBJ: LoggerTable01Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl01CycClass01
+    P21= T_Tbl01CycClass02
+    P22= T_Tbl01CycClass03
+    P23= T_Tbl01CycClass04
+    P24= T_Tbl01CycClass05
+    P25= T_Tbl01CycClass06
+    P26= T_Tbl01CycClass07
+    P27= T_Tbl01CycClass08
+    P28= T_Tbl01CycClass09
+    P29= T_Tbl01CycClass10
+    P30= T_Tbl01AbsClass01
+    P31= T_Tbl01AbsClass02
+    P32= T_Tbl01AbsClass03
+    P33= T_Tbl01AbsClass04
+    P34= T_Tbl01AbsClass05
+    P35= T_Tbl01AbsClass06
+    P36= T_Tbl01AbsClass07
+    P37= T_Tbl01AbsClass08
+    P38= T_Tbl01AbsClass09
+    P39= T_Tbl01AbsClass10
+    P40= T_Tbl01Trigger
+    P41= T_Tbl01Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl01SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl01CycClass01
+    P21= T_Tbl01CycClass02
+    P22= T_Tbl01CycClass03
+    P23= T_Tbl01CycClass04
+    P24= T_Tbl01CycClass05
+    P25= T_Tbl01CycClass06
+    P26= T_Tbl01CycClass07
+    P27= T_Tbl01CycClass08
+    P28= T_Tbl01CycClass09
+    P29= T_Tbl01CycClass10
+    P30= T_Tbl01AbsClass01
+    P31= T_Tbl01AbsClass02
+    P32= T_Tbl01AbsClass03
+    P33= T_Tbl01AbsClass04
+    P34= T_Tbl01AbsClass05
+    P35= T_Tbl01AbsClass06
+    P36= T_Tbl01AbsClass07
+    P37= T_Tbl01AbsClass08
+    P38= T_Tbl01AbsClass09
+    P39= T_Tbl01AbsClass10
+    P40= T_Tbl01Trigger
+    P41= T_Tbl01Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl01SendToPrn
+    P44= LoggerTbl01FOpen
+    P45= LoggerTbl01Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable02Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl02CycClass01
+    P21= T_Tbl02CycClass02
+    P22= T_Tbl02CycClass03
+    P23= T_Tbl02CycClass04
+    P24= T_Tbl02CycClass05
+    P25= T_Tbl02CycClass06
+    P26= T_Tbl02CycClass07
+    P27= T_Tbl02CycClass08
+    P28= T_Tbl02CycClass09
+    P29= T_Tbl02CycClass10
+    P30= T_Tbl02AbsClass01
+    P31= T_Tbl02AbsClass02
+    P32= T_Tbl02AbsClass03
+    P33= T_Tbl02AbsClass04
+    P34= T_Tbl02AbsClass05
+    P35= T_Tbl02AbsClass06
+    P36= T_Tbl02AbsClass07
+    P37= T_Tbl02AbsClass08
+    P38= T_Tbl02AbsClass09
+    P39= T_Tbl02AbsClass10
+    P40= T_Tbl02Trigger
+    P41= T_Tbl02Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl02SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl02CycClass01
+    P21= T_Tbl02CycClass02
+    P22= T_Tbl02CycClass03
+    P23= T_Tbl02CycClass04
+    P24= T_Tbl02CycClass05
+    P25= T_Tbl02CycClass06
+    P26= T_Tbl02CycClass07
+    P27= T_Tbl02CycClass08
+    P28= T_Tbl02CycClass09
+    P29= T_Tbl02CycClass10
+    P30= T_Tbl02AbsClass01
+    P31= T_Tbl02AbsClass02
+    P32= T_Tbl02AbsClass03
+    P33= T_Tbl02AbsClass04
+    P34= T_Tbl02AbsClass05
+    P35= T_Tbl02AbsClass06
+    P36= T_Tbl02AbsClass07
+    P37= T_Tbl02AbsClass08
+    P38= T_Tbl02AbsClass09
+    P39= T_Tbl02AbsClass10
+    P40= T_Tbl02Trigger
+    P41= T_Tbl02Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl02SendToPrn
+    P44= LoggerTbl02FOpen
+    P45= LoggerTbl02Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable03Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl03CycClass01
+    P21= T_Tbl03CycClass02
+    P22= T_Tbl03CycClass03
+    P23= T_Tbl03CycClass04
+    P24= T_Tbl03CycClass05
+    P25= T_Tbl03CycClass06
+    P26= T_Tbl03CycClass07
+    P27= T_Tbl03CycClass08
+    P28= T_Tbl03CycClass09
+    P29= T_Tbl03CycClass10
+    P30= T_Tbl03AbsClass01
+    P31= T_Tbl03AbsClass02
+    P32= T_Tbl03AbsClass03
+    P33= T_Tbl03AbsClass04
+    P34= T_Tbl03AbsClass05
+    P35= T_Tbl03AbsClass06
+    P36= T_Tbl03AbsClass07
+    P37= T_Tbl03AbsClass08
+    P38= T_Tbl03AbsClass09
+    P39= T_Tbl03AbsClass10
+    P40= T_Tbl03Trigger
+    P41= T_Tbl03Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl03SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl03CycClass01
+    P21= T_Tbl03CycClass02
+    P22= T_Tbl03CycClass03
+    P23= T_Tbl03CycClass04
+    P24= T_Tbl03CycClass05
+    P25= T_Tbl03CycClass06
+    P26= T_Tbl03CycClass07
+    P27= T_Tbl03CycClass08
+    P28= T_Tbl03CycClass09
+    P29= T_Tbl03CycClass10
+    P30= T_Tbl03AbsClass01
+    P31= T_Tbl03AbsClass02
+    P32= T_Tbl03AbsClass03
+    P33= T_Tbl03AbsClass04
+    P34= T_Tbl03AbsClass05
+    P35= T_Tbl03AbsClass06
+    P36= T_Tbl03AbsClass07
+    P37= T_Tbl03AbsClass08
+    P38= T_Tbl03AbsClass09
+    P39= T_Tbl03AbsClass10
+    P40= T_Tbl03Trigger
+    P41= T_Tbl03Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl03SendToPrn
+    P44= LoggerTbl03FOpen
+    P45= LoggerTbl03Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable04Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl04CycClass01
+    P21= T_Tbl04CycClass02
+    P22= T_Tbl04CycClass03
+    P23= T_Tbl04CycClass04
+    P24= T_Tbl04CycClass05
+    P25= T_Tbl04CycClass06
+    P26= T_Tbl04CycClass07
+    P27= T_Tbl04CycClass08
+    P28= T_Tbl04CycClass09
+    P29= T_Tbl04CycClass10
+    P30= T_Tbl04AbsClass01
+    P31= T_Tbl04AbsClass02
+    P32= T_Tbl04AbsClass03
+    P33= T_Tbl04AbsClass04
+    P34= T_Tbl04AbsClass05
+    P35= T_Tbl04AbsClass06
+    P36= T_Tbl04AbsClass07
+    P37= T_Tbl04AbsClass08
+    P38= T_Tbl04AbsClass09
+    P39= T_Tbl04AbsClass10
+    P40= T_Tbl04Trigger
+    P41= T_Tbl04Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl04SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl04CycClass01
+    P21= T_Tbl04CycClass02
+    P22= T_Tbl04CycClass03
+    P23= T_Tbl04CycClass04
+    P24= T_Tbl04CycClass05
+    P25= T_Tbl04CycClass06
+    P26= T_Tbl04CycClass07
+    P27= T_Tbl04CycClass08
+    P28= T_Tbl04CycClass09
+    P29= T_Tbl04CycClass10
+    P30= T_Tbl04AbsClass01
+    P31= T_Tbl04AbsClass02
+    P32= T_Tbl04AbsClass03
+    P33= T_Tbl04AbsClass04
+    P34= T_Tbl04AbsClass05
+    P35= T_Tbl04AbsClass06
+    P36= T_Tbl04AbsClass07
+    P37= T_Tbl04AbsClass08
+    P38= T_Tbl04AbsClass09
+    P39= T_Tbl04AbsClass10
+    P40= T_Tbl04Trigger
+    P41= T_Tbl04Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl04SendToPrn
+    P44= LoggerTbl04FOpen
+    P45= LoggerTbl04Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable05Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl05CycClass01
+    P21= T_Tbl05CycClass02
+    P22= T_Tbl05CycClass03
+    P23= T_Tbl05CycClass04
+    P24= T_Tbl05CycClass05
+    P25= T_Tbl05CycClass06
+    P26= T_Tbl05CycClass07
+    P27= T_Tbl05CycClass08
+    P28= T_Tbl05CycClass09
+    P29= T_Tbl05CycClass10
+    P30= T_Tbl05AbsClass01
+    P31= T_Tbl05AbsClass02
+    P32= T_Tbl05AbsClass03
+    P33= T_Tbl05AbsClass04
+    P34= T_Tbl05AbsClass05
+    P35= T_Tbl05AbsClass06
+    P36= T_Tbl05AbsClass07
+    P37= T_Tbl05AbsClass08
+    P38= T_Tbl05AbsClass09
+    P39= T_Tbl05AbsClass10
+    P40= T_Tbl05Trigger
+    P41= T_Tbl05Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl05SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl05CycClass01
+    P21= T_Tbl05CycClass02
+    P22= T_Tbl05CycClass03
+    P23= T_Tbl05CycClass04
+    P24= T_Tbl05CycClass05
+    P25= T_Tbl05CycClass06
+    P26= T_Tbl05CycClass07
+    P27= T_Tbl05CycClass08
+    P28= T_Tbl05CycClass09
+    P29= T_Tbl05CycClass10
+    P30= T_Tbl05AbsClass01
+    P31= T_Tbl05AbsClass02
+    P32= T_Tbl05AbsClass03
+    P33= T_Tbl05AbsClass04
+    P34= T_Tbl05AbsClass05
+    P35= T_Tbl05AbsClass06
+    P36= T_Tbl05AbsClass07
+    P37= T_Tbl05AbsClass08
+    P38= T_Tbl05AbsClass09
+    P39= T_Tbl05AbsClass10
+    P40= T_Tbl05Trigger
+    P41= T_Tbl05Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl05SendToPrn
+    P44= LoggerTbl05FOpen
+    P45= LoggerTbl05Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable06Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl06CycClass01
+    P21= T_Tbl06CycClass02
+    P22= T_Tbl06CycClass03
+    P23= T_Tbl06CycClass04
+    P24= T_Tbl06CycClass05
+    P25= T_Tbl06CycClass06
+    P26= T_Tbl06CycClass07
+    P27= T_Tbl06CycClass08
+    P28= T_Tbl06CycClass09
+    P29= T_Tbl06CycClass10
+    P30= T_Tbl06AbsClass01
+    P31= T_Tbl06AbsClass02
+    P32= T_Tbl06AbsClass03
+    P33= T_Tbl06AbsClass04
+    P34= T_Tbl06AbsClass05
+    P35= T_Tbl06AbsClass06
+    P36= T_Tbl06AbsClass07
+    P37= T_Tbl06AbsClass08
+    P38= T_Tbl06AbsClass09
+    P39= T_Tbl06AbsClass10
+    P40= T_Tbl06Trigger
+    P41= T_Tbl06Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl06SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl06CycClass01
+    P21= T_Tbl06CycClass02
+    P22= T_Tbl06CycClass03
+    P23= T_Tbl06CycClass04
+    P24= T_Tbl06CycClass05
+    P25= T_Tbl06CycClass06
+    P26= T_Tbl06CycClass07
+    P27= T_Tbl06CycClass08
+    P28= T_Tbl06CycClass09
+    P29= T_Tbl06CycClass10
+    P30= T_Tbl06AbsClass01
+    P31= T_Tbl06AbsClass02
+    P32= T_Tbl06AbsClass03
+    P33= T_Tbl06AbsClass04
+    P34= T_Tbl06AbsClass05
+    P35= T_Tbl06AbsClass06
+    P36= T_Tbl06AbsClass07
+    P37= T_Tbl06AbsClass08
+    P38= T_Tbl06AbsClass09
+    P39= T_Tbl06AbsClass10
+    P40= T_Tbl06Trigger
+    P41= T_Tbl06Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl06SendToPrn
+    P44= LoggerTbl06FOpen
+    P45= LoggerTbl06Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable07Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl07CycClass01
+    P21= T_Tbl07CycClass02
+    P22= T_Tbl07CycClass03
+    P23= T_Tbl07CycClass04
+    P24= T_Tbl07CycClass05
+    P25= T_Tbl07CycClass06
+    P26= T_Tbl07CycClass07
+    P27= T_Tbl07CycClass08
+    P28= T_Tbl07CycClass09
+    P29= T_Tbl07CycClass10
+    P30= T_Tbl07AbsClass01
+    P31= T_Tbl07AbsClass02
+    P32= T_Tbl07AbsClass03
+    P33= T_Tbl07AbsClass04
+    P34= T_Tbl07AbsClass05
+    P35= T_Tbl07AbsClass06
+    P36= T_Tbl07AbsClass07
+    P37= T_Tbl07AbsClass08
+    P38= T_Tbl07AbsClass09
+    P39= T_Tbl07AbsClass10
+    P40= T_Tbl07Trigger
+    P41= T_Tbl07Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl07SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl07CycClass01
+    P21= T_Tbl07CycClass02
+    P22= T_Tbl07CycClass03
+    P23= T_Tbl07CycClass04
+    P24= T_Tbl07CycClass05
+    P25= T_Tbl07CycClass06
+    P26= T_Tbl07CycClass07
+    P27= T_Tbl07CycClass08
+    P28= T_Tbl07CycClass09
+    P29= T_Tbl07CycClass10
+    P30= T_Tbl07AbsClass01
+    P31= T_Tbl07AbsClass02
+    P32= T_Tbl07AbsClass03
+    P33= T_Tbl07AbsClass04
+    P34= T_Tbl07AbsClass05
+    P35= T_Tbl07AbsClass06
+    P36= T_Tbl07AbsClass07
+    P37= T_Tbl07AbsClass08
+    P38= T_Tbl07AbsClass09
+    P39= T_Tbl07AbsClass10
+    P40= T_Tbl07Trigger
+    P41= T_Tbl07Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl07SendToPrn
+    P44= LoggerTbl07FOpen
+    P45= LoggerTbl07Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable08Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl08CycClass01
+    P21= T_Tbl08CycClass02
+    P22= T_Tbl08CycClass03
+    P23= T_Tbl08CycClass04
+    P24= T_Tbl08CycClass05
+    P25= T_Tbl08CycClass06
+    P26= T_Tbl08CycClass07
+    P27= T_Tbl08CycClass08
+    P28= T_Tbl08CycClass09
+    P29= T_Tbl08CycClass10
+    P30= T_Tbl08AbsClass01
+    P31= T_Tbl08AbsClass02
+    P32= T_Tbl08AbsClass03
+    P33= T_Tbl08AbsClass04
+    P34= T_Tbl08AbsClass05
+    P35= T_Tbl08AbsClass06
+    P36= T_Tbl08AbsClass07
+    P37= T_Tbl08AbsClass08
+    P38= T_Tbl08AbsClass09
+    P39= T_Tbl08AbsClass10
+    P40= T_Tbl08Trigger
+    P41= T_Tbl08Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl08SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl08CycClass01
+    P21= T_Tbl08CycClass02
+    P22= T_Tbl08CycClass03
+    P23= T_Tbl08CycClass04
+    P24= T_Tbl08CycClass05
+    P25= T_Tbl08CycClass06
+    P26= T_Tbl08CycClass07
+    P27= T_Tbl08CycClass08
+    P28= T_Tbl08CycClass09
+    P29= T_Tbl08CycClass10
+    P30= T_Tbl08AbsClass01
+    P31= T_Tbl08AbsClass02
+    P32= T_Tbl08AbsClass03
+    P33= T_Tbl08AbsClass04
+    P34= T_Tbl08AbsClass05
+    P35= T_Tbl08AbsClass06
+    P36= T_Tbl08AbsClass07
+    P37= T_Tbl08AbsClass08
+    P38= T_Tbl08AbsClass09
+    P39= T_Tbl08AbsClass10
+    P40= T_Tbl08Trigger
+    P41= T_Tbl08Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl08SendToPrn
+    P44= LoggerTbl08FOpen
+    P45= LoggerTbl08Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable09Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl09CycClass01
+    P21= T_Tbl09CycClass02
+    P22= T_Tbl09CycClass03
+    P23= T_Tbl09CycClass04
+    P24= T_Tbl09CycClass05
+    P25= T_Tbl09CycClass06
+    P26= T_Tbl09CycClass07
+    P27= T_Tbl09CycClass08
+    P28= T_Tbl09CycClass09
+    P29= T_Tbl09CycClass10
+    P30= T_Tbl09AbsClass01
+    P31= T_Tbl09AbsClass02
+    P32= T_Tbl09AbsClass03
+    P33= T_Tbl09AbsClass04
+    P34= T_Tbl09AbsClass05
+    P35= T_Tbl09AbsClass06
+    P36= T_Tbl09AbsClass07
+    P37= T_Tbl09AbsClass08
+    P38= T_Tbl09AbsClass09
+    P39= T_Tbl09AbsClass10
+    P40= T_Tbl09Trigger
+    P41= T_Tbl09Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl09SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl09CycClass01
+    P21= T_Tbl09CycClass02
+    P22= T_Tbl09CycClass03
+    P23= T_Tbl09CycClass04
+    P24= T_Tbl09CycClass05
+    P25= T_Tbl09CycClass06
+    P26= T_Tbl09CycClass07
+    P27= T_Tbl09CycClass08
+    P28= T_Tbl09CycClass09
+    P29= T_Tbl09CycClass10
+    P30= T_Tbl09AbsClass01
+    P31= T_Tbl09AbsClass02
+    P32= T_Tbl09AbsClass03
+    P33= T_Tbl09AbsClass04
+    P34= T_Tbl09AbsClass05
+    P35= T_Tbl09AbsClass06
+    P36= T_Tbl09AbsClass07
+    P37= T_Tbl09AbsClass08
+    P38= T_Tbl09AbsClass09
+    P39= T_Tbl09AbsClass10
+    P40= T_Tbl09Trigger
+    P41= T_Tbl09Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl09SendToPrn
+    P44= LoggerTbl09FOpen
+    P45= LoggerTbl09Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable10Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl10CycClass01
+    P21= T_Tbl10CycClass02
+    P22= T_Tbl10CycClass03
+    P23= T_Tbl10CycClass04
+    P24= T_Tbl10CycClass05
+    P25= T_Tbl10CycClass06
+    P26= T_Tbl10CycClass07
+    P27= T_Tbl10CycClass08
+    P28= T_Tbl10CycClass09
+    P29= T_Tbl10CycClass10
+    P30= T_Tbl10AbsClass01
+    P31= T_Tbl10AbsClass02
+    P32= T_Tbl10AbsClass03
+    P33= T_Tbl10AbsClass04
+    P34= T_Tbl10AbsClass05
+    P35= T_Tbl10AbsClass06
+    P36= T_Tbl10AbsClass07
+    P37= T_Tbl10AbsClass08
+    P38= T_Tbl10AbsClass09
+    P39= T_Tbl10AbsClass10
+    P40= T_Tbl10Trigger
+    P41= T_Tbl10Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl10SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl10CycClass01
+    P21= T_Tbl10CycClass02
+    P22= T_Tbl10CycClass03
+    P23= T_Tbl10CycClass04
+    P24= T_Tbl10CycClass05
+    P25= T_Tbl10CycClass06
+    P26= T_Tbl10CycClass07
+    P27= T_Tbl10CycClass08
+    P28= T_Tbl10CycClass09
+    P29= T_Tbl10CycClass10
+    P30= T_Tbl10AbsClass01
+    P31= T_Tbl10AbsClass02
+    P32= T_Tbl10AbsClass03
+    P33= T_Tbl10AbsClass04
+    P34= T_Tbl10AbsClass05
+    P35= T_Tbl10AbsClass06
+    P36= T_Tbl10AbsClass07
+    P37= T_Tbl10AbsClass08
+    P38= T_Tbl10AbsClass09
+    P39= T_Tbl10AbsClass10
+    P40= T_Tbl10Trigger
+    P41= T_Tbl10Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl10SendToPrn
+    P44= LoggerTbl10FOpen
+    P45= LoggerTbl10Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable11Trigger
+  CPAR:
+   P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl11CycClass01
+    P21= T_Tbl11CycClass02
+    P22= T_Tbl11CycClass03
+    P23= T_Tbl11CycClass04
+    P24= T_Tbl11CycClass05
+    P25= T_Tbl11CycClass06
+    P26= T_Tbl11CycClass07
+    P27= T_Tbl11CycClass08
+    P28= T_Tbl11CycClass09
+    P29= T_Tbl11CycClass10
+    P30= T_Tbl11AbsClass01
+    P31= T_Tbl11AbsClass02
+    P32= T_Tbl11AbsClass03
+    P33= T_Tbl11AbsClass04
+    P34= T_Tbl11AbsClass05
+    P35= T_Tbl11AbsClass06
+    P36= T_Tbl11AbsClass07
+    P37= T_Tbl11AbsClass08
+    P38= T_Tbl11AbsClass09
+    P39= T_Tbl11AbsClass10
+    P40= T_Tbl11Trigger
+    P41= T_Tbl11Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl11SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl11CycClass01
+    P21= T_Tbl11CycClass02
+    P22= T_Tbl11CycClass03
+    P23= T_Tbl11CycClass04
+    P24= T_Tbl11CycClass05
+    P25= T_Tbl11CycClass06
+    P26= T_Tbl11CycClass07
+    P27= T_Tbl11CycClass08
+    P28= T_Tbl11CycClass09
+    P29= T_Tbl11CycClass10
+    P30= T_Tbl11AbsClass01
+    P31= T_Tbl11AbsClass02
+    P32= T_Tbl11AbsClass03
+    P33= T_Tbl11AbsClass04
+    P34= T_Tbl11AbsClass05
+    P35= T_Tbl11AbsClass06
+    P36= T_Tbl11AbsClass07
+    P37= T_Tbl11AbsClass08
+    P38= T_Tbl11AbsClass09
+    P39= T_Tbl11AbsClass10
+    P40= T_Tbl11Trigger
+    P41= T_Tbl11Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl11SendToPrn
+    P44= LoggerTbl11FOpen
+    P45= LoggerTbl11Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable12Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl12CycClass01
+    P21= T_Tbl12CycClass02
+    P22= T_Tbl12CycClass03
+    P23= T_Tbl12CycClass04
+    P24= T_Tbl12CycClass05
+    P25= T_Tbl12CycClass06
+    P26= T_Tbl12CycClass07
+    P27= T_Tbl12CycClass08
+    P28= T_Tbl12CycClass09
+    P29= T_Tbl12CycClass10
+    P30= T_Tbl12AbsClass01
+    P31= T_Tbl12AbsClass02
+    P32= T_Tbl12AbsClass03
+    P33= T_Tbl12AbsClass04
+    P34= T_Tbl12AbsClass05
+    P35= T_Tbl12AbsClass06
+    P36= T_Tbl12AbsClass07
+    P37= T_Tbl12AbsClass08
+    P38= T_Tbl12AbsClass09
+    P39= T_Tbl12AbsClass10
+    P40= T_Tbl12Trigger
+    P41= T_Tbl12Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl12SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl12CycClass01
+    P21= T_Tbl12CycClass02
+    P22= T_Tbl12CycClass03
+    P23= T_Tbl12CycClass04
+    P24= T_Tbl12CycClass05
+    P25= T_Tbl12CycClass06
+    P26= T_Tbl12CycClass07
+    P27= T_Tbl12CycClass08
+    P28= T_Tbl12CycClass09
+    P29= T_Tbl12CycClass10
+    P30= T_Tbl12AbsClass01
+    P31= T_Tbl12AbsClass02
+    P32= T_Tbl12AbsClass03
+    P33= T_Tbl12AbsClass04
+    P34= T_Tbl12AbsClass05
+    P35= T_Tbl12AbsClass06
+    P36= T_Tbl12AbsClass07
+    P37= T_Tbl12AbsClass08
+    P38= T_Tbl12AbsClass09
+    P39= T_Tbl12AbsClass10
+    P40= T_Tbl12Trigger
+    P41= T_Tbl12Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl12SendToPrn
+    P44= LoggerTbl12FOpen
+    P45= LoggerTbl12Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable13Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl13CycClass01
+    P21= T_Tbl13CycClass02
+    P22= T_Tbl13CycClass03
+    P23= T_Tbl13CycClass04
+    P24= T_Tbl13CycClass05
+    P25= T_Tbl13CycClass06
+    P26= T_Tbl13CycClass07
+    P27= T_Tbl13CycClass08
+    P28= T_Tbl13CycClass09
+    P29= T_Tbl13CycClass10
+    P30= T_Tbl13AbsClass01
+    P31= T_Tbl13AbsClass02
+    P32= T_Tbl13AbsClass03
+    P33= T_Tbl13AbsClass04
+    P34= T_Tbl13AbsClass05
+    P35= T_Tbl13AbsClass06
+    P36= T_Tbl13AbsClass07
+    P37= T_Tbl13AbsClass08
+    P38= T_Tbl13AbsClass09
+    P39= T_Tbl13AbsClass10
+    P40= T_Tbl13Trigger
+    P41= T_Tbl13Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl13SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl13CycClass01
+    P21= T_Tbl13CycClass02
+    P22= T_Tbl13CycClass03
+    P23= T_Tbl13CycClass04
+    P24= T_Tbl13CycClass05
+    P25= T_Tbl13CycClass06
+    P26= T_Tbl13CycClass07
+    P27= T_Tbl13CycClass08
+    P28= T_Tbl13CycClass09
+    P29= T_Tbl13CycClass10
+    P30= T_Tbl13AbsClass01
+    P31= T_Tbl13AbsClass02
+    P32= T_Tbl13AbsClass03
+    P33= T_Tbl13AbsClass04
+    P34= T_Tbl13AbsClass05
+    P35= T_Tbl13AbsClass06
+    P36= T_Tbl13AbsClass07
+    P37= T_Tbl13AbsClass08
+    P38= T_Tbl13AbsClass09
+    P39= T_Tbl13AbsClass10
+    P40= T_Tbl13Trigger
+    P41= T_Tbl13Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl13SendToPrn
+    P44= LoggerTbl13FOpen
+    P45= LoggerTbl13Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable14Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl14CycClass01
+    P21= T_Tbl14CycClass02
+    P22= T_Tbl14CycClass03
+    P23= T_Tbl14CycClass04
+    P24= T_Tbl14CycClass05
+    P25= T_Tbl14CycClass06
+    P26= T_Tbl14CycClass07
+    P27= T_Tbl14CycClass08
+    P28= T_Tbl14CycClass09
+    P29= T_Tbl14CycClass10
+    P30= T_Tbl14AbsClass01
+    P31= T_Tbl14AbsClass02
+    P32= T_Tbl14AbsClass03
+    P33= T_Tbl14AbsClass04
+    P34= T_Tbl14AbsClass05
+    P35= T_Tbl14AbsClass06
+    P36= T_Tbl14AbsClass07
+    P37= T_Tbl14AbsClass08
+    P38= T_Tbl14AbsClass09
+    P39= T_Tbl14AbsClass10
+    P40= T_Tbl14Trigger
+    P41= T_Tbl14Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl14SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl14CycClass01
+    P21= T_Tbl14CycClass02
+    P22= T_Tbl14CycClass03
+    P23= T_Tbl14CycClass04
+    P24= T_Tbl14CycClass05
+    P25= T_Tbl14CycClass06
+    P26= T_Tbl14CycClass07
+    P27= T_Tbl14CycClass08
+    P28= T_Tbl14CycClass09
+    P29= T_Tbl14CycClass10
+    P30= T_Tbl14AbsClass01
+    P31= T_Tbl14AbsClass02
+    P32= T_Tbl14AbsClass03
+    P33= T_Tbl14AbsClass04
+    P34= T_Tbl14AbsClass05
+    P35= T_Tbl14AbsClass06
+    P36= T_Tbl14AbsClass07
+    P37= T_Tbl14AbsClass08
+    P38= T_Tbl14AbsClass09
+    P39= T_Tbl14AbsClass10
+    P40= T_Tbl14Trigger
+    P41= T_Tbl14Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl14SendToPrn
+    P44= LoggerTbl14FOpen
+    P45= LoggerTbl14Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable15Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl15CycClass01
+    P21= T_Tbl15CycClass02
+    P22= T_Tbl15CycClass03
+    P23= T_Tbl15CycClass04
+    P24= T_Tbl15CycClass05
+    P25= T_Tbl15CycClass06
+    P26= T_Tbl15CycClass07
+    P27= T_Tbl15CycClass08
+    P28= T_Tbl15CycClass09
+    P29= T_Tbl15CycClass10
+    P30= T_Tbl15AbsClass01
+    P31= T_Tbl15AbsClass02
+    P32= T_Tbl15AbsClass03
+    P33= T_Tbl15AbsClass04
+    P34= T_Tbl15AbsClass05
+    P35= T_Tbl15AbsClass06
+    P36= T_Tbl15AbsClass07
+    P37= T_Tbl15AbsClass08
+    P38= T_Tbl15AbsClass09
+    P39= T_Tbl15AbsClass10
+    P40= T_Tbl15Trigger
+    P41= T_Tbl15Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl15SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl15CycClass01
+    P21= T_Tbl15CycClass02
+    P22= T_Tbl15CycClass03
+    P23= T_Tbl15CycClass04
+    P24= T_Tbl15CycClass05
+    P25= T_Tbl15CycClass06
+    P26= T_Tbl15CycClass07
+    P27= T_Tbl15CycClass08
+    P28= T_Tbl15CycClass09
+    P29= T_Tbl15CycClass10
+    P30= T_Tbl15AbsClass01
+    P31= T_Tbl15AbsClass02
+    P32= T_Tbl15AbsClass03
+    P33= T_Tbl15AbsClass04
+    P34= T_Tbl15AbsClass05
+    P35= T_Tbl15AbsClass06
+    P36= T_Tbl15AbsClass07
+    P37= T_Tbl15AbsClass08
+    P38= T_Tbl15AbsClass09
+    P39= T_Tbl15AbsClass10
+    P40= T_Tbl15Trigger
+    P41= T_Tbl15Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl15SendToPrn
+    P44= LoggerTbl15FOpen
+    P45= LoggerTbl15Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable16Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl16CycClass01
+    P21= T_Tbl16CycClass02
+    P22= T_Tbl16CycClass03
+    P23= T_Tbl16CycClass04
+    P24= T_Tbl16CycClass05
+    P25= T_Tbl16CycClass06
+    P26= T_Tbl16CycClass07
+    P27= T_Tbl16CycClass08
+    P28= T_Tbl16CycClass09
+    P29= T_Tbl16CycClass10
+    P30= T_Tbl16AbsClass01
+    P31= T_Tbl16AbsClass02
+    P32= T_Tbl16AbsClass03
+    P33= T_Tbl16AbsClass04
+    P34= T_Tbl16AbsClass05
+    P35= T_Tbl16AbsClass06
+    P36= T_Tbl16AbsClass07
+    P37= T_Tbl16AbsClass08
+    P38= T_Tbl16AbsClass09
+    P39= T_Tbl16AbsClass10
+    P40= T_Tbl16Trigger
+    P41= T_Tbl16Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl16SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl16CycClass01
+    P21= T_Tbl16CycClass02
+    P22= T_Tbl16CycClass03
+    P23= T_Tbl16CycClass04
+    P24= T_Tbl16CycClass05
+    P25= T_Tbl16CycClass06
+    P26= T_Tbl16CycClass07
+    P27= T_Tbl16CycClass08
+    P28= T_Tbl16CycClass09
+    P29= T_Tbl16CycClass10
+    P30= T_Tbl16AbsClass01
+    P31= T_Tbl16AbsClass02
+    P32= T_Tbl16AbsClass03
+    P33= T_Tbl16AbsClass04
+    P34= T_Tbl16AbsClass05
+    P35= T_Tbl16AbsClass06
+    P36= T_Tbl16AbsClass07
+    P37= T_Tbl16AbsClass08
+    P38= T_Tbl16AbsClass09
+    P39= T_Tbl16AbsClass10
+    P40= T_Tbl16Trigger
+    P41= T_Tbl16Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl16SendToPrn
+    P44= LoggerTbl16FOpen
+    P45= LoggerTbl16Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable17Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl17CycClass01
+    P21= T_Tbl17CycClass02
+    P22= T_Tbl17CycClass03
+    P23= T_Tbl17CycClass04
+    P24= T_Tbl17CycClass05
+    P25= T_Tbl17CycClass06
+    P26= T_Tbl17CycClass07
+    P27= T_Tbl17CycClass08
+    P28= T_Tbl17CycClass09
+    P29= T_Tbl17CycClass10
+    P30= T_Tbl17AbsClass01
+    P31= T_Tbl17AbsClass02
+    P32= T_Tbl17AbsClass03
+    P33= T_Tbl17AbsClass04
+    P34= T_Tbl17AbsClass05
+    P35= T_Tbl17AbsClass06
+    P36= T_Tbl17AbsClass07
+    P37= T_Tbl17AbsClass08
+    P38= T_Tbl17AbsClass09
+    P39= T_Tbl17AbsClass10
+    P40= T_Tbl17Trigger
+    P41= T_Tbl17Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl17SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl17CycClass01
+    P21= T_Tbl17CycClass02
+    P22= T_Tbl17CycClass03
+    P23= T_Tbl17CycClass04
+    P24= T_Tbl17CycClass05
+    P25= T_Tbl17CycClass06
+    P26= T_Tbl17CycClass07
+    P27= T_Tbl17CycClass08
+    P28= T_Tbl17CycClass09
+    P29= T_Tbl17CycClass10
+    P30= T_Tbl17AbsClass01
+    P31= T_Tbl17AbsClass02
+    P32= T_Tbl17AbsClass03
+    P33= T_Tbl17AbsClass04
+    P34= T_Tbl17AbsClass05
+    P35= T_Tbl17AbsClass06
+    P36= T_Tbl17AbsClass07
+    P37= T_Tbl17AbsClass08
+    P38= T_Tbl17AbsClass09
+    P39= T_Tbl17AbsClass10
+    P40= T_Tbl17Trigger
+    P41= T_Tbl17Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl17SendToPrn
+    P44= LoggerTbl17FOpen
+    P45= LoggerTbl17Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable18Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl18CycClass01
+    P21= T_Tbl18CycClass02
+    P22= T_Tbl18CycClass03
+    P23= T_Tbl18CycClass04
+    P24= T_Tbl18CycClass05
+    P25= T_Tbl18CycClass06
+    P26= T_Tbl18CycClass07
+    P27= T_Tbl18CycClass08
+    P28= T_Tbl18CycClass09
+    P29= T_Tbl18CycClass10
+    P30= T_Tbl18AbsClass01
+    P31= T_Tbl18AbsClass02
+    P32= T_Tbl18AbsClass03
+    P33= T_Tbl18AbsClass04
+    P34= T_Tbl18AbsClass05
+    P35= T_Tbl18AbsClass06
+    P36= T_Tbl18AbsClass07
+    P37= T_Tbl18AbsClass08
+    P38= T_Tbl18AbsClass09
+    P39= T_Tbl18AbsClass10
+    P40= T_Tbl18Trigger
+    P41= T_Tbl18Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl18SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl18CycClass01
+    P21= T_Tbl18CycClass02
+    P22= T_Tbl18CycClass03
+    P23= T_Tbl18CycClass04
+    P24= T_Tbl18CycClass05
+    P25= T_Tbl18CycClass06
+    P26= T_Tbl18CycClass07
+    P27= T_Tbl18CycClass08
+    P28= T_Tbl18CycClass09
+    P29= T_Tbl18CycClass10
+    P30= T_Tbl18AbsClass01
+    P31= T_Tbl18AbsClass02
+    P32= T_Tbl18AbsClass03
+    P33= T_Tbl18AbsClass04
+    P34= T_Tbl18AbsClass05
+    P35= T_Tbl18AbsClass06
+    P36= T_Tbl18AbsClass07
+    P37= T_Tbl18AbsClass08
+    P38= T_Tbl18AbsClass09
+    P39= T_Tbl18AbsClass10
+    P40= T_Tbl18Trigger
+    P41= T_Tbl18Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl18SendToPrn
+    P44= LoggerTbl18FOpen
+    P45= LoggerTbl18Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable19Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl19CycClass01
+    P21= T_Tbl19CycClass02
+    P22= T_Tbl19CycClass03
+    P23= T_Tbl19CycClass04
+    P24= T_Tbl19CycClass05
+    P25= T_Tbl19CycClass06
+    P26= T_Tbl19CycClass07
+    P27= T_Tbl19CycClass08
+    P28= T_Tbl19CycClass09
+    P29= T_Tbl19CycClass10
+    P30= T_Tbl19AbsClass01
+    P31= T_Tbl19AbsClass02
+    P32= T_Tbl19AbsClass03
+    P33= T_Tbl19AbsClass04
+    P34= T_Tbl19AbsClass05
+    P35= T_Tbl19AbsClass06
+    P36= T_Tbl19AbsClass07
+    P37= T_Tbl19AbsClass08
+    P38= T_Tbl19AbsClass09
+    P39= T_Tbl19AbsClass10
+    P40= T_Tbl19Trigger
+    P41= T_Tbl19Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl19SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl19CycClass01
+    P21= T_Tbl19CycClass02
+    P22= T_Tbl19CycClass03
+    P23= T_Tbl19CycClass04
+    P24= T_Tbl19CycClass05
+    P25= T_Tbl19CycClass06
+    P26= T_Tbl19CycClass07
+    P27= T_Tbl19CycClass08
+    P28= T_Tbl19CycClass09
+    P29= T_Tbl19CycClass10
+    P30= T_Tbl19AbsClass01
+    P31= T_Tbl19AbsClass02
+    P32= T_Tbl19AbsClass03
+    P33= T_Tbl19AbsClass04
+    P34= T_Tbl19AbsClass05
+    P35= T_Tbl19AbsClass06
+    P36= T_Tbl19AbsClass07
+    P37= T_Tbl19AbsClass08
+    P38= T_Tbl19AbsClass09
+    P39= T_Tbl19AbsClass10
+    P40= T_Tbl19Trigger
+    P41= T_Tbl19Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl19SendToPrn
+    P44= LoggerTbl19FOpen
+    P45= LoggerTbl19Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable20Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl20CycClass01
+    P21= T_Tbl20CycClass02
+    P22= T_Tbl20CycClass03
+    P23= T_Tbl20CycClass04
+    P24= T_Tbl20CycClass05
+    P25= T_Tbl20CycClass06
+    P26= T_Tbl20CycClass07
+    P27= T_Tbl20CycClass08
+    P28= T_Tbl20CycClass09
+    P29= T_Tbl20CycClass10
+    P30= T_Tbl20AbsClass01
+    P31= T_Tbl20AbsClass02
+    P32= T_Tbl20AbsClass03
+    P33= T_Tbl20AbsClass04
+    P34= T_Tbl20AbsClass05
+    P35= T_Tbl20AbsClass06
+    P36= T_Tbl20AbsClass07
+    P37= T_Tbl20AbsClass08
+    P38= T_Tbl20AbsClass09
+    P39= T_Tbl20AbsClass10
+    P40= T_Tbl20Trigger
+    P41= T_Tbl20Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl20SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl20CycClass01
+    P21= T_Tbl20CycClass02
+    P22= T_Tbl20CycClass03
+    P23= T_Tbl20CycClass04
+    P24= T_Tbl20CycClass05
+    P25= T_Tbl20CycClass06
+    P26= T_Tbl20CycClass07
+    P27= T_Tbl20CycClass08
+    P28= T_Tbl20CycClass09
+    P29= T_Tbl20CycClass10
+    P30= T_Tbl20AbsClass01
+    P31= T_Tbl20AbsClass02
+    P32= T_Tbl20AbsClass03
+    P33= T_Tbl20AbsClass04
+    P34= T_Tbl20AbsClass05
+    P35= T_Tbl20AbsClass06
+    P36= T_Tbl20AbsClass07
+    P37= T_Tbl20AbsClass08
+    P38= T_Tbl20AbsClass09
+    P39= T_Tbl20AbsClass10
+    P40= T_Tbl20Trigger
+    P41= T_Tbl20Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl20SendToPrn
+    P44= LoggerTbl20FOpen
+    P45= LoggerTbl20Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable21Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl21CycClass01
+    P21= T_Tbl21CycClass02
+    P22= T_Tbl21CycClass03
+    P23= T_Tbl21CycClass04
+    P24= T_Tbl21CycClass05
+    P25= T_Tbl21CycClass06
+    P26= T_Tbl21CycClass07
+    P27= T_Tbl21CycClass08
+    P28= T_Tbl21CycClass09
+    P29= T_Tbl21CycClass10
+    P30= T_Tbl21AbsClass01
+    P31= T_Tbl21AbsClass02
+    P32= T_Tbl21AbsClass03
+    P33= T_Tbl21AbsClass04
+    P34= T_Tbl21AbsClass05
+    P35= T_Tbl21AbsClass06
+    P36= T_Tbl21AbsClass07
+    P37= T_Tbl21AbsClass08
+    P38= T_Tbl21AbsClass09
+    P39= T_Tbl21AbsClass10
+    P40= T_Tbl21Trigger
+    P41= T_Tbl21Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl21SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl21CycClass01
+    P21= T_Tbl21CycClass02
+    P22= T_Tbl21CycClass03
+    P23= T_Tbl21CycClass04
+    P24= T_Tbl21CycClass05
+    P25= T_Tbl21CycClass06
+    P26= T_Tbl21CycClass07
+    P27= T_Tbl21CycClass08
+    P28= T_Tbl21CycClass09
+    P29= T_Tbl21CycClass10
+    P30= T_Tbl21AbsClass01
+    P31= T_Tbl21AbsClass02
+    P32= T_Tbl21AbsClass03
+    P33= T_Tbl21AbsClass04
+    P34= T_Tbl21AbsClass05
+    P35= T_Tbl21AbsClass06
+    P36= T_Tbl21AbsClass07
+    P37= T_Tbl21AbsClass08
+    P38= T_Tbl21AbsClass09
+    P39= T_Tbl21AbsClass10
+    P40= T_Tbl21Trigger
+    P41= T_Tbl21Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl21SendToPrn
+    P44= LoggerTbl21FOpen
+    P45= LoggerTbl21Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable22Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl22CycClass01
+    P21= T_Tbl22CycClass02
+    P22= T_Tbl22CycClass03
+    P23= T_Tbl22CycClass04
+    P24= T_Tbl22CycClass05
+    P25= T_Tbl22CycClass06
+    P26= T_Tbl22CycClass07
+    P27= T_Tbl22CycClass08
+    P28= T_Tbl22CycClass09
+    P29= T_Tbl22CycClass10
+    P30= T_Tbl22AbsClass01
+    P31= T_Tbl22AbsClass02
+    P32= T_Tbl22AbsClass03
+    P33= T_Tbl22AbsClass04
+    P34= T_Tbl22AbsClass05
+    P35= T_Tbl22AbsClass06
+    P36= T_Tbl22AbsClass07
+    P37= T_Tbl22AbsClass08
+    P38= T_Tbl22AbsClass09
+    P39= T_Tbl22AbsClass10
+    P40= T_Tbl22Trigger
+    P41= T_Tbl22Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl22SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl22CycClass01
+    P21= T_Tbl22CycClass02
+    P22= T_Tbl22CycClass03
+    P23= T_Tbl22CycClass04
+    P24= T_Tbl22CycClass05
+    P25= T_Tbl22CycClass06
+    P26= T_Tbl22CycClass07
+    P27= T_Tbl22CycClass08
+    P28= T_Tbl22CycClass09
+    P29= T_Tbl22CycClass10
+    P30= T_Tbl22AbsClass01
+    P31= T_Tbl22AbsClass02
+    P32= T_Tbl22AbsClass03
+    P33= T_Tbl22AbsClass04
+    P34= T_Tbl22AbsClass05
+    P35= T_Tbl22AbsClass06
+    P36= T_Tbl22AbsClass07
+    P37= T_Tbl22AbsClass08
+    P38= T_Tbl22AbsClass09
+    P39= T_Tbl22AbsClass10
+    P40= T_Tbl22Trigger
+    P41= T_Tbl22Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl22SendToPrn
+    P44= LoggerTbl22FOpen
+    P45= LoggerTbl22Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable23Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl23CycClass01
+    P21= T_Tbl23CycClass02
+    P22= T_Tbl23CycClass03
+    P23= T_Tbl23CycClass04
+    P24= T_Tbl23CycClass05
+    P25= T_Tbl23CycClass06
+    P26= T_Tbl23CycClass07
+    P27= T_Tbl23CycClass08
+    P28= T_Tbl23CycClass09
+    P29= T_Tbl23CycClass10
+    P30= T_Tbl23AbsClass01
+    P31= T_Tbl23AbsClass02
+    P32= T_Tbl23AbsClass03
+    P33= T_Tbl23AbsClass04
+    P34= T_Tbl23AbsClass05
+    P35= T_Tbl23AbsClass06
+    P36= T_Tbl23AbsClass07
+    P37= T_Tbl23AbsClass08
+    P38= T_Tbl23AbsClass09
+    P39= T_Tbl23AbsClass10
+    P40= T_Tbl23Trigger
+    P41= T_Tbl23Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl23SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl23CycClass01
+    P21= T_Tbl23CycClass02
+    P22= T_Tbl23CycClass03
+    P23= T_Tbl23CycClass04
+    P24= T_Tbl23CycClass05
+    P25= T_Tbl23CycClass06
+    P26= T_Tbl23CycClass07
+    P27= T_Tbl23CycClass08
+    P28= T_Tbl23CycClass09
+    P29= T_Tbl23CycClass10
+    P30= T_Tbl23AbsClass01
+    P31= T_Tbl23AbsClass02
+    P32= T_Tbl23AbsClass03
+    P33= T_Tbl23AbsClass04
+    P34= T_Tbl23AbsClass05
+    P35= T_Tbl23AbsClass06
+    P36= T_Tbl23AbsClass07
+    P37= T_Tbl23AbsClass08
+    P38= T_Tbl23AbsClass09
+    P39= T_Tbl23AbsClass10
+    P40= T_Tbl23Trigger
+    P41= T_Tbl23Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl23SendToPrn
+    P44= LoggerTbl23FOpen
+    P45= LoggerTbl23Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable24Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl24CycClass01
+    P21= T_Tbl24CycClass02
+    P22= T_Tbl24CycClass03
+    P23= T_Tbl24CycClass04
+    P24= T_Tbl24CycClass05
+    P25= T_Tbl24CycClass06
+    P26= T_Tbl24CycClass07
+    P27= T_Tbl24CycClass08
+    P28= T_Tbl24CycClass09
+    P29= T_Tbl24CycClass10
+    P30= T_Tbl24AbsClass01
+    P31= T_Tbl24AbsClass02
+    P32= T_Tbl24AbsClass03
+    P33= T_Tbl24AbsClass04
+    P34= T_Tbl24AbsClass05
+    P35= T_Tbl24AbsClass06
+    P36= T_Tbl24AbsClass07
+    P37= T_Tbl24AbsClass08
+    P38= T_Tbl24AbsClass09
+    P39= T_Tbl24AbsClass10
+    P40= T_Tbl24Trigger
+    P41= T_Tbl24Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl24SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl24CycClass01
+    P21= T_Tbl24CycClass02
+    P22= T_Tbl24CycClass03
+    P23= T_Tbl24CycClass04
+    P24= T_Tbl24CycClass05
+    P25= T_Tbl24CycClass06
+    P26= T_Tbl24CycClass07
+    P27= T_Tbl24CycClass08
+    P28= T_Tbl24CycClass09
+    P29= T_Tbl24CycClass10
+    P30= T_Tbl24AbsClass01
+    P31= T_Tbl24AbsClass02
+    P32= T_Tbl24AbsClass03
+    P33= T_Tbl24AbsClass04
+    P34= T_Tbl24AbsClass05
+    P35= T_Tbl24AbsClass06
+    P36= T_Tbl24AbsClass07
+    P37= T_Tbl24AbsClass08
+    P38= T_Tbl24AbsClass09
+    P39= T_Tbl24AbsClass10
+    P40= T_Tbl24Trigger
+    P41= T_Tbl24Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl24SendToPrn
+    P44= LoggerTbl24FOpen
+    P45= LoggerTbl24Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+OBJ: LoggerTable25Trigger
+  CPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl25CycClass01
+    P21= T_Tbl25CycClass02
+    P22= T_Tbl25CycClass03
+    P23= T_Tbl25CycClass04
+    P24= T_Tbl25CycClass05
+    P25= T_Tbl25CycClass06
+    P26= T_Tbl25CycClass07
+    P27= T_Tbl25CycClass08
+    P28= T_Tbl25CycClass09
+    P29= T_Tbl25CycClass10
+    P30= T_Tbl25AbsClass01
+    P31= T_Tbl25AbsClass02
+    P32= T_Tbl25AbsClass03
+    P33= T_Tbl25AbsClass04
+    P34= T_Tbl25AbsClass05
+    P35= T_Tbl25AbsClass06
+    P36= T_Tbl25AbsClass07
+    P37= T_Tbl25AbsClass08
+    P38= T_Tbl25AbsClass09
+    P39= T_Tbl25AbsClass10
+    P40= T_Tbl25Trigger
+    P41= T_Tbl25Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl25SendToPrn
+  CFV: ELSE Q1;
+  OPAR:
+    P0 = T_Cyc01Trigger
+    P1 = T_Cyc02Trigger
+    P2 = T_Cyc03Trigger
+    P3 = T_Cyc04Trigger
+    P4 = T_Cyc05Trigger
+    P5 = T_Cyc06Trigger
+    P6 = T_Cyc07Trigger
+    P7 = T_Cyc08Trigger
+    P8 = T_Cyc09Trigger
+    P9 = T_Cyc10Trigger
+    P10= T_Abs01Trigger
+    P11= T_Abs02Trigger
+    P12= T_Abs03Trigger
+    P13= T_Abs04Trigger
+    P14= T_Abs05Trigger
+    P15= T_Abs06Trigger
+    P16= T_Abs07Trigger
+    P17= T_Abs08Trigger
+    P18= T_Abs09Trigger
+    P19= T_Abs10Trigger
+    P20= T_Tbl25CycClass01
+    P21= T_Tbl25CycClass02
+    P22= T_Tbl25CycClass03
+    P23= T_Tbl25CycClass04
+    P24= T_Tbl25CycClass05
+    P25= T_Tbl25CycClass06
+    P26= T_Tbl25CycClass07
+    P27= T_Tbl25CycClass08
+    P28= T_Tbl25CycClass09
+    P29= T_Tbl25CycClass10
+    P30= T_Tbl25AbsClass01
+    P31= T_Tbl25AbsClass02
+    P32= T_Tbl25AbsClass03
+    P33= T_Tbl25AbsClass04
+    P34= T_Tbl25AbsClass05
+    P35= T_Tbl25AbsClass06
+    P36= T_Tbl25AbsClass07
+    P37= T_Tbl25AbsClass08
+    P38= T_Tbl25AbsClass09
+    P39= T_Tbl25AbsClass10
+    P40= T_Tbl25Trigger
+    P41= T_Tbl25Selected
+    P42= T_LoggerGlbPrint
+    P43= T_Tbl25SendToPrn
+    P44= LoggerTbl25FOpen
+    P45= LoggerTbl25Write
+  OFV0: P44 = IF S0&&P0&&P20 || S1&&P1&&P21 || S2&&P2&&P22 || S3&&P3&&P23 || S4&&P4&&P24 || S5&&P5&&P25 || S6&&P6&&P26 || S7&&P7&&P27 || S8&&P8&&P28 || S9&&P9&&P29 || S10&&P10&&P30 || S11&&P11&&P31 || S12&&P12&&P32 || S13&&P13&&P33 || S14&&P14&&P34 || S15&&P15&&P35 || S16&&P16&&P36 || S17&&P17&&P37 || S18&&P18&&P38 || S19&&P19&&P39 || (S40&&P40) || (P41&&S42&&P42) :1 ; ELSE 0;
+  OFV1: P45 = IF P44 :1 ; ELSE 0;
+
+
+############ If PLCLive signal for channel is not changing in 20s
+#   MBT_Chxx_OK->0 :
+#   Communication with PLC wrong for that channel
+#
+
+OBJ: MBT_CH01_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH01_Live
+			P1 = MBT_CH01_OK
+			P2 = MBT_CH01_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+
+OBJ: MBT_CH02_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH02_Live
+			P1 = MBT_CH02_OK
+			P2 = MBT_CH02_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH03_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH03_Live
+			P1 = MBT_CH03_OK
+			P2 = MBT_CH03_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH04_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH04_Live
+			P1 = MBT_CH04_OK
+			P2 = MBT_CH04_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH05_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH05_Live
+			P1 = MBT_CH05_OK
+			P2 = MBT_CH05_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH06_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH06_Live
+			P1 = MBT_CH06_OK
+			P2 = MBT_CH06_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH07_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH07_Live
+			P1 = MBT_CH07_OK
+			P2 = MBT_CH07_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH08_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH08_Live
+			P1 = MBT_CH08_OK
+			P2 = MBT_CH08_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH09_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH09_Live
+			P1 = MBT_CH09_OK
+			P2 = MBT_CH09_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH10_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH10_Live
+			P1 = MBT_CH10_OK
+			P2 = MBT_CH10_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH11_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH11_Live
+			P1 = MBT_CH11_OK
+			P2 = MBT_CH11_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH12_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH12_Live
+			P1 = MBT_CH12_OK
+			P2 = MBT_CH12_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH13_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH13_Live
+			P1 = MBT_CH13_OK
+			P2 = MBT_CH13_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH14_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH14_Live
+			P1 = MBT_CH14_OK
+			P2 = MBT_CH14_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH15_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH15_Live
+			P1 = MBT_CH15_OK
+			P2 = MBT_CH15_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH16_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH16_Live
+			P1 = MBT_CH16_OK
+			P2 = MBT_CH16_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH17_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH17_Live
+			P1 = MBT_CH17_OK
+			P2 = MBT_CH17_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH18_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH18_Live
+			P1 = MBT_CH18_OK
+			P2 = MBT_CH18_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH19_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH19_Live
+			P1 = MBT_CH19_OK
+			P2 = MBT_CH19_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH20_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH20_Live
+			P1 = MBT_CH20_OK
+			P2 = MBT_CH20_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH21_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH21_Live
+			P1 = MBT_CH21_OK
+			P2 = MBT_CH21_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH22_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH22_Live
+			P1 = MBT_CH22_OK
+			P2 = MBT_CH22_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH23_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH23_Live
+			P1 = MBT_CH23_OK
+			P2 = MBT_CH23_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH24_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH24_Live
+			P1 = MBT_CH24_OK
+			P2 = MBT_CH24_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH25_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH25_Live
+			P1 = MBT_CH25_OK
+			P2 = MBT_CH25_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH26_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH26_Live
+			P1 = MBT_CH26_OK
+			P2 = MBT_CH26_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH27_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH27_Live
+			P1 = MBT_CH27_OK
+			P2 = MBT_CH27_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH28_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH28_Live
+			P1 = MBT_CH28_OK
+			P2 = MBT_CH28_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH29_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH29_Live
+			P1 = MBT_CH29_OK
+			P2 = MBT_CH29_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH30_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH30_Live
+			P1 = MBT_CH30_OK
+			P2 = MBT_CH30_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH31_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH31_Live
+			P1 = MBT_CH31_OK
+			P2 = MBT_CH31_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH32_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH32_Live
+			P1 = MBT_CH32_OK
+			P2 = MBT_CH32_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH33_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH33_Live
+			P1 = MBT_CH33_OK
+			P2 = MBT_CH33_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH34_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH34_Live
+			P1 = MBT_CH34_OK
+			P2 = MBT_CH34_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH35_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH35_Live
+			P1 = MBT_CH35_OK
+			P2 = MBT_CH35_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH36_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH36_Live
+			P1 = MBT_CH36_OK
+			P2 = MBT_CH36_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH37_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH37_Live
+			P1 = MBT_CH37_OK
+			P2 = MBT_CH37_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH38_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH38_Live
+			P1 = MBT_CH38_OK
+			P2 = MBT_CH38_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH39_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH39_Live
+			P1 = MBT_CH39_OK
+			P2 = MBT_CH39_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH40_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH40_Live
+			P1 = MBT_CH40_OK
+			P2 = MBT_CH40_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH41_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH41_Live
+			P1 = MBT_CH41_OK
+			P2 = MBT_CH41_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH42_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH42_Live
+			P1 = MBT_CH42_OK
+			P2 = MBT_CH42_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH43_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH43_Live
+			P1 = MBT_CH43_OK
+			P2 = MBT_CH43_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH44_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH44_Live
+			P1 = MBT_CH44_OK
+			P2 = MBT_CH44_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH45_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH45_Live
+			P1 = MBT_CH45_OK
+			P2 = MBT_CH45_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH46_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH46_Live
+			P1 = MBT_CH46_OK
+			P2 = MBT_CH46_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH47_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH47_Live
+			P1 = MBT_CH47_OK
+			P2 = MBT_CH47_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH48_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH48_Live
+			P1 = MBT_CH48_OK
+			P2 = MBT_CH48_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH49_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH49_Live
+			P1 = MBT_CH49_OK
+			P2 = MBT_CH49_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH50_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH50_Live
+			P1 = MBT_CH50_OK
+			P2 = MBT_CH50_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH51_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH51_Live
+			P1 = MBT_CH51_OK
+			P2 = MBT_CH51_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH52_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH52_Live
+			P1 = MBT_CH52_OK
+			P2 = MBT_CH52_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH53_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH53_Live
+			P1 = MBT_CH53_OK
+			P2 = MBT_CH53_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH54_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH54_Live
+			P1 = MBT_CH54_OK
+			P2 = MBT_CH54_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH55_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH55_Live
+			P1 = MBT_CH55_OK
+			P2 = MBT_CH55_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH56_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH56_Live
+			P1 = MBT_CH56_OK
+			P2 = MBT_CH56_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH57_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH57_Live
+			P1 = MBT_CH57_OK
+			P2 = MBT_CH57_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH58_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH58_Live
+			P1 = MBT_CH58_OK
+			P2 = MBT_CH58_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH59_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH59_Live
+			P1 = MBT_CH59_OK
+			P2 = MBT_CH59_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+OBJ: MBT_CH60_OK
+	 CPAR:
+			P0 = SysClkSec
+	 CFV:   IF (S0 & 3) && ( P0 % 20 == 5) :Q1; ELSE Q0;
+	 OPAR:
+			P0 = MBT_CH60_Live
+			P1 = MBT_CH60_OK
+			P2 = MBT_CH60_LiveS
+	 OFV0:  P1 = IF (P0 == P2) : 1; ELSE 0;
+	 OFV1:  P2 = IF (P2 == 0) : 1; IF (P0<10000) : P0+1; ELSE 1;
+
+
+#/////////////////////////////////////////////////////////////////////////////
+

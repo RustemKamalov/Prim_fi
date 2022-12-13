@@ -1,0 +1,13 @@
+#! /bin/sh
+
+if test $# -eq 0
+then
+dir_name=/prim_fi/monitor/pict/
+else
+dir_name=/prim_fi/monitor/pict/$1
+fi
+
+
+/Dmon/bin/dmfontload /prim_fi/monitor/cfg/fonts.cfg
+cd $dir_name
+/Dmon/bin/dmmonedit -l /prim_fi/config/monx.ini &

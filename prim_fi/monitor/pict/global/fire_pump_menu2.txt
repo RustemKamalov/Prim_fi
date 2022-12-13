@@ -1,0 +1,46 @@
+
+WOPT: p=Cc r=0 c=0 o=k-r;kmsa t=0 e=0 a=1 b=0 k=0
+
+WPICT: c=180 h=0 w=0
+
+OBJ: 169
+  PARL: P0=Fi2_StaProt194 P1=Fi2_StaTPro194 P2=Fi2_StaProt195 P3=Fi2_StaTPro195 P4=Fi2_StaProt196 P5=Fi2_StaTPro196 P6=Fi2_StaProt032 P7=Fi2_StaTPro032
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0|P2|P4|P6 : Q1; IF P1|P3|P5|P7 : Q2; ELSE Q0;
+  SELD: a=WO p=2311
+OBEND
+
+OBJ: 170
+  PARL: P0=Fi2_StaProt210 P1=Fi2_StaTPro210 P2=Fi2_StaProt211 P3=Fi2_StaTPro211 P4=Fi2_StaProt212 P5=Fi2_StaTPro212 P6=Fi2_StaProt033 P7=Fi2_StaTPro033
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0|P2|P4|P6 : Q1; IF P1|P3|P5|P7 : Q2; ELSE Q0;
+  SELD: a=WO p=2312
+OBEND
+
+OBJ: 171
+  PARL: P0=Fi2_StaProt226 P1=Fi2_StaTPro226 P2=Fi2_StaProt227 P3=Fi2_StaTPro227 P4=Fi2_StaProt228 P5=Fi2_StaTPro228 P6=Fi2_StaProt034 P7=Fi2_StaTPro034
+  COLD: Q1=1,14,0 Q2=1,12,0
+  COLF: IF P0|P2|P4|P6 : Q1; IF P1|P3|P5|P7 : Q2; ELSE Q0;
+  SELD: a=WO p=2313
+OBEND
+
+OBJ: 172
+  PARL: P0=Fi2_SetOperVars3 P1=Fi2_OperVarRg3
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P1 & 0X8000) : Q0;ELSE Q1;
+  SELD: a=WO p=2311
+OBEND
+
+OBJ: 173
+  PARL: P0=Fi2_SetOperVars3 P1=Fi2_OperVarRg3
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P1 & 0X4000) : Q0;ELSE Q1;
+  SELD: a=WO p=2312
+OBEND
+
+OBJ: 174
+  PARL: P0=Fi2_SetOperVars3 P1=Fi2_OperVarRg3
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF (P1 & 0X2000) : Q0;ELSE Q1;
+  SELD: a=WO p=2313
+OBEND

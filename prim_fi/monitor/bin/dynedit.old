@@ -1,0 +1,21 @@
+#! /bin/sh
+if test ! -c /dev/win
+then
+	/bin/Dev16 -ND16 &
+	sleep 1
+	/windows/apps/Wterm/Dev.win -N/D16/win &
+	sleep 1
+fi
+types -i lineno
+lineno=`grep -xn "OBJ: $2" $1 | cut -f1 -d':'`
+
+k=1
+efile=""
+
+while [ $k != 10 ] && [ "$efile" = "" ]
+do
+	efile=$(find -mmin $k -name "*.err")
+	k=$(expr $k + 1)
+done
+
+/Dmon/bin/dmqwterm vedit $1 -l$lineno /prim_fi/data/txt/pipe.txt /prim_fi/monitor/cfg/monitor.cfg $efile /tmp/clp

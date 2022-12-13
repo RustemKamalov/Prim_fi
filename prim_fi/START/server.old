@@ -1,0 +1,161 @@
+#!/bin/sh
+
+case $NODE in
+
+    1)  if sin -n1 | grep dmserver
+            then echo Found dmserver on Node 1
+        elif sin -n2 | grep dmserver
+            then echo Found dmserver on Node 2
+        else
+            #slay olwm
+         #/prim_fi/bin/sl &
+            /Dmon/bin/dmserver /prim_fi/config/server1_1.dbf &
+            #/prim_fi/START/chknet 2 &
+            #/prim_fi/START/archrm &
+            sleep 60
+            #slay dmprhp
+            #/prim_fi/bin/print_hotkey &
+            slay -s SIGHUP chain
+        fi;;
+
+    2)  if sin -n1 | grep dmserver
+            then echo Found dmserver on Node 1
+        elif sin -n2 | grep dmserver
+            then echo Found dmserver on Node 2
+        else
+            #slay olwm
+         #/prim_fi/bin/sl &
+            /Dmon/bin/dmserver /prim_fi/config/server2_2.dbf &
+            #/prim_fi/START/chknet 1 &
+            #/prim_fi/START/archrm &
+            sleep 60
+            #slay dmprhp
+            #/prim_fi/bin/print_hotkey &
+            slay -s SIGHUP chain
+        fi;;
+
+    3)  if sin -n3 | grep dmserver
+            then echo Found dmserver on Node 3
+        elif sin -n4 | grep dmserver
+            then echo Found dmserver on Node 4
+        else
+            #slay olwm
+         #/prim_fi/bin/sl &
+            /Dmon/bin/dmserver /prim_fi/config/server3_3.dbf &
+            #/prim_fi/START/chknet 4 &
+            #/prim_fi/START/archrm &
+            sleep 60
+            #slay dmprhp
+            #/prim_fi/bin/print_hotkey &
+            slay -s SIGHUP chain
+        fi;;
+
+    4)  if sin -n3 | grep dmserver
+            then echo Found dmserver on Node 3
+        elif sin -n4 | grep dmserver
+            then echo Found dmserver on Node 4
+        else
+            #slay olwm
+         #/prim_fi/bin/sl &
+            /Dmon/bin/dmserver /prim_fi/config/server4_4.dbf &
+            #/prim_fi/START/chknet 3 &
+            #/prim_fi/START/archrm &
+            sleep 60
+            #slay dmprhp
+            #/prim_fi/bin/print_hotkey &
+            slay -s SIGHUP chain
+        fi;;
+
+    5)  if sin -n1 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview1_5.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon1_5.dbf &
+                    sleep 2
+                    ln -f -s //1/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //1/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //1/prim_fi_data/logger /prim_fi_data/logger
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview1_5.dbf &
+        elif sin -n2 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview2_5.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon2_5.dbf &
+                    sleep 2
+                    ln -f -s //2/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //2/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //2/prim_fi_data/logger /prim_fi_data/logger
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview2_5.dbf &
+        elif sin -n3 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview3_5.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon3_5.dbf &
+                    sleep 2
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview3_5.dbf &
+                    ln -f -s //3/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //3/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //3/prim_fi_data/logger /prim_fi_data/logger
+        elif sin -n4 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview4_5.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon4_5.dbf &
+                    sleep 2
+                    ln -f -s //4/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //4/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //4/prim_fi_data/logger /prim_fi_data/logger
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview4_5.dbf &
+        else echo no running servers found
+        fi;;
+
+    6)  if sin -n1 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview1_6.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon1_6.dbf &
+                    sleep 2
+                    ln -f -s //1/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //1/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //1/prim_fi_data/logger /prim_fi_data/logger
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview1_6.dbf &
+        elif sin -n2 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview2_6.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon2_6.dbf &
+                    sleep 2
+                    ln -f -s //2/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //2/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //2/prim_fi_data/logger /prim_fi_data/logger
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview2_6.dbf &
+        elif sin -n3 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview3_6.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon3_6.dbf &
+                    sleep 2
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview3_6.dbf &
+                    ln -f -s //3/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //3/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //3/prim_fi_data/logger /prim_fi_data/logger
+        elif sin -n4 | grep dmserver
+            then    /Dmon/bin/dmmsgview       /prim_fi/config/msgview4_6.dbf &
+                    sleep 2
+                    /Dmon/bin/dmmonitor       /prim_fi/config/mon4_6.dbf &
+                    sleep 2
+                    ln -f -s //4/prim_fi_data/event /prim_fi_data/event
+                    ln -f -s //4/prim_fi_data/archive /prim_fi_data/archive
+                    ln -f -s //4/prim_fi_data/logger /prim_fi_data/logger
+                    /Dmon/bin/dmeventview   /prim_fi/config/evview4_6.dbf &
+        else echo no running servers found
+        fi;;
+
+    *)  if sin | grep dmserver
+            then echo Found dmserver
+        else
+            #slay olwm
+         #/prim_fi/bin/sl &
+            /Dmon/bin/dmserver /prim_fi/config/server.dbf &
+            #/prim_fi/START/chknet 2 &
+            #/prim_fi/START/archrm &
+            sleep 60
+            slay -s SIGHUP chain
+        fi;;
+        #echo another NODE ;;
+
+esac
+

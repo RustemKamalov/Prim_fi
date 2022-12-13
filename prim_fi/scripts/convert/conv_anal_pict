@@ -1,0 +1,55 @@
+#!/bin/sh
+
+#from:
+#  PARL: P0=A2_PT593____Name P1=A2_PT593____Vl P2=A2_PT593____S1 P3=A2_PT593____S2 P4=A2_PT593____Raw
+#
+#to:
+#  PARL: P0=A2_PT593____Name P1=A2_PT593____Vl P2=A2_PT593____S1 P3=A2_PT593____S2 P4=A2_PT593____Raw P5=A2_PT593____MinRaw P6=A2_PT593____MaxRaw P7=A2_PT593____MinEU P8=A2_PT593____MaxEU P9=A2_PT593____ScaleWid P10=A2_PT593____CrHL P11=A2_PT593____4_L P12=A2_PT593____3_L P13=A2_PT593____2_L P14=A2_PT593____1_L P15=A2_PT593____CrLL P16=A2_PT593____CtWdSet1 P17=A2_PT593____CtWdSet2 P18=A2_PT593____CtWdSend P19=A2_PT593____CtWd P20=A2_PT593____ManV P21=A2_PT593____ZeCr P22=A2_PT593____Filt P23=A2_PT593____Hyst P24=A2_PT593____UTrL P25=A2_PT593____DTrL P26=A2_PT593____MxDv P27=A2_PT593____Tren P28=A2_PT593____UTrH P29=A2_PT593____DTrH P30=A2_PT593____Maxm P31=A2_PT593____Minm P32=A2_PT593____FixV P33=A2_PT593____ValTrig P34=A2_PT593____CrHLS P35=A2_PT593____4_LS P36=A2_PT593____3_LS P37=A2_PT593____2_LS P38=A2_PT593____1_LS P39=A2_PT593____CrLLS P40=A2_PT593____ManVS P41=A2_PT593____ZeCrS P42=A2_PT593____FiltS P43=A2_PT593____HystS P44=A2_PT593____UTrLS P45=A2_PT593____DTrLS P46=A2_PT593____MxDvS P47=A2_PT593____Unit
+#
+
+PLC="[AP]2_"
+
+#search='PARL: P0=\([AP]2_.+\)Name P1=\1Vl P2=\1S1 P3=\1S2 P4=\1Raw'
+search='PARL: P0=\('"$PLC"'.*\)Name P1=\1Vl P2=\1S1 P3=\1S2 P4=\1Raw'
+
+ch_scr1='s/PARL: P0=\([AP]2_.*\)Name P1=\1Vl P2=\1S1 P3=\1S2 P4=\1Raw.*$/PARL: P0=\1Name P1=\1Vl P2=\1S1 P3=\1S2 P4=\1Raw P5=\1MinRaw P6=\1MaxRaw P7=\1MinEU P8=\1MaxEU P9=\1ScaleWid P10=\1CrHL P11=\14_L P12=\13_L P13=\12_L P14=\11_L P15=\1CrLL P16=\1CtWdSet1 P17=\1CtWdSet2 P18=\1CtWdSend P19=\1CtWd P20=\1ManV P21=\1ZeCr P22=\1Filt P23=\1Hyst P24=\1UTrL P25=\1DTrL P26=\1MxDv P27=\1Tren P28=\1UTrH P29=\1DTrH P30=\1Maxm P31=\1Minm P32=\1FixV P33=\1ValTrig P34=\1CrHLS P35=\14_LS P36=\13_LS P37=\12_LS P38=\11_LS P39=\1CrLLS P40=\1ManVS P41=\1ZeCrS P42=\1FiltS P43=\1HystS P44=\1UTrLS P45=\1DTrLS P46=\1MxDvS P47=\1Unit/'
+ch_scr2='s/a=PO p=52/a=PO p=150/'
+
+for i in $(find /prim_fi/monitor/pict/station_2 -type f -name '*.txt')
+#for i in $(find /tmp/proba -type f -name '*.txt')
+do
+
+#  file=$(file $i | grep ' text' | sed 's/:.*$//' | grep -v '.ori$')
+  file=$i
+
+  if [ "$file" != "" ]
+  then
+#    echo $file nem ures
+    if grep -q "$search" "$file"
+    then
+#      echo found search in file "$file" "\a"
+      read resp?"Convert $file ?      <Y/N>":
+      case $resp in
+        y|Y)
+            if test -f $file.ori
+            then
+              echo $file.ori exists, not converting
+            else
+              echo converting $file
+              cp $file $file.ori
+              awk '{}' $file | \
+              sed "$ch_scr2" > temp
+              mv temp $file
+              if [ "$(ls -F $file.ori | grep '*')" != "" ]
+              then
+                chmod a+x $file
+              fi
+            fi
+
+            ;;
+      esac
+
+    fi
+  fi
+
+done

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+file=$1
+header=$2
+command=$3
+
+if [ $(cat $file | wc -c) -gt 0 ]
+then
+  sh -c "cat ""$header"" ""$file"" | ""$command"
+fi
+ 

@@ -1,0 +1,2 @@
+#! /bin/sh
+/Dmon/bin/dmmonedit -l -c$1 /prim_fi/config/monx.ini

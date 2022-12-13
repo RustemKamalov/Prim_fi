@@ -1,0 +1,14 @@
+
+# Sample file for 'printcolors.cfg'
+# To modify some colors in the printed picture
+#  - list the palette entries you want to modify with the new rgb values
+#  - rename this file to 'printcolors.cfg'
+#  - place this file into the configuration directory
+#
+# The example below modifies the first four palette entries. Any element drawn
+# on the screen with these four colors will be printed with white color
+
+BLACK				255	255	255	1
+BKGD1				255 255 255	2
+BKGD2				255 255 255	3
+BKGD3				255 255 255	4

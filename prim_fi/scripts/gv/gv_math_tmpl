@@ -1,0 +1,21 @@
+OBJ: $M_GateValve
+     CPAR:
+         P0 = $M_$GVxxxTypeSet
+         P1 = $M_$GVxxxType
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = $M_$GVxxxTypeSet
+         P1 = $M_$GVxxxTypeSend
+         P2 = $M_$GVxxxType
+         P3 = $M_$GVxxxIndex
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+

@@ -1,0 +1,2 @@
+#! /bin/sh
+/Dmon/bin/dmmonedit -l -f /prim_fi/monitor/list.txt /prim_fi/config/monx.ini

@@ -1,0 +1,253 @@
+//M2_auxilary systems duty,stat,ctr..
+
+//Plunger_pump_of_pig_area_system
+
+//Plunger_pump_of_pig_area
+M2_PP1_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Plunger_pump_of_pig_area duty sel.send"
+M2_PP1_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Plunger_pump_of_pig_area duty selector"
+M2_PP1_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Plunger_pump_of_pig_area status word"
+M2_PP1_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Plunger_pump_of_pig_area ctr.word from MDP "
+M2_PP1_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Plunger_pump_of_pig_area set REMONT time   "
+M2_PP1_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Plunger_pump_of_pig_area set operator's time"
+
+//reserve_machine_2
+M2_PPR_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty sel.send"
+M2_PPR_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty selector"
+M2_PPR_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 status word"
+M2_PPR_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 ctr.word from MDP "
+M2_PPR_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set REMONT time   "
+M2_PPR_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set operator's time"
+
+//Water_supply_of_Station_system
+
+//Water_pump_of_Station_1
+M2_Ws1_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_1 duty sel.send"
+M2_Ws1_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_1 duty selector"
+M2_Ws1_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_1 status word"
+M2_Ws1_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_1 ctr.word from MDP "
+M2_Ws1_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Station_1 set REMONT time   "
+M2_Ws1_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Station_1 set operator's time"
+
+//Water_pump_of_Station_2
+M2_Ws2_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_2 duty sel.send"
+M2_Ws2_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_2 duty selector"
+M2_Ws2_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_2 status word"
+M2_Ws2_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_2 ctr.word from MDP "
+M2_Ws2_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Station_2 set REMONT time   "
+M2_Ws2_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Station_2 set operator's time"
+
+//Water_supply_of_Station_system
+
+//Water_pump_of_Station_3
+M2_Ws3_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_3 duty sel.send"
+M2_Ws3_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_3 duty selector"
+M2_Ws3_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_3 status word"
+M2_Ws3_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Station_3 ctr.word from MDP "
+M2_Ws3_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Station_3 set REMONT time   "
+M2_Ws3_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Station_3 set operator's time"
+
+//reserve_machine_2
+M2_WsR_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty sel.send"
+M2_WsR_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty selector"
+M2_WsR_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 status word"
+M2_WsR_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 ctr.word from MDP "
+M2_WsR_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set REMONT time   "
+M2_WsR_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set operator's time"
+
+//Canal.pumps_of_Tankfarm_system
+
+//Canal.pump_of_Tankfarm_3
+M2_Ct3_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_3 duty sel.send"
+M2_Ct3_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_3 duty selector"
+M2_Ct3_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_3 status word"
+M2_Ct3_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_3 ctr.word from MDP "
+M2_Ct3_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Canal.pump_of_Tankfarm_3 set REMONT time   "
+M2_Ct3_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Canal.pump_of_Tankfarm_3 set operator's time"
+
+//Canal.pump_of_Tankfarm_4
+M2_Ct4_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_4 duty sel.send"
+M2_Ct4_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_4 duty selector"
+M2_Ct4_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_4 status word"
+M2_Ct4_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_4 ctr.word from MDP "
+M2_Ct4_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Canal.pump_of_Tankfarm_4 set REMONT time   "
+M2_Ct4_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Canal.pump_of_Tankfarm_4 set operator's time"
+
+//Canal.pumps_of_Tankfarm_system
+
+//Canal.pump_of_Tankfarm_5
+M2_Ct5_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_5 duty sel.send"
+M2_Ct5_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_5 duty selector"
+M2_Ct5_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_5 status word"
+M2_Ct5_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Canal.pump_of_Tankfarm_5 ctr.word from MDP "
+M2_Ct5_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Canal.pump_of_Tankfarm_5 set REMONT time   "
+M2_Ct5_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Canal.pump_of_Tankfarm_5 set operator's time"
+
+//reserve_machine_2
+M2_CtR_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty sel.send"
+M2_CtR_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty selector"
+M2_CtR_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 status word"
+M2_CtR_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 ctr.word from MDP "
+M2_CtR_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set REMONT time   "
+M2_CtR_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set operator's time"
+
+//Drain.ret.pump_of_Quay_system
+
+//Drain.ret.pump_of_Quay_1
+M2_Dr1_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_1 duty sel.send"
+M2_Dr1_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_1 duty selector"
+M2_Dr1_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_1 status word"
+M2_Dr1_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_1 ctr.word from MDP "
+M2_Dr1_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_1 set REMONT time   "
+M2_Dr1_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_1 set operator's time"
+
+//Drain.ret.pump_of_Quay_2
+M2_Dr2_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_2 duty sel.send"
+M2_Dr2_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_2 duty selector"
+M2_Dr2_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_2 status word"
+M2_Dr2_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_2 ctr.word from MDP "
+M2_Dr2_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_2 set REMONT time   "
+M2_Dr2_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_2 set operator's time"
+
+//Drain.ret.pump_of_Quay_system
+
+//Drain.ret.pump_of_Quay_3
+M2_Dr3_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_3 duty sel.send"
+M2_Dr3_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_3 duty selector"
+M2_Dr3_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_3 status word"
+M2_Dr3_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_3 ctr.word from MDP "
+M2_Dr3_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_3 set REMONT time   "
+M2_Dr3_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_3 set operator's time"
+
+//Drain.ret.pump_of_Quay_4
+M2_Dr4_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_4 duty sel.send"
+M2_Dr4_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_4 duty selector"
+M2_Dr4_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_4 status word"
+M2_Dr4_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Drain.ret.pump_of_Quay_4 ctr.word from MDP "
+M2_Dr4_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_4 set REMONT time   "
+M2_Dr4_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Drain.ret.pump_of_Quay_4 set operator's time"
+
+//Plunger
+
+//Plunger_pump_1
+M2_Pq1_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Plunger_pump_1 duty sel.send"
+M2_Pq1_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Plunger_pump_1 duty selector"
+M2_Pq1_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Plunger_pump_1 status word"
+M2_Pq1_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Plunger_pump_1 ctr.word from MDP "
+M2_Pq1_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Plunger_pump_1 set REMONT time   "
+M2_Pq1_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Plunger_pump_1 set operator's time"
+
+//reserve_machine_2
+M2_PqR_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty sel.send"
+M2_PqR_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty selector"
+M2_PqR_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 status word"
+M2_PqR_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 ctr.word from MDP "
+M2_PqR_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set REMONT time   "
+M2_PqR_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set operator's time"
+
+//Exhausting_vent_of_Quay_system
+
+//Exhausting_vent_of_Quay
+M2_Ev1_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Exhausting_vent_of_Quay duty sel.send"
+M2_Ev1_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Exhausting_vent_of_Quay duty selector"
+M2_Ev1_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Exhausting_vent_of_Quay status word"
+M2_Ev1_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Exhausting_vent_of_Quay ctr.word from MDP "
+M2_Ev1_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Exhausting_vent_of_Quay set REMONT time   "
+M2_Ev1_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Exhausting_vent_of_Quay set operator's time"
+
+//reserve_machine_2
+M2_EvR_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty sel.send"
+M2_EvR_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty selector"
+M2_EvR_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 status word"
+M2_EvR_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 ctr.word from MDP "
+M2_EvR_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set REMONT time   "
+M2_EvR_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set operator's time"
+
+//Water_pump_of_Quay_system
+
+//Water_pump_of_Quay_1
+M2_Wp1_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_1 duty sel.send"
+M2_Wp1_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_1 duty selector"
+M2_Wp1_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_1 status word"
+M2_Wp1_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_1 ctr.word from MDP "
+M2_Wp1_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_1 set REMONT time   "
+M2_Wp1_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_1 set operator's time"
+
+//Water_pump_of_Quay_2
+M2_Wp2_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_2 duty sel.send"
+M2_Wp2_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_2 duty selector"
+M2_Wp2_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_2 status word"
+M2_Wp2_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_2 ctr.word from MDP "
+M2_Wp2_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_2 set REMONT time   "
+M2_Wp2_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_2 set operator's time"
+
+//Water_pump_of_Quay_system
+
+//Water_pump_of_Quay_3
+M2_Wp3_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_3 duty sel.send"
+M2_Wp3_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_3 duty selector"
+M2_Wp3_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_3 status word"
+M2_Wp3_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_3 ctr.word from MDP "
+M2_Wp3_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_3 set REMONT time   "
+M2_Wp3_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_3 set operator's time"
+
+//Water_pump_of_Quay_4
+M2_Wp4_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_4 duty sel.send"
+M2_Wp4_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_4 duty selector"
+M2_Wp4_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_4 status word"
+M2_Wp4_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Water_pump_of_Quay_4 ctr.word from MDP "
+M2_Wp4_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_4 set REMONT time   "
+M2_Wp4_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Water_pump_of_Quay_4 set operator's time"
+
+//Reserve_system_1
+
+//Reserve_11
+M2_R11_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_11 duty sel.send"
+M2_R11_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_11 duty selector"
+M2_R11_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_11 status word"
+M2_R11_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_11 ctr.word from MDP "
+M2_R11_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_11 set REMONT time   "
+M2_R11_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_11 set operator's time"
+
+//Reserve_12
+M2_R12_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_12 duty sel.send"
+M2_R12_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_12 duty selector"
+M2_R12_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_12 status word"
+M2_R12_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_12 ctr.word from MDP "
+M2_R12_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_12 set REMONT time   "
+M2_R12_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_12 set operator's time"
+
+//Reserve_system_2
+
+//Reserve_21
+M2_R21_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_21 duty sel.send"
+M2_R21_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_21 duty selector"
+M2_R21_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_21 status word"
+M2_R21_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_21 ctr.word from MDP "
+M2_R21_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_21 set REMONT time   "
+M2_R21_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_21 set operator's time"
+
+//Reserve_22
+M2_R22_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_22 duty sel.send"
+M2_R22_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_22 duty selector"
+M2_R22_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Reserve_22 status word"
+M2_R22_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Reserve_22 ctr.word from MDP "
+M2_R22_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_22 set REMONT time   "
+M2_R22_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Reserve_22 set operator's time"
+
+//Pre-pur.wat.pump_syst.
+
+//Pre-purified_water_pump_1
+M2_EhQ_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "Pre-purified_water_pump_1 duty sel.send"
+M2_EhQ_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "Pre-purified_water_pump_1 duty selector"
+M2_EhQ_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "Pre-purified_water_pump_1 status word"
+M2_EhQ_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "Pre-purified_water_pump_1 ctr.word from MDP "
+M2_EhQ_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Pre-purified_water_pump_1 set REMONT time   "
+M2_EhQ_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "Pre-purified_water_pump_1 set operator's time"
+
+//reserve_machine_2
+M2_EhR_DutySend        ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty sel.send"
+M2_EhR_Duty            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 duty selector"
+M2_EhR_Stat            ,  U,  0, M2_AuxWords          , N, 0, 0, "reserve_machine_2 status word"
+M2_EhR_CtrWrd          ,  U,100, M2_AuxWords          , N, 0, 0, "reserve_machine_2 ctr.word from MDP "
+M2_EhR_RemTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set REMONT time   "
+M2_EhR_OprTSet         ,  B,100, M2_AuxBits           , N, 0, 0, "reserve_machine_2 set operator's time"

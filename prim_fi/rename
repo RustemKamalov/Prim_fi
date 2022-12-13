@@ -1,0 +1,53 @@
+#!/bin/sh
+
+if [ "$1" = "" ] 
+	then
+	echo rename src dst
+	exit
+fi 
+ 
+mirol=$1
+mire=$2
+files=$( find ) 
+mfs=$(find -name "Makefile*")
+exable=0
+
+rm -f `find -name "*.dbf"`
+
+for i in $mfs
+do
+				mv $i $i"_OLD" 
+		 		sed "s/$mirol/$mire/g" $i"_OLD" > $i
+				rm -f $i"_OLD"
+done
+
+for i in $files
+do
+	if [ -f $i ]
+		then
+		if [ "$(file $i| grep text)" != "" ]
+			then
+#			file $i
+			if [ "$(grep $mirol $i)" != "" ]
+				then
+				if [ "$(ls -F $i| grep "*")" != "" ]
+					then	
+					exable=1
+				fi
+				mv $i $i"_OLD" 
+		 		sed "s/$mirol/$mire/g" $i"_OLD" > $i
+				rm -f $i"_OLD"
+				if [ "$exable" = "1" ]
+ 					then
+					chmod +x $i
+					exable=0
+				fi
+			fi
+		fi
+	fi
+done
+
+chmod +x $0
+
+
+

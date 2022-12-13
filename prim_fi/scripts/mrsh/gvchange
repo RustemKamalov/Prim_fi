@@ -1,0 +1,38 @@
+MR_GI[0-9]*p[0-9]*  ->  MR_GI.._..
+MR_GI018_Input      MR_GI5_18_
+MR_GI019_Input      MR_GI5_19_
+MR_GI021_Input      MR_GI5_21_
+MR_GI005_Input      MR_GI5_5_
+MR_GI046_Input      MR_GI5_42A_   UUN726
+MR_GI002_Input      MR_GI5_2_
+MR_GI004_Input      MR_GI5_4_
+MR_GI301a_Input     MR_GI301A_
+MR_GI301b_Input     MR_GI301B_
+MR_GI203_5_Input    torolve
+MR_GI203_6_Input    torolve
+MR_GI29_1p_Input    MR_GI29_1_
+MR_GI29_2b_Input    MR_GI29_2_
+MR_GI505g_Input     MR_GI505A_  ciril
+MR_GI468g_Input     MR_GI468A_  ciril
+MR_GI332g_Input     MR_GI332a_
+MR_GI572g_Input     MR_GI572a_
+MR_GI339_Input      meg nincs
+MR_GI340_Input      meg nincs
+MR_GI341_Input      meg nincs
+MR_GI342_Input      meg nincs
+MR_GI343_Input      meg nincs
+MR_GI344_Input      meg nincs
+MR_GI345_Input      meg nincs
+MR_GI346_Input      meg nincs
+MR_GI347_Input      meg nincs
+MR_GI348_Input      meg nincs
+MR_GI363_Input      meg nincs
+MR_GI364_Input      meg nincs
+MR_GI365_Input      meg nincs
+MR_GI366_Input      meg nincs
+MR_GI367_Input      meg nincs
+MR_GI368_Input      meg nincs
+MR_GI369_Input      meg nincs
+MR_GI370_Input      meg nincs
+MR_GI371_Input      meg nincs
+MR_GI372_Input      meg nincs

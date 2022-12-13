@@ -1,0 +1,9 @@
+
+#---------   Global  -------------
+# Menus
+/prim_fi/monitor/pict/global/menu_fix1
+/prim_fi/monitor/pict/global/menu_fix2
+/prim_fi/monitor/pict/global/menu_fix3
+/prim_fi/monitor/pict/global/menu_fix4
+/prim_fi/monitor/pict/global/menu_fix5
+/prim_fi/monitor/pict/global/menu_fix6

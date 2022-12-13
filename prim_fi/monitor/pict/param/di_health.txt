@@ -1,0 +1,12 @@
+
+WOPT: p=Cc r=0 c=0 o=ks-r;kmsa t=1 e=0 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 90
+  PARL: P0=PARAM0
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+  COLD: Q1=1,8,0 Q2=1,14,0
+  COLF: IF P0 : Q2;ELSE Q1;
+OBEND

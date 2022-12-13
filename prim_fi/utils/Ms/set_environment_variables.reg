@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+"DMIPCPATH"="\"/Dmon/tmp\""
+"DMBIN"="\\Dmon\\bin"
+"TEXT_EDITOR"="mew32.exe"
+"TEXT_VIEWER"="mew32.exe"
+
+[HKEY_CURRENT_USER\Environment]
+"DMGRSRV"="\\Dmon\\bin\\dmwinsrv.exe \\prim_fi\\winsrv\\Ms\\winsrv.ini"
+"DMAPP"="\\prim_fi"
+"DMPWSETPRIO"="1"
+"DMLANGUAGE"="\\Dmon\\bin\\language\\ru"

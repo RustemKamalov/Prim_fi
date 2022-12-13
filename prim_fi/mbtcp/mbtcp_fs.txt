@@ -1,0 +1,2284 @@
+#============================================================================
+# Intelligent Fire Sensors
+#============================================================================
+#
+# from PLC Prim34
+
+# Write not supported by PLC
+## Command register to Fire Sensors
+#
+##PATH31:  BM85-57
+#
+#OBJ: TF_WriteforFire1
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##------------------------------
+#
+#M:        p=31 t=HR o=Iw  f=W r=  2001   S=FS_T23_01CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2002   S=FS_T23_01ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2003   S=FS_T23_02CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2004   S=FS_T23_02ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2005   S=FS_T23_03CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2006   S=FS_T23_03ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2007   S=FS_T23_04CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2008   S=FS_T23_04ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2009   S=FS_T23_05CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2010   S=FS_T23_05ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2011   S=FS_T23_06CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2012   S=FS_T23_06ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2013   S=FS_T23_07CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2014   S=FS_T23_07ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2015   S=FS_T23_08CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2016   S=FS_T23_08ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2017   S=FS_T23_09CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2018   S=FS_T23_09ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2019   S=FS_T23_10CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2020   S=FS_T23_10ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2021   S=FS_T23_11CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2022   S=FS_T23_11ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2023   S=FS_T23_12CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2024   S=FS_T23_12ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2025   S=FS_T23_13CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2026   S=FS_T23_13ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2027   S=FS_T23_14CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2028   S=FS_T23_14ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2029   S=FS_T23_15CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2030   S=FS_T23_15ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2031   S=FS_T23_16CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2032   S=FS_T23_16ThresholdWr
+#
+#OBJ: TF_WriteforFire2
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##------------------------------
+#M:        p=31 t=HR o=Iw  f=W r=  2033   S=FS_T24_01CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2034   S=FS_T24_01ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2035   S=FS_T24_02CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2036   S=FS_T24_02ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2037   S=FS_T24_03CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2038   S=FS_T24_03ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2039   S=FS_T24_04CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2040   S=FS_T24_04ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2041   S=FS_T24_05CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2042   S=FS_T24_05ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2043   S=FS_T24_06CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2044   S=FS_T24_06ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2045   S=FS_T24_07CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2046   S=FS_T24_07ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2047   S=FS_T24_08CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2048   S=FS_T24_08ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2049   S=FS_T24_09CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2050   S=FS_T24_09ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2051   S=FS_T24_10CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2052   S=FS_T24_10ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2053   S=FS_T24_11CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2054   S=FS_T24_11ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2055   S=FS_T24_12CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2056   S=FS_T24_12ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2057   S=FS_T24_13CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2058   S=FS_T24_13ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2059   S=FS_T24_14CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2060   S=FS_T24_14ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2061   S=FS_T24_15CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2062   S=FS_T24_15ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2063   S=FS_T24_16CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2064   S=FS_T24_16ThresholdWr
+#
+#OBJ: TF_WriteforFire3
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##------------------------------
+#M:        p=31 t=HR o=Iw  f=W r=  2065   S=FS_T27_01CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2066   S=FS_T27_01ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2067   S=FS_T27_02CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2068   S=FS_T27_02ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2069   S=FS_T27_03CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2070   S=FS_T27_03ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2071   S=FS_T27_04CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2072   S=FS_T27_04ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2073   S=FS_T27_05CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2074   S=FS_T27_05ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2075   S=FS_T27_06CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2076   S=FS_T27_06ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2077   S=FS_T27_07CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2078   S=FS_T27_07ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2079   S=FS_T27_08CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2080   S=FS_T27_08ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2081   S=FS_T27_09CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2082   S=FS_T27_09ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2083   S=FS_T27_10CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2084   S=FS_T27_10ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2085   S=FS_T27_11CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2086   S=FS_T27_11ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2087   S=FS_T27_12CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2088   S=FS_T27_12ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2089   S=FS_T27_13CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2090   S=FS_T27_13ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2091   S=FS_T27_14CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2092   S=FS_T27_14ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2093   S=FS_T27_15CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2094   S=FS_T27_15ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2095   S=FS_T27_16CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2096   S=FS_T27_16ThresholdWr
+#
+#OBJ: TF_WriteforFire4
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##------------------------------
+#M:        p=31 t=HR o=Iw  f=W r=  2097   S=FS_T28_01CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2098   S=FS_T28_01ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2099   S=FS_T28_02CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2100   S=FS_T28_02ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2101   S=FS_T28_03CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2102   S=FS_T28_03ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2103   S=FS_T28_04CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2104   S=FS_T28_04ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2105   S=FS_T28_05CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2106   S=FS_T28_05ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2107   S=FS_T28_06CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2108   S=FS_T28_06ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2109   S=FS_T28_07CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2110   S=FS_T28_07ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2111   S=FS_T28_08CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2112   S=FS_T28_08ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2113   S=FS_T28_09CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2114   S=FS_T28_09ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2115   S=FS_T28_10CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2116   S=FS_T28_10ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2117   S=FS_T28_11CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2118   S=FS_T28_11ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2119   S=FS_T28_12CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2120   S=FS_T28_12ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2121   S=FS_T28_13CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2122   S=FS_T28_13ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2123   S=FS_T28_14CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2124   S=FS_T28_14ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2125   S=FS_T28_15CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2126   S=FS_T28_15ThresholdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2127   S=FS_T28_16CmdWr
+#M:        p=31 t=HR o=Iw  f=W r=  2128   S=FS_T28_16ThresholdWr
+
+OBJ: F_Sensors_23
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=33 t=HR o=I  f=W r= 12701   S=FS_T23_01CommStat
+M:        p=33 t=HR o=I  f=W r= 12702   S=FS_T23_01CommPars
+M:        p=33 t=HR o=I  f=W r= 12703   S=FS_T23_01Threshold
+M:        p=33 t=HR o=I  f=W r= 12704   S=FS_T23_01MeasTemp
+M:        p=33 t=HR o=I  f=W r= 12705   S=FS_T23_01MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 12706   S=FS_T23_01ThresFlag
+M:        p=33 t=HR o=I  f=W r= 12707   S=FS_T23_01ADActual
+M:        p=33 t=HR o=I  f=W r= 12708   S=FS_T23_01ADHighR
+M:        p=33 t=HR o=I  f=W r= 12709   S=FS_T23_01ADLowR
+M:        p=33 t=HR o=I  f=W r= 12710   S=FS_T23_01MeasRes
+M:        p=33 t=HR o=I  f=W r= 12711   S=FS_T23_01LastCmd
+M:        p=33 t=HR o=I  f=W r= 12712   S=FS_T23_01LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 12713   S=FS_T23_01PLCData
+
+M:        p=33 t=HR o=I  f=W r= 12721   S=FS_T23_02CommStat
+M:        p=33 t=HR o=I  f=W r= 12722   S=FS_T23_02CommPars
+M:        p=33 t=HR o=I  f=W r= 12723   S=FS_T23_02Threshold
+M:        p=33 t=HR o=I  f=W r= 12724   S=FS_T23_02MeasTemp
+M:        p=33 t=HR o=I  f=W r= 12725   S=FS_T23_02MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 12726   S=FS_T23_02ThresFlag
+M:        p=33 t=HR o=I  f=W r= 12727   S=FS_T23_02ADActual
+M:        p=33 t=HR o=I  f=W r= 12728   S=FS_T23_02ADHighR
+M:        p=33 t=HR o=I  f=W r= 12729   S=FS_T23_02ADLowR
+M:        p=33 t=HR o=I  f=W r= 12730   S=FS_T23_02MeasRes
+M:        p=33 t=HR o=I  f=W r= 12731   S=FS_T23_02LastCmd
+M:        p=33 t=HR o=I  f=W r= 12732   S=FS_T23_02LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 12733   S=FS_T23_02PLCData
+
+M:        p=33 t=HR o=I  f=W r= 12741   S=FS_T23_03CommStat
+M:        p=33 t=HR o=I  f=W r= 12742   S=FS_T23_03CommPars
+M:        p=33 t=HR o=I  f=W r= 12743   S=FS_T23_03Threshold
+M:        p=33 t=HR o=I  f=W r= 12744   S=FS_T23_03MeasTemp
+M:        p=33 t=HR o=I  f=W r= 12745   S=FS_T23_03MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 12746   S=FS_T23_03ThresFlag
+M:        p=33 t=HR o=I  f=W r= 12747   S=FS_T23_03ADActual
+M:        p=33 t=HR o=I  f=W r= 12748   S=FS_T23_03ADHighR
+M:        p=33 t=HR o=I  f=W r= 12749   S=FS_T23_03ADLowR
+M:        p=33 t=HR o=I  f=W r= 12750   S=FS_T23_03MeasRes
+M:        p=33 t=HR o=I  f=W r= 12751   S=FS_T23_03LastCmd
+M:        p=33 t=HR o=I  f=W r= 12752   S=FS_T23_03LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 12753   S=FS_T23_03PLCData
+
+M:        p=33 t=HR o=I  f=W r= 12761   S=FS_T23_04CommStat
+M:        p=33 t=HR o=I  f=W r= 12762   S=FS_T23_04CommPars
+M:        p=33 t=HR o=I  f=W r= 12763   S=FS_T23_04Threshold
+M:        p=33 t=HR o=I  f=W r= 12764   S=FS_T23_04MeasTemp
+M:        p=33 t=HR o=I  f=W r= 12765   S=FS_T23_04MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 12766   S=FS_T23_04ThresFlag
+M:        p=33 t=HR o=I  f=W r= 12767   S=FS_T23_04ADActual
+M:        p=33 t=HR o=I  f=W r= 12768   S=FS_T23_04ADHighR
+M:        p=33 t=HR o=I  f=W r= 12769   S=FS_T23_04ADLowR
+M:        p=33 t=HR o=I  f=W r= 12770   S=FS_T23_04MeasRes
+M:        p=33 t=HR o=I  f=W r= 12771   S=FS_T23_04LastCmd
+M:        p=33 t=HR o=I  f=W r= 12772   S=FS_T23_04LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 12773   S=FS_T23_04PLCData
+
+M:        p=33 t=HR o=I  f=W r= 12781   S=FS_T23_05CommStat
+M:        p=33 t=HR o=I  f=W r= 12782   S=FS_T23_05CommPars
+M:        p=33 t=HR o=I  f=W r= 12783   S=FS_T23_05Threshold
+M:        p=33 t=HR o=I  f=W r= 12784   S=FS_T23_05MeasTemp
+M:        p=33 t=HR o=I  f=W r= 12785   S=FS_T23_05MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 12786   S=FS_T23_05ThresFlag
+M:        p=33 t=HR o=I  f=W r= 12787   S=FS_T23_05ADActual
+M:        p=33 t=HR o=I  f=W r= 12788   S=FS_T23_05ADHighR
+M:        p=33 t=HR o=I  f=W r= 12789   S=FS_T23_05ADLowR
+M:        p=33 t=HR o=I  f=W r= 12790   S=FS_T23_05MeasRes
+M:        p=33 t=HR o=I  f=W r= 12791   S=FS_T23_05LastCmd
+M:        p=33 t=HR o=I  f=W r= 12792   S=FS_T23_05LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 12793   S=FS_T23_05PLCData
+
+M:        p=33 t=HR o=I  f=W r= 12801   S=FS_T23_06CommStat
+M:        p=33 t=HR o=I  f=W r= 12802   S=FS_T23_06CommPars
+M:        p=33 t=HR o=I  f=W r= 12803   S=FS_T23_06Threshold
+M:        p=33 t=HR o=I  f=W r= 12804   S=FS_T23_06MeasTemp
+M:        p=33 t=HR o=I  f=W r= 12805   S=FS_T23_06MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 12806   S=FS_T23_06ThresFlag
+M:        p=33 t=HR o=I  f=W r= 12807   S=FS_T23_06ADActual
+M:        p=33 t=HR o=I  f=W r= 12808   S=FS_T23_06ADHighR
+M:        p=33 t=HR o=I  f=W r= 12809   S=FS_T23_06ADLowR
+M:        p=33 t=HR o=I  f=W r= 12810   S=FS_T23_06MeasRes
+M:        p=33 t=HR o=I  f=W r= 12811   S=FS_T23_06LastCmd
+M:        p=33 t=HR o=I  f=W r= 12812   S=FS_T23_06LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 12813   S=FS_T23_06PLCData
+
+
+OBJ: F_Sensors_23
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=34 t=HR o=I  f=W r= 12821   S=FS_T23_07CommStat
+M:        p=34 t=HR o=I  f=W r= 12822   S=FS_T23_07CommPars
+M:        p=34 t=HR o=I  f=W r= 12823   S=FS_T23_07Threshold
+M:        p=34 t=HR o=I  f=W r= 12824   S=FS_T23_07MeasTemp
+M:        p=34 t=HR o=I  f=W r= 12825   S=FS_T23_07MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 12826   S=FS_T23_07ThresFlag
+M:        p=34 t=HR o=I  f=W r= 12827   S=FS_T23_07ADActual
+M:        p=34 t=HR o=I  f=W r= 12828   S=FS_T23_07ADHighR
+M:        p=34 t=HR o=I  f=W r= 12829   S=FS_T23_07ADLowR
+M:        p=34 t=HR o=I  f=W r= 12830   S=FS_T23_07MeasRes
+M:        p=34 t=HR o=I  f=W r= 12831   S=FS_T23_07LastCmd
+M:        p=34 t=HR o=I  f=W r= 12832   S=FS_T23_07LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 12833   S=FS_T23_07PLCData
+
+M:        p=34 t=HR o=I  f=W r= 12841   S=FS_T23_08CommStat
+M:        p=34 t=HR o=I  f=W r= 12842   S=FS_T23_08CommPars
+M:        p=34 t=HR o=I  f=W r= 12843   S=FS_T23_08Threshold
+M:        p=34 t=HR o=I  f=W r= 12844   S=FS_T23_08MeasTemp
+M:        p=34 t=HR o=I  f=W r= 12845   S=FS_T23_08MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 12846   S=FS_T23_08ThresFlag
+M:        p=34 t=HR o=I  f=W r= 12847   S=FS_T23_08ADActual
+M:        p=34 t=HR o=I  f=W r= 12848   S=FS_T23_08ADHighR
+M:        p=34 t=HR o=I  f=W r= 12849   S=FS_T23_08ADLowR
+M:        p=34 t=HR o=I  f=W r= 12850   S=FS_T23_08MeasRes
+M:        p=34 t=HR o=I  f=W r= 12851   S=FS_T23_08LastCmd
+M:        p=34 t=HR o=I  f=W r= 12852   S=FS_T23_08LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 12853   S=FS_T23_08PLCData
+
+M:        p=34 t=HR o=I  f=W r= 12861   S=FS_T23_09CommStat
+M:        p=34 t=HR o=I  f=W r= 12862   S=FS_T23_09CommPars
+M:        p=34 t=HR o=I  f=W r= 12863   S=FS_T23_09Threshold
+M:        p=34 t=HR o=I  f=W r= 12864   S=FS_T23_09MeasTemp
+M:        p=34 t=HR o=I  f=W r= 12865   S=FS_T23_09MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 12866   S=FS_T23_09ThresFlag
+M:        p=34 t=HR o=I  f=W r= 12867   S=FS_T23_09ADActual
+M:        p=34 t=HR o=I  f=W r= 12868   S=FS_T23_09ADHighR
+M:        p=34 t=HR o=I  f=W r= 12869   S=FS_T23_09ADLowR
+M:        p=34 t=HR o=I  f=W r= 12870   S=FS_T23_09MeasRes
+M:        p=34 t=HR o=I  f=W r= 12871   S=FS_T23_09LastCmd
+M:        p=34 t=HR o=I  f=W r= 12872   S=FS_T23_09LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 12873   S=FS_T23_09PLCData
+
+M:        p=34 t=HR o=I  f=W r= 12881   S=FS_T23_10CommStat
+M:        p=34 t=HR o=I  f=W r= 12882   S=FS_T23_10CommPars
+M:        p=34 t=HR o=I  f=W r= 12883   S=FS_T23_10Threshold
+M:        p=34 t=HR o=I  f=W r= 12884   S=FS_T23_10MeasTemp
+M:        p=34 t=HR o=I  f=W r= 12885   S=FS_T23_10MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 12886   S=FS_T23_10ThresFlag
+M:        p=34 t=HR o=I  f=W r= 12887   S=FS_T23_10ADActual
+M:        p=34 t=HR o=I  f=W r= 12888   S=FS_T23_10ADHighR
+M:        p=34 t=HR o=I  f=W r= 12889   S=FS_T23_10ADLowR
+M:        p=34 t=HR o=I  f=W r= 12890   S=FS_T23_10MeasRes
+M:        p=34 t=HR o=I  f=W r= 12891   S=FS_T23_10LastCmd
+M:        p=34 t=HR o=I  f=W r= 12892   S=FS_T23_10LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 12893   S=FS_T23_10PLCData
+
+M:        p=34 t=HR o=I  f=W r= 12901   S=FS_T23_11CommStat
+M:        p=34 t=HR o=I  f=W r= 12902   S=FS_T23_11CommPars
+M:        p=34 t=HR o=I  f=W r= 12903   S=FS_T23_11Threshold
+M:        p=34 t=HR o=I  f=W r= 12904   S=FS_T23_11MeasTemp
+M:        p=34 t=HR o=I  f=W r= 12905   S=FS_T23_11MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 12906   S=FS_T23_11ThresFlag
+M:        p=34 t=HR o=I  f=W r= 12907   S=FS_T23_11ADActual
+M:        p=34 t=HR o=I  f=W r= 12908   S=FS_T23_11ADHighR
+M:        p=34 t=HR o=I  f=W r= 12909   S=FS_T23_11ADLowR
+M:        p=34 t=HR o=I  f=W r= 12910   S=FS_T23_11MeasRes
+M:        p=34 t=HR o=I  f=W r= 12911   S=FS_T23_11LastCmd
+M:        p=34 t=HR o=I  f=W r= 12912   S=FS_T23_11LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 12913   S=FS_T23_11PLCData
+
+M:        p=34 t=HR o=I  f=W r= 12921   S=FS_T23_12CommStat
+M:        p=34 t=HR o=I  f=W r= 12922   S=FS_T23_12CommPars
+M:        p=34 t=HR o=I  f=W r= 12923   S=FS_T23_12Threshold
+M:        p=34 t=HR o=I  f=W r= 12924   S=FS_T23_12MeasTemp
+M:        p=34 t=HR o=I  f=W r= 12925   S=FS_T23_12MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 12926   S=FS_T23_12ThresFlag
+M:        p=34 t=HR o=I  f=W r= 12927   S=FS_T23_12ADActual
+M:        p=34 t=HR o=I  f=W r= 12928   S=FS_T23_12ADHighR
+M:        p=34 t=HR o=I  f=W r= 12929   S=FS_T23_12ADLowR
+M:        p=34 t=HR o=I  f=W r= 12930   S=FS_T23_12MeasRes
+M:        p=34 t=HR o=I  f=W r= 12931   S=FS_T23_12LastCmd
+M:        p=34 t=HR o=I  f=W r= 12932   S=FS_T23_12LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 12933   S=FS_T23_12PLCData
+
+
+OBJ: F_Sensors_23
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=35 t=HR o=I  f=W r= 12941   S=FS_T23_13CommStat
+M:        p=35 t=HR o=I  f=W r= 12942   S=FS_T23_13CommPars
+M:        p=35 t=HR o=I  f=W r= 12943   S=FS_T23_13Threshold
+M:        p=35 t=HR o=I  f=W r= 12944   S=FS_T23_13MeasTemp
+M:        p=35 t=HR o=I  f=W r= 12945   S=FS_T23_13MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 12946   S=FS_T23_13ThresFlag
+M:        p=35 t=HR o=I  f=W r= 12947   S=FS_T23_13ADActual
+M:        p=35 t=HR o=I  f=W r= 12948   S=FS_T23_13ADHighR
+M:        p=35 t=HR o=I  f=W r= 12949   S=FS_T23_13ADLowR
+M:        p=35 t=HR o=I  f=W r= 12950   S=FS_T23_13MeasRes
+M:        p=35 t=HR o=I  f=W r= 12951   S=FS_T23_13LastCmd
+M:        p=35 t=HR o=I  f=W r= 12952   S=FS_T23_13LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 12953   S=FS_T23_13PLCData
+
+M:        p=35 t=HR o=I  f=W r= 12961   S=FS_T23_14CommStat
+M:        p=35 t=HR o=I  f=W r= 12962   S=FS_T23_14CommPars
+M:        p=35 t=HR o=I  f=W r= 12963   S=FS_T23_14Threshold
+M:        p=35 t=HR o=I  f=W r= 12964   S=FS_T23_14MeasTemp
+M:        p=35 t=HR o=I  f=W r= 12965   S=FS_T23_14MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 12966   S=FS_T23_14ThresFlag
+M:        p=35 t=HR o=I  f=W r= 12967   S=FS_T23_14ADActual
+M:        p=35 t=HR o=I  f=W r= 12968   S=FS_T23_14ADHighR
+M:        p=35 t=HR o=I  f=W r= 12969   S=FS_T23_14ADLowR
+M:        p=35 t=HR o=I  f=W r= 12970   S=FS_T23_14MeasRes
+M:        p=35 t=HR o=I  f=W r= 12971   S=FS_T23_14LastCmd
+M:        p=35 t=HR o=I  f=W r= 12972   S=FS_T23_14LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 12973   S=FS_T23_14PLCData
+
+M:        p=35 t=HR o=I  f=W r= 12981   S=FS_T23_15CommStat
+M:        p=35 t=HR o=I  f=W r= 12982   S=FS_T23_15CommPars
+M:        p=35 t=HR o=I  f=W r= 12983   S=FS_T23_15Threshold
+M:        p=35 t=HR o=I  f=W r= 12984   S=FS_T23_15MeasTemp
+M:        p=35 t=HR o=I  f=W r= 12985   S=FS_T23_15MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 12986   S=FS_T23_15ThresFlag
+M:        p=35 t=HR o=I  f=W r= 12987   S=FS_T23_15ADActual
+M:        p=35 t=HR o=I  f=W r= 12988   S=FS_T23_15ADHighR
+M:        p=35 t=HR o=I  f=W r= 12989   S=FS_T23_15ADLowR
+M:        p=35 t=HR o=I  f=W r= 12990   S=FS_T23_15MeasRes
+M:        p=35 t=HR o=I  f=W r= 12991   S=FS_T23_15LastCmd
+M:        p=35 t=HR o=I  f=W r= 12992   S=FS_T23_15LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 12993   S=FS_T23_15PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13001   S=FS_T23_16CommStat
+M:        p=35 t=HR o=I  f=W r= 13002   S=FS_T23_16CommPars
+M:        p=35 t=HR o=I  f=W r= 13003   S=FS_T23_16Threshold
+M:        p=35 t=HR o=I  f=W r= 13004   S=FS_T23_16MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13005   S=FS_T23_16MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13006   S=FS_T23_16ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13007   S=FS_T23_16ADActual
+M:        p=35 t=HR o=I  f=W r= 13008   S=FS_T23_16ADHighR
+M:        p=35 t=HR o=I  f=W r= 13009   S=FS_T23_16ADLowR
+M:        p=35 t=HR o=I  f=W r= 13010   S=FS_T23_16MeasRes
+M:        p=35 t=HR o=I  f=W r= 13011   S=FS_T23_16LastCmd
+M:        p=35 t=HR o=I  f=W r= 13012   S=FS_T23_16LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13013   S=FS_T23_16PLCData
+
+
+OBJ: F_Sensors_24
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=33 t=HR o=I  f=W r= 13021   S=FS_T24_01CommStat
+M:        p=33 t=HR o=I  f=W r= 13022   S=FS_T24_01CommPars
+M:        p=33 t=HR o=I  f=W r= 13023   S=FS_T24_01Threshold
+M:        p=33 t=HR o=I  f=W r= 13024   S=FS_T24_01MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13025   S=FS_T24_01MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13026   S=FS_T24_01ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13027   S=FS_T24_01ADActual
+M:        p=33 t=HR o=I  f=W r= 13028   S=FS_T24_01ADHighR
+M:        p=33 t=HR o=I  f=W r= 13029   S=FS_T24_01ADLowR
+M:        p=33 t=HR o=I  f=W r= 13030   S=FS_T24_01MeasRes
+M:        p=33 t=HR o=I  f=W r= 13031   S=FS_T24_01LastCmd
+M:        p=33 t=HR o=I  f=W r= 13032   S=FS_T24_01LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13033   S=FS_T24_01PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13041   S=FS_T24_02CommStat
+M:        p=33 t=HR o=I  f=W r= 13042   S=FS_T24_02CommPars
+M:        p=33 t=HR o=I  f=W r= 13043   S=FS_T24_02Threshold
+M:        p=33 t=HR o=I  f=W r= 13044   S=FS_T24_02MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13045   S=FS_T24_02MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13046   S=FS_T24_02ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13047   S=FS_T24_02ADActual
+M:        p=33 t=HR o=I  f=W r= 13048   S=FS_T24_02ADHighR
+M:        p=33 t=HR o=I  f=W r= 13049   S=FS_T24_02ADLowR
+M:        p=33 t=HR o=I  f=W r= 13050   S=FS_T24_02MeasRes
+M:        p=33 t=HR o=I  f=W r= 13051   S=FS_T24_02LastCmd
+M:        p=33 t=HR o=I  f=W r= 13052   S=FS_T24_02LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13053   S=FS_T24_02PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13061   S=FS_T24_03CommStat
+M:        p=33 t=HR o=I  f=W r= 13062   S=FS_T24_03CommPars
+M:        p=33 t=HR o=I  f=W r= 13063   S=FS_T24_03Threshold
+M:        p=33 t=HR o=I  f=W r= 13064   S=FS_T24_03MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13065   S=FS_T24_03MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13066   S=FS_T24_03ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13067   S=FS_T24_03ADActual
+M:        p=33 t=HR o=I  f=W r= 13068   S=FS_T24_03ADHighR
+M:        p=33 t=HR o=I  f=W r= 13069   S=FS_T24_03ADLowR
+M:        p=33 t=HR o=I  f=W r= 13070   S=FS_T24_03MeasRes
+M:        p=33 t=HR o=I  f=W r= 13071   S=FS_T24_03LastCmd
+M:        p=33 t=HR o=I  f=W r= 13072   S=FS_T24_03LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13073   S=FS_T24_03PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13081   S=FS_T24_04CommStat
+M:        p=33 t=HR o=I  f=W r= 13082   S=FS_T24_04CommPars
+M:        p=33 t=HR o=I  f=W r= 13083   S=FS_T24_04Threshold
+M:        p=33 t=HR o=I  f=W r= 13084   S=FS_T24_04MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13085   S=FS_T24_04MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13086   S=FS_T24_04ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13087   S=FS_T24_04ADActual
+M:        p=33 t=HR o=I  f=W r= 13088   S=FS_T24_04ADHighR
+M:        p=33 t=HR o=I  f=W r= 13089   S=FS_T24_04ADLowR
+M:        p=33 t=HR o=I  f=W r= 13090   S=FS_T24_04MeasRes
+M:        p=33 t=HR o=I  f=W r= 13091   S=FS_T24_04LastCmd
+M:        p=33 t=HR o=I  f=W r= 13092   S=FS_T24_04LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13093   S=FS_T24_04PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13101   S=FS_T24_05CommStat
+M:        p=33 t=HR o=I  f=W r= 13102   S=FS_T24_05CommPars
+M:        p=33 t=HR o=I  f=W r= 13103   S=FS_T24_05Threshold
+M:        p=33 t=HR o=I  f=W r= 13104   S=FS_T24_05MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13105   S=FS_T24_05MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13106   S=FS_T24_05ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13107   S=FS_T24_05ADActual
+M:        p=33 t=HR o=I  f=W r= 13108   S=FS_T24_05ADHighR
+M:        p=33 t=HR o=I  f=W r= 13109   S=FS_T24_05ADLowR
+M:        p=33 t=HR o=I  f=W r= 13110   S=FS_T24_05MeasRes
+M:        p=33 t=HR o=I  f=W r= 13111   S=FS_T24_05LastCmd
+M:        p=33 t=HR o=I  f=W r= 13112   S=FS_T24_05LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13113   S=FS_T24_05PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13121   S=FS_T24_06CommStat
+M:        p=33 t=HR o=I  f=W r= 13122   S=FS_T24_06CommPars
+M:        p=33 t=HR o=I  f=W r= 13123   S=FS_T24_06Threshold
+M:        p=33 t=HR o=I  f=W r= 13124   S=FS_T24_06MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13125   S=FS_T24_06MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13126   S=FS_T24_06ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13127   S=FS_T24_06ADActual
+M:        p=33 t=HR o=I  f=W r= 13128   S=FS_T24_06ADHighR
+M:        p=33 t=HR o=I  f=W r= 13129   S=FS_T24_06ADLowR
+M:        p=33 t=HR o=I  f=W r= 13130   S=FS_T24_06MeasRes
+M:        p=33 t=HR o=I  f=W r= 13131   S=FS_T24_06LastCmd
+M:        p=33 t=HR o=I  f=W r= 13132   S=FS_T24_06LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13133   S=FS_T24_06PLCData
+
+
+OBJ: F_Sensors_24
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=34 t=HR o=I  f=W r= 13141   S=FS_T24_07CommStat
+M:        p=34 t=HR o=I  f=W r= 13142   S=FS_T24_07CommPars
+M:        p=34 t=HR o=I  f=W r= 13143   S=FS_T24_07Threshold
+M:        p=34 t=HR o=I  f=W r= 13144   S=FS_T24_07MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13145   S=FS_T24_07MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13146   S=FS_T24_07ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13147   S=FS_T24_07ADActual
+M:        p=34 t=HR o=I  f=W r= 13148   S=FS_T24_07ADHighR
+M:        p=34 t=HR o=I  f=W r= 13149   S=FS_T24_07ADLowR
+M:        p=34 t=HR o=I  f=W r= 13150   S=FS_T24_07MeasRes
+M:        p=34 t=HR o=I  f=W r= 13151   S=FS_T24_07LastCmd
+M:        p=34 t=HR o=I  f=W r= 13152   S=FS_T24_07LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13153   S=FS_T24_07PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13161   S=FS_T24_08CommStat
+M:        p=34 t=HR o=I  f=W r= 13162   S=FS_T24_08CommPars
+M:        p=34 t=HR o=I  f=W r= 13163   S=FS_T24_08Threshold
+M:        p=34 t=HR o=I  f=W r= 13164   S=FS_T24_08MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13165   S=FS_T24_08MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13166   S=FS_T24_08ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13167   S=FS_T24_08ADActual
+M:        p=34 t=HR o=I  f=W r= 13168   S=FS_T24_08ADHighR
+M:        p=34 t=HR o=I  f=W r= 13169   S=FS_T24_08ADLowR
+M:        p=34 t=HR o=I  f=W r= 13170   S=FS_T24_08MeasRes
+M:        p=34 t=HR o=I  f=W r= 13171   S=FS_T24_08LastCmd
+M:        p=34 t=HR o=I  f=W r= 13172   S=FS_T24_08LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13173   S=FS_T24_08PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13181   S=FS_T24_09CommStat
+M:        p=34 t=HR o=I  f=W r= 13182   S=FS_T24_09CommPars
+M:        p=34 t=HR o=I  f=W r= 13183   S=FS_T24_09Threshold
+M:        p=34 t=HR o=I  f=W r= 13184   S=FS_T24_09MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13185   S=FS_T24_09MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13186   S=FS_T24_09ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13187   S=FS_T24_09ADActual
+M:        p=34 t=HR o=I  f=W r= 13188   S=FS_T24_09ADHighR
+M:        p=34 t=HR o=I  f=W r= 13189   S=FS_T24_09ADLowR
+M:        p=34 t=HR o=I  f=W r= 13190   S=FS_T24_09MeasRes
+M:        p=34 t=HR o=I  f=W r= 13191   S=FS_T24_09LastCmd
+M:        p=34 t=HR o=I  f=W r= 13192   S=FS_T24_09LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13193   S=FS_T24_09PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13201   S=FS_T24_10CommStat
+M:        p=34 t=HR o=I  f=W r= 13202   S=FS_T24_10CommPars
+M:        p=34 t=HR o=I  f=W r= 13203   S=FS_T24_10Threshold
+M:        p=34 t=HR o=I  f=W r= 13204   S=FS_T24_10MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13205   S=FS_T24_10MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13206   S=FS_T24_10ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13207   S=FS_T24_10ADActual
+M:        p=34 t=HR o=I  f=W r= 13208   S=FS_T24_10ADHighR
+M:        p=34 t=HR o=I  f=W r= 13209   S=FS_T24_10ADLowR
+M:        p=34 t=HR o=I  f=W r= 13210   S=FS_T24_10MeasRes
+M:        p=34 t=HR o=I  f=W r= 13211   S=FS_T24_10LastCmd
+M:        p=34 t=HR o=I  f=W r= 13212   S=FS_T24_10LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13213   S=FS_T24_10PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13221   S=FS_T24_11CommStat
+M:        p=34 t=HR o=I  f=W r= 13222   S=FS_T24_11CommPars
+M:        p=34 t=HR o=I  f=W r= 13223   S=FS_T24_11Threshold
+M:        p=34 t=HR o=I  f=W r= 13224   S=FS_T24_11MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13225   S=FS_T24_11MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13226   S=FS_T24_11ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13227   S=FS_T24_11ADActual
+M:        p=34 t=HR o=I  f=W r= 13228   S=FS_T24_11ADHighR
+M:        p=34 t=HR o=I  f=W r= 13229   S=FS_T24_11ADLowR
+M:        p=34 t=HR o=I  f=W r= 13230   S=FS_T24_11MeasRes
+M:        p=34 t=HR o=I  f=W r= 13231   S=FS_T24_11LastCmd
+M:        p=34 t=HR o=I  f=W r= 13232   S=FS_T24_11LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13233   S=FS_T24_11PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13241   S=FS_T24_12CommStat
+M:        p=34 t=HR o=I  f=W r= 13242   S=FS_T24_12CommPars
+M:        p=34 t=HR o=I  f=W r= 13243   S=FS_T24_12Threshold
+M:        p=34 t=HR o=I  f=W r= 13244   S=FS_T24_12MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13245   S=FS_T24_12MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13246   S=FS_T24_12ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13247   S=FS_T24_12ADActual
+M:        p=34 t=HR o=I  f=W r= 13248   S=FS_T24_12ADHighR
+M:        p=34 t=HR o=I  f=W r= 13249   S=FS_T24_12ADLowR
+M:        p=34 t=HR o=I  f=W r= 13250   S=FS_T24_12MeasRes
+M:        p=34 t=HR o=I  f=W r= 13251   S=FS_T24_12LastCmd
+M:        p=34 t=HR o=I  f=W r= 13252   S=FS_T24_12LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13253   S=FS_T24_12PLCData
+
+
+OBJ: F_Sensors_24
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=35 t=HR o=I  f=W r= 13261   S=FS_T24_13CommStat
+M:        p=35 t=HR o=I  f=W r= 13262   S=FS_T24_13CommPars
+M:        p=35 t=HR o=I  f=W r= 13263   S=FS_T24_13Threshold
+M:        p=35 t=HR o=I  f=W r= 13264   S=FS_T24_13MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13265   S=FS_T24_13MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13266   S=FS_T24_13ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13267   S=FS_T24_13ADActual
+M:        p=35 t=HR o=I  f=W r= 13268   S=FS_T24_13ADHighR
+M:        p=35 t=HR o=I  f=W r= 13269   S=FS_T24_13ADLowR
+M:        p=35 t=HR o=I  f=W r= 13270   S=FS_T24_13MeasRes
+M:        p=35 t=HR o=I  f=W r= 13271   S=FS_T24_13LastCmd
+M:        p=35 t=HR o=I  f=W r= 13272   S=FS_T24_13LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13273   S=FS_T24_13PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13281   S=FS_T24_14CommStat
+M:        p=35 t=HR o=I  f=W r= 13282   S=FS_T24_14CommPars
+M:        p=35 t=HR o=I  f=W r= 13283   S=FS_T24_14Threshold
+M:        p=35 t=HR o=I  f=W r= 13284   S=FS_T24_14MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13285   S=FS_T24_14MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13286   S=FS_T24_14ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13287   S=FS_T24_14ADActual
+M:        p=35 t=HR o=I  f=W r= 13288   S=FS_T24_14ADHighR
+M:        p=35 t=HR o=I  f=W r= 13289   S=FS_T24_14ADLowR
+M:        p=35 t=HR o=I  f=W r= 13290   S=FS_T24_14MeasRes
+M:        p=35 t=HR o=I  f=W r= 13291   S=FS_T24_14LastCmd
+M:        p=35 t=HR o=I  f=W r= 13292   S=FS_T24_14LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13293   S=FS_T24_14PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13301   S=FS_T24_15CommStat
+M:        p=35 t=HR o=I  f=W r= 13302   S=FS_T24_15CommPars
+M:        p=35 t=HR o=I  f=W r= 13303   S=FS_T24_15Threshold
+M:        p=35 t=HR o=I  f=W r= 13304   S=FS_T24_15MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13305   S=FS_T24_15MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13306   S=FS_T24_15ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13307   S=FS_T24_15ADActual
+M:        p=35 t=HR o=I  f=W r= 13308   S=FS_T24_15ADHighR
+M:        p=35 t=HR o=I  f=W r= 13309   S=FS_T24_15ADLowR
+M:        p=35 t=HR o=I  f=W r= 13310   S=FS_T24_15MeasRes
+M:        p=35 t=HR o=I  f=W r= 13311   S=FS_T24_15LastCmd
+M:        p=35 t=HR o=I  f=W r= 13312   S=FS_T24_15LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13313   S=FS_T24_15PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13321   S=FS_T24_16CommStat
+M:        p=35 t=HR o=I  f=W r= 13322   S=FS_T24_16CommPars
+M:        p=35 t=HR o=I  f=W r= 13323   S=FS_T24_16Threshold
+M:        p=35 t=HR o=I  f=W r= 13324   S=FS_T24_16MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13325   S=FS_T24_16MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13326   S=FS_T24_16ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13327   S=FS_T24_16ADActual
+M:        p=35 t=HR o=I  f=W r= 13328   S=FS_T24_16ADHighR
+M:        p=35 t=HR o=I  f=W r= 13329   S=FS_T24_16ADLowR
+M:        p=35 t=HR o=I  f=W r= 13330   S=FS_T24_16MeasRes
+M:        p=35 t=HR o=I  f=W r= 13331   S=FS_T24_16LastCmd
+M:        p=35 t=HR o=I  f=W r= 13332   S=FS_T24_16LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13333   S=FS_T24_16PLCData
+
+
+OBJ: F_Sensors_27
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=33 t=HR o=I  f=W r= 13341   S=FS_T27_01CommStat
+M:        p=33 t=HR o=I  f=W r= 13342   S=FS_T27_01CommPars
+M:        p=33 t=HR o=I  f=W r= 13343   S=FS_T27_01Threshold
+M:        p=33 t=HR o=I  f=W r= 13344   S=FS_T27_01MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13345   S=FS_T27_01MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13346   S=FS_T27_01ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13347   S=FS_T27_01ADActual
+M:        p=33 t=HR o=I  f=W r= 13348   S=FS_T27_01ADHighR
+M:        p=33 t=HR o=I  f=W r= 13349   S=FS_T27_01ADLowR
+M:        p=33 t=HR o=I  f=W r= 13350   S=FS_T27_01MeasRes
+M:        p=33 t=HR o=I  f=W r= 13351   S=FS_T27_01LastCmd
+M:        p=33 t=HR o=I  f=W r= 13352   S=FS_T27_01LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13353   S=FS_T27_01PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13361   S=FS_T27_02CommStat
+M:        p=33 t=HR o=I  f=W r= 13362   S=FS_T27_02CommPars
+M:        p=33 t=HR o=I  f=W r= 13363   S=FS_T27_02Threshold
+M:        p=33 t=HR o=I  f=W r= 13364   S=FS_T27_02MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13365   S=FS_T27_02MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13366   S=FS_T27_02ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13367   S=FS_T27_02ADActual
+M:        p=33 t=HR o=I  f=W r= 13368   S=FS_T27_02ADHighR
+M:        p=33 t=HR o=I  f=W r= 13369   S=FS_T27_02ADLowR
+M:        p=33 t=HR o=I  f=W r= 13370   S=FS_T27_02MeasRes
+M:        p=33 t=HR o=I  f=W r= 13371   S=FS_T27_02LastCmd
+M:        p=33 t=HR o=I  f=W r= 13372   S=FS_T27_02LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13373   S=FS_T27_02PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13381   S=FS_T27_03CommStat
+M:        p=33 t=HR o=I  f=W r= 13382   S=FS_T27_03CommPars
+M:        p=33 t=HR o=I  f=W r= 13383   S=FS_T27_03Threshold
+M:        p=33 t=HR o=I  f=W r= 13384   S=FS_T27_03MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13385   S=FS_T27_03MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13386   S=FS_T27_03ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13387   S=FS_T27_03ADActual
+M:        p=33 t=HR o=I  f=W r= 13388   S=FS_T27_03ADHighR
+M:        p=33 t=HR o=I  f=W r= 13389   S=FS_T27_03ADLowR
+M:        p=33 t=HR o=I  f=W r= 13390   S=FS_T27_03MeasRes
+M:        p=33 t=HR o=I  f=W r= 13391   S=FS_T27_03LastCmd
+M:        p=33 t=HR o=I  f=W r= 13392   S=FS_T27_03LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13393   S=FS_T27_03PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13401   S=FS_T27_04CommStat
+M:        p=33 t=HR o=I  f=W r= 13402   S=FS_T27_04CommPars
+M:        p=33 t=HR o=I  f=W r= 13403   S=FS_T27_04Threshold
+M:        p=33 t=HR o=I  f=W r= 13404   S=FS_T27_04MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13405   S=FS_T27_04MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13406   S=FS_T27_04ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13407   S=FS_T27_04ADActual
+M:        p=33 t=HR o=I  f=W r= 13408   S=FS_T27_04ADHighR
+M:        p=33 t=HR o=I  f=W r= 13409   S=FS_T27_04ADLowR
+M:        p=33 t=HR o=I  f=W r= 13410   S=FS_T27_04MeasRes
+M:        p=33 t=HR o=I  f=W r= 13411   S=FS_T27_04LastCmd
+M:        p=33 t=HR o=I  f=W r= 13412   S=FS_T27_04LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13413   S=FS_T27_04PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13421   S=FS_T27_05CommStat
+M:        p=33 t=HR o=I  f=W r= 13422   S=FS_T27_05CommPars
+M:        p=33 t=HR o=I  f=W r= 13423   S=FS_T27_05Threshold
+M:        p=33 t=HR o=I  f=W r= 13424   S=FS_T27_05MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13425   S=FS_T27_05MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13426   S=FS_T27_05ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13427   S=FS_T27_05ADActual
+M:        p=33 t=HR o=I  f=W r= 13428   S=FS_T27_05ADHighR
+M:        p=33 t=HR o=I  f=W r= 13429   S=FS_T27_05ADLowR
+M:        p=33 t=HR o=I  f=W r= 13430   S=FS_T27_05MeasRes
+M:        p=33 t=HR o=I  f=W r= 13431   S=FS_T27_05LastCmd
+M:        p=33 t=HR o=I  f=W r= 13432   S=FS_T27_05LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13433   S=FS_T27_05PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13441   S=FS_T27_06CommStat
+M:        p=33 t=HR o=I  f=W r= 13442   S=FS_T27_06CommPars
+M:        p=33 t=HR o=I  f=W r= 13443   S=FS_T27_06Threshold
+M:        p=33 t=HR o=I  f=W r= 13444   S=FS_T27_06MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13445   S=FS_T27_06MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13446   S=FS_T27_06ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13447   S=FS_T27_06ADActual
+M:        p=33 t=HR o=I  f=W r= 13448   S=FS_T27_06ADHighR
+M:        p=33 t=HR o=I  f=W r= 13449   S=FS_T27_06ADLowR
+M:        p=33 t=HR o=I  f=W r= 13450   S=FS_T27_06MeasRes
+M:        p=33 t=HR o=I  f=W r= 13451   S=FS_T27_06LastCmd
+M:        p=33 t=HR o=I  f=W r= 13452   S=FS_T27_06LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13453   S=FS_T27_06PLCData
+
+
+OBJ: F_Sensors_27
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=34 t=HR o=I  f=W r= 13461   S=FS_T27_07CommStat
+M:        p=34 t=HR o=I  f=W r= 13462   S=FS_T27_07CommPars
+M:        p=34 t=HR o=I  f=W r= 13463   S=FS_T27_07Threshold
+M:        p=34 t=HR o=I  f=W r= 13464   S=FS_T27_07MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13465   S=FS_T27_07MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13466   S=FS_T27_07ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13467   S=FS_T27_07ADActual
+M:        p=34 t=HR o=I  f=W r= 13468   S=FS_T27_07ADHighR
+M:        p=34 t=HR o=I  f=W r= 13469   S=FS_T27_07ADLowR
+M:        p=34 t=HR o=I  f=W r= 13470   S=FS_T27_07MeasRes
+M:        p=34 t=HR o=I  f=W r= 13471   S=FS_T27_07LastCmd
+M:        p=34 t=HR o=I  f=W r= 13472   S=FS_T27_07LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13473   S=FS_T27_07PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13481   S=FS_T27_08CommStat
+M:        p=34 t=HR o=I  f=W r= 13482   S=FS_T27_08CommPars
+M:        p=34 t=HR o=I  f=W r= 13483   S=FS_T27_08Threshold
+M:        p=34 t=HR o=I  f=W r= 13484   S=FS_T27_08MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13485   S=FS_T27_08MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13486   S=FS_T27_08ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13487   S=FS_T27_08ADActual
+M:        p=34 t=HR o=I  f=W r= 13488   S=FS_T27_08ADHighR
+M:        p=34 t=HR o=I  f=W r= 13489   S=FS_T27_08ADLowR
+M:        p=34 t=HR o=I  f=W r= 13490   S=FS_T27_08MeasRes
+M:        p=34 t=HR o=I  f=W r= 13491   S=FS_T27_08LastCmd
+M:        p=34 t=HR o=I  f=W r= 13492   S=FS_T27_08LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13493   S=FS_T27_08PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13501   S=FS_T27_09CommStat
+M:        p=34 t=HR o=I  f=W r= 13502   S=FS_T27_09CommPars
+M:        p=34 t=HR o=I  f=W r= 13503   S=FS_T27_09Threshold
+M:        p=34 t=HR o=I  f=W r= 13504   S=FS_T27_09MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13505   S=FS_T27_09MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13506   S=FS_T27_09ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13507   S=FS_T27_09ADActual
+M:        p=34 t=HR o=I  f=W r= 13508   S=FS_T27_09ADHighR
+M:        p=34 t=HR o=I  f=W r= 13509   S=FS_T27_09ADLowR
+M:        p=34 t=HR o=I  f=W r= 13510   S=FS_T27_09MeasRes
+M:        p=34 t=HR o=I  f=W r= 13511   S=FS_T27_09LastCmd
+M:        p=34 t=HR o=I  f=W r= 13512   S=FS_T27_09LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13513   S=FS_T27_09PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13521   S=FS_T27_10CommStat
+M:        p=34 t=HR o=I  f=W r= 13522   S=FS_T27_10CommPars
+M:        p=34 t=HR o=I  f=W r= 13523   S=FS_T27_10Threshold
+M:        p=34 t=HR o=I  f=W r= 13524   S=FS_T27_10MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13525   S=FS_T27_10MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13526   S=FS_T27_10ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13527   S=FS_T27_10ADActual
+M:        p=34 t=HR o=I  f=W r= 13528   S=FS_T27_10ADHighR
+M:        p=34 t=HR o=I  f=W r= 13529   S=FS_T27_10ADLowR
+M:        p=34 t=HR o=I  f=W r= 13530   S=FS_T27_10MeasRes
+M:        p=34 t=HR o=I  f=W r= 13531   S=FS_T27_10LastCmd
+M:        p=34 t=HR o=I  f=W r= 13532   S=FS_T27_10LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13533   S=FS_T27_10PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13541   S=FS_T27_11CommStat
+M:        p=34 t=HR o=I  f=W r= 13542   S=FS_T27_11CommPars
+M:        p=34 t=HR o=I  f=W r= 13543   S=FS_T27_11Threshold
+M:        p=34 t=HR o=I  f=W r= 13544   S=FS_T27_11MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13545   S=FS_T27_11MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13546   S=FS_T27_11ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13547   S=FS_T27_11ADActual
+M:        p=34 t=HR o=I  f=W r= 13548   S=FS_T27_11ADHighR
+M:        p=34 t=HR o=I  f=W r= 13549   S=FS_T27_11ADLowR
+M:        p=34 t=HR o=I  f=W r= 13550   S=FS_T27_11MeasRes
+M:        p=34 t=HR o=I  f=W r= 13551   S=FS_T27_11LastCmd
+M:        p=34 t=HR o=I  f=W r= 13552   S=FS_T27_11LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13553   S=FS_T27_11PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13561   S=FS_T27_12CommStat
+M:        p=34 t=HR o=I  f=W r= 13562   S=FS_T27_12CommPars
+M:        p=34 t=HR o=I  f=W r= 13563   S=FS_T27_12Threshold
+M:        p=34 t=HR o=I  f=W r= 13564   S=FS_T27_12MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13565   S=FS_T27_12MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13566   S=FS_T27_12ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13567   S=FS_T27_12ADActual
+M:        p=34 t=HR o=I  f=W r= 13568   S=FS_T27_12ADHighR
+M:        p=34 t=HR o=I  f=W r= 13569   S=FS_T27_12ADLowR
+M:        p=34 t=HR o=I  f=W r= 13570   S=FS_T27_12MeasRes
+M:        p=34 t=HR o=I  f=W r= 13571   S=FS_T27_12LastCmd
+M:        p=34 t=HR o=I  f=W r= 13572   S=FS_T27_12LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13573   S=FS_T27_12PLCData
+
+
+OBJ: F_Sensors_27
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=35 t=HR o=I  f=W r= 13581   S=FS_T27_13CommStat
+M:        p=35 t=HR o=I  f=W r= 13582   S=FS_T27_13CommPars
+M:        p=35 t=HR o=I  f=W r= 13583   S=FS_T27_13Threshold
+M:        p=35 t=HR o=I  f=W r= 13584   S=FS_T27_13MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13585   S=FS_T27_13MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13586   S=FS_T27_13ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13587   S=FS_T27_13ADActual
+M:        p=35 t=HR o=I  f=W r= 13588   S=FS_T27_13ADHighR
+M:        p=35 t=HR o=I  f=W r= 13589   S=FS_T27_13ADLowR
+M:        p=35 t=HR o=I  f=W r= 13590   S=FS_T27_13MeasRes
+M:        p=35 t=HR o=I  f=W r= 13591   S=FS_T27_13LastCmd
+M:        p=35 t=HR o=I  f=W r= 13592   S=FS_T27_13LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13593   S=FS_T27_13PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13601   S=FS_T27_14CommStat
+M:        p=35 t=HR o=I  f=W r= 13602   S=FS_T27_14CommPars
+M:        p=35 t=HR o=I  f=W r= 13603   S=FS_T27_14Threshold
+M:        p=35 t=HR o=I  f=W r= 13604   S=FS_T27_14MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13605   S=FS_T27_14MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13606   S=FS_T27_14ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13607   S=FS_T27_14ADActual
+M:        p=35 t=HR o=I  f=W r= 13608   S=FS_T27_14ADHighR
+M:        p=35 t=HR o=I  f=W r= 13609   S=FS_T27_14ADLowR
+M:        p=35 t=HR o=I  f=W r= 13610   S=FS_T27_14MeasRes
+M:        p=35 t=HR o=I  f=W r= 13611   S=FS_T27_14LastCmd
+M:        p=35 t=HR o=I  f=W r= 13612   S=FS_T27_14LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13613   S=FS_T27_14PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13621   S=FS_T27_15CommStat
+M:        p=35 t=HR o=I  f=W r= 13622   S=FS_T27_15CommPars
+M:        p=35 t=HR o=I  f=W r= 13623   S=FS_T27_15Threshold
+M:        p=35 t=HR o=I  f=W r= 13624   S=FS_T27_15MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13625   S=FS_T27_15MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13626   S=FS_T27_15ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13627   S=FS_T27_15ADActual
+M:        p=35 t=HR o=I  f=W r= 13628   S=FS_T27_15ADHighR
+M:        p=35 t=HR o=I  f=W r= 13629   S=FS_T27_15ADLowR
+M:        p=35 t=HR o=I  f=W r= 13630   S=FS_T27_15MeasRes
+M:        p=35 t=HR o=I  f=W r= 13631   S=FS_T27_15LastCmd
+M:        p=35 t=HR o=I  f=W r= 13632   S=FS_T27_15LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13633   S=FS_T27_15PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13641   S=FS_T27_16CommStat
+M:        p=35 t=HR o=I  f=W r= 13642   S=FS_T27_16CommPars
+M:        p=35 t=HR o=I  f=W r= 13643   S=FS_T27_16Threshold
+M:        p=35 t=HR o=I  f=W r= 13644   S=FS_T27_16MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13645   S=FS_T27_16MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13646   S=FS_T27_16ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13647   S=FS_T27_16ADActual
+M:        p=35 t=HR o=I  f=W r= 13648   S=FS_T27_16ADHighR
+M:        p=35 t=HR o=I  f=W r= 13649   S=FS_T27_16ADLowR
+M:        p=35 t=HR o=I  f=W r= 13650   S=FS_T27_16MeasRes
+M:        p=35 t=HR o=I  f=W r= 13651   S=FS_T27_16LastCmd
+M:        p=35 t=HR o=I  f=W r= 13652   S=FS_T27_16LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13653   S=FS_T27_16PLCData
+
+
+OBJ: F_Sensors_28
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=33 t=HR o=I  f=W r= 13661   S=FS_T28_01CommStat
+M:        p=33 t=HR o=I  f=W r= 13662   S=FS_T28_01CommPars
+M:        p=33 t=HR o=I  f=W r= 13663   S=FS_T28_01Threshold
+M:        p=33 t=HR o=I  f=W r= 13664   S=FS_T28_01MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13665   S=FS_T28_01MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13666   S=FS_T28_01ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13667   S=FS_T28_01ADActual
+M:        p=33 t=HR o=I  f=W r= 13668   S=FS_T28_01ADHighR
+M:        p=33 t=HR o=I  f=W r= 13669   S=FS_T28_01ADLowR
+M:        p=33 t=HR o=I  f=W r= 13670   S=FS_T28_01MeasRes
+M:        p=33 t=HR o=I  f=W r= 13671   S=FS_T28_01LastCmd
+M:        p=33 t=HR o=I  f=W r= 13672   S=FS_T28_01LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13673   S=FS_T28_01PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13681   S=FS_T28_02CommStat
+M:        p=33 t=HR o=I  f=W r= 13682   S=FS_T28_02CommPars
+M:        p=33 t=HR o=I  f=W r= 13683   S=FS_T28_02Threshold
+M:        p=33 t=HR o=I  f=W r= 13684   S=FS_T28_02MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13685   S=FS_T28_02MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13686   S=FS_T28_02ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13687   S=FS_T28_02ADActual
+M:        p=33 t=HR o=I  f=W r= 13688   S=FS_T28_02ADHighR
+M:        p=33 t=HR o=I  f=W r= 13689   S=FS_T28_02ADLowR
+M:        p=33 t=HR o=I  f=W r= 13690   S=FS_T28_02MeasRes
+M:        p=33 t=HR o=I  f=W r= 13691   S=FS_T28_02LastCmd
+M:        p=33 t=HR o=I  f=W r= 13692   S=FS_T28_02LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13693   S=FS_T28_02PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13701   S=FS_T28_03CommStat
+M:        p=33 t=HR o=I  f=W r= 13702   S=FS_T28_03CommPars
+M:        p=33 t=HR o=I  f=W r= 13703   S=FS_T28_03Threshold
+M:        p=33 t=HR o=I  f=W r= 13704   S=FS_T28_03MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13705   S=FS_T28_03MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13706   S=FS_T28_03ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13707   S=FS_T28_03ADActual
+M:        p=33 t=HR o=I  f=W r= 13708   S=FS_T28_03ADHighR
+M:        p=33 t=HR o=I  f=W r= 13709   S=FS_T28_03ADLowR
+M:        p=33 t=HR o=I  f=W r= 13710   S=FS_T28_03MeasRes
+M:        p=33 t=HR o=I  f=W r= 13711   S=FS_T28_03LastCmd
+M:        p=33 t=HR o=I  f=W r= 13712   S=FS_T28_03LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13713   S=FS_T28_03PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13721   S=FS_T28_04CommStat
+M:        p=33 t=HR o=I  f=W r= 13722   S=FS_T28_04CommPars
+M:        p=33 t=HR o=I  f=W r= 13723   S=FS_T28_04Threshold
+M:        p=33 t=HR o=I  f=W r= 13724   S=FS_T28_04MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13725   S=FS_T28_04MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13726   S=FS_T28_04ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13727   S=FS_T28_04ADActual
+M:        p=33 t=HR o=I  f=W r= 13728   S=FS_T28_04ADHighR
+M:        p=33 t=HR o=I  f=W r= 13729   S=FS_T28_04ADLowR
+M:        p=33 t=HR o=I  f=W r= 13730   S=FS_T28_04MeasRes
+M:        p=33 t=HR o=I  f=W r= 13731   S=FS_T28_04LastCmd
+M:        p=33 t=HR o=I  f=W r= 13732   S=FS_T28_04LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13733   S=FS_T28_04PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13741   S=FS_T28_05CommStat
+M:        p=33 t=HR o=I  f=W r= 13742   S=FS_T28_05CommPars
+M:        p=33 t=HR o=I  f=W r= 13743   S=FS_T28_05Threshold
+M:        p=33 t=HR o=I  f=W r= 13744   S=FS_T28_05MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13745   S=FS_T28_05MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13746   S=FS_T28_05ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13747   S=FS_T28_05ADActual
+M:        p=33 t=HR o=I  f=W r= 13748   S=FS_T28_05ADHighR
+M:        p=33 t=HR o=I  f=W r= 13749   S=FS_T28_05ADLowR
+M:        p=33 t=HR o=I  f=W r= 13750   S=FS_T28_05MeasRes
+M:        p=33 t=HR o=I  f=W r= 13751   S=FS_T28_05LastCmd
+M:        p=33 t=HR o=I  f=W r= 13752   S=FS_T28_05LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13753   S=FS_T28_05PLCData
+
+M:        p=33 t=HR o=I  f=W r= 13761   S=FS_T28_06CommStat
+M:        p=33 t=HR o=I  f=W r= 13762   S=FS_T28_06CommPars
+M:        p=33 t=HR o=I  f=W r= 13763   S=FS_T28_06Threshold
+M:        p=33 t=HR o=I  f=W r= 13764   S=FS_T28_06MeasTemp
+M:        p=33 t=HR o=I  f=W r= 13765   S=FS_T28_06MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 13766   S=FS_T28_06ThresFlag
+M:        p=33 t=HR o=I  f=W r= 13767   S=FS_T28_06ADActual
+M:        p=33 t=HR o=I  f=W r= 13768   S=FS_T28_06ADHighR
+M:        p=33 t=HR o=I  f=W r= 13769   S=FS_T28_06ADLowR
+M:        p=33 t=HR o=I  f=W r= 13770   S=FS_T28_06MeasRes
+M:        p=33 t=HR o=I  f=W r= 13771   S=FS_T28_06LastCmd
+M:        p=33 t=HR o=I  f=W r= 13772   S=FS_T28_06LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 13773   S=FS_T28_06PLCData
+
+
+OBJ: F_Sensors_28
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=34 t=HR o=I  f=W r= 13781   S=FS_T28_07CommStat
+M:        p=34 t=HR o=I  f=W r= 13782   S=FS_T28_07CommPars
+M:        p=34 t=HR o=I  f=W r= 13783   S=FS_T28_07Threshold
+M:        p=34 t=HR o=I  f=W r= 13784   S=FS_T28_07MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13785   S=FS_T28_07MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13786   S=FS_T28_07ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13787   S=FS_T28_07ADActual
+M:        p=34 t=HR o=I  f=W r= 13788   S=FS_T28_07ADHighR
+M:        p=34 t=HR o=I  f=W r= 13789   S=FS_T28_07ADLowR
+M:        p=34 t=HR o=I  f=W r= 13790   S=FS_T28_07MeasRes
+M:        p=34 t=HR o=I  f=W r= 13791   S=FS_T28_07LastCmd
+M:        p=34 t=HR o=I  f=W r= 13792   S=FS_T28_07LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13793   S=FS_T28_07PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13801   S=FS_T28_08CommStat
+M:        p=34 t=HR o=I  f=W r= 13802   S=FS_T28_08CommPars
+M:        p=34 t=HR o=I  f=W r= 13803   S=FS_T28_08Threshold
+M:        p=34 t=HR o=I  f=W r= 13804   S=FS_T28_08MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13805   S=FS_T28_08MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13806   S=FS_T28_08ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13807   S=FS_T28_08ADActual
+M:        p=34 t=HR o=I  f=W r= 13808   S=FS_T28_08ADHighR
+M:        p=34 t=HR o=I  f=W r= 13809   S=FS_T28_08ADLowR
+M:        p=34 t=HR o=I  f=W r= 13810   S=FS_T28_08MeasRes
+M:        p=34 t=HR o=I  f=W r= 13811   S=FS_T28_08LastCmd
+M:        p=34 t=HR o=I  f=W r= 13812   S=FS_T28_08LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13813   S=FS_T28_08PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13821   S=FS_T28_09CommStat
+M:        p=34 t=HR o=I  f=W r= 13822   S=FS_T28_09CommPars
+M:        p=34 t=HR o=I  f=W r= 13823   S=FS_T28_09Threshold
+M:        p=34 t=HR o=I  f=W r= 13824   S=FS_T28_09MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13825   S=FS_T28_09MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13826   S=FS_T28_09ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13827   S=FS_T28_09ADActual
+M:        p=34 t=HR o=I  f=W r= 13828   S=FS_T28_09ADHighR
+M:        p=34 t=HR o=I  f=W r= 13829   S=FS_T28_09ADLowR
+M:        p=34 t=HR o=I  f=W r= 13830   S=FS_T28_09MeasRes
+M:        p=34 t=HR o=I  f=W r= 13831   S=FS_T28_09LastCmd
+M:        p=34 t=HR o=I  f=W r= 13832   S=FS_T28_09LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13833   S=FS_T28_09PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13841   S=FS_T28_10CommStat
+M:        p=34 t=HR o=I  f=W r= 13842   S=FS_T28_10CommPars
+M:        p=34 t=HR o=I  f=W r= 13843   S=FS_T28_10Threshold
+M:        p=34 t=HR o=I  f=W r= 13844   S=FS_T28_10MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13845   S=FS_T28_10MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13846   S=FS_T28_10ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13847   S=FS_T28_10ADActual
+M:        p=34 t=HR o=I  f=W r= 13848   S=FS_T28_10ADHighR
+M:        p=34 t=HR o=I  f=W r= 13849   S=FS_T28_10ADLowR
+M:        p=34 t=HR o=I  f=W r= 13850   S=FS_T28_10MeasRes
+M:        p=34 t=HR o=I  f=W r= 13851   S=FS_T28_10LastCmd
+M:        p=34 t=HR o=I  f=W r= 13852   S=FS_T28_10LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13853   S=FS_T28_10PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13861   S=FS_T28_11CommStat
+M:        p=34 t=HR o=I  f=W r= 13862   S=FS_T28_11CommPars
+M:        p=34 t=HR o=I  f=W r= 13863   S=FS_T28_11Threshold
+M:        p=34 t=HR o=I  f=W r= 13864   S=FS_T28_11MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13865   S=FS_T28_11MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13866   S=FS_T28_11ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13867   S=FS_T28_11ADActual
+M:        p=34 t=HR o=I  f=W r= 13868   S=FS_T28_11ADHighR
+M:        p=34 t=HR o=I  f=W r= 13869   S=FS_T28_11ADLowR
+M:        p=34 t=HR o=I  f=W r= 13870   S=FS_T28_11MeasRes
+M:        p=34 t=HR o=I  f=W r= 13871   S=FS_T28_11LastCmd
+M:        p=34 t=HR o=I  f=W r= 13872   S=FS_T28_11LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13873   S=FS_T28_11PLCData
+
+M:        p=34 t=HR o=I  f=W r= 13881   S=FS_T28_12CommStat
+M:        p=34 t=HR o=I  f=W r= 13882   S=FS_T28_12CommPars
+M:        p=34 t=HR o=I  f=W r= 13883   S=FS_T28_12Threshold
+M:        p=34 t=HR o=I  f=W r= 13884   S=FS_T28_12MeasTemp
+M:        p=34 t=HR o=I  f=W r= 13885   S=FS_T28_12MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 13886   S=FS_T28_12ThresFlag
+M:        p=34 t=HR o=I  f=W r= 13887   S=FS_T28_12ADActual
+M:        p=34 t=HR o=I  f=W r= 13888   S=FS_T28_12ADHighR
+M:        p=34 t=HR o=I  f=W r= 13889   S=FS_T28_12ADLowR
+M:        p=34 t=HR o=I  f=W r= 13890   S=FS_T28_12MeasRes
+M:        p=34 t=HR o=I  f=W r= 13891   S=FS_T28_12LastCmd
+M:        p=34 t=HR o=I  f=W r= 13892   S=FS_T28_12LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 13893   S=FS_T28_12PLCData
+
+
+OBJ: F_Sensors_28
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=35 t=HR o=I  f=W r= 13901   S=FS_T28_13CommStat
+M:        p=35 t=HR o=I  f=W r= 13902   S=FS_T28_13CommPars
+M:        p=35 t=HR o=I  f=W r= 13903   S=FS_T28_13Threshold
+M:        p=35 t=HR o=I  f=W r= 13904   S=FS_T28_13MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13905   S=FS_T28_13MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13906   S=FS_T28_13ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13907   S=FS_T28_13ADActual
+M:        p=35 t=HR o=I  f=W r= 13908   S=FS_T28_13ADHighR
+M:        p=35 t=HR o=I  f=W r= 13909   S=FS_T28_13ADLowR
+M:        p=35 t=HR o=I  f=W r= 13910   S=FS_T28_13MeasRes
+M:        p=35 t=HR o=I  f=W r= 13911   S=FS_T28_13LastCmd
+M:        p=35 t=HR o=I  f=W r= 13912   S=FS_T28_13LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13913   S=FS_T28_13PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13921   S=FS_T28_14CommStat
+M:        p=35 t=HR o=I  f=W r= 13922   S=FS_T28_14CommPars
+M:        p=35 t=HR o=I  f=W r= 13923   S=FS_T28_14Threshold
+M:        p=35 t=HR o=I  f=W r= 13924   S=FS_T28_14MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13925   S=FS_T28_14MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13926   S=FS_T28_14ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13927   S=FS_T28_14ADActual
+M:        p=35 t=HR o=I  f=W r= 13928   S=FS_T28_14ADHighR
+M:        p=35 t=HR o=I  f=W r= 13929   S=FS_T28_14ADLowR
+M:        p=35 t=HR o=I  f=W r= 13930   S=FS_T28_14MeasRes
+M:        p=35 t=HR o=I  f=W r= 13931   S=FS_T28_14LastCmd
+M:        p=35 t=HR o=I  f=W r= 13932   S=FS_T28_14LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13933   S=FS_T28_14PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13941   S=FS_T28_15CommStat
+M:        p=35 t=HR o=I  f=W r= 13942   S=FS_T28_15CommPars
+M:        p=35 t=HR o=I  f=W r= 13943   S=FS_T28_15Threshold
+M:        p=35 t=HR o=I  f=W r= 13944   S=FS_T28_15MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13945   S=FS_T28_15MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13946   S=FS_T28_15ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13947   S=FS_T28_15ADActual
+M:        p=35 t=HR o=I  f=W r= 13948   S=FS_T28_15ADHighR
+M:        p=35 t=HR o=I  f=W r= 13949   S=FS_T28_15ADLowR
+M:        p=35 t=HR o=I  f=W r= 13950   S=FS_T28_15MeasRes
+M:        p=35 t=HR o=I  f=W r= 13951   S=FS_T28_15LastCmd
+M:        p=35 t=HR o=I  f=W r= 13952   S=FS_T28_15LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13953   S=FS_T28_15PLCData
+
+M:        p=35 t=HR o=I  f=W r= 13961   S=FS_T28_16CommStat
+M:        p=35 t=HR o=I  f=W r= 13962   S=FS_T28_16CommPars
+M:        p=35 t=HR o=I  f=W r= 13963   S=FS_T28_16Threshold
+M:        p=35 t=HR o=I  f=W r= 13964   S=FS_T28_16MeasTemp
+M:        p=35 t=HR o=I  f=W r= 13965   S=FS_T28_16MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 13966   S=FS_T28_16ThresFlag
+M:        p=35 t=HR o=I  f=W r= 13967   S=FS_T28_16ADActual
+M:        p=35 t=HR o=I  f=W r= 13968   S=FS_T28_16ADHighR
+M:        p=35 t=HR o=I  f=W r= 13969   S=FS_T28_16ADLowR
+M:        p=35 t=HR o=I  f=W r= 13970   S=FS_T28_16MeasRes
+M:        p=35 t=HR o=I  f=W r= 13971   S=FS_T28_16LastCmd
+M:        p=35 t=HR o=I  f=W r= 13972   S=FS_T28_16LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 13973   S=FS_T28_16PLCData
+
+# Write not supported by PLC
+##PATH35:  BM85-55
+#
+#OBJ: TF_WriteforFire1
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##------------------------------
+#
+#M:        p=37 t=HR o=Iw  f=W r=  2001   S=FS_T21_01CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2002   S=FS_T21_01ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2003   S=FS_T21_02CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2004   S=FS_T21_02ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2005   S=FS_T21_03CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2006   S=FS_T21_03ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2007   S=FS_T21_04CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2008   S=FS_T21_04ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2009   S=FS_T21_05CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2010   S=FS_T21_05ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2011   S=FS_T21_06CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2012   S=FS_T21_06ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2013   S=FS_T21_07CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2014   S=FS_T21_07ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2015   S=FS_T21_08CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2016   S=FS_T21_08ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2017   S=FS_T21_09CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2018   S=FS_T21_09ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2019   S=FS_T21_10CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2020   S=FS_T21_10ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2021   S=FS_T21_11CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2022   S=FS_T21_11ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2023   S=FS_T21_12CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2024   S=FS_T21_12ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2025   S=FS_T21_13CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2026   S=FS_T21_13ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2027   S=FS_T21_14CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2028   S=FS_T21_14ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2029   S=FS_T21_15CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2030   S=FS_T21_15ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2031   S=FS_T21_16CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2032   S=FS_T21_16ThresholdWr
+#
+#OBJ: TF_WriteforFire2
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##-----------------------------
+#M:        p=37 t=HR o=Iw  f=W r=  2033   S=FS_T22_01CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2034   S=FS_T22_01ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2035   S=FS_T22_02CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2036   S=FS_T22_02ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2037   S=FS_T22_03CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2038   S=FS_T22_03ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2039   S=FS_T22_04CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2040   S=FS_T22_04ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2041   S=FS_T22_05CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2042   S=FS_T22_05ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2043   S=FS_T22_06CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2044   S=FS_T22_06ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2045   S=FS_T22_07CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2046   S=FS_T22_07ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2047   S=FS_T22_08CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2048   S=FS_T22_08ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2049   S=FS_T22_09CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2050   S=FS_T22_09ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2051   S=FS_T22_10CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2052   S=FS_T22_10ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2053   S=FS_T22_11CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2054   S=FS_T22_11ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2055   S=FS_T22_12CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2056   S=FS_T22_12ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2057   S=FS_T22_13CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2058   S=FS_T22_13ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2059   S=FS_T22_14CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2060   S=FS_T22_14ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2061   S=FS_T22_15CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2062   S=FS_T22_15ThresholdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2063   S=FS_T22_16CmdWr
+#M:        p=37 t=HR o=Iw  f=W r=  2064   S=FS_T22_16ThresholdWr
+
+
+#z:20180813# OBJ: F_Sensors_21
+#z:20180813#   DIAG: v=3
+#z:20180813#   CYCL: v=10
+#z:20180813#   PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+#z:20180813#   FUNC: IF P0 && P1: Q1; ELSE Q0;
+#z:20180813# #-----------------------------
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14001   S=FS_T21_01CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14002   S=FS_T21_01CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14003   S=FS_T21_01Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14004   S=FS_T21_01MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14005   S=FS_T21_01MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14006   S=FS_T21_01ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14007   S=FS_T21_01ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14008   S=FS_T21_01ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14009   S=FS_T21_01ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14010   S=FS_T21_01MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14011   S=FS_T21_01LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14012   S=FS_T21_01LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14013   S=FS_T21_01PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14021   S=FS_T21_02CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14022   S=FS_T21_02CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14023   S=FS_T21_02Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14024   S=FS_T21_02MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14025   S=FS_T21_02MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14026   S=FS_T21_02ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14027   S=FS_T21_02ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14028   S=FS_T21_02ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14029   S=FS_T21_02ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14030   S=FS_T21_02MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14031   S=FS_T21_02LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14032   S=FS_T21_02LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14033   S=FS_T21_02PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14041   S=FS_T21_03CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14042   S=FS_T21_03CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14043   S=FS_T21_03Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14044   S=FS_T21_03MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14045   S=FS_T21_03MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14046   S=FS_T21_03ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14047   S=FS_T21_03ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14048   S=FS_T21_03ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14049   S=FS_T21_03ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14050   S=FS_T21_03MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14051   S=FS_T21_03LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14052   S=FS_T21_03LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14053   S=FS_T21_03PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14061   S=FS_T21_04CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14062   S=FS_T21_04CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14063   S=FS_T21_04Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14064   S=FS_T21_04MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14065   S=FS_T21_04MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14066   S=FS_T21_04ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14067   S=FS_T21_04ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14068   S=FS_T21_04ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14069   S=FS_T21_04ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14070   S=FS_T21_04MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14071   S=FS_T21_04LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14072   S=FS_T21_04LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14073   S=FS_T21_04PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14081   S=FS_T21_05CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14082   S=FS_T21_05CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14083   S=FS_T21_05Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14084   S=FS_T21_05MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14085   S=FS_T21_05MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14086   S=FS_T21_05ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14087   S=FS_T21_05ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14088   S=FS_T21_05ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14089   S=FS_T21_05ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14090   S=FS_T21_05MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14091   S=FS_T21_05LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14092   S=FS_T21_05LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14093   S=FS_T21_05PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14101   S=FS_T21_06CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14102   S=FS_T21_06CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14103   S=FS_T21_06Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14104   S=FS_T21_06MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14105   S=FS_T21_06MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14106   S=FS_T21_06ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14107   S=FS_T21_06ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14108   S=FS_T21_06ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14109   S=FS_T21_06ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14110   S=FS_T21_06MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14111   S=FS_T21_06LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14112   S=FS_T21_06LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14113   S=FS_T21_06PLCData
+#z:20180813# 
+#z:20180813# 
+#z:20180813# OBJ: F_Sensors_21
+#z:20180813#   DIAG: v=3
+#z:20180813#   CYCL: v=10
+#z:20180813#   PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+#z:20180813#   FUNC: IF P0 && P1: Q1; ELSE Q0;
+#z:20180813# #-----------------------------
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14121   S=FS_T21_07CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14122   S=FS_T21_07CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14123   S=FS_T21_07Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14124   S=FS_T21_07MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14125   S=FS_T21_07MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14126   S=FS_T21_07ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14127   S=FS_T21_07ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14128   S=FS_T21_07ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14129   S=FS_T21_07ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14130   S=FS_T21_07MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14131   S=FS_T21_07LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14132   S=FS_T21_07LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14133   S=FS_T21_07PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14141   S=FS_T21_08CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14142   S=FS_T21_08CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14143   S=FS_T21_08Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14144   S=FS_T21_08MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14145   S=FS_T21_08MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14146   S=FS_T21_08ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14147   S=FS_T21_08ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14148   S=FS_T21_08ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14149   S=FS_T21_08ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14150   S=FS_T21_08MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14151   S=FS_T21_08LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14152   S=FS_T21_08LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14153   S=FS_T21_08PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14161   S=FS_T21_09CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14162   S=FS_T21_09CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14163   S=FS_T21_09Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14164   S=FS_T21_09MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14165   S=FS_T21_09MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14166   S=FS_T21_09ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14167   S=FS_T21_09ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14168   S=FS_T21_09ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14169   S=FS_T21_09ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14170   S=FS_T21_09MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14171   S=FS_T21_09LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14172   S=FS_T21_09LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14173   S=FS_T21_09PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14181   S=FS_T21_10CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14182   S=FS_T21_10CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14183   S=FS_T21_10Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14184   S=FS_T21_10MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14185   S=FS_T21_10MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14186   S=FS_T21_10ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14187   S=FS_T21_10ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14188   S=FS_T21_10ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14189   S=FS_T21_10ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14190   S=FS_T21_10MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14191   S=FS_T21_10LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14192   S=FS_T21_10LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14193   S=FS_T21_10PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14201   S=FS_T21_11CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14202   S=FS_T21_11CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14203   S=FS_T21_11Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14204   S=FS_T21_11MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14205   S=FS_T21_11MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14206   S=FS_T21_11ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14207   S=FS_T21_11ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14208   S=FS_T21_11ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14209   S=FS_T21_11ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14210   S=FS_T21_11MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14211   S=FS_T21_11LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14212   S=FS_T21_11LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14213   S=FS_T21_11PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14221   S=FS_T21_12CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14222   S=FS_T21_12CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14223   S=FS_T21_12Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14224   S=FS_T21_12MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14225   S=FS_T21_12MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14226   S=FS_T21_12ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14227   S=FS_T21_12ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14228   S=FS_T21_12ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14229   S=FS_T21_12ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14230   S=FS_T21_12MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14231   S=FS_T21_12LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14232   S=FS_T21_12LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14233   S=FS_T21_12PLCData
+#z:20180813# 
+#z:20180813# 
+#z:20180813# OBJ: F_Sensors_21
+#z:20180813#   DIAG: v=3
+#z:20180813#   CYCL: v=10
+#z:20180813#   PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+#z:20180813#   FUNC: IF P0 && P1: Q1; ELSE Q0;
+#z:20180813# #-----------------------------
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14241   S=FS_T21_13CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14242   S=FS_T21_13CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14243   S=FS_T21_13Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14244   S=FS_T21_13MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14245   S=FS_T21_13MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14246   S=FS_T21_13ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14247   S=FS_T21_13ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14248   S=FS_T21_13ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14249   S=FS_T21_13ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14250   S=FS_T21_13MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14251   S=FS_T21_13LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14252   S=FS_T21_13LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14253   S=FS_T21_13PLCData
+#z:20180813# 
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14261   S=FS_T21_14CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14262   S=FS_T21_14CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14263   S=FS_T21_14Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14264   S=FS_T21_14MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14265   S=FS_T21_14MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14266   S=FS_T21_14ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14267   S=FS_T21_14ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14268   S=FS_T21_14ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14269   S=FS_T21_14ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14270   S=FS_T21_14MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14271   S=FS_T21_14LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14272   S=FS_T21_14LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14273   S=FS_T21_14PLCData
+#z:20180813# 
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14281   S=FS_T21_15CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14282   S=FS_T21_15CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14283   S=FS_T21_15Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14284   S=FS_T21_15MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14285   S=FS_T21_15MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14286   S=FS_T21_15ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14287   S=FS_T21_15ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14288   S=FS_T21_15ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14289   S=FS_T21_15ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14290   S=FS_T21_15MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14291   S=FS_T21_15LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14292   S=FS_T21_15LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14293   S=FS_T21_15PLCData
+#z:20180813# 
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14301   S=FS_T21_16CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14302   S=FS_T21_16CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14303   S=FS_T21_16Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14304   S=FS_T21_16MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14305   S=FS_T21_16MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14306   S=FS_T21_16ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14307   S=FS_T21_16ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14308   S=FS_T21_16ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14309   S=FS_T21_16ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14310   S=FS_T21_16MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14311   S=FS_T21_16LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14312   S=FS_T21_16LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14313   S=FS_T21_16PLCData
+#z:20180813# 
+#z:20180813# 
+#z:20180813# OBJ: F_Sensors_22
+#z:20180813#   DIAG: v=3
+#z:20180813#   CYCL: v=10
+#z:20180813#   PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+#z:20180813#   FUNC: IF P0 && P1: Q1; ELSE Q0;
+#z:20180813# #------------------------------
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14321   S=FS_T22_01CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14322   S=FS_T22_01CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14323   S=FS_T22_01Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14324   S=FS_T22_01MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14325   S=FS_T22_01MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14326   S=FS_T22_01ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14327   S=FS_T22_01ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14328   S=FS_T22_01ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14329   S=FS_T22_01ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14330   S=FS_T22_01MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14331   S=FS_T22_01LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14332   S=FS_T22_01LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14333   S=FS_T22_01PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14341   S=FS_T22_02CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14342   S=FS_T22_02CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14343   S=FS_T22_02Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14344   S=FS_T22_02MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14345   S=FS_T22_02MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14346   S=FS_T22_02ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14347   S=FS_T22_02ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14348   S=FS_T22_02ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14349   S=FS_T22_02ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14350   S=FS_T22_02MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14351   S=FS_T22_02LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14352   S=FS_T22_02LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14353   S=FS_T22_02PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14361   S=FS_T22_03CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14362   S=FS_T22_03CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14363   S=FS_T22_03Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14364   S=FS_T22_03MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14365   S=FS_T22_03MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14366   S=FS_T22_03ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14367   S=FS_T22_03ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14368   S=FS_T22_03ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14369   S=FS_T22_03ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14370   S=FS_T22_03MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14371   S=FS_T22_03LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14372   S=FS_T22_03LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14373   S=FS_T22_03PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14381   S=FS_T22_04CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14382   S=FS_T22_04CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14383   S=FS_T22_04Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14384   S=FS_T22_04MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14385   S=FS_T22_04MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14386   S=FS_T22_04ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14387   S=FS_T22_04ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14388   S=FS_T22_04ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14389   S=FS_T22_04ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14390   S=FS_T22_04MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14391   S=FS_T22_04LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14392   S=FS_T22_04LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14393   S=FS_T22_04PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14401   S=FS_T22_05CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14402   S=FS_T22_05CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14403   S=FS_T22_05Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14404   S=FS_T22_05MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14405   S=FS_T22_05MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14406   S=FS_T22_05ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14407   S=FS_T22_05ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14408   S=FS_T22_05ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14409   S=FS_T22_05ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14410   S=FS_T22_05MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14411   S=FS_T22_05LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14412   S=FS_T22_05LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14413   S=FS_T22_05PLCData
+#z:20180813# 
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14421   S=FS_T22_06CommStat
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14422   S=FS_T22_06CommPars
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14423   S=FS_T22_06Threshold
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14424   S=FS_T22_06MeasTemp
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14425   S=FS_T22_06MeasTemp1
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14426   S=FS_T22_06ThresFlag
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14427   S=FS_T22_06ADActual
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14428   S=FS_T22_06ADHighR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14429   S=FS_T22_06ADLowR
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14430   S=FS_T22_06MeasRes
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14431   S=FS_T22_06LastCmd
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14432   S=FS_T22_06LastCmdSt
+#z:20180813# M:        p=33 t=HR o=I  f=W r= 14433   S=FS_T22_06PLCData
+#z:20180813# 
+#z:20180813# 
+#z:20180813# OBJ: F_Sensors_22
+#z:20180813#   DIAG: v=3
+#z:20180813#   CYCL: v=10
+#z:20180813#   PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+#z:20180813#   FUNC: IF P0 && P1: Q1; ELSE Q0;
+#z:20180813# #------------------------------
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14441   S=FS_T22_07CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14442   S=FS_T22_07CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14443   S=FS_T22_07Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14444   S=FS_T22_07MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14445   S=FS_T22_07MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14446   S=FS_T22_07ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14447   S=FS_T22_07ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14448   S=FS_T22_07ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14449   S=FS_T22_07ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14450   S=FS_T22_07MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14451   S=FS_T22_07LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14452   S=FS_T22_07LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14453   S=FS_T22_07PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14461   S=FS_T22_08CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14462   S=FS_T22_08CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14463   S=FS_T22_08Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14464   S=FS_T22_08MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14465   S=FS_T22_08MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14466   S=FS_T22_08ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14467   S=FS_T22_08ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14468   S=FS_T22_08ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14469   S=FS_T22_08ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14470   S=FS_T22_08MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14471   S=FS_T22_08LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14472   S=FS_T22_08LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14473   S=FS_T22_08PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14481   S=FS_T22_09CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14482   S=FS_T22_09CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14483   S=FS_T22_09Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14484   S=FS_T22_09MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14485   S=FS_T22_09MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14486   S=FS_T22_09ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14487   S=FS_T22_09ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14488   S=FS_T22_09ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14489   S=FS_T22_09ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14490   S=FS_T22_09MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14491   S=FS_T22_09LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14492   S=FS_T22_09LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14493   S=FS_T22_09PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14501   S=FS_T22_10CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14502   S=FS_T22_10CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14503   S=FS_T22_10Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14504   S=FS_T22_10MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14505   S=FS_T22_10MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14506   S=FS_T22_10ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14507   S=FS_T22_10ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14508   S=FS_T22_10ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14509   S=FS_T22_10ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14510   S=FS_T22_10MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14511   S=FS_T22_10LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14512   S=FS_T22_10LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14513   S=FS_T22_10PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14521   S=FS_T22_11CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14522   S=FS_T22_11CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14523   S=FS_T22_11Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14524   S=FS_T22_11MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14525   S=FS_T22_11MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14526   S=FS_T22_11ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14527   S=FS_T22_11ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14528   S=FS_T22_11ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14529   S=FS_T22_11ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14530   S=FS_T22_11MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14531   S=FS_T22_11LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14532   S=FS_T22_11LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14533   S=FS_T22_11PLCData
+#z:20180813# 
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14541   S=FS_T22_12CommStat
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14542   S=FS_T22_12CommPars
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14543   S=FS_T22_12Threshold
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14544   S=FS_T22_12MeasTemp
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14545   S=FS_T22_12MeasTemp1
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14546   S=FS_T22_12ThresFlag
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14547   S=FS_T22_12ADActual
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14548   S=FS_T22_12ADHighR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14549   S=FS_T22_12ADLowR
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14550   S=FS_T22_12MeasRes
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14551   S=FS_T22_12LastCmd
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14552   S=FS_T22_12LastCmdSt
+#z:20180813# M:        p=34 t=HR o=I  f=W r= 14553   S=FS_T22_12PLCData
+#z:20180813# 
+#z:20180813# 
+#z:20180813# OBJ: F_Sensors_22
+#z:20180813#   DIAG: v=3
+#z:20180813#   CYCL: v=10
+#z:20180813#   PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+#z:20180813#   FUNC: IF P0 && P1: Q1; ELSE Q0;
+#z:20180813# #------------------------------
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14561   S=FS_T22_13CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14562   S=FS_T22_13CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14563   S=FS_T22_13Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14564   S=FS_T22_13MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14565   S=FS_T22_13MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14566   S=FS_T22_13ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14567   S=FS_T22_13ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14568   S=FS_T22_13ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14569   S=FS_T22_13ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14570   S=FS_T22_13MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14571   S=FS_T22_13LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14572   S=FS_T22_13LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14573   S=FS_T22_13PLCData
+#z:20180813# 
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14581   S=FS_T22_14CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14582   S=FS_T22_14CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14583   S=FS_T22_14Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14584   S=FS_T22_14MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14585   S=FS_T22_14MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14586   S=FS_T22_14ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14587   S=FS_T22_14ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14588   S=FS_T22_14ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14589   S=FS_T22_14ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14590   S=FS_T22_14MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14591   S=FS_T22_14LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14592   S=FS_T22_14LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14593   S=FS_T22_14PLCData
+#z:20180813# 
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14601   S=FS_T22_15CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14602   S=FS_T22_15CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14603   S=FS_T22_15Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14604   S=FS_T22_15MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14605   S=FS_T22_15MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14606   S=FS_T22_15ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14607   S=FS_T22_15ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14608   S=FS_T22_15ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14609   S=FS_T22_15ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14610   S=FS_T22_15MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14611   S=FS_T22_15LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14612   S=FS_T22_15LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14613   S=FS_T22_15PLCData
+#z:20180813# 
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14621   S=FS_T22_16CommStat
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14622   S=FS_T22_16CommPars
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14623   S=FS_T22_16Threshold
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14624   S=FS_T22_16MeasTemp
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14625   S=FS_T22_16MeasTemp1
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14626   S=FS_T22_16ThresFlag
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14627   S=FS_T22_16ADActual
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14628   S=FS_T22_16ADHighR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14629   S=FS_T22_16ADLowR
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14630   S=FS_T22_16MeasRes
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14631   S=FS_T22_16LastCmd
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14632   S=FS_T22_16LastCmdSt
+#z:20180813# M:        p=35 t=HR o=I  f=W r= 14633   S=FS_T22_16PLCData
+
+# Write not supported by PLC
+##PATH36  BM85-56
+#
+#OBJ: TF_WriteforFire1
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##------------------------------
+#
+#M:        p=38 t=HR o=Iw  f=W r=  2001   S=FS_T25_01CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2002   S=FS_T25_01ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2003   S=FS_T25_02CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2004   S=FS_T25_02ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2005   S=FS_T25_03CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2006   S=FS_T25_03ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2007   S=FS_T25_04CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2008   S=FS_T25_04ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2009   S=FS_T25_05CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2010   S=FS_T25_05ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2011   S=FS_T25_06CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2012   S=FS_T25_06ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2013   S=FS_T25_07CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2014   S=FS_T25_07ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2015   S=FS_T25_08CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2016   S=FS_T25_08ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2017   S=FS_T25_09CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2018   S=FS_T25_09ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2019   S=FS_T25_10CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2020   S=FS_T25_10ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2021   S=FS_T25_11CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2022   S=FS_T25_11ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2023   S=FS_T25_12CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2024   S=FS_T25_12ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2025   S=FS_T25_13CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2026   S=FS_T25_13ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2027   S=FS_T25_14CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2028   S=FS_T25_14ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2029   S=FS_T25_15CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2030   S=FS_T25_15ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2031   S=FS_T25_16CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2032   S=FS_T25_16ThresholdWr
+#
+#OBJ: TF_WriteforFire2
+#  DIAG: v=3
+#  CYCL: v=0
+#  FUNC: ELSE Q0;
+##-----------------------------
+#M:        p=38 t=HR o=Iw  f=W r=  2033   S=FS_T26_01CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2034   S=FS_T26_01ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2035   S=FS_T26_02CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2036   S=FS_T26_02ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2037   S=FS_T26_03CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2038   S=FS_T26_03ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2039   S=FS_T26_04CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2040   S=FS_T26_04ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2041   S=FS_T26_05CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2042   S=FS_T26_05ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2043   S=FS_T26_06CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2044   S=FS_T26_06ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2045   S=FS_T26_07CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2046   S=FS_T26_07ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2047   S=FS_T26_08CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2048   S=FS_T26_08ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2049   S=FS_T26_09CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2050   S=FS_T26_09ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2051   S=FS_T26_10CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2052   S=FS_T26_10ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2053   S=FS_T26_11CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2054   S=FS_T26_11ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2055   S=FS_T26_12CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2056   S=FS_T26_12ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2057   S=FS_T26_13CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2058   S=FS_T26_13ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2059   S=FS_T26_14CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2060   S=FS_T26_14ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2061   S=FS_T26_15CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2062   S=FS_T26_15ThresholdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2063   S=FS_T26_16CmdWr
+#M:        p=38 t=HR o=Iw  f=W r=  2064   S=FS_T26_16ThresholdWr
+
+
+OBJ: F_Sensors_25
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#-----------------------------
+M:        p=33 t=HR o=I  f=W r= 14701   S=FS_T25_01CommStat
+M:        p=33 t=HR o=I  f=W r= 14702   S=FS_T25_01CommPars
+M:        p=33 t=HR o=I  f=W r= 14703   S=FS_T25_01Threshold
+M:        p=33 t=HR o=I  f=W r= 14704   S=FS_T25_01MeasTemp
+M:        p=33 t=HR o=I  f=W r= 14705   S=FS_T25_01MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 14706   S=FS_T25_01ThresFlag
+M:        p=33 t=HR o=I  f=W r= 14707   S=FS_T25_01ADActual
+M:        p=33 t=HR o=I  f=W r= 14708   S=FS_T25_01ADHighR
+M:        p=33 t=HR o=I  f=W r= 14709   S=FS_T25_01ADLowR
+M:        p=33 t=HR o=I  f=W r= 14710   S=FS_T25_01MeasRes
+M:        p=33 t=HR o=I  f=W r= 14711   S=FS_T25_01LastCmd
+M:        p=33 t=HR o=I  f=W r= 14712   S=FS_T25_01LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 14713   S=FS_T25_01PLCData
+
+M:        p=33 t=HR o=I  f=W r= 14721   S=FS_T25_02CommStat
+M:        p=33 t=HR o=I  f=W r= 14722   S=FS_T25_02CommPars
+M:        p=33 t=HR o=I  f=W r= 14723   S=FS_T25_02Threshold
+M:        p=33 t=HR o=I  f=W r= 14724   S=FS_T25_02MeasTemp
+M:        p=33 t=HR o=I  f=W r= 14725   S=FS_T25_02MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 14726   S=FS_T25_02ThresFlag
+M:        p=33 t=HR o=I  f=W r= 14727   S=FS_T25_02ADActual
+M:        p=33 t=HR o=I  f=W r= 14728   S=FS_T25_02ADHighR
+M:        p=33 t=HR o=I  f=W r= 14729   S=FS_T25_02ADLowR
+M:        p=33 t=HR o=I  f=W r= 14730   S=FS_T25_02MeasRes
+M:        p=33 t=HR o=I  f=W r= 14731   S=FS_T25_02LastCmd
+M:        p=33 t=HR o=I  f=W r= 14732   S=FS_T25_02LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 14733   S=FS_T25_02PLCData
+
+M:        p=33 t=HR o=I  f=W r= 14741   S=FS_T25_03CommStat
+M:        p=33 t=HR o=I  f=W r= 14742   S=FS_T25_03CommPars
+M:        p=33 t=HR o=I  f=W r= 14743   S=FS_T25_03Threshold
+M:        p=33 t=HR o=I  f=W r= 14744   S=FS_T25_03MeasTemp
+M:        p=33 t=HR o=I  f=W r= 14745   S=FS_T25_03MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 14746   S=FS_T25_03ThresFlag
+M:        p=33 t=HR o=I  f=W r= 14747   S=FS_T25_03ADActual
+M:        p=33 t=HR o=I  f=W r= 14748   S=FS_T25_03ADHighR
+M:        p=33 t=HR o=I  f=W r= 14749   S=FS_T25_03ADLowR
+M:        p=33 t=HR o=I  f=W r= 14750   S=FS_T25_03MeasRes
+M:        p=33 t=HR o=I  f=W r= 14751   S=FS_T25_03LastCmd
+M:        p=33 t=HR o=I  f=W r= 14752   S=FS_T25_03LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 14753   S=FS_T25_03PLCData
+
+M:        p=33 t=HR o=I  f=W r= 14761   S=FS_T25_04CommStat
+M:        p=33 t=HR o=I  f=W r= 14762   S=FS_T25_04CommPars
+M:        p=33 t=HR o=I  f=W r= 14763   S=FS_T25_04Threshold
+M:        p=33 t=HR o=I  f=W r= 14764   S=FS_T25_04MeasTemp
+M:        p=33 t=HR o=I  f=W r= 14765   S=FS_T25_04MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 14766   S=FS_T25_04ThresFlag
+M:        p=33 t=HR o=I  f=W r= 14767   S=FS_T25_04ADActual
+M:        p=33 t=HR o=I  f=W r= 14768   S=FS_T25_04ADHighR
+M:        p=33 t=HR o=I  f=W r= 14769   S=FS_T25_04ADLowR
+M:        p=33 t=HR o=I  f=W r= 14770   S=FS_T25_04MeasRes
+M:        p=33 t=HR o=I  f=W r= 14771   S=FS_T25_04LastCmd
+M:        p=33 t=HR o=I  f=W r= 14772   S=FS_T25_04LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 14773   S=FS_T25_04PLCData
+
+M:        p=33 t=HR o=I  f=W r= 14781   S=FS_T25_05CommStat
+M:        p=33 t=HR o=I  f=W r= 14782   S=FS_T25_05CommPars
+M:        p=33 t=HR o=I  f=W r= 14783   S=FS_T25_05Threshold
+M:        p=33 t=HR o=I  f=W r= 14784   S=FS_T25_05MeasTemp
+M:        p=33 t=HR o=I  f=W r= 14785   S=FS_T25_05MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 14786   S=FS_T25_05ThresFlag
+M:        p=33 t=HR o=I  f=W r= 14787   S=FS_T25_05ADActual
+M:        p=33 t=HR o=I  f=W r= 14788   S=FS_T25_05ADHighR
+M:        p=33 t=HR o=I  f=W r= 14789   S=FS_T25_05ADLowR
+M:        p=33 t=HR o=I  f=W r= 14790   S=FS_T25_05MeasRes
+M:        p=33 t=HR o=I  f=W r= 14791   S=FS_T25_05LastCmd
+M:        p=33 t=HR o=I  f=W r= 14792   S=FS_T25_05LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 14793   S=FS_T25_05PLCData
+
+M:        p=33 t=HR o=I  f=W r= 14801   S=FS_T25_06CommStat
+M:        p=33 t=HR o=I  f=W r= 14802   S=FS_T25_06CommPars
+M:        p=33 t=HR o=I  f=W r= 14803   S=FS_T25_06Threshold
+M:        p=33 t=HR o=I  f=W r= 14804   S=FS_T25_06MeasTemp
+M:        p=33 t=HR o=I  f=W r= 14805   S=FS_T25_06MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 14806   S=FS_T25_06ThresFlag
+M:        p=33 t=HR o=I  f=W r= 14807   S=FS_T25_06ADActual
+M:        p=33 t=HR o=I  f=W r= 14808   S=FS_T25_06ADHighR
+M:        p=33 t=HR o=I  f=W r= 14809   S=FS_T25_06ADLowR
+M:        p=33 t=HR o=I  f=W r= 14810   S=FS_T25_06MeasRes
+M:        p=33 t=HR o=I  f=W r= 14811   S=FS_T25_06LastCmd
+M:        p=33 t=HR o=I  f=W r= 14812   S=FS_T25_06LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 14813   S=FS_T25_06PLCData
+
+
+OBJ: F_Sensors_25
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#-----------------------------
+M:        p=34 t=HR o=I  f=W r= 14821   S=FS_T25_07CommStat
+M:        p=34 t=HR o=I  f=W r= 14822   S=FS_T25_07CommPars
+M:        p=34 t=HR o=I  f=W r= 14823   S=FS_T25_07Threshold
+M:        p=34 t=HR o=I  f=W r= 14824   S=FS_T25_07MeasTemp
+M:        p=34 t=HR o=I  f=W r= 14825   S=FS_T25_07MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 14826   S=FS_T25_07ThresFlag
+M:        p=34 t=HR o=I  f=W r= 14827   S=FS_T25_07ADActual
+M:        p=34 t=HR o=I  f=W r= 14828   S=FS_T25_07ADHighR
+M:        p=34 t=HR o=I  f=W r= 14829   S=FS_T25_07ADLowR
+M:        p=34 t=HR o=I  f=W r= 14830   S=FS_T25_07MeasRes
+M:        p=34 t=HR o=I  f=W r= 14831   S=FS_T25_07LastCmd
+M:        p=34 t=HR o=I  f=W r= 14832   S=FS_T25_07LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 14833   S=FS_T25_07PLCData
+
+M:        p=34 t=HR o=I  f=W r= 14841   S=FS_T25_08CommStat
+M:        p=34 t=HR o=I  f=W r= 14842   S=FS_T25_08CommPars
+M:        p=34 t=HR o=I  f=W r= 14843   S=FS_T25_08Threshold
+M:        p=34 t=HR o=I  f=W r= 14844   S=FS_T25_08MeasTemp
+M:        p=34 t=HR o=I  f=W r= 14845   S=FS_T25_08MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 14846   S=FS_T25_08ThresFlag
+M:        p=34 t=HR o=I  f=W r= 14847   S=FS_T25_08ADActual
+M:        p=34 t=HR o=I  f=W r= 14848   S=FS_T25_08ADHighR
+M:        p=34 t=HR o=I  f=W r= 14849   S=FS_T25_08ADLowR
+M:        p=34 t=HR o=I  f=W r= 14850   S=FS_T25_08MeasRes
+M:        p=34 t=HR o=I  f=W r= 14851   S=FS_T25_08LastCmd
+M:        p=34 t=HR o=I  f=W r= 14852   S=FS_T25_08LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 14853   S=FS_T25_08PLCData
+
+M:        p=34 t=HR o=I  f=W r= 14861   S=FS_T25_09CommStat
+M:        p=34 t=HR o=I  f=W r= 14862   S=FS_T25_09CommPars
+M:        p=34 t=HR o=I  f=W r= 14863   S=FS_T25_09Threshold
+M:        p=34 t=HR o=I  f=W r= 14864   S=FS_T25_09MeasTemp
+M:        p=34 t=HR o=I  f=W r= 14865   S=FS_T25_09MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 14866   S=FS_T25_09ThresFlag
+M:        p=34 t=HR o=I  f=W r= 14867   S=FS_T25_09ADActual
+M:        p=34 t=HR o=I  f=W r= 14868   S=FS_T25_09ADHighR
+M:        p=34 t=HR o=I  f=W r= 14869   S=FS_T25_09ADLowR
+M:        p=34 t=HR o=I  f=W r= 14870   S=FS_T25_09MeasRes
+M:        p=34 t=HR o=I  f=W r= 14871   S=FS_T25_09LastCmd
+M:        p=34 t=HR o=I  f=W r= 14872   S=FS_T25_09LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 14873   S=FS_T25_09PLCData
+
+M:        p=34 t=HR o=I  f=W r= 14881   S=FS_T25_10CommStat
+M:        p=34 t=HR o=I  f=W r= 14882   S=FS_T25_10CommPars
+M:        p=34 t=HR o=I  f=W r= 14883   S=FS_T25_10Threshold
+M:        p=34 t=HR o=I  f=W r= 14884   S=FS_T25_10MeasTemp
+M:        p=34 t=HR o=I  f=W r= 14885   S=FS_T25_10MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 14886   S=FS_T25_10ThresFlag
+M:        p=34 t=HR o=I  f=W r= 14887   S=FS_T25_10ADActual
+M:        p=34 t=HR o=I  f=W r= 14888   S=FS_T25_10ADHighR
+M:        p=34 t=HR o=I  f=W r= 14889   S=FS_T25_10ADLowR
+M:        p=34 t=HR o=I  f=W r= 14890   S=FS_T25_10MeasRes
+M:        p=34 t=HR o=I  f=W r= 14891   S=FS_T25_10LastCmd
+M:        p=34 t=HR o=I  f=W r= 14892   S=FS_T25_10LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 14893   S=FS_T25_10PLCData
+
+M:        p=34 t=HR o=I  f=W r= 14901   S=FS_T25_11CommStat
+M:        p=34 t=HR o=I  f=W r= 14902   S=FS_T25_11CommPars
+M:        p=34 t=HR o=I  f=W r= 14903   S=FS_T25_11Threshold
+M:        p=34 t=HR o=I  f=W r= 14904   S=FS_T25_11MeasTemp
+M:        p=34 t=HR o=I  f=W r= 14905   S=FS_T25_11MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 14906   S=FS_T25_11ThresFlag
+M:        p=34 t=HR o=I  f=W r= 14907   S=FS_T25_11ADActual
+M:        p=34 t=HR o=I  f=W r= 14908   S=FS_T25_11ADHighR
+M:        p=34 t=HR o=I  f=W r= 14909   S=FS_T25_11ADLowR
+M:        p=34 t=HR o=I  f=W r= 14910   S=FS_T25_11MeasRes
+M:        p=34 t=HR o=I  f=W r= 14911   S=FS_T25_11LastCmd
+M:        p=34 t=HR o=I  f=W r= 14912   S=FS_T25_11LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 14913   S=FS_T25_11PLCData
+
+M:        p=34 t=HR o=I  f=W r= 14921   S=FS_T25_12CommStat
+M:        p=34 t=HR o=I  f=W r= 14922   S=FS_T25_12CommPars
+M:        p=34 t=HR o=I  f=W r= 14923   S=FS_T25_12Threshold
+M:        p=34 t=HR o=I  f=W r= 14924   S=FS_T25_12MeasTemp
+M:        p=34 t=HR o=I  f=W r= 14925   S=FS_T25_12MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 14926   S=FS_T25_12ThresFlag
+M:        p=34 t=HR o=I  f=W r= 14927   S=FS_T25_12ADActual
+M:        p=34 t=HR o=I  f=W r= 14928   S=FS_T25_12ADHighR
+M:        p=34 t=HR o=I  f=W r= 14929   S=FS_T25_12ADLowR
+M:        p=34 t=HR o=I  f=W r= 14930   S=FS_T25_12MeasRes
+M:        p=34 t=HR o=I  f=W r= 14931   S=FS_T25_12LastCmd
+M:        p=34 t=HR o=I  f=W r= 14932   S=FS_T25_12LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 14933   S=FS_T25_12PLCData
+
+
+OBJ: F_Sensors_25
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#-----------------------------
+M:        p=35 t=HR o=I  f=W r= 14941   S=FS_T25_13CommStat
+M:        p=35 t=HR o=I  f=W r= 14942   S=FS_T25_13CommPars
+M:        p=35 t=HR o=I  f=W r= 14943   S=FS_T25_13Threshold
+M:        p=35 t=HR o=I  f=W r= 14944   S=FS_T25_13MeasTemp
+M:        p=35 t=HR o=I  f=W r= 14945   S=FS_T25_13MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 14946   S=FS_T25_13ThresFlag
+M:        p=35 t=HR o=I  f=W r= 14947   S=FS_T25_13ADActual
+M:        p=35 t=HR o=I  f=W r= 14948   S=FS_T25_13ADHighR
+M:        p=35 t=HR o=I  f=W r= 14949   S=FS_T25_13ADLowR
+M:        p=35 t=HR o=I  f=W r= 14950   S=FS_T25_13MeasRes
+M:        p=35 t=HR o=I  f=W r= 14951   S=FS_T25_13LastCmd
+M:        p=35 t=HR o=I  f=W r= 14952   S=FS_T25_13LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 14953   S=FS_T25_13PLCData
+
+M:        p=35 t=HR o=I  f=W r= 14961   S=FS_T25_14CommStat
+M:        p=35 t=HR o=I  f=W r= 14962   S=FS_T25_14CommPars
+M:        p=35 t=HR o=I  f=W r= 14963   S=FS_T25_14Threshold
+M:        p=35 t=HR o=I  f=W r= 14964   S=FS_T25_14MeasTemp
+M:        p=35 t=HR o=I  f=W r= 14965   S=FS_T25_14MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 14966   S=FS_T25_14ThresFlag
+M:        p=35 t=HR o=I  f=W r= 14967   S=FS_T25_14ADActual
+M:        p=35 t=HR o=I  f=W r= 14968   S=FS_T25_14ADHighR
+M:        p=35 t=HR o=I  f=W r= 14969   S=FS_T25_14ADLowR
+M:        p=35 t=HR o=I  f=W r= 14970   S=FS_T25_14MeasRes
+M:        p=35 t=HR o=I  f=W r= 14971   S=FS_T25_14LastCmd
+M:        p=35 t=HR o=I  f=W r= 14972   S=FS_T25_14LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 14973   S=FS_T25_14PLCData
+
+M:        p=35 t=HR o=I  f=W r= 14981   S=FS_T25_15CommStat
+M:        p=35 t=HR o=I  f=W r= 14982   S=FS_T25_15CommPars
+M:        p=35 t=HR o=I  f=W r= 14983   S=FS_T25_15Threshold
+M:        p=35 t=HR o=I  f=W r= 14984   S=FS_T25_15MeasTemp
+M:        p=35 t=HR o=I  f=W r= 14985   S=FS_T25_15MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 14986   S=FS_T25_15ThresFlag
+M:        p=35 t=HR o=I  f=W r= 14987   S=FS_T25_15ADActual
+M:        p=35 t=HR o=I  f=W r= 14988   S=FS_T25_15ADHighR
+M:        p=35 t=HR o=I  f=W r= 14989   S=FS_T25_15ADLowR
+M:        p=35 t=HR o=I  f=W r= 14990   S=FS_T25_15MeasRes
+M:        p=35 t=HR o=I  f=W r= 14991   S=FS_T25_15LastCmd
+M:        p=35 t=HR o=I  f=W r= 14992   S=FS_T25_15LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 14993   S=FS_T25_15PLCData
+
+M:        p=35 t=HR o=I  f=W r= 15001   S=FS_T25_16CommStat
+M:        p=35 t=HR o=I  f=W r= 15002   S=FS_T25_16CommPars
+M:        p=35 t=HR o=I  f=W r= 15003   S=FS_T25_16Threshold
+M:        p=35 t=HR o=I  f=W r= 15004   S=FS_T25_16MeasTemp
+M:        p=35 t=HR o=I  f=W r= 15005   S=FS_T25_16MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 15006   S=FS_T25_16ThresFlag
+M:        p=35 t=HR o=I  f=W r= 15007   S=FS_T25_16ADActual
+M:        p=35 t=HR o=I  f=W r= 15008   S=FS_T25_16ADHighR
+M:        p=35 t=HR o=I  f=W r= 15009   S=FS_T25_16ADLowR
+M:        p=35 t=HR o=I  f=W r= 15010   S=FS_T25_16MeasRes
+M:        p=35 t=HR o=I  f=W r= 15011   S=FS_T25_16LastCmd
+M:        p=35 t=HR o=I  f=W r= 15012   S=FS_T25_16LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 15013   S=FS_T25_16PLCData
+
+
+OBJ: F_Sensors_26
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=33 t=HR o=I  f=W r= 15021   S=FS_T26_01CommStat
+M:        p=33 t=HR o=I  f=W r= 15022   S=FS_T26_01CommPars
+M:        p=33 t=HR o=I  f=W r= 15023   S=FS_T26_01Threshold
+M:        p=33 t=HR o=I  f=W r= 15024   S=FS_T26_01MeasTemp
+M:        p=33 t=HR o=I  f=W r= 15025   S=FS_T26_01MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 15026   S=FS_T26_01ThresFlag
+M:        p=33 t=HR o=I  f=W r= 15027   S=FS_T26_01ADActual
+M:        p=33 t=HR o=I  f=W r= 15028   S=FS_T26_01ADHighR
+M:        p=33 t=HR o=I  f=W r= 15029   S=FS_T26_01ADLowR
+M:        p=33 t=HR o=I  f=W r= 15030   S=FS_T26_01MeasRes
+M:        p=33 t=HR o=I  f=W r= 15031   S=FS_T26_01LastCmd
+M:        p=33 t=HR o=I  f=W r= 15032   S=FS_T26_01LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 15033   S=FS_T26_01PLCData
+
+M:        p=33 t=HR o=I  f=W r= 15041   S=FS_T26_02CommStat
+M:        p=33 t=HR o=I  f=W r= 15042   S=FS_T26_02CommPars
+M:        p=33 t=HR o=I  f=W r= 15043   S=FS_T26_02Threshold
+M:        p=33 t=HR o=I  f=W r= 15044   S=FS_T26_02MeasTemp
+M:        p=33 t=HR o=I  f=W r= 15045   S=FS_T26_02MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 15046   S=FS_T26_02ThresFlag
+M:        p=33 t=HR o=I  f=W r= 15047   S=FS_T26_02ADActual
+M:        p=33 t=HR o=I  f=W r= 15048   S=FS_T26_02ADHighR
+M:        p=33 t=HR o=I  f=W r= 15049   S=FS_T26_02ADLowR
+M:        p=33 t=HR o=I  f=W r= 15050   S=FS_T26_02MeasRes
+M:        p=33 t=HR o=I  f=W r= 15051   S=FS_T26_02LastCmd
+M:        p=33 t=HR o=I  f=W r= 15052   S=FS_T26_02LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 15053   S=FS_T26_02PLCData
+
+M:        p=33 t=HR o=I  f=W r= 15061   S=FS_T26_03CommStat
+M:        p=33 t=HR o=I  f=W r= 15062   S=FS_T26_03CommPars
+M:        p=33 t=HR o=I  f=W r= 15063   S=FS_T26_03Threshold
+M:        p=33 t=HR o=I  f=W r= 15064   S=FS_T26_03MeasTemp
+M:        p=33 t=HR o=I  f=W r= 15065   S=FS_T26_03MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 15066   S=FS_T26_03ThresFlag
+M:        p=33 t=HR o=I  f=W r= 15067   S=FS_T26_03ADActual
+M:        p=33 t=HR o=I  f=W r= 15068   S=FS_T26_03ADHighR
+M:        p=33 t=HR o=I  f=W r= 15069   S=FS_T26_03ADLowR
+M:        p=33 t=HR o=I  f=W r= 15070   S=FS_T26_03MeasRes
+M:        p=33 t=HR o=I  f=W r= 15071   S=FS_T26_03LastCmd
+M:        p=33 t=HR o=I  f=W r= 15072   S=FS_T26_03LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 15073   S=FS_T26_03PLCData
+
+M:        p=33 t=HR o=I  f=W r= 15081   S=FS_T26_04CommStat
+M:        p=33 t=HR o=I  f=W r= 15082   S=FS_T26_04CommPars
+M:        p=33 t=HR o=I  f=W r= 15083   S=FS_T26_04Threshold
+M:        p=33 t=HR o=I  f=W r= 15084   S=FS_T26_04MeasTemp
+M:        p=33 t=HR o=I  f=W r= 15085   S=FS_T26_04MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 15086   S=FS_T26_04ThresFlag
+M:        p=33 t=HR o=I  f=W r= 15087   S=FS_T26_04ADActual
+M:        p=33 t=HR o=I  f=W r= 15088   S=FS_T26_04ADHighR
+M:        p=33 t=HR o=I  f=W r= 15089   S=FS_T26_04ADLowR
+M:        p=33 t=HR o=I  f=W r= 15090   S=FS_T26_04MeasRes
+M:        p=33 t=HR o=I  f=W r= 15091   S=FS_T26_04LastCmd
+M:        p=33 t=HR o=I  f=W r= 15092   S=FS_T26_04LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 15093   S=FS_T26_04PLCData
+
+M:        p=33 t=HR o=I  f=W r= 15101   S=FS_T26_05CommStat
+M:        p=33 t=HR o=I  f=W r= 15102   S=FS_T26_05CommPars
+M:        p=33 t=HR o=I  f=W r= 15103   S=FS_T26_05Threshold
+M:        p=33 t=HR o=I  f=W r= 15104   S=FS_T26_05MeasTemp
+M:        p=33 t=HR o=I  f=W r= 15105   S=FS_T26_05MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 15106   S=FS_T26_05ThresFlag
+M:        p=33 t=HR o=I  f=W r= 15107   S=FS_T26_05ADActual
+M:        p=33 t=HR o=I  f=W r= 15108   S=FS_T26_05ADHighR
+M:        p=33 t=HR o=I  f=W r= 15109   S=FS_T26_05ADLowR
+M:        p=33 t=HR o=I  f=W r= 15110   S=FS_T26_05MeasRes
+M:        p=33 t=HR o=I  f=W r= 15111   S=FS_T26_05LastCmd
+M:        p=33 t=HR o=I  f=W r= 15112   S=FS_T26_05LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 15113   S=FS_T26_05PLCData
+
+M:        p=33 t=HR o=I  f=W r= 15121   S=FS_T26_06CommStat
+M:        p=33 t=HR o=I  f=W r= 15122   S=FS_T26_06CommPars
+M:        p=33 t=HR o=I  f=W r= 15123   S=FS_T26_06Threshold
+M:        p=33 t=HR o=I  f=W r= 15124   S=FS_T26_06MeasTemp
+M:        p=33 t=HR o=I  f=W r= 15125   S=FS_T26_06MeasTemp1
+M:        p=33 t=HR o=I  f=W r= 15126   S=FS_T26_06ThresFlag
+M:        p=33 t=HR o=I  f=W r= 15127   S=FS_T26_06ADActual
+M:        p=33 t=HR o=I  f=W r= 15128   S=FS_T26_06ADHighR
+M:        p=33 t=HR o=I  f=W r= 15129   S=FS_T26_06ADLowR
+M:        p=33 t=HR o=I  f=W r= 15130   S=FS_T26_06MeasRes
+M:        p=33 t=HR o=I  f=W r= 15131   S=FS_T26_06LastCmd
+M:        p=33 t=HR o=I  f=W r= 15132   S=FS_T26_06LastCmdSt
+M:        p=33 t=HR o=I  f=W r= 15133   S=FS_T26_06PLCData
+
+
+OBJ: F_Sensors_26
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=34 t=HR o=I  f=W r= 15141   S=FS_T26_07CommStat
+M:        p=34 t=HR o=I  f=W r= 15142   S=FS_T26_07CommPars
+M:        p=34 t=HR o=I  f=W r= 15143   S=FS_T26_07Threshold
+M:        p=34 t=HR o=I  f=W r= 15144   S=FS_T26_07MeasTemp
+M:        p=34 t=HR o=I  f=W r= 15145   S=FS_T26_07MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 15146   S=FS_T26_07ThresFlag
+M:        p=34 t=HR o=I  f=W r= 15147   S=FS_T26_07ADActual
+M:        p=34 t=HR o=I  f=W r= 15148   S=FS_T26_07ADHighR
+M:        p=34 t=HR o=I  f=W r= 15149   S=FS_T26_07ADLowR
+M:        p=34 t=HR o=I  f=W r= 15150   S=FS_T26_07MeasRes
+M:        p=34 t=HR o=I  f=W r= 15151   S=FS_T26_07LastCmd
+M:        p=34 t=HR o=I  f=W r= 15152   S=FS_T26_07LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 15153   S=FS_T26_07PLCData
+
+M:        p=34 t=HR o=I  f=W r= 15161   S=FS_T26_08CommStat
+M:        p=34 t=HR o=I  f=W r= 15162   S=FS_T26_08CommPars
+M:        p=34 t=HR o=I  f=W r= 15163   S=FS_T26_08Threshold
+M:        p=34 t=HR o=I  f=W r= 15164   S=FS_T26_08MeasTemp
+M:        p=34 t=HR o=I  f=W r= 15165   S=FS_T26_08MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 15166   S=FS_T26_08ThresFlag
+M:        p=34 t=HR o=I  f=W r= 15167   S=FS_T26_08ADActual
+M:        p=34 t=HR o=I  f=W r= 15168   S=FS_T26_08ADHighR
+M:        p=34 t=HR o=I  f=W r= 15169   S=FS_T26_08ADLowR
+M:        p=34 t=HR o=I  f=W r= 15170   S=FS_T26_08MeasRes
+M:        p=34 t=HR o=I  f=W r= 15171   S=FS_T26_08LastCmd
+M:        p=34 t=HR o=I  f=W r= 15172   S=FS_T26_08LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 15173   S=FS_T26_08PLCData
+
+M:        p=34 t=HR o=I  f=W r= 15181   S=FS_T26_09CommStat
+M:        p=34 t=HR o=I  f=W r= 15182   S=FS_T26_09CommPars
+M:        p=34 t=HR o=I  f=W r= 15183   S=FS_T26_09Threshold
+M:        p=34 t=HR o=I  f=W r= 15184   S=FS_T26_09MeasTemp
+M:        p=34 t=HR o=I  f=W r= 15185   S=FS_T26_09MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 15186   S=FS_T26_09ThresFlag
+M:        p=34 t=HR o=I  f=W r= 15187   S=FS_T26_09ADActual
+M:        p=34 t=HR o=I  f=W r= 15188   S=FS_T26_09ADHighR
+M:        p=34 t=HR o=I  f=W r= 15189   S=FS_T26_09ADLowR
+M:        p=34 t=HR o=I  f=W r= 15190   S=FS_T26_09MeasRes
+M:        p=34 t=HR o=I  f=W r= 15191   S=FS_T26_09LastCmd
+M:        p=34 t=HR o=I  f=W r= 15192   S=FS_T26_09LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 15193   S=FS_T26_09PLCData
+
+M:        p=34 t=HR o=I  f=W r= 15201   S=FS_T26_10CommStat
+M:        p=34 t=HR o=I  f=W r= 15202   S=FS_T26_10CommPars
+M:        p=34 t=HR o=I  f=W r= 15203   S=FS_T26_10Threshold
+M:        p=34 t=HR o=I  f=W r= 15204   S=FS_T26_10MeasTemp
+M:        p=34 t=HR o=I  f=W r= 15205   S=FS_T26_10MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 15206   S=FS_T26_10ThresFlag
+M:        p=34 t=HR o=I  f=W r= 15207   S=FS_T26_10ADActual
+M:        p=34 t=HR o=I  f=W r= 15208   S=FS_T26_10ADHighR
+M:        p=34 t=HR o=I  f=W r= 15209   S=FS_T26_10ADLowR
+M:        p=34 t=HR o=I  f=W r= 15210   S=FS_T26_10MeasRes
+M:        p=34 t=HR o=I  f=W r= 15211   S=FS_T26_10LastCmd
+M:        p=34 t=HR o=I  f=W r= 15212   S=FS_T26_10LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 15213   S=FS_T26_10PLCData
+
+M:        p=34 t=HR o=I  f=W r= 15221   S=FS_T26_11CommStat
+M:        p=34 t=HR o=I  f=W r= 15222   S=FS_T26_11CommPars
+M:        p=34 t=HR o=I  f=W r= 15223   S=FS_T26_11Threshold
+M:        p=34 t=HR o=I  f=W r= 15224   S=FS_T26_11MeasTemp
+M:        p=34 t=HR o=I  f=W r= 15225   S=FS_T26_11MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 15226   S=FS_T26_11ThresFlag
+M:        p=34 t=HR o=I  f=W r= 15227   S=FS_T26_11ADActual
+M:        p=34 t=HR o=I  f=W r= 15228   S=FS_T26_11ADHighR
+M:        p=34 t=HR o=I  f=W r= 15229   S=FS_T26_11ADLowR
+M:        p=34 t=HR o=I  f=W r= 15230   S=FS_T26_11MeasRes
+M:        p=34 t=HR o=I  f=W r= 15231   S=FS_T26_11LastCmd
+M:        p=34 t=HR o=I  f=W r= 15232   S=FS_T26_11LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 15233   S=FS_T26_11PLCData
+
+M:        p=34 t=HR o=I  f=W r= 15241   S=FS_T26_12CommStat
+M:        p=34 t=HR o=I  f=W r= 15242   S=FS_T26_12CommPars
+M:        p=34 t=HR o=I  f=W r= 15243   S=FS_T26_12Threshold
+M:        p=34 t=HR o=I  f=W r= 15244   S=FS_T26_12MeasTemp
+M:        p=34 t=HR o=I  f=W r= 15245   S=FS_T26_12MeasTemp1
+M:        p=34 t=HR o=I  f=W r= 15246   S=FS_T26_12ThresFlag
+M:        p=34 t=HR o=I  f=W r= 15247   S=FS_T26_12ADActual
+M:        p=34 t=HR o=I  f=W r= 15248   S=FS_T26_12ADHighR
+M:        p=34 t=HR o=I  f=W r= 15249   S=FS_T26_12ADLowR
+M:        p=34 t=HR o=I  f=W r= 15250   S=FS_T26_12MeasRes
+M:        p=34 t=HR o=I  f=W r= 15251   S=FS_T26_12LastCmd
+M:        p=34 t=HR o=I  f=W r= 15252   S=FS_T26_12LastCmdSt
+M:        p=34 t=HR o=I  f=W r= 15253   S=FS_T26_12PLCData
+
+
+OBJ: F_Sensors_26
+  DIAG: v=3
+  CYCL: v=10
+  PARL: P0=Fi2_MB1_Enable P1=FS_MB_Enable
+  FUNC: IF P0 && P1: Q1; ELSE Q0;
+#------------------------------
+M:        p=35 t=HR o=I  f=W r= 15261   S=FS_T26_13CommStat
+M:        p=35 t=HR o=I  f=W r= 15262   S=FS_T26_13CommPars
+M:        p=35 t=HR o=I  f=W r= 15263   S=FS_T26_13Threshold
+M:        p=35 t=HR o=I  f=W r= 15264   S=FS_T26_13MeasTemp
+M:        p=35 t=HR o=I  f=W r= 15265   S=FS_T26_13MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 15266   S=FS_T26_13ThresFlag
+M:        p=35 t=HR o=I  f=W r= 15267   S=FS_T26_13ADActual
+M:        p=35 t=HR o=I  f=W r= 15268   S=FS_T26_13ADHighR
+M:        p=35 t=HR o=I  f=W r= 15269   S=FS_T26_13ADLowR
+M:        p=35 t=HR o=I  f=W r= 15270   S=FS_T26_13MeasRes
+M:        p=35 t=HR o=I  f=W r= 15271   S=FS_T26_13LastCmd
+M:        p=35 t=HR o=I  f=W r= 15272   S=FS_T26_13LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 15273   S=FS_T26_13PLCData
+
+M:        p=35 t=HR o=I  f=W r= 15281   S=FS_T26_14CommStat
+M:        p=35 t=HR o=I  f=W r= 15282   S=FS_T26_14CommPars
+M:        p=35 t=HR o=I  f=W r= 15283   S=FS_T26_14Threshold
+M:        p=35 t=HR o=I  f=W r= 15284   S=FS_T26_14MeasTemp
+M:        p=35 t=HR o=I  f=W r= 15285   S=FS_T26_14MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 15286   S=FS_T26_14ThresFlag
+M:        p=35 t=HR o=I  f=W r= 15287   S=FS_T26_14ADActual
+M:        p=35 t=HR o=I  f=W r= 15288   S=FS_T26_14ADHighR
+M:        p=35 t=HR o=I  f=W r= 15289   S=FS_T26_14ADLowR
+M:        p=35 t=HR o=I  f=W r= 15290   S=FS_T26_14MeasRes
+M:        p=35 t=HR o=I  f=W r= 15291   S=FS_T26_14LastCmd
+M:        p=35 t=HR o=I  f=W r= 15292   S=FS_T26_14LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 15293   S=FS_T26_14PLCData
+
+M:        p=35 t=HR o=I  f=W r= 15301   S=FS_T26_15CommStat
+M:        p=35 t=HR o=I  f=W r= 15302   S=FS_T26_15CommPars
+M:        p=35 t=HR o=I  f=W r= 15303   S=FS_T26_15Threshold
+M:        p=35 t=HR o=I  f=W r= 15304   S=FS_T26_15MeasTemp
+M:        p=35 t=HR o=I  f=W r= 15305   S=FS_T26_15MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 15306   S=FS_T26_15ThresFlag
+M:        p=35 t=HR o=I  f=W r= 15307   S=FS_T26_15ADActual
+M:        p=35 t=HR o=I  f=W r= 15308   S=FS_T26_15ADHighR
+M:        p=35 t=HR o=I  f=W r= 15309   S=FS_T26_15ADLowR
+M:        p=35 t=HR o=I  f=W r= 15310   S=FS_T26_15MeasRes
+M:        p=35 t=HR o=I  f=W r= 15311   S=FS_T26_15LastCmd
+M:        p=35 t=HR o=I  f=W r= 15312   S=FS_T26_15LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 15313   S=FS_T26_15PLCData
+
+M:        p=35 t=HR o=I  f=W r= 15321   S=FS_T26_16CommStat
+M:        p=35 t=HR o=I  f=W r= 15322   S=FS_T26_16CommPars
+M:        p=35 t=HR o=I  f=W r= 15323   S=FS_T26_16Threshold
+M:        p=35 t=HR o=I  f=W r= 15324   S=FS_T26_16MeasTemp
+M:        p=35 t=HR o=I  f=W r= 15325   S=FS_T26_16MeasTemp1
+M:        p=35 t=HR o=I  f=W r= 15326   S=FS_T26_16ThresFlag
+M:        p=35 t=HR o=I  f=W r= 15327   S=FS_T26_16ADActual
+M:        p=35 t=HR o=I  f=W r= 15328   S=FS_T26_16ADHighR
+M:        p=35 t=HR o=I  f=W r= 15329   S=FS_T26_16ADLowR
+M:        p=35 t=HR o=I  f=W r= 15330   S=FS_T26_16MeasRes
+M:        p=35 t=HR o=I  f=W r= 15331   S=FS_T26_16LastCmd
+M:        p=35 t=HR o=I  f=W r= 15332   S=FS_T26_16LastCmdSt
+M:        p=35 t=HR o=I  f=W r= 15333   S=FS_T26_16PLCData
+
+

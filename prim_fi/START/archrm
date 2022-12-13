@@ -1,0 +1,47 @@
+#! /bin/sh
+
+# Usage: archrm
+#
+# Check cyclically the used_space on HD [%].
+# If used_space > warning_limit then opens a warning window.
+# If used_space > alarm_limit then opens an alarm window
+#                               and removes the oldest archive files.
+#
+
+warning=97
+alarm=99
+
+
+rmlast()
+
+{
+    types -i i=50
+
+    until find /prim_fi_data/archive -mtime $i -remove!
+    do
+        i=$i-1
+        #echo $i
+    done
+
+    echo Removed $i days old archives!
+}
+
+
+sleep 300
+while sin | grep -q dmserver
+do
+    used=$(df / | cut -c 57-59)
+
+    if test $used -gt $alarm
+        then echo ALARM!!!
+            rmlast
+            /windows/apps/showpict /prim_fi/monitor/pict/global/HD_alarm
+    elif test $used -gt $warning
+        then echo WARNING!
+            /windows/apps/showpict /prim_fi/monitor/pict/global/HD_warning
+    else :
+    fi
+
+    sleep 3600
+
+done

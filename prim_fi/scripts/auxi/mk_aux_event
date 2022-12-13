@@ -1,0 +1,95 @@
+#!!!Az 1gepes segedrendszereknel az esemenyeket csak az elso gepre kellene!!!
+
+# PLC id
+M=$1    
+
+#filenames
+list_file="aux_"$M"_list"
+event_file="aux_"$M"_event"
+
+echo finding aux_systems
+# find aux_systems
+for line_no in $(awk '/^[A-Z].*sys/ {print(NR)}' $list_file)
+do
+    #aux_system
+    si=$(awk 'NR == '$line_no' {print ($1)}' $list_file)
+    line_no=$(expr $line_no + 1)
+
+    #aux_machine1
+    mi1=$(awk 'NR == '$line_no' {print ($1)}' $list_file)
+    let line_no="$line_no"+1
+
+    #aux_machine2
+    mi2=$(awk 'NR == '$line_no' {print ($1)}' $list_file)
+    if [ $(echo $mi2 | grep '^[A-Z]' | wc -c) = 0 ]
+    then
+        mi2=$(echo $mi1 | sed 's/.$/R/')
+    fi
+
+    si_list=$si_list" "$si
+    mi1_list=$mi1_list" "$mi1
+    mi2_list=$mi2_list" "$mi2
+done
+
+
+# begin output files
+echo Writing file $event_file ...
+echo '# auxilary systems events\n'   >$event_file
+
+# processing aux_event_tmpl
+echo processing aux_event_tmpl
+head_line_no=1
+for obj_line_no in $(awk '/^OBJ/ {print NR}' aux_event_tmpl)
+do
+    echo head_line_no: $head_line_no  obj_line_no $obj_line_no 
+    #find header
+    awk 'NR=='$head_line_no', NR=='"$obj_line_no-1"' {print $0}' aux_event_tmpl \
+        >> $event_file
+
+    #find object
+    awk 'NR=='$obj_line_no',  /[^\\]$/ {print $0}' aux_event_tmpl | \
+        sed 's/$M/'$M'/g' > obj_file
+    head_line_no=$(awk 'NR=='$obj_line_no',  /[^\\]$/ \
+        {if ($0 ~ /[^\\]$/) {print NR} }' aux_event_tmpl)
+    let head_line_no=head_line_no+1
+
+    #make all aux_system with this object
+    sys_no=0
+    if grep -q '\$mi1' obj_file
+    then
+        echo aux_machine1 only
+        for si in $si_list
+        do
+            let sys_no=sys_no+1
+            mi1=$(echo $mi1_list | awk '{print $('$sys_no')}' )
+            sed 's/$si/'$si'/g' obj_file | sed 's/$mi1/'$mi1'/g' \
+                >> $event_file
+        done
+    elif grep -q '\$mi2' obj_file
+    then
+        echo aux_machine2 only
+        for si in $si_list
+        do
+            let sys_no=sys_no+1
+            mi2=$(echo $mi2_list | awk '{print $('$sys_no')}' )
+            sed 's/$si/'$si'/g' obj_file | sed 's/$mi2/'$mi2'/g' \
+                >> $event_file
+        done
+    elif grep -q '\$mia' obj_file
+    then
+        echo both aux_machine1 and aux_machine2
+        for si in $si_list
+        do
+            let sys_no=sys_no+1
+            mi1=$(echo $mi1_list | awk '{print $('$sys_no')}' )
+            sed 's/$si/'$si'/g' obj_file | sed 's/$mia/'$mi1'/g' \
+                >> $event_file
+            mi2=$(echo $mi2_list | awk '{print $('$sys_no')}' )
+            sed 's/$si/'$si'/g' obj_file | sed 's/$mia/'$mi2'/g' \
+                >> $event_file
+        done
+    fi
+
+done
+
+rm obj_file

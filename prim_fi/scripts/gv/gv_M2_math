@@ -1,0 +1,1540 @@
+# gatevalve math-log
+
+# No math for int.gatevalve GI181_1
+
+# No math for int.gatevalve GI181_2
+
+# No math for int.gatevalve GI203__
+
+# No math for int.gatevalve GI203_1
+
+# No math for int.gatevalve GI203_2
+
+# No math for int.gatevalve GI203_3
+
+# No math for int.gatevalve GI203_4
+
+# No math for int.gatevalve GI205__
+
+# No math for int.gatevalve GI206__
+
+# No math for int.gatevalve GI208__
+
+# No math for int.gatevalve GI209__
+
+# No math for int.gatevalve GI211__
+
+# No math for int.gatevalve GI212__
+
+# No math for int.gatevalve GI214__
+
+# No math for int.gatevalve GI215__
+
+# No math for int.gatevalve GI216__
+
+# No math for int.gatevalve GI217__
+
+# No math for int.gatevalve GI218__
+
+# No math for int.gatevalve GI219__
+
+# No math for int.gatevalve GI220__
+
+# No math for int.gatevalve GI221__
+
+# No math for int.gatevalve GI222__
+
+# No math for int.gatevalve GI223__
+
+# No math for int.gatevalve GI224__
+
+# No math for int.gatevalve GI225__
+
+# No math for int.gatevalve GI226__
+
+# No math for int.gatevalve GI227__
+
+# No math for int.gatevalve GI228__
+
+# No math for int.gatevalve GI229__
+
+# No math for int.gatevalve GI230__
+
+# No math for int.gatevalve GI231__
+
+# No math for int.gatevalve GI232__
+
+# No math for int.gatevalve GI233__
+
+# No math for int.gatevalve GI235__
+
+# No math for int.gatevalve GI236__
+
+# No math for int.gatevalve GI238__
+
+# No math for int.gatevalve GI239__
+
+# No math for int.gatevalve GI241__
+
+# No math for int.gatevalve GI242__
+
+# No math for int.gatevalve GI244__
+
+# No math for int.gatevalve GI255__
+
+# No math for int.gatevalve GI256__
+
+# No math for int.gatevalve GI257__
+
+# No math for int.gatevalve GI258__
+
+# No math for int.gatevalve GI259__
+
+# No math for int.gatevalve GI260__
+
+# No math for int.gatevalve GI261__
+
+# No math for int.gatevalve GI262__
+
+# No math for int.gatevalve GI263__
+
+# No math for int.gatevalve GI264__
+
+# No math for int.gatevalve GI265__
+
+# No math for int.gatevalve GI266__
+
+# No math for int.gatevalve GI267__
+
+# No math for int.gatevalve GI268__
+
+# No math for int.gatevalve GI269__
+
+# No math for int.gatevalve GI270__
+
+# No math for int.gatevalve GI271__
+
+# No math for int.gatevalve GI272__
+
+# No math for int.gatevalve GI273__
+
+# No math for int.gatevalve GI274__
+
+# No math for int.gatevalve GI275__
+
+# No math for int.gatevalve GI276__
+
+# No math for int.gatevalve GI277__
+
+# No math for int.gatevalve GIR2I01
+
+# No math for int.gatevalve GIR2I02
+
+# No math for int.gatevalve GIR2I03
+
+# No math for int.gatevalve GIR2I04
+
+# No math for int.gatevalve GIR2I05
+
+# No math for int.gatevalve GIR2I06
+
+# No math for int.gatevalve GIR2I07
+
+# No math for int.gatevalve GIR2I08
+
+# No math for int.gatevalve GIR2I09
+
+# No math for int.gatevalve GIR2I10
+
+# No math for int.gatevalve GIR2I11
+
+# No math for int.gatevalve GIR2I12
+
+# No math for int.gatevalve GIR2I13
+
+# No math for int.gatevalve GIR2I14
+
+# No math for int.gatevalve GIR2I15
+
+# No math for int.gatevalve GIR2I16
+
+# No math for int.gatevalve GIR2I17
+
+# No math for int.gatevalve GIR2I18
+
+# No math for int.gatevalve GIR2I19
+
+# No math for int.gatevalve GIR2I20
+
+# No math for int.gatevalve GIR2I21
+
+# No math for int.gatevalve GIR2I22
+
+# No math for int.gatevalve GIR2I23
+
+# No math for int.gatevalve GIR2I24
+
+# No math for int.gatevalve GIR2I25
+
+# No math for int.gatevalve GIR2I26
+
+# No math for int.gatevalve GIR2I27
+
+# No math for int.gatevalve GIR2I28
+
+# No math for int.gatevalve GIR2I29
+
+# No math for int.gatevalve GIR2I30
+
+# No math for int.gatevalve GIR2I31
+
+# No math for int.gatevalve GIR2I32
+
+# No math for int.gatevalve GIR2I33
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV1_A__TypeSet
+         P1 = M2_GV1_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV1_A__TypeSet
+         P1 = M2_GV1_A__TypeSend
+         P2 = M2_GV1_A__Type
+         P3 = M2_GV1_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV2_A__TypeSet
+         P1 = M2_GV2_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV2_A__TypeSet
+         P1 = M2_GV2_A__TypeSend
+         P2 = M2_GV2_A__Type
+         P3 = M2_GV2_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV3_A__TypeSet
+         P1 = M2_GV3_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV3_A__TypeSet
+         P1 = M2_GV3_A__TypeSend
+         P2 = M2_GV3_A__Type
+         P3 = M2_GV3_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV4_A__TypeSet
+         P1 = M2_GV4_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV4_A__TypeSet
+         P1 = M2_GV4_A__TypeSend
+         P2 = M2_GV4_A__Type
+         P3 = M2_GV4_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV5_A__TypeSet
+         P1 = M2_GV5_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV5_A__TypeSet
+         P1 = M2_GV5_A__TypeSend
+         P2 = M2_GV5_A__Type
+         P3 = M2_GV5_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV5_B__TypeSet
+         P1 = M2_GV5_B__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV5_B__TypeSet
+         P1 = M2_GV5_B__TypeSend
+         P2 = M2_GV5_B__Type
+         P3 = M2_GV5_B__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV5_C__TypeSet
+         P1 = M2_GV5_C__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV5_C__TypeSet
+         P1 = M2_GV5_C__TypeSend
+         P2 = M2_GV5_C__Type
+         P3 = M2_GV5_C__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV6_A__TypeSet
+         P1 = M2_GV6_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV6_A__TypeSet
+         P1 = M2_GV6_A__TypeSend
+         P2 = M2_GV6_A__Type
+         P3 = M2_GV6_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV6_B__TypeSet
+         P1 = M2_GV6_B__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV6_B__TypeSet
+         P1 = M2_GV6_B__TypeSend
+         P2 = M2_GV6_B__Type
+         P3 = M2_GV6_B__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV6_C__TypeSet
+         P1 = M2_GV6_C__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV6_C__TypeSet
+         P1 = M2_GV6_C__TypeSend
+         P2 = M2_GV6_C__Type
+         P3 = M2_GV6_C__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV7_A__TypeSet
+         P1 = M2_GV7_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV7_A__TypeSet
+         P1 = M2_GV7_A__TypeSend
+         P2 = M2_GV7_A__Type
+         P3 = M2_GV7_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV7_B__TypeSet
+         P1 = M2_GV7_B__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV7_B__TypeSet
+         P1 = M2_GV7_B__TypeSend
+         P2 = M2_GV7_B__Type
+         P3 = M2_GV7_B__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV7_C__TypeSet
+         P1 = M2_GV7_C__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV7_C__TypeSet
+         P1 = M2_GV7_C__TypeSend
+         P2 = M2_GV7_C__Type
+         P3 = M2_GV7_C__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV8_A__TypeSet
+         P1 = M2_GV8_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV8_A__TypeSet
+         P1 = M2_GV8_A__TypeSend
+         P2 = M2_GV8_A__Type
+         P3 = M2_GV8_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV8_C__TypeSet
+         P1 = M2_GV8_C__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV8_C__TypeSet
+         P1 = M2_GV8_C__TypeSend
+         P2 = M2_GV8_C__Type
+         P3 = M2_GV8_C__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV9_A__TypeSet
+         P1 = M2_GV9_A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV9_A__TypeSet
+         P1 = M2_GV9_A__TypeSend
+         P2 = M2_GV9_A__Type
+         P3 = M2_GV9_A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV9_B__TypeSet
+         P1 = M2_GV9_B__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV9_B__TypeSet
+         P1 = M2_GV9_B__TypeSend
+         P2 = M2_GV9_B__Type
+         P3 = M2_GV9_B__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV10_A_TypeSet
+         P1 = M2_GV10_A_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV10_A_TypeSet
+         P1 = M2_GV10_A_TypeSend
+         P2 = M2_GV10_A_Type
+         P3 = M2_GV10_A_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV10_B_TypeSet
+         P1 = M2_GV10_B_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV10_B_TypeSet
+         P1 = M2_GV10_B_TypeSend
+         P2 = M2_GV10_B_Type
+         P3 = M2_GV10_B_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV10_C_TypeSet
+         P1 = M2_GV10_C_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV10_C_TypeSet
+         P1 = M2_GV10_C_TypeSend
+         P2 = M2_GV10_C_Type
+         P3 = M2_GV10_C_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV25_A_TypeSet
+         P1 = M2_GV25_A_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV25_A_TypeSet
+         P1 = M2_GV25_A_TypeSend
+         P2 = M2_GV25_A_Type
+         P3 = M2_GV25_A_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV25_B_TypeSet
+         P1 = M2_GV25_B_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV25_B_TypeSet
+         P1 = M2_GV25_B_TypeSend
+         P2 = M2_GV25_B_Type
+         P3 = M2_GV25_B_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV26_A_TypeSet
+         P1 = M2_GV26_A_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV26_A_TypeSet
+         P1 = M2_GV26_A_TypeSend
+         P2 = M2_GV26_A_Type
+         P3 = M2_GV26_A_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV26_B_TypeSet
+         P1 = M2_GV26_B_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV26_B_TypeSet
+         P1 = M2_GV26_B_TypeSend
+         P2 = M2_GV26_B_Type
+         P3 = M2_GV26_B_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV130A_TypeSet
+         P1 = M2_GV130A_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV130A_TypeSet
+         P1 = M2_GV130A_TypeSend
+         P2 = M2_GV130A_Type
+         P3 = M2_GV130A_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV111_5TypeSet
+         P1 = M2_GV111_5Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV111_5TypeSet
+         P1 = M2_GV111_5TypeSend
+         P2 = M2_GV111_5Type
+         P3 = M2_GV111_5Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV111_6TypeSet
+         P1 = M2_GV111_6Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV111_6TypeSet
+         P1 = M2_GV111_6TypeSend
+         P2 = M2_GV111_6Type
+         P3 = M2_GV111_6Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV116__TypeSet
+         P1 = M2_GV116__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV116__TypeSet
+         P1 = M2_GV116__TypeSend
+         P2 = M2_GV116__Type
+         P3 = M2_GV116__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV121_1TypeSet
+         P1 = M2_GV121_1Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV121_1TypeSet
+         P1 = M2_GV121_1TypeSend
+         P2 = M2_GV121_1Type
+         P3 = M2_GV121_1Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV121_2TypeSet
+         P1 = M2_GV121_2Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV121_2TypeSet
+         P1 = M2_GV121_2TypeSend
+         P2 = M2_GV121_2Type
+         P3 = M2_GV121_2Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV49A__TypeSet
+         P1 = M2_GV49A__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV49A__TypeSet
+         P1 = M2_GV49A__TypeSend
+         P2 = M2_GV49A__Type
+         P3 = M2_GV49A__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV49B__TypeSet
+         P1 = M2_GV49B__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV49B__TypeSet
+         P1 = M2_GV49B__TypeSend
+         P2 = M2_GV49B__Type
+         P3 = M2_GV49B__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV204__TypeSet
+         P1 = M2_GV204__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV204__TypeSet
+         P1 = M2_GV204__TypeSend
+         P2 = M2_GV204__Type
+         P3 = M2_GV204__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV207__TypeSet
+         P1 = M2_GV207__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV207__TypeSet
+         P1 = M2_GV207__TypeSend
+         P2 = M2_GV207__Type
+         P3 = M2_GV207__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV210__TypeSet
+         P1 = M2_GV210__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV210__TypeSet
+         P1 = M2_GV210__TypeSend
+         P2 = M2_GV210__Type
+         P3 = M2_GV210__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV213__TypeSet
+         P1 = M2_GV213__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV213__TypeSet
+         P1 = M2_GV213__TypeSend
+         P2 = M2_GV213__Type
+         P3 = M2_GV213__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV234__TypeSet
+         P1 = M2_GV234__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV234__TypeSet
+         P1 = M2_GV234__TypeSend
+         P2 = M2_GV234__Type
+         P3 = M2_GV234__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV237__TypeSet
+         P1 = M2_GV237__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV237__TypeSet
+         P1 = M2_GV237__TypeSend
+         P2 = M2_GV237__Type
+         P3 = M2_GV237__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV240__TypeSet
+         P1 = M2_GV240__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV240__TypeSet
+         P1 = M2_GV240__TypeSend
+         P2 = M2_GV240__Type
+         P3 = M2_GV240__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV243__TypeSet
+         P1 = M2_GV243__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV243__TypeSet
+         P1 = M2_GV243__TypeSend
+         P2 = M2_GV243__Type
+         P3 = M2_GV243__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVZ_1__TypeSet
+         P1 = M2_GVZ_1__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVZ_1__TypeSet
+         P1 = M2_GVZ_1__TypeSend
+         P2 = M2_GVZ_1__Type
+         P3 = M2_GVZ_1__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVZ_2__TypeSet
+         P1 = M2_GVZ_2__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVZ_2__TypeSet
+         P1 = M2_GVZ_2__TypeSend
+         P2 = M2_GVZ_2__Type
+         P3 = M2_GVZ_2__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV3B2__TypeSet
+         P1 = M2_GV3B2__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV3B2__TypeSet
+         P1 = M2_GV3B2__TypeSend
+         P2 = M2_GV3B2__Type
+         P3 = M2_GV3B2__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV4B2__TypeSet
+         P1 = M2_GV4B2__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV4B2__TypeSet
+         P1 = M2_GV4B2__TypeSend
+         P2 = M2_GV4B2__Type
+         P3 = M2_GV4B2__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV1B2__TypeSet
+         P1 = M2_GV1B2__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV1B2__TypeSet
+         P1 = M2_GV1B2__TypeSend
+         P2 = M2_GV1B2__Type
+         P3 = M2_GV1B2__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV2B2__TypeSet
+         P1 = M2_GV2B2__Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV2B2__TypeSet
+         P1 = M2_GV2B2__TypeSend
+         P2 = M2_GV2B2__Type
+         P3 = M2_GV2B2__Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV3B10_TypeSet
+         P1 = M2_GV3B10_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV3B10_TypeSet
+         P1 = M2_GV3B10_TypeSend
+         P2 = M2_GV3B10_Type
+         P3 = M2_GV3B10_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV4B10_TypeSet
+         P1 = M2_GV4B10_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV4B10_TypeSet
+         P1 = M2_GV4B10_TypeSend
+         P2 = M2_GV4B10_Type
+         P3 = M2_GV4B10_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV1B10_TypeSet
+         P1 = M2_GV1B10_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV1B10_TypeSet
+         P1 = M2_GV1B10_TypeSend
+         P2 = M2_GV1B10_Type
+         P3 = M2_GV1B10_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV2B10_TypeSet
+         P1 = M2_GV2B10_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV2B10_TypeSet
+         P1 = M2_GV2B10_TypeSend
+         P2 = M2_GV2B10_Type
+         P3 = M2_GV2B10_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GV301A_TypeSet
+         P1 = M2_GV301A_Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GV301A_TypeSet
+         P1 = M2_GV301A_TypeSend
+         P2 = M2_GV301A_Type
+         P3 = M2_GV301A_Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S02TypeSet
+         P1 = M2_GVR2S02Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S02TypeSet
+         P1 = M2_GVR2S02TypeSend
+         P2 = M2_GVR2S02Type
+         P3 = M2_GVR2S02Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S03TypeSet
+         P1 = M2_GVR2S03Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S03TypeSet
+         P1 = M2_GVR2S03TypeSend
+         P2 = M2_GVR2S03Type
+         P3 = M2_GVR2S03Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S04TypeSet
+         P1 = M2_GVR2S04Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S04TypeSet
+         P1 = M2_GVR2S04TypeSend
+         P2 = M2_GVR2S04Type
+         P3 = M2_GVR2S04Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S05TypeSet
+         P1 = M2_GVR2S05Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S05TypeSet
+         P1 = M2_GVR2S05TypeSend
+         P2 = M2_GVR2S05Type
+         P3 = M2_GVR2S05Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S06TypeSet
+         P1 = M2_GVR2S06Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S06TypeSet
+         P1 = M2_GVR2S06TypeSend
+         P2 = M2_GVR2S06Type
+         P3 = M2_GVR2S06Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S07TypeSet
+         P1 = M2_GVR2S07Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S07TypeSet
+         P1 = M2_GVR2S07TypeSend
+         P2 = M2_GVR2S07Type
+         P3 = M2_GVR2S07Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S08TypeSet
+         P1 = M2_GVR2S08Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S08TypeSet
+         P1 = M2_GVR2S08TypeSend
+         P2 = M2_GVR2S08Type
+         P3 = M2_GVR2S08Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S09TypeSet
+         P1 = M2_GVR2S09Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S09TypeSet
+         P1 = M2_GVR2S09TypeSend
+         P2 = M2_GVR2S09Type
+         P3 = M2_GVR2S09Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S10TypeSet
+         P1 = M2_GVR2S10Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S10TypeSet
+         P1 = M2_GVR2S10TypeSend
+         P2 = M2_GVR2S10Type
+         P3 = M2_GVR2S10Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S11TypeSet
+         P1 = M2_GVR2S11Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S11TypeSet
+         P1 = M2_GVR2S11TypeSend
+         P2 = M2_GVR2S11Type
+         P3 = M2_GVR2S11Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S12TypeSet
+         P1 = M2_GVR2S12Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S12TypeSet
+         P1 = M2_GVR2S12TypeSend
+         P2 = M2_GVR2S12Type
+         P3 = M2_GVR2S12Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S13TypeSet
+         P1 = M2_GVR2S13Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S13TypeSet
+         P1 = M2_GVR2S13TypeSend
+         P2 = M2_GVR2S13Type
+         P3 = M2_GVR2S13Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+OBJ: M2_GateValve
+     CPAR:
+         P0 = M2_GVR2S14TypeSet
+         P1 = M2_GVR2S14Type
+     CFV: ELSE Q1;
+      OPAR:
+         P0 = M2_GVR2S14TypeSet
+         P1 = M2_GVR2S14TypeSend
+         P2 = M2_GVR2S14Type
+         P3 = M2_GVR2S14Index
+    OFV0: P1 = IF S0 && (P0 == 0x0010) : P2 | 0x0010; ELSE ;
+    OFV1: P1 = IF S0 && (P0 == 0x0020) : P2 | 0x0020; ELSE ;
+    OFV2: P1 = IF S0 && (P0 == 0x0040) : P2 | 0x0040; ELSE ;
+    OFV3: P1 = IF S0 && (P0 == 0x0080) : P2 | 0x0080; ELSE ;
+    OFV4: P1 = IF S0 && (P0 == 0x0100) : P2 & 0xFFEF; ELSE ;
+    OFV5: P1 = IF S0 && (P0 == 0x0200) : P2 & 0xFFDF; ELSE ;
+    OFV6: P1 = IF S0 && (P0 == 0x0400) : P2 & 0xFFBF; ELSE ;
+    OFV7: P1 = IF S0 && (P0 == 0x0800) : P2 & 0xFF7F; ELSE ;
+    OFV8: P1 = IF S0 && (P0 <= 15) && (P0 > 0): (P2 & 0XFFF0) | P0 ; ELSE ;
+    OFV9: P3 = IF S2 : P2 & 0X000F; ELSE ;
+
+# gatevalve math-log end
+

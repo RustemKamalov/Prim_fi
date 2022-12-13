@@ -1,0 +1,36 @@
+
+WOPT: p=Cc r=0 c=0 o=ks-r;kmsa t=1 e=0 a=1 b=0 k=0
+
+WPICT: c=3 h=0 w=0
+
+OBJ: 88
+  PARL: P0=PARAM1
+  COLD: Q1=1,8,0
+  COLF: ELSE Q1;
+OBEND
+
+OBJ: 90
+  PARL: P0=PARAM0 P1=PARAM1
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P1 & 0X0001 : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 1.000000;
+OBEND
+
+OBJ: 15
+  PARL: P0=PARAM2
+  TXTD: Q1=$P0
+  TXTF: ELSE Q1;
+OBEND
+
+OBJ: 91
+  PARL: P0=PARAM1
+  COLD: Q1=1,8,0
+  COLF: ELSE Q1;
+OBEND
+
+OBJ: 92
+  PARL: P0=PARAM0 P1=PARAM1
+  OPTD: Q1=-d-e-m-s-H-R+X
+  OPTF: IF P1 & 0X0002 : Q1;ELSE Q0;
+  SELD: a=FV p=P0  f=1  v=ELSE 2.000000;
+OBEND

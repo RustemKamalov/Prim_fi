@@ -1,0 +1,50 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="an_"$M"_list"
+pipe_file="an_"$M"_pipe"
+name_file="an_"$M"_name"
+
+# begin output files
+echo Writing file $pipe_file ...
+echo "// analogs" > $pipe_file
+
+echo Writing file $name_file ...
+echo "// analog names\n" > $name_file
+
+for i in $(awk '/^AnValue/ { print(NR) }' $list_file)
+do
+    line=$(awk 'NR=='$i' {print $0}' $list_file | sed 's/\//\\\//g')
+    name=$(echo $line | awk '{print $2}')
+	if [ "$name" != "" ]
+	  then
+		comment=$(echo $line| awk '{$1=$2=$(NF-3)=$(NF-2)=$(NF-1)=$NF="";print($0)}'| \
+            sed 's/^[ ]*//' | sed 's/[ ]*$//' )
+        min=$(echo $line | awk '{print $(NF-3)}')
+        max=$(echo $line | awk '{print $(NF-1)}')
+        unit=$(echo $line | awk '{print $NF}')
+	  else
+        name=$(echo $line| awk '{print($1) }' | sed 's/AnValue/RM/')
+        comment=$(echo $line| awk '{print($1) }' | sed 's/AnValue/Резерв_/')
+		min=0
+		max=9999
+		unit="unit"
+	fi
+    let width=max-min
+
+    echo $name $min .. $max $width $unit $comment
+
+    #write analog file
+    echo "\n//$name" >> $pipe_file
+    sed 's/$id/'$name'/' an_pipe_tmpl |sed 's/$Min/'"$min"'/'| \
+        sed 's/$Max/'"$max"'/' |sed 's/$Wid/'$width'/' | sed 's/$M/'$M'/g' | \
+        sed 's/$unit/'$unit'/' |sed 's/$comment/'"$comment"'/' >> $pipe_file
+
+    #write names file
+    sed 's/$M/'$M'/g' an_name_tmpl | sed 's/$id/'$name'/' | \
+        sed 's/$comment/'"$comment"'/' >> $name_file
+
+done
+
+echo pipe changed: all other modules should be generated!

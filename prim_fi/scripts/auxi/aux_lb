@@ -1,0 +1,196 @@
+//lubr.system messages (from: I21Tb01W01)
+M1_LbSEvMs000          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† €‚’ ‡ „1
+M1_LbSEvMs001          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† …‡ ‡ „1
+M1_LbSEvMs002          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …†  ‡ „1
+M1_LbSEvMs003          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† “— ‡ „1
+M1_LbSEvMs004          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† … ‡ „1
+M1_LbSEvMs005          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† €‚’ ‡ „1
+M1_LbSEvMs006          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† …‡ ‡ „1
+M1_LbSEvMs007          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …†  ‡ „1
+M1_LbSEvMs008          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† “— ‡ „1
+M1_LbSEvMs009          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† … ‡ „1
+M1_LbSEvMs010          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† €‚’ ‡ „2
+M1_LbSEvMs011          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† …‡ ‡ „2
+M1_LbSEvMs012          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …†  ‡ „2
+M1_LbSEvMs013          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† “— ‡ „2
+M1_LbSEvMs014          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’€ …† … ‡ „2
+M1_LbSEvMs015          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† €‚’ ‡ „2
+M1_LbSEvMs016          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† …‡ ‡ „2
+M1_LbSEvMs017          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …†  ‡ „2
+M1_LbSEvMs018          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† “— ‡ „2
+M1_LbSEvMs019          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’€ …† … ‡ „2
+M1_LbSEvMs020          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚’ “‘ …‚‡.‡€…’  …†“
+M1_LbSEvMs021          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚’ “‘ …‚‡.‡€…’  …†“
+M1_LbSEvMs022          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘ ‡ „1 …‚‡.‡€. …†“
+M1_LbSEvMs023          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘ ‡ „1 …‚‡.‡€. …†“
+M1_LbSEvMs024          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘ ‡ „2 …‚‡.‡€. …†“
+M1_LbSEvMs025          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘ ‡ „2 …‚‡.‡€. …†“
+M1_LbSEvMs026          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚’ “‘ …‚‡†.‘’€– ‡€™
+M1_LbSEvMs027          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚’ “‘ …‚‡†.‘’€– ‡€™
+M1_LbSEvMs028          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘ ‡ „1 …‚‡†.‘’€– ‡€™
+M1_LbSEvMs029          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘ ‡ „1 …‚‡†.‘’€– ‡€™
+M1_LbSEvMs030          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘ ‡ „2 …‚‡†.‘’€– ‡€™
+M1_LbSEvMs031          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘ ‡ „2 …‚‡†.‘’€– ‡€™
+M1_LbSEvMs032          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘ ‡ „1 …‚‡†.’…• —€
+M1_LbSEvMs033          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘ ‡ „1 …‚‡†.’…• —€
+M1_LbSEvMs034          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘ ‡ „2 …‚‡†.’…• —€
+M1_LbSEvMs035          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘ ‡ „2 …‚‡†.’…• —€
+M1_LbSEvMs036          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 …‘.€‚’ “‘ …‚‡†
+M1_LbSEvMs037          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 …‘.€‚’ “‘ …‚‡†
+M1_LbSEvMs038          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 …‘.“‘ ‡ „1 …‚‡†
+M1_LbSEvMs039          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 …‘.“‘ ‡ „1 …‚‡†
+M1_LbSEvMs040          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 …‘.“‘ ‡ „2 …‚‡†
+M1_LbSEvMs041          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 …‘.“‘ ‡ „2 …‚‡†
+M1_LbSEvMs042          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚’ “‘’’
+M1_LbSEvMs043          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚’ “‘’’
+M1_LbSEvMs044          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’’ ‡ „1
+M1_LbSEvMs045          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’’ ‡ „1
+M1_LbSEvMs046          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’’ ‡ „2
+M1_LbSEvMs047          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’’ ‡ „2
+M1_LbSEvMs048          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‚‹—‹‘
+M1_LbSEvMs049          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‚‹—‹‘
+M1_LbSEvMs050          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 … ‚‹—‹‘.…’ €†
+M1_LbSEvMs051          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 … ‚‹—‹‘.…’ €†
+M1_LbSEvMs052          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1  … ‚‹—‹‘
+M1_LbSEvMs053          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2  … ‚‹—‹‘
+M1_LbSEvMs054          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 … ‚‹—‹‘.…’ „€‚‹
+M1_LbSEvMs055          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 … ‚‹—‹‘.…’ „€‚‹
+M1_LbSEvMs056          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.‚€…! ... N1 ‚‹—….…“‘’ —€
+M1_LbSEvMs057          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.‚€…! ... N2 ‚‹—….…“‘’ —€
+M1_LbSEvMs058          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.‚€…! …‘ ... N1 ‚‹.…“‘’ —€
+M1_LbSEvMs059          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.‚€…! …‘ ... N2 ‚‹.…“‘’ —€
+M1_LbSEvMs060          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ’‹—…
+M1_LbSEvMs061          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ’‹—…
+M1_LbSEvMs062          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ’‹—….…’ €†
+M1_LbSEvMs063          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ’‹—….…’ €†
+M1_LbSEvMs064          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 …‘.(…’ „€‚‹)
+M1_LbSEvMs065          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 …‘.(…’ „€‚‹)
+M1_LbSEvMs066          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ’‹—….…“‘’ —€
+M1_LbSEvMs067          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ’‹—….…“‘’ —€
+M1_LbSEvMs068          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚’ ‘’€‚ …‚‡.‡€. …†“
+M1_LbSEvMs069          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚’ ‘’€‚ …‚‡.‡€. …†“
+M1_LbSEvMs070          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€.‡ „1 …‚‡.‡€. …†“
+M1_LbSEvMs071          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€.‡ „1 …‚‡.‡€. …†“
+M1_LbSEvMs072          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€.‡ „2 …‚‡.‡€. …†“
+M1_LbSEvMs073          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€.‡ „2 …‚‡.‡€. …†“
+M1_LbSEvMs074          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚’ ‘’€‚’
+M1_LbSEvMs075          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚’ ‘’€‚’
+M1_LbSEvMs076          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€‚’ ‡ „1
+M1_LbSEvMs077          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€‚’ ‡ „1
+M1_LbSEvMs078          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€‚’ ‡ „2
+M1_LbSEvMs079          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€‚’ ‡ „2
+M1_LbSEvMs080          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ’‹—‹‘
+M1_LbSEvMs081          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ’‹—‹‘
+M1_LbSEvMs082          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ’‹—‹‘.…‘’ „€‚‹
+M1_LbSEvMs083          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ’‹—‹‘.…‘’ „€‚‹
+M1_LbSEvMs084          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 … ’‹—‹‘
+M1_LbSEvMs085          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 … ’‹—‹‘
+M1_LbSEvMs086          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚’ ‘’€‚. …‚‡. ’…• —€
+M1_LbSEvMs087          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚’ ‘’€‚. …‚‡. ’…• —€
+M1_LbSEvMs088          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€.‡ „1 …‚‡. ’…• —€
+M1_LbSEvMs089          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€.‡ „1 …‚‡. ’…• —€
+M1_LbSEvMs090          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€.‡ „2 …‚‡.’…• —€
+M1_LbSEvMs091          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€.‡ „2 …‚‡.’…• —€
+M1_LbSEvMs092          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "
+M1_LbSEvMs093          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "
+M1_LbSEvMs094          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "
+M1_LbSEvMs095          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "
+M1_LbSEvMs096          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.„€‚‹. € ‚›•„… ... N1 ‚ … („€’—)
+M1_LbSEvMs097          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.„€‚‹. € ‚›•„… ... N2 ‚ … („€’—)
+M1_LbSEvMs098          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’’ ‘ €…‹ 1
+M1_LbSEvMs099          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€‚’ ‘ €…‹ 1
+M1_LbSEvMs100          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’’ ‘ €…‹ 1
+M1_LbSEvMs101          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€‚’ ‘ €…‹ 1
+M1_LbSEvMs102          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 “‘’’ ‘ €…‹ 2
+M1_LbSEvMs103          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‘’€‚’ ‘ €…‹ 2
+M1_LbSEvMs104          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 “‘’’ ‘ €…‹ 2
+M1_LbSEvMs105          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‘’€‚’ ‘ €…‹ 2
+M1_LbSEvMs106          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.‚€…! ... N1 ’‹—… €‚’. ‘’€– ‡€™                  ’…
+M1_LbSEvMs107          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.‚€…! ... N2 ’‹—… €‚’. ‘’€– ‡€™                  ’…
+M1_LbSEvMs108          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "‚€…! ... N1. ‘—…‡‚…… €-
+M1_LbSEvMs109          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "‚€…! ... N2. ‘—…‡‚…… €-
+M1_LbSEvMs110          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "‚€…! ... N1. ‚‘‘’€‚‹…… €-
+M1_LbSEvMs111          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "‚€…! ... N2. ‚‘‘’€‚‹…… €-
+M1_LbSEvMs112          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‚‹—…  …‘’“.…‘’ „€‚‹
+M1_LbSEvMs113          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‚‹—…  …‘’“.…‘’ „€‚‹
+M1_LbSEvMs114          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 …‘ ‚‹—…  …‘’“
+M1_LbSEvMs115          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 …‘ ‚‹—…  …‘’“
+M1_LbSEvMs116          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ’‹—…  …‘’“
+M1_LbSEvMs117          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ’‹—…  …‘’“
+M1_LbSEvMs118          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 €‚
+M1_LbSEvMs119          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 €‚
+M1_LbSEvMs120          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‚‹—…  …‘’“.…’ „€‚‹
+M1_LbSEvMs121          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‚‹—…  …‘’“.…’ „€‚‹
+M1_LbSEvMs122          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 …‡ …‘.€‚’ “‘ …‚‡†
+M1_LbSEvMs123          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 …‡ …‘.€‚’ “‘ …‚‡†
+M1_LbSEvMs124          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N1 ‚‹—…. …‘’“
+M1_LbSEvMs125          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1. ... N2 ‚‹—…. …‘’“
+M1_LbSEvMs126          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.„€‚‹. € ‚›•„… ... N1 ‚ …
+M1_LbSEvMs127          ,  B,  0, M1_LbS_EventMessage  , N, 0, 0, "…‘-1.„€‚‹. € ‚›•„… ... N2 ‚ …
+
+//lubrication_system
+M1_Lb1_DutySend        ,  U,100, M1_AuxWords          , N, 0, 0, "Lubrication system pump N1 duty selector"
+M1_Lb1_Duty            ,  U,  0, M1_AuxWords          , N, 0, 0, "Lubrication system pump N1 duty selector"
+M1_Lb1_Stat            ,  U,  0, M1_AuxWords          , N, 0, 0, "Lubrication system pump N1 status word"
+M1_Lb1_CtrWrd          ,  U,100, M1_AuxWords          , N, 0, 0, "Lubr.syst.pump N1 ctr.word from the MDP "
+M1_Lb1_RemTSet         ,  B,100, M1_AuxBits           , N, 0, 0, "Lubr.syst.pump N1 setting REMONT time   "
+M1_Lb1_OprTSet         ,  B,100, M1_AuxBits           , N, 0, 0, "Lubr.syst.pump N1 setting operator's tim"
+M1_Lb2_DutySend        ,  U,100, M1_AuxWords          , N, 0, 0, "Lubrication system pump N2 duty selector"
+M1_Lb2_Duty            ,  U,  0, M1_AuxWords          , N, 0, 0, "Lubrication system pump N2 duty selector"
+M1_Lb2_Stat            ,  U,  0, M1_AuxWords          , N, 0, 0, "Lubrication system pump N2 status word"
+M1_Lb2_CtrWrd          ,  U,100, M1_AuxWords          , N, 0, 0, "Lubr.syst.pump N2 ctr.word from the MDP "
+M1_Lb2_RemTSet         ,  B,100, M1_AuxBits           , N, 0, 0, "Lubr.syst.pump N2 setting REMONT time   "
+M1_Lb2_OprTSet         ,  B,100, M1_AuxBits           , N, 0, 0, "Lubr.syst.pump N2 setting operator's tim"
+
+//lubrication_pump_N1
+
+M1_Lb1DSOnMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Date of last SW.ON device  : Month      "
+M1_Lb1DSOnDay          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Day        "
+M1_Lb1DSOnYea          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Year       "
+M1_Lb1TSOnHou          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Hour       "
+M1_Lb1TSOnMin          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Minute     "
+M1_Lb1TSOnSec          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Second     "
+M1_Lb1DSOfMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Date of last SW.OFF device : Month      "
+M1_Lb1DSOfDay          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Day        "
+M1_Lb1DSOfYea          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Year       "
+M1_Lb1TSOfHou          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Hour       "
+M1_Lb1TSOfMin          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Minute     "
+M1_Lb1TSOfSec          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Second     "
+M1_Lb1StCoWAc          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts with cold wind. (daily) "
+M1_Lb1StCoWPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1StHtWAc          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts with hot. wind. (daily) "
+M1_Lb1StHtWPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1WrkHoAc          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Work hours of the device        (daily) "
+M1_Lb1WrkHoPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1FailrAc          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Device failures                 (daily) "
+M1_Lb1FailrPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1StCoMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts with cold wind. (month.)"
+M1_Lb1StCoMPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1StHWMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts with hot. wind. (month.)"
+M1_Lb1StHWMPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1WrHoMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Work hours of the device        (month.)"
+M1_Lb1WrHoMPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1FailMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Device failures                 (month.)"
+M1_Lb1FailMPv          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                                        "
+M1_Lb1StCoRem          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts with cold wind. (remont)"
+M1_Lb1StHWRem          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts with hot wind.  (remont)"
+M1_Lb1WoHoRem          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Device work hours               (remont)"
+M1_Lb1FailRem          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Am. of device failures          (remont)"
+M1_Lb1DSReMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Date set by operator       : Month      "
+M1_Lb1DSReDay          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Day        "
+M1_Lb1DSReYea          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Year       "
+M1_Lb1TSReHou          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Hour       "
+M1_Lb1StCoOpr          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts               (operator)"
+M1_Lb1StHWOpr          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Quant.of starts               (operator)"
+M1_Lb1WoHoOpr          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Device work hours             (operator)"
+M1_Lb1FailOpr          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Am. of device failures        (operator)"
+M1_Lb1DSOpMth          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Date set by operator       : Month      "
+M1_Lb1DSOpDay          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Day        "
+M1_Lb1DSOpYea          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Year       "
+M1_Lb1TSOpHou          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "                           : Hour       "
+M1_Lb1WorkHou          ,  U,  0, M1_Lbr_ArchiveTbl      , N, 0, 0, "Agregate work hours since the last start"
+
+/ α«®α¨αβ¥¬ 
+M1_LbS_Name             ,  Y,  0, M1_Name             , N, 0, 0, "‘1  α«®α¨αβ¥¬            "
+M1_Lb1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "‘1  α«®­ α®α N1          "
+M1_Lb2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "‘1  α«®­ α®α N2          "

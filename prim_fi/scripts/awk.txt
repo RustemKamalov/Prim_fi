@@ -1,0 +1,614 @@
+awk
+
+
+
+
+awk
+Pattern scanning and processing language (POSIX)
+Syntax:
+awk [-F ere] [-v var=val] [-W GNU_extension...]
+    [--] program [argument]...
+
+awk [-F ere] -f progfile [-v var=val] [-W GNU_extension...]
+    [--] [argument]...Options:
+  -f progfile 
+  Specifies the name of the awk program, progfile, which contains awk 
+  statements. You can also specify the awk program as a single argument in the 
+  command line by using quotes. 
+  -F ere 
+  Define the input field separator (FS) to be the extended regular expression 
+  ere, before any input is read. 
+  -v var=val 
+  Assign the value val to variable var before execution of the program begins. 
+  -W GNU_extension[,GNU_extension]... 
+  Specify a GNU extension. Multiple -W options may be specified, or multiple 
+  extensions may be listed in a single -W option if they are separated by commas 
+  (or white space if the entire option argument has been quoted from the command 
+  line). The GNU extended options are: 
+    compat 
+    Run in compatibility mode. In compatibility mode, GNU awk behaves 
+    identically to UNIX awk; none of the GNU-specific extensions are recognized. 
+
+    copyleft
+    copyright 
+    Print the short version of the GNU copyright information message on the 
+    error output. 
+    help
+    usage 
+    Print a relatively short summary of the available options on the error 
+    output. 
+    lint 
+    Provide warnings about constructs that are dubious or non-portable to other 
+    awk implementations. 
+    posix 
+    This turns on compatibility mode, with the following additional 
+    restrictions: 
+      \x escape sequences are not recognized. 
+      The synonym func for the keyword function is not recognized. 
+      The operators ** and **= cannot be used in place of ^ and ^=. 
+    source=program-text 
+    Use program-text as AWK program source code. This option allows the easy 
+    intermixing of library functions (used via the -f option) with source code 
+    entered on the command line. It is intended primarily for medium to large 
+    size AWK programs used in shell scripts. The -W source= form of this option 
+    uses the rest of the command-line argument for program-text; no other 
+    options to -W will be recognized in the same argument. 
+    version 
+    Print version information for this particular copy of GNU awk on the error 
+    output. This is useful mainly for knowing if the current copy of GNU awk on 
+    your system is up to date with respect to whatever the Free Software 
+    Foundation is distributing. 
+  -- 
+  Indicates end of options, in case subsequent item begins with dash (-) and is 
+  not an option. 
+  program 
+  The text of an awk program that contains awk statements, assuming no 
+  -fprogfile option has been specified. The awk program can either be in a file 
+  progfile or specified in the command line, taking into account the quoting 
+  rules of the shell. 
+  argument 
+  You can intermix either of these two types of arguments: 
+    file 
+    The pathname of a file that contains the input to be read; the input is 
+    matched against the set of patterns in the program. If you don't specify any 
+    files containing input, or if you specify the dash character (-), the 
+    standard input is used. 
+    assignment 
+    Expressions in the form name=value can be passed to awk where each instance 
+    of name represents the name of an awk variable. Each such variable 
+    assignment occurs just prior to the processing of the following file, if 
+    any. The assignment is done before the file argument is executed, and after 
+    the BEGIN action - if any - of that file. 
+Description:
+The awk utility executes programs written in the awk programming language; this 
+language specializes in manipulating textual data. An awk program is a sequence 
+of patterns and corresponding actions. When input matching a specified pattern 
+is read, the action associated with that pattern is carried out. The awk shipped 
+with QNX is a port of gawk (GNU awk). The source code and original GNU 
+documentation is available under the free software section of QUICS. 
+The awk utility interprets each input line as a sequence of fields, where, by 
+default, a field is a string of non-blank characters. You can change this 
+default white space delimiter by using the built-in variable, FS (see 
+Variables), or the -Fere option. The awk utility denotes the first field in a 
+line $1, the second $2, and so forth. A $0 refers to the entire line; setting 
+any other field causes $0 to be reevaluated. 
+Each input line matched by the patterns and each input line for the getline 
+function (see the section on Functions) is limited to 1024 bytes. 
+Programs in awk are composed of statements of the form: 
+pattern { action } 
+You can omit either the pattern or the action (that includes the enclosing 
+braces). In the following sections of this description, blank characters between 
+operators and reserved words are ignored, unless otherwise specified. All blank 
+characters are significant inside literal strings and after a function name. A 
+missing pattern matches any line of input, and a missing action is equivalent to 
+an action that writes the matched line of input to standard output. 
+An awk program follows this general procedure:
+  Starts by executing the actions associated with all BEGIN patterns (BEGIN 
+  patterns are described in the section Special patterns - BEGIN and END). 
+  Processes each file argument in turn - or standard input if no files are 
+  specified - by cyclically reading and saving data from the file until a record 
+  separator is seen, evaluating each pattern in the script and executing that 
+  action for patterns that evaluate to true (the default record separator is the 
+  newline character). 
+  Executes the actions associated with all END patterns. 
+Expressions:
+Expressions describe computations used in patterns and actions. Expressions in 
+awk are constructed from such operators as conditionals, logicals, arithmetics, 
+assignments, subscripts, and fields. Expressions take on string or numeric 
+values appropriate to the context. The following table, "awk Expressions in 
+Decreasing Precedence," displays valid expressions in groups, starting from the 
+highest priority. 
+In the following table, the abbreviation expr represents any expression. The 
+abbreviation lvalue represents any entity that can be assigned to (i.e. on the 
+left side of an assignment operator). 
+awk Expressions in Decreasing Precedence
+
+Syntax Description
+      (expr)grouping
+      $exprreferences field number expr
+      ++lvaluepre-increment lvalue by 1
+      --lvaluepre-decrement lvalue by 1
+      lvalue++post-increment lvalue by 1
+      lvalue--post-decrement lvalue by 1
+      expr ^ exprexponentiation
+      ! exprlogical not
+      + exprunary plus
+      - exprunary minus
+      expr * exprmultiplication
+      expr / exprdivision
+      expr % exprinteger modulus
+      expr + expraddition
+      expr - exprsubtraction
+      expr exprstring concatenation of two exprs
+      expr < exprless than
+      expr <= exprless than or equal to
+      expr != exprnot equal to
+      expr == exprequal to
+      expr > exprgreater than
+      expr >= exprgreater than or equal to
+      expr1 ~ expr21 if expr1 matches the ERE described by expr2
+      expr1 !~expr2 1 if expr2 doesn't match the ERE described by expr2
+      expr in array 1 if array[expr] exists
+      (index) in array handles multi-dimensional arrays
+      expr && expr logical AND
+      expr || expr logical OR
+      expr?expr:expr conditional expression - evaluates first expr and if 
+      nonzero evaluates to the second expr; otherwise to the third expr
+      lvalue ^= expr raise lvalue to exponent expr
+      lvalue %= expr assign lvalue%expr to lvalue
+      lvalue *= expr multiply lvalue by expr
+      lvalue /= expr divide lvalue by expr
+      lvalue += expr add expr to lvalue 
+      lvalue -= expr subtract expr from lvalue
+      lvalue = expr assign expr to lvalue
+
+All of the arithmetic operators are based on the C Standard. The conditional 
+expression returns either strings or numbers, depending on the input 
+expressions. Only one of the alternative expressions is evaluated. 
+In addition to the descriptions in the previous table, an expression can also be 
+a floating-point number, a literal string enclosed by double quotation marks 
+("), or a variable name. 
+You can treat a variable or a field as a number or a string at any time, 
+depending on its current usage. There are no explicit conversions between 
+numbers and strings. To force an expression to be treated as a number, you add 
+zero to it. To force an expression to be treated as a string, concatenate the 
+null string ("") to it. Variables and fields are set by the assignment 
+statement: 
+  lvalue=expression 
+The type of expression determines the resulting variable type. 
+The assignment includes these arithmetic assignments:
+   +=   -=   *=   /=   %=   ^=   ++   --each of which produces a numeric result. The left-hand side of an assignment and 
+the target of increment and decrement operators can be one of the following:
+  a variable 
+  an array with index 
+  a field selector 
+This is indicated by the following BNF grammar:
+  <lvalue>: 
+  <variable> 
+  | $expr 
+  | <variable> [ <index> ] 
+  ; 
+A valid array index consists of one or more comma-separated expressions, with 
+one expression for each dimension of the array. Because awk arrays behave as 
+associative memories, an array index can be any string. Since awk arrays are 
+really one-dimensional, a multi-dimensional array index is converted to a 
+one-dimensional index by concatenating all expressions, each separated from the 
+other by the value of the SUBSEP variable (see Variables). 
+Thus, the following two index operations are equivalent:
+  var[expr1, expr2,... , exprn] 
+  var[expr1 SUBSEP expr2 SUBSEP ... SUBSEP exprn] 
+A multi-dimensioned index used with the in operator must be parenthesized. The 
+in operator, which tests for the existence of a particular array element, 
+doesn't cause that element to exist. But any other reference to a nonexistent 
+array element automatically creates it. 
+Comparisons are made numerically if both operands are numeric; otherwise, 
+operands are converted to strings as required and a string comparison is made. 
+In the previous table, "awk Expressions in Decreasing Precedence," operators of 
+higher precedence are grouped before those of lower precedence. In expression 
+evaluation, higher precedence operators are evaluated before lower precedence 
+operators. All operators associate to the left except for the assignment 
+operators, the conditional operator (?:), and the exponentiation operator (^). 
+Because the concatenation operation is represented by adjacent expressions 
+rather than an explicit operator, you often need to use parentheses to enforce 
+the proper evaluation precedence. 
+Variables
+You can use variables in an awk program by assigning to them. They don't need to 
+be declared - uninitialized variables have the value of the empty string, which 
+has a numeric value of zero. All variables, including fields, are treated as 
+string variables unless they're used in a clearly numeric context. 
+Field variables are designated by a $, followed by a number or a numerical 
+expression. 
+You can create new field variables by assigning a value to them. References to 
+non-existent fields - i.e. fields after "$(NF)" - produce the null string. But, 
+assigning to a non-existent field (e.g. $(NF+2)=5) increases the value of NF, 
+creates any intervening fields with the null string as their values, and causes 
+the value of $0 to be recomputed, with the fields being separated by the value 
+of OFS. 
+Other special variables set by awk are shown in the following table:
+awk Variables
+
+VariableMeaning
+      ARGC the number of elements in the ARGV array
+      ARGV array of command-line arguments - excluding options and the program 
+      argument - numbered from zero to ARGC-1
+      FILENAME pathname of the current input file 
+      FNR ordinal number of the current record in the current file
+      FS input field separator regular expression; space by default
+      NF number of fields in the current record
+      NR ordinal number of the current record from the start of input
+      OFMT print statement output format for numbers; "%.6g" by default
+      OFS print statement output field separation; space by default.
+      ORS print statement output record separator; newline by default
+      RLENGTH length of string matched by the match function
+      RS the first character of the string value of RS is the input record 
+      separator; newline by default. If RS is null, records are separated by 
+      blank lines, and newline is always a field separator, regardless of the 
+      value of FS
+      RSTART starting position of string matched by match function, numbering 
+      from 1. This is always equivalent to the return value of the match 
+function
+      SUBSEP subscript separator string for multi-dimensional arrays; the 
+      default value is \034
+
+You can modify or add to the arguments in ARGV; you can alter ARGC. As each 
+input file ends, awk treats the text non-null element of ARGV, up through the 
+current value of ARGC-1, as the name of the next input file. Thus, setting an 
+element of ARGV to null means that it isn't treated as an input file. A dash (-) 
+filename indicates the standard input. If an argument contains an equals sign 
+(=), this argument is treated as an assignment rather than as a file argument. 
+Patterns
+The structure of a pattern is specified by the following BNF grammar:
+  <pattern>: 
+  BEGIN 
+  |END 
+  |<simple pattern> 
+  |<simple pattern>, <simple pattern> 
+  ; 
+  <simple pattern>: 
+  <simple expression> 
+  |/<ere>/ 
+  ; 
+In other words, a pattern is any valid expression, or an extended regular 
+expression. In addition, a pattern can be a range specified by two of these 
+patterns separated by a comma, or can be one of the two special patterns BEGIN 
+or END. 
+Special patterns - BEGIN and END
+The awk utility recognizes two special patterns, BEGIN and END. BEGIN is matched 
+once and its associated action is executed before the first line of input is 
+read and before command-line assignment is done. END is matched once and its 
+associated action is executed after the last line of input has been read. These 
+two patterns have associated actions. 
+BEGIN and END don't combine with other patterns. Multiple BEGIN and END patterns 
+are allowed. The actions associated with the BEGIN patterns are executed in the 
+order specified in the program, as are the END actions. An END pattern can 
+precede a BEGIN pattern in a program. 
+      If a program consists of:Then:
+      only BEGIN blocks awk exits without reading its input when the last 
+      statement in the BEGIN block is executed.
+      only END blocks or only BEGIN and END blocks the input is read before the 
+      statements in the END block(s) are executed.
+
+Regular expressions
+The awk utility makes use of the extended expression notation, except that it 
+allows the use of C language conventions for escaping special characters within 
+the extended regular expressions, as you can see in the following table: 
+awk Regular Expression Escape Characters
+
+EscapeMeaning
+      \bbackspace
+      \fform-feed
+      \nnewline
+      \rcarriage return
+      \ttab
+      \ddd1-3 digit octal value ddd
+
+If ere is an extended regular expression, the pattern: 
+/ere/ 
+matches any line of input that contains a substring specified by the regular 
+expression. You can limit a regular expression comparison to a specific field or 
+string by using one of the two regular expression matching operators, ~ and !~. 
+For example: 
+    $4 ~ /ere/matches any line in which the fourth field matches the regular expression /ere/. 
+
+This pattern:
+    $4 !~ /ere/ matches any line in which the fourth field doesn't match the regular expression 
+/ere/. 
+You can use an extended regular expression to separate fields by using the -F 
+ere option, or by assigning the expression to the built-in variable FS. The 
+default field separator is a single space character. The following describes the 
+behavior of FS:
+  If FS is a single character: 
+    If FS is space, skip leading and trailing blanks; fields are delimited by 
+    sets of one or more blanks. 
+    If FS is any other character c, fields are delimited by each single 
+    occurrence of c. 
+  Otherwise, if FS is more than one character, FS is considered to be an 
+  extended regular expression. Each occurrence of the string matching the 
+  extended regular expression delimits fields. 
+Pattern ranges
+A pattern range consists of two patterns separated by a comma; in this case, the 
+action is performed for all lines between an occurrence of the first pattern and 
+the following occurrence of the second pattern, inclusive. At this point, the 
+pattern range can be repeated starting at input lines subsequent to the end of 
+the matched range. 
+Expression patterns
+An expression pattern is considered to match - or be true - when the expression 
+evaluates to a nonzero numeric value. Otherwise, the pattern is considered 
+false. 
+Actions
+An action is a sequence of statements. A statement can be one of the statements 
+listed as follows. In this list, optional elements are shown in square brackets 
+([ ]) and keywords are shown in a constant-width typeface. 
+  if ( expression ) statement [else statement] 
+  while ( expression ) statement 
+  do statement while ( expression ) 
+  for ( [expression];[expression]; [expression]) statement 
+  for ( variable in array ) statement 
+  delete array[index] 
+  break 
+  continue 
+  { [statement]... } 
+  variable = expression 
+  next 
+  exit [ expression ] 
+  return [expression] 
+  print [(] [expression-list] [)] [redirection-expression] 
+  printf [(] format[, expression-list] [)] [redirection-expression] 
+Any single statement can be replaced by a statement list enclosed in braces 
+(i.e. {}). The statements in a statement list are separated by newline 
+characters or semicolons. The symbol # anywhere in a program line - in strings 
+or EREs - begins a comment that is terminated by the end of the line. 
+Statements are terminated by semicolons or newline characters. You can split a 
+long statement across several lines by ending each partial line with a 
+backslash; newline characters without backslashes can follow:
+  a comma 
+  an open brace 
+  a logical AND operator (&&) 
+  a logical OR operator (||) 
+  the do keyword 
+  the else keyword 
+  the closing parenthesis of an if, for, or while statement 
+For example:
+	{ print $1,
+	        $2 }String constants are surrounded by double quotes ("string"). A string expression 
+is created by concatenating constants, variables, field names, array elements, 
+functions, and other expressions. 
+The expression acting as the conditional in an if statement is evaluated, and if 
+it is nonzero and non-null, the next statement is executed. Otherwise, if else 
+is present, the statement following the else is executed. 
+The while, do...while, for, break, and continue statements are based on the C 
+Standard, except in the case of for ( variable in array ), which iterates 
+assigning each index of array to variable in order. The for statement has a form 
+that processes each element in an array. The order of processing is unspecified. 
+
+The awk language supplies arrays that are used for storing numbers or strings. 
+Arrays don't have to be declared, and their sizes change dynamically. The 
+subscripts, or element identifiers, are strings that provide a type of 
+associative array capability. Subscripts can't themselves be arrays. 
+The delete statement removes an individual array element. Thus, the following 
+code deletes an entire array: 
+	for (index in array)
+	       delete array[index]The next statement causes all further processing of the current input line to be 
+abandoned. 
+The exit statement invokes all END actions in the order in which they occur in 
+the program source. A next statement inside an END also terminates the program 
+and can optionally set the utility's exit status. 
+Output statements
+Both print and printf statements send their output to standard output by 
+default. The output is written to the location specified by 
+redirection-expression, if one is supplied, as follows: 
+  >expression 
+  >>expression 
+  |expression 
+In all cases, the expression is evaluated to produce a string that's used as a 
+full pathname to write into (for > or >>) or as a command to be executed (for 
+|). Using the first two forms, if the file of that name isn't currently open, it 
+is created if necessary, opened, and using the first form, truncated. The output 
+is then appended to the file. Subsequent calls in which expression evaluates to 
+the same name simply append output to the file; the file remains open until 
+closed. 
+The third form writes output onto a stream compatible with popen(). If no stream 
+is currently open, the stream is created with the same command name; the stream 
+created is compatible with popen() invoked with a mode of w. Subsequent calls 
+write output to the existing stream if, in those calls, expression evaluates to 
+the same command name as a stream that's currently open. The stream is closed as 
+if pclose() were called with an expression that evaluates to the same command 
+name. 
+The print statement writes the value of each expression argument to the 
+indicated output stream, separated by the current output field separator (see 
+OFS in the table "awk Variables"), and terminated by the output record separator 
+(see ORS in the table). String expressions are written out as is; numeric 
+expressions are written out as if produced by printf using a format that is the 
+string value of the variable OFMT. The expression-list is a comma-separated list 
+of expressions. An empty expression-list stands for the whole input line ($0). 
+With printf, the expressions are printed according to the specified format. A 
+format argument is required - all other arguments in expression-list are 
+optional. The string value of the expression format is interpreted in a manner 
+similar to the C function printf(), as follows. In the format string, format 
+specifications begin with the single character %, and can optionally include the 
+following three modifiers:
+      ModifierMeaning
+      - left justify the expression in its field
+      width pad left to this width as needed; a leading 0 pads with zeros
+      .prec maximum string width, or digits to right of decimal point
+
+Format specifications are terminated by any other character. For each format 
+specification that consumes an argument, the next argument from expression-list 
+is evaluated and converted to the appropriate type (string, integer, or floating 
+point). Both print and printf can output at least 1024 bytes. 
+awk printf Format Specification Characters
+
+CharacterInterpretation
+      c if the argument is numeric, print a character; if the argument is a 
+      string, print only the first character 
+      d decimal integer
+      e exponential notation: [-]d.ddddddE[+-]dd
+      f floating point: [-]ddd.dddddd
+      g shorter of e or f notations; suppress nonsignificant zeros
+      o unsigned octal number
+      s string
+      x unsigned hexadecimal number
+      % print a %; no argument consumed
+
+Functions:
+The awk language has a variety of built-in functions - arithmetic, string, 
+input/output, and general. 
+Arithmetic Functions:
+The arithmetic functions, except for int, are based on the C Standard.
+  atan2(y,x) 
+  returns arctangent of y/x 
+  cos(x) 
+  returns cosine of x, where x is in radians 
+  sin(x) 
+  returns sine of x, where x is in radians 
+  exp(x) 
+  returns the exponential function of x 
+  log(x) 
+  returns the natural logarithm of x 
+  sqrt(x) 
+  returns the square root of x 
+  int(x) 
+  truncates its argument to an integer; truncated toward 0 when x>0. 
+  rand() 
+  returns a random number n, such that 0<=n<1. 
+  srand([expr]) 
+  sets the seed value for rand() to expr or uses the time of day if expr is 
+  omitted. The previous seed value is returned. 
+String functions:
+  gsub(ere,repl[,in]) 
+  Behaves like sub (see below), except that it replaces all occurrences of the 
+  regular expression in $0 or in the in argument, when specified. 
+  index(s, t) 
+  Returns the position, in characters, numbering from 1, in string s where 
+  string t first occurs, or zero if it doesn't occur at all. 
+  length[ (s) ] 
+  Returns the length, in characters, of its argument taken as a string, or of 
+  the whole, $0, if there is no argument. 
+  match(s, ere) 
+  Returns the position, in characters, numbering from 1, in string s where the 
+  extended regular expression ere occurs, or zero if it doesn't occur at all. 
+  RSTART is set to the starting position (which is the same as the returned 
+  value), zero if no match is found; RLENGTH is set to the length of the matched 
+  string, -1 if no match is found. 
+  split(s, a[, fs]) 
+  Splits the string s into array elements a[1], a[2],..., a[n], and returns n. 
+  The separation is done with the extended regular expression fs or with the 
+  field separator FS if fs isn't given. 
+  sprintf(fmt, expr, expr, ...) 
+  Formats the expressions according to the printf format given by fmt and 
+  returns the resulting string. 
+  sub(ere, repl[, in]) 
+  Substitutes the string repl in place of the first instance of the extended 
+  regular expression ere in string in and returns the number of substitutions. 
+  If in is omitted, awk uses the current record ($0). 
+  substr(s, m[, n]) 
+  Returns the n-character substring of s that begins at position m, numbering 
+  from 1. If n is missing, the length of the substring is limited by the length 
+  of the string s. 
+All of the preceding functions that take ere as a parameter expect a pattern or 
+a string valued expression that is a regular expression. 
+Input/Output and general functions:
+  close(expression) 
+  Closes the file or pipe named expression. 
+  expression | getline [var] 
+  Pipes the output of the command string given by expression into getline; each 
+  successive call to getline returns the next line of output from expression. 
+  This construct has the behavior of popen() called with a mode of r. If var 
+  isn't specified, $0 and NF are set; if var is specified, var is set. 
+  getline 
+  Sets $0 to the next input record from the current input file. This form of 
+  getline sets NF, NR, and FNR variables. 
+  getline < expression 
+  Sets $0 to the next record from the pathname expression. This form of getline 
+  sets the NF variable. 
+  getline var 
+  Sets variable var to the next input record from the current input file. This 
+  form of getline sets FNR and NR variables. 
+  getline var < expression 
+  Sets var from the next record of expression, treated as a pathname. This form 
+  of getline doesn't set the NF, NR, and NFR variables. 
+  system (expression) 
+  Executes the command given by expression in a manner consistent with the 
+  system() function and returns the exit status. 
+All forms of getline return 1 for successful input, zero for end of file, and -1 
+for an error. 
+User-defined functions
+The awk language also provides user-defined functions. You can define such 
+functions - in the pattern position of a pattern-action statement - as:
+  function name(args,...) {statements} 
+A function can be referred to anywhere in an awk program. In particular, a 
+function call can precede its definition. The scope of a function is global. 
+Function arguments are passed by value if scalar and by reference if an array 
+name. Argument names are local to the function; all other variable names are 
+global. The number of parameters in the function definition doesn't have to 
+match the number of parameters in the function call. Excess formal parameters 
+can be used as local variables. If fewer arguments are supplied in a function 
+call than are in the function definition, the extra receiving parameters are 
+left uninitialized. 
+When you're invoking a function, remember that no white space is allowed between 
+the function name and the opening parenthesis. Function calls can be nested and 
+can be recursive. You can use the return statement to return a value. 
+In the function definition, newlines are optional before the opening brace and 
+after the closing brace. Function definitions can appear anywhere in the program 
+where a pattern-action statement is allowed. In a function call, no white space 
+is allowed between the function name and the opening parenthesis that begins the 
+function parameter list. 
+Sample awk programs:
+Note that the following are sample awk programs, not complete command lines. 
+Write to the standard output all input lines for which field 3 is greater than 
+5:
+    $3 > 5Print every tenth line:
+    (NR % 10) == 0Print any line with a substring that matches the regular expression:
+    /(G|D) (2[0-9][[:alpha:]]*)/Print the second to last field and the last field in each line; separate the 
+fields by a colon:
+    {OFS=":";print $(NF-1), $NF}Print the line number and number of fields in each line. The three strings 
+representing the line number, the colon, and the number of fields are 
+concatenated and the resulting string is written to standard output:
+    {print NR ":" NF}Print lines that are longer than 72 characters:
+    length $0 > 72Print the first two fields in opposite order separated by the OFS:
+    { print $2, $1 }Same as above, with input fields separated by a comma or space and tab 
+characters, or a combination of all these:
+    BEGIN  {FS = ",[ \t]*|[ \t]+" }
+           { print $2, $1 }Add up the first column, and print the sum and the average:
+        {s += $1 }
+    END {print "sum is ", s, " average is", s/NR}Print the fields in reverse order, one field per line (i.e. many lines out for 
+each line in):
+    { for (i = NF; i > 0; --i) print $i }Print all lines between occurrences of the strings start and stop:
+    /start/, /stop/Print all lines whose first field is different from the first field of the 
+previous line:
+    $1 != prev { print; prev = $1 }Simulate echo:
+    BEGIN {
+      for (i = 1; i < ARGC; ++i)
+        printf "%s%s", ARGV[i], i==ARGC-1?"\n":" "
+    }If there's a file named myfile that contains page headers of the form:
+    Page #and a file named program that contains:
+    /Page/{ $2 = n++; }
+    { print }then the command line:
+awk -f program n=5 myfilewould print the file myfile, filling in page numbers starting at 5.
+Examples:
+Print the file myfile, which contains page references, filling in page numbers 
+starting at 5:
+awk '/Page/{ $2=n++; } { print }' n=5 myfileFiles:
+By default, input files are text files that are read in order. You can modify 
+either variable ARGV or variable ARGC to place this default file processing 
+under program control. 
+The nature of the output files depends on your awk program.
+Environment variables:
+  PATH 
+  Defines the search path when looking for commands executed by system(expr), or 
+  input and output pipes. 
+Exit status:
+  0 
+  All input files were processed successfully. 
+  >0 
+  An error occurred. 
+Author:
+GNU
+See also:
+Dale Dougherty, sed & awk, O'Reilly and Associates, 1990. 
+A.V. Aho, Brian W. Kernighan, and Peter J. Weinberger, The AWK Programming 
+Language, Addison-Wesley, 1988.
+
+
+
+

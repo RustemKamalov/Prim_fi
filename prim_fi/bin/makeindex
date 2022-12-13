@@ -1,0 +1,5 @@
+#!/bin/sh
+echo Creating index file...
+cd $1
+/prim_fi/bin/qdindex $2
+

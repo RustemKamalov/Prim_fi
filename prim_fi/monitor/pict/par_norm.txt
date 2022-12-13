@@ -1,0 +1,12 @@
+
+WOPT: p=A r=69 c=0 o=k-m-r;kmsa t=0 e=0 a=0 b=0
+
+WPICT: c=20 h=600 w=1010
+
+OBJ: 1
+  PARL: P0=PARAM8 P1=PARAM5
+  TXTD: Q1="Коммун.не в норме"
+  TXTF: IF !(P1 & 0X0040) : Q1; ELSE Q0;
+  COLD: Q1=1,14,0
+  COLF: IF !(P1 & 0X0040) : Q1; ELSE Q0;
+OBEND

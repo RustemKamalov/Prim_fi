@@ -1,0 +1,27 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="gv_"$M"_list"
+math_file="gv_"$M"_math"
+
+# begin output files
+echo Writing file $math_file ...
+echo "# gatevalve math-log\n" > $math_file
+
+for i in $(awk '/^G/ {print($1)}' $list_file)
+do
+ echo gatevalve $i
+
+ #write gatevalve math-log
+ if [ $(echo $i| grep 'GV'| wc -c) = 0 ]
+  then
+    echo "# No math for int.gatevalve $i\n" >> $math_file
+  else
+    sed 's/$GVxxx/'$i'/' gv_math_tmpl | sed 's/$M/'$M'/g' >> $math_file
+ fi
+
+done
+
+echo Written file $math_file
+echo "# gatevalve math-log end\n" >> $math_file

@@ -1,0 +1,710 @@
+#!!! Check setting oper&remont_time events from PLC at the end of the file !!!
+
+#   Duty Send
+
+Q0=  E0
+Q1=  E1
+Q2=  E2
+Q3=  E3
+Q4=  E4
+Q5=  E5
+Q6=  E6
+Q7=  E7
+Q8=  E8
+Q9=  E9
+Q10= E10
+Q11= E11
+Q12= d=1 b=0 l=1 f=1 t=5 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1.%Q130 ­®Άλ© ΰ¥¦¨¬: …’
+Q13= d=1 b=0 l=1 f=1 t=5 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1.%Q130 ­®Άλ© ΰ¥¦¨¬: “—‰
+Q14= d=1 b=0 l=1 f=1 t=5 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1.%Q130 ­®Άλ© ΰ¥¦¨¬: —›‰
+Q15= d=1 b=0 l=1 f=1 t=5 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1.%Q130 ­®Άλ© ΰ¥¦¨¬: …‡…‚›‰
+Q16= d=1 b=0 l=1 f=1 t=5 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1.%Q130 ­®Άλ© ΰ¥¦¨¬: €‚’€’—…‘‰ (‘)
+OBJ=BitAll2Arg+ ARG=$M_$mia_Name,MON_MIND TYP=105,5 PAR=$M_$mia_DutySend
+
+
+# ControlWord
+
+Q0=  E0
+Q1=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1. %Q130 : “‘
+Q2=  d=1 b=0 l=1 f=1 t=6 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1. %Q130 : ‘’€‚’
+Q3=  E3
+Q4=  E4
+Q5=  E5
+Q6=  E6
+Q7=  E7
+Q8=  E8
+Q9=  E9
+Q10= E10
+Q11= E11
+Q12= E12
+Q13= E13
+Q14= E14
+Q15= E15
+Q16= d=1 b=0 l=1 f=1 t=9 w=1 cf=26 cb=2 td=1 s=…€’%D2! ‘1. %Q130 : „…‹‚€
+OBJ=BitAll2Arg+ ARG=$M_$mia_Name,MON_MIND TYP=105,5 PAR=$M_$mia_CtrWrd
+
+
+# Event Bits
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† €‚’ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs000
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† …‡ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs001
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …†  ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs002
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† “— ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs003
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† … ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs004
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† €‚’ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs005
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† …‡ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs006
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …†  ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs007
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† “— ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs008
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† … ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs009
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† €‚’ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs010
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† …‡ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs011
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …†  ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs012
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† “— ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs013
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† … ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs014
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† €‚’ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs015
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† …‡ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs016
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …†  ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs017
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† “— ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs018
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’€ …† … ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs019
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ “‘ …‚‡.‡€…’  …†“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs020
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ “‘ …‚‡.‡€…’  …†“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs021
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „1 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs022
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „1 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs023
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „2 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs024
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „2 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs025
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ “‘ …‚‡†.‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs026
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ “‘ …‚‡†.‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs027
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „1 …‚‡†.‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs028
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „1 …‚‡†.‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs029
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „2 …‚‡†.‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs030
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „2 …‚‡†.‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs031
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „1 …‚‡†.’…• —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs032
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „1 …‚‡†.’…• —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs033
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „2 …‚‡†.’…• —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs034
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘ ‡ „2 …‚‡†.’…• —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs035
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.€‚’ “‘ …‚‡†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs036
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.€‚’ “‘ …‚‡†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs037
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.“‘ ‡ „1 …‚‡†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs038
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.“‘ ‡ „1 …‚‡†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs039
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.“‘ ‡ „2 …‚‡†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs040
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.“‘ ‡ „2 …‚‡†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs041
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ “‘’’
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs042
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ “‘’’
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs043
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs044
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs045
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs046
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs047
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs048
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs049
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: … ‚‹—‹‘.…’ €†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs050
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: … ‚‹—‹‘.…’ €†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs051
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130:  … ‚‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs052
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130:  … ‚‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs053
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: … ‚‹—‹‘.…’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs054
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: … ‚‹—‹‘.…’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs055
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: ‚‹—….…“‘’ —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs056
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: ‚‹—….…“‘’ —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs057
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: ‚‹.…“‘’ —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs058
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: ‚‹.…“‘’ —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs059
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—…
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs060
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—…
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs061
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—….…’ €†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs062
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—….…’ €†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs063
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.(…’ „€‚‹)
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs064
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘.(…’ „€‚‹)
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs065
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—….…“‘’ —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs066
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—….…“‘’ —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs067
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ ‘’€‚ …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs068
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ ‘’€‚ …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs069
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „1 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs070
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „1 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs071
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „2 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs072
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „2 …‚‡.‡€. …†“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs073
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ ‘’€‚’
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs074
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ ‘’€‚’
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs075
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs076
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‡ „1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs077
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs078
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‡ „2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs079
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs080
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs081
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—‹‘.…‘’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs082
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—‹‘.…‘’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs083
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: … ’‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs084
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: … ’‹—‹‘
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs085
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ ‘’€‚. …‚‡. ’…• —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs086
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚’ ‘’€‚. …‚‡. ’…• —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs087
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „1 …‚‡. ’…• —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs088
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „1 …‚‡. ’…• —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs089
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „2 …‚‡.’…• —€
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs090
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€.‡ „2 …‚‡.’…• —€
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs091
+
+
+Q0= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… … ‚ … („€’—)
+Q1= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… ‚ … („€’—)
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs096
+
+
+Q0= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… … ‚ … („€’—)
+Q1= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… ‚ … („€’—)
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs097
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‘ €…‹ 1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs098
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‘ €…‹ 1
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs099
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‘ €…‹ 1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs100
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‘ €…‹ 1
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs101
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‘ €…‹ 2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs102
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‘ €…‹ 2
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs103
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: “‘’’ ‘ €…‹ 2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs104
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‘’€‚’ ‘ €…‹ 2
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs105
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: ’‹—… €‚’. ‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs106
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: ’‹—… €‚’. ‘’€– ‡€™
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs107
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: €‚’.’‹—…  ‘’€–‰ ‡€™’…
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs106
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: €‚’.’‹—…  ‘’€–‰ ‡€™’…
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs107
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: …’ €†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs108
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: …’ €†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs109
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: €† ‚‘‘’€‚‹…
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs110
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=‚€…! %Q130: €† ‚‘‘’€‚‹…
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs111
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—…  …‘’“.…‘’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs112
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—…  …‘’“.…‘’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs113
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘ ‚‹—…  …‘’“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs114
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‘ ‚‹—…  …‘’“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs115
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—…  …‘’“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs116
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ’‹—…  …‘’“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs117
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs118
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: €‚
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs119
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—…  …‘’“.…’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs120
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—…  …‘’“.…’ „€‚‹
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs121
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‡ …‘.€‚’ “‘ …‚‡†
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs122
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: …‡ …‘.€‚’ “‘ …‚‡†
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs123
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—…. …‘’“
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs124
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=8 cb=2 s=%Q130: ‚‹—…. …‘’“
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs125
+
+
+Q0= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… … ‚ … (…‹…)
+Q1= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… ‚ … (…‹…)
+OBJ=BitArg+- ARG=$M_$mi1_Name TYP=105,5 PAR=$M_$siEvMs126
+
+
+Q0= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… … ‚ … (…‹…)
+Q1= d=1 b=1 l=1 f=0 t=54 w=1 cf=8 cb=2 s=%Q130: „€‚‹. € ‚›•„… ‚ … (…‹…)
+OBJ=BitArg+- ARG=$M_$mi2_Name TYP=105,5 PAR=$M_$siEvMs127
+
+
+# Setting oper&remont time
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: “‘’€‚’ ‚… …’€
+OBJ=Bit2Arg+- ARG=$M_$mia_Name,MON_MIND TYP=30,1 PAR=$M_$mia_RemTSet
+
+
+Q0= E0
+Q1= d=1 b=0 l=1 f=1 t=4 w=1 cf=26 cb=2 td=1 s=…€’%D2! %Q98: “‘’€‚’ ‚… ‘‹“€’€–
+OBJ=Bit2Arg+- ARG=$M_$mia_Name,MON_MIND TYP=30,2 PAR=$M_$mia_OprTSet
+
+
+#!!! Setting oper&remont_time events from PLC should be checked !!!
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ ΰ¥¬®­β  ¨§ „1
+OBJ=BitArg+- ARG=$M_$mia_Name  TYP=40,1 PAR=$M_RemOT1S004
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ νªα―«γ β ζ¨¨ ¨§ „1
+OBJ=BitArg+- ARG=$M_$mia_Name  TYP=40,1 PAR=$M_RemOT1S052
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ ΰ¥¬®­β  ¨§ „2
+OBJ=BitArg+- ARG=$M_$mia_Name  TYP=40,1 PAR=$M_RemOT2S004
+
+
+Q0= E0
+Q1= d=1 b=1 l=1 f=1 t=54 w=1 cf=4 cb=2 s=‘1.%Q98:“αβ ­®Άª  Άΰ¥¬¥­¨ νªα―«γ β ζ¨¨ ¨§ „2
+OBJ=BitArg+- ARG=$M_$mia_Name  TYP=40,1 PAR=$M_RemOT2S052

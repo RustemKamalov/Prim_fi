@@ -1,0 +1,4 @@
+
+WOPT: p=A r=300 c=500 o=k-rf;kmsa t=0 e=0 a=0 b=0 k=0
+
+WPICT: c=9 h=300 w=500

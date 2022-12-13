@@ -1,0 +1,53 @@
+# PLC id
+M=$1    
+
+#filenames
+list_file="gv_"$M"_list"
+pipe_file="gv_"$M"_pipe"
+arch_file="gv_"$M"_arch"
+name_file="gv_"$M"_name"
+
+# begin output files
+echo Writing file $pipe_file ...
+echo "// gatevalves (GI:intelligent, GV:normal)" > $pipe_file
+
+echo Writing file $arch_file ...
+echo "// gatevalve archive tables" > $arch_file
+
+echo Writing file $name_file ...
+echo "// gatevalve name table\n" > $name_file
+
+for i in $(awk '/^G/ {print($1)}' $list_file)
+do
+ echo gatevalve $i
+
+ #write gatevalve general things
+ echo "\n//$i gatevalve" >> $pipe_file
+ if [ $(echo $i| grep 'GV'| wc -c) = 0 ]
+    then
+        sed 's/$GIxxx/'$i'/' gi_pipe_tmpl | sed 's/$M/'$M'/g' >> $pipe_file
+    else
+        sed 's/$GVxxx/'$i'/' gv_pipe_tmpl | sed 's/$M/'$M'/g' >> $pipe_file
+ fi
+
+ #write gatevalve archive
+ echo "\n//$i gatevalve" >> $arch_file
+ sed 's/$GVxxx/'$i'/' gv_arch_tmpl | sed 's/$M/'$M'/g' >> $arch_file
+
+ #write gatevalve name
+ name=$(grep $i gv_$1_list | awk '{print($3" "$4)}')
+ sed 's/$GVxxx/'$i'/' gv_name_tmpl | sed 's/$comment/'"$name"'/' \
+    | sed 's/$M/'$M'/g' >> $name_file
+
+done
+
+echo File $pipe_file written
+echo "// gatevalves (GI:intelligent, GV:normal) end\n" >> $pipe_file
+
+echo File $arch_file written
+echo "// gatevalve archive tables end\n" >> $arch_file
+
+echo File $name_file written
+echo "// gatevalve name table end\n" >> $name_file
+
+echo pipe changed: all other modules should be generated!

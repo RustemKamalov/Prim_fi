@@ -1,0 +1,4 @@
+#! /bin/sh
+slay dmarchview
+/Dmon/bin/dmarchview  /prim_fi/archive/slots/cfg &
+slay -P 10 dmarchview

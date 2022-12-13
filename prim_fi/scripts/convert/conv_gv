@@ -1,0 +1,45 @@
+#!/bin/sh
+
+#   M2_GVR2S01  ->     M2_GV301A_
+
+search="M2_GVR2S01"
+
+ch_scr='s/M2_GVR2S01/M2_GV301A_/g'
+
+for i in $(find /prim_fi/ -type f)
+do
+
+#logger  file=$(echo $i | grep 'rpt')
+#  file=$(file $i | grep ' text' | awk '{sub(/:/,"",$1); print $1}')
+   file=$(file $i | grep ' text' | sed 's/:.*$//' | grep -v '.ori$')
+
+  if [ "$file" != "" ]
+  then
+#    echo $file nem ures
+    if grep -q -E "$search" "$file"
+    then
+#      echo found search in file "$file" "\a"
+      read resp?"Convert $file ?      <Y/N>":
+      case $resp in
+        y|Y)
+            if test -f $file.ori
+            then
+              echo $file.ori exists, not converting
+            else
+              echo converting $file
+              cp $file $file.ori
+              sed "$ch_scr" $file > temp
+              mv temp $file
+              if [ "$(ls -F $file.ori | grep '*')" != "" ]
+              then
+                chmod a+x $file
+              fi
+            fi
+
+            ;;
+      esac
+
+    fi
+  fi
+
+done

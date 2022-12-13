@@ -1,0 +1,5 @@
+#!/bin/sh
+
+slay -f dmmsgview
+slay -f dmmonitor
+slay -f dmeventview

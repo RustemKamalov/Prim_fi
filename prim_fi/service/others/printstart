@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Start TCP/IP printing
+
+    slay lpd
+    slay lpsrvr
+
+    mkdir /usr/spool/output
+    mkdir /usr/spool/output/lpd
+    #sleep 10
+	/usr/ucb/lpd &
+    #sleep 1
+	/usr/ucb/lprc up lp &
+    #sleep 1
+	/usr/bin/lpsrvr &

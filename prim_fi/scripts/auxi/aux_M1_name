@@ -1,0 +1,56 @@
+//M1_auxilary system names
+
+//Plunger_pump_of_Stat._system_N1
+M1_PlS_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Погружной насос ННС
+M1_Pl1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Погружной насос ННС
+M1_PlR_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve N2
+
+//Canal.pumps_of_Station_system
+M1_CaS_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насосы бытовых стоков
+M1_Ca1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос бытовых стоков N1
+M1_Ca2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос бытовых стоков N2
+
+//Canal.pumps_of_Tankfarm_system
+M1_CS1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насосы КНС1
+M1_Ct1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "КНС1.насос N1
+M1_Ct2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "КНС1.насос N2
+
+//Fire_ext_pump_system
+M1_FS1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Система пожаротушения
+M1_Fe1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос пожаротушения N1
+M1_Fe2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос пожаротушения N2
+
+//Fire_ext_pump_system
+M1_FS2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Система пожаротушения
+M1_Fe3_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос пожаротушения N3
+M1_Fe4_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос пожаротушения N4
+
+//Fire_ext_pump_system
+M1_FS3_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Система пожаротушения
+M1_Fe5_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Насос пожаротушения N5
+M1_FeR_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve N2
+
+//Reserve_system_1
+M1_RS1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve system 1
+M1_R11_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve 11
+M1_R12_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve 12
+
+//Reserve_system_2
+M1_RS2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve system 2
+M1_R21_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve 21
+M1_R22_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve 22
+
+//Electric_heater_of_agr.system
+M1_ES1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Система электронагривателей
+M1_Eh1_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Электронагриватель ПА-1
+M1_Eh2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Электронагриватель ПА-2
+
+//Electric_heater_of_agr.system
+M1_ES2_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Система электронагривателей
+M1_Eh3_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Электронагриватель ПА-3
+M1_Eh4_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Электронагриватель ПА-4
+
+//Electric_heater_of_agr.system
+M1_ES3_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Система электронагривателей
+M1_Eh5_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Электронагриватель ПА-5
+M1_EhR_Name             ,  Y,  0, M1_Name             , N, 0, 0, "Reserve N2

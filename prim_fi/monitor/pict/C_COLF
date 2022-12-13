@@ -1,0 +1,1 @@
+  COLF: IF P0|P2|P4|P6 : Q1; IF P1|P3|P5|P7 : Q2; ELSE Q0;

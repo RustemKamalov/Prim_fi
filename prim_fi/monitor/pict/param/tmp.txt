@@ -1,0 +1,1867 @@
+HEADER:	
+	SIZE:	height=0 width=0
+	COLORS:	bkgd=3
+END
+
+#==================== QW_RECTANGLE (SR739_739) ====================
+
+RECTANGLE:	SR739_739
+	POS:	row=341 col=4906
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=594 width=2519
+	FMT:	fmt=d
+END
+
+#==================== QW_RECTANGLE (DR764_764) ====================
+
+RECTANGLE:	DR764_764
+	POS:	row=671 col=4972
+	COLOR:	color=1 fill=2
+	OPT:	opts=N
+	PEN:	thickness=11
+	SIZE:	height=176 width=792
+END
+
+#==================== QW_RECTANGLE (DR748_748) ====================
+
+RECTANGLE:	DR748_748
+	POS:	row=407 col=4972
+	COLOR:	color=1 fill=2
+	OPT:	opts=N
+	PEN:	thickness=11
+	SIZE:	height=176 width=792
+END
+
+#==================== QW_TEXT (DT392_392) ====================
+
+TEXT:	DT392_392
+	POS:	row=814 col=7557
+	COLOR:	color=5 fill=114
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=mmmmmmmmmmmmmmmmmmmmm
+END
+
+#==================== QW_TEXT (ST393_393) ====================
+
+TEXT:	ST393_393
+	POS:	row=528 col=7491
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="ÄÀÍÍÛÅ ÈÍÒÅËËÅÊÒÓÀËÜÍÎÉ ÐÅÃÓËßÒÎÐ"
+END
+
+#==================== QW_TEXT (DT395_395) ====================
+
+TEXT:	DT395_395
+	POS:	row=1496 col=176
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST396_396) ====================
+
+TEXT:	ST396_396
+	POS:	row=1540 col=5225
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT397_397) ====================
+
+TEXT:	DT397_397
+	POS:	row=1496 col=5137
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT398_398) ====================
+
+TEXT:	DT398_398
+	POS:	row=1496 col=5049
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT399_399) ====================
+
+TEXT:	DT399_399
+	POS:	row=1496 col=4961
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT400_400) ====================
+
+TEXT:	DT400_400
+	POS:	row=1496 col=4873
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT401_401) ====================
+
+TEXT:	DT401_401
+	POS:	row=1760 col=176
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST402_402) ====================
+
+TEXT:	ST402_402
+	POS:	row=1804 col=5225
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT403_403) ====================
+
+TEXT:	DT403_403
+	POS:	row=1760 col=5137
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT404_404) ====================
+
+TEXT:	DT404_404
+	POS:	row=1760 col=5049
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT405_405) ====================
+
+TEXT:	DT405_405
+	POS:	row=1760 col=4961
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT406_406) ====================
+
+TEXT:	DT406_406
+	POS:	row=1760 col=4873
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT419_419) ====================
+
+TEXT:	DT419_419
+	POS:	row=2024 col=176
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST420_420) ====================
+
+TEXT:	ST420_420
+	POS:	row=2068 col=5225
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT421_421) ====================
+
+TEXT:	DT421_421
+	POS:	row=2024 col=5137
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT422_422) ====================
+
+TEXT:	DT422_422
+	POS:	row=2024 col=5049
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT423_423) ====================
+
+TEXT:	DT423_423
+	POS:	row=2024 col=4961
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT424_424) ====================
+
+TEXT:	DT424_424
+	POS:	row=2024 col=4873
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT425_425) ====================
+
+TEXT:	DT425_425
+	POS:	row=2288 col=176
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST426_426) ====================
+
+TEXT:	ST426_426
+	POS:	row=2332 col=5225
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT427_427) ====================
+
+TEXT:	DT427_427
+	POS:	row=2288 col=5137
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT428_428) ====================
+
+TEXT:	DT428_428
+	POS:	row=2288 col=5049
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT429_429) ====================
+
+TEXT:	DT429_429
+	POS:	row=2288 col=4961
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT430_430) ====================
+
+TEXT:	DT430_430
+	POS:	row=2288 col=4873
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT461_461) ====================
+
+TEXT:	DT461_461
+	POS:	row=1496 col=5566
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST462_462) ====================
+
+TEXT:	ST462_462
+	POS:	row=1540 col=10615
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT463_463) ====================
+
+TEXT:	DT463_463
+	POS:	row=1496 col=10527
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT464_464) ====================
+
+TEXT:	DT464_464
+	POS:	row=1496 col=10439
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT465_465) ====================
+
+TEXT:	DT465_465
+	POS:	row=1496 col=10351
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT466_466) ====================
+
+TEXT:	DT466_466
+	POS:	row=1496 col=10263
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT467_467) ====================
+
+TEXT:	DT467_467
+	POS:	row=1760 col=5566
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST468_468) ====================
+
+TEXT:	ST468_468
+	POS:	row=1804 col=10615
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT469_469) ====================
+
+TEXT:	DT469_469
+	POS:	row=1760 col=10527
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT470_470) ====================
+
+TEXT:	DT470_470
+	POS:	row=1760 col=10439
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT471_471) ====================
+
+TEXT:	DT471_471
+	POS:	row=1760 col=10351
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT472_472) ====================
+
+TEXT:	DT472_472
+	POS:	row=1760 col=10263
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT473_473) ====================
+
+TEXT:	DT473_473
+	POS:	row=2552 col=176
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST474_474) ====================
+
+TEXT:	ST474_474
+	POS:	row=2596 col=5225
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT475_475) ====================
+
+TEXT:	DT475_475
+	POS:	row=2552 col=5137
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT476_476) ====================
+
+TEXT:	DT476_476
+	POS:	row=2552 col=5049
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT477_477) ====================
+
+TEXT:	DT477_477
+	POS:	row=2552 col=4961
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT478_478) ====================
+
+TEXT:	DT478_478
+	POS:	row=2552 col=4873
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT497_497) ====================
+
+TEXT:	DT497_497
+	POS:	row=2552 col=5566
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST498_498) ====================
+
+TEXT:	ST498_498
+	POS:	row=2596 col=10615
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT499_499) ====================
+
+TEXT:	DT499_499
+	POS:	row=2552 col=10527
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT500_500) ====================
+
+TEXT:	DT500_500
+	POS:	row=2552 col=10439
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT501_501) ====================
+
+TEXT:	DT501_501
+	POS:	row=2552 col=10351
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT502_502) ====================
+
+TEXT:	DT502_502
+	POS:	row=2552 col=10263
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT503_503) ====================
+
+TEXT:	DT503_503
+	POS:	row=4224 col=5566
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST504_504) ====================
+
+TEXT:	ST504_504
+	POS:	row=4268 col=10615
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT505_505) ====================
+
+TEXT:	DT505_505
+	POS:	row=4224 col=10527
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT506_506) ====================
+
+TEXT:	DT506_506
+	POS:	row=4224 col=10439
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT507_507) ====================
+
+TEXT:	DT507_507
+	POS:	row=4224 col=10351
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT508_508) ====================
+
+TEXT:	DT508_508
+	POS:	row=4224 col=10263
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT509_509) ====================
+
+TEXT:	DT509_509
+	POS:	row=2024 col=5566
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST510_510) ====================
+
+TEXT:	ST510_510
+	POS:	row=2068 col=10615
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT511_511) ====================
+
+TEXT:	DT511_511
+	POS:	row=2024 col=10527
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT512_512) ====================
+
+TEXT:	DT512_512
+	POS:	row=2024 col=10439
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT513_513) ====================
+
+TEXT:	DT513_513
+	POS:	row=2024 col=10351
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT514_514) ====================
+
+TEXT:	DT514_514
+	POS:	row=2024 col=10263
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT455_455) ====================
+
+TEXT:	DT455_455
+	POS:	row=2288 col=5566
+	COLOR:	color=5 fill=16
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+END
+
+#==================== QW_TEXT (ST456_456) ====================
+
+TEXT:	ST456_456
+	POS:	row=2332 col=10615
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=hex
+END
+
+#==================== QW_TEXT (DT457_457) ====================
+
+TEXT:	DT457_457
+	POS:	row=2288 col=10527
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT458_458) ====================
+
+TEXT:	DT458_458
+	POS:	row=2288 col=10439
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT459_459) ====================
+
+TEXT:	DT459_459
+	POS:	row=2288 col=10351
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT460_460) ====================
+
+TEXT:	DT460_460
+	POS:	row=2288 col=10263
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT533_533) ====================
+
+TEXT:	DT533_533
+	POS:	row=2816 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT534_534) ====================
+
+TEXT:	DT534_534
+	POS:	row=2992 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT535_535) ====================
+
+TEXT:	DT535_535
+	POS:	row=3168 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT536_536) ====================
+
+TEXT:	DT536_536
+	POS:	row=3344 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT537_537) ====================
+
+TEXT:	DT537_537
+	POS:	row=3520 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT538_538) ====================
+
+TEXT:	DT538_538
+	POS:	row=3696 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT539_539) ====================
+
+TEXT:	DT539_539
+	POS:	row=3872 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT540_540) ====================
+
+TEXT:	DT540_540
+	POS:	row=4048 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT542_542) ====================
+
+TEXT:	DT542_542
+	POS:	row=2816 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Phase lost                                "
+END
+
+#==================== QW_TEXT (DT543_543) ====================
+
+TEXT:	DT543_543
+	POS:	row=2992 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Manual moving                             "
+END
+
+#==================== QW_TEXT (DT544_544) ====================
+
+TEXT:	DT544_544
+	POS:	row=3168 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Torq.sw-closing direction(intermediate)   "
+END
+
+#==================== QW_TEXT (DT545_545) ====================
+
+TEXT:	DT545_545
+	POS:	row=3344 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Torq.sw-opening direction(intermediate)   "
+END
+
+#==================== QW_TEXT (DT546_546) ====================
+
+TEXT:	DT546_546
+	POS:	row=3520 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Communication error in channel B          "
+END
+
+#==================== QW_TEXT (DT547_547) ====================
+
+TEXT:	DT547_547
+	POS:	row=3696 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Communication error in channel A          "
+END
+
+#==================== QW_TEXT (DT548_548) ====================
+
+TEXT:	DT548_548
+	POS:	row=3872 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="reserve                                   "
+END
+
+#==================== QW_TEXT (DT549_549) ====================
+
+TEXT:	DT549_549
+	POS:	row=4048 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Thermostat (ERR)                          "
+END
+
+#==================== QW_TEXT (DT553_553) ====================
+
+TEXT:	DT553_553
+	POS:	row=4235 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT554_554) ====================
+
+TEXT:	DT554_554
+	POS:	row=4235 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="reserve                                   "
+END
+
+#==================== QW_TEXT (DT555_555) ====================
+
+TEXT:	DT555_555
+	POS:	row=4422 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT556_556) ====================
+
+TEXT:	DT556_556
+	POS:	row=4422 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Local mode                                "
+END
+
+#==================== QW_TEXT (DT557_557) ====================
+
+TEXT:	DT557_557
+	POS:	row=4609 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT558_558) ====================
+
+TEXT:	DT558_558
+	POS:	row=4609 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Valve jammed (ERR)                        "
+END
+
+#==================== QW_TEXT (DT559_559) ====================
+
+TEXT:	DT559_559
+	POS:	row=4796 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT560_560) ====================
+
+TEXT:	DT560_560
+	POS:	row=4796 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Closing                                   "
+END
+
+#==================== QW_TEXT (DT561_561) ====================
+
+TEXT:	DT561_561
+	POS:	row=4983 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT562_562) ====================
+
+TEXT:	DT562_562
+	POS:	row=4983 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Opening                                   "
+END
+
+#==================== QW_TEXT (DT563_563) ====================
+
+TEXT:	DT563_563
+	POS:	row=5170 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT564_564) ====================
+
+TEXT:	DT564_564
+	POS:	row=5170 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Stopped (positioned)                      "
+END
+
+#==================== QW_TEXT (DT565_565) ====================
+
+TEXT:	DT565_565
+	POS:	row=5357 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT566_566) ====================
+
+TEXT:	DT566_566
+	POS:	row=5357 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Closed                                    "
+END
+
+#==================== QW_TEXT (DT567_567) ====================
+
+TEXT:	DT567_567
+	POS:	row=5544 col=4851
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT568_568) ====================
+
+TEXT:	DT568_568
+	POS:	row=5544 col=187
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Open                                      "
+END
+
+#==================== QW_TEXT (DT601_601) ====================
+
+TEXT:	DT601_601
+	POS:	row=2816 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT602_602) ====================
+
+TEXT:	DT602_602
+	POS:	row=2992 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT604_604) ====================
+
+TEXT:	DT604_604
+	POS:	row=3201 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT605_605) ====================
+
+TEXT:	DT605_605
+	POS:	row=3377 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT606_606) ====================
+
+TEXT:	DT606_606
+	POS:	row=3553 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT609_609) ====================
+
+TEXT:	DT609_609
+	POS:	row=2816 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Local closing                             "
+END
+
+#==================== QW_TEXT (DT610_610) ====================
+
+TEXT:	DT610_610
+	POS:	row=2992 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Local opening                             "
+END
+
+#==================== QW_TEXT (DT612_612) ====================
+
+TEXT:	DT612_612
+	POS:	row=3201 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="There was power lost (pulse)              "
+END
+
+#==================== QW_TEXT (DT613_613) ====================
+
+TEXT:	DT613_613
+	POS:	row=3377 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Local ESD (emergency button)              "
+END
+
+#==================== QW_TEXT (DT614_614) ====================
+
+TEXT:	DT614_614
+	POS:	row=3553 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="ESD comand (PLC)                          "
+END
+
+#==================== QW_TEXT (DT621_621) ====================
+
+TEXT:	DT621_621
+	POS:	row=3762 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT622_622) ====================
+
+TEXT:	DT622_622
+	POS:	row=3762 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Phase correction                          "
+END
+
+#==================== QW_TEXT (DT623_623) ====================
+
+TEXT:	DT623_623
+	POS:	row=3949 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT624_624) ====================
+
+TEXT:	DT624_624
+	POS:	row=3949 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Phase error                               "
+END
+
+#==================== QW_TEXT (DT685_685) ====================
+
+TEXT:	DT685_685
+	POS:	row=4477 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT686_686) ====================
+
+TEXT:	DT686_686
+	POS:	row=4477 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Closed switch                             "
+END
+
+#==================== QW_TEXT (DT687_687) ====================
+
+TEXT:	DT687_687
+	POS:	row=4664 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT688_688) ====================
+
+TEXT:	DT688_688
+	POS:	row=4664 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Torque switch - closing direction         "
+END
+
+#==================== QW_TEXT (DT689_689) ====================
+
+TEXT:	DT689_689
+	POS:	row=4851 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT690_690) ====================
+
+TEXT:	DT690_690
+	POS:	row=4851 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Open switch                               "
+END
+
+#==================== QW_TEXT (DT691_691) ====================
+
+TEXT:	DT691_691
+	POS:	row=5038 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT692_692) ====================
+
+TEXT:	DT692_692
+	POS:	row=5038 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Torque switch - opening direction         "
+END
+
+#==================== QW_TEXT (DT693_693) ====================
+
+TEXT:	DT693_693
+	POS:	row=5225 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT694_694) ====================
+
+TEXT:	DT694_694
+	POS:	row=5225 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Overheat                                  "
+END
+
+#==================== QW_TEXT (DT695_695) ====================
+
+TEXT:	DT695_695
+	POS:	row=5412 col=10241
+	COLOR:	color=1
+	OPT:	opts=N
+	FONT:	face=System size=121
+	STRING:	str=0
+END
+
+#==================== QW_TEXT (DT696_696) ====================
+
+TEXT:	DT696_696
+	POS:	row=5412 col=5577
+	COLOR:	color=5 fill=4
+	OPT:	opts=eRmNr
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str="Remote control                            "
+END
+
+#==================== QW_NUMBER (DG697_697) ====================
+
+DIGIT:	DG697_697
+	POS:	row=1474 col=11121
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=eNr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_NUMBER (DG699_699) ====================
+
+DIGIT:	DG699_699
+	POS:	row=1738 col=11121
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=eNr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST700_700) ====================
+
+TEXT:	ST700_700
+	POS:	row=1782 col=11594
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=132
+	STRING:	str=%
+END
+
+#==================== QW_NUMBER (DG701_701) ====================
+
+DIGIT:	DG701_701
+	POS:	row=2002 col=11121
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=eNr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST703_703) ====================
+
+TEXT:	ST703_703
+	POS:	row=1518 col=11594
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=132
+	STRING:	str=Â
+END
+
+#==================== QW_TEXT (ST704_704) ====================
+
+TEXT:	ST704_704
+	POS:	row=1518 col=10890
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=->
+END
+
+#==================== QW_TEXT (ST705_705) ====================
+
+TEXT:	ST705_705
+	POS:	row=1782 col=10890
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=->
+END
+
+#==================== QW_TEXT (ST706_706) ====================
+
+TEXT:	ST706_706
+	POS:	row=2046 col=10890
+	COLOR:	color=1
+	FONT:	face=PCterm size=132
+	STRING:	str=->
+END
+
+#==================== QW_ARC (DA707_707) ====================
+
+ARC:	DA707_707
+	POS:	row=297 col=154
+	COLOR:	color=1 fill=16
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=517 width=517
+END
+
+#==================== QW_LINE (DP708_708) ====================
+
+LINE:	DP708_708
+	POS:	row=561 col=407
+	COLOR:	color=10 fill=11
+	OPT:	opts=N
+	PEN:	thickness=11
+	POINT:	row=-264 col=264
+END
+
+#==================== QW_LINE (DP709_709) ====================
+
+LINE:	DP709_709
+	POS:	row=561 col=407
+	COLOR:	color=10 fill=11
+	OPT:	opts=N
+	PEN:	thickness=11
+	POINT:	row=253 col=-253
+END
+
+#==================== QW_ARC (SA710_710) ====================
+
+ARC:	SA710_710
+	POS:	row=550 col=396
+	COLOR:	color=9 fill=11
+	PEN:	thickness=22
+	SIZE:	height=33 width=33
+END
+
+#==================== QW_TEXT (DT711_711) ====================
+
+TEXT:	DT711_711
+	POS:	row=1133 col=1848
+	COLOR:	color=1 fill=2
+	OPT:	opts=edRmN
+	FONT:	face=System size=121
+	STRING:	str=" Ðó÷."
+END
+
+#==================== QW_TEXT (DT712_712) ====================
+
+TEXT:	DT712_712
+	POS:	row=1133 col=1243
+	COLOR:	color=1 fill=2
+	OPT:	opts=emN
+	FONT:	face=System size=121
+	STRING:	str=Êíîï.
+END
+
+#==================== QW_TEXT (DT713_713) ====================
+
+TEXT:	DT713_713
+	POS:	row=1133 col=638
+	COLOR:	color=1 fill=2
+	OPT:	opts=emN
+	FONT:	face=System size=121
+	STRING:	str=" Àâò."
+END
+
+#==================== QW_RECTANGLE (DR715_715) ====================
+
+RECTANGLE:	DR715_715
+	POS:	row=66 col=341
+	COLOR:	color=1 fill=3
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=187 width=176
+END
+
+#==================== QW_TEXT (ST716_716) ====================
+
+TEXT:	ST716_716
+	POS:	row=209 col=396
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=Ç
+END
+
+#==================== QW_RECTANGLE (DR717_717) ====================
+
+RECTANGLE:	DR717_717
+	POS:	row=451 col=737
+	COLOR:	color=1 fill=3
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=187 width=176
+END
+
+#==================== QW_TEXT (ST718_718) ====================
+
+TEXT:	ST718_718
+	POS:	row=594 col=792
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=Î
+END
+
+#==================== QW_TEXT (ST720_720) ====================
+
+TEXT:	ST720_720
+	POS:	row=528 col=968
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=Êîìì:
+END
+
+#==================== QW_RECTANGLE (SR721_721) ====================
+
+RECTANGLE:	SR721_721
+	POS:	row=385 col=1430
+	COLOR:	color=1 fill=2
+	OPT:	opts=r
+	SIZE:	height=198 width=550
+END
+
+#==================== QW_TEXT (ST723_723) ====================
+
+TEXT:	ST723_723
+	POS:	row=792 col=968
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=Àíàë:
+END
+
+#==================== QW_RECTANGLE (SR724_724) ====================
+
+RECTANGLE:	SR724_724
+	POS:	row=649 col=1430
+	COLOR:	color=1 fill=2
+	OPT:	opts=r
+	SIZE:	height=198 width=550
+END
+
+#==================== QW_NUMBER (DG725_725) ====================
+
+TEXT:	ST1500_1500
+	POS:	row=809 col=1485
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 
+	STRING:	str="***"
+
+END
+
+DIGIT:	DG725_725
+	POS:	row=759 col=1485
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST726_726) ====================
+
+TEXT:	ST726_726
+	POS:	row=517 col=2024
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=%
+END
+
+#==================== QW_TEXT (ST727_727) ====================
+
+TEXT:	ST727_727
+	POS:	row=792 col=2024
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=%
+END
+
+#==================== QW_NUMBER (DG728_728) ====================
+
+DIGIT:	DG728_728
+	POS:	row=517 col=5016
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_NUMBER (DG732_732) ====================
+
+DIGIT:	DG732_732
+	POS:	row=781 col=5016
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=ESN
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=8 precision=1 low=-1000.000 high=1000.000 min=-1000.000 max=1000.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST733_733) ====================
+
+TEXT:	ST733_733
+	POS:	row=671 col=6050
+	COLOR:	color=1 fill=2
+	OPT:	opts=r
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=Èçì.çàìåùåíî
+END
+
+#==================== QW_RECTANGLE (DR737_737) ====================
+
+RECTANGLE:	DR737_737
+	POS:	row=682 col=5786
+	COLOR:	color=1 fill=10
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=176 width=209
+	FMT:	fmt=m
+END
+
+#==================== QW_RECTANGLE (DR738_738) ====================
+
+RECTANGLE:	DR738_738
+	POS:	row=682 col=5786
+	COLOR:	color=1 fill=7
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=176 width=209
+	FMT:	fmt=m
+END
+
+#==================== QW_TEXT (ST742_742) ====================
+
+TEXT:	ST742_742
+	POS:	row=539 col=5577
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=%
+END
+
+#==================== QW_TEXT (ST743_743) ====================
+
+TEXT:	ST743_743
+	POS:	row=814 col=5577
+	COLOR:	color=1
+	FONT:	face=System size=121
+	STRING:	str=%
+END
+
+#==================== QW_TEXT (DT744_744) ====================
+
+TEXT:	DT744_744
+	POS:	row=539 col=4092
+
+#@@@@@@@@@ header.size.text.height(132) != header.height(110) @@@@@@@@@@
+	COLOR:	color=5 fill=14
+	OPT:	opts=emN
+	FONT:	face=times_cyr style=B size=132
+	STRING:	str="Èçì. çàïð."
+END
+
+#==================== QW_TEXT (DT745_745) ====================
+
+TEXT:	DT745_745
+	POS:	row=539 col=4092
+
+#@@@@@@@@@ header.size.text.height(132) != header.height(110) @@@@@@@@@@
+	COLOR:	color=1 fill=8
+	OPT:	opts=emN
+	FONT:	face=times_cyr style=B size=132
+	STRING:	str="Èçì. ðàçð."
+END
+
+#==================== QW_TEXT (DT746_746) ====================
+
+TEXT:	DT746_746
+	POS:	row=803 col=4092
+
+#@@@@@@@@@ header.size.text.height(132) != header.height(110) @@@@@@@@@@
+	COLOR:	color=5 fill=14
+	OPT:	opts=emN
+	FONT:	face=times_cyr style=B size=132
+	STRING:	str="Èçì. çàïð."
+END
+
+#==================== QW_TEXT (DT747_747) ====================
+
+TEXT:	DT747_747
+	POS:	row=803 col=4092
+
+#@@@@@@@@@ header.size.text.height(132) != header.height(110) @@@@@@@@@@
+	COLOR:	color=1 fill=8
+	OPT:	opts=emN
+	FONT:	face=times_cyr style=B size=132
+	STRING:	str="Èçì. ðàçð."
+END
+
+#==================== QW_RECTANGLE (DR749_749) ====================
+
+RECTANGLE:	DR749_749
+	POS:	row=418 col=5786
+	COLOR:	color=1 fill=10
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=176 width=209
+	FMT:	fmt=m
+END
+
+#==================== QW_RECTANGLE (DR750_750) ====================
+
+RECTANGLE:	DR750_750
+	POS:	row=418 col=5786
+	COLOR:	color=1 fill=7
+	OPT:	opts=N
+	PEN:	thickness=5
+	SIZE:	height=176 width=209
+	FMT:	fmt=m
+END
+
+#==================== QW_TEXT (ST752_752) ====================
+
+TEXT:	ST752_752
+	POS:	row=528 col=2288
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=725:
+END
+
+#==================== QW_RECTANGLE (SR753_753) ====================
+
+RECTANGLE:	SR753_753
+	POS:	row=385 col=2662
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=198 width=726
+	FMT:	fmt=d
+END
+
+#==================== QW_NUMBER (DG754_754) ====================
+
+TEXT:	ST1501_1501
+	POS:	row=545 col=2717
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 
+	STRING:	str="***"
+
+END
+
+DIGIT:	DG754_754
+	POS:	row=495 col=2717
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_RECTANGLE (SR756_756) ====================
+
+RECTANGLE:	SR756_756
+	POS:	row=649 col=2662
+	COLOR:	color=1 fill=2
+	PEN:	thickness=5
+	SIZE:	height=198 width=726
+	FMT:	fmt=d
+END
+
+#==================== QW_NUMBER (DG757_757) ====================
+
+TEXT:	ST1502_1502
+	POS:	row=809 col=2717
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 
+	STRING:	str="***"
+
+END
+
+DIGIT:	DG757_757
+	POS:	row=759 col=2717
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST758_758) ====================
+
+TEXT:	ST758_758
+	POS:	row=517 col=3432
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=132
+	STRING:	str=ì3/÷àñ
+END
+
+#==================== QW_NUMBER (DG761_761) ====================
+
+TEXT:	ST1503_1503
+	POS:	row=545 col=1485
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 
+	STRING:	str="***"
+
+END
+
+DIGIT:	DG761_761
+	POS:	row=495 col=1485
+
+#@@@@@@@@@ header.size.text.height(121) != header.height(154) @@@@@@@@@@
+	COLOR:	color=1
+	OPT:	opts=Nr
+	FONT:	face=System size=121 opt=r
+	NUMBER:	width=3 low=-100.000 high=100.000 min=-100.000 max=100.000 delta=1.000
+	COLORS:	high=0 low=0
+	FMT:	fmt=T
+END
+
+#==================== QW_TEXT (ST762_762) ====================
+
+TEXT:	ST762_762
+	POS:	row=792 col=2288
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM14 style=B size=154
+	STRING:	str=726:
+END
+
+#==================== QW_TEXT (ST763_763) ====================
+
+TEXT:	ST763_763
+	POS:	row=781 col=3432
+	COLOR:	color=1
+	OPT:	opts=r
+	FONT:	face=SYSTEM12 style=B size=132
+	STRING:	str=ì3/÷àñ
+END
+
+#==================== QW_RECTANGLE (SR765_765) ====================
+
+RECTANGLE:	SR765_765
+	POS:	row=5291 col=11539
+	PEN:	thickness=11
+	SIZE:	height=165 width=110
+END
+
+#==================== QW_LINE (CKSUM1114148551) ====================
+
+LINE:	CKSUM1114148551
+	POS:	row=0 col=0
+	COLOR:	color=1
+	OPT:	opts=X
+	PEN:	thickness=11
+	POINT:	row=0 col=1
+END
+
+
+#number of elements: 179
+
+
+#     ########## 13 warnings ##########

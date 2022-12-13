@@ -1,0 +1,142 @@
+
+WOPT: p=A r=181 c=272 o=k-r;kmsa t=0 e=0 a=1 b=0 k=0
+
+WPICT: c=2 h=0 w=0
+
+OBJ: 282
+  PARL: P0=Fi_PLCClkDay
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 283
+  PARL: P0=Fi_PLCClkMonth
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 284
+  PARL: P0=Fi_PLCClkYear
+  VALF: IF P0>89 : 1900+P0;ELSE 2000+P0;
+OBEND
+
+OBJ: 285
+  PARL: P0=Fi_PLCClkHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 286
+  PARL: P0=Fi_PLCClkMin
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 287
+  PARL: P0=Fi_PLCClkSec
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 293
+  PARL: P0=Fi_PLCClkDayOfWeek
+  TXTD: Q1="Воскресенье" Q2="Понедельник" Q3="Вторник" Q4="Среда" Q5="Четверг" Q6="Пятница" Q7="Суббота"
+  TXTF: IF P0 == 1 : Q1;IF P0 == 2 : Q2;IF P0 == 3 : Q3;IF P0 == 4 : Q4;IF P0 == 5 : Q5;IF P0 == 6 : Q6;IF P0 == 7 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 321
+  PARL: P0=Fi2_PLCClkDay
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 322
+  PARL: P0=Fi2_PLCClkMonth
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 323
+  PARL: P0=Fi2_PLCClkYear
+  VALF: IF P0>89 : 1900+P0;ELSE 2000+P0;
+OBEND
+
+OBJ: 324
+  PARL: P0=Fi2_PLCClkHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 325
+  PARL: P0=Fi2_PLCClkMin
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 326
+  PARL: P0=Fi2_PLCClkSec
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 332
+  PARL: P0=Fi2_PLCClkDayOfWeek
+  TXTD: Q1="Воскресенье" Q2="Понедельник" Q3="Вторник" Q4="Среда" Q5="Четверг" Q6="Пятница" Q7="Суббота"
+  TXTF: IF P0 == 1 : Q1;IF P0 == 2 : Q2;IF P0 == 3 : Q3;IF P0 == 4 : Q4;IF P0 == 5 : Q5;IF P0 == 6 : Q6;IF P0 == 7 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 349
+  PARL: P0=PLCClkDay
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 350
+  PARL: P0=PLCClkMonth
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 351
+  PARL: P0=PLCClkYear
+  VALF: IF P0>89 : 1900+P0;ELSE 2000+P0;
+OBEND
+
+OBJ: 352
+  PARL: P0=PLCClkHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 353
+  PARL: P0=PLCClkMin
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 354
+  PARL: P0=PLCClkSec
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 360
+  PARL: P0=PLCClkDayOfWeek
+  TXTD: Q1="Воскресенье" Q2="Понедельник" Q3="Вторник" Q4="Среда" Q5="Четверг" Q6="Пятница" Q7="Суббота"
+  TXTF: IF P0 == 1 : Q1;IF P0 == 2 : Q2;IF P0 == 3 : Q3;IF P0 == 4 : Q4;IF P0 == 5 : Q5;IF P0 == 6 : Q6;IF P0 == 7 : Q7;ELSE Q0;
+OBEND
+
+OBJ: 362
+  PARL: P0=SysClkDay
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 363
+  PARL: P0=SysClkMonth
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 364
+  PARL: P0=SysClkYear
+  VALF: IF P0>89 : 1900+P0;ELSE 2000+P0;
+OBEND
+
+OBJ: 365
+  PARL: P0=SysClkHour
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 366
+  PARL: P0=SysClkMin
+  VALF: ELSE P0;
+OBEND
+
+OBJ: 367
+  PARL: P0=SysClkSec
+  VALF: ELSE P0;
+OBEND

@@ -1,0 +1,7 @@
+D-mon Text To Pict V5.10.2.0 (ScadaSys Ltd.)
+
+usage: dmtxttopict.exe [-?] textfile [picturefile] 
+where 
+    textfile    - name of input text file 
+    picturefile - name of output picture file 
+    -?,-h       - this message 

@@ -1,0 +1,7 @@
+SRVINIT:    /prim_fi/config/server2.ini
+MODULE:     /Dmon/bin/dmsound
+# original! NODE:       34
+# temporary NODE:       32
+NODE:       32
+CONFIG:     /prim_fi/sound/sound3.cfg
+DYNBIN:     /prim_fi/sound/sound_dyn

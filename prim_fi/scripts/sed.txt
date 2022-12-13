@@ -1,0 +1,277 @@
+sed
+
+
+
+
+sed
+Stream editor (POSIX)
+Syntax:
+sed [[-n] script [file...]
+
+sed [-n] [-e script]... [-f script_file]... [file...]Options:
+  -e script 
+  Uses the command-line script for editing files. If you specify multiple -e 
+  options, the scripts are applied in the order specified to each line of the 
+  input files. If a -f option is specified in addition to -e, lines are acted 
+  upon by scripts first. 
+  -f script_file 
+  Use the file script_file as the script of editing instructions. If multiple -f 
+  options are specified, the scripts are applied in the order specified to each 
+  line of the input files. If a -e option is specified in addition to -f, lines 
+  are acted upon by scripts first. 
+  -n 
+  Suppress the default output, which passes each line to standard output after 
+  it's examined for editing. Only lines explicitly selected for output are 
+  written. 
+  file 
+  The pathname of a text file whose contents are read and edited. If you specify 
+  multiple files, the files are read in the order specified and the 
+  concatenation is edited. If no files are specified, the standard input is 
+  used. 
+  script 
+  A script consists of one or more editing instructions that you enter on the 
+  command line. 
+Description:
+The sed utility is a stream editor that reads one or more text files, makes 
+editing changes according to editing commands that you specify, and writes the 
+results to standard output. 
+The sed commands are usually stored in a program file (script_file), although 
+you may give simple sed commands from the command line. By default, sed copies 
+files from the file list to its standard output, editing the lines in the 
+process. Conceptually, there is one input file, which is the concatenation of 
+all input files specified. 
+Lines are selected for editing based on their position within the input file, or 
+by pattern matching. If no files are listed, input is taken from standard input 
+(this is the only time standard input is used). The sed utility initially reads 
+all the editing commands from all specified sources and places them in an 
+internal table in the order specified. The utility then processes the 
+(concatenated) input file as follows:
+  Read one line from the input file and copy to the pattern space (a work area). 
+
+  For each command that selects the line, act on the pattern space as the edit 
+  command specifies, cyclically placing the result into the pattern space. 
+  After all commands have been checked against the pattern space, write the 
+  pattern space to the standard output, provided -n was not specified. The 
+  pattern space may contain zero, one, or several lines at this time. 
+  Delete the contents of the pattern space. 
+  Repeat from step 1 until all of the (concatenated) input file has been read 
+  and processed. 
+Scripts
+A script consists of editing commands, one per line, of the following form:
+  [address[,address]]function[arguments] 
+The script of editing commands can be given in the command line, or can be 
+contained in the file script_file. 
+In default operation, sed cyclically copies a line of input into a pattern space 
+(unless there is something left after a D command), applies in sequence all 
+commands whose addresses select that pattern space, and at the end of the script 
+copies the pattern space to the standard output (except under -n) and deletes 
+the pattern space. 
+Some of the commands use a hold space to save all or part of the pattern space 
+for subsequent retrieval. The pattern and hold spaces are each limited to 20K. 
+Addresses
+An address is one of the following:
+  a decimal number that counts input lines cumulatively across files 
+  a $ token that addresses the last line of input 
+  a context address 
+  a regular expression 
+A command line with no address selects every pattern space. A command line with 
+one address selects each pattern space that matches the address. 
+A command line with two addresses selects the inclusive range from the first 
+pattern space that matches the first address through the next pattern space that 
+matches the second address. (If the line number of the second address is less 
+than or equal to the line number first selected, then only the first line is 
+selected.) Starting at the first line following the selected range, sed looks 
+again for the first address. Thereafter the process is repeated. 
+Editing commands can be applied to non-selected pattern spaces by use of the 
+negation character (!). For more information, see the section on "Editing 
+commands." 
+Regular expressions
+The sed utility uses basic regular expressions (REs), with the following 
+additions:
+  In a context address, the construction \?RE? (where ? is any character) is 
+  mapped to /RE/. Note that in the context address \xabc\xdefx, the second x 
+  stands for itself, so that the regular expression is abcxdef. 
+  The escape sequence \n matches a newline embedded in the pattern space. 
+  A period (.) matches any character except the last newline of the pattern 
+  space. 
+Editing commands
+In the following list of functions, the maximum number of permissible addresses 
+for each function is indicated by one of [0addr], [1addr] or [2addr] 
+representing a maximum of zero addresses, one address or two addresses 
+respectively. The argument text consists of one or more lines. Each embedded 
+newline in the text must be preceded by a backslash. Other backslashes in text 
+are treated like the backslashes in the replacement string of an s editing 
+command, and can be used to protect initial blanks against the stripping that is 
+done on every script line. 
+The r and w editing commands take an optional rfile (or wfile) parameter, 
+separated from the command letter by zero or more blanks. 
+The arguments rfile or wfile terminate the command line. Each wfile is created 
+before processing begins. There can be at most ten distinct wfile arguments in 
+the script. 
+The b, r, s,t, w, y, !, and : editing commands take additional arguments. The 
+following synopses indicate which arguments are separated from the commands by 
+blanks: 
+  [2addr] { command_list
+  } 
+  Executes command_list only when the pattern space is selected. (Note that the 
+  trailing } must be the first non-blank character in the line.) 
+  [1addr]a\
+  text 
+  Writes text to the standard output after the pattern space is written. 
+  [2addr]b label 
+  Branches to the : (colon) command bearing the label. If label is empty, branch 
+  to the end of the script. 
+  [2addr]c\
+  text 
+  Deletes the pattern space. With 0 or 1 address or at the end of a 2-address 
+  range, places text on the output. 
+  [2addr]d 
+  Deletes the pattern space and starts the next cycle. 
+  [2addr]D 
+  Deletes the initial segment of the pattern space through the first newline and 
+  starts the next cycle. 
+  [2addr]g 
+  Replaces the contents of the pattern space by the contents of the hold space. 
+  [2addr]G 
+  Appends the contents of the hold space to the pattern space. 
+  [2addr]h 
+  Replaces the contents of the hold space by the contents of the pattern space. 
+  [2addr]H 
+  Appends the contents of the pattern space to the hold space. 
+  [1addr]i\
+  text 
+  Writes text to the standard output before the pattern space is written. 
+  [2addr]l 
+  Lists the pattern space on the standard output in an unambiguous form. 
+  Nonprinting characters are listed as hexadecimal digit pairs, with a preceding 
+  backslash, with the following exceptions: CharacterListed as 
+        alert\a 
+        backslash\\ 
+        backspace\b 
+        carriage return\r 
+        form-feed\f 
+        newline\n 
+        tab\t 
+        vertical tab\v 
+  Long lines are folded; the length at which folding occurs is unspecified, but 
+  should be appropriate for the output device. 
+  [2addr]n 
+  Copies the pattern space to the standard output and replaces the pattern space 
+  with the next line of input. 
+  [2addr]N 
+  Appends the next line of input to the pattern space, using an embedded newline 
+  to separate the appended material from the original material. Note that the 
+  current line number changes. 
+  [2addr]p 
+  Copies (prints) the pattern space to the standard output. 
+  [2addr]P 
+  Copies (prints) the pattern space, up to the first newline, to the standard 
+  output. 
+  [1addr]q 
+  Branches to the end of the script and quits without starting a new cycle. 
+  [1addr]r rfile 
+  Reads the contents of the rfile file. The contents are placed on the output 
+  before reading the next input line. 
+  [2addr]s/regular expression/replacement string/flags 
+  Substitutes the replacement string for instances of regular expression in the 
+  pattern space. Any character can be used instead of /. The value of flags is 
+  zero or more of: 
+    n 
+    n=1 to 512. Substitutes for the nth occurrence only of the regular 
+    expression found within the pattern space. 
+    g 
+    Globally substitutes for all non-overlapping instances of the regular 
+    expression rather than just the first one. If both g and n are specified, g 
+    takes precedence. 
+    p 
+    Prints the pattern space if a replacement was made. 
+    w wfile 
+    Appends (writes) the pattern space to wfile if a replacement was made. 
+  [2addr]t label 
+  Tests. Branches to the : (colon) command bearing the label if any 
+  substitutions have been made since the most recent reading of an input line or 
+  execution of a t. If label is empty, branches to the end of the script. 
+  [2addr]w wfile 
+  Appends (writes) the pattern space to wfile. 
+  [2addr]x 
+  Exchanges the contents of the pattern and hold spaces. 
+  [2addr]y/string1/string2/ 
+  Replaces all occurrences of collating elements in string1 with the 
+  corresponding collating element in string2. The lengths of string1 and string2 
+  should be equal. 
+  [2addr]! function 
+  Applies the function (or command list, if function is {) only to the lines 
+  that aren't selected by the addresses. 
+  [0addr]:label 
+  This command does nothing; it bears a label for the b and t commands to branch 
+  to. 
+  [1addr]= 
+  Places the current line number on the standard output as a line with its own 
+  line number. 
+  [0addr] 
+  An empty command is ignored. 
+  [0addr]# 
+  If a # appears as the first character on any line of a script file, that 
+  entire line is ignored (treated as a comment), with the single exception that 
+  if the first line of the script file begins with #n, the default output is 
+  suppressed (as when the -n option is specified on the command line). 
+Examples:
+In the file myfile, find and output only those lines containing the string 
+"tom":
+    sed -n -e "/tom/p" myfileIn the file myfile, replace all occurrences of the string beneath with the 
+string below, and output to the file newfile:
+    sed -e "s/beneath/below/" myfile >newfileFiles:
+All files are text files. The script_files named by the -f option consist of 
+editing commands, one per line. Any number of additional text input files may be 
+specified by the r command for insertion of unedited data to the standard output 
+at points predetermined by editing rules. A maximum of 10 additional output 
+files may be specified through the use of the w command in the script.
+Exit status:
+  0 
+  Successful completion. 
+  >0 
+  An error occurred. 
+Errors:
+If one or more of the input files (this doesn't include script files) can't be 
+opened for reading, sed continues to process the remaining files.
+Author:
+NetBSD; Diomidis Spinellis. 
+Copyright notice
+Copyright (c) 1992 Diomidis Spinellis.
+Copyright (c) 1992, 1993
+The Regents of the University of California. All rights reserved. 
+This code is derived from software contributed to Berkeley by Diomidis Spinellis 
+of Imperial College, University of London. 
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+  Redistributions of source code must retain the above copyright notice, this 
+  list of conditions and the following disclaimer. 
+  Redistributions in binary form must reproduce the above copyright notice, this 
+  list of conditions and the following disclaimer in the documentation and/or 
+  other materials provided with the distribution. 
+  All advertising materials mentioning features or use of this software must 
+  display the following acknowledgement: 
+  This product includes software developed by the University of California, 
+  Berkeley and its contributors. 
+  Neither the name of the University nor the names of its contributors may be 
+  used to endorse or promote products derived from this software without 
+  specific prior written permission. 
+THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY 
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY 
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON 
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+See also:
+awk 
+Dale Dougherty, sed & awk, O'Reilly and Associates, 1990. 
+Brian W. Kernighan and Rob Pike, The UNIX Programming Environment, 
+Prentice-Hall, 1984. 
+
+
+
+

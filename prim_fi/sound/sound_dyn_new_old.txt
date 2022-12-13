@@ -1,0 +1,2064 @@
+###################################################
+## Feccer hangmodulja v1.1 From KIRISI TANKFARM##
+## Endre is segitett am egy kicsit
+###################################################
+CFG:
+    CPAR:
+        P0 = SOUND_STAT
+        P1 = SOUND_ERRC
+        P2 = SOUND_CFGS
+        P3 = SOUND_PRIO
+        P4 = SOUND_LOGF
+        P5 = SOUND_FLEN
+        P6 = SOUND_LOGC
+        P7 = SOUND_LOGM
+        P8 = SOUND_CHKT
+        P9 = SOUND_ESEQ
+        P10= SOUND_CNAM
+        P11= SOUND_DBUG
+        P12= SOUND_LVOL
+        P13= SOUND_RVOL
+        P14= SOUND_BASS
+        P15= SOUND_TREB
+	STAT = P0
+    ERRC = P1
+    CFGS = P2
+    PRIO = P3
+    LOGF = P4
+    FLEN = P5
+    LOGC = P6
+    LOGM = P7
+    CHKT = P8
+    ESEQ = P9
+    CNAM = P10
+    DBUG = P11
+    LVOL = P12
+    RVOL = P13
+    BASS = P14
+    TREB = P15
+
+OBJ: SOUND1
+    CPAR:
+        P0 = SOUND_TRIG_001
+    CFV: IF P0 == 0: Q0; IF P0 == 1: Q1; IF P0 == 2: Q2; ELSE ;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_001
+        P1 = SOUND_MIRQ_001
+        P2 = SOUND_MINTR_001
+        P3 = SOUND_MDISC_001
+        P4 = SOUND_MLVOL_001
+        P5 = SOUND_MRVOL_001
+        P6 = SOUND_MCT_001
+        P7 = SOUND_MC_001
+   MPRI : P0
+   MIRQ : P1
+   MINTR: P2
+   MDISC: P3
+   MLVOL: P4
+   MRVOL: P5
+   MCT  : SEC:P6
+   MC  : P7
+    OFILE: /dallashangok/start.wav
+   OPAR:
+        P0 = SOUND_STAT_001
+  OSTAT: P0
+
+OBJ: SOUND2
+    CPAR:
+        P0 = SOUND_TRIG_002
+    CFV: IF P0 == 0: Q0; IF P0 == 1: Q1; IF P0 == 2: Q2; ELSE ;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_002
+        P1 = SOUND_MIRQ_002
+        P2 = SOUND_MINTR_002
+        P3 = SOUND_MDISC_002
+        P4 = SOUND_MLVOL_002
+        P5 = SOUND_MRVOL_002
+        P6 = SOUND_MCT_002
+        P7 = SOUND_MC_002
+   MPRI : P0
+   MIRQ : P1
+   MINTR: P2
+   MDISC: P3
+   MLVOL: P4
+   MRVOL: P5
+   MCT  : SEC:P6
+   MC  : P7
+    OFILE: /dallashangok/exit.wav
+   OPAR:
+        P0 = SOUND_STAT_002
+  OSTAT: P0
+
+##################
+##Oil Level
+##################
+
+OBJ: T1OilLevMinA
+    CPAR:
+        P0 = TF_T1OilLevMinAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_003
+        P1 = SOUND_MIRQ_003
+        P2 = SOUND_MINTR_003
+        P3 = SOUND_MDISC_003
+        P4 = SOUND_MLVOL_003
+        P5 = SOUND_MRVOL_003
+        P6 = SOUND_MCT_003
+        P7 = SOUND_MC_003
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmin.wav
+   OPAR:
+        P0 = SOUND_STAT_003
+  OSTAT: P0
+
+OBJ: T1OilLevMin
+    CPAR:
+        P0 = TF_T1OilLevMinS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_004
+        P1 = SOUND_MIRQ_004
+        P2 = SOUND_MINTR_004
+        P3 = SOUND_MDISC_004
+        P4 = SOUND_MLVOL_004
+        P5 = SOUND_MRVOL_004
+        P6 = SOUND_MCT_004
+        P7 = SOUND_MC_004
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: P0
+
+OBJ: T1OilLevMax
+    CPAR:
+        P0 = TF_T1OilLevMaxS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_005
+        P1 = SOUND_MIRQ_005
+        P2 = SOUND_MINTR_005
+        P3 = SOUND_MDISC_005
+        P4 = SOUND_MLVOL_005
+        P5 = SOUND_MRVOL_005
+        P6 = SOUND_MCT_005
+        P7 = SOUND_MC_005
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Max.wav
+   OPAR:
+        P0 = SOUND_STAT_005
+  OSTAT: P0
+
+OBJ: T1OilLevMaxA
+    CPAR:
+        P0 = TF_T1OilLevMaxAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_006
+        P1 = SOUND_MIRQ_006
+        P2 = SOUND_MINTR_006
+        P3 = SOUND_MDISC_006
+        P4 = SOUND_MLVOL_006
+        P5 = SOUND_MRVOL_006
+        P6 = SOUND_MCT_006
+        P7 = SOUND_MC_006
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmax.wav
+   OPAR:
+        P0 = SOUND_STAT_006
+  OSTAT: P0
+
+OBJ: T2OilLevMinA
+    CPAR:
+        P0 = TF_T2OilLevMinAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_007
+        P1 = SOUND_MIRQ_007
+        P2 = SOUND_MINTR_007
+        P3 = SOUND_MDISC_007
+        P4 = SOUND_MLVOL_007
+        P5 = SOUND_MRVOL_007
+        P6 = SOUND_MCT_007
+        P7 = SOUND_MC_007
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmin.wav
+   OPAR:
+        P0 = SOUND_STAT_007
+  OSTAT: P0
+
+OBJ: T2OilLevMin
+    CPAR:
+        P0 = TF_T2OilLevMinS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_008
+        P1 = SOUND_MIRQ_008
+        P2 = SOUND_MINTR_008
+        P3 = SOUND_MDISC_008
+        P4 = SOUND_MLVOL_008
+        P5 = SOUND_MRVOL_008
+        P6 = SOUND_MCT_008
+        P7 = SOUND_MC_008
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Min.wav
+   OPAR:
+        P0 = SOUND_STAT_008
+  OSTAT: P0
+
+OBJ: T2OilLevMax
+    CPAR:
+        P0 = TF_T2OilLevMaxS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_009
+        P1 = SOUND_MIRQ_009
+        P2 = SOUND_MINTR_009
+        P3 = SOUND_MDISC_009
+        P4 = SOUND_MLVOL_009
+        P5 = SOUND_MRVOL_009
+        P6 = SOUND_MCT_009
+        P7 = SOUND_MC_009
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Max.wav
+   OPAR:
+        P0 = SOUND_STAT_009
+  OSTAT: P0
+
+OBJ: T2OilLevMaxA
+    CPAR:
+        P0 = TF_T2OilLevMaxAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_010
+        P1 = SOUND_MIRQ_010
+        P2 = SOUND_MINTR_010
+        P3 = SOUND_MDISC_010
+        P4 = SOUND_MLVOL_010
+        P5 = SOUND_MRVOL_010
+        P6 = SOUND_MCT_010
+        P7 = SOUND_MC_010
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmax.wav
+   OPAR:
+        P0 = SOUND_STAT_010
+  OSTAT: P0
+
+OBJ: T3OilLevMinA
+    CPAR:
+        P0 = TF_T3OilLevMinAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_011
+        P1 = SOUND_MIRQ_011
+        P2 = SOUND_MINTR_011
+        P3 = SOUND_MDISC_011
+        P4 = SOUND_MLVOL_011
+        P5 = SOUND_MRVOL_011
+        P6 = SOUND_MCT_011
+        P7 = SOUND_MC_011
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmin.wav
+   OPAR:
+        P0 = SOUND_STAT_011
+  OSTAT: P0
+
+OBJ: T3OilLevMin
+    CPAR:
+        P0 = TF_T3OilLevMinS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_012
+        P1 = SOUND_MIRQ_012
+        P2 = SOUND_MINTR_012
+        P3 = SOUND_MDISC_012
+        P4 = SOUND_MLVOL_012
+        P5 = SOUND_MRVOL_012
+        P6 = SOUND_MCT_012
+        P7 = SOUND_MC_012
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Min.wav
+   OPAR:
+        P0 = SOUND_STAT_012
+  OSTAT: P0
+
+OBJ: T3OilLevMax
+    CPAR:
+        P0 = TF_T3OilLevMaxS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_013
+        P1 = SOUND_MIRQ_013
+        P2 = SOUND_MINTR_013
+        P3 = SOUND_MDISC_013
+        P4 = SOUND_MLVOL_013
+        P5 = SOUND_MRVOL_013
+        P6 = SOUND_MCT_013
+        P7 = SOUND_MC_013
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Max.wav
+   OPAR:
+        P0 = SOUND_STAT_013
+  OSTAT: P0
+
+OBJ: T3OilLevMaxA
+    CPAR:
+        P0 = TF_T3OilLevMaxAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_014
+        P1 = SOUND_MIRQ_014
+        P2 = SOUND_MINTR_014
+        P3 = SOUND_MDISC_014
+        P4 = SOUND_MLVOL_014
+        P5 = SOUND_MRVOL_014
+        P6 = SOUND_MCT_014
+        P7 = SOUND_MC_014
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmax.wav
+   OPAR:
+        P0 = SOUND_STAT_014
+  OSTAT: P0
+
+OBJ: T4OilLevMinA
+    CPAR:
+        P0 = TF_T4OilLevMinAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_015
+        P1 = SOUND_MIRQ_015
+        P2 = SOUND_MINTR_015
+        P3 = SOUND_MDISC_015
+        P4 = SOUND_MLVOL_015
+        P5 = SOUND_MRVOL_015
+        P6 = SOUND_MCT_015
+        P7 = SOUND_MC_015
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmin.wav
+   OPAR:
+        P0 = SOUND_STAT_015
+  OSTAT: P0
+
+OBJ: T4OilLevMin
+    CPAR:
+        P0 = TF_T4OilLevMinS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_016
+        P1 = SOUND_MIRQ_016
+        P2 = SOUND_MINTR_016
+        P3 = SOUND_MDISC_016
+        P4 = SOUND_MLVOL_016
+        P5 = SOUND_MRVOL_016
+        P6 = SOUND_MCT_016
+        P7 = SOUND_MC_016
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Min.wav
+   OPAR:
+        P0 = SOUND_STAT_016
+  OSTAT: P0
+
+OBJ: T4OilLevMax
+    CPAR:
+        P0 = TF_T4OilLevMaxS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_017
+        P1 = SOUND_MIRQ_017
+        P2 = SOUND_MINTR_017
+        P3 = SOUND_MDISC_017
+        P4 = SOUND_MLVOL_017
+        P5 = SOUND_MRVOL_017
+        P6 = SOUND_MCT_017
+        P7 = SOUND_MC_017
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Max.wav
+   OPAR:
+        P0 = SOUND_STAT_017
+  OSTAT: P0
+
+OBJ: T4OilLevMaxA
+    CPAR:
+        P0 = TF_T4OilLevMaxAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_018
+        P1 = SOUND_MIRQ_018
+        P2 = SOUND_MINTR_018
+        P3 = SOUND_MDISC_018
+        P4 = SOUND_MLVOL_018
+        P5 = SOUND_MRVOL_018
+        P6 = SOUND_MCT_018
+        P7 = SOUND_MC_018
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmax.wav
+   OPAR:
+        P0 = SOUND_STAT_018
+  OSTAT: P0
+
+OBJ: T5OilLevMinA
+    CPAR:
+        P0 = TF_T5OilLevMinAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_019
+        P1 = SOUND_MIRQ_019
+        P2 = SOUND_MINTR_019
+        P3 = SOUND_MDISC_019
+        P4 = SOUND_MLVOL_019
+        P5 = SOUND_MRVOL_019
+        P6 = SOUND_MCT_019
+        P7 = SOUND_MC_019
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmin.wav
+   OPAR:
+        P0 = SOUND_STAT_019
+  OSTAT: P0
+
+OBJ: T5OilLevMin
+    CPAR:
+        P0 = TF_T5OilLevMinS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_020
+        P1 = SOUND_MIRQ_020
+        P2 = SOUND_MINTR_020
+        P3 = SOUND_MDISC_020
+        P4 = SOUND_MLVOL_020
+        P5 = SOUND_MRVOL_020
+        P6 = SOUND_MCT_020
+        P7 = SOUND_MC_020
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Min.wav
+   OPAR:
+        P0 = SOUND_STAT_020
+  OSTAT: P0
+
+OBJ: T5OilLevMax
+    CPAR:
+        P0 = TF_T5OilLevMaxS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_021
+        P1 = SOUND_MIRQ_021
+        P2 = SOUND_MINTR_021
+        P3 = SOUND_MDISC_021
+        P4 = SOUND_MLVOL_021
+        P5 = SOUND_MRVOL_021
+        P6 = SOUND_MCT_021
+        P7 = SOUND_MC_021
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Max.wav
+   OPAR:
+        P0 = SOUND_STAT_021
+  OSTAT: P0
+
+OBJ: T5OilLevMaxA
+    CPAR:
+        P0 = TF_T5OilLevMaxAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_022
+        P1 = SOUND_MIRQ_022
+        P2 = SOUND_MINTR_022
+        P3 = SOUND_MDISC_022
+        P4 = SOUND_MLVOL_022
+        P5 = SOUND_MRVOL_022
+        P6 = SOUND_MCT_022
+        P7 = SOUND_MC_022
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmax.wav
+   OPAR:
+        P0 = SOUND_STAT_022
+  OSTAT: P0
+
+OBJ: T6OilLevMinA
+    CPAR:
+        P0 = TF_T6OilLevMinAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_023
+        P1 = SOUND_MIRQ_023
+        P2 = SOUND_MINTR_023
+        P3 = SOUND_MDISC_023
+        P4 = SOUND_MLVOL_023
+        P5 = SOUND_MRVOL_023
+        P6 = SOUND_MCT_023
+        P7 = SOUND_MC_023
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmin.wav
+   OPAR:
+        P0 = SOUND_STAT_023
+  OSTAT: P0
+
+OBJ: T6OilLevMin
+    CPAR:
+        P0 = TF_T6OilLevMinS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_024
+        P1 = SOUND_MIRQ_024
+        P2 = SOUND_MINTR_024
+        P3 = SOUND_MDISC_024
+        P4 = SOUND_MLVOL_024
+        P5 = SOUND_MRVOL_024
+        P6 = SOUND_MCT_024
+        P7 = SOUND_MC_024
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Min.wav
+   OPAR:
+        P0 = SOUND_STAT_024
+  OSTAT: P0
+
+OBJ: T6OilLevMax
+    CPAR:
+        P0 = TF_T6OilLevMaxS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_025
+        P1 = SOUND_MIRQ_025
+        P2 = SOUND_MINTR_025
+        P3 = SOUND_MDISC_025
+        P4 = SOUND_MLVOL_025
+        P5 = SOUND_MRVOL_025
+        P6 = SOUND_MCT_025
+        P7 = SOUND_MC_025
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Max.wav
+   OPAR:
+        P0 = SOUND_STAT_025
+  OSTAT: P0
+
+OBJ: T6OilLevMaxA
+    CPAR:
+        P0 = TF_T6OilLevMaxAS
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_026
+        P1 = SOUND_MIRQ_026
+        P2 = SOUND_MINTR_026
+        P3 = SOUND_MDISC_026
+        P4 = SOUND_MLVOL_026
+        P5 = SOUND_MRVOL_026
+        P6 = SOUND_MCT_026
+        P7 = SOUND_MC_026
+   MPRI : 2
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Alarmmax.wav
+   OPAR:
+        P0 = SOUND_STAT_026
+  OSTAT: P0
+
+
+##############
+##Oper level
+##############
+
+##Tank1
+
+OBJ: T1UnderOpLev
+    CPAR:
+        P0 = TF_T1OperLevUnder
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_051
+        P1 = SOUND_MIRQ_051
+        P2 = SOUND_MINTR_051
+        P3 = SOUND_MDISC_051
+        P4 = SOUND_MLVOL_051
+        P5 = SOUND_MRVOL_051
+        P6 = SOUND_MCT_051
+        P7 = SOUND_MC_051
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Operless.wav
+   OPAR:
+        P0 = SOUND_STAT_051
+  OSTAT: P0
+
+OBJ: T1OverOpLev
+    CPAR:
+        P0 = TF_T1OperLevOver
+    CFV: IF  (P0 == 1): Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_052
+        P1 = SOUND_MIRQ_052
+        P2 = SOUND_MINTR_052
+        P3 = SOUND_MDISC_052
+        P4 = SOUND_MLVOL_052
+        P5 = SOUND_MRVOL_052
+        P6 = SOUND_MCT_052
+        P7 = SOUND_MC_052
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Opermore.wav
+   OPAR:
+        P0 = SOUND_STAT_052
+  OSTAT: P0
+
+##Tank2
+
+OBJ: T2UnderOpLev
+    CPAR:
+        P0 = TF_T2OperLevUnder
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_053
+        P1 = SOUND_MIRQ_053
+        P2 = SOUND_MINTR_053
+        P3 = SOUND_MDISC_053
+        P4 = SOUND_MLVOL_053
+        P5 = SOUND_MRVOL_053
+        P6 = SOUND_MCT_053
+        P7 = SOUND_MC_053
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Operless.wav
+   OPAR:
+        P0 = SOUND_STAT_053
+  OSTAT: P0
+
+OBJ: T2OverOpLev
+    CPAR:
+        P0 = TF_T2OperLevOver
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_054
+        P1 = SOUND_MIRQ_054
+        P2 = SOUND_MINTR_054
+        P3 = SOUND_MDISC_054
+        P4 = SOUND_MLVOL_054
+        P5 = SOUND_MRVOL_054
+        P6 = SOUND_MCT_054
+        P7 = SOUND_MC_054
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Opermore.wav
+   OPAR:
+        P0 = SOUND_STAT_054
+  OSTAT: P0
+
+OBJ: T3UnderOpLev
+    CPAR:
+        P0 = TF_T3OperLevUnder
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_055
+        P1 = SOUND_MIRQ_055
+        P2 = SOUND_MINTR_055
+        P3 = SOUND_MDISC_055
+        P4 = SOUND_MLVOL_055
+        P5 = SOUND_MRVOL_055
+        P6 = SOUND_MCT_055
+        P7 = SOUND_MC_055
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Operless.wav
+   OPAR:
+        P0 = SOUND_STAT_055
+  OSTAT: P0
+
+OBJ: T3OverOpLev
+    CPAR:
+        P0 = TF_T3OperLevOver
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_056
+        P1 = SOUND_MIRQ_056
+        P2 = SOUND_MINTR_056
+        P3 = SOUND_MDISC_056
+        P4 = SOUND_MLVOL_056
+        P5 = SOUND_MRVOL_056
+        P6 = SOUND_MCT_056
+        P7 = SOUND_MC_056
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Opermore.wav
+   OPAR:
+        P0 = SOUND_STAT_056
+  OSTAT: P0
+
+OBJ: T4UnderOpLev
+    CPAR:
+        P0 = TF_T4OperLevUnder
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_057
+        P1 = SOUND_MIRQ_057
+        P2 = SOUND_MINTR_057
+        P3 = SOUND_MDISC_057
+        P4 = SOUND_MLVOL_057
+        P5 = SOUND_MRVOL_057
+        P6 = SOUND_MCT_057
+        P7 = SOUND_MC_057
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Operless.wav
+   OPAR:
+        P0 = SOUND_STAT_057
+  OSTAT: P0
+
+OBJ: T4OverOpLev
+    CPAR:
+        P0 = TF_T4OperLevOver
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_058
+        P1 = SOUND_MIRQ_058
+        P2 = SOUND_MINTR_058
+        P3 = SOUND_MDISC_058
+        P4 = SOUND_MLVOL_058
+        P5 = SOUND_MRVOL_058
+        P6 = SOUND_MCT_058
+        P7 = SOUND_MC_058
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Opermore.wav
+   OPAR:
+        P0 = SOUND_STAT_058
+  OSTAT: P0
+
+OBJ: T5UnderOpLev
+    CPAR:
+        P0 = TF_T5OperLevUnder
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_059
+        P1 = SOUND_MIRQ_059
+        P2 = SOUND_MINTR_059
+        P3 = SOUND_MDISC_059
+        P4 = SOUND_MLVOL_059
+        P5 = SOUND_MRVOL_059
+        P6 = SOUND_MCT_059
+        P7 = SOUND_MC_059
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Operless.wav
+   OPAR:
+        P0 = SOUND_STAT_059
+  OSTAT: P0
+
+OBJ: T5OverOpLev
+    CPAR:
+        P0 = TF_T5OperLevOver
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_060
+        P1 = SOUND_MIRQ_060
+        P2 = SOUND_MINTR_060
+        P3 = SOUND_MDISC_060
+        P4 = SOUND_MLVOL_060
+        P5 = SOUND_MRVOL_060
+        P6 = SOUND_MCT_060
+        P7 = SOUND_MC_060
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Opermore.wav
+   OPAR:
+        P0 = SOUND_STAT_060
+  OSTAT: P0
+
+OBJ: T6UnderOpLev
+    CPAR:
+        P0 = TF_T6OperLevUnder
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_061
+        P1 = SOUND_MIRQ_061
+        P2 = SOUND_MINTR_061
+        P3 = SOUND_MDISC_061
+        P4 = SOUND_MLVOL_061
+        P5 = SOUND_MRVOL_061
+        P6 = SOUND_MCT_061
+        P7 = SOUND_MC_061
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Operless.wav
+   OPAR:
+        P0 = SOUND_STAT_061
+  OSTAT: P0
+
+OBJ: T6OverOpLev
+    CPAR:
+        P0 = TF_T6OperLevOver
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_062
+        P1 = SOUND_MIRQ_062
+        P2 = SOUND_MINTR_062
+        P3 = SOUND_MDISC_062
+        P4 = SOUND_MLVOL_062
+        P5 = SOUND_MRVOL_062
+        P6 = SOUND_MCT_062
+        P7 = SOUND_MC_062
+   MPRI : 3
+   MIRQ : 0
+   MINTR: 0
+   MDISC: 0
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Level1.wav
+    OFILE: /kirtf/sound/wavs/Opermore.wav
+   OPAR:
+        P0 = SOUND_STAT_062
+  OSTAT: P0
+
+
+#################
+##TATE connection
+#################
+
+##Tank1
+
+OBJ: T1CommOK
+    CPAR:
+        P0 = TF_T1CommStatOk
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_075
+        P1 = SOUND_MIRQ_075
+        P2 = SOUND_MINTR_075
+        P3 = SOUND_MDISC_075
+        P4 = SOUND_MLVOL_075
+        P5 = SOUND_MRVOL_075
+        P6 = SOUND_MCT_075
+        P7 = SOUND_MC_075
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/CommOK.wav
+   OPAR:
+        P0 = SOUND_STAT_075
+  OSTAT: P0
+
+OBJ: T1CommWRONG
+    CPAR:
+        P0 = TF_T1CommStatWr
+    CFV: IF (P0 == 1)  : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_076
+        P1 = SOUND_MIRQ_076
+        P2 = SOUND_MINTR_076
+        P3 = SOUND_MDISC_076
+        P4 = SOUND_MLVOL_076
+        P5 = SOUND_MRVOL_076
+        P6 = SOUND_MCT_076
+        P7 = SOUND_MC_076
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Nocomm.wav
+   OPAR:
+        P0 = SOUND_STAT_076
+  OSTAT: P0
+
+OBJ: T1CommTilt
+    CPAR:
+        P0 = TF_T1CommStatTilt
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_077
+        P1 = SOUND_MIRQ_077
+        P2 = SOUND_MINTR_077
+        P3 = SOUND_MDISC_077
+        P4 = SOUND_MLVOL_077
+        P5 = SOUND_MRVOL_077
+        P6 = SOUND_MCT_077
+        P7 = SOUND_MC_077
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank1.wav
+    OFILE: /kirtf/sound/wavs/Queryoff.wav
+   OPAR:
+        P0 = SOUND_STAT_077
+  OSTAT: P0
+
+###Tank2
+
+OBJ: T2CommOK
+    CPAR:
+        P0 = TF_T2CommStatOk
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_078
+        P1 = SOUND_MIRQ_078
+        P2 = SOUND_MINTR_078
+        P3 = SOUND_MDISC_078
+        P4 = SOUND_MLVOL_078
+        P5 = SOUND_MRVOL_078
+        P6 = SOUND_MCT_078
+        P7 = SOUND_MC_078
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/CommOK.wav
+   OPAR:
+        P0 = SOUND_STAT_078
+  OSTAT: P0
+
+OBJ: T2CommWRONG
+    CPAR:
+        P0 = TF_T2CommStatWr
+    CFV: IF (P0 == 1)  : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_079
+        P1 = SOUND_MIRQ_079
+        P2 = SOUND_MINTR_079
+        P3 = SOUND_MDISC_079
+        P4 = SOUND_MLVOL_079
+        P5 = SOUND_MRVOL_079
+        P6 = SOUND_MCT_079
+        P7 = SOUND_MC_079
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Nocomm.wav
+   OPAR:
+        P0 = SOUND_STAT_079
+  OSTAT: P0
+
+OBJ: T2CommTilt
+    CPAR:
+        P0 = TF_T2CommStatTilt
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_080
+        P1 = SOUND_MIRQ_080
+        P2 = SOUND_MINTR_080
+        P3 = SOUND_MDISC_080
+        P4 = SOUND_MLVOL_080
+        P5 = SOUND_MRVOL_080
+        P6 = SOUND_MCT_080
+        P7 = SOUND_MC_080
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank2.wav
+    OFILE: /kirtf/sound/wavs/Queryoff.wav
+   OPAR:
+        P0 = SOUND_STAT_080
+  OSTAT: P0
+
+##Tank3
+
+OBJ: T3CommOK
+    CPAR:
+        P0 = TF_T3CommStatOk
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_081
+        P1 = SOUND_MIRQ_081
+        P2 = SOUND_MINTR_081
+        P3 = SOUND_MDISC_081
+        P4 = SOUND_MLVOL_081
+        P5 = SOUND_MRVOL_081
+        P6 = SOUND_MCT_081
+        P7 = SOUND_MC_081
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/CommOK.wav
+   OPAR:
+        P0 = SOUND_STAT_081
+  OSTAT: P0
+
+OBJ: T3CommWRONG
+    CPAR:
+        P0 = TF_T3CommStatWr
+    CFV: IF (P0 == 1)  : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_082
+        P1 = SOUND_MIRQ_082
+        P2 = SOUND_MINTR_082
+        P3 = SOUND_MDISC_082
+        P4 = SOUND_MLVOL_082
+        P5 = SOUND_MRVOL_082
+        P6 = SOUND_MCT_082
+        P7 = SOUND_MC_082
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Nocomm.wav
+   OPAR:
+        P0 = SOUND_STAT_082
+  OSTAT: P0
+
+OBJ: T3CommTilt
+    CPAR:
+        P0 = TF_T3CommStatTilt
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_083
+        P1 = SOUND_MIRQ_083
+        P2 = SOUND_MINTR_083
+        P3 = SOUND_MDISC_083
+        P4 = SOUND_MLVOL_083
+        P5 = SOUND_MRVOL_083
+        P6 = SOUND_MCT_083
+        P7 = SOUND_MC_083
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank3.wav
+    OFILE: /kirtf/sound/wavs/Queryoff.wav
+   OPAR:
+        P0 = SOUND_STAT_083
+  OSTAT: P0
+
+##Tank4
+
+OBJ: T4CommOK
+    CPAR:
+        P0 = TF_T4CommStatOk
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_084
+        P1 = SOUND_MIRQ_084
+        P2 = SOUND_MINTR_084
+        P3 = SOUND_MDISC_084
+        P4 = SOUND_MLVOL_084
+        P5 = SOUND_MRVOL_084
+        P6 = SOUND_MCT_084
+        P7 = SOUND_MC_084
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/CommOK.wav
+   OPAR:
+        P0 = SOUND_STAT_084
+  OSTAT: P0
+
+OBJ: T4CommWRONG
+    CPAR:
+        P0 = TF_T4CommStatWr
+    CFV: IF (P0 == 1)  : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_085
+        P1 = SOUND_MIRQ_085
+        P2 = SOUND_MINTR_085
+        P3 = SOUND_MDISC_085
+        P4 = SOUND_MLVOL_085
+        P5 = SOUND_MRVOL_085
+        P6 = SOUND_MCT_085
+        P7 = SOUND_MC_085
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Nocomm.wav
+   OPAR:
+        P0 = SOUND_STAT_085
+  OSTAT: P0
+
+OBJ: T4CommTilt
+    CPAR:
+        P0 = TF_T4CommStatTilt
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_086
+        P1 = SOUND_MIRQ_086
+        P2 = SOUND_MINTR_086
+        P3 = SOUND_MDISC_086
+        P4 = SOUND_MLVOL_086
+        P5 = SOUND_MRVOL_086
+        P6 = SOUND_MCT_086
+        P7 = SOUND_MC_086
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank4.wav
+    OFILE: /kirtf/sound/wavs/Queryoff.wav
+   OPAR:
+        P0 = SOUND_STAT_086
+  OSTAT: P0
+
+##Tank5
+
+OBJ: T5CommOK
+    CPAR:
+        P0 = TF_T5CommStatOk
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_087
+        P1 = SOUND_MIRQ_087
+        P2 = SOUND_MINTR_087
+        P3 = SOUND_MDISC_087
+        P4 = SOUND_MLVOL_087
+        P5 = SOUND_MRVOL_087
+        P6 = SOUND_MCT_087
+        P7 = SOUND_MC_087
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/CommOK.wav
+   OPAR:
+        P0 = SOUND_STAT_087
+  OSTAT: P0
+
+OBJ: T5CommWRONG
+    CPAR:
+        P0 = TF_T5CommStatWr
+    CFV: IF (P0 == 1)  : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_088
+        P1 = SOUND_MIRQ_088
+        P2 = SOUND_MINTR_088
+        P3 = SOUND_MDISC_088
+        P4 = SOUND_MLVOL_088
+        P5 = SOUND_MRVOL_088
+        P6 = SOUND_MCT_088
+        P7 = SOUND_MC_088
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Nocomm.wav
+   OPAR:
+        P0 = SOUND_STAT_088
+  OSTAT: P0
+
+OBJ: T5CommTilt
+    CPAR:
+        P0 = TF_T5CommStatTilt
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_089
+        P1 = SOUND_MIRQ_089
+        P2 = SOUND_MINTR_089
+        P3 = SOUND_MDISC_089
+        P4 = SOUND_MLVOL_089
+        P5 = SOUND_MRVOL_089
+        P6 = SOUND_MCT_089
+        P7 = SOUND_MC_089
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank5.wav
+    OFILE: /kirtf/sound/wavs/Queryoff.wav
+   OPAR:
+        P0 = SOUND_STAT_089
+  OSTAT: P0
+
+###Tank6
+
+OBJ: T6CommOK
+    CPAR:
+        P0 = TF_T6CommStatOk
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_090
+        P1 = SOUND_MIRQ_090
+        P2 = SOUND_MINTR_090
+        P3 = SOUND_MDISC_090
+        P4 = SOUND_MLVOL_090
+        P5 = SOUND_MRVOL_090
+        P6 = SOUND_MCT_090
+        P7 = SOUND_MC_090
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/CommOK.wav
+   OPAR:
+        P0 = SOUND_STAT_090
+  OSTAT: P0
+
+OBJ: T6CommWRONG
+    CPAR:
+        P0 = TF_T6CommStatWr
+    CFV: IF (P0 == 1)  : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_091
+        P1 = SOUND_MIRQ_091
+        P2 = SOUND_MINTR_091
+        P3 = SOUND_MDISC_091
+        P4 = SOUND_MLVOL_091
+        P5 = SOUND_MRVOL_091
+        P6 = SOUND_MCT_091
+        P7 = SOUND_MC_091
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Nocomm.wav
+   OPAR:
+        P0 = SOUND_STAT_091
+  OSTAT: P0
+
+OBJ: T6CommTilt
+    CPAR:
+        P0 = TF_T6CommStatTilt
+    CFV: IF (P0 == 1) : Q1; ELSE Q0;
+    CIFV: Q0
+    MPAR:
+        P0 = SOUND_MPRI_092
+        P1 = SOUND_MIRQ_092
+        P2 = SOUND_MINTR_092
+        P3 = SOUND_MDISC_092
+        P4 = SOUND_MLVOL_092
+        P5 = SOUND_MRVOL_092
+        P6 = SOUND_MCT_092
+        P7 = SOUND_MC_092
+   MPRI : 1
+   MIRQ : 1
+   MINTR: 2
+   MDISC: 1
+   MLVOL: 70
+   MRVOL: 70
+   MCT  : SEC:0
+   MC  : 1
+    OFILE: /kirtf/sound/wavs/Attention.wav
+    OFILE: /kirtf/sound/wavs/Tank6.wav
+    OFILE: /kirtf/sound/wavs/Queryoff.wav
+   OPAR:
+        P0 = SOUND_STAT_092
+  OSTAT: P0
+
+
+
+#
+#OBJ: T1OilTmpMinA
+#    CPAR:
+#        P0 = TF_T1OilTmpStat
+#    CFV: IF (S0==3) && (P0 & 0x8000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_007
+#        P1 = SOUND_MIRQ_007
+#        P2 = SOUND_MINTR_007
+#        P3 = SOUND_MDISC_007
+#        P4 = SOUND_MLVOL_007
+#        P5 = SOUND_MRVOL_007
+#        P6 = SOUND_MCT_007
+#        P7 = SOUND_MC_007
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/critical.wav
+#   OPAR:
+#        P0 = SOUND_STAT_007
+#  OSTAT: P0
+#
+#OBJ: T1OilTmpMaxA
+#    CPAR:
+#        P0 = TF_T1OilTmpStat
+#    CFV: IF (S0==3) && (P0 & 0x1000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_008
+#        P1 = SOUND_MIRQ_008
+#        P2 = SOUND_MINTR_008
+#        P3 = SOUND_MDISC_008
+#        P4 = SOUND_MLVOL_008
+#        P5 = SOUND_MRVOL_008
+#        P6 = SOUND_MCT_008
+#        P7 = SOUND_MC_008
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/felkialtas.wav
+#   OPAR:
+#        P0 = SOUND_STAT_008
+#  OSTAT: P0
+#
+###ExtTmp
+#
+#OBJ: T1ExtTmpMinA
+#    CPAR:
+#        P0 = TF_T1ExtTmpStat
+#    CFV: IF (S0==3) && (P0 & 0x8000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_009
+#        P1 = SOUND_MIRQ_009
+#        P2 = SOUND_MINTR_009
+#        P3 = SOUND_MDISC_009
+#        P4 = SOUND_MLVOL_009
+#        P5 = SOUND_MRVOL_009
+#        P6 = SOUND_MCT_009
+#        P7 = SOUND_MC_009
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/critical.wav
+#   OPAR:
+#        P0 = SOUND_STAT_009
+#  OSTAT: P0
+#
+#OBJ: T1ExtTmpMaxA
+#    CPAR:
+#        P0 = TF_T1ExtTmpStat
+#    CFV: IF (S0==3) && (P0 & 0x1000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_010
+#        P1 = SOUND_MIRQ_010
+#        P2 = SOUND_MINTR_010
+#        P3 = SOUND_MDISC_010
+#        P4 = SOUND_MLVOL_010
+#        P5 = SOUND_MRVOL_010
+#        P6 = SOUND_MCT_010
+#        P7 = SOUND_MC_010
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/felkialtas.wav
+#   OPAR:
+#        P0 = SOUND_STAT_010
+#  OSTAT: P0
+#
+###DHAct
+#
+#OBJ: T1DHActMinA
+#    CPAR:
+#        P0 = TF_T1DHActStat
+#    CFV: IF (S0==3) && (P0 & 0x8000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_011
+#        P1 = SOUND_MIRQ_011
+#        P2 = SOUND_MINTR_011
+#        P3 = SOUND_MDISC_011
+#        P4 = SOUND_MLVOL_011
+#        P5 = SOUND_MRVOL_011
+#        P6 = SOUND_MCT_011
+#        P7 = SOUND_MC_011
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/critical.wav
+#   OPAR:
+#        P0 = SOUND_STAT_011
+#  OSTAT: P0
+#
+#OBJ: T1DHActMaxA
+#    CPAR:
+#        P0 = TF_T1DHActStat
+#    CFV: IF (S0==3) && (P0 & 0x1000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_012
+#        P1 = SOUND_MIRQ_012
+#        P2 = SOUND_MINTR_012
+#        P3 = SOUND_MDISC_012
+#        P4 = SOUND_MLVOL_012
+#        P5 = SOUND_MRVOL_012
+#        P6 = SOUND_MCT_012
+#        P7 = SOUND_MC_012
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/felkialtas.wav
+#   OPAR:
+#        P0 = SOUND_STAT_012
+#  OSTAT: P0
+#
+###QVol
+#
+#OBJ: T1QVolMinA
+#    CPAR:
+#        P0 = TF_T1QVolStat
+#    CFV: IF (S0==3) && (P0 & 0x8000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_013
+#        P1 = SOUND_MIRQ_013
+#        P2 = SOUND_MINTR_013
+#        P3 = SOUND_MDISC_013
+#        P4 = SOUND_MLVOL_013
+#        P5 = SOUND_MRVOL_013
+#        P6 = SOUND_MCT_013
+#        P7 = SOUND_MC_013
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/critical.wav
+#   OPAR:
+#        P0 = SOUND_STAT_013
+#  OSTAT: P0
+#
+#OBJ: T1QVolMaxA
+#    CPAR:
+#        P0 = TF_T1QVolStat
+#    CFV: IF (S0==3) && (P0 & 0x1000) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_014
+#        P1 = SOUND_MIRQ_014
+#        P2 = SOUND_MINTR_014
+#        P3 = SOUND_MDISC_014
+#        P4 = SOUND_MLVOL_014
+#        P5 = SOUND_MRVOL_014
+#        P6 = SOUND_MCT_014
+#        P7 = SOUND_MC_014
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/felkialtas.wav
+#   OPAR:
+#        P0 = SOUND_STAT_014
+#  OSTAT: P0
+#
+#OBJ: T1TankStat
+#    CPAR:
+#        P0 = TF_T1TankStat
+#    CFV: IF (S0==3) && (P0==3) : Q1; ELSE Q0;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = SOUND_MPRI_015
+#        P1 = SOUND_MIRQ_015
+#        P2 = SOUND_MINTR_015
+#        P3 = SOUND_MDISC_015
+#        P4 = SOUND_MLVOL_015
+#        P5 = SOUND_MRVOL_015
+#        P6 = SOUND_MCT_015
+#        P7 = SOUND_MC_015
+#   MPRI : 1
+#   MIRQ : 0
+#   MINTR: 0
+#   MDISC: 0
+#   MLVOL: 70
+#   MRVOL: 70
+#   MCT  : SEC:0
+#   MC  : 1
+#    OFILE: /dallashangok/kerdes.wav
+#   OPAR:
+#        P0 = SOUND_STAT_015
+
+
+#OBJ: SOUND2
+#    CPAR:
+#        P0 = sound_10
+#    CFV: IF P0 == 0: Q0; IF P0 == 1: Q1; IF P0 == 2: Q2; ELSE ;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = sound_11
+#        P1 = sound_12
+#        P2 = sound_13
+#        P3 = sound_14
+#        P4 = sound_15
+#        P5 = sound_16
+#        P6 = sound_17
+#        P7 = sound_18
+#   MPRI : P0
+#   MIRQ : P1
+#   MINTR: P2
+#   MDISC: P3
+#   MLVOL: P4
+#   MRVOL: P5
+#   MCT  : SEC:P6
+#   MC  : P7
+#   OFILE: /Dmon/apps/test/sounds/stereo/waltz.wav
+#   OFILE: /Dmon/apps/test/sounds/stereo/windchim.wav
+#   OFILE: /Dmon/apps/test/sounds/stereo/marimba.wav
+#   OFILE: /Dmon/apps/test/sounds/stereo/mystic.wav
+#   OFILE: /Dmon/apps/test/sounds/stereo/onroute.wav
+#   OPAR:
+#        P0 = sound_19
+#  OSTAT: P0
+#
+#OBJ: SOUND3
+#    CPAR:
+#        P0 = sound_20
+#    CFV: IF P0 == 0: Q0; IF P0 == 1: Q1; IF P0 == 2: Q2; ELSE ;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = sound_21
+#        P1 = sound_22
+#        P2 = sound_23
+#        P3 = sound_24
+#        P4 = sound_25
+#        P5 = sound_26
+#        P6 = sound_27
+#        P7 = sound_28
+#   MPRI : P0
+#   MIRQ : P1
+#   MINTR: P2
+#   MDISC: P3
+#   MLVOL: P4
+#   MRVOL: P5
+#   MCT  : SEC:P6
+#   MC  : P7
+#   OFILE: /Dmon/apps/test/sounds/stereo/pastoral.wav
+#   OPAR:
+#        P0 = sound_29
+#  OSTAT: P0
+#
+#OBJ: SOUND4
+#    CPAR:
+#        P0 = sound_30
+#    CFV: IF P0 == 0: Q0; IF P0 == 1: Q1; IF P0 == 2: Q2; ELSE ;
+#    CIFV: Q0
+#    MPAR:
+#        P0 = sound_31
+#        P1 = sound_32
+#        P2 = sound_33
+#        P3 = sound_34
+#        P4 = sound_35
+#        P5 = sound_36
+#        P6 = sound_37
+#        P7 = sound_38
+#   MPRI : P0
+#   MIRQ : P1
+#   MINTR: P2
+#   MDISC: P3
+#   MLVOL: P4
+#   MRVOL: P5
+#   MCT  : SEC:P6
+#   MC  : P7
+#   OFILE: /Dmon/apps/test/sounds/yumyum.wav
+#   OPAR:
+#        P0 = sound_39
+#  OSTAT: P0
+
+
+
+
+
+
+
